@@ -6,8 +6,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 2,
@@ -16,8 +15,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 3,
@@ -26,8 +24,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 4,
@@ -36,8 +33,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 5,
@@ -46,8 +42,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 6,
@@ -56,8 +51,7 @@
     "form_group": "Developer",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 7,
@@ -66,8 +60,7 @@
     "form_group": "Curriculum Review",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 8,
@@ -76,8 +69,7 @@
     "form_group": "Curriculum Review",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 10,
@@ -86,8 +78,7 @@
     "form_group": "Admissions",
     "anonymous": true,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 12,
@@ -96,8 +87,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 13,
@@ -106,8 +96,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 15,
@@ -116,8 +105,7 @@
     "form_group": "Utility Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 16,
@@ -126,8 +114,7 @@
     "form_group": "Public use forms",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 18,
@@ -136,8 +123,7 @@
     "form_group": "Public use forms",
     "anonymous": true,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": true
+    "new_forms_builder": false
   },
   {
     "form_id": 19,
@@ -146,8 +132,7 @@
     "form_group": "Tax Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": true
+    "new_forms_builder": false
   },
   {
     "form_id": 20,
@@ -156,8 +141,7 @@
     "form_group": "Public use forms",
     "anonymous": true,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": true
+    "new_forms_builder": false
   },
   {
     "form_id": 21,
@@ -166,8 +150,7 @@
     "form_group": "Tax Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 23,
@@ -176,8 +159,7 @@
     "form_group": "Developer",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 24,
@@ -186,8 +168,7 @@
     "form_group": "Curriculum Review",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 25,
@@ -196,8 +177,7 @@
     "form_group": "Utility Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 27,
@@ -206,8 +186,7 @@
     "form_group": "Tax Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": true
+    "new_forms_builder": false
   },
   {
     "form_id": 28,
@@ -216,8 +195,7 @@
     "form_group": "Public use forms",
     "anonymous": true,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": true
+    "new_forms_builder": false
   },
   {
     "form_id": 29,
@@ -226,8 +204,7 @@
     "form_group": "Tax Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": true
+    "new_forms_builder": false
   },
   {
     "form_id": 31,
@@ -236,8 +213,7 @@
     "form_group": "Tax Forms",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 32,
@@ -246,8 +222,7 @@
     "form_group": "Public use forms",
     "anonymous": true,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 33,
@@ -256,8 +231,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 34,
@@ -266,8 +240,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 35,
@@ -276,8 +249,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 36,
@@ -286,8 +258,7 @@
     "form_group": "Deprecated",
     "anonymous": true,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 37,
@@ -296,8 +267,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 38,
@@ -306,8 +276,7 @@
     "form_group": "Curriculum & Instruction Committee",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 39,
@@ -316,8 +285,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 40,
@@ -326,8 +294,7 @@
     "form_group": "Curriculum & Instruction Committee",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 41,
@@ -336,8 +303,7 @@
     "form_group": "Curriculum & Instruction Committee",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 42,
@@ -345,9 +311,8 @@
     "department": "Curriculum Instruction Committee",
     "form_group": "Curriculum & Instruction Committee",
     "anonymous": false,
-    "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 45,
@@ -356,8 +321,7 @@
     "form_group": "Foundation",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 46,
@@ -366,8 +330,7 @@
     "form_group": "Athletics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 47,
@@ -376,8 +339,7 @@
     "form_group": "Athletics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 48,
@@ -386,8 +348,7 @@
     "form_group": "Athletics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 50,
@@ -396,8 +357,7 @@
     "form_group": "Athletics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": true
+    "new_forms_builder": false
   },
   {
     "form_id": 51,
@@ -406,8 +366,7 @@
     "form_group": "Utility Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 52,
@@ -416,8 +375,7 @@
     "form_group": "Deprecated",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 54,
@@ -426,8 +384,7 @@
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 55,
@@ -436,8 +393,7 @@
     "form_group": "Deprecated",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 57,
@@ -446,8 +402,7 @@
     "form_group": "Career Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 58,
@@ -456,8 +411,7 @@
     "form_group": "Athletics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": true
+    "new_forms_builder": false
   },
   {
     "form_id": 59,
@@ -466,8 +420,7 @@
     "form_group": "Developer",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 60,
@@ -476,8 +429,7 @@
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 61,
@@ -486,8 +438,7 @@
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 62,
@@ -496,8 +447,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 63,
@@ -506,8 +456,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 65,
@@ -516,8 +465,7 @@
     "form_group": "Veterans Affairs",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 66,
@@ -526,8 +474,7 @@
     "form_group": "Utility Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 67,
@@ -536,8 +483,7 @@
     "form_group": "Veterans Affairs",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 68,
@@ -546,8 +492,7 @@
     "form_group": "Veterans Affairs",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 69,
@@ -556,8 +501,7 @@
     "form_group": "Deprecated",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 70,
@@ -566,8 +510,7 @@
     "form_group": "Curriculum Review",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 71,
@@ -576,8 +519,7 @@
     "form_group": "Information Technologies",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 72,
@@ -586,8 +528,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 73,
@@ -596,8 +537,7 @@
     "form_group": "Student Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 74,
@@ -606,8 +546,7 @@
     "form_group": "Student Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 75,
@@ -616,8 +555,7 @@
     "form_group": "Student Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 76,
@@ -626,8 +564,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 78,
@@ -636,8 +573,7 @@
     "form_group": "Payroll",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 80,
@@ -646,8 +582,7 @@
     "form_group": "Developer",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 81,
@@ -656,8 +591,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 82,
@@ -666,8 +600,7 @@
     "form_group": "Athletics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": true
+    "new_forms_builder": false
   },
   {
     "form_id": 83,
@@ -676,8 +609,7 @@
     "form_group": "Utility Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 84,
@@ -686,8 +618,7 @@
     "form_group": "Office of Student Engagement",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 85,
@@ -696,8 +627,7 @@
     "form_group": "Office of Student Engagement",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 86,
@@ -706,8 +636,7 @@
     "form_group": "Human Resources",
     "anonymous": true,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 87,
@@ -716,8 +645,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 88,
@@ -726,8 +654,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 89,
@@ -736,8 +663,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 90,
@@ -746,8 +672,7 @@
     "form_group": "Health Sciences and Nursing",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 91,
@@ -756,8 +681,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 92,
@@ -766,8 +690,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 93,
@@ -776,8 +699,7 @@
     "form_group": "Public use forms",
     "anonymous": true,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 94,
@@ -786,8 +708,7 @@
     "form_group": "Tax Forms",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 95,
@@ -796,8 +717,7 @@
     "form_group": "Deprecated",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 96,
@@ -806,8 +726,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 97,
@@ -816,8 +735,7 @@
     "form_group": "Public Safety",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 98,
@@ -826,8 +744,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 99,
@@ -836,8 +753,7 @@
     "form_group": "Student Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 100,
@@ -846,8 +762,7 @@
     "form_group": "Utility Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 101,
@@ -856,8 +771,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 102,
@@ -866,8 +780,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 103,
@@ -876,8 +789,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 104,
@@ -886,8 +798,7 @@
     "form_group": "Utility Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 105,
@@ -896,8 +807,7 @@
     "form_group": "ACCESS",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 106,
@@ -906,8 +816,7 @@
     "form_group": "Accounts Payable & Travel/Mileage Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 107,
@@ -916,8 +825,7 @@
     "form_group": "Unassigned",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 108,
@@ -926,8 +834,7 @@
     "form_group": "Utility Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 109,
@@ -936,8 +843,7 @@
     "form_group": "Public Safety",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 110,
@@ -946,8 +852,7 @@
     "form_group": "Unassigned",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 111,
@@ -956,8 +861,7 @@
     "form_group": "Utility Forms",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 112,
@@ -966,8 +870,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 113,
@@ -976,8 +879,7 @@
     "form_group": "Utility Forms",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 114,
@@ -986,8 +888,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 115,
@@ -996,8 +897,7 @@
     "form_group": "Accounts Payable & Travel/Mileage Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 116,
@@ -1006,8 +906,7 @@
     "form_group": "Accounts Payable & Travel/Mileage Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 120,
@@ -1016,8 +915,7 @@
     "form_group": "Placement",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 121,
@@ -1026,8 +924,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 122,
@@ -1036,8 +933,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 123,
@@ -1046,8 +942,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 124,
@@ -1056,8 +951,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 126,
@@ -1066,8 +960,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 127,
@@ -1076,8 +969,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 128,
@@ -1086,8 +978,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 129,
@@ -1096,8 +987,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 130,
@@ -1106,8 +996,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 131,
@@ -1116,8 +1005,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 132,
@@ -1126,8 +1014,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 133,
@@ -1136,8 +1023,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 134,
@@ -1146,8 +1032,7 @@
     "form_group": "Health Sciences and Nursing",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 135,
@@ -1156,8 +1041,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 136,
@@ -1166,8 +1050,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 140,
@@ -1176,8 +1059,7 @@
     "form_group": "Veterans Affairs",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 141,
@@ -1186,8 +1068,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 142,
@@ -1196,8 +1077,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 143,
@@ -1206,8 +1086,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 144,
@@ -1216,8 +1095,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 145,
@@ -1226,8 +1104,7 @@
     "form_group": "Unassigned",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 147,
@@ -1236,8 +1113,7 @@
     "form_group": "* Instructions and Help",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 148,
@@ -1246,8 +1122,7 @@
     "form_group": "Student Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 149,
@@ -1256,8 +1131,7 @@
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 150,
@@ -1266,8 +1140,7 @@
     "form_group": "Accounts Payable & Travel/Mileage Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 151,
@@ -1276,8 +1149,7 @@
     "form_group": "* Instructions and Help",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 152,
@@ -1286,8 +1158,7 @@
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 153,
@@ -1296,8 +1167,7 @@
     "form_group": "Financial Services",
     "anonymous": true,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 154,
@@ -1306,8 +1176,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 155,
@@ -1316,8 +1185,7 @@
     "form_group": "Human Resources",
     "anonymous": true,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 156,
@@ -1326,8 +1194,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 157,
@@ -1336,8 +1203,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 159,
@@ -1346,8 +1212,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 160,
@@ -1356,8 +1221,7 @@
     "form_group": "Financial Aid",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 161,
@@ -1366,8 +1230,7 @@
     "form_group": "Accounts Payable & Travel/Mileage Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 162,
@@ -1376,8 +1239,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 163,
@@ -1386,8 +1248,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 164,
@@ -1396,8 +1257,7 @@
     "form_group": "Financial Aid",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 165,
@@ -1406,8 +1266,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 167,
@@ -1416,8 +1275,7 @@
     "form_group": "Student Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 169,
@@ -1426,8 +1284,7 @@
     "form_group": "Financial Aid",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 170,
@@ -1436,8 +1293,7 @@
     "form_group": "Unassigned",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 171,
@@ -1446,8 +1302,7 @@
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 172,
@@ -1456,8 +1311,7 @@
     "form_group": "Unassigned",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 173,
@@ -1466,8 +1320,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 177,
@@ -1476,8 +1329,7 @@
     "form_group": "Unassigned",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 178,
@@ -1486,8 +1338,7 @@
     "form_group": "Registrar",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 179,
@@ -1496,8 +1347,7 @@
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 180,
@@ -1506,8 +1356,7 @@
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 181,
@@ -1516,8 +1365,7 @@
     "form_group": "Registrar",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 182,
@@ -1526,8 +1374,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 183,
@@ -1536,8 +1383,7 @@
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 184,
@@ -1546,8 +1392,7 @@
     "form_group": "Student Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 185,
@@ -1556,8 +1401,7 @@
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 186,
@@ -1566,8 +1410,7 @@
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 187,
@@ -1576,8 +1419,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 188,
@@ -1586,8 +1428,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 189,
@@ -1596,8 +1437,7 @@
     "form_group": "Tax Forms",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 190,
@@ -1606,8 +1446,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 191,
@@ -1616,8 +1455,7 @@
     "form_group": "Public use forms",
     "anonymous": true,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 192,
@@ -1626,8 +1464,7 @@
     "form_group": "Unassigned",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 193,
@@ -1636,8 +1473,7 @@
     "form_group": "Admissions",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 194,
@@ -1646,8 +1482,7 @@
     "form_group": "Developer",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 195,
@@ -1656,8 +1491,7 @@
     "form_group": "Registrar",
     "anonymous": true,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 196,
@@ -1666,8 +1500,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 197,
@@ -1676,8 +1509,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 198,
@@ -1686,8 +1518,7 @@
     "form_group": "Registrar",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 199,
@@ -1696,8 +1527,7 @@
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 200,
@@ -1706,8 +1536,7 @@
     "form_group": "Registrar",
     "anonymous": true,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 201,
@@ -1716,8 +1545,7 @@
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 204,
@@ -1726,8 +1554,7 @@
     "form_group": "Public use forms",
     "anonymous": true,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 205,
@@ -1736,8 +1563,7 @@
     "form_group": "Dashboards",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 206,
@@ -1746,8 +1572,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 207,
@@ -1756,8 +1581,7 @@
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 208,
@@ -1766,8 +1590,7 @@
     "form_group": "Financial Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 209,
@@ -1776,8 +1599,7 @@
     "form_group": "Environmental Health & Safety",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 210,
@@ -1786,8 +1608,7 @@
     "form_group": "Financial Services",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 211,
@@ -1796,8 +1617,7 @@
     "form_group": "Admissions",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 212,
@@ -1806,8 +1626,7 @@
     "form_group": "Financial Aid",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 213,
@@ -1816,8 +1635,7 @@
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 214,
@@ -1826,8 +1644,7 @@
     "form_group": "Payroll",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 219,
@@ -1836,8 +1653,7 @@
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 222,
@@ -1846,8 +1662,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 224,
@@ -1856,8 +1671,7 @@
     "form_group": "Registrar",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 225,
@@ -1866,8 +1680,7 @@
     "form_group": "Unassigned",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 226,
@@ -1876,8 +1689,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 227,
@@ -1886,8 +1698,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 228,
@@ -1896,8 +1707,7 @@
     "form_group": "Student Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 229,
@@ -1906,8 +1716,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 231,
@@ -1916,8 +1725,7 @@
     "form_group": "Economic & Workforce Development",
     "anonymous": true,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 233,
@@ -1926,8 +1734,7 @@
     "form_group": "Facilities",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 234,
@@ -1936,8 +1743,7 @@
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 236,
@@ -1946,8 +1752,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 237,
@@ -1956,8 +1761,7 @@
     "form_group": "Financial Aid",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 238,
@@ -1966,8 +1770,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 239,
@@ -1976,8 +1779,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 241,
@@ -1986,8 +1788,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 242,
@@ -1996,8 +1797,7 @@
     "form_group": "Student Services",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 243,
@@ -2006,8 +1806,7 @@
     "form_group": "Facilities",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 245,
@@ -2016,8 +1815,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 246,
@@ -2026,8 +1824,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 247,
@@ -2036,8 +1833,7 @@
     "form_group": "Financial Services",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 248,
@@ -2046,8 +1842,7 @@
     "form_group": "Financial Aid",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 249,
@@ -2056,8 +1851,7 @@
     "form_group": "Student Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 250,
@@ -2066,8 +1860,7 @@
     "form_group": "Economic & Workforce Development",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 251,
@@ -2076,8 +1869,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 252,
@@ -2086,8 +1878,7 @@
     "form_group": "Economic & Workforce Development",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 253,
@@ -2096,8 +1887,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 254,
@@ -2106,8 +1896,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 255,
@@ -2116,8 +1905,7 @@
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 257,
@@ -2126,8 +1914,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 258,
@@ -2136,8 +1923,7 @@
     "form_group": "Economic & Workforce Development",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 260,
@@ -2146,8 +1932,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 261,
@@ -2156,8 +1941,7 @@
     "form_group": "Financial Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 265,
@@ -2166,8 +1950,7 @@
     "form_group": "Developer",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 266,
@@ -2176,8 +1959,7 @@
     "form_group": "Financial Aid",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 267,
@@ -2186,8 +1968,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 268,
@@ -2196,8 +1977,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 269,
@@ -2206,8 +1986,7 @@
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 270,
@@ -2216,8 +1995,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 271,
@@ -2226,8 +2004,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 272,
@@ -2236,8 +2013,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 273,
@@ -2246,8 +2022,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 274,
@@ -2256,8 +2031,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 276,
@@ -2266,8 +2040,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 277,
@@ -2276,8 +2049,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 280,
@@ -2286,8 +2058,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 281,
@@ -2296,8 +2067,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 282,
@@ -2306,8 +2076,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 283,
@@ -2316,8 +2085,7 @@
     "form_group": "Career Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 284,
@@ -2326,8 +2094,7 @@
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 285,
@@ -2336,8 +2103,7 @@
     "form_group": "Human Resources",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 287,
@@ -2346,8 +2112,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 288,
@@ -2356,8 +2121,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 289,
@@ -2366,8 +2130,7 @@
     "form_group": "Developer",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 291,
@@ -2376,8 +2139,7 @@
     "form_group": "Admin",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 292,
@@ -2386,8 +2148,7 @@
     "form_group": "Developer",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 293,
@@ -2396,8 +2157,7 @@
     "form_group": "Developer",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 295,
@@ -2406,8 +2166,7 @@
     "form_group": "Test",
     "anonymous": false,
     "published": false,
-    "new_forms_builder": false,
-    "is_pdf": false
+    "new_forms_builder": false
   },
   {
     "form_id": 298,
@@ -2416,8 +2175,7 @@
     "form_group": "Academics",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 300,
@@ -2426,8 +2184,7 @@
     "form_group": "Economic & Workforce Development",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 301,
@@ -2436,8 +2193,7 @@
     "form_group": "Economic & Workforce Development",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 302,
@@ -2446,8 +2202,7 @@
     "form_group": "Economic & Workforce Development",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   },
   {
     "form_id": 303,
@@ -2456,7 +2211,6 @@
     "form_group": "Test",
     "anonymous": false,
     "published": true,
-    "new_forms_builder": true,
-    "is_pdf": false
+    "new_forms_builder": true
   }
 ]

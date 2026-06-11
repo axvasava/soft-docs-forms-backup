@@ -264,7 +264,7 @@
     "form_id": 37,
     "form_name": "z_Canceled Student Employment Application",
     "department": "Human Resources",
-    "form_group": "Human Resources",
+    "form_group": "Deprecated",
     "anonymous": false,
     "published": false,
     "new_forms_builder": false

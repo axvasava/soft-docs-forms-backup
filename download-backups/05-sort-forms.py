@@ -25,6 +25,10 @@ CATEGORY_RULES = [
         "name": "Utility Forms",
         "match": lambda form: form.get("form_group") == "Utility Forms",
     },
+        {
+        "name": "Deprecated",
+        "match": lambda form: form.get("form_group") == "Deprecated",
+    },
 ]
 
 
