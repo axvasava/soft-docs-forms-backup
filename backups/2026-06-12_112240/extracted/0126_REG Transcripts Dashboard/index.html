@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    
+    <!-- These are for REG Transcript Dashboard -->
+    <link href="jquery-ui.min.css" rel="stylesheet" />
+    <link href="bootstrap.min.css" rel="stylesheet"/>
+    <link href="theme.default.css" rel="stylesheet" />
+    <link href="css.css" rel="stylesheet" />
+    <link href="loading.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <!-- REG Transcript Dashboard  -->
+    <div class ="container-fluid">
+        <div class="page">
+          <div id="loading" class="loading"></div>
+             <div class="row">
+               <div class="col-xs-12">
+                 <div class="text-center">
+                   <!--<img src="https://www.oaklandcc.edu/branding/images/logos/occ-stacked-green1.jpg" alt="Oakland CC Logo" style="width: 350px; height: auto;" class="logo">-->
+                 </div>
+               </div>
+             </div>
+             <div class="row header">
+                <h3 class="col-xs-4 col-xs-offset-4 text-center">
+                  <b>Transcripts Dashboard</b>
+                  <br/>
+                  <small>Review Stats Completed/Rejected Removes Documents from this list.</small>
+                </h3>
+                <button type="button" id="refreshBtn" class="col-xs-2 col-xs-offset-2 btn btn-success btn-lg">
+                   Refresh <strong>&#10227;</strong>
+                </button>
+             </div>
+             <div class="row">
+               <div id="tableCanvas"></div>
+             </div>
+             <div class="loading"></div>
+        </div>
+    </div>
+    
+    
+     <!-- REG Transcript Request Dashboard  -->
+    <div class="page">
+        <table id="myTable" class="display">
+          
+          <caption id="myTableCaption" class="header expand">
+            <span class="caption-title">REG Transcript Requests</span>
+            <span></span>
+            <!--added-->
+            <span class="caption-spacer"></span>
+            
+            <!--added-->
+            <span class="caption-right">
+              <span id="docStats"></span>
+              <span id="docStats"><button id="downloadXLS" class="btn custom-button">Export</button></span>
+            </span>
+          </caption>
+  
+          <thead>
+            <tr>
+                <th>Document Link</th>
+                <th>Document Type</th>
+                <th>Document Date</th>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>NIS Student Name</th>
+                <th>Academic Year</th>
+                <th>Review Status</th>
+            </tr>
+            <!-- this extra header row will be filled with inputs -->
+            <tr class="filters"></tr>
+          </thead>
+          <!-- <tbody></tbody> -->
+        </table>
+    </div>
+
+    
+
+</body>
+</html>

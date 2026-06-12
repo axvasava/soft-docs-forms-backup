@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row640" class="text-left row fd-form-masthead ">
+                <div id="col641" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn642" name="revisedOn" class="col-sm-12 text-right  ">Revised 03/26</span>
+                </div>
+                <div id="col643" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele644" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col645" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele646" name="ele21" class="text-left form-title ">Asset Transfer / Disposal Form</h1>
+                </div>
+                <div id="col647" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele648" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row636" class="text-left row ">
+                <div id="col637" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote638" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow65" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn66" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall67" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Submitter Information</h4>
+                </div>
+            </div>
+            <div id="row30" class="text-left row developer ">
+                <div id="col45" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="assetNumber">assetNumber (hidden)</label>
+                        <input id="assetNumber" name="assetNumber"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow49" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn50" name="quickInputsColumn1" class="col-xs-5 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeFirstName">Employee First Name</label>
+                        <input id="employeeFirstName" name="employeeFirstName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col571" class="col-xs-5 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeLastName">Employee Last Name</label>
+                        <input id="employeeLastName" name="employeeLastName"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn52" name="quickInputsColumn2" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Employee ID</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col54" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">Email</label>
+                        <input id="originatorEmail" name="originatorEmail" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow4910101111" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn561011" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSearch">Approver</label>
+                        <input id="supervisorSearch" name="supervisorSearch" class="text-left  "
+                        required="required" data-bind="autocomplete: { integrationSource: 'Security_Get_CW_Employees',  clearOnFocus: true,  validate: true,  labelMask: ['UserName'],  formFields: {'supervisorEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn581011" name="quickInputsColumn4" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorEmail">Approver Email</label>
+                        <input id="supervisorEmail" name="supervisorEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow491010" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn5610" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="employeeCampus">Campus</label>
+                    <select id="employeeCampus" name="employeeCampus" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                        <option value="Southfield">Southfield</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickHeadingRow659" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn669" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingRow6599" name="quickHeadingRow" class="text-center  "
+                    style=" font-weight: bold; ">Transfer/Disposal</h4>
+                </div>
+            </div>
+            <div id="row399" class="text-left row ">
+                <div id="col412" class="col-xs-12 col-sm-12 text-left  "><span id="ele413" name="ele413" class="col-xs-12 col-sm-12 text-left  "><strong>What type of item(s) are being listed for disposal / transfer? </strong></span>
+                </div>
+                <div id="col401" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="chkVehicle" name="chkVehicle" class="text-left  " type="checkbox"
+                    />
+                </div>
+                <div id="col407" class="col-xs-2 col-sm-2 text-left  ">
+                    <label id="lblVehicle" name="lblVehicle" class="col-xs-12 col-sm-12 text-left  "
+                    for="chkVehicle">Vehicle</label>
+                </div>
+                <div id="col400" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="chkEquipmentFurniture" name="chkEquipmentFurniture" class="text-left  "
+                    type="checkbox" />
+                </div>
+                <div id="col406" class="col-xs-4 col-sm-4 text-left  ">
+                    <label id="lblEquipmentFurniture" name="lblEquipmentFurniture" class="col-xs-12 col-sm-12 text-left  "
+                    for="chkEquipmentFurniture">Equipment / Furniture</label>
+                </div>
+            </div>
+            <div id="quickHeadingRow65914142323" name="quickHeadingRow" class="text-left row addVehicle "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( chkVehicle() ) ) ">
+                <div id="quickHeadingColumn6691423" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingRow65991423" name="quickHeadingRow65991423" class="text-center  "
+                    style=" font-weight: bold; ">Vehicle Information</h4>
+                </div>
+            </div>
+            <div id="vehicleInfoRow" name="vehicleInfoRow" class="text-left row addVehicle "
+            data-bind="dynamicList: true, dynamicListProperties: {addButtonID: 'addVehicle',  removeButtonID: 'removeVehicleBtn'}, visible: ((chkVehicle()))">
+                <div id="col33410" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vehicleDescription">Vehicle Description (Year/Make/Model)</label>
+                        <input id="vehicleDescription"
+                        name="vehicleDescription" class="text-left  " />
+                    </div>
+                </div>
+                <div id="col33510" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vehicleLocation">Vehicle Current Location (room/lot)</label>
+                        <input id="vehicleLocation"
+                        name="vehicleLocation" class="text-left  " />
+                    </div>
+                </div>
+                <div id="col33610" class="col-xs-3 col-sm-3 text-left  ">
+                    <label for="ddVehicleCondition">Item Condition</label>
+                    <select id="ddVehicleCondition" name="ddVehicleCondition"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Operational">Operational</option>
+                        <option value="Non-Operational">Non-Operational</option>
+                        <option value="Like New">Like New</option>
+                        <option value="Good">Good</option>
+                        <option value="Fair">Fair</option>
+                        <option value="Poor">Poor</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div id="col350" class="col-xs-5 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vehicleVIN">VIN # (Vehicle Identification Number)</label>
+                        <input id="vehicleVIN" name="vehicleVIN"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col482" class="col-xs-3 col-sm-3 text-left  ">
+                    <label for="ddVehicleActionType">Action Type</label>
+                    <select id="ddVehicleActionType" name="ddVehicleActionType"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Auction">Auction</option>
+                        <option value="Donation">Donation</option>
+                        <option value="Trash">Trash</option>
+                        <option value="Transfer to">Transfer to</option>
+                    </select>
+                </div>
+                <div id="col349" name="col349" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ( ( $data.ddVehicleCondition() == 'Other' ) ) ">
+                    <label for="vehicleOtherCondition">Other</label>
+                    <textarea id="vehicleOtherCondition" name="vehicleOtherCondition"
+                    class="text-left  "></textarea>
+                </div>
+                <div id="col348" name="col348" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ( ( ddVehicleCondition() == 'Non-Operational' ) ) ">
+                    <label for="vehicleIssueCondition">What is wrong with the vehicle?</label>
+                    <textarea id="vehicleIssueCondition"
+                    name="vehicleIssueCondition" class="text-left  "></textarea>
+                </div>
+                <div id="col483" name="col483" class="col-xs-6 col-sm-6 text-left  " data-bind="visible: ( ( ddVehicleActionType() == 'Transfer to' ) ) ">
+                    <label for="ddVehicleCampus">Campus</label>
+                    <select id="ddVehicleCampus" name="ddVehicleCampus" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                        <option value="Southfield">Southfield</option>
+                    </select>
+                </div>
+                <div id="col593" class="col-xs-1 col-sm-1 text-center  " style=" margin-top: 30px; ">
+                    <button id="vehicleItemRemoveBtn" name="vehicleItemRemoveBtn" class="text-left btn-delete-item "
+                    style=" background: #cf5851; color: #ffffff " undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col490" class="col-xs-3 col-sm-3 text-center  ">
+                    <input id="chkGrantFunded" name="chkGrantFunded" class="text-left  " type="checkbox"
+                    />
+                    <label for="chkGrantFunded">  Grant Funded</label>
+                </div>
+                <div id="col436" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele437" name="ele437" class="text-left  " style=" border-color:#000000;  border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow359" name="quickInputsRow2462020" class="text-left row addVehicle addVehicleButton "
+            data-bind="visible: ( ( chkVehicle() ) ) ">
+                <div id="col360" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="quickInputsRow361" name="quickInputsRow" class="text-left  "></p>
+                </div>
+                <div id="quickInputsColumn362" name="quickInputsColumn1" class="col-xs-4 col-sm-4 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <button id="addVehicle" name="addVehicle" class="col-xs-12 col-sm-12 text-center btn btn-primary "
+                    style="" undefined="">Add another Vehicle</button>
+                </div>
+                <div id="col621" class="col-xs-4 col-sm-4 text-left  ">
+                    <button id="removeVehicleBtn" name="removeVehicleBtn" class="col-xs-12 col-sm-12 text-left btn btn-danger "
+                    style="" undefined="">Remove Last Vehicle</button>
+                </div>
+                <div id="col417" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="ele423" name="ele423" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="quickHeadingRow659141423232424" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( chkEquipmentFurniture() ) ) ">
+                <div id="quickHeadingColumn669142324" name="quickHeadingColumn669142324"
+                class="col-xs-12 col-sm-12 text-left  " style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; "
+                visible:="" (="" dditem()="=" 'equipment="" furniture'="" )="">
+                    <h4 id="quickHeadingRow6599142324" name="quickHeadingRow6599142324" class="text-center  "
+                    style=" font-weight: bold; ">Equipment / Furniture Information</h4>
+                </div>
+            </div>
+            <div id="itemInfoRow" name="itemInfoRow" class="text-left row addItem "
+            data-bind="dynamicList: true, dynamicListProperties: {addButtonID: 'addItemBtn',  removeButtonID: 'removeItemBtn'}, visible: ((chkEquipmentFurniture()))">
+                <div id="col334" class="col-xs-12 col-sm-12 text-left  "><span id="ele397" name="ele397" class="col-xs-12 col-sm-12 text-left  "
+                    style=" text-transform: none "><div class="item-block">
+<table cellpadding="6">
+  <tbody><tr>
+<th class="col-xs-3 col-sm-3 text-left"><label for="itemDescription"><strong>Item Description</strong></label></th>
+    <th class="col-xs-3 col-sm-3 text-left"><label for="itemCurrentLocation"><strong>Current Location (room)</strong></label></th>
+    <th class="col-xs-3 col-sm-3 text-left"><label for="ddItemCondition"><strong>Item Condition</strong></label></th>
+  </tr>
+  <tr>
+    <td class="col-xs-3 col-sm-3 text-left"><input id="itemDescription" name="itemDescription" style="width:100%;" /></td>
+    <td class="col-xs-3 col-sm-3 text-left"><input id="itemCurrentLocation" name="itemCurrentLocation" style="width:100%;" /></td>
+    <td class="col-xs-3 col-sm-3 text-left"><select id="ddItemCondition" name="ddItemCondition">
+        <option value=""></option>
+        <option value="Operational">Operational</option>
+        <option value="NonOperational">Non-Operational</option>
+        <option value="LikeNew">Like New</option>
+        <option value="Good">Good</option>
+        <option value="Fair">Fair</option>
+        <option value="Poor">Poor</option>
+        <option value="Other">Other</option>
+      </select></td>
+  </tr>
+  
+<!-- ROW 2  -->
+<tr>
+    <th class="col-xs-3 col-sm-3 text-left"><label for="mfgSerialNumber"><strong>Mfg Serial # (If applicable) </strong></label> </th>
+    <th class="col-xs-3 col-sm-3 text-left"><label for="occAssetTagNumber"><strong>OCC Asset Tag # (If applicable)</strong></label></th>
+    <th class="col-xs-3 col-sm-3 text-left"><label for="itemQuantity"><strong>Quantity</strong></label></th>
+</tr>
+<tr>
+    <td class="col-xs-3 col-sm-3 text-left"><input id="mfgSerialNumber" name="mfgSerialNumber" style="width:100%;" /></td>
+    <td class="col-xs-3 col-sm-3 text-left"><input id="occAssetTagNumber" name="occAssetTagNumber" style="width:100%;" /></td>
+    <td class="col-xs-3 col-sm-3 text-left"><input id="itemQuantity" name="itemQuantity" style="width:100%;" /></td>
+</tr>
+  
+<!-- ROW 3  -->
+  <tr>
+    <th class="col-xs-3 col-sm-3 text-left"><label for="itemMeasurements"><strong>Measurements</strong></label></th>
+    <th class="col-xs-3 col-sm-3 text-left"><label for="ddItemActionType"><strong>Action Type</strong></label></th>
+  </tr>
+  <tr>
+    <td class="col-xs-3 col-sm-3 text-left"><input id="itemMeasurements" name="itemMeasurements" style="width:100%;" /></td>
+    <td class="col-xs-3 col-sm-3 text-left"><select id="ddItemActionType" name="ddItemActionType">
+        <option value=""></option>
+        <option value="Auction">Auction</option>
+        <option value="Donation">Donation</option>
+        <option value="E-Waste">E-Waste</option>
+        <option value="Trash">Trash</option>
+        <option value="Transfer">Transfer to</option>
+      </select></td>
+  </tr>
+ 
+</tbody></table>
+
+<table cellpadding="6">
+<tbody data-bind="visible: ddItemActionType() === 'Transfer' ">
+  <tr>
+    <th class="col-xs-3 col-sm-3 text-left">
+      <label for="ddItemCampus"><strong>Campus (Transfer To)</strong></label>
+    </th>
+	<th class="col-xs-3 col-sm-3 text-left"><label for="room"><strong>Room</strong></label></th>
+  </tr>
+  <tr>
+    <td class="col-xs-3 col-sm-3 text-left">
+      <select id="ddItemCampus" name="ddItemCampus">
+        <option value=""></option>
+        <option value="AuburnHills">Auburn Hills</option>
+        <option value="HighlandLakes">Highland Lakes</option>
+        <option value="OrchardRidge">Orchard Ridge</option>
+        <option value="RoyalOak">Royal Oak</option>
+        <option value="Southfield">Southfield</option>
+      </select>
+    </td>
+	<td class="col-xs-3 col-sm-3 text-left"><input id="room" name="room" /></td>
+  </tr>
+</tbody>
+</table>
+
+<table cellpadding="6">
+<tbody data-bind="visible: ddItemCondition() === 'NonOperational' ">
+<tr>
+    <th class="col-xs-3 col-sm-3 text-left">
+      <label for="itemNonOperationalCondition"><strong>What is wrong with it?</strong></label>
+    </th>
+  </tr>
+  <tr>
+    <td class="col-xs-3 col-sm-3 text-left">
+      <textarea id="itemNonOperationalCondition" name="itemNonOperationalCondition" style="width:100%;"></textarea>
+    </td>
+  </tr>
+  
+</tbody>
+</table>
+
+<table cellpadding="6">
+<tbody data-bind="visible: ddItemCondition() === 'Other' ">
+<tr>
+    <th class="col-xs-3 col-sm-3 text-left">
+      <label for="itemOtherCondition"><strong>Other</strong></label>
+    </th>
+  </tr>
+  <tr>
+    <td class="col-xs-3 col-sm-3 text-left">
+      <textarea id="itemOtherCondition" name="itemOtherCondition" style="width:100%;"></textarea>
+    </td>
+  </tr>
+</tbody>
+</table>
+
+<table cellpadding="6">
+<tbody>
+<tr>
+    <th class="col-xs-3 col-sm-3 text-left">
+      <input id="chkOver5K" name="chkOver5K" type="checkbox" data-bind="checked: chkOver5K" />
+	  <label for="chkOver5K"><strong> Item over $5k</strong></label>
+	  
+    </th>
+	<th class="col-xs-3 col-sm-3 text-left">
+      <input id="chkItemGrantFunded" name="chkItemGrantFunded" type="checkbox" /> 
+	  <label for="chkItemGrantFunded"><strong>Grant Funded</strong></label>
+    </th>
+	  <th class="col-xs-3 col-sm-3 text-left"><button type="button" class="btn-sm btn-delete-item" style="background: #cf5851; color: #ffffff; border: none" ata-bind="dynamicListRemoveRow: true" aria-label="Delete item">X</button></th>
+  </tr>
+
+</tbody>
+</table>
+<!-- ROW 8 LINE AT THE BOTTOM -->
+<div>
+ <hr style="border-color:#000000; border-width:2px; width: 100%" />
+</div>
+</div></span>
+                </div>
+            </div>
+            <div id="quickInputsRow3591212" name="quickInputsRow" class="text-left row addItem addItemButton "
+            data-bind="visible: ( ( chkEquipmentFurniture() ) ) ">
+                <div id="col36012" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="quickInputsRow36112" name="quickInputsRow" class="text-left  "></p>
+                </div>
+                <div id="quickInputsColumn36212" name="quickInputsColumn1" class="col-xs-4 col-sm-4 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <button id="addItemBtn" name="addItemBtn" class="col-xs-12 col-sm-12 text-center btn btn-primary "
+                    style="" undefined="">Add another Item</button>
+                </div>
+                <div id="col624" class="col-xs-4 col-sm-4 text-left  ">
+                    <button id="removeItemBtn" name="removeItemBtn" class="col-xs-12 col-sm-12 text-left btn btn-danger "
+                    style="" undefined="">Remove Last Item</button>
+                </div>
+                <div id="col41712" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="ele42312" name="ele423" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="quickHeadingRow6591414" name="quickHeadingRow" class="text-left row approvalHeader "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn66914" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingRow659914" name="quickHeadingRow659914" class="text-center  "
+                    style=" font-weight: bold; ">Approvals</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow500" name="quickInputsRow" class="text-left row supervisor ">
+                <div id="quickInputsColumn501" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSign">Supervisor: Please Enter Your Name</label>
+                        <input id="supervisorSign" name="supervisorSign"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn503" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSignDate">Date</label>
+                        <input id="supervisorSignDate" name="supervisorSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow506" name="quickInputsRow" class="text-left row facilities ">
+                <div id="quickInputsColumn507" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="facilitiesManagerSign">Facilities Manager: Please Enter Your Name</label>
+                        <input id="facilitiesManagerSign"
+                        name="facilitiesManagerSign" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn509" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="facilitiesManagerSignDate">Date</label>
+                        <input id="facilitiesManagerSignDate" name="facilitiesManagerSignDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow512" name="quickInputsRow" class="text-left row vcadmin ">
+                <div id="quickInputsColumn513" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vcAdminSrvcSign">VC Administrative Services: Please Enter Your Name</label>
+                        <input id="vcAdminSrvcSign"
+                        name="vcAdminSrvcSign" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn515" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vcAdminSrvcSignDate">Date</label>
+                        <input id="vcAdminSrvcSignDate" name="vcAdminSrvcSignDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow518" name="quickInputsRow" class="text-left row auxservices ">
+                <div id="quickInputsColumn519" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="auxiliaryServicesSign">Auxiliary Services: Please Enter Your Name</label>
+                        <input id="auxiliaryServicesSign"
+                        name="auxiliaryServicesSign" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn521" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="auxiliaryServicesSignDate">Date</label>
+                        <input id="auxiliaryServicesSignDate" name="auxiliaryServicesSignDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow4402222" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn44122" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_44222" name="hr_52" class="text-left  " style=" border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="row550" class="text-left row developer ">
+                <div id="col551" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="actionType">actionType (hidden)</label>
+                        <input id="actionType" name="actionType" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col576" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="selectedCampus">selectedCampus (hidden)</label>
+                        <input id="selectedCampus" name="selectedCampus"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col584" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ReviewStatus">ReviewStatus (hidden)</label>
+                        <input id="ReviewStatus" name="ReviewStatus"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col597" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="isOver5k">isOver5k (hidden)</label>
+                        <input id="isOver5k" name="isOver5k" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col606" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="serialNumberArray">serialNumberArray (hidden)</label>
+                        <input id="serialNumberArray" name="serialNumberArray"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col627" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="isVehicle">isVehicle (hidden)</label>
+                        <input id="isVehicle" name="isVehicle" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

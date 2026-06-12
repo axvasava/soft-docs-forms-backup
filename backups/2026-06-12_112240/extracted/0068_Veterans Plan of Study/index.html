@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row131" class="text-left row fd-form-masthead ">
+                <div id="col132" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn133" name="revisedOn" class="col-sm-12 text-right  ">Revised 03/25</span>
+                </div>
+                <div id="col134" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele135" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col136" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele137" name="ele21" class="text-left form-title ">Veterans Plan of Study</h1>
+                </div>
+                <div id="col138" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele139" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row127" class="text-left row ">
+                <div id="col128" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote129" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickParagraphRow12" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn13" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_14" name="p_263" class="text-left  ">In compliance with the U.S. Department of Veterans Affairs (VA) regulations,
+                        Oakland Community College (OCC) assists students in the selection of courses
+                        appropriate to their selected program. This form should only be completed
+                        when the student desires to establish or change a degree program which
+                        will lead to the completion of OCC degree requirements.
+                        <br />
+                        <br />A minimum GPA of 2.0 is required to graduate. Refer to OCC Academic Sanctions
+                        policy in the OCC catalog regarding maintenance of Good Academic Standing</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow16" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn17" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall18" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">TO BE COMPLETED BY THE STUDENT:</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow20" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn21" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn23" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Student ID Number</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickDropdownRow26" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn27" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="veteransBenefit">Veteran's Benefit</label>
+                    <select id="veteransBenefit" name="veteransBenefit"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="CH 30 (Montgomery) ">CH 30 (Montgomery)</option>
+                        <option value="CH 33 (Post 9/11) ">CH 33 (Post 9/11)</option>
+                        <option value="CH 35 (Dependent) ">CH 35 (Dependent)</option>
+                        <option value="CH 1606 (Reservist) ">CH 1606 (Reservist)</option>
+                        <option value="CH 31 (Vocational Rehabilitation) ">CH 31 (Vocational Rehabilitation)</option>
+                    </select>
+                </div>
+                <div id="col52" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="counselorSelect">Please select your Counselor/Advisor.</label>
+                        <input id="counselorSelect"
+                        name="counselorSelect" class="text-left  " required="required" placeholder="type to refine search"
+                        data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Users_from_Counselors_Group',  clearOnFocus: true,  validate: true,  labelMask: ['UserName'],  formFields: {'studentsSelectedCounselorEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickParagraphRow1266" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn136" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_146" name="p_146" class="text-left  "><strong>By entering my name below and submitting this form I acknowledge the following:</strong>
+                        <br
+                        />
+                        <br />I understand that only courses required to complete the program of study
+                        listed below are eligible for certification with the VA. This includes
+                        required prerequisites and course substitutions. I also understand that
+                        any course substitutions must be documented with the official approval
+                        from the appropriate academic department.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow2077" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn217" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSignature">Student: Enter Name</label>
+                        <input id="studentSignature" name="studentSignature"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn237" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSignatureDate">Signature Date</label>
+                        <input id="studentSignatureDate" name="studentSignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow112" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn113" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_114" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow161111" name="quickHeadingRow" class="text-left row counselor "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1711" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1811" name="quickHeadingSmall1811" class="text-center  "
+                    style=" font-weight: bold; ">TO BE COMPLETED BY AN OCC COUNSELOR / ADVISOR:</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow59" name="quickInputsRow" class="text-left row counselor ">
+                <div id="quickInputsColumn60" name="quickInputsColumn1" class="col-xs-12 col-sm-9 text-left  ">
+                    <div class="text-left  ">
+                        <label for="degreeProgram">Name of OCC Degree Program</label>
+                        <input id="degreeProgram" name="degreeProgram"
+                        class="text-left  " placeholder="Start typing to search." type="text" data-bind="autocomplete: { localSource: 'programsDropdown',  minSearchLength: 2,  clearOnFocus: true,  validate: true,  labelMask: ['title', ' | ', 'code'],  selectedMask: ['title'],  formFields: {'programCode':'code'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn62" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="programCode">Program Code</label>
+                        <input id="programCode" name="programCode" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickDropdownRow76" name="quickDropdownRow" class="text-left row counselor ">
+                <div id="quickDropdownColumn77" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="catalogYear">Catalog Year for Evaluation of Degree Program</label>
+                    <select id="catalogYear"
+                    name="catalogYear" class="text-left  " data-bind="dynamicYear: { format: 'YYYY-YY[-1,  1]' } ">
+                        <option value=""></option>
+                        <option value="Option1">Option1</option>
+                        <option value="Option2">Option2</option>
+                        <option value="Option3">Option3</option>
+                        <option value="Option4">Option4</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickParagraphRow12661717" name="quickParagraphRow" class="text-left row counselor "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn13617" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_14617" name="p_14617" class="text-left  "><strong>By entering my name below and submitting this form I acknowledge the following:</strong>
+                        <br
+                        />
+                        <br />The requirements for the completion of the above degree, for the catalog
+                        year indicated, have been explained to the student. A copy of the degree
+                        evaluation (PSPR ) has been attached to this form and a copy has been given
+                        to the student for their records.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow95" name="quickInputsRow" class="text-left row counselor ">
+                <div id="quickInputsColumn96" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="counselorSignature">Counselor/Advisor: Enter Name</label>
+                        <input id="counselorSignature" name="counselorSignature"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn98" name="quickInputsColumn2" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="extension">Ext.</label>
+                        <input id="extension" name="extension" class="text-left  "
+                        type="text" data-bind="mask: '9999' " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn100" name="quickInputsColumn3" class="col-xs-12 col-sm-2 text-left  ">
+                    <label for="campus">Campus</label>
+                    <select id="campus" name="campus" class="text-left  ">
+                        <option value=""></option>
+                        <option value="AH ">AH</option>
+                        <option value="HL ">HL</option>
+                        <option value="OR ">OR</option>
+                        <option value="RO ">RO</option>
+                        <option value="SF ">SF</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn102" name="quickInputsColumn4" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="counselorSignatureDate">Date</label>
+                        <input id="counselorSignatureDate" name="counselorSignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow116" name="quickInputsRow" class="text-left row counselor ">
+                <div id="quickInputsColumn117" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_118" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow45" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn46" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall47" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow49" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn50" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentsSelectedCounselorEmail">studentsSelectedCounselorEmail (hidden)</label>
+                        <input id="studentsSelectedCounselorEmail"
+                        name="studentsSelectedCounselorEmail" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col105" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col108" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vaDocType">vaDocType (hidden)</label>
+                        <input id="vaDocType" name="vaDocType" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col119" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicYear">academicYear (hidden)</label>
+                        <input id="academicYear" name="academicYear"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

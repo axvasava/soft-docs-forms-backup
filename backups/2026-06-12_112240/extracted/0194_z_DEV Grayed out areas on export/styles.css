@@ -1,0 +1,14 @@
+/* Normal readonly styling (what you currently do inline) */
+.is-autocomplete-readonly {
+  pointer-events: none;
+  background-color: #f5f5f5;
+  color: #555;
+}
+
+/* Export mode: force white backgrounds everywhere */
+.is-export-mode input,
+.is-export-mode textarea,
+.is-export-mode select,
+.is-export-mode .is-autocomplete-readonly {
+  background-color: #ffffff !important;
+}

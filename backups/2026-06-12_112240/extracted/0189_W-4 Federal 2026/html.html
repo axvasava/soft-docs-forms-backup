@@ -1,0 +1,2595 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>W4</title>
+		<link href="loading.css" rel="stylesheet" type="text/css" />       
+		<link href="css.css" rel="stylesheet" type="text/css" />       
+    </head>
+   <!-- <div class="loading"></div>-->
+    <body>
+    <table class="style24" width="700" height="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="2457" colspan="3" align="center" valign="top">
+                <form name="mainform" id="mainform">
+                    <div class="page" id="pg1">
+                        <div class="sectionArea">
+                            <table width="100%" border="0" cellpadding="2" cellspacing="0" class="doc">
+                                <tr>
+                                    <td width="16%" class="blackTextSmaller" style="font-size:8px;text-align:justify; border-right: 1px solid black;">
+                                        Form<span class="blackHeading"> W-4</span><br /> Department of the Treasury
+                                        <br /> Internal Revenue Service
+                                    </td>
+                                    <td class="blackTextBold" align="center" style="padding:0 0px;">
+                                        Employee's Withholding Certificate
+                                        <br />
+                                        <span class="blackTextSmaller" style="font-size:9px;display:block;text-align:center;margin-top:5px;">
+                                            
+                                            <b>
+                                                Complete Form W-4 so that your employer can withhold the correct federal income tax from your pay.
+                                            </b>
+                                            
+                                            <b>
+                                                Give Form W-4 to your employer.
+                                            </b>
+                                            <br />
+                                            
+                                            <b>
+                                                Your withholding is subject to review by the IRS.
+                                            </b>
+                                        </span>
+                                    </td>
+                                    <td class="blackTextSmaller" align="center" width="14%" style="font-size:8px;text-align:center;border-left: 1px solid black;">
+                                        OMB. No. 1545-0074
+                                        <hr />
+                                        <br /><span class="blackHeading">2026</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="font-weight:bold;" class="borderTop borderBottom" rowspan="4" valign="top">
+                                        Step 1:<br />
+                                        Enter<br />Personal<br />
+                                        Information
+                                    </td>
+                                    <td class="blackTextSmall borderTop borderLeft">
+                                        <span style="margin-left:5px;">
+                                            <b>(a)</b> First name and middle initial
+                                        </span><br />
+                                        <input type="text" id="employeeFirstName" name="employeeFirstName" size="25" readonly />
+                                    </td>
+                                    <td class="borderLeft borderRight borderTop blackTextSmall">
+                                        <span style="margin-left:5px;">
+                                            Last name
+                                        </span>
+                                        <br />
+                                        <input type="text" id="employeeLastName" name="employeeLastName" size="25" readonly />
+                                    </td>
+                                    <td class="borderTop borderBottom blackTextSmall">
+                                        <span style="margin-left:5px;">
+                                            <b>(b) Social security number</b>
+                                        </span>
+                                        <br />
+                                        <input type="text" id="originatorSSN" name="originatorSSN" data-bind="mask: '999-99-9999' " size="30" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="blackTextSmall borderLeft borderTop">
+                                        <span style="margin-left:5px;">
+                                            Address
+                                        </span>
+                                        <br />
+                                        <input type="text" id="homeAddress" name="homeAddress" size="55" />
+                                    </td>
+                                    <td rowspan="2" class="blackTextSmall borderLeft">
+                                        <span class="style14" style="font-family: 'Wingdings 3'; padding-right: 3px;">u</span>
+                                        <b>
+                                            Does your name match the name on your social security card?
+                                        </b> If not, to enure you get credit for your earnings, contact SSA at 800-772-1213 or go to <a href="https://www.ssa.gov/" target="_blank">www.ssa.gov</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="blackTextSmall borderTop borderLeft">
+                                        <span style="margin-left:5px;">
+                                            City or town, state, and ZIP code
+                                            <br />
+                                        </span>
+                                        <input type="text" id="cityTown" name="cityTown" size="55" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="blackTextSmall borderTop borderLeft borderBottom" align="top">
+                                        <span style="margin-left:5px;">
+                                            <b>(c)</b>
+                                        </span>
+                                        <label for="maritalStatusS">
+                                            <input type="radio" id="maritalStatusS" name="MaritalStatus" value="S" required>
+                                            <b>Single or Married filing separately</b>
+                                        </label>
+                                        <br />
+                                        <span style="margin-left:20px;">
+                                            <label for="maritalStatusM">
+                                                <input type="radio" id="maritalStatusM" name="MaritalStatus" value="M">
+                                             <b>Married filing jointly</b> or <b>Qualifying surviving spouse</b>
+                                            </label>
+                                        </span>
+                                        <br />
+                                        <span style="margin-left:20px;">
+                                            <label for="maritalStatusH">
+                                                <input type="radio" id="maritalStatusH" name="MaritalStatus" value="H">
+                                                <b>Head of household</b> <span style="font-size:6pt;">(Check only if you're unmarried and pay more than half the costs of keeping up a home for yourself and a qualifying individual.)</span>
+                                            </label>
+                                        </span>
+                                        <br />
+                                        <span class="blackTextSmall borderTop" align="top" style="font-size: 7pt; display: inline-block;">
+                                            <b>Caution:</b> To claim certain credits or deductions on your tax return, you (and/or your spouse if married filing jointly) are required to have a social security number valid for employment. See page 2 for more information.
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="4">
+                                       
+                                        <p> <b>TIP:</b>
+                                            Consider using the estimator at <a href="www.irs.gov/W4App" target="_blank">www.irs.gov/W4App</a> to determine the most accurate withholding for the rest of the year if: you
+                                            are completing this form after the beginning of the year; expect to work only part of the year; or have changes during the year in your
+                                            marital status, number of jobs for you (and/or your spouse if married filing jointly), dependents, other income (not from jobs),
+                                            deductions, or credits. Have your most recent pay stub(s) from this year available when using the estimator. At the beginning of next
+                                            year, use the estimator again to recheck your withholding.     
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="borderBottom blackTextSmall">
+                                        <br />
+                                        <b>Complete Steps 2-4 ONLY if they apply to you; otherwise, skip to Step 5.</b> . See page 2 for more information on each step, who can claim exemption from withholding, and when to use the estimator at <a target="_blank" href="https://www.irs.gov/W4App">www.irs.gov/W4App</a>.
+                                        <br />
+                                        <br />
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td rowspan="4" style="font-weight:bold;" valign="top" width="16%">
+                                        Step 2:
+                                        <br />
+                                        Multiple Jobs<br />
+                                        or Spouse<br />
+                                        Works
+                                    </td>
+                                    <td class="blackTextSmall">
+                                        Complete this step if you (1) hold more than one job at a time, or (2) are married filing jointly and your spouse also works. The correct amount of withholding depends on income earned from all of these jobs.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="blackTextSmall">Do <b>only one</b> of the following.<br /><br /></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="blackTextSmall">
+                                        <b>(a)</b> Use the estimator at <a target="_blank" href="https://www.irs.gov/W4App">www.irs.gov/W4App</a> for most accurate withholding for this step (and Steps 3–4). If you or your spouse have self-employment income, use this option; <b>or</b>
+                                        <br /><br />
+                                        <b>(b)</b> Use the Multiple Jobs Worksheet on page 3 and enter the result in Step 4(c) below; <b>or</b>
+                                        <br /><br />
+                                        <b>(c)</b> If there are only two jobs total, you may check this box. Do the same on Form W-4 for the other job. This option is generally more accurate than Step 2(b) if pay at the lower paying job is more than half of the pay at the higher paying job. Otherwise, Step 2(b) is more accurate . . . .  
+                                        <input type="checkbox" id="twojobs" name="twojobs">
+                                        <br />
+                                        <br />
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td colspan="2" class="blackTextSmall borderBottom">
+                                        <b>Complete Steps 3-4(b) on Form W-4 for only ONE of these jobs.</b> Leave those steps blank for the other jobs. (Your withholding will be most accurate if you complete Steps 3-4(b) on the Form W-4 for the highest paying job.)
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td rowspan="4" style="font-weight:bold;" valign="top" width="16%">
+                                        Step 3:
+                                        <br />
+                                        Claim<br />
+                                        Dependent<br />
+                                        and Other<br />
+                                        Credits<br />
+                                    </td>
+                                    <td class="blackTextSmall">
+                                        If your total income will be $200,000 or less ($400,000 or less if married filing jointly):
+                                    </td>
+                                    <td class="borderRight"></td>
+                                    <td class="borderRight"><!----></td>
+                                </tr>
+                                <tr>
+                                    <td height="15px;"><!----></td>
+                                    <td height="15px;" class="borderRight"><!----></td>
+                                    <td height="15px;" class="borderRight"><!----></td>
+                                    <td height="15px;"><!----></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="borderRight blackTextSmall" >
+                                        <b>(a)</b> Multiply the number of qualifying children under age 17 by $2,200 . . . . . . . . . . . . . . .$<input type="text" id="Under17DeductionAmtNewW4" name="Under17DeductionAmtNewW4" data-bind="numeric: { type: 'decimal' } " size="8" />
+                                    </td>
+                                    <td class="borderRight"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td height="15px;"><!----></td>
+                                    <td height="15px;" class="borderRight"><!----></td>
+                                    <td height="15px;" class="borderRight"><!----></td>
+                                    <td height="15px;"><!----></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class=" blackTextSmall" align="right">
+                                        <b>(b)</b> Multiply the number of other dependents by $500. . . . . . . . . . . . . . . . . . . . . . . . . . . .$<input type="text" id="OtherDependentDeductionAmtNewW4" name="OtherDependentDeductionAmtNewW4" data-bind="numeric: { type: 'decimal' } " size="8" />
+                                    </td>
+                                    <td class="borderRight blackTextSmall"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td height="15px;"><!----></td>
+                                    <td height="15px;" class=""><!----></td>
+                                    <td height="15px;" class="borderRight"><!----></td>
+                                    <td height="15px;"><!----></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class=" blackTextSmall borderBottom" style="padding-left: 110px;">
+                                        Add the amounts from Steps 3(a) and 3(b), plus the amount for other credits. Enter the
+                                        <br>total here . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                    </td>
+                                
+                                    <!-- THIS is the missing spacer column -->
+                                    <td class="borderRight blackTextSmall borderBottom"></td>
+                                
+                                    <!-- This now lines up with 4(a)/4(b)/4(c) -->
+                                    <td class="borderRight blackTextSmall borderBottom" align="center" valign="bottom">
+                                        <b>3</b>
+                                    </td>
+                                
+                                    <!-- This now lines up with the other totals -->
+                                    <td class="blackTextSmall borderBottom">
+                                        $<input type="text" id="total_dependents" name="total_dependents"
+                                            data-bind="numeric: { type: 'decimal' } ,calculate: 'Under17DeductionAmtNewW4 + OtherDependentDeductionAmtNewW4' "
+                                            size="5" placeholder="0.00" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3" style="font-weight:bold;" valign="top">
+                                        Step 4
+                                        <br />
+                                        Other<br />
+                                        Adjustments<br />
+                                    </td>
+                                    <td class="blackTextSmall borderRight" colspan="2">
+                                        <b>(a) Other income (not from jobs).</b> If you want tax withheld for other income you expect <br />this year that won't have withholding, enter the
+                                        amount of other income here. This may<br /> include interest, dividends, and retirement income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .<br /><br />
+                                    </td>
+                                    <td class="blackTextSmall borderRight borderBottom" valign="bottom"><b>4(a)</b></td>
+                                    <td class="blackTextSmall borderBottom" valign="bottom">$<input type="text" id="OtherIncomeNewW4" name="OtherIncomeNewW4" data-bind="numeric: { type: 'decimal' } " size="4" /></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="borderRight blackTextSmall">
+                                        <b>(b) Deductions.</b> Use the Deductions Worksheet on page 4 to determine the amount of <br>
+                                        deductions you may claim, which will reduce your withholding. (If you skip this line, <br>
+                                        your withholding will be based on the standard deduction.) Enter the result here . . . . . . . . . . . . . .<br /><br />
+                                    </td>
+                                    <td class="borderRight blackTextSmall borderBottom" valign="bottom"><b>4(b)</b></td>
+                                    <td class="blackTextSmall borderBottom" valign="bottom">$<input type="text" id="OtherDeductionsNewW4" name="OtherDeductionsNewW4" data-bind="numeric: { type: 'decimal' } " size="4" /></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="borderRight blackTextSmall" valign="bottom">
+                                        <b>(c) Extra withholding.</b> Enter any additional tax you want withheld each <b>pay period</b> .<br />
+                                    </td>
+                                    <td class="borderRight blackTextSmall borderBottom" valign="bottom"><b>4(c)</b></td>
+                                    <td class="blackTextSmall borderBottom" valign="bottom">$<input type="text" id="AddtExempt" name="AddtExempt" data-bind="numeric: { type: 'decimal' } " size="4" /></td>
+                                </tr>
+                                <!--<tr>
+                                    <td colspan="5" align="right">
+                                        <table>
+                                            <tr>
+                                                <td class="blackTextSmall">To claim exemption from withholding type "Exempt" into the field below Step 4(c).</td>
+                                                <td>
+                                                    <input type="text" id="exempt" name="exempt" size="10" class="centerText blackTextBold" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>-->
+                                <tr>
+                                    <td colspan="4"><br /></td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td rowspan="3" valign="top" class="borderTop borderRight borderBottom" width="13%">
+                                        Exempt from
+                                        <br />
+                                        Withholding
+                                        <br />
+                                        <br />
+                                    </td>
+                                    <td></td>
+                                    <td style="margin-left: 10px;" class="blackTextSmall borderTop" valign="top" colspan="2">
+                                        I claim exemption from withholding for 2026, and I certify that I meet both of the conditions for exemption for<br>
+                                        2026. See Exemption from withholding on page 2. I understand I will need to submit a new Form W-4 for 2027 .
+                                    </td>
+                                    <td class="borderTop " align="center" valign="top" width="5%">
+                                        <input type="checkbox" id="exemptCheckbox" name="exemptCheckbox" />
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td rowspan="3" style="font-weight:bold;" valign="top" class="borderTop borderRight borderBottom" width="13%">
+                                        Step 5:
+                                        <br />
+                                        Sign
+                                        <br />
+                                        Here
+                                        <br />
+                                        <br />
+                                    </td>
+                                    <td></td>
+                                    <td class="blackTextSmall borderTop" valign="top" colspan="2"><span style="margin-left:5px;">Under penalties of perjury, I declare that this certificate, to the best of my knowledge and belief, is true, correct, and</span> <span style="margin-left:5px;">complete.</span></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input type="text" id="emp_sig" name="emp_sig" size="55" required/></td>
+                                    <td><input type="text" id="originationDate" name="originationDate" size="20" data-bind="originationDate, autosave: true" readonly="readonly"/></td>
+                                </tr>
+                                <tr>
+                                    <td class="blackTextSmall borderBottom"></td>
+                                    <td class="blackTextSmall borderBottom"><span style="margin-left:18px;"><b>Employee's signature</b>(This form is not valid unless you sign it.)</span></td>
+                                    <td class="blackTextSmall borderBottom"><span style="margin-left:18px;"><b>Date</b></span></td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td rowspan="2" style="font-weight:bold;" valign="top" class="borderRight borderBottom" width="13%">
+                                        Employers
+                                        <br />
+                                        Only
+                                    </td>
+                                    <td class="blackTextSmall borderRight" valign="top"><span style="margin-left:5px;">Employer's name and address</span></td>
+                                    <td class="blackTextSmall borderRight" valign="top"><span style="margin-left:5px;">First date of</span><br /><span style="margin-left:5px;">employment</span></td>
+                                    <td class="blackTextSmall" valign="top"><span style="margin-left:5px;">Employer identification</span><br /><span style="margin-left:5px;">number (EIN)</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="borderRight borderBottom"><textarea id="emp_address" name="emp_address" rows="4" cols="50"></textarea></td>
+                                    <td class="borderRight borderBottom" valign="bottom"><input type="text" id="emp_start_date" name="emp_start_date" data-bind="datepicker" size="15" /></td>
+                                    <td valign="bottom" class="borderBottom"><input type="text" id="ein" name="ein" size="15" /></td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="blackTextSmall"><b>For Privacy Act and Paperwork Reduction Act Notice, see page 4.</b></td>
+                                    <td class="blackTextSmall hidden"><input type="text" name="originatorErpId" id="originatorErpId"/></td> <!-- added 1/14/26 EHP -->
+                                    <td class="blackTextSmall">Cat. No. 10220Q</td>
+                                    <td align="right"><span class="blackTextSmall">Form</span> <b>W-4</b> <span class="blackTextSmall">(2026) Created 12/8/25</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br />
+                    </div>
+                    <br />
+                    <!-- Begin Page 2-->
+                    <br />
+                    <div style="page-break-before: always;"></div>
+                    <div class="page" id="pg2">
+                        <br />
+                        <table width="650" border="0" cellpadding="2" cellspacing="0">
+                            <tr>
+                                <td class="blackTextSmall">
+                                    Form W-4 (2026)
+                                </td>
+                                <td width="410px">
+                                    <!-- -->
+                                </td>
+                                <td class="blackTextSmall">
+                                    Page <b class="largeBold">2</b>
+                                </td>
+                            </tr>
+                        </table>
+                        <hr class="sectionBreak" />
+                        <table width="650" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <h1>General Instructions</h1>
+                                    Section references are to the Internal Revenue Code unless otherwise noted.
+
+                                    <h2>Future Developments</h2>
+                                    <p class="blackTextSmall">
+                                        For the latest information about developments related to
+                                        Form W-4, such as legislation enacted after it was published,
+                                        go to <a href="https://www.irs.gov/forms-pubs/about-form-w-4" target="_blank">www.irs.gov/FormW4</a>
+                                    </p>
+                                    <h2>Purpose of Form</h2>
+                                    <p class="blackTextSmall">
+                                        Complete Form W-4 so that your employer can withhold the
+                                        correct federal income tax from your pay. If too little is withheld,
+                                        you will generally owe tax when you file your tax return and may
+                                        owe a penalty. If too much is withheld, you will generally be due
+                                        a refund. Complete a new Form W-4 when changes to your
+                                        personal or financial situation would change the entries on the
+                                        form. For more information on withholding and when you must
+                                        furnish a new Form W-4, see Pub. 505, Tax Withholding and
+                                        Estimated Tax. 
+                                    </p>
+                                    <p class="blackTextSmall">
+                                        <b>Exemption from withholding.</b> You may claim exemption from
+                                        withholding for 2026 if you meet both of the following
+                                        conditions: you had no federal income tax liability in 2025 and
+                                        you expect to have no federal income tax liability in 2026. You
+                                        had no federal income tax liability in 2025 if (1) your total tax on
+                                        line 24 on your 2024 Form 1040 or 1040-SR is zero (or less than
+                                        the sum of lines 27a, 28, 29, and 30), or (2) you were not required to
+                                        file a return because your income was below the filing threshold
+                                        for your correct filing status. If you claim exemption, you will
+                                        have no income tax withheld from your paycheck and may owe
+                                        taxes and penalties when you file your 2026 tax return. To claim
+                                        exemption from withholding, certify that you meet both of the
+                                        conditions by checking the box in the Exempt from withholding section.
+                                        Then, complete Steps 1(a), 1(b), and 5. Do not
+                                        complete any other steps. You will need to submit a new Form
+                                        W-4 by February 16, 2027.
+                                    </p>
+                                    <p class="blackTextSmall">
+                                        <b>Your privacy.</b> . Steps 2(c) and 4(a) ask for information regarding
+                                        income you received from sources other than the job associated
+                                        with this Form W-4. If you have concerns with providing the
+                                        information asked for in Step 2(c), you may choose Step 2(b) as
+                                        an alternative; if you have concerns with providing the
+                                        information asked for in Step 4(a), you may enter an additional
+                                        amount you want withheld per pay period in Step 4(c) as an
+                                        alternative.  
+                                    </p>
+                                    <p class="blackTextSmall">
+                                        <b>When to use the estimator.</b>Consider using the estimator at
+                                        www.irs.gov/W4App if you:
+                                        <ol>
+                                            <li>Are submitting this form after the beginning of the year;</li>
+                                            <li>Expect to work only part of the year;</li>
+                                            <li>Have changes during the year in your marital status, number
+                                                of jobs for you (and/or your spouse if married filing jointly), or
+                                                number of dependents, or changes in your deductions or credits;
+                                            </li>
+                                            <li>Receive dividends, capital gains, social security, bonuses, or
+                                                business income, or are subject to the Additional Medicare Tax
+                                                or Net Investment Income Tax; or
+                                            </li>
+                                            <li>Prefer the most accurate withholding for multiple job situations</li>
+                                        </ol>
+                                    </p>
+                                    
+                                    <p class="blackTextSmall">
+                                        <b>TIP:</b>
+                                        Have your most recent pay stub(s) from this year available
+                                        when using the estimator to account for federal income tax that
+                                        has already been withheld this year. At the beginning of next
+                                        year, use the estimator again to recheck your withholding.
+                                    </p>
+                                    
+                                    <p class="blackTextSmall">
+                                        <b>Self-employment.</b>. Generally, you will owe both income and
+                                        self-employment taxes on any self-employment income you
+                                        receive separate from the wages you receive as an employee. If
+                                        you want to pay these taxes through withholding from your
+                                        wages, use the estimator at <a href="www.irs.gov/W4App" target="_blank">www.irs.gov/W4App</a> to figure the
+                                        amount to have withheld.
+                                    </p>
+                                    
+                                </td>
+                                <td width="20px;"></td>
+                                <td valign="top">
+                                    <p class="blackTextSmall">
+                                        <b>Nonresident alien.</b> If you’re a nonresident alien, see Notice
+                                        1392, Supplemental Form W-4 Instructions for Nonresident
+                                        Aliens, before completing this form
+                                    </p>
+                                    <h1>Specific Instructions</h1>
+                                    <p class="blackTextSmall">
+                                        <b>Step 1(c).</b> Check your anticipated filing status. This will
+                                        determine the standard deduction and tax rates used to
+                                        compute your withholding.
+                                    </p>
+                                    <p class="blackTextSmall">
+                                        <b>Step 2.</b> Use this step if you (1) have more than one job at the
+                                        same time, or (2)  are married filing jointly and you and your
+                                        spouse both work. Submit a separate Form W-4 for each job.
+                                        <br><br>
+                                        <span style="margin-left:10px;">Option <b>(a)</b> most accurately calculates the additional tax you
+                                        need to have withheld, while option <b>(b)</b> does so with a little less
+                                        accuracy.</span>
+                                        <br><br>
+                                        <span style="margin-left:10px;">Instead, if you (and your spouse) have a total of only two jobs,
+                                        you may check the box in option <b>(c)</b>. The box must also be
+                                        checked on the Form W-4 for the other job. If
+                                        checked, the standard deduction and tax brackets will be cut in
+                                        half for each job to calculate withholding. This option is accurate
+                                        for jobs with similar pay; otherwise, more tax than necessary
+                                        may be withheld.</span>
+                                    </p>
+                                    <p class="blackTextSmall">
+                                        <img src="Caution.GIF" alt="Caution" style="float:left;margin-right:5px;" />
+                                        <b>Multiple jobs.</b>
+                                        <i>
+                                            Complete Steps 3 through 4(b) on only
+                                            one Form W-4. Withholding will be most accurate if
+                                            you do this on the Form W-4 for the highest paying job.
+                                        </i>
+                                    </p>
+                                    <p class="blackTextSmall">
+                                        <b>Step 3.</b> This step provides instructions for determining the
+                                        amount of the child tax credit and the credit for other
+                                        dependents that you may be able to claim when you file your
+                                        tax return. To qualify for the child tax credit, the child must
+                                        be under age 17 as of December 31, must be your
+                                        dependent who generally lives with you for more than half
+                                        the year, and must have the required social security number.
+                                        You (and/or your spouse if married filing jointly) must have the 
+                                        required Social Security number to claim certain credits.
+                                        You may be able to claim a credit for other dependents for
+                                        whom a child tax credit can’t be claimed, such as an older
+                                        child or a qualifying relative. For additional eligibility
+                                        requirements for these credits, see Pub. 501, Dependents,
+                                        Standard Deduction, and Filing Information. You can also
+                                        include <b>other tax credits</b> for which you are eligible in this
+                                        step, such as the foreign tax credit and the education tax
+                                        credits. To do so, add an estimate of the amount for the year
+                                        to your credits for dependents and enter the total amount in
+                                        Step 3. Including these credits will increase your paycheck
+                                        and reduce the amount of any refund you may receive when
+                                        you file your tax return. 
+                                    </p>
+                                    <h4>Step 4</h4>
+                                    <p class="blackTextSmall">
+                                        <span style="margin-left:10px;"><b>Step 4(a).</b></span>Enter in this step the total of your other
+                                        estimated income for the year, if any. You shouldn’t include
+                                        income from any jobs or self-employment. If you complete
+                                        Step 4(a), you likely won’t have to make estimated tax
+                                        payments for that income. If you prefer to pay estimated tax
+                                        rather than having tax on other income withheld from your
+                                        paycheck, see Form 1040-ES, Estimated Tax for Individuals.
+                                    </p>
+                                    <p class="blackTextSmall">
+                                        <span style="margin-left:10px;"><b>Step 4(b).</b></span>Enter in this step the amount from the
+                                        Deductions Worksheet, line 15, if you expect to claim
+                                        deductions other than the basic standard deduction on your
+                                        2026 tax return and want to reduce your withholding to
+                                        account for these deductions. This includes both itemized
+                                        deductions and other deductions such as  qualified tips, 
+                                        overtime compensation, passenger vehicle loan interest, 
+                                        student loan interest, IRAs, and senior deductions. 
+                                        You must have the required Social Security number to claim c
+                                        ertain deductions. For additional eligibility requirements, 
+                                        see Pub. 501.
+                                    </p>
+                                    <p class="blackTextSmall">
+                                        <span style="margin-left:10px;"><b>Step 4(c).</b></span> . Enter in this step any additional tax you want
+                                        withheld from your pay each pay period, including
+                                        amounts from the Multiple Jobs Worksheet, line 4. Entering
+                                        an amount here will reduce your paycheck and will either
+                                        increase your refund or reduce any amount of tax that you
+                                        owe when you file your tax return.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="width: 100%; height: 50px;">
+                            <!-- -->
+                        </div>
+                    </div>
+                    <br />
+                    <!-- End PG 2-->
+                    <!-- Begin Pg 3-->
+                    <div style="page-break-before: always;"></div>
+                    <br />
+                    <div class="page" id="pg3">
+                        <br />
+                        <table width="650" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="blackTextSmall">
+                                    Form W-4 (2026)
+                                </td>
+                                <td width="410px">
+                                    <!-- -->
+                                </td>
+                                <td class="blackTextSmall">
+                                    Page <b class="largeBold">3</b>
+                                </td>
+                            </tr>
+                        </table>
+                        <hr class="sectionBreak" />
+                        <table width="650" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="center" class="borderBottom">
+                                    <h3><b>Step 2(b)—Multiple Jobs Worksheet</b> <i>(Keep for your records.)</i></h3>
+                                </td>
+                                <td align="right" class="borderBottom"><img src="Pencil.GIF" alt="Pencil" style="float:right;" /></td>
+                            </tr>
+                        </table>
+                        <br />
+                        <table width="650" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td colspan="4" class="blackTextSmall">
+                                    If you choose the option in Step 2(b) on Form W-4, complete this worksheet (which calculates the total extra tax for all jobs) on only <b>ONE</b><br />
+                                    Form W-4. Withholding will be most accurate if you complete the worksheet and enter the result on the Form W-4 for the highest paying job. To be accurate, submit a new Form W-4 for all other jobs if you have not updated your withholding since 2019.<br />
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="blackTextSmall">
+                                    <b>Note:</b> If more than one job has annual wages of more than $120,000 or there are more than three jobs, see Pub. 505 for additional tables<br />
+                                    or, you can use the online withholding estimator at <a href="https://www.irs.gov/individuals/tax-withholding-estimator" target="_blank">www.irs.gov/W4App</a>.
+                                    <br />
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px">
+                                    <b>1</b>
+                                </td>
+                                <td class="blackTextSmall">
+                                    <b>Two jobs.</b> If you have two jobs or you're married filing jointly and you and your spouse each have one<br />
+                                    job, find the amount from the appropriate table on page 5. Using the "Higher Paying Job" row and the<br />
+                                    "Lower Paying Job" column, find the value at the intersection of the two household salaries and enter<br />
+                                    that value on line 1. Then, <b>skip</b> to line 3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>1</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    $<input type="text" id="two_jobs" name="two_jobs" data-bind="numeric: { type: 'decimal' } " size="10" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" height="15px;"><!----></td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center">
+                                    <b>2</b>
+                                </td>
+                                <td class="blackTextSmall" colspan="3">
+                                    <b>Three jobs.</b> If you and/or your spouse have three jobs at the same time, complete lines 2a, 2b, and<br />
+                                    2c below. Otherwise, skip to line 3.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" height="15px;"><!----></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td class="blackTextSmall" valign="top" align="center" width="15px;">
+                                                <b>a</b>
+                                            </td>
+                                            <td class="blackTextSmall">
+                                                Find the amount from the appropriate table on page 5 using the annual wages from the highest<br />
+                                                paying job in the "Higher Paying Job" row and the annual wages for your next highest paying job<br />
+                                                in the "Lower Paying Job" column. Find the value at the intersection of the two household salaries<br />
+                                                and enter that value on line 2a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>2a</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    $<input type="text" id="2a" name="2a" data-bind="numeric: { type: 'decimal' } " size="10" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" height="15px;"><!----></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td class="blackTextSmall" valign="top" align="center" width="15px;">
+                                                <b>b</b>
+                                            </td>
+                                            <td class="blackTextSmall">
+                                                Add the annual wages of the two highest paying jobs from line 2a together and use the total as the<br />
+                                                wages in the "Higher Paying Job" row and use the annual wages for your third job in the "Lower<br />
+                                                Paying Job" column to find the amount from the appropriate table on page 5 and enter this amount
+                                                on line 2b . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>2b</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    $<input type="text" id="2b" name="2b" data-bind="numeric: { type: 'decimal' } " size="10" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" height="15px;"><!----></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td class="blackTextSmall" valign="top" align="center" width="15px;">
+                                                <b>c</b>
+                                            </td>
+                                            <td class="blackTextSmall">
+                                                Add the amounts from lines 2a and 2b and enter the result on line 2c . . . . . . . . . . . . . . . . . . . . . .
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>2c</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    $<input type="text" id="2c" name="2c" data-bind="numeric: { type: 'decimal' } " size="10" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" height="15px;"><!----></td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px">
+                                    <b>3</b>
+                                </td>
+                                <td class="blackTextSmall">
+                                    Enter the number of pay periods per year for the highest paying job. For example, if that job pays<br />
+                                    weekly, enter 52; if it pays every other week, enter 26; if it pays monthly, enter 12, etc. . . . . . . . . . . . .
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>3</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    $<input type="text" id="pay_period" name="pay_period" data-bind="numeric: { type: 'decimal' } " size="10" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" height="15px;"><!----></td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall " valign="top" align="center" width="25px">
+                                    <b>4</b>
+                                </td>
+                                <td class="blackTextSmall ">
+                                    <b>Divide</b> the annual amount on line 1 or line 2c by the number of pay periods on line 3. Enter this<br />
+                                    amount here and in <b>Step 4(c)</b> of Form W-4 for the highest paying job (plus any other<br /> additional
+                                    amount you want withheld) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                </td>
+                                <td class="blackTextSmall " valign="bottom" width="25px"><b>4</b></td>
+                                <td class="blackTextSmall " valign="bottom">
+                                    $<input type="text" id="divide" name="divide" data-bind="numeric: { type: 'decimal' } " size="13" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" height="5px;" class="borderBottom"><!----></td>
+                            </tr>
+                        </table>
+                    <div style="width: 100%; height: 50px;">
+                            <!-- -->
+                        </div>
+                    </div>
+                    <br />
+                        
+                        
+                    <br />
+                    <!-- End PG 3-->
+                    <!-- Begin Pg 4-->
+                    <div style="page-break-before: always;"></div>
+                    <br />
+                    <div class="page" id="pg4">
+                        <br />
+                        <table width="650" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="blackTextSmall">
+                                    Form W-4 (2026)
+                                </td>
+                                <td width="410px">
+                                    <!-- -->
+                                </td>
+                                <td class="blackTextSmall">
+                                    Page <b class="largeBold">4</b>
+                                </td>
+                            </tr>
+                        </table>
+                        <hr class="sectionBreak" />
+                        <table width="650" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="center" class="borderBottom">
+                                    <h3><b>Step 4(b)—Deductions Worksheet</b> <i>(Keep for your records.)</i></h3>
+                                </td>
+                                <td align="right" class="borderBottom"><img src="Pencil.GIF" alt="Pencil" style="float:right;" /></td>
+                            </tr>
+                        </table>
+                        <br />
+                        
+                        <table width="650" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td colspan="4" height="10px;"><!----></td>
+                            </tr>
+                            <tr>
+                               See the Instructions for Schedule 1-A (Form 1040) for more information about whether you qualify for the deductions on lines 1a, 1b, 1c, 3a, and 3b.
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px">
+                                    <b>1</b>
+                                </td>
+                                <td class="blackTextSmall">
+                                    Deductions for qualified tips, overtime compensation, and passenger vehicle loan interest.
+                                </td>
+                                <!--<td class="blackTextSmall" valign="bottom" width="25px"><b>1</b></td>-->
+                                <!--<td class="blackTextSmall borderBottom" valign="bottom">-->
+                                <!--    $<input type="text" id="est_deductions_total" name="est_deductions_total" data-bind="numeric: { type: 'decimal' }" size="12" />-->
+                                <!--</td>-->
+                            </tr>
+                            
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" style="padding-left: 20px;">
+                                    <b>a</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    <b>Qualified tips.</b> If your total income is less than $150,000 ($300,000 if married filing jointly), enter an estimate of your qualified tips up to $25,000.
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>1a</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_1a" name="4b_1a" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" style="padding-left: 20px;">
+                                    <b>b</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    <b>Qualified overtime compensation.</b> If your total income is less than $150,000 ($300,000 if married filing jointly), enter an estimate of your qualified overtime compensation up to $12,500 ($25,000 if married filing jointly) of the “and-a-half” portion of time-and-a-half compensation.
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>1b</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_1b" name="4b_1b" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" style="padding-left: 20px;">
+                                    <b>c</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    <b>Qualified passenger vehicle loan interest.</b> If your total income is less than $100,000 ($200,000 if married filing jointly), enter an estimate of your qualified passenger vehicle loan interest up to $10,000.
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>1c</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                   <input type="text" id="4b_1c" name="4b_1c" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px">
+                                    <b>2</b>
+                                </td>
+                                <td class="blackTextSmall" valign="bottom">
+                                    Add lines 1a, 1b, and 1c. Enter the result here . . . . . . . . . . . . . . . . . . .
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>2</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_2" name="4b_2" data-bind="numeric: { type: 'decimal' } " size="13" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px">
+                                    <b>3</b>
+                                </td>
+                                <td class="blackTextSmall">
+                                    <b>Seniors age 65 or older.</b> If your total income is less than $75,000 ($150,000 if married filing jointly):
+                                </td>
+                                <!--<td class="blackTextSmall" valign="bottom" width="25px"><b>1</b></td>-->
+                                <!--<td class="blackTextSmall borderBottom" valign="bottom">-->
+                                <!--    $<input type="text" id="est_deductions_total" name="est_deductions_total" data-bind="numeric: { type: 'decimal' }" size="12" />-->
+                                <!--</td>-->
+                            </tr>
+                            
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" style="padding-left: 20px;">
+                                    <b>a</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    Enter $6,000 if you are age 65 or older before the end of the year . . . . . . . . . . .
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>3a</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_3a" name="4b_3a" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" style="padding-left: 20px;">
+                                    <b>b</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    Enter $6,000 if your spouse is age 65 or older before the end of the year and has a social security 
+                                    number valid for employment . . . . . . . . . . . . . . . . . . . . . . . 
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>3b</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_3b" name="4b_3b" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px">
+                                    <b>4</b>
+                                </td>
+                                <td class="blackTextSmall" valign="bottom">
+                                    Add lines 3a and 3b. Enter the result here . . . . . . . . . . . . . . . . . . . . 
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>4</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_4" name="4b_4" data-bind="numeric: { type: 'decimal' } " size="13" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px">
+                                    <b>5</b>
+                                </td>
+                                <td class="blackTextSmall" valign="bottom">
+                                    Enter an estimate of your student loan interest, deductible IRA contributions, educator expenses, 
+                                    alimony paid, and certain other adjustments from Schedule 1 (Form 1040), Part II. See Pub. 505 for 
+                                    more information . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>5</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_5" name="4b_5" data-bind="numeric: { type: 'decimal' } " size="13" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px">
+                                    <b>6</b>
+                                </td>
+                                <td class="blackTextSmall">
+                                    <b>Itemized deductions.</b> Enter an estimate of your 2026 itemized deductions from Schedule A (Form
+                                    1040). Such deductions may include qualifying:
+                                </td>
+                                <!--<td class="blackTextSmall" valign="bottom" width="25px"><b>1</b></td>-->
+                                <!--<td class="blackTextSmall borderBottom" valign="bottom">-->
+                                <!--    $<input type="text" id="est_deductions_total" name="est_deductions_total" data-bind="numeric: { type: 'decimal' }" size="12" />-->
+                                <!--</td>-->
+                            </tr>
+                            
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" style="padding-left: 20px;">
+                                    <b>a</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    <b>Medical and dental expenses.</b>
+                                    Enter expenses in excess of 7.5% (0.075) of your total income . 
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>6a</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_6a" name="4b_6a" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" style="padding-left: 20px;">
+                                    <b>b</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    <b>State and local taxes.</b>
+                                    If your total income is less than $505,000 ($252,500 if married filing 
+                                    separately), enter state and local taxes paid up to $40,400 ($20,200 if married filing separately) 
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>6b</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_6b" name="4b_6b" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" style="padding-left: 20px;">
+                                    <b>c</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    <b>Home mortgage interest.</b>
+                                    If your home acquisition debt is less than $750,000 ($375,000 if
+                                    married filing separately), enter your home mortgage interest expense (including mortgage 
+                                    insurance premiums) . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>6c</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_6c" name="4b_6c" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" style="padding-left: 20px;">
+                                    <b>d</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    <b>Gifts to charities.</b>
+                                    Enter contributions in excess of 0.5% (0.005) of your total income . . . .
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>6d</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_6d" name="4b_6d" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" style="padding-left: 20px;">
+                                    <b>e</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    <b>Other itemized deductions.</b>
+                                    Enter the amount for other itemized deductions . . . . . . .
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>6e</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_6e" name="4b_6e" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px">
+                                    <b>7</b>
+                                </td>
+                                <td class="blackTextSmall" valign="bottom">
+                                    Add lines 6a, 6b, 6c, 6d, and 6e. Enter the result here . . . . . . . . . . . . . . . . 
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>7</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_7" name="4b_7" data-bind="numeric: { type: 'decimal' } " size="13" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px">
+                                    <b>8</b>
+                                </td>
+                                <td class="blackTextSmall">
+                                    <b>Limitation on itemized deductions.</b>
+                                </td>
+                                <!--<td class="blackTextSmall" valign="bottom" width="25px"><b>1</b></td>-->
+                                <!--<td class="blackTextSmall borderBottom" valign="bottom">-->
+                                <!--    $<input type="text" id="est_deductions_total" name="est_deductions_total" data-bind="numeric: { type: 'decimal' }" size="12" />-->
+                                <!--</td>-->
+                            </tr>
+                            
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" style="padding-left: 20px;">
+                                    <b>a</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    Enter your total income . . . . . . . . . . . . . . . . . . . . . . . . .
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>8a</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_8a" name="4b_8a" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" style="padding-left: 20px;">
+                                    <b>b</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    Subtract line 4 from line 8a. If line 4 is greater than line 8a, enter -0- here and on line 10. Skip line 9
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>8b</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_8b" name="4b_8b" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="blackTextSmall" valign="middle" align="center" width="25px">
+                                    <b>9</b>
+                                </td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td class="blackTextSmall">
+                                                Enter:
+                                            </td>
+                                            <td>
+                                                <span style="font-size:26pt;">{</span>
+                                            </td>
+                                            <td class="blackTextSmall">
+                                                <ul>
+                                                    <li>$768,700 if you’re married filing jointly or a qualifying surviving spouse</li>
+                                                    <li>$640,600 if you’re single or head of household</li>
+                                                    <li>$384,350 if you’re married filing separately</li>
+                                                </ul>
+                                            </td>
+                                            <td valign="middle">
+                                                <span style="font-size:26pt;">}</span><span class="blackTextSmall">. . . . . . .</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>9</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_9" name="4b_9" data-bind="numeric: { type: 'decimal' } " size="13" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="bottom" align="center" width="25px">
+                                    <b>10</b>
+                                </td>
+                                <td class="blackTextSmall" valign="bottom">
+                                    If line 9 is greater than line 8b, enter the amount from line 7. Otherwise, multiply line 7 by 94% (0.94) 
+                                    and enter the result here . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>10</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_10" name="4b_10" data-bind="numeric: { type: 'decimal' } " size="13" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="middle" align="center" width="25px">
+                                    <b>11</b>
+                                </td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            
+                                            Standard deduction
+                                        </tr>
+                                        <tr>
+                                            <td class="blackTextSmall">
+                                                Enter:
+                                            </td>
+                                            <td>
+                                                <span style="font-size:26pt;">{</span>
+                                            </td>
+                                            <td class="blackTextSmall">
+                                                <ul>
+                                                    <li>$32,200 if you’re married filing jointly or a qualifying surviving spouse</li>
+                                                    <li>$24,150 if you’re head of household</li>
+                                                    <li>$16,100 if you’re single or married filing separately</li>
+                                                </ul>
+                                            </td>
+                                            <td valign="middle">
+                                                <span style="font-size:26pt;">}</span><span class="blackTextSmall">. . . . . . .</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>11</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_11" name="4b_11" data-bind="numeric: { type: 'decimal' } " size="13" />
+                                </td>
+                            </tr>
+            
+                            
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" >
+                                    <b>12</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    <b>Cash gifts to charities.</b> If you take the standard deduction, enter cash contributions up to $1,000
+                                    ($2,000 if married filing jointly) . . . . . . . . . . . . . . . . . . . . . . . . 
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>12</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_12" name="4b_12" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" >
+                                    <b>13</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    Add lines 11 and 12. Enter the result here . . . . . . . . . . . . . . . . . . . .
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>13</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_13" name="4b_13" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" >
+                                    <b>14</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    If line 10 is greater than line 13, subtract line 11 from line 10 and enter the result here. If line 13 is 
+                                    greater than line 10, enter the amount from line 12 . . . . . . . . . . . . . . . . . 
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>14</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_14" name="4b_14" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall" valign="top" align="center" width="25px" >
+                                    <b>15</b>
+                                </td>
+                                <td class="blackTextSmall" >
+                                    Add lines 2, 4, 5, and 14. Enter the result here and in Step 4(b) of Form W-4 . . . . . . . . .
+                                </td>
+                                <td class="blackTextSmall" valign="bottom" width="25px"><b>15</b></td>
+                                <td class="blackTextSmall" valign="bottom" width="5px"><b>$</b></td>
+                                <td class="blackTextSmall borderBottom" valign="bottom">
+                                    <input type="text" id="4b_15" name="4b_15" data-bind="numeric: { type: 'decimal' }" size="13" />
+                                </td>
+                            </tr>
+                            
+                            
+                        </table>
+                        <table width="650" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="blackTextSmall borderTop" width="325px;" style="font-size: 8px;">
+                                    <br />
+                                    <b>Privacy Act and Paperwork Reduction Act Notice.</b> We ask for the information
+                                    on this form to carry out the Internal Revenue laws of the United States. Internal
+                                    Revenue Code sections 3402(f)(2) and 6109 and their regulations require you to
+                                    provide this information; your employer uses it to determine your federal income
+                                    tax withholding. Failure to provide a properly completed form will result in your
+                                    being treated as a single person with no other entries on the form; providing
+                                    fraudulent information may subject you to penalties. Routine uses of this
+                                    information include giving it to the Department of Justice for civil and criminal
+                                    litigation; to cities, states, the District of Columbia, and U.S. commonwealths and
+                                    territories for use in administering their tax laws; and to the Department of
+                                    Health and Human Services for use in the National Directory of New Hires. We
+                                    may also disclose this information to other countries under a tax treaty, to federal
+                                    and state agencies to enforce federal nontax criminal laws, or to federal law
+                                    enforcement and intelligence agencies to combat terrorism.
+                                </td>
+                                <td width="20px;" class="borderTop"></td>
+                                <td class="blackTextSmall borderTop" style="font-size: 8px;">
+                                    <p>
+                                        <span style="margin-left:10px;">You</span> are not required to provide the information requested on a form that is
+                                        subject to the Paperwork Reduction Act unless the form displays a valid OMB
+                                        control number. Books or records relating to a form or its instructions must be
+                                        retained as long as their contents may become material in the administration of
+                                        any Internal Revenue law. Generally, tax returns and return information are
+                                        confidential, as required by Code section 6103.
+                                    </p>
+                                    <p>
+                                        <span style="margin-left:10px;">The</span> average time and expenses required to complete and file this form will vary
+                                        depending on individual circumstances. For estimated averages, see the
+                                        instructions for your income tax return.
+                                    </p>
+                                    <p>
+                                        <span style="margin-left:10px;">If</span> you have suggestions for making this form simpler, we would be happy to hear
+                                        from you. See the instructions for your income tax return.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="width: 650px; height: 20px;">
+                            <!-- -->
+                        </div>
+                    </div>
+                    <br />
+                    <!-- End Pg 4-->
+                    <!-- Begin Pg 5-->
+                    <div style="page-break-before: always;"></div>
+                    <br />
+                    <div class="page" id="pg5">
+                        <br />
+                        <table width="650" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="blackTextSmall">
+                                    Form W-4 (2026)
+                                </td>
+                                <td width="410px">
+                                    <!-- -->
+                                </td>
+                                <td class="blackTextSmall">
+                                    Page <b class="largeBold">5</b>
+                                </td>
+                            </tr>
+                        </table>
+                        <hr class="sectionBreak" />
+                        <img src="TaxTable.jpg" alt="2026 Tax Table" width="600">
+
+                  <!--      <table width="650" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td colspan="13" align="center">
+                                    <b>Married Filing Jointly or Qualifying Widow(er)</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" align="center" class="blackTextSmall borderTop borderRight" width="100px">
+                                    <b>Higher Paying Job</b><br />
+                                    <b>Annual Taxable</b><br />
+                                    <b>Wage & Salary</b>
+                                </td>
+                                <td colspan="12" align="center" class="borderTop">
+                                    <b>Lower Paying Job Annual Taxable Wage & Salary</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    $0 -<br />
+                                    9,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    $10,000-
+                                    19,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    $20,000-
+                                    29,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    $30,000-
+                                    39,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    $40,000-
+                                    49,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    $50,000-
+                                    59,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    $60,000-
+                                    69,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    $70,000-
+                                    79,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    $80,000-
+                                    89,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    $90,000-
+                                    99,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    $100,000-
+                                    109,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderBottom" align="center">
+                                    $110,000-
+                                    120,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderBottom borderRight borderTop" align="right">
+                                    $0 - 9,999<br />
+                                    $10,000 - 19,999<br />
+                                    $20,000 - 29,999
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    $0<br />
+                                    220<br />
+                                    850
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    $220
+                                    1,220
+                                    1,900
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    $850
+                                    1,900
+                                    2,730
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    $900
+                                    2,100
+                                    2,930
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    $1,020
+                                    2,220
+                                    3,050
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    $1,020
+                                    2,220
+                                    3,050
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    $1,020
+                                    2,220
+                                    3,050
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    $1,020
+                                    2,220
+                                    3,240
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    $1,020
+                                    2,410
+                                    4,240
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    $1,210
+                                    3,410
+                                    5,240
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    $1,870
+                                    4,070
+                                    5,900
+                                </td>
+                                <td class="blackTextSmall borderBottom" align="center">
+                                    $1,870
+                                    4,070
+                                    5,900
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderBottom borderRight" align="right">
+                                    $30,000 - 39,999<br />
+                                    $40,000 - 49,999<br />
+                                    $50,000 - 59,999
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    900
+                                    1,020
+                                    1,020
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    2,100
+                                    2,220
+                                    2,220
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    2,930
+                                    3,050
+                                    3,050
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    3,130
+                                    3,250
+                                    3,250
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    3,250
+                                    3,370
+                                    3,570
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    3,250
+                                    3,570
+                                    4,570
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    3,440
+                                    4,570
+                                    5,570
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    4,440
+                                    5,570
+                                    6,570
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    5,440
+                                    6,570
+                                    7,570
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    6,440
+                                    7,570
+                                    8,570
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    7,100
+                                    8,220
+                                    9,220
+                                </td>
+                                <td class="blackTextSmall borderBottom" align="center">
+                                    7,100
+                                    8,220
+                                    9,220
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderBottom borderRight" align="right">
+                                    $60,000 - 69,999<br />
+                                    $70,000 - 79,999<br />
+                                    $80,000 - 99,999
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    1,020
+                                    1,020
+                                    1,060
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    2,220
+                                    2,220
+                                    3,260
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    3,050
+                                    3,240
+                                    5,090
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    3,440
+                                    4,440
+                                    6,290
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    4,570
+                                    5,570
+                                    7,420
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    5,570
+                                    6,570
+                                    8,420
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    6,570
+                                    7,570
+                                    9,420
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    7,570
+                                    8,570
+                                    10,420
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    8,570
+                                    9,570
+                                    11,420
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    9,570
+                                    10,570
+                                    12,420
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    10,220
+                                    11,220
+                                    13,260
+                                </td>
+                                <td class="blackTextSmall borderBottom" align="center">
+                                    10,220
+                                    11,240
+                                    13,460
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderBottom borderRight" align="right">
+                                    $100,000 - 149,999<br />
+                                    $150,000 - 239,999<br />
+                                    $240,000 - 259,999
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    1,870
+                                    2,040
+                                    2,040
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    4,070
+                                    4,440
+                                    4,440
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    5,900
+                                    6,470
+                                    6,470
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    7,100
+                                    7,870
+                                    7,870
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    8,220
+                                    9,190
+                                    9,190
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    9,320
+                                    10,390
+                                    10,390
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    10,520
+                                    11,590
+                                    11,590
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    11,720
+                                    12,790
+                                    12,790
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    12,920
+                                    13,990
+                                    13,990
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    14,120
+                                    15,190
+                                    15,520
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    14,980
+                                    16,050
+                                    17,170
+                                </td>
+                                <td class="blackTextSmall borderBottom" align="center">
+                                    15,180
+                                    16,250
+                                    18,170
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderBottom borderRight" align="right">
+                                    $260,000 - 279,999<br />
+                                    $280,000 - 299,999<br />
+                                    $300,000 - 319,999
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    2,040
+                                    2,040
+                                    2,040
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    4,440
+                                    4,440
+                                    4,440
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    6,470
+                                    6,470
+                                    6,470
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    7,870
+                                    7,870
+                                    8,200
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    9,190
+                                    9,190
+                                    10,320
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    10,390
+                                    10,720
+                                    12,320
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    11,590
+                                    12,720
+                                    14,320
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    13,120
+                                    14,720
+                                    16,320
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    15,120
+                                    16,720
+                                    18,320
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    17,120
+                                    18,720
+                                    20,320
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    18,770
+                                    20,370
+                                    21,970
+                                </td>
+                                <td class="blackTextSmall borderBottom" align="center">
+                                    19,770
+                                    21,370
+                                    22,970
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderBottom borderRight" align="right">
+                                    $320,000 - 364,999<br />
+                                    $365,000 - 524,999<br />
+                                    $525,000 and over
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    2,720
+                                    2,970
+                                    3,140
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    5,920
+                                    6,470
+                                    6,840
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    8,750
+                                    9,600
+                                    10,170
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    10,950
+                                    12,100
+                                    12,870
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    13,070
+                                    14,530
+                                    15,500
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    15,070
+                                    16,830
+                                    18,000
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    17,070
+                                    19,130
+                                    20,500
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    19,070
+                                    21,430
+                                    23,000
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    21,290
+                                    23,730
+                                    25,500
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    23,590
+                                    26,030
+                                    28,000
+                                </td>
+                                <td class="blackTextSmall borderBottom borderRight" align="center">
+                                    25,540
+                                    27,980
+                                    30,150
+                                </td>
+                                <td class="blackTextSmall borderBottom" align="center">
+                                    26,840
+                                    29,280
+                                    31,650
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="13" align="center">
+                                    <b>Single or Married Filing Separately</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" align="center" class="blackTextSmall borderTop borderRight" width="100px">
+                                    <b>Higher Paying Job</b><br />
+                                    <b>Annual Taxable</b><br />
+                                    <b>Wage & Salary</b>
+                                </td>
+                                <td colspan="12" align="center" class="borderTop borderBottom">
+                                    <b>Lower Paying Job Annual Taxable Wage & Salary</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $0 -<br />
+                                    9,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $10,000-
+                                    19,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $20,000-
+                                    29,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $30,000-
+                                    39,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $40,000-
+                                    49,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $50,000-
+                                    59,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $60,000-
+                                    69,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $70,000-
+                                    79,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $80,000-
+                                    89,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $90,000-
+                                    99,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $100,000-
+                                    109,999
+                                </td>
+                                <td class="blackTextSmall" align="center">
+                                    $110,000-
+                                    120,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderRight borderTop" align="right">
+                                    $0 - 9,999<br />
+                                    $10,000 - 19,999<br />
+                                    $20,000 - 29,999
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    $460
+                                    940
+                                    1,020
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    $940
+                                    1,530
+                                    1,610
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    $1,020
+                                    1,610
+                                    2,130
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    $1,020
+                                    2,060
+                                    3,130
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    $1,470
+                                    3,060
+                                    4,130
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    $1,870
+                                    3,460
+                                    4,540
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    $1,870
+                                    3,460
+                                    4,540
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    $1,870
+                                    3,460
+                                    4,720
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    $1,870
+                                    3,640
+                                    4,920
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    $2,040
+                                    3,830
+                                    5,110
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    $2,040
+                                    3,830
+                                    5,110
+                                </td>
+                                <td class="blackTextSmall borderTop" align="center">
+                                    $2,040
+                                    3,830
+                                    5,110
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderRight borderTop" align="right">
+                                    $30,000 - 39,999<br />
+                                    $40,000 - 59,999<br />
+                                    $60,000 - 79,999
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    1,020
+                                    1,870
+                                    1,870
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    2,060
+                                    3,460
+                                    3,460
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    3,130
+                                    4,540
+                                    4,690
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    4,130
+                                    5,540
+                                    5,890
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    5,130
+                                    6,690
+                                    7,090
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    5,540
+                                    7,290
+                                    7,690
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    5,720
+                                    7,490
+                                    7,890
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    5,920
+                                    7,690
+                                    8,090
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    6,120
+                                    7,890
+                                    8,290
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    6,310
+                                    8,080
+                                    8,480
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    6,310
+                                    8,080
+                                    9,260
+                                </td>
+                                <td class="blackTextSmall borderTop" align="center">
+                                    6,310
+                                    8,080
+                                    10,060
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderRight borderTop" align="right">
+                                    $80,000 - 99,999<br />
+                                    $100,000 - 124,999<br />
+                                    $125,000 - 149,999
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    2,020
+                                    2,040
+                                    2,040
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    3,810
+                                    3,830
+                                    3,830
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    5,090
+                                    5,110
+                                    5,110
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    6,290
+                                    6,310
+                                    7,030
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    7,490
+                                    7,510
+                                    9,030
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    8,090
+                                    8,430
+                                    10,430
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    8,290
+                                    9,430
+                                    11,430
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    8,490
+                                    10,430
+                                    12,580
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    9,470
+                                    11,430
+                                    13,880
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    10,460
+                                    12,420
+                                    15,170
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    11,260
+                                    13,520
+                                    16,270
+                                </td>
+                                <td class="blackTextSmall borderTop" align="center">
+                                    12,060
+                                    14,620
+                                    17,370
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderRight borderTop" align="right">
+                                    $150,000 - 174,999<br />
+                                    $175,000 - 199,999<br />
+                                    $200,000 - 249,999
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    2,360
+                                    2,720
+                                    2,970
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    4,950
+                                    5,310
+                                    5,860
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    7,030
+                                    7,540
+                                    8,240
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    9,030
+                                    9,840
+                                    10,540
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    11,030
+                                    12,140
+                                    12,840
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    12,730
+                                    13,840
+                                    14,540
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    14,030
+                                    15,140
+                                    15,840
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    15,330
+                                    16,440
+                                    17,140
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    16,630
+                                    17,740
+                                    18,440
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    17,920
+                                    19,030
+                                    19,730
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop" align="center">
+                                    19,020
+                                    20,130
+                                    20,830
+                                </td>
+                                <td class="blackTextSmall borderTop" align="center">
+                                    20,120
+                                    21,230
+                                    21,930
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderRight borderTop borderBottom" align="right">
+                                    $250,000 - 399,999<br />
+                                    $400,000 - 449,999<br />
+                                    $450,000 and over
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop borderBottom" align="center">
+                                    2,970
+                                    2,970
+                                    3,140
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop borderBottom" align="center">
+                                    5,860
+                                    5,860
+                                    6,230
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop borderBottom" align="center">
+                                    8,240
+                                    8,240
+                                    8,810
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop borderBottom" align="center">
+                                    10,540
+                                    10,540
+                                    11,310
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop borderBottom" align="center">
+                                    12,840
+                                    12,840
+                                    13,810
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop borderBottom" align="center">
+                                    14,540
+                                    14,540
+                                    15,710
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop borderBottom" align="center">
+                                    15,840
+                                    15,840
+                                    17,210
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop borderBottom" align="center">
+                                    17,140
+                                    17,140
+                                    18,710
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop borderBottom" align="center">
+                                    18,440
+                                    18,440
+                                    20,210
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop borderBottom" align="center">
+                                    19,730
+                                    19,940
+                                    21,700
+                                </td>
+                                <td class="blackTextSmall borderRight borderTop borderBottom" align="center">
+                                    20,830
+                                    21,240
+                                    23,000
+                                </td>
+                                <td class="blackTextSmall borderTop borderBottom" align="center">
+                                    21,930
+                                    22,540
+                                    24,300
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="13" align="center">
+                                    <b>Head of Household</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" align="center" class="blackTextSmall borderTop borderRight" width="100px">
+                                    <b>Higher Paying Job</b><br />
+                                    <b>Annual Taxable</b><br />
+                                    <b>Wage & Salary</b>
+                                </td>
+                                <td colspan="12" align="center" class="borderTop borderBottom">
+                                    <b>Lower Paying Job Annual Taxable Wage & Salary</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $0 -<br />
+                                    9,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $10,000-
+                                    19,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $20,000-
+                                    29,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $30,000-
+                                    39,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $40,000-
+                                    49,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $50,000-
+                                    59,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $60,000-
+                                    69,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $70,000-
+                                    79,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $80,000-
+                                    89,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $90,000-
+                                    99,999
+                                </td>
+                                <td class="blackTextSmall borderRight" align="center">
+                                    $100,000-
+                                    109,999
+                                </td>
+                                <td class="blackTextSmall" align="center">
+                                    $110,000-
+                                    120,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderTop borderRight" align="right">
+                                    $0 - 9,999<br />
+                                    $10,000 - 19,999<br />
+                                    $20,000 - 29,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    $0
+                                    830
+                                    930
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    $830
+                                    1,920
+                                    2,130
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    $930
+                                    2,130
+                                    2,350
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    $1,020
+                                    2,220
+                                    2,430
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    $1,020
+                                    2,220
+                                    2,900
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    $1,020
+                                    2,680
+                                    3,900
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    $1,480
+                                    3,680
+                                    4,900
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    $1,870
+                                    4,070
+                                    5,340
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    $1,870
+                                    4,130
+                                    5,540
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    $1,930
+                                    4,330
+                                    5,740
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    $2,040
+                                    4,440
+                                    5,850
+                                </td>
+                                <td class="blackTextSmall borderTop" align="center">
+                                    $2,040
+                                    4,440
+                                    5,850
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderTop borderRight" align="right">
+                                    $30,000 - 39,999<br />
+                                    $40,000 - 59,999<br />
+                                    $60,000 - 79,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    1,020
+                                    1,020
+                                    1,870
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    2,220
+                                    2,530
+                                    4,070
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    2,430
+                                    3,750
+                                    5,310
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    2,980
+                                    4,830
+                                    6,600
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    3,980
+                                    5,860
+                                    7,800
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    4,980
+                                    7,060
+                                    9,000
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    6,040
+                                    8,260
+                                    10,200
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    6,630
+                                    8,850
+                                    10,780
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    6,830
+                                    9,050
+                                    10,980
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    7,030
+                                    9,250
+                                    11,180
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    7,140
+                                    9,360
+                                    11,580
+                                </td>
+                                <td class="blackTextSmall borderTop" align="center">
+                                    7,140
+                                    9,360
+                                    12,380
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderTop borderRight" align="right">
+                                    $80,000 - 99,999<br />
+                                    $100,000 - 124,999<br />
+                                    $125,000 - 149,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    1,900
+                                    2,040
+                                    2,040
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    4,300
+                                    4,440
+                                    4,440
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    5,710
+                                    5,850
+                                    5,850
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    7,000
+                                    7,140
+                                    7,360
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    8,200
+                                    8,340
+                                    9,360
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    9,400
+                                    9,540
+                                    11,360
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    10,600
+                                    11,360
+                                    13,360
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    11,180
+                                    12,750
+                                    14,750
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    11,670
+                                    13,750
+                                    16,010
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    12,670
+                                    14,750
+                                    17,310
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    13,580
+                                    15,770
+                                    18,520
+                                </td>
+                                <td class="blackTextSmall borderTop" align="center">
+                                    14,380
+                                    16,870
+                                    19,620
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderTop borderRight" align="right">
+                                    $150,000 - 174,999<br />
+                                    $175,000 - 199,999<br />
+                                    $200,000 - 249,999
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    2,040
+                                    2,720
+                                    2,970
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    5,060
+                                    5,920
+                                    6,470
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    7,280
+                                    8,130
+                                    8,990
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    9,360
+                                    10,480
+                                    11,370
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    11,360
+                                    12,780
+                                    13,670
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    13,480
+                                    15,080
+                                    15,970
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    15,780
+                                    17,380
+                                    18,270
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    17,460
+                                    19,070
+                                    19,960
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    18,760
+                                    20,370
+                                    21,260
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    20,060
+                                    21,670
+                                    22,560
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight" align="center">
+                                    21,270
+                                    22,880
+                                    23,770
+                                </td>
+                                <td class="blackTextSmall borderTop" align="center">
+                                    22,370
+                                    23,980
+                                    24,870
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="right">
+                                    $250,000 - 349,999<br />
+                                    $350,000 - 449,999<br />
+                                    $450,000 and over
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    2,970
+                                    2,970
+                                    3,140
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    6,470
+                                    6,470
+                                    6,840
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    8,990
+                                    8,990
+                                    9,560
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    11,370
+                                    11,370
+                                    12,140
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    13,670
+                                    13,670
+                                    14,640
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    15,970
+                                    15,970
+                                    17,140
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    18,270
+                                    18,270
+                                    19,640
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    19,960
+                                    19,960
+                                    21,530
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    21,260
+                                    21,260
+                                    23,030
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    22,560
+                                    22,560
+                                    24,530
+                                </td>
+                                <td class="blackTextSmall borderTop borderRight borderBottom" align="center">
+                                    23,770
+                                    23,900
+                                    25,940
+                                </td>
+                                <td class="blackTextSmall borderTop borderBottom" align="center">
+                                    24,870
+                                    25,200
+                                    27,240
+                                </td>
+                            </tr>
+                        </table> -->
+                        <div style="width: 650px; height: 20px;">
+                            <!-- -->
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <!-- End Pg 5-->
+                    <div class="hidden">
+                    <input type="text" name="currentUserName" id="currentUserName" />
+                    <br/><br/>
+                    <input type="text" name="form_name" id="form_name"/>
+                    <input type="text" name="taxYear" id="taxYear"/>
+                    <input type="text" name="originatorEmployeeID" id="originatorEmployeeID"/>
+                    <input type="text" name="originatorDisplayName" id="originatorDisplayName"/>
+                    <!--<input type="text" name="originatorErpId" id="originatorErpId"/>-->
+                    <input type="text" id="FedExempt" name="FedExempt" />
+                    <input type="text" id="anonymous" name="anonymous" />
+                    <input type="text" id="MultipleJobsNewW4" name="MultipleJobsNewW4" />
+                    <input id="fein" name="fein" type="text">
+                    <input id="ead" name="ead" type="text">
+                </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+    </body>
+</html>

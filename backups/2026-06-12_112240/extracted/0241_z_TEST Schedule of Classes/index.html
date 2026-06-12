@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>Schedule of Classes v2</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="../293/main.css" />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:2% 0% 2% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col3" class="col-xs-12 col-sm-12 text-right  ">
+                    <p id="ele4" name="ele37" class="col-sm-12 text-right  " style=" font-size:8px "><i>Revised 03/26/26</i>
+                    </p>
+                </div>
+                <div id="HeaderLeft5" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo6" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    />
+                </div>
+                <div id="HeaderRight7" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="mainHeader3" name="mainHeader" class="text-center  "><b>Schedule of Classes<br />Add / Cancel / Change Section</b></h2>
+                </div>
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele10" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row553" class="text-left row fd-form-masthead ">
+                <div id="col554" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn555" name="revisedOn" class="col-sm-12 text-right  ">Revised INSERT DATE HERE (MM/YYYY)</span>
+                </div>
+                <div id="col556" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele557" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col558" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele559" name="ele21" class="text-left form-title with-subtitle ">Schedule of Classes</h1><span id="ele560" name="ele23" class="text-left form-subtitle ">Add / Cancel / Change Section</span>
+                </div>
+                <div id="col561" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele562" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row489" class="text-left row ">
+                <div id="col490" class="col-xs-12 col-sm-12 text-left section-header with-subtitle "><span id="ele522" name="ele522" class="text-left  "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele491" name="ele491" class="text-left  ">Section Header</h2>
+                        <p id="ele492" name="ele492" class="text-left  ">Section header text</p>
+                </div>
+            </div>
+            <div id="row4893030" name="" class="text-left row ">
+                <div id="col49030" class="col-xs-12 col-sm-12 text-left section-header title-only "><span id="ele52230" name="ele52230" class="text-left  "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele49130" name="ele491" class="text-left  ">Section Header</h2>
+                </div>
+            </div>
+            <div id="row502" class="text-left row ">
+                <div id="col503" class="col-xs-12 col-sm-12 text-left  ">
+                    <h3 id="subsection-header" name="subsection-header" class="text-left subsection-header ">Sub Section Header</h3>
+                </div>
+            </div>
+            <div id="row506" class="text-left row ">
+                <div id="col507" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote" name="requiredNote" class="text-left  ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="row12" class="text-left row " style="overflow: auto;  display:flex; ">
+                <div id="col13" class="col-xs-12 col-sm-9 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <label for="selfOrElse">Will you be submitting this form for yourself or on behalf of someone
+                        else?<span class="required-asterisk">*</span>
+                    </label>
+                    <select id="selfOrElse" name="selfOrElse" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Myself">Myself</option>
+                        <option value="On Behalf of Someone Else">On Behalf of Someone Else</option>
+                    </select>
+                </div>
+                <div id="col16" class="col-xs-12 col-sm-2 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em;  margin-left: auto; ">
+                    <div class="col-sm-12 text-left  ">
+                        <label for="originationDate">Date</label>
+                        <input id="originationDate" name="originationDate" class="col-sm-12 text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row397" name="row397" class="text-left row " data-bind="visible: selfOrElse() == 'On Behalf of Someone Else'">
+                <div id="col398" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="employeeSearch">Employee Search</label>
+                        <input id="employeeSearch" name="employeeSearch"
+                        class="col-sm-6 text-left  " required="required" placeholder="Please start typing to search for an employee."
+                        type="text" data-bind="autocomplete: { &#10;    integrationSource: 'Etrieve_Security_Get_Active_Employees',&#10;    clearOnFocus: true,  &#10;    validate: true, &#10;    labelMask: ['UserName', ' | ', 'Email'], &#10;    selectedMask: ['UserName'],  &#10;    formFields: {&#10;        'employeeEmail':'Email'&#10;    } &#10;} "
+                        />
+                    </div>
+                    <div class="col-xs-12 col-sm-6 text-left  ">
+                        <label for="employeeEmail">Employee Email</label>
+                        <input id="employeeEmail" name="employeeEmail" class="col-xs-12 col-sm-6 text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row19" name="row19" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; "
+            data-bind="visible: !!selfOrElse()">
+                <div id="col20" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="campus">Campus<span class="required-asterisk">*</span>
+                    </label>
+                    <select id="campus" name="campus" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak/Southfield">Royal Oak/Southfield</option>
+                    </select>
+                </div>
+                <div id="col21" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="semester">Semester<span class="required-asterisk">*</span>
+                        </label>
+                        <input id="semester" name="semester" class="text-left  " required="required"
+                        data-bind="autocomplete: {&#10;    localSource: 'terms',&#10;    clearOnFocus: true,&#10;    validate: true,&#10;    labelMask: ['termCode', ' | ', 'termTitle'],&#10;    formFields: {&#10;        'selectedTermInput': 'displayText',&#10;        'selectedTermCode': 'termCode',&#10;        'selectedTermGUID': 'termGUID',&#10;        'selectedTermTitle': 'termTitle'&#10;    }&#10;}"
+                        />
+                    </div>
+                </div>
+                <div id="col22" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="action">Action<span class="required-asterisk">*</span>
+                    </label>
+                    <select id="action" name="action" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Add a Section">Add a Section</option>
+                        <option value="Cancel a Section">Cancel a Section</option>
+                        <option value="Change a Section">Change a Section</option>
+                    </select>
+                </div>
+            </div>
+            <div id="row52" class="text-left row addSectionRow " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                <div id="col53" class="col-xs-12 col-sm-12 text-left  " style=" background-color:#046A38;  color:#fff;  border: 2px solid #7AC69B; border-radius:4px; ">
+                    <h4 id="ele54" name="ele54" class="text-center  " style=" font-weight:bold; ">Add a Section</h4>
+                </div>
+                <div id="col56" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="addSubject">Subject<span class="required-asterisk">*</span><span class="reminder-text">Start typing to refine the subject search</span>
+                        </label>
+                        <input id="addSubject" name="addSubject" class="col-sm-6 text-left  "
+                        required="required" type="text" data-bind="autocomplete: {&#10;    localSource: 'subjectsAutocomplete',&#10;    clearOnFocus: true,&#10;    validate: true,&#10;    labelMask: ['subjectAbbreviation', ' | ', 'subjectTitle'],&#10;    selectedMask: ['subjectAbbreviation'],  &#10;    formFields: {&#10;        'addSubjectID':'subjectGUID'&#10;    }&#10;}"
+                        />
+                    </div>
+                    <div class="col-sm-6 text-left  ">
+                        <label for="addCourse">Course<span class="required-asterisk">*</span>
+                        </label>
+                        <input id="addCourse" name="addCourse" class="col-sm-6 text-left  " required="required"
+                        type="text" data-bind="autocomplete: { &#10;    localSource: 'courseSubjectAutocomplete',  &#10;    labelLength: 50,  &#10;    validate: true,  &#10;    labelMask: ['courseSubjectAndNumber', ' | ', 'courseTitle'],  &#10;    selectedMask: ['courseNumber'] &#10;} "
+                        />
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-left isHidden ">
+                        <label for="addSubjectID">addSubjectID</label>
+                        <input id="addSubjectID" name="addSubjectID" class="col-xs-12 col-sm-3 text-left isHidden "
+                        placeholder="addSubjectID" type="text" />
+                    </div>
+                </div>
+                <div id="col77" class="col-xs-12 col-sm-6 text-left addSectionDetails "
+                style=" padding:0em 0em 0em 0em;  margin:.5em .5em 0em 0em; ">
+                    <label for="addInstructionalMethod">Instructional Method<span class="required-asterisk">*</span>
+                    </label>
+                    <select id="addInstructionalMethod" name="addInstructionalMethod" class="col-sm-0 text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; " required="required">
+                        <option value=""></option>
+                        <option value="Flexible Live">Flexible Live</option>
+                        <option value="Flexible Online">Flexible Online</option>
+                        <option value="Hybrid">Hybrid</option>
+                        <option value="In-Person">In-Person</option>
+                        <option value="Independent Study">Independent Study</option>
+                        <option value="Lab">Lab</option>
+                        <option value="Online">Online</option>
+                        <option value="Online Course with in-person Testing">Online Course with in-person Testing</option>
+                        <option value="Online Live Course">Online Live Course</option>
+                    </select>
+                </div>
+                <div id="col78" class="col-xs-12 col-sm-3 text-left addSectionDetails "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <div class="col-sm-11 text-left  ">
+                        <label for="addNumberWeeks">Number of Weeks<span class="required-asterisk">*</span>
+                        </label>
+                        <input id="addNumberWeeks" name="addNumberWeeks" class="col-sm-11 text-left  "
+                        required="required" type="Number" />
+                    </div>
+                </div>
+                <div id="col79" class="col-xs-12 col-sm-2 text-left addSectionDetails "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em .5em;  width:125px;  ">
+                    <label id="addPendingLabel" name="addPendingLabel" class="col-sm-12 text-left  "
+                    for="pendingRadioGroup">Pending Section<span class="required-asterisk">*</span>
+                    </label>
+                    <input id="pendingY" name="pendingRadioGroup" class="text-left  " required="required"
+                    type="radio" value="yes" />
+                    <label for="pendingY">Yes</label>
+                    <input id="pendingN" name="pendingRadioGroup" class="col-sm- text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 1.5em; " required="required"
+                    type="radio" value="no" />
+                    <label for="pendingN">No</label>
+                </div>
+                <div id="col63" class="col-xs-12 col-sm-5 text-left addSectionDetails "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em;  border: 1px solid #046A38; border-radius:4px; padding:.5em; ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="addStartDate">Start Date<span class="required-asterisk">*</span>
+                        </label>
+                        <input id="addStartDate" name="addStartDate" class="col-sm-6 text-left datepicker "
+                        required="required" data-bind="datepicker" />
+                    </div>
+                    <div class="col-xs-12 col-sm-6 text-left  ">
+                        <label for="addEndDate">End Date<span class="required-asterisk">*</span>
+                        </label>
+                        <input id="addEndDate" name="addEndDate" class="col-xs-12 col-sm-6 text-left datepicker "
+                        required="required" type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col73" class="col-xs-12 col-sm-2 text-left addSectionDetails "><i style="color:#777777; padding-left:2%"> EmptyColumn</i>
+                </div>
+                <div id="col64" class="col-xs-12 col-sm-5 text-left addSectionDetails border: 1px solid #046A38; border-radius:4px; padding:.5em; "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em;  border: 1px solid #046A38; border-radius:4px; padding:.5em; ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="addStartTime">Start Time</label>
+                        <input id="addStartTime" name="addStartTime" class="col-sm-6 text-left  "
+                        type="text" />
+                    </div>
+                    <div class="col-xs-12 col-sm-6 text-left  ">
+                        <label for="addEndTime">End Time</label>
+                        <input id="addEndTime" name="addEndTime" class="col-xs-12 col-sm-6 text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="radioRow92" name="radioRow" class="text-left row addSectionDetails "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em;  border: 1px solid #046A38; border-radius:4px; padding:.5em; ">
+                <div id="col113" class="col-xs-12 col-sm-12 text-left  ">
+                    <label id="meetingDayLabel" name="meetingDayLabel" class="text-left  "
+                    for="dayCheckBoxGroup">Meeting Day(s)</label>
+                </div>
+                <div id="radioCol93" name="radioCol1" class="col-xs-1 col-sm-12 text-left  "
+                style=" display:block ">
+                    <input id="dayCheckBox1" name="dayCheckBoxGroup" class="col-xs-0 col-sm-0 text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em .5em 0em 0em;  margin:0 .25em 0 1em; "
+                    type="checkbox" value="Mon" />
+                    <label for="dayCheckBox1">Mon</label>
+                    <input id="dayCheckBox2" name="dayCheckBoxGroup" class="text-left  "
+                    style=" margin:0 .25em 0 1em; " type="checkbox" value="Tue" />
+                    <label for="dayCheckBox2">Tue</label>
+                    <input id="dayCheckBox3" name="dayCheckBoxGroup" class="text-left  "
+                    style=" margin:0 .25em 0 1em; " type="checkbox" value="Wed" />
+                    <label for="dayCheckBox3">Wed</label>
+                    <input id="dayCheckBox4" name="dayCheckBoxGroup" class="text-left  "
+                    style=" margin:0 .25em 0 1em; " type="checkbox" value="Thu" />
+                    <label for="dayCheckBox4">Thu</label>
+                    <input id="dayCheckBox5" name="dayCheckBoxGroup" class="text-left  "
+                    style=" margin:0 .25em 0 1em; " type="checkbox" value="Fri" />
+                    <label for="dayCheckBox5">Fri</label>
+                    <input id="dayCheckBox6" name="dayCheckBoxGroup" class="text-left  "
+                    style=" margin:0 .25em 0 1em; " type="checkbox" value="Sat" />
+                    <label for="dayCheckBox6">Sat</label>
+                    <input id="dayCheckBox7" name="dayCheckBoxGroup" class="text-left  "
+                    style=" margin:0 .25em 0 1em; " type="checkbox" value="Sun" />
+                    <label for="dayCheckBox7">Sun</label>
+                </div>
+            </div>
+            <div id="row90" class="text-left row addSectionDetails " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                <div id="col144" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-8 text-left  ">
+                        <label for="addBuilding">Building</label>
+                        <input id="addBuilding" name="addBuilding" class="col-sm-8 text-left  "
+                        type="text" data-bind="autocomplete: { &#10;    localSource: 'buildingAutocomplete',&#10;    validate: true,&#10;    labelMask: ['code', ' - ', 'title'],&#10;    selectedMask: ['code'],&#10;    formFields: {&#10;        'addBuildingGUID': 'id'&#10;    }&#10;} "
+                        />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-left  ">
+                        <label for="addRoom">Room</label>
+                        <input id="addRoom" name="addRoom" class="col-xs-12 col-sm-4 text-left  "
+                        type="text" data-bind="autocomplete: { localSource: 'roomAutoComplete',  &#10;    clearOnFocus: true,  &#10;    labelMask: ['RoomNumber', '(', 'RoomDescription', ')'],  &#10;    selectedMask: ['RoomNumber'] &#10;} "
+                        />
+                    </div>
+                    <div class="col-xs-12 col-sm-6 text-left isHidden ">
+                        <label for="addBuildingGUID">addBuildingGUID</label>
+                        <input id="addBuildingGUID" name="addBuildingGUID"
+                        class="col-xs-12 col-sm-6 text-left isHidden " type="text" />
+                    </div>
+                </div>
+                <div id="col149" class="col-xs-12 col-sm-9 text-left  ">
+                    <div class="col-xs-2 col-sm-2 text-left  ">
+                        <label for="addSeats">Seats</label>
+                        <input id="addSeats" name="addSeats" class="col-xs-2 col-sm-2 text-left  "
+                        required="required" type="Number" />
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-left  ">
+                        <label for="addCrossList">X-Listed Number</label>
+                        <input id="addCrossList" name="addCrossList" class="col-xs-12 col-sm-3 text-left  "
+                        type="text" />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-left  ">
+                        <label for="addPiggyBacked">Piggy Backed Section</label>
+                        <input id="addPiggyBacked" name="addPiggyBacked"
+                        class="col-xs-12 col-sm-4 text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row156" class="text-left row addSectionDetails " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em;  border: 1px solid #046A38; border-radius:4px; padding:.5em; ">
+                <div id="col157" class="col-xs-12 col-sm-12 text-left  ">
+                    <label id="inclusiveMaterialsLabel" name="inclusiveMaterialsLabel" class="text-left  "
+                    for="accessMaterialsRadioGroup">Will this section use Inclusive Access materials?</label>
+                    <input id="inclusiveY"
+                    name="accessMaterialsRadioGroup" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 1em; "
+                    type="radio" value="yes" />
+                    <label for="inclusiveY">Yes</label>
+                    <input id="inclusiveN" name="accessMaterialsRadioGroup" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 1.5em; " type="radio"
+                    value="no" />
+                    <label for="inclusiveN">No</label>
+                </div>
+                <div id="col164" name="col164" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: accessMaterialsRadioGroup() == 'yes'">
+                    <div class="col-sm-4 text-left  ">
+                        <label for="addBookCost">Book Cost</label>
+                        <input id="addBookCost" name="addBookCost" class="col-sm-4 text-left  "
+                        required="required" type="Number" />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-left  ">
+                        <label for="addTaxes">Taxes</label>
+                        <input id="addTaxes" name="addTaxes" class="col-xs-12 col-sm-4 text-left  "
+                        readonly="true" type="Number" />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-left  ">
+                        <label for="totalCost">Total</label>
+                        <input id="totalCost" name="totalCost" class="col-xs-12 col-sm-4 text-left  "
+                        readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col165" name="col165" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: accessMaterialsRadioGroup() == 'yes'">
+                    <div id="ele172" class="col-sm-4 text-left  "><i style="color:#777777; padding-left:2%"> EmptyElement</i>
+                    </div>
+                    <input id="addTaxesCheckBox" name="addTaxesCheckBox" class="text-left  "
+                    type="checkbox" />
+                    <label for="addTaxesCheckBox">Include Taxes?</label>
+                </div>
+            </div>
+            <div id="row180" class="text-left row addSectionDetails " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                <div id="col181" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="addReason">Reason for Adding Class:<span class="required-asterisk">*</span>
+                    </label>
+                    <textarea id="addReason" name="addReason" class="col-sm-6 text-left  "
+                    required="required"></textarea>
+                </div>
+                <div id="col186" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="addCourseNote">Course Note:</label>
+                    <textarea id="addCourseNote" name="addCourseNote"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row190" class="text-left row cancelSectionRow " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                <div id="col191" class="col-xs-12 col-sm-12 text-left  " style=" background-color:#046A38;  color:#fff;  border: 2px solid #7AC69B; border-radius:4px; ">
+                    <h4 id="ele192" name="ele54" class="text-center  " style=" font-weight:bold; ">Cancel a Section</h4>
+                </div>
+                <div id="col193" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="cancelSecName">Section Name<span class="required-asterisk">*</span><span class="reminder-text">Start typing to refine the section search</span>
+                        </label>
+                        <input id="cancelSecName" name="cancelSecName" class="col-sm-6 text-left  "
+                        required="required" type="text" data-bind="autocomplete: { localSource: 'sectionsAutocomplete',  clearOnFocus: true, validate: true,  labelMask: ['secName'],  formFields: {'cancelSynonym':'secSynonym'} } "
+                        />
+                    </div>
+                    <div class="col-sm-6 text-left  ">
+                        <label for="cancelSynonym">Synonym</label>
+                        <input id="cancelSynonym" name="cancelSynonym" class="col-sm-6 text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col211" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <label for="cancelSectionReason">Reason for canceling section?</label>
+                    <textarea id="cancelSectionReason"
+                    name="cancelSectionReason" class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="row217" class="text-left row changeSectionRow " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                <div id="col218" class="col-xs-12 col-sm-12 text-left  " style=" background-color:#046A38;  color:#fff;  border: 2px solid #7AC69B; border-radius:4px; ">
+                    <h4 id="ele219" name="ele54" class="text-center  " style=" font-weight:bold; ">Change a Section</h4>
+                </div>
+                <div id="col220" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="changeSecName">Section Name<span class="required-asterisk">*</span><span class="reminder-text">Start typing to refine the section search</span>
+                        </label>
+                        <input id="changeSecName" name="changeSecName" class="col-sm-6 text-left  "
+                        required="required" type="text" data-bind="autocomplete: {&#10;    localSource: 'sectionsAutocomplete', &#10;    validate: true,&#10;     clearOnFocus: true,&#10;     labelMask: ['secName'], &#10;     formFields: {&#10;        'currentSynonym':'secSynonym',&#10;        'currentStartDate':'secStartDate',&#10;        'currentEndDate':'secEndDate',&#10;        'currentStatus':'secStartDate',&#10;        'currentCrossListed':'secCrossListed',&#10;        'currentLength':'durationLength',&#10;        'currentSeats':'secCapacity',&#10;        'currentMeetingInfo':'secMeetingTimes',&#10;    } &#10;} "
+                        />
+                    </div>
+                    <div class="col-sm-6 text-left  ">
+                        <label for="currentSynonym">Synonym</label>
+                        <input id="currentSynonym" name="currentSynonym" class="col-sm-6 text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="hiddenChangeSectionRow" name="hiddenChangeSectionRow" class="text-left row isHidden ">
+                <div id="col391" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-3 text-left  ">
+                        <label for="currentStartDate">currentStartDate</label>
+                        <input id="currentStartDate" name="currentStartDate"
+                        class="col-sm-3 text-left  " type="text" />
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-left  ">
+                        <label for="currentEndDate">currentEndDate</label>
+                        <input id="currentEndDate" name="currentEndDate"
+                        class="col-xs-12 col-sm-3 text-left  " />
+                    </div>
+                    <div class="col-sm-3 text-left  ">
+                        <label for="currentStatus">currentStatus</label>
+                        <input id="currentStatus" name="currentStatus" class="col-sm-3 text-left  "
+                        type="text" />
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-left  ">
+                        <label for="currentCrossListed">currentCrossListed</label>
+                        <input id="currentCrossListed" name="currentCrossListed"
+                        class="col-xs-12 col-sm-3 text-left  " />
+                    </div>
+                </div>
+                <div id="col392" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-3 text-left  ">
+                        <label for="currentLength">currentLength</label>
+                        <input id="currentLength" name="currentLength" class="col-sm-3 text-left  "
+                        />
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-left  ">
+                        <label for="currentSeats">currentSeats</label>
+                        <input id="currentSeats" name="currentSeats" class="col-xs-12 col-sm-3 text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col409" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentMeetingInfo">currentMeetingInfo</label>
+                        <input id="currentMeetingInfo" name="currentMeetingInfo"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row227" class="text-left row changeSectionRow " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em;  background-color:#d7e3ff;  color:#00458f;  border: 1px solid #005cbb; border-radius:4px; padding:.5em; ">
+                <div id="col232" class="col-xs-12 col-sm-12 text-left  ">
+                    <div id="ele235" class="col-xs-12 col-sm-4 text-left  "><i style="color:#777777; padding-left:2%"> EmptyElement</i>
+                    </div>
+                    <h5 id="ele233" name="ele233" class="col-sm-4 text-center  " style=" background-color:#00458f;  color:#fff;  font-weight:bold; padding:.5em; border-radius:4px ">Current Section Details</h5>
+                    <div id="ele236" class="col-xs-12 col-sm-4 text-left  "><i style="color:#777777; padding-left:2%"> EmptyElement</i>
+                    </div>
+                </div>
+                <div id="col228" class="col-xs-12 col-sm-12 text-left  " style=" font-weight:normal ">
+                    <p id="currentStartDateDisplay" name="currentStartDateDisplay" class="col-sm-4 text-left  "><strong>Start Date:</strong>  <span data-bind="text: currentStartDate" style="font-style: italic;"></span>
+                    </p>
+                    <p id="currentEndDateDisplay" name="currentEndDateDisplay" class="col-xs-12 col-sm-4 text-left  "><strong>End Date:</strong>  <span data-bind="text: currentEndDate" style="font-style: italic;"></span>
+                    </p>
+                    <p id="currentCrossListedDisplay" name="currentCrossListedDisplay" class="text-left  "><strong>Cross Listed:</strong>  <span data-bind="text: currentCrossListed"
+                        style="font-style: italic;"></span>
+                    </p>
+                </div>
+                <div id="col247" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="currentStatusDisplay" name="currentStatusDisplay" class="col-sm-4 text-left  "><strong>Current Status:</strong>  <span data-bind="text: currentStatus"
+                        style="font-style: italic;"></span>
+                    </p>
+                    <p id="currentLenghthDisplay" name="currentLengthDisplay" class="col-xs-12 col-sm-4 text-left  "><strong>Length:</strong>  <span data-bind="text: currentLength" style="font-style: italic;"></span>
+                    </p>
+                    <p id="currentSeatsDisplay" name="currentSeatsDisplay" class="col-sm-4 text-left  "><strong>Seats:</strong>  <span data-bind="text: currentSeats" style="font-style: italic;"></span>
+                    </p>
+                </div>
+                <div id="col256" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="currentMeetingInfoDisplay" name="currentMeetingInfoDisplay" class="text-left  "><strong>Meeting Information:</strong>  <span data-bind="text: currentMeetingInfo"
+                        style="font-style: italic;"></span>
+                    </p>
+                </div>
+            </div>
+            <div id="row260" class="text-left row changeSectionRow " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                <div id="col284" class="col-xs-12 col-sm-12 text-left  ">
+                    <div id="ele285" class="col-sm-4 text-left  "><i style="color:#777777; padding-left:2%"> EmptyElement</i>
+                    </div>
+                    <h5 id="ele286" name="ele286" class="col-sm-4 text-center  " style=" background-color:#046A38;  color:#fff;  font-weight:bold; padding:.5em; border-radius:4px ">Section Information to Change</h5>
+                </div>
+                <div id="col275" class="col-xs-12 col-sm-8 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <label for="newInstructionalMethod">Instructional Method</label>
+                    <select id="newInstructionalMethod" name="newInstructionalMethod"
+                    class="col-xs-12 col-sm-6 text-left  ">
+                        <option value=""></option>
+                        <option value="Flexible Live">Flexible Live</option>
+                        <option value="Flexible Online">Flexible Online</option>
+                        <option value="Hybrid">Hybrid</option>
+                        <option value="In-Person">In-Person</option>
+                        <option value="Independent Study">Independent Study</option>
+                        <option value="Lab">Lab</option>
+                        <option value="Online">Online</option>
+                        <option value="Online Course with in-person Testing">Online Course with in-person Testing</option>
+                        <option value="Online Live Course">Online Live Course</option>
+                    </select>
+                </div>
+                <div id="col266" class="col-xs-12 col-sm-5 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em;  border: 1px solid #046A38; border-radius:4px; padding:.5em; ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="newStartDate">Start Date<span class="required-asterisk">*</span>
+                        </label>
+                        <input id="newStartDate" name="newStartDate" class="col-sm-6 text-left datepicker "
+                        data-bind="datepicker" />
+                    </div>
+                    <div class="col-xs-12 col-sm-6 text-left  ">
+                        <label for="newEndDate">End Date<span class="required-asterisk">*</span>
+                        </label>
+                        <input id="newEndDate" name="newEndDate" class="col-xs-12 col-sm-6 text-left datepicker "
+                        required="required" type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col269" class="col-xs-12 col-sm-2 text-left  "><i style="color:#777777; padding-left:2%"> EmptyColumn</i>
+                </div>
+                <div id="col270" class="col-xs-12 col-sm-5 text-left border: 1px solid #046A38; border-radius:4px; padding:.5em; "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em;  border: 1px solid #046A38; border-radius:4px; padding:.5em; ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="newStartTime">Start Time</label>
+                        <input id="newStartTime" name="newStartTime" class="col-sm-6 text-left  "
+                        type="text" />
+                    </div>
+                    <div class="col-xs-12 col-sm-6 text-left  ">
+                        <label for="newEndTime">End Time</label>
+                        <input id="newEndTime" name="newEndTime" class="col-xs-12 col-sm-6 text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col294" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <div class="col-sm-4 text-left  ">
+                        <label for="newStatus">Status</label>
+                        <input id="newStatus" name="newStatus" class="col-sm-4 text-left  "
+                        type="text" />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-left  ">
+                        <label for="newWeeks">Weeks</label>
+                        <input id="newWeeks" name="newWeeks" class="col-xs-12 col-sm-4 text-left  "
+                        type="text" />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-left  ">
+                        <label for="newSeats">Seats</label>
+                        <input id="newSeats" name="newSeats" class="col-xs-12 col-sm-4 text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="radioRow331" name="radioRow" class="text-left row changeSectionRow "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em;  border: 1px solid #046A38; border-radius:4px; padding:.5em; ">
+                <div id="col332" class="col-xs-12 col-sm-12 text-left  ">
+                    <label id="meetingDayLabel333" name="meetingDayLabel" class="text-left  "
+                    for="dayCheckBoxGroup">Meeting Day(s)</label>
+                </div>
+                <div id="radioCol334" name="radioCol1" class="col-xs-1 col-sm-12 text-left  "
+                style=" display:block ">
+                    <input id="dayCheckBox335" name="dayCheckBoxGroup" class="col-xs-0 col-sm-0 text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em .5em 0em 0em;  margin:0 .25em 0 1em; "
+                    type="checkbox" value="Mon" />
+                    <label for="dayCheckBox335">Mon</label>
+                    <input id="dayCheckBox336" name="dayCheckBoxGroup" class="text-left  "
+                    style=" margin:0 .25em 0 1em; " type="checkbox" value="Tue" />
+                    <label for="dayCheckBox336">Tue</label>
+                    <input id="dayCheckBox337" name="dayCheckBoxGroup" class="text-left  "
+                    style=" margin:0 .25em 0 1em; " type="checkbox" value="Wed" />
+                    <label for="dayCheckBox337">Wed</label>
+                    <input id="dayCheckBox338" name="dayCheckBoxGroup" class="text-left  "
+                    style=" margin:0 .25em 0 1em; " type="checkbox" value="Thu" />
+                    <label for="dayCheckBox338">Thu</label>
+                    <input id="dayCheckBox339" name="dayCheckBoxGroup" class="text-left  "
+                    style=" margin:0 .25em 0 1em; " type="checkbox" value="Fri" />
+                    <label for="dayCheckBox339">Fri</label>
+                    <input id="dayCheckBox340" name="dayCheckBoxGroup" class="text-left  "
+                    style=" margin:0 .25em 0 1em; " type="checkbox" value="Sat" />
+                    <label for="dayCheckBox340">Sat</label>
+                    <input id="dayCheckBox341" name="dayCheckBoxGroup" class="text-left  "
+                    style=" margin:0 .25em 0 1em; " type="checkbox" value="Sun" />
+                    <label for="dayCheckBox341">Sun</label>
+                </div>
+            </div>
+            <div id="row343" class="text-left row changeSectionRow " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                <div id="col344" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <div class="col-sm-8 text-left  ">
+                        <label for="newBuilding">Building</label>
+                        <input id="newBuilding" name="newBuilding" class="col-sm-8 text-left  "
+                        type="text" data-bind="autocomplete: { &#10;    localSource: 'buildingAutocomplete',&#10;    validate: true,&#10;    labelMask: ['code', ' - ', 'title'],&#10;    selectedMask: ['code'],&#10;    formFields: {&#10;        'newBuildingGUID': 'id'&#10;    }&#10;} "
+                        />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-left  ">
+                        <label for="newRoom">Room</label>
+                        <input id="newRoom" name="newRoom" class="col-xs-12 col-sm-4 text-left  "
+                        type="text" data-bind="autocomplete: { localSource: 'changeRoomAutoComplete',  &#10;    clearOnFocus: true,  &#10;    labelMask: ['RoomNumber', '(', 'RoomDescription', ')'],  &#10;    selectedMask: ['RoomNumber'] &#10;} "
+                        />
+                    </div>
+                    <div class="text-left isHidden ">
+                        <label for="newBuildingGUID">newBuildingGUID</label>
+                        <input id="newBuildingGUID" name="newBuildingGUID"
+                        class="text-left isHidden " type="text" />
+                    </div>
+                </div>
+                <div id="col347" class="col-xs-12 col-sm-9 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <div class="col-xs-12 col-sm-3 text-left  ">
+                        <label for="newCrossList">X-Listed Number</label>
+                        <input id="newCrossList" name="newCrossList" class="col-xs-12 col-sm-3 text-left  "
+                        type="text" />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-left  ">
+                        <label for="newPiggyBacked">Piggy Backed Section</label>
+                        <input id="newPiggyBacked" name="newPiggyBacked"
+                        class="col-xs-12 col-sm-4 text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col358" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <label for="newCourseNote">Course Note</label>
+                    <textarea id="newCourseNote" name="newCourseNote" class="text-left  "></textarea>
+                </div>
+                <div id="col353" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <label for="newChangeReason">Reason for Change<span style="color:#ba1a1a;"> *</span>
+                    </label>
+                    <textarea id="newChangeReason" name="newChangeReason" class="col-sm-6 text-left  "
+                    required="required"></textarea>
+                </div>
+            </div>
+            <div id="row362" class="text-left row approvalRow " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                <div id="col363" class="col-xs-12 col-sm-12 text-left  " style=" background-color:#046A38;  color:#fff;  border: 2px solid #7AC69B; border-radius:4px; ">
+                    <h4 id="ele364" name="ele54" class="text-center  " style=" font-weight:bold; ">Approval Comments</h4>
+                </div>
+                <div id="col365" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="approvalSecName">Section Name<span class="required-asterisk">*</span><span class="reminder-text">Start typing to refine the section search</span>
+                        </label>
+                        <input id="approvalSecName" name="approvalSecName" class="col-sm-6 text-left  "
+                        required="required" type="text" />
+                    </div>
+                    <div class="col-sm-6 text-left  ">
+                        <label for="approvalSecSynonym">Synonym</label>
+                        <input id="approvalSecSynonym" name="approvalSecSynonym"
+                        class="col-sm-6 text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col368" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <label for="approvalComments">Please enter any comments you have before final approval.</label>
+                    <textarea
+                    id="approvalComments" name="approvalComments" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row27" class="text-left row developer " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                <div id="col28" class="col-xs-12 col-sm-12 text-left  " style=" background-color:#000;  color:#FFF;  border-radius:4px ">
+                    <h4 id="developerHeader" name="developerHeader" class="text-center  "
+                    style=" font-weight:bold; ">Developer Section</h4>
+                </div>
+                <div id="col430" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="originatorEmail1">originatorEmail1</label>
+                        <input id="originatorEmail1" name="originatorEmail1"
+                        class="col-sm-6 text-left  " type="text" />
+                    </div>
+                    <div class="col-sm-6 text-left  ">
+                        <label for="originatorEmail">originatorEmail</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="col-sm-6 text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col29" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-3 text-left  ">
+                        <label for="ele34">termCode</label>
+                        <input id="ele34" name="ele34" class="col-sm-3 text-left  "
+                        data-bind="value:selectedTermCode" />
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-left  ">
+                        <label for="ele35">termGUID</label>
+                        <input id="ele35" name="ele35" class="col-xs-12 col-sm-3 text-left  "
+                        data-bind="value:selectedTermGUID" />
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-left  ">
+                        <label for="ele36">termTitle</label>
+                        <input id="ele36" name="ele36" class="col-xs-12 col-sm-3 text-left  "
+                        data-bind="value: selectedTermTitle" />
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-left  ">
+                        <label for="ele450">academicYear</label>
+                        <input id="ele450" name="ele450" class="col-xs-12 col-sm-3 text-left  "
+                        data-bind="value:academicYear" />
+                    </div>
+                </div>
+            </div>
+            <div id="row370" class="text-left row developer ">
+                <div id="col371" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-3 text-left  ">
+                        <label for="ele611">selectedSubject</label>
+                        <input id="ele611" name="ele611" class="col-sm-3 text-left  "
+                        type="text" data-bind="value:selectedSubject" />
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-left  ">
+                        <label for="ele612">selectedCourseNumber</label>
+                        <input id="ele612" name="ele612" class="col-xs-12 col-sm-3 text-left  "
+                        type="text" data-bind="value:selectedCourseNumber" />
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-left  ">
+                        <label for="ele613">selectedSection</label>
+                        <input id="ele613" name="ele613" class="col-xs-12 col-sm-3 text-left  "
+                        type="text" data-bind="value:selectedSection" />
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-left  ">
+                        <label for="ele614">selectedSynonym</label>
+                        <input id="ele614" name="ele614" class="col-xs-12 col-sm-3 text-left  "
+                        type="text" data-bind="value:selectedSynonym" />
+                    </div>
+                </div>
+                <div id="col437" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-4 text-left  ">
+                        <label for="ele438">deanEmail</label>
+                        <input id="ele438" name="ele438" class="col-sm-4 text-left  "
+                        type="text" data-bind="value:deanEmail" />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-left  ">
+                        <label for="ele439">departmentChairEmail</label>
+                        <input id="ele439" name="ele439" class="col-xs-12 col-sm-4 text-left  "
+                        data-bind="value:departmentChairEmail" />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-left  ">
+                        <label for="ele440">administrativeSpecialistEmail</label>
+                        <input id="ele440" name="ele440"
+                        class="col-xs-12 col-sm-4 text-left  " data-bind="value:administrativeSpecialistEmail"
+                        />
+                    </div>
+                </div>
+                <div id="col452" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="ele453">secMeetingTimes</label>
+                    <textarea id="ele453" name="ele453" class="text-left  "
+                    data-bind="value:secMeetingTimes"></textarea>
+                </div>
+            </div>
+            <div id="row425" class="text-left row loading "><i style="color:#777777; padding-left:2%"> EmptyRow</i>
+            </div>
+            <div id="quickInputsRow458" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn459" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="quickInputsText460">Label1</label>
+                        <input id="quickInputsText460" name="quickInputsText1" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow462" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn463" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="quickInputsText464">Label1</label>
+                        <input id="quickInputsText464" name="quickInputsText1" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn465" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="quickInputsText466">Label2</label>
+                        <input id="quickInputsText466" name="quickInputsText2" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn467" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="quickInputsText468">Label3</label>
+                        <input id="quickInputsText468" name="quickInputsText3" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn469" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="quickInputsText470">Label4</label>
+                        <input id="quickInputsText470" name="quickInputsText4" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row476" class="text-left row "><i style="color:#777777; padding-left:2%"> EmptyRow</i>
+            </div>
+            <div id="row512" class="text-left row " style="overflow: auto;  background-color:#a15b5b; ">
+                <div id="col513" class="col-xs-12 col-sm-6 text-left  "><span id="ele514" name="ele514" class="text-left  "></span>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

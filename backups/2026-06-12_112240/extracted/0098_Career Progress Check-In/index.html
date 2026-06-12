@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row220" class="text-left row fd-form-masthead ">
+                <div id="col221" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn222" name="revisedOn" class="col-sm-12 text-right  ">Revised 02/26</span>
+                </div>
+                <div id="col223" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele224" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col225" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele226" name="ele21" class="text-left form-title ">Career Progress Check-In</h1>
+                </div>
+                <div id="col227" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele228" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row230" class="text-left row ">
+                <div id="col231" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote232" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickParagraphRow202" name="quickParagraphRow" class="text-left row "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn203" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <h4 id="p_204" name="p_931314" class="text-center  "><strong>You must enter a Career Progress Check-In Year and a Job Title to activate form!</strong></h4>
+                </div>
+            </div>
+            <div id="quickInputsRow182" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn183" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="checkInYear">Career Progress Check-In Year</label>
+                    <select id="checkInYear" name="checkInYear"
+                    class="text-left  " data-bind="dynamicYear: { format: 'YYYY-YY[-2,  0]' } ">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div id="col187" class="col-xs-12 col-sm-6 text-left developer ">
+                    <div class="text-left  ">
+                        <label for="checkInNumber">checkInNumber (hidden)</label>
+                        <input id="checkInNumber" name="checkInNumber"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col205" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele206" name="ele206" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow178" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn179" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall180" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Employee Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow12" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn13" name="quickInputsColumn1" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeLastName">Last Name</label>
+                        <input id="employeeLastName" name="employeeLastName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn15" name="quickInputsColumn3" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeFirstName">First Name</label>
+                        <input id="employeeFirstName" name="employeeFirstName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn17" name="quickInputsColumn2" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeMiddleInitial">Middle Initial</label>
+                        <input id="employeeMiddleInitial" name="employeeMiddleInitial"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col19" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Employee ID</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " required="required" readonly="true" />
+                    </div>
+                </div>
+                <div id="col23" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="jobTitle">Job Title</label>
+                        <input id="jobTitle" name="jobTitle" class="text-left  "
+                        required="required" data-bind="autocomplete: { localSource: 'personsPositionsList',  clearOnFocus: true, validate: true,  labelMask: ['positionTitle'],  formFields: {'currentCampus':'campusTitle', 'departmentGUID':'positionDepartmentGUID', 'supervisorGUID':'supervisorGUID'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col21" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentCampus">Campus</label>
+                        <input id="currentCampus" name="currentCampus" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col25" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentDepartment">Department</label>
+                        <input id="currentDepartment" name="currentDepartment"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow29" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn30" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_31" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickParagraphRow198" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn199" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_200" name="p_12139" class="text-left  "><strong>Note: </strong>If the Supervisor shown after selecting your Job
+                        Title is incorrect, please start typing to search for and select the correct
+                        Supervisor.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow33" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn34" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorName">Supervisor</label>
+                        <input id="supervisorName" name="supervisorName" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: true,   labelMask: ['UserName', ' | ', 'Email'], selectedMask: ['UserName'],  formFields: {'supervisorEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col154" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorEmail">Supervisor Email</label>
+                        <input id="supervisorEmail" name="supervisorEmail"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col36" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele37" name="ele37" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow191" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( checkInNumber() ) ) ">
+                <div id="quickHeadingColumn192" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h3 id="quickHeadingMedium193" name="quickHeadingMedium" class="text-center  ">Check-In Number <span data-bind="html: checkInNumber"></span></h3>
+                </div>
+                <div id="col194" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele195" name="ele195" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow40" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn41" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall42" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Annual Goals for Selected Year</h4>
+                </div>
+            </div>
+            <div id="row208" class="text-left row ">
+                <div id="col209" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px;  background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="ele210" name="ele210" class="text-left  ">Please discuss aligning your goals with the <a href="https://oaklandcc.sharepoint.com/sites/HR/SitePages/Oakland-Community-College-Behavioral-Standards.aspx">OCC Culture Standards</a> and
+                        <a
+                        href="https://www.oaklandcc.edu/about/strategic_plan/strategic">Strategic Directions and Objectives</a>with your leader.</p>
+                </div>
+            </div>
+            <div id="quickTextAreaRow44" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn45" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="personalGoals">Personal Goals</label>
+                    <textarea id="personalGoals" name="personalGoals"
+                    class="text-left  " required="required" placeholder="Complete during Check-In #1"></textarea>
+                </div>
+                <div id="col47" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele48" name="ele48" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickTextAreaRow51" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn52" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="departmentGoals">Department Goals</label>
+                    <textarea id="departmentGoals" name="departmentGoals"
+                    class="text-left  " required="required" placeholder="Complete during Check-In #1"></textarea>
+                </div>
+                <div id="col54" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele55" name="ele55" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickTextAreaRow58" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn59" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="collegewideGoals">Collegewide Goals</label>
+                    <textarea id="collegewideGoals" name="collegewideGoals"
+                    class="text-left  " required="required" placeholder="Complete during Check-In #1"></textarea>
+                </div>
+                <div id="col61" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_63" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow65" name="quickHeadingRow" class="text-left row checkIn2 "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn66" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall67" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Accomplishments/Contributions</h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow69" name="quickHeadingRow" class="text-left row checkIn2 ">
+                <div id="quickHeadingColumn70" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmall71" name="quickHeadingSmall" class="text-left  "><strong>Share key accomplishments and contributions</strong></h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow73" name="quickTextAreaRow" class="text-left row checkIn2 ">
+                <div id="quickTextAreaColumn74" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="keyAccompCheckin2">Key Accomplishments and Contributions (Check-In 2)</label>
+                    <textarea id="keyAccompCheckin2"
+                    name="keyAccompCheckin2" class="text-left  " placeholder="Complete during Check-In #2"></textarea>
+                </div>
+                <div id="col76" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele77" name="ele77" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickTextAreaRow731212" name="quickTextAreaRow" class="text-left row checkIn3 ">
+                <div id="quickTextAreaColumn7412" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="keyAccompCheckin3">Key Accomplishments and Contributions (Check-In 3)</label>
+                    <textarea id="keyAccompCheckin3"
+                    name="keyAccompCheckin3" class="text-left  " placeholder="Complete during Check-In #3"></textarea>
+                </div>
+                <div id="col7612" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele7712" name="ele77" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow651414" name="quickHeadingRow" class="text-left row checkIn2 "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn6614" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall6714" name="quickHeadingSmall6714" class="text-center  "
+                    style=" font-weight: bold; ">Opportunities</h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow691313" name="quickHeadingRow" class="text-left row checkIn2 ">
+                <div id="quickHeadingColumn7013" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmall7113" name="quickHeadingSmall7113" class="text-left  "><strong>Identify opportunities to address areas of professional improvement and growth</strong></h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow91" name="quickTextAreaRow" class="text-left row checkIn2 ">
+                <div id="quickTextAreaColumn92" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="opportunitiesCheckIn2">Opportunities (Check-In 2)</label>
+                    <textarea id="opportunitiesCheckIn2"
+                    name="opportunitiesCheckIn2" class="text-left  " placeholder="Complete during Check-In #2"></textarea>
+                </div>
+                <div id="col94" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele95" name="ele95" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickTextAreaRow911616" name="quickTextAreaRow" class="text-left row checkIn3 ">
+                <div id="quickTextAreaColumn9216" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="opportunitiesCheckIn3">Opportunities (Check-In 3)</label>
+                    <textarea id="opportunitiesCheckIn3"
+                    name="opportunitiesCheckIn3" class="text-left  " placeholder="Complete during Check-In #3"></textarea>
+                </div>
+                <div id="col9416" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele9516" name="ele95" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow6514141717" name="quickHeadingRow" class="text-left row checkIn2 "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn661417" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall671417" name="quickHeadingSmall671417" class="text-center  "
+                    style=" font-weight: bold; ">Supportive Measures from Leadership</h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow6913131818" name="quickHeadingRow" class="text-left row checkIn2 ">
+                <div id="quickHeadingColumn701318" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmall711318" name="quickHeadingSmall711318" class="text-left  "><strong>Provide measures to help reach accomplishments</strong></h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow9116161919" name="quickTextAreaRow" class="text-left row checkIn2 ">
+                <div id="quickTextAreaColumn921619" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="supportiveMeasuresCheckIn2">Supportive Measures from Leadership (Check-In 2)</label>
+                    <textarea id="supportiveMeasuresCheckIn2"
+                    name="supportiveMeasuresCheckIn2" class="text-left  " placeholder="Complete during Check-In #2"></textarea>
+                </div>
+                <div id="col941619" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele951619" name="ele95" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickTextAreaRow91161619192020" name="quickTextAreaRow" class="text-left row checkIn3 ">
+                <div id="quickTextAreaColumn92161920" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="supportiveMeasuresCheckIn3">Supportive Measures from Leadership (Check-In 3)</label>
+                    <textarea id="supportiveMeasuresCheckIn3"
+                    name="supportiveMeasuresCheckIn3" class="text-left  " placeholder="Complete during Check-In #3"></textarea>
+                </div>
+                <div id="col94161920" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele95161920" name="ele95" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow65141417172121" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn66141721" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall67141721" name="quickHeadingSmall67141721" class="text-center  "
+                    style=" font-weight: bold; ">Employee Feedback</h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow91161619192222" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn92161922" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="empFeedbackCheckIn1">Employee Feedback (Check-In 1)</label>
+                    <textarea id="empFeedbackCheckIn1"
+                    name="empFeedbackCheckIn1" class="text-left  " placeholder="Complete during Check-In #1"></textarea>
+                </div>
+                <div id="col94161922" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele95161922" name="ele95" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickTextAreaRow911616191922222323" name="quickTextAreaRow" class="text-left row checkIn2 ">
+                <div id="quickTextAreaColumn9216192223" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="empFeedbackCheckIn2">Employee Feedback (Check-In 2)</label>
+                    <textarea id="empFeedbackCheckIn2"
+                    name="empFeedbackCheckIn2" class="text-left  " placeholder="Complete during Check-In #2"></textarea>
+                </div>
+                <div id="col9416192223" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele9516192223" name="ele95" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickTextAreaRow9116161919222223232424" name="quickTextAreaRow"
+            class="text-left row checkIn3 ">
+                <div id="quickTextAreaColumn921619222324" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="empFeedbackCheckIn3">Employee Feedback (Check-In 3)</label>
+                    <textarea id="empFeedbackCheckIn3"
+                    name="empFeedbackCheckIn3" class="text-left  " placeholder="Complete during Check-In #3"></textarea>
+                </div>
+                <div id="col941619222324" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele951619222324" name="ele95" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow651414171721212525" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn6614172125" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall6714172125" name="quickHeadingSmall6714172125"
+                    class="text-center  " style=" font-weight: bold; ">Additional Comments</h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow91161619192222232324242626" name="quickTextAreaRow"
+            class="text-left row ">
+                <div id="quickTextAreaColumn92161922232426" name="quickTextAreaColumn"
+                class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="additionalCommentsCheckIn1">Additional Comments (Check-In 1)</label>
+                    <textarea id="additionalCommentsCheckIn1"
+                    name="additionalCommentsCheckIn1" class="text-left  " placeholder="Complete during Check-In #1"></textarea>
+                </div>
+                <div id="col94161922232426" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele95161922232426" name="ele95" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickTextAreaRow911616191922222323242426262727" name="quickTextAreaRow"
+            class="text-left row checkIn2 ">
+                <div id="quickTextAreaColumn9216192223242627" name="quickTextAreaColumn"
+                class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="additionalCommentsCheckIn2">Additional Comments (Check-In 2)</label>
+                    <textarea id="additionalCommentsCheckIn2"
+                    name="additionalCommentsCheckIn2" class="text-left  " placeholder="Complete during Check-In #2"></textarea>
+                </div>
+                <div id="col9416192223242627" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele9516192223242627" name="ele95" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickTextAreaRow9116161919222223232424262627272828" name="quickTextAreaRow"
+            class="text-left row checkIn3 ">
+                <div id="quickTextAreaColumn921619222324262728" name="quickTextAreaColumn"
+                class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="additionalCommentsCheckIn3">Additional Comments (Check-In 3)</label>
+                    <textarea id="additionalCommentsCheckIn3"
+                    name="additionalCommentsCheckIn3" class="text-left  " placeholder="Complete during Check-In #3"></textarea>
+                </div>
+                <div id="col941619222324262728" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele951619222324262728" name="ele95" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow158" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn159" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall160" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow162" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn163" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeName">employeeName (hidden)</label>
+                        <input id="employeeName" name="employeeName"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col165" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="departmentGUID">departmentGUID (hidden)</label>
+                        <input id="departmentGUID" name="departmentGUID"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col168" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorGUID">supervisorGUID (hidden)</label>
+                        <input id="supervisorGUID" name="supervisorGUID"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col174" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formCode">formCode (hidden)</label>
+                        <input id="formCode" name="formCode" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col212" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fiscalYear">fiscalYear (hidden)</label>
+                        <input id="fiscalYear" name="fiscalYear" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

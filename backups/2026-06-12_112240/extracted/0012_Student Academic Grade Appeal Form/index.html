@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row389" class="text-left row fd-form-masthead ">
+                <div id="col390" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn391" name="revisedOn" class="col-sm-12 text-right  ">Revised 06/25</span>
+                </div>
+                <div id="col392" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele393" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col394" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele395" name="ele21" class="text-left form-title ">Student Academic Grade Appeal Form</h1>
+                </div>
+                <div id="col396" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele397" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row365" class="text-left row ">
+                <div id="col366" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote367" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickParagraphRow8" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn9" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement10" name="quickParagraphElement" class="text-left  "><strong>Rationale for Grade Appeal</strong>
+                        <br />A student may appeal a final course grade if the grading procedure and/or
+                        result (1) did not match the standards communicated in the course syllabus
+                        or (2) violated a Board of Trustees policy.
+                        <br /><strong>Summary of the Grade Appeal Process</strong>
+                        <br />After gathering the proper documentation, a student will communicate first
+                        with the instructor and attempt to resolve the appeal. If the appeal is
+                        not resolved, the student will then communicate with the instructor’s department
+                        chair, who will mediate the appeal. If the appeal is still not resolved,
+                        the student will communicate with the instructor’s academic dean, who will
+                        make the final decision about the appeal.
+                        <br />
+<a href="AcademicAppealProcessOverview.pdf" target="_blank">Academic Appeals Process</a> 
+                    </p>
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row studentSubmissionRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Student Submission to Instructor</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow16" name="quickInputsRow" class="text-left row studentSubmissionRow ">
+                <div id="quickInputsColumn17" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Student Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn19" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Student ID</label>
+                        <input id="originatorErpId" name="originatorErpId" class="text-left  "
+                        required="required" readonly="true" type="text" />
+                    </div>
+                    <div class="text-left hide ">
+                        <label for="ethosGUID">ethosGUID</label>
+                        <input id="ethosGUID" name="ethosGUID" class="text-left hide "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn21" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">Date</label>
+                        <input id="originationDate" name="originationDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow24" name="quickInputsRow" class="text-left row studentSubmissionRow ">
+                <div id="quickInputsColumn25" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="fillable: { packageParam: ['Start'] } ">
+                    <div class="text-left  ">
+                        <label for="studentPhone">Phone Number</label>
+                        <input id="studentPhone" name="studentPhone" class="text-left  "
+                        required="required" type="text" data-bind="mask: 'phone' " />
+                    </div>
+                </div>
+                <div id="col249" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">Oakland CC Email</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row213" class="text-left row studentSubmissionRow ">
+                <div id="col214" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele215" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow32" name="quickInputsRow" class="text-left row studentSubmissionRow ">
+                <div id="col135" name="col135" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="fillable: { packageParam: ['Start'] } ">
+                    <div class="text-left  ">
+                        <label for="courseSection">Section Name</label>
+                        <input id="courseSection" name="courseSection" class="text-left  "
+                        type="text" data-bind="autocomplete: { localSource: 'studentCourseReg',  validate: true,  labelMask: ['registrationTerm', ' ', 'registrationSection'],  selectedMask: ['registrationSection'],  formFields: {'semester':'registrationTerm', 'instructorName':'registrationInstructorName', 'locationGUID':'registrationLocation','sectionGUID':'registrationSectionID'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn37" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="col-sm-12 text-left  ">
+                        <label for="semester">Semester</label>
+                        <input id="semester" name="semester" class="col-sm-12 text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col266" class="col-xs-12 col-sm-4 text-left hide ">
+                    <div class="text-left  ">
+                        <label for="locationGUID">locationGUID</label>
+                        <input id="locationGUID" name="locationGUID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col272" class="col-xs-12 col-sm-4 text-left hide ">
+                    <div class="text-left  ">
+                        <label for="sectionGUID">sectionGUID</label>
+                        <input id="sectionGUID" name="sectionGUID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col275" class="col-xs-12 col-sm-4 text-left hide ">
+                    <div class="text-left  ">
+                        <label for="gradeGUID">gradeGUID</label>
+                        <input id="gradeGUID" name="gradeGUID" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col139" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="campus">Campus Location</label>
+                        <input id="campus" name="campus" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col142" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="grade">Grade Assigned</label>
+                        <input id="grade" name="grade" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col269" class="col-xs-12 col-sm-6 text-left hide ">
+                    <div class="text-left  ">
+                        <label for="subject">subject</label>
+                        <input id="subject" name="subject" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow243838" name="quickInputsRow" class="text-left row studentSubmissionRow ">
+                <div id="col278" class="col-xs-12 col-sm-6 text-left hide ">
+                    <div class="text-left  ">
+                        <label for="instructorGUID">instructorGUID</label>
+                        <input id="instructorGUID" name="instructorGUID"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn2738" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="instructorName">Instructor Name</label>
+                        <input id="instructorName" name="instructorName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn2938" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="instructorEmail">Instructor Email</label>
+                        <input id="instructorEmail" name="instructorEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row2133434" name="" class="text-left row studentSubmissionRow ">
+                <div id="col21434" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele21534" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickTextAreaRow40" name="quickTextAreaRow" class="text-left row studentSubmissionRow "
+            data-bind="fillable: { packageParam: ['Start'] } ">
+                <div id="col346" class="col-xs-7 col-sm-7 text-left  ">
+                    <label for="rationaleGradeAppeal">Rationale for Grade appeal</label>
+                    <select id="rationaleGradeAppeal" name="rationaleGradeAppeal"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Did not match the standards communicated in the course syllabus ">Did not match the standards communicated in the course syllabus</option>
+                        <option
+                        value="Violated a Board of Trustees policy. ">Violated a Board of Trustees policy.</option>
+                    </select>
+                </div>
+                <div id="quickTextAreaColumn41" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="situationDescription">Describe in detail the situation and resulting grade(s) about which you
+                        are concerned. (Additional documents may be attached.)</label>
+                    <textarea
+                    id="situationDescription" name="situationDescription" class="text-left  "
+                    required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow1288" name="quickHeadingRow" class="text-left row instructorResponseRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn138" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall148" name="quickHeadingSmall148" class="text-center  "
+                    style=" font-weight: bold; ">Instructor Response</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow261" name="quickInputsRow" class="text-left row instructorResponseRow ">
+                <div id="quickInputsColumn262" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  "><span id="text" name="within 60 business days of the start of the semester following the semester in which the grade was received"
+                    class="text-left  "><strong>Instructions<br /></strong>
+1. Indicated if you met with the student,<br />
+2. Add any applicable notes.<br />
+3. Select Appeal Granted or Appeal Denied. <br />
+4. Select the Approve button to move the form forward.</span>
+                </div>
+            </div>
+            <div id="radioRow50" name="radioRow" class="text-left row instructorResponseRow "
+            data-bind="fillable: { packageParam: ['ConditionalActorInstructor'] } ">
+                <div id="col55" class="col-xs-12 col-sm-4 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <h5 id="ele56" name="ele56" class="text-left  "><strong>Did you meet with the student?</strong></h5>
+                </div>
+                <div id="radioCol51" name="radioCol1" class="col-xs-12 col-sm-2 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:7px 0px 0px 0px; ">
+                    <input id="studentMeetingYes" name="studentMeeting" class="text-left  "
+                    style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px;  margin-right: 5px;&#10; "
+                    required="required" type="radio" value="Yes" />
+                    <label for="studentMeetingYes">Yes</label>
+                </div>
+                <div id="radioCol53" name="radioCol2" class="col-xs-12 col-sm-2 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:7px 0px 0px 0px; ">
+                    <input id="studentMeetingNo" name="studentMeeting" class="text-left  "
+                    style=" margin-right: 5px;&#10; " required="required" type="radio" value="No"
+                    />
+                    <label for="studentMeetingNo">No</label>
+                </div>
+                <div id="col58" name="col58" class="col-xs-12 col-sm-4 text-left  " data-bind="visible: ( ( studentMeeting() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="studentMeetingDate">Meeting Date</label>
+                        <input id="studentMeetingDate" name="studentMeetingDate"
+                        class="text-left  " required="required" type="text" data-bind="datepicker"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow62" name="quickTextAreaRow" class="text-left row instructorResponseRow "
+            data-bind="fillable: { packageParam: ['ConditionalActorInstructor'] } ">
+                <div id="quickTextAreaColumn63" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="instructorNotes">Instructor Notes</label>
+                    <textarea id="instructorNotes" name="instructorNotes"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow66" name="quickInputsRow" class="text-left row instructorResponseRow "
+            data-bind="fillable: { packageParam: ['ConditionalActorInstructor'] } ">
+                <div id="quickInputsColumn67" name="quickInputsColumn1" class="col-xs-12 col-sm-9 text-left  ">
+                    <label for="instructorRecommendation">Instructor Decision</label>
+                    <select id="instructorRecommendation" name="instructorRecommendation"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Appeal Granted">Appeal Granted</option>
+                        <option value="Appeal Denied">Appeal Denied</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn69" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="instructorDate">Date</label>
+                        <input id="instructorDate" name="instructorDecision" class="text-left  "
+                        required="required" type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="row33336" class="text-left row instructorResponseRow ">
+                <div id="col33436" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="instructorSubmitChangeGrade" name="" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em .7em 0em 0em;  background-color:#0f0e0e;  color:#f62d2d;  transform: scale(1.2); "
+                    type="checkbox" />
+                    <label for="instructorSubmitChangeGrade"><span style="color: red;">You MUST submit a Change of Grade form once you approve this form.</span>
+                    </label>
+                </div>
+            </div>
+            <div id="quickHeadingRow285" name="quickHeadingRow" class="text-left row studentDepartmentChairSubmissionRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn286" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall287" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Submission to Department Chair</h4>
+                </div>
+            </div>
+            <div id="quickDropdownRow3133535" name="quickDropdownRow" class="text-left row studentDepartmentChairSubmissionRow "
+            data-bind="fillable: { packageParam: ['ConditionalActorOriginatorEscalateToDeptChair'] } ">
+                <div id="quickDropdownColumn31435" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="escalateDepartmentChair">Would you lke to escalate this appeal to the Department Chair?</label>
+                    <select
+                    id="escalateDepartmentChair" name="escalateDepartmentChair" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow621414" name="quickTextAreaRow" class="text-left row studentDepartmentChairSubmissionRow "
+            data-bind="fillable: { packageParam: ['ConditionalActorOriginatorEscalateToDeptChair'] } ">
+                <div id="quickTextAreaColumn6314" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="studentCommentsDeptChairStep">Student Comments for Department Chair</label>
+                    <textarea id="studentCommentsDeptChairStep"
+                    name="studentCommentsDeptChairStep" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow75" name="quickInputsRow" class="text-left row studentDepartmentChairSubmissionRow ">
+                <div id="quickInputsColumn76" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="departmentChairName">Department Chair Name</label>
+                        <input id="departmentChairName" name="quickInputsTexdepartmentChairNamet1"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn78" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="departmentChairEmail">Department Chair Email</label>
+                        <input id="departmentChairEmail" name="departmentChairEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow128812121515" name="quickHeadingRow" class="text-left row departmentChairResponseRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1381215" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1481215" name="quickHeadingSmall1481215" class="text-center  "
+                    style=" font-weight: bold; ">Department Chair Response</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow2613434" name="quickInputsRow" class="text-left row departmentChairResponseRow ">
+                <div id="quickInputsColumn26234" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  "><span id="text34" name="within 60 business days of the start of the semester following the semester in which the grade was received"
+                    class="text-left  "><strong>Instructions<br /></strong>
+1. Indicated if you met with the student,<br />
+2. Add any applicable notes.<br />
+3. Select Appeal Granted or Appeal Denied. <br />
+4. Select the Approve button to move the form forward.</span>
+                </div>
+            </div>
+            <div id="radioRow501616" name="radioRow" class="text-left row departmentChairResponseRow "
+            data-bind="fillable: { packageParam: ['ConditionalActorDepartmentChair'] } ">
+                <div id="col5516" class="col-xs-12 col-sm-4 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <h5 id="ele5616" name="ele56" class="text-left  "><strong>Did you meet with the student?</strong></h5>
+                </div>
+                <div id="radioCol5116" name="radioCol1" class="col-xs-12 col-sm-2 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:7px 0px 0px 0px; ">
+                    <input id="dcStudentMeetingYes" name="dcStudentMeeting" class="text-left  "
+                    style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px;  margin-right: 5px;&#10; "
+                    required="required" type="radio" value="Yes" />
+                    <label for="dcStudentMeetingYes">Yes</label>
+                </div>
+                <div id="radioCol5316" name="radioCol2" class="col-xs-12 col-sm-2 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:7px 0px 0px 0px; ">
+                    <input id="dcStudentMeetingNo" name="dcStudentMeeting" class="text-left  "
+                    style=" margin-right: 5px;&#10; " required="required" type="radio" value="No"
+                    />
+                    <label for="dcStudentMeetingNo">No</label>
+                </div>
+                <div id="col5816" name="col5816" class="col-xs-12 col-sm-4 text-left  "
+                data-bind="visible: ( ( dcStudentMeeting() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="dcStudentMeetingDate">Meeting Date</label>
+                        <input id="dcStudentMeetingDate" name="dcStudentMeetingDate"
+                        class="text-left  " required="required" type="text" data-bind="datepicker"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow621717" name="quickTextAreaRow" class="text-left row departmentChairResponseRow "
+            data-bind="fillable: { packageParam: ['ConditionalActorDepartmentChair'] } ">
+                <div id="quickTextAreaColumn6317" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="departmentChairNotes">Department Chair Notes</label>
+                    <textarea id="departmentChairNotes" name="departmentChairNotes"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow661818" name="quickInputsRow" class="text-left row departmentChairResponseRow "
+            data-bind="fillable: { packageParam: ['ConditionalActorDepartmentChair'] } ">
+                <div id="quickInputsColumn6718" name="quickInputsColumn1" class="col-xs-12 col-sm-9 text-left  ">
+                    <label for="dcRecommendation">Department Chair Decision</label>
+                    <select id="dcRecommendation" name="dcRecommendation"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Appeal Granted">Appeal Granted</option>
+                        <option value="Appeal Denied">Appeal Denied</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn6918" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="departmentChairDate">Date</label>
+                        <input id="departmentChairDate" name="departmentChairDate"
+                        class="text-left  " required="required" type="text" data-bind="datepicker"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row333" class="text-left row departmentChairResponseRow ">
+                <div id="col334" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="deptChairSubmitChangeGrade" name="submitChangeOfGrade" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em .7em 0em 0em;  background-color:#0f0e0e;  color:#f62d2d;  transform: scale(1.2); "
+                    type="checkbox" />
+                    <label for="deptChairSubmitChangeGrade"><span style="color: red;">You MUST submit a Change of Grade form once you approve this form.</span>
+                    </label>
+                </div>
+            </div>
+            <div id="quickHeadingRow128812121919" name="quickHeadingRow" class="text-left row studentAdminReviewerSubmissionRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1381219" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1481219" name="quickHeadingSmall1481219" class="text-center  "
+                    style=" font-weight: bold; ">Submission to Dean</h4>
+                </div>
+            </div>
+            <div id="quickDropdownRow313" name="quickDropdownRow" class="text-left row studentAdminReviewerSubmissionRow "
+            data-bind="fillable: { packageParam: ['ConditionalActorOriginatorEscalateToAdminApprover'] } ">
+                <div id="quickDropdownColumn314" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="escalateDeanReview">Would you lke to escalate this appeal to the Dean?</label>
+                    <select id="escalateDeanReview"
+                    name="escalateDeanReview" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow6214142121" name="quickTextAreaRow" class="text-left row studentAdminReviewerSubmissionRow "
+            data-bind="fillable: { packageParam: ['ConditionalActorOriginatorEscalateToAdminApprover'] } ">
+                <div id="quickTextAreaColumn631421" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="studentCommentsDeanReviewerStep">Student Comments for Dean</label>
+                    <textarea id="studentCommentsDeanReviewerStep"
+                    name="studentCommentsDeanReviewerStep" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow752020" name="quickInputsRow" class="text-left row studentAdminReviewerSubmissionRow "
+            data-bind="fillable: { packageParam: ['ConditionalActorOriginatorEscalateToAdminApprover'] } ">
+                <div id="quickInputsColumn7620" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanName">Name of Dean</label>
+                        <input id="deanName" name="deanName" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn7820" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanEmail">Dean's Email</label>
+                        <input id="deanEmail" name="deanEmail" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow1288121215152222" name="quickHeadingRow" class="text-left row adminReviewerResponseRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn138121522" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall148121522" name="quickHeadingSmall148121522"
+                    class="text-center  " style=" font-weight: bold; ">Dean's Response</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow26134343434" name="quickInputsRow" class="text-left row adminReviewerResponseRow ">
+                <div id="quickInputsColumn2623434" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  "><span id="text3434" name="within 60 business days of the start of the semester following the semester in which the grade was received"
+                    class="text-left  "><strong>Instructions<br /></strong>
+1. Indicated if you met with the student,<br />
+2. Add any applicable notes.<br />
+3. Select Appeal Granted or Appeal Denied. <br />
+4. Select the Approve button to move the form forward.</span>
+                </div>
+            </div>
+            <div id="radioRow5016162323" name="radioRow" class="text-left row adminReviewerResponseRow "
+            data-bind="fillable: { packageParam: ['ConditionalActorAdministrativeReviewer'] } ">
+                <div id="col551623" class="col-xs-12 col-sm-4 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <h5 id="ele561623" name="ele56" class="text-left  "><strong>Did you meet with the student?</strong></h5>
+                </div>
+                <div id="radioCol511623" name="radioCol1" class="col-xs-12 col-sm-2 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:7px 0px 0px 0px; ">
+                    <input id="deanStudentMeetingYes" name="deanStudentMeeting" class="text-left  "
+                    style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px;  margin-right: 5px;&#10; "
+                    required="required" type="radio" value="Yes" />
+                    <label for="deanStudentMeetingYes">Yes</label>
+                </div>
+                <div id="radioCol531623" name="radioCol2" class="col-xs-12 col-sm-2 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:7px 0px 0px 0px; ">
+                    <input id="deanStudentMeetingNo" name="deanStudentMeeting" class="text-left  "
+                    style=" margin-right: 5px;&#10; " type="radio" value="No" />
+                    <label for="deanStudentMeetingNo">No</label>
+                </div>
+                <div id="col581623" name="col581623" class="col-xs-12 col-sm-4 text-left  "
+                data-bind="visible: ( ( deanStudentMeeting() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="deanStudentMeetingDate">Meeting Date</label>
+                        <input id="deanStudentMeetingDate" name="deanStudentMeetingDate"
+                        class="text-left  " required="required" type="text" data-bind="datepicker"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow6217172424" name="quickTextAreaRow" class="text-left row adminReviewerResponseRow "
+            data-bind="fillable: { packageParam: ['ConditionalActorAdministrativeReviewer'] } ">
+                <div id="quickTextAreaColumn631724" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="deansNotes">Dean's Notes</label>
+                    <textarea id="deansNotes" name="deansNotes" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow6618183434" name="quickInputsRow" class="text-left row adminReviewerResponseRow "
+            data-bind="fillable: { packageParam: ['ConditionalActorAdministrativeReviewer'] } ">
+                <div id="quickInputsColumn671834" name="quickInputsColumn1" class="col-xs-12 col-sm-9 text-left  ">
+                    <label for="deanDecision">Dean Decision</label>
+                    <select id="deanDecision" name="deanDecision" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Appeal Granted">Appeal Granted</option>
+                        <option value="Appeal Denied">Appeal Denied</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn691834" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanDate">Date</label>
+                        <input id="deanDate" name="deanDate" class="text-left  " required="required"
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="row3333637" class="text-left row adminReviewerResponseRow ">
+                <div id="col3343637" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="deanSubmitChangeGrade" name="" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em .7em 0em 0em;  background-color:#0f0e0e;  color:#f62d2d;  transform: scale(1.2); "
+                    type="checkbox" />
+                    <label for="deanSubmitChangeGrade"><span style="color: red;">You MUST submit a Change of Grade form once you approve this form.</span>
+                    </label>
+                </div>
+            </div>
+            <div id="quickInputsRow290" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn291" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="administrativeSpecialistEmail">administrativeSpecialistEmail</label>
+                        <input id="administrativeSpecialistEmail"
+                        name="administrativeSpecialistEmail" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col327" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col343" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicYear">Academic Year (hidden)</label>
+                        <input id="academicYear" name="academicYear"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

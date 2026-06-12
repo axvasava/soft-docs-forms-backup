@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row428" class="text-left row fd-form-masthead ">
+                <div id="col429" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn430" name="revisedOn" class="col-sm-12 text-right  ">Revised 02/26</span>
+                </div>
+                <div id="col431" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele432" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col433" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele434" name="ele21" class="text-left form-title ">Check Stop Payment</h1>
+                </div>
+                <div id="col435" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele436" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row424" class="text-left row ">
+                <div id="col425" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote426" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow122020" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1320" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1420" name="quickHeadingSmall1420" class="text-center  "
+                    style=" font-weight: bold; ">Submitter Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow358" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn359" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn361" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Employee ID</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn363" name="quickInputsColumn3" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">Email Address</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Check Information</h4>
+                </div>
+            </div>
+            <div id="quickDropdownRow16" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn17" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="reasonForStop">Reason for Stop</label>
+                    <select id="reasonForStop" name="reasonForStop"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Not received">Not received</option>
+                        <option value="Bad address">Bad address</option>
+                        <option value="Lost/Stolen">Lost/Stolen</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div id="col351" class="col-xs-6 col-sm-6 text-left  ">
+                    <label for="ddCheckType">Check Type</label>
+                    <select id="ddCheckType" name="ddCheckType" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Payroll (Payroll)">Payroll (Payroll)</option>
+                        <option value="Student Refund (AR)">Student Refund (AR)</option>
+                        <option value="Vendor/Employee Reimbursement (AP)">Vendor/Employee Reimbursement (AP)</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow21" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn22" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="returnDetails">Details</label>
+                    <textarea id="returnDetails" name="returnDetails" class="text-left  "
+                    required="required" placeholder="Please provide as much information as possible. i.e. check number, address, amount"></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow25" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn26" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="nameOnCheck">Name on Check</label>
+                        <input id="nameOnCheck" name="nameOnCheck" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow11117172121" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn1181721" name="quickInputsColumn4" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText1191721" name="quickInputsText4" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="row343" class="text-left row ">
+                <div id="col344" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="chkAcknowledge" name="chkAcknowledge" class="text-left  " type="checkbox"
+                    />
+                </div>
+                <div id="col345" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="lblAcknowledge" name="lblAcknowledge" class="col-xs-12 col-sm-12 text-left  "
+                    for="chkAcknowledge">Please note: It takes 48 business hours from the Stop Payment Request
+                        date for the stop to be valid. The payee agrees that by submitting this
+                        request, they will not cash the check listed below. Please check this box
+                        to indicate that you have read and understand these terms.</label>
+                </div>
+            </div>
+            <div id="quickHeadingRow1288" name="quickHeadingRow" class="text-left row voucherInfo "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn138" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall148" name="quickHeadingSmall148" class="text-center  "
+                    style=" font-weight: bold; ">Voucher Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow77" name="quickInputsRow" class="text-left row voucherInfo ">
+                <div id="quickInputsColumn78" name="quickInputsColumn1" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="voucherNumber">Voucher Number</label>
+                        <input id="voucherNumber" name="voucherNumber" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn80" name="quickInputsColumn2" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="voucherDate">Voucher Date</label>
+                        <input id="voucherDate" name="voucherDate" class="text-left datepicker "
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col82" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="checkAmount">Check Amount</label>
+                        <input id="checkAmount" name="checkAmount" class="text-left  "
+                        data-bind="money" />
+                    </div>
+                </div>
+                <div id="col83" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="checkNumber">Check Number</label>
+                        <input id="checkNumber" name="checkNumber" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col84" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="checkDate">Check Date</label>
+                        <input id="checkDate" name="checkDate" class="text-left  "
+                        data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow111171721212323" name="quickInputsRow" class="text-left row checkReissue ">
+                <div id="quickInputsColumn118172123" name="quickInputsColumn4" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText119172123" name="quickInputsText4" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="row412" class="text-left row checkReissue ">
+                <div id="col413" class="col-xs-6 col-sm-6 text-left  ">
+                    <label for="checkReissue">Check has been re-issued</label>
+                    <select id="checkReissue" name="checkReissue"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="row408" name="row408" class="text-left row  " data-bind="visible: ( ( checkReissue() == 'No' ) ) ">
+                <div id="col409" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="reason">Reason</label>
+                    <textarea id="reason" name="reason" class="col-xs-12 col-sm-12 text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow12881212" name="quickHeadingRow" class="text-left row bankService "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13812" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14812" name="quickHeadingSmall14812" class="text-center  "
+                    style=" font-weight: bold; ">Banking Service Use Only</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow111" name="quickInputsRow" class="text-left row bankService ">
+                <div id="quickInputsColumn114" name="quickInputsColumn2" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="bankServSign">Stop Placed By:</label>
+                        <input id="bankServSign" name="bankServSign" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn116" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="bankServSignDate">Date</label>
+                        <input id="bankServSignDate" name="bankServSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow1232323" name="quickInputsRow" class="text-left row  bankService ">
+                <div id="quickInputsColumn12623" name="quickInputsColumn2" class="col-xs-1 col-sm-1 text-center  "
+                style=" margin-top: 10px; ">
+                    <input id="hasBankConfirmed" name="hasBankConfirmed" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="quickInputsColumn12823" name="quickInputsColumn3" class="col-xs-3 col-sm-3 text-left  "
+                style=" margin-top: 10px; ">
+                    <label id="lblHasBankConfirmed" name="lblHasBankConfirmed" class="col-xs-12 col-sm-12 text-left  "
+                    for="hasBankConfirmed">Bank has confirmed</label>
+                </div>
+            </div>
+            <div id="quickHeadingRow128812122222" name="quickHeadingRow" class="text-left row  apManager "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1381222" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1481222" name="quickHeadingSmall1481222" class="text-center  "
+                    style=" font-weight: bold; ">AP Manager Use Only</h4>
+                </div>
+            </div>
+            <div id="row378" class="text-left row apManager ">
+                <div id="col379" class="col-xs-3 col-sm-3 text-left  ">
+                    <h4 id="ele384" name="ele384" class="text-center  "><strong>Voided:</strong></h4>
+                </div>
+                <div id="col380" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="voidedCheckOnly" name="CheckVoucherVoided" class="text-left  "
+                    type="radio" value="checkonly" />
+                </div>
+                <div id="col381" class="col-xs-2 col-sm-2 text-left  ">
+                    <label id="lblvoidedCheckOnly" name="lblvoidedCheckOnly" class="text-left  "
+                    for="voidedCheckOnly">Check Only</label>
+                </div>
+                <div id="col382" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="voidedCheckAndVoucher" name="CheckVoucherVoided" class="text-left  "
+                    type="radio" value="checkandvoucher" />
+                </div>
+                <div id="col383" class="col-xs-3 col-sm-3 text-left  ">
+                    <label id="lblvoidedCheckAndVoucher" name="lblvoidedCheckAndVoucher" class="text-left  "
+                    for="voidedCheckAndVoucher">Check and Voucher</label>
+                </div>
+            </div>
+            <div id="row320" name="row320" class="text-left row " data-bind="visible: ( ( CheckVoucherVoided() == 'checkonly' ) ) ">
+                <div id="col321" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="reissuedCheckNumber">Re-issued Check Number</label>
+                        <input id="reissuedCheckNumber" name="reissuedCheckNumber"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col322" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="reissuedCheckDate">Re-issued Check Date</label>
+                        <input id="reissuedCheckDate" name="reissuedCheckDate"
+                        class="text-left datepicker " />
+                    </div>
+                </div>
+            </div>
+            <div id="row155" class="text-left row  apManager ">
+                <div id="col156" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="FSNotes">Notes</label>
+                    <textarea id="FSNotes" name="FSNotes" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow1111717" name="quickInputsRow" class="text-left row  apManager ">
+                <div id="quickInputsColumn11817" name="quickInputsColumn4" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText11917" name="quickInputsText4" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="row220" class="text-left row developer ">
+                <div id="col316" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="checkType">checkType (hidden)</label>
+                        <input id="checkType" name="checkType" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col396" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="displayName">displayName (hidden)</label>
+                        <input id="displayName" name="displayName"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

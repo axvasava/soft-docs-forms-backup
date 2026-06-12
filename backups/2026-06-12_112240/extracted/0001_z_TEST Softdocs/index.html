@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>Softdocs Test</title>
+        <link rel="stylesheet" href="bootstrap.min.css" />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="quickInputsRow55" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn56" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="email">email</label>
+                        <input id="email" name="email" class="text-left  " type="text"
+                        data-bind="autocomplete: { &#10;    integrationSource: 'Etrieve_Security_Get_CW_Faculty',  &#10;    minLength: 1,  &#10;    labelLength: 20,  &#10;    clearOnFocus: true,&#10;    validate: true,&#10;    labelMask: ['Email']&#10;} "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow2" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn3" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fName">First Name</label>
+                        <input id="fName" name="fName" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn5" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="quickInputsText6">Last Name</label>
+                        <input id="quickInputsText6" name="quickInputsText2"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow10" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn11" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="quickInputsText12">Student ID</label>
+                        <input id="quickInputsText12" name="quickInputsText1"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="radioRow14" name="radioRow" class="text-left row ">
+                <div id="radioCol15" name="radioCol1" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="radioOne16" name="radioGroup" class="text-left  " type="radio"
+                    value="Female" />
+                    <label for="radioOne16">Female</label>
+                </div>
+                <div id="radioCol17" name="radioCol2" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="radioTwo18" name="radioGroup" class="text-left  " type="radio"
+                    value="Male" />
+                    <label for="radioTwo18">Male</label>
+                </div>
+                <div id="radioCol19" name="radioCol3" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="radioThree20" name="radioGroup" class="text-left  " type="radio"
+                    value="Other" />
+                    <label for="radioThree20">Other</label>
+                </div>
+            </div>
+            <div id="quickDropdownRow22" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn23" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="quickDropdownElement24">Color Preference</label>
+                    <select id="quickDropdownElement24" name="quickDropdownElement"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Aquamarine">Aquamarine</option>
+                        <option value="Azure">Azure</option>
+                        <option value="Black">Black</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Brown">Brown</option>
+                        <option value="Charcoal">Charcoal</option>
+                        <option value="Coral">Coral</option>
+                        <option value="Crimson">Crimson</option>
+                        <option value="Cyan">Cyan</option>
+                        <option value="Fuchsia">Fuchsia</option>
+                        <option value="Gray">Gray</option>
+                        <option value="Green">Green</option>
+                        <option value="Hot Pink">Hot Pink</option>
+                        <option value="Ivory">Ivory</option>
+                        <option value="Khaki">Khaki</option>
+                        <option value="Lime">Lime</option>
+                        <option value="Magenta">Magenta</option>
+                        <option value="Maroon">Maroon</option>
+                        <option value="Navy Blue">Navy Blue</option>
+                        <option value="Olden">Olden</option>
+                        <option value="Olive">Olive</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Other">Other</option>
+                        <option value="Pea Green">Pea Green</option>
+                        <option value="Plum">Plum</option>
+                        <option value="Purple">Purple</option>
+                        <option value="Red">Red</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Teal">Teal</option>
+                        <option value="Wheat">Wheat</option>
+                        <option value="White">White</option>
+                        <option value="Yellow">Yellow</option>
+                        <option value="Option2">Option2</option>
+                        <option value="Option3">Option3</option>
+                        <option value="Option4">Option4</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow26" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn27" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="quickTextAreaElement28">Notes</label>
+                    <textarea id="quickTextAreaElement28" name="quickTextAreaElement"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow34" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn35" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vendorSearch">Vendor Search</label>
+                        <input id="vendorSearch" name="vendorSearch" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col37" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="searchBtn" name="searchBtn" class="text-left  " style="" undefined="">Search</button>
+                </div>
+                <div id="col41" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vendorPayeeName">Vendor Name</label>
+                        <input id="vendorPayeeName" name="vendorPayeeName"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow45" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn46" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="date">Date</label>
+                        <input id="date" name="date" class="text-left  " type="text"
+                        data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn48" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="from">From</label>
+                        <input id="from" name="from" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn50" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="to">To</label>
+                        <input id="to" name="to" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn52" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="rate">Rate</label>
+                        <input id="rate" name="rate" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
