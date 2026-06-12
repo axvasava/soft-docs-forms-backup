@@ -31,7 +31,7 @@ DEFAULT_MARKDOWN_FILE = ""
 CURRENT_DATE = datetime.now().strftime("%Y-%m-%d")
 
 # Output files
-OUTPUT_JSON_FILE = Path(f"./form-details/output/{CURRENT_DATE}-form-details-deduped-v2.json")
+OUTPUT_JSON_FILE = Path(f"./form-details/output/{CURRENT_DATE}-form-details.json")
 ERROR_LOG_FILE = Path("./logs/form-details-errors.log")
 
 # Chrome / Playwright setup
