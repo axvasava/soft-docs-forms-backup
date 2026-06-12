@@ -8,7 +8,7 @@ from typing import Any
 BACKUPS_ROOT = Path("backups")
 
 # Backup run folder to inspect
-RUN_FOLDER = "2026-05-15_113307"  # update this for the backup run you want to inspect
+RUN_FOLDER = "2026-06-12_112240"  # update this for the backup run you want to inspect
 
 # Input/output file names within the run folder
 MANIFEST_NAME = "manifest.json"
