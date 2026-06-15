@@ -1,0 +1,27 @@
+Update Field
+
+
+DECLARE @sql nvarchar(max) = 'UPDATE ContractsProf SET ' + @field +' = ''' + @value + ''' WHERE id = ' + @id; exec sp_executesql @sql
+
+
+�
+
+
+Truncate
+
+TRUNCATE TABLE ContractsProf
+
+
+�
+
+
+Delete
+
+
+DELETE FROM ContractsProf WHERE id = @id
+
+
+�
+
+
+GetAll and AddRow are queryless

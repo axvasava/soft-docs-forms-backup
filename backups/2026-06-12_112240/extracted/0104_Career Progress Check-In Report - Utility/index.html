@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>End User Training Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+        />
+        <link rel="stylesheet" href="form.css" />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow82" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:0% 0% 0% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="HeaderLeft93" name="HeaderLeft" class="col-xs-12 col-sm-12 text-left  ">
+                    <img id="HeaderLogo104" name="HeaderLogo" class="text-left  " src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png"
+                    alt="Oakland Community College Logo" />
+                </div>
+                <div id="HeaderRight115" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  "
+                style=" padding:0% 0% 0% 0%;  margin:2.5% 0% 0% 0%; ">
+                    <h3 id="HeaderTitle126" name="HeaderTitle" class="text-center  " style=" padding:0% 0% 0% 0%;  margin:2% 0% 0% 0%; ">Career Progress Check-In Report</h3>
+                </div>
+                <div id="col828" class="col-xs-12 col-sm-3 text-left hidden ">
+                    <div class="text-left  ">
+                        <label for="originatorUserName">originatorUserName</label>
+                        <input id="originatorUserName" name="originatorUserName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                    <div class="text-left  ">
+                        <label for="supervisorHierarchyEmail">supervisorHierarchyEmail</label>
+                        <input id="supervisorHierarchyEmail" name="supervisorHierarchyEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                    <div class="text-left  ">
+                        <label for="breakfastCost">breakfastCost</label>
+                        <input id="breakfastCost" name="breakfastCost" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                    <div class="text-left  ">
+                        <label for="lunchCost">lunchCost</label>
+                        <input id="lunchCost" name="lunchCost" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                    <div class="text-left  ">
+                        <label for="dinnerCost">dinnerCost</label>
+                        <input id="dinnerCost" name="dinnerCost" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                    <div class="text-left  ">
+                        <label for="mileageRate">mileageRate</label>
+                        <input id="mileageRate" name="mileageRate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                    <div class="text-left  ">
+                        <label for="rentalRate">rentalRate</label>
+                        <input id="rentalRate" name="rentalRate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                    <div class="text-left  ">
+                        <label for="lodgingRate">lodgingRate</label>
+                        <input id="lodgingRate" name="lodgingRate" class="text-left  "
+                        readonly="true" />
+                    </div>
+                    <div class="text-left  ">
+                        <label for="airlineCost">airlineCost</label>
+                        <input id="airlineCost" name="airlineCost" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col1745" class="col-xs-12 col-sm-6 text-left hidden "><span id="ele1746" name="ele1746" class="text-left  "><input id="InStateLodgingRate" readonly="" />
+<input id="OutStateLodgingRate" readonly="" />
+<input id="InStateBreakfastRate" readonly="" />
+<input id="OutStateBreakfastRate" readonly="" />
+<input id="InStateLunchRate" readonly="" />
+<input id="OutStateLunchRate" readonly="" />
+<input id="InStateDinnerRate" readonly="" />
+<input id="OutStateDinnerRate" readonly="" />
+<input id="AdvancementDate" readonly="" />
+</span>
+                </div>
+            </div>
+            <div id="row3938" class="text-left row " style="overflow: auto;  padding:% 0% 0% 0%;  margin:0% 0% 0% 0%; ">
+                <div id="col3949" class="col-xs-12 col-sm-12 text-left  " style=" padding:0% 0% 0% 0%;  margin:-2% 0% 0% 0%; ">
+                    <hr id="ele39510" name="ele395" class="text-left  " style=" border-color:#656565;  border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow484" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: name"></div>
+            <div id="row1873" class="text-left row ">
+                <div id="col1877" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <input id="search" name="search" class="text-left  " placeholder="Search"
+                        type="text" data-bind="fbAddOn, event: { keyup: filter } " />
+                    </div>
+                </div>
+                <div id="col1874" class="col-xs-12 col-sm-3 text-left col-sm-offset-3 ">
+                    <button id="ele1875" name="ele1875" class="text-left btn btn-primary btn-block "
+                    style="" undefined="" data-bind="click: exportAll">Export</button>
+                </div>
+            </div>
+            <div id="row1881" class="text-left row ">
+                <div id="col1882" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_1883" class="text-left  " />
+                </div>
+            </div>
+            <div id="dailyExpenseList" name="dailyExpenseList" class="text-left row ">
+                <div id="col1884" class="col-xs-12 col-sm-12 text-left  ">
+                    <h3 id="ele1885" name="ele1885" class="text-left  "><strong>Career Progress Check-Ins</strong></h3>
+                </div>
+                <div id="col1585" class="col-xs-12 col-sm-12 text-left  "><span id="ele1586" name="ele1586" class="text-left  "><table class="table table-bordered table- striped"> 
+<thead>
+<tr><th>Employee ID</th>
+<th>Employee Last Name</th>
+<th>Employee First Name</th>
+<th>Check-In Year</th>
+<th>Check-In Status</th>
+</tr></thead>
+<tbody id="careerCheckInBody" data-bind="foreach: careerCheckInData">
+<tr>
+<td data-bind="text: $data.EmployeeID"></td>
+<td data-bind="text: $data.EmployeeLastName"></td>
+<td data-bind="text: $data.EmployeeFirstName"></td>
+<td data-bind="text: $data.CheckInYear"></td>
+<td data-bind="text: $data.CheckInNumber"></td>
+</tr>
+</tbody>
+</table></span>
+                </div>
+            </div>
+            <div id="row1869" class="text-left row ">
+                <div id="col1870" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_1872" class="text-left  " />
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

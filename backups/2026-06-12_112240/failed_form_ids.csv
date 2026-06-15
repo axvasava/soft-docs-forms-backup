@@ -1,0 +1,955 @@
+form_id,error
+243,"Page.wait_for_timeout: Target page, context or browser has been closed"
+251,"Page.goto: Target page, context or browser has been closed"
+253,"Page.goto: Target page, context or browser has been closed"
+260,"Page.goto: Target page, context or browser has been closed"
+265,"Page.goto: Target page, context or browser has been closed"
+271,"Page.goto: Target page, context or browser has been closed"
+272,"Page.goto: Target page, context or browser has been closed"
+281,"Page.goto: Target page, context or browser has been closed"
+282,"Page.goto: Target page, context or browser has been closed"
+283,"Page.goto: Target page, context or browser has been closed"
+287,"Page.goto: Target page, context or browser has been closed"
+288,"Page.goto: Target page, context or browser has been closed"
+289,"Page.goto: Target page, context or browser has been closed"
+291,"Page.goto: Target page, context or browser has been closed"
+292,"Page.goto: Target page, context or browser has been closed"
+293,"Page.goto: Target page, context or browser has been closed"
+295,"Page.goto: Target page, context or browser has been closed"
+305,"Page.goto: Target page, context or browser has been closed"
+245,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+246,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+247,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+248,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+249,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+250,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+252,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+254,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+255,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+256,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+257,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+258,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    15 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+259,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+261,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    17 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+262,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    16 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable"
+263,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+264,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+266,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+267,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+268,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+269,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+270,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+273,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+274,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+275,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+276,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+277,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+278,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+279,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+280,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+284,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+285,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+286,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+298,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+299,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+300,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+301,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+302,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+303,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+304,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+306,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+307,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+308,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+309,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+310,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+311,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+312,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+313,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+314,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+315,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+316,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+317,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+318,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+319,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"
+320,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    19 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms"

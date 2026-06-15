@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="loadingSpinner.css" />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row88" class="text-left row fd-form-masthead ">
+                <div id="col89" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn90" name="revisedOn" class="col-sm-12 text-right  ">Revised 03/26</span>
+                </div>
+                <div id="col91" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele92" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col93" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele94" name="ele21" class="text-left form-title ">Catalog Year Adjustment</h1>
+                </div>
+                <div id="col95" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele96" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row84" class="text-left row ">
+                <div id="col85" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote86" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="submitterHeader" name="submitterHeader" class="text-center  "
+                    style=" font-weight: bold; ">Submitter Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow20" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn21" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn23" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">Email Address</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow16" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn17" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="studentInfoHeader" name="studentInfoHeader" class="text-center  "
+                    style=" font-weight: bold; ">Student Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow26" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn27" name="quickInputsColumn1" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentID">Student ID</label>
+                        <input id="studentID" name="studentID" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn29" name="quickInputsColumn2" class="col-xs-5 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentName">Student Name</label>
+                        <input id="studentName" name="studentName" class="text-left  "
+                        required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn31" name="quickInputsColumn3" class="col-xs-5 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentEmail">Student Email</label>
+                        <input id="studentEmail" name="studentEmail" class="text-left  "
+                        required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col61" class="col-xs-10 col-sm-10 text-left programDD ">
+                    <label for="programTitle">Program(s)</label>
+                    <select id="programTitle" name="programTitle" class="text-left  "
+                    style=" readonly=" true "=" " "="" required="required" xdata-bind="options: programTitleOptions,&#10;                   optionsText: 'text',&#10;                   optionsValue: 'value',&#10;                   value: programTitle">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div id="col38" name="col38" class="col-xs-4 col-sm-4 text-left  " hidden="">
+                    <div class="text-left developer ">
+                        <label for="studentProgram">Student Program</label>
+                        <input id="studentProgram" name="studentProgram"
+                        class="text-left developer " required="required" />
+                    </div>
+                </div>
+                <div id="col73" class="col-xs-12 col-sm-10 text-left programField ">
+                    <div class="text-left  ">
+                        <label for="programSelected">Program</label>
+                        <input id="programSelected" name="programSelected" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn33" name="quickInputsColumn4" class="col-xs-5 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentCatalogYear">Student Catalog Year</label>
+                        <input id="studentCatalogYear" name="studentCatalogYear"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col35" class="col-xs-5 col-sm-5 text-left newClg ">
+                    <label for="newCatalogYear">New Catalog Year</label>
+                    <select id="newCatalogYear" name="newCatalogYear"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div id="col76" class="col-xs-5 col-sm-5 text-left newCatalogHidden ">
+                    <div class="text-left  ">
+                        <label for="selectedCatalogYear">New Catalog Year</label>
+                        <input id="selectedCatalogYear" name="selectedCatalogYear"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow1266" name="quickHeadingRow" class="text-left row dev "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " hidden="">
+                <div id="quickHeadingColumn136" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="submitterHeader6" name="submitterHeader6" class="text-center  "
+                    style=" font-weight: bold; ">Dev Section</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow49" name="quickInputsRow" class="text-left row dev "
+            hidden="">
+                <div id="quickInputsColumn50" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">originationDate(hidden/export)</label>
+                        <input id="originationDate" name="originationDate"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn52" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentGUID">studentGUID (hidden)</label>
+                        <input id="studentGUID" name="studentGUID"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col55" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="programGUID">programGUID (hidden)</label>
+                        <input id="programGUID" name="programGUID"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col58" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="catalog">catalogGUID (hidden)</label>
+                        <input id="catalog" name="catalog" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row69" name="row69" class="text-left row ">
+                <div id="col70" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left loading ">
+                        <label for="loadingSpinnerRow">Loading Spinner (do not remove)</label>
+                        <input id="loadingSpinnerRow" name="loadingSpinnerRow"
+                        class="text-left loading " type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

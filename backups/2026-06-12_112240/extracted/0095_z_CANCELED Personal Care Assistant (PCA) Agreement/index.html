@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col3" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele4" name="ele37" class="text-right  "><i>Revised 2/25</i></h5>
+                </div>
+                <div id="HeaderLeft5" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo6" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    alt="Oakland Community College Logo" />
+                </div>
+                <div id="HeaderRight7" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_8" name="h2_27" class="text-center  "><b>Personal Care Assistant (PCA) Agreement</b></h2>
+                </div>
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele10" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Student Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow16" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn17" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Student Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn19" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Student ID</label>
+                        <input id="originatorErpId" name="originatorErpId" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn21" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="academicYear">Academic Year</label>
+                    <select id="academicYear" name="academicYear" class="text-left  "
+                    required="required" data-bind="dynamicYear: { format: 'YYYY-YY[0,  1]' } ">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn23" name="quickInputsColumn4" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="semester">Semester</label>
+                    <select id="semester" name="semester" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Fall">Fall</option>
+                        <option value="Summer">Summer</option>
+                        <option value="Winter">Winter</option>
+                    </select>
+                </div>
+                <div id="col50" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele51" name="ele51" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickParagraphRow28" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn29" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_30" name="p_263" class="text-left  ">Personal Care Assistants (PCAs) may be necessary to address the personal
+                        needs of a student with a disability so he/she may participate in the College’s
+                        activities, services, and programs. PCAs are permitted to accompany a student
+                        into the classroom when approved in consultation with ACCESS.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow32" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn33" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmall34" name="quickHeadingSmall" class="text-left  "><strong>PCAs may perform one or more of the following duties:</strong></h5>
+                </div>
+            </div>
+            <div id="row36" class="text-left row ">
+                <div id="quickListUnorderedColumn37" name="quickListUnorderedColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <ul id="quickListUnorderedElement38" name="quickListUnorderedElement"
+                    class="text-left  ">
+                        <li>Carry or hold books, materials or personal items for the student.</li>
+                        <li>Assist with manual tasks such as turning pages, taking on and off coats,
+                            and opening doors.</li>
+                        <li>Manipulate books, materials or personal items for the student.</li>
+                        <li>Help the student move around the environment.</li>
+                        <li>Help the student transfer from a wheelchair to a chair.</li>
+                        <li>Reposition a student in a wheelchair or chair.</li>
+                        <li>Address other student needs as they may arise, as long as they do not
+                            violate the policies and expectations outlined below.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quickHeadingRow327" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn337" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingRow3277" name="quickHeadingRow" class="text-left  "><strong>PCAs are required to:</strong></h5>
+                </div>
+            </div>
+            <div id="row44" class="text-left row ">
+                <div id="quickListUnorderedColumn45" name="quickListUnorderedColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <ul id="quickListUnorderedElement46" name="quickListUnorderedElement"
+                    class="text-left  ">
+                        <li>Follow and abide by all OCC regulations including, but not limited to,
+                            standards and expectations outlined in the OCC</li>
+                        <li>Student Handbook pertaining to the Student Code of Conduct and possible
+                            consequences for violation of the Student Code of Conduct. This Handbook
+                            can be reviewed at <a href="oaklandcc.edu/currentstudents/studenthandbook.aspx"
+                            target="blank">oaklandcc.edu/currentstudents/studenthandbook.aspx</a>.</li>
+                        <li>Conduct him/herself in a courteous and professional manner while on campus
+                            and in the classroom.</li>
+                        <li>Allow the student to take responsibility for his/her own academic assignments,
+                            academic progress, and behavior.</li>
+                        <li>Refrain from working on or completing any of the student’s academic assignments.</li>
+                        <li>Refrain from engaging in disruptive or distracting behavior. Examples
+                            of such behavior include, but are not limited to, conversing with the student,
+                            personal use of electronic devices, eating, reading, etc.</li>
+                        <li>Refrain from contact with or asking questions of faculty, staff or others
+                            on behalf of the student.</li>
+                        <li>Refrain from discussing any confidential information about the student
+                            receiving assistance or any other student with faculty, staff or students
+                            in or outside of class.</li>
+                        <li>Refrain from participating in the class.</li>
+                        <li>Refrain from participating in the testing or assessment process.</li>
+                        <li>Refrain from carrying on conversations with the student or other students
+                            during class.</li>
+                        <li>Refrain from photographing or recording any classroom activity.</li>
+                    </ul>
+                </div>
+                <div id="col47" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele48" name="ele48" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow54" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn55" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall56" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Personal Care Assistant</h4>
+                </div>
+            </div>
+            <div id="quickDropdownRow58" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn59" name="quickDropdownColumn" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="type">Type</label>
+                    <select id="type" name="type" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Agency">Agency</option>
+                        <option value="Individual">Individual</option>
+                    </select>
+                </div>
+                <div id="col61" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele62" name="ele62" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickParagraphRow28141415152323" name="quickParagraphRow" class="text-left row pcaContactNote "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px " data-bind="visible: ( ( type() == 'Individual' ) ) ">
+                <div id="quickParagraphColumn29141523" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_30141523" name="p_30141523" class="text-left  "><strong>Note: </strong>Please enter the name of yourPersonal Care Assistant.
+                        This form will be sent to the Personal Care Assistant you provide below
+                        via the email address you enter. To avoid processing delays, please ensure
+                        all information is accurate.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow882222" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( type() == 'Individual' ) ) ">
+                <div id="quickInputsColumn8922" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="pcaName">Personal Care Assistant Name</label>
+                        <input id="pcaName" name="pcaName"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn9122" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  "
+                style=" margin-top: 38px; ">
+                    <hr id="quickInputsText9222" name="quickInputsText2" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+                <div id="quickInputsColumn9322" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="pcaEmail">PCA Email</label>
+                        <input id="pcaEmail" name="pcaEmail" class="text-left  "
+                        required="required" type="text" data-bind="email" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn9522" name="quickInputsColumn4" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="pcaEmailVerify">Re-Enter PCA Email</label>
+                        <input id="pcaEmailVerify" name="pcaEmailVerify"
+                        class="text-left  " required="required" type="text" data-bind="email" />
+                    </div>
+                </div>
+                <div id="col10522" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_10722" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow65" name="quickHeadingRow" class="text-left row agency "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( type() == 'Agency' ) ) ">
+                <div id="quickHeadingColumn66" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall67" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Agency Information</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow281414" name="quickParagraphRow" class="text-left row agencyContactNote "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px " data-bind="visible: ( ( type() == 'Agency' ) ) ">
+                <div id="quickParagraphColumn2914" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_3014" name="p_3014" class="text-left  "><strong>Note: </strong>Please enter the name of the agency and the contact
+                        person responsible for assigning a Personal Care Assistant. This form will
+                        be sent to the agency contact you provide below via the email address you
+                        enter. To avoid processing delays, please ensure all information is accurate.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow69" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( type() == 'Agency' ) ) ">
+                <div id="quickInputsColumn70" name="quickInputsColumn1" class="col-xs-12 col-sm-7 text-left  ">
+                    <div class="text-left  ">
+                        <label for="agancyName">Agency Name</label>
+                        <input id="agancyName" name="agancyName" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn72" name="quickInputsColumn2" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="agencyContact">Agency Contact</label>
+                        <input id="agencyContact" name="agencyContact" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn74" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="contactEmail">Contact Email</label>
+                        <input id="contactEmail" name="contactEmail" class="text-left  "
+                        required="required" type="text" data-bind="email" />
+                    </div>
+                </div>
+                <div id="col76" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="contactEmailVerify">Re-Enter Contact Email</label>
+                        <input id="contactEmailVerify" name="contactEmailVerify"
+                        class="text-left  " required="required" data-bind="email" />
+                    </div>
+                </div>
+                <div id="col79" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele80" name="ele80" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickParagraphRow2814141515" name="quickParagraphRow" class="text-left row agencyContact "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn291415" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_301415" name="p_301415" class="text-left  "><strong>Note: </strong>Please enter the name of the Personal Care Assistant
+                        assigned for <strong><span data-bind="html: originatorDisplayName"></span></strong>.
+                        This form will be sent to the Personal Care Assistant you provide below
+                        via the email address you enter. To avoid processing delays, please ensure
+                        all information is accurate.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow88" name="quickInputsRow" class="text-left row agencyContact ">
+                <div id="quickInputsColumn89" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="agencyPCA">PCA Assigned (Enter Name)</label>
+                        <input id="agencyPCA" name="agencyPCA"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn91" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  "
+                style=" margin-top: 38px; ">
+                    <hr id="quickInputsText92" name="quickInputsText2" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+                <div id="col167" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="pcaEmailEnter">PCA Email</label>
+                        <input id="pcaEmailEnter" name="pcaEmailEnter" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn93" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="agencyPCAEmail">PCA Email</label>
+                        <input id="agencyPCAEmail" name="agencyPCAEmail" class="text-left  "
+                        required="required" type="text" data-bind="email" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn95" name="quickInputsColumn4" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="agencyPCAEmailVerify">Re-Enter PCA Email</label>
+                        <input id="agencyPCAEmailVerify" name="agencyPCAEmailVerify"
+                        class="text-left  " required="required" type="text" data-bind="email" />
+                    </div>
+                </div>
+                <div id="col105" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_107" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow124" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn125" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall126" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Signatures and Acknowledgements</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow28141415152121" name="quickParagraphRow" class="text-left row pcaContactNote "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn29141521" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_30141521" name="p_30141521" class="text-left  "><strong>Note: </strong>By entering my name below and submitting/approving
+                        this form, I acknowledge that I have read and understand the terms of this
+                        agreement set out above.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow128" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn129" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSign">Student: Please Enter Your Name</label>
+                        <input id="studentSign" name="studentSign"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn131" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSignDate">Date</label>
+                        <input id="studentSignDate" name="studentSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow134" name="quickInputsRow" class="text-left row agencyContact ">
+                <div id="quickInputsColumn135" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="agencyContactSign">Agency Contact: Please Enter Your Name</label>
+                        <input id="agencyContactSign"
+                        name="agencyContactSign" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn137" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="agencyContactSignDate">Date</label>
+                        <input id="agencyContactSignDate" name="agencyContactSignDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow140" name="quickInputsRow" class="text-left row pca ">
+                <div id="quickInputsColumn141" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="pcaSign">Personal Care Assistant: Please Enter Your Name</label>
+                        <input id="pcaSign"
+                        name="pcaSign" class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn143" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="pcaSignDate">Date</label>
+                        <input id="pcaSignDate" name="pcaSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow146" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn147" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText148" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row506" class="text-left row fd-form-masthead ">
+                <div id="col507" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn508" name="revisedOn" class="col-sm-12 text-right  ">Revised 03/26</span>
+                </div>
+                <div id="col509" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele510" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col511" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele512" name="ele21" class="text-left form-title with-subtitle ">Facility Reservation Request</h1><span id="ele513" name="ele23" class="text-left form-subtitle ">Building M</span>
+                </div>
+                <div id="col514" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele515" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row481" class="text-left row ">
+                <div id="col482" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote483" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow34" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn35" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall36" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Organization Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow12" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn13" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationName">Organization Name</label>
+                        <input id="organizationName" name="organizationName"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn15" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="federalID">Federal ID #</label>
+                        <input id="federalID" name="federalID" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col21" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationAddress">Address</label>
+                        <input id="organizationAddress" name="organizationAddress"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="col23" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationCity">City</label>
+                        <input id="organizationCity" name="organizationCity" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col25" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationState">State</label>
+                        <input id="organizationState" name="organizationState" class="text-left  "
+                        required="required" data-bind="state" />
+                    </div>
+                </div>
+                <div id="col27" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationZip">Zip</label>
+                        <input id="organizationZip" name="organizationZip" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow3444" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn354" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall364" name="quickHeadingSmall364" class="text-center  "
+                    style=" font-weight: bold; ">Organization Contact</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow1255" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn135" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationContactName">Contact Name</label>
+                        <input id="organizationContactName" name="organizationContactName"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn175" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationContactEmail">Contact Email</label>
+                        <input id="organizationContactEmail" name="organizationContactEmail"
+                        class="text-left  " required="required" type="text" data-bind="email" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn195" name="quickInputsColumn4" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left maskphone ">
+                        <label for="organizationContactPhone">Contact Phone Number</label>
+                        <input id="organizationContactPhone" name="organizationContactPhone"
+                        class="text-left maskphone " required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow344466" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn3546" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall3646" name="quickHeadingSmall3646" class="text-center  "
+                    style=" font-weight: bold; ">Instructor Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow125577" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn1357" name="quickInputsColumn1" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="instructorName">Instructor Name</label>
+                        <input id="instructorName" name="instructorName"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn1957" name="quickInputsColumn4" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left maskphone ">
+                        <label for="instructorPhone">Instructor Phone Number</label>
+                        <input id="instructorPhone" name="instructorPhone"
+                        class="text-left maskphone " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col67" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="software">Software</label>
+                        <input id="software" name="software" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow34446688" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn35468" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall36468" name="quickHeadingSmall36468" class="text-center  "
+                    style=" font-weight: bold; ">Event Information</h4>
+                </div>
+            </div>
+            <div id="row73" class="text-left row ">
+                <div id="col74" class="col-xs-9 col-sm-9 text-left  ">
+                    <div class="col-xs- col-sm- text-left  ">
+                        <label for="purposeOfEvent">Please describe the purpose of your event:</label>
+                        <input id="purposeOfEvent"
+                        name="purposeOfEvent" class="col-xs- col-sm- text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col77" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="expectedAttendance">Expected Attendance</label>
+                        <input id="expectedAttendance" name="expectedAttendance"
+                        class="text-left  " required="required" type="Number" />
+                    </div>
+                </div>
+                <div id="col78" class="col-xs-12 col-sm-12 text-left  " style=" padding:5px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <p id="ele81" name="ele81" class="col-xs-3 col-sm-3 text-left  "><strong>Day(s) Requested</strong>
+                    </p>
+                    <input id="monday" name="monday" class="col-xs- col-sm- text-left  " type="checkbox"
+                    />
+                    <label for="monday">  Mon  </label>
+                    <input id="tuesday" name="tuesday" class="col-xs- col-sm- text-left  "
+                    type="checkbox" />
+                    <label for="tuesday">  Tues  </label>
+                    <input id="wednesday" name="wednesday" class="col-xs- col-sm- text-left  "
+                    type="checkbox" />
+                    <label for="wednesday">  Wed  </label>
+                    <input id="thursday" name="thursday" class="col-xs- col-sm- text-left  "
+                    type="checkbox" />
+                    <label for="thursday">  Thurs  </label>
+                    <input id="friday" name="friday" class="col-xs- col-sm- text-left  "
+                    type="checkbox" />
+                    <label for="friday">  Fri  </label>
+                    <input id="saturday" name="saturday" class="text-left  "
+                    type="checkbox" />
+                    <label for="saturday">  Sat  </label>
+                </div>
+                <div id="col106" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="eventDate">Date(s)</label>
+                        <input id="eventDate" name="eventDate" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col109" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="eventTime">Time of Event</label>
+                        <input id="eventTime" name="eventTime" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col112" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="arrivalTime">Arrival Time</label>
+                        <input id="arrivalTime" name="arrivalTime" class="text-left  "
+                        required="required" data-bind="timepicker: { interval: 30,  minTime: '7:00 AM',  maxTime: '11:30 PM' } "
+                        />
+                    </div>
+                </div>
+                <div id="col113" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="departTime">Departure Time</label>
+                        <input id="departTime" name="departTime" class="text-left  "
+                        required="required" data-bind="timepicker: { interval: 30,  minTime: '7:00 AM',  maxTime: '11:30 PM' } "
+                        />
+                    </div>
+                </div>
+                <div id="col170" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele171" name="ele171" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+                <div id="col118" class="col-xs-6 col-sm-6 text-left  " style=" padding:3px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <label for="foodPlanned"><strong>Food Planned / Refreshments</strong>
+                    </label>
+                    <select id="foodPlanned" name="foodPlanned" class="col-xs-12 col-sm-12 text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="col119" name="col119" class="col-xs-6 col-sm-6 text-left  " data-bind="visible: ( ( foodPlanned() == 'Yes' ) ) ">
+                    <label for="ele150"><strong>Reserve Dining Room</strong>
+                    </label>
+                    <select id="ele150" name="ele150" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="col147" name="col147" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ( ( foodPlanned() == 'Yes' ) ) ">
+                    <label for="partyDescription">Please Describe</label>
+                    <textarea id="partyDescription" name="partyDescription"
+                    class="text-left  "></textarea>
+                </div>
+                <div id="col160" name="col160" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:3px 0px 0px 0px;  margin:0px 0px 0px 0px; " data-bind="visible: ( ( foodPlanned() == 'Yes' ) ) ">
+                    <p id="ele161" name="ele161" class="col-xs-12 col-sm-12 text-left  "><strong>For catering, please contact an OCC Workforce Development Representative</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickHeadingRow344466881010" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn3546810" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall3646810" name="quickHeadingSmall3646810" class="text-center  "
+                    style=" font-weight: bold; ">Facility Rates</h4>
+                </div>
+            </div>
+            <div id="row173" class="text-left row ">
+                <div id="col174" class="col-xs-5 col-sm-5 text-left  "><span id="ele178" name="ele178" class="col-xs-12 col-sm-12 text-left  "><strong>Computer Lab, capacity 20</strong></span>
+                </div>
+                <div id="col175" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="computerLab20HalfDay" name="computerLab20HalfDay" class="text-left  "
+                    type="checkbox" />
+                    <label id="computerLab20HalfDayLabel" name="computerLab20HalfDayLabel"
+                    class="col-xs-12 col-sm-12 text-left sr-only " for="computerLab20HalfDay">Computer Lab 20 Half Day</label>
+                </div>
+                <div id="col176" class="col-xs-2 col-sm-2 text-left  "><span id="ele184" name="ele184" class="col-xs-12 col-sm-12 text-left  ">Half Day $300</span>
+                </div>
+                <div id="col177" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="computerLab20FullDay" name="computerLab20FullDay" class="text-left  "
+                    type="checkbox" />
+                    <label id="computerLab20FullDayLabel" name="computerLab20FullDayLabel"
+                    class="col-xs-12 col-sm-12 text-left sr-only " for="computerLab20FullDay">Computer Lab 20 Full Day</label>
+                </div>
+                <div id="col188" class="col-xs-3 col-sm-3 text-left  "><span id="ele189" name="ele189" class="col-xs-12 col-sm-12 text-left  ">Full Day $550</span>
+                </div>
+            </div>
+            <div id="row1731212" name="" class="text-left row ">
+                <div id="col17412" class="col-xs-5 col-sm-5 text-left  "><span id="ele17812" name="ele17812" class="col-xs-12 col-sm-12 text-left  "><strong>Computer Lab, capacity 32</strong></span>
+                </div>
+                <div id="col17512" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="computerLab32HalfDay" name="computerLab32HalfDay" class="text-left  "
+                    type="checkbox" />
+                    <label id="computerLab32HalfDayLabel" name="computerLab32HalfDayLabel"
+                    class="text-left sr-only " for="computerLab32HalfDay">Computer Lab 32 Half Day</label>
+                </div>
+                <div id="col17612" class="col-xs-2 col-sm-2 text-left  "><span id="ele18412" name="ele18412" class="col-xs-12 col-sm-12 text-left  ">Half Day $350</span>
+                </div>
+                <div id="col17712" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="computerLab32FullDay" name="computerLab32FullDay" class="text-left  "
+                    type="checkbox" />
+                    <label id="computerLab32FullDayLabel" name="computerLab32FullDayLabel"
+                    class="text-left sr-only " for="computerLab32FullDay">Computer Lab 32 Full Day</label>
+                </div>
+                <div id="col18812" class="col-xs-3 col-sm-3 text-left  "><span id="ele18912" name="ele18912" class="col-xs-12 col-sm-12 text-left  ">Full Day $600</span>
+                </div>
+            </div>
+            <div id="row17312121313" name="" class="text-left row ">
+                <div id="col1741213" class="col-xs-5 col-sm-5 text-left  "><span id="ele1781213" name="ele1781213" class="col-xs-12 col-sm-12 text-left  "><strong>Meeting/Training Room, capacity 20</strong></span>
+                </div>
+                <div id="col1751213" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="meetingRoom20HalfDay" name="meetingRoom20HalfDay" class="text-left  "
+                    type="checkbox" />
+                    <label id="meetingRoom20HalfDayLabel" name="meetingRoom20HalfDayLabel"
+                    class="text-left sr-only " for="meetingRoom20HalfDay">Meeting Room 20 Half Day</label>
+                </div>
+                <div id="col1761213" class="col-xs-2 col-sm-2 text-left  "><span id="ele1841213" name="ele1841213" class="col-xs-12 col-sm-12 text-left  ">Half Day $200</span>
+                </div>
+                <div id="col1771213" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="meetingRoom20FullDay" name="meetingRoom20FullDay" class="text-left  "
+                    type="checkbox" />
+                    <label id="meetingRoom20FullDayLabel" name="meetingRoom20FullDayLabel"
+                    class="col-xs-12 col-sm-12 text-left sr-only " for="meetingRoom20FullDay">Meeting Room 20 Full Day</label>
+                </div>
+                <div id="col1881213" class="col-xs-3 col-sm-3 text-left  "><span id="ele1891213" name="ele1891213" class="col-xs-12 col-sm-12 text-left  ">Full Day $300</span>
+                </div>
+            </div>
+            <div id="row173121213131414" name="" class="text-left row ">
+                <div id="col174121314" class="col-xs-5 col-sm-5 text-left  "><span id="ele178121314" name="ele178121314" class="col-xs-12 col-sm-12 text-left  "><strong>Meeting/Training Room, capacity 50</strong></span>
+                </div>
+                <div id="col175121314" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="meetingRoom50HalfDay" name="meetingRoom50HalfDay" class="text-left  "
+                    type="checkbox" />
+                    <label id="meetingRoom50HalfDayLabel" name="meetingRoom50HalfDayLabel"
+                    class="col-xs-12 col-sm-12 text-left sr-only " for="meetingRoom50HalfDay">Meeting Room 50 Half Day</label>
+                </div>
+                <div id="col176121314" class="col-xs-2 col-sm-2 text-left  "><span id="ele184121314" name="ele184" class="col-xs-12 col-sm-12 text-left  ">Half Day $300</span>
+                </div>
+                <div id="col177121314" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="meetingRoom50FullDay" name="meetingRoom50FullDay" class="text-left  "
+                    type="checkbox" />
+                    <label id="meetingRoom50FullDay" name="meetingRoom50FullDay" class="col-xs-12 col-sm-12 text-left sr-only "
+                    for="meetingRoom50FullDay">Meeting Room 50 Full Day</label>
+                </div>
+                <div id="col188121314" class="col-xs-3 col-sm-3 text-left  "><span id="ele189121314" name="ele189121314" class="col-xs-12 col-sm-12 text-left  ">Full Day $400</span>
+                </div>
+            </div>
+            <div id="row1731212131314141515" name="" class="text-left row ">
+                <div id="col17412131415" class="col-xs-5 col-sm-5 text-left  "><span id="ele17812131415" name="ele17812131415" class="col-xs-12 col-sm-12 text-left  "><strong>Video Conference Room, capacity 12</strong></span>
+                </div>
+                <div id="col17512131415" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="videoConferenceRoom12" name="videoConferenceRoom12" class="text-left  "
+                    type="checkbox" />
+                    <label id="videoConferenceRoom12" name="videoConferenceRoom12" class="col-xs-12 col-sm-12 text-left sr-only "
+                    for="videoConferenceRoom12">Video Conference Room 12</label>
+                </div>
+                <div id="col17612131415" class="col-xs-2 col-sm-2 text-left  "><span id="ele18412131415" name="ele18412131415" class="col-xs-12 col-sm-12 text-left  ">$100 per hour</span>
+                </div>
+            </div>
+            <div id="quickInputsRow236" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn237" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_238" class="text-left  " />
+                </div>
+            </div>
+            <div id="row239" class="text-left row ">
+                <div id="col444" class="col-xs-12 col-sm-12 text-left  ">
+                    <label id="lblRoomLayout" name="lblRoomLayout" class="col-xs-12 col-sm-12 text-left  "
+                    for="roomLayout"><strong>Select the desired layout for a Standard Meeting/Training Room. </strong>
+                    </label>
+                </div>
+                <div id="col441" class="col-xs-12 col-sm-6 text-left  ">
+                    <select id="roomLayout" name="roomLayout" class="col-xs-12 col-sm-12 text-left  ">
+                        <option value=""></option>
+                        <option value="Classroom Layout">Classroom Layout</option>
+                        <option value="Pod Layout">Pod Layout</option>
+                        <option value="U Shaped">U Shaped</option>
+                        <option value="Open Square">Open Square</option>
+                    </select>
+                </div>
+            </div>
+            <div id="classroom" name="classroom" class="text-left row " data-bind="visible: ( ( roomLayout() == 'Classroom Layout' ) ) ">
+                <div id="col27620" class="col-xs-12 col-sm-12 text-left  ">
+                    <img id="classroomLayoutImg" name="classroomLayoutImg" class="text-left  "
+                    src="/forms/api/TemplateVersion/231//ClassroomLayoutRoomLayout.jpg" />
+                </div>
+            </div>
+            <div id="podlayout" name="podlayout" class="text-left row openSquare "
+            data-bind="visible: ( ( roomLayout() == 'Pod Layout' ) ) ">
+                <div id="col2762021" class="col-xs-6 col-sm-6 text-left  ">
+                    <img id="podLayoutImg" name="podLayoutImg" class="text-left  " src="/forms/api/TemplateVersion/231//PodLayoutRoomLayout.jpg"
+                    />
+                </div>
+            </div>
+            <div id="ushape" name="ushape" class="text-left row openSquare " data-bind="visible: ( ( roomLayout() == 'U Shaped' ) ) ">
+                <div id="col276202122" class="col-xs-6 col-sm-6 text-left  ">
+                    <img id="uShapeLayoutImg" name="uShapeLayoutImg" class="text-left  " src="/forms/api/TemplateVersion/231//UShapeRoomLayout.jpg"
+                    />
+                </div>
+            </div>
+            <div id="opensquare" name="opensquare" class="text-left row " data-bind="visible: ( ( roomLayout() == 'Open Square' ) ) ">
+                <div id="col276" class="col-xs-12 col-sm-12 text-left  ">
+                    <img id="openSquareLayoutImg" name="openSquareLayoutImg" class="text-left  "
+                    src="/forms/api/TemplateVersion/231//OpenSquareRoomLayout.jpg" />
+                </div>
+            </div>
+            <div id="quickHeadingRow3444668810102323" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn354681023" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall364681023" name="quickHeadingSmall364681023"
+                    class="text-center  " style=" font-weight: bold; ">Tech Station</h4>
+                </div>
+            </div>
+            <div id="row29525253838" name="" class="text-left row ">
+                <div id="col410" class="col-xs-5 col-sm-5 text-left  "><span id="ele411" name="ele411" class="col-xs-12 col-sm-12 text-left  "></span>
+                </div>
+                <div id="col31238" class="col-xs-2 col-sm-2 text-left  "><span id="ele31338" name="ele313" class="col-xs-12 col-sm-12 text-left  "><strong>Instructor</strong></span>
+                </div>
+                <div id="col31538" class="col-xs-2 col-sm-2 text-left  "><span id="ele31838" name="ele318" class="col-xs-12 col-sm-12 text-left  "><strong>Students</strong></span>
+                </div>
+            </div>
+            <div id="row2952525" name="" class="text-left row ">
+                <div id="col29625" class="col-xs-5 col-sm-5 text-left  "><span id="ele29925" name="ele29925" class="col-xs-12 col-sm-12 text-left  "><strong>Internet access is required for</strong></span>
+                </div>
+                <div id="col29725" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="internetInstructor" name="internetInstructor" class="text-left  "
+                    type="checkbox" />
+                    <label id="internetInstructorLabel" name="internetInstructorLabel" class="col-xs-12 col-sm-12 text-left sr-only "
+                    for="internetInstructor">Internet Instructor</label>
+                </div>
+                <div id="col413" class="col-xs-1 col-sm-1 text-left  "><span id="ele414" name="ele414" class="col-xs-12 col-sm-12 text-left  "></span>
+                </div>
+                <div id="col316" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="studentsInternet" name="studentsInternet" class="text-left  "
+                    type="checkbox" />
+                    <label id="studentsInternetLabel" name="studentsInternetLabel" class="col-xs-12 col-sm-12 text-left sr-only "
+                    for="studentsInternet">Students Internet</label>
+                </div>
+            </div>
+            <div id="row295252526" name="" class="text-left row ">
+                <div id="col2962526" class="col-xs-5 col-sm-5 text-left  "><span id="ele2992526" name="ele2992526" class="col-xs-12 col-sm-12 text-left  "><strong>Printer access is required for</strong></span>
+                </div>
+                <div id="col2972526" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="printerInstructor" name="printerInstructor" class="text-left  "
+                    type="checkbox" />
+                    <label id="printerInstructorLabel" name="printerInstructorLabel" class="col-xs-12 col-sm-12 text-left sr-only "
+                    for="printerInstructor">Printer Instructor</label>
+                </div>
+                <div id="col31526" class="col-xs-1 col-sm-1 text-left  "><span id="ele31826" name="ele31826" class="col-xs-12 col-sm-12 text-left  "></span>
+                </div>
+                <div id="col31626" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="printerStudents" name="printerStudents" class="text-left  "
+                    type="checkbox" />
+                    <label id="printerStudentsLabel" name="printerStudentsLabel" class="col-xs-12 col-sm-12 text-left sr-only "
+                    for="printerStudents">Printer Students</label>
+                </div>
+            </div>
+            <div id="row295" class="text-left row ">
+                <div id="col296" class="col-xs-5 col-sm-5 text-left  "><span id="ele299" name="ele299" class="col-xs-12 col-sm-12 text-left  "><strong>Instructor to bring his/her own laptop</strong></span>
+                </div>
+                <div id="col438" class="col-xs-3 col-sm-3 text-left  ">
+                    <select id="bringingLaptop" name="bringingLaptop" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <label id="bringingLaptop" name="bringingLaptop" class="col-xs-12 col-sm-12 text-left sr-only "
+                    for="bringingLaptop">Bringing Laptop</label>
+                </div>
+            </div>
+            <div id="row2952727" name="" class="text-left row ">
+                <div id="col29627" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="neededEasels">How many easels are needed?</label>
+                        <input id="neededEasels" name="neededEasels"
+                        class="text-left  " required="required" type="Number" />
+                    </div>
+                </div>
+                <div id="col347" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="other">Other</label>
+                        <input id="other" name="other" class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow2363737" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn23737" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_23837" class="text-left  " />
+                </div>
+            </div>
+            <div id="row3503636" name="" class="text-left row ">
+                <div id="col35236" class="col-xs-12 col-sm-12 text-center  ">
+                    <p id="ele35336" name="ele35336" class="col-xs-12 col-sm-12 text-left  "></p>
+                    <h4><b>AUDIO VISUAL PROVISIONS</b></h4>
+                    <p></p>
+                </div>
+            </div>
+            <div id="row350" class="text-left row ">
+                <div id="col352" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele353" name="ele353" class="col-xs-12 col-sm-12 text-left  "><strong>All Computer Labs, Training Rooms and Conference Rooms at M-TEC are equipped with the Smart Technology Package which includes an instructor/facilitator computer station, projection system, digital document camera, VCR, DVD, CD player, Internet Access, and white boards. Requests for additional audio/visual technology or supplies must be made 10 days prior to the scheduled event and are subject to additional fees. Standard equipment will be tested and operational for the event provided that it is listed below. </strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row351" class="text-left row ">
+                <div id="col355" class="col-xs-12 col-sm-12 text-center  ">
+                    <p id="ele356" name="ele356" class="col-xs-12 col-sm-12 text-left  "></p>
+                    <h4><b>SUPPORT AND PROPRIETARY SOFTWARE INSTALLATION</b></h4>
+                    <p></p>
+                </div>
+            </div>
+            <div id="row3513535" name="" class="text-left row ">
+                <div id="col35535" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele35635" name="ele35635" class="col-xs-12 col-sm-12 text-left  "><strong>Organizations that wish to install proprietary software will be provided one hour of technical support per event. Technical assistance beyond the first hour will be charged at a rate of $50/hour. Proprietary software must be removed by the rental organization from all computers at the conclusion of each complete training session. The instructor is responsible for testing systems with proprietary software prior to class. IT support is available after 8:30 a.m. </strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row434" class="text-left row ">
+                <div id="col435" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="additionalRequirements">Please list any additional requirements for the event.</label>
+                    <textarea
+                    id="additionalRequirements" name="additionalRequirements" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow34446688101023233030" name="quickHeadingRow" class="text-left row  "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn35468102330" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall36" name="quickHeadingSmall36" class="text-center  "
+                    style=" font-weight: bold; ">Signatures</h4>
+                </div>
+            </div>
+            <div id="row3793434" name="" class="text-left row  ">
+                <div id="col38034" class="col-xs-12 col-sm-12 text-center  ">
+                    <p id="ele38134" name="ele38134" class="col-xs-12 col-sm-12 text-center  "></p>
+                    <h4><b>Facilities Use Below</b></h4>
+                    <p></p>
+                </div>
+            </div>
+            <div id="row379" class="text-left row  ">
+                <div id="col380" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele381" name="ele381" class="col-xs-12 col-sm-12 text-left  "><strong>Proper use of this facility will be the responsibility of the sponsoring organization/renter to comply with the policies and regulations of Oakland Community College and state and federal laws governing the use of public property. It is also agreed that a purchase order which covers the cost of all fees and expenses delineated above will be issued and on file with the College 48 hours prior to the event. The sponsoring organization/renter shall indemnify and release the College, its Board of Trustees, officers, employees, and agents from any and all claims related to any loss, damage, or injury arising out of or related to the above event. </strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow368" name="quickInputsRow" class="text-left row occ ">
+                <div id="quickInputsColumn369" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="occRepresentativeSignature">OCC Representative: Please Enter Your Name</label>
+                        <input id="occRepresentativeSignature"
+                        name="occRepresentativeSignature" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn371" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="occRepresentativeSignDate">Date</label>
+                        <input id="occRepresentativeSignDate" name="occRepresentativeSignDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow374" name="quickInputsRow" class="text-left row rental ">
+                <div id="quickInputsColumn375" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="representativeSignature">Rental Organization's Representative: Please Enter Your Name</label>
+                        <input
+                        id="representativeSignature" name="representativeSignature" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn377" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="representativeSignDate">Date</label>
+                        <input id="representativeSignDate" name="representativeSignDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow23637373939" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn2373739" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_2383739" class="text-left  " />
+                </div>
+            </div>
+            <div id="row424" class="text-left row developer ">
+                <div id="col425" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="year">year (hidden)</label>
+                        <input id="year" name="year" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

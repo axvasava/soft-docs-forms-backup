@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>OCC Forms Design System Reference</title>
+
+		<style>
+			:root {
+				/* =====================================================
+			   Primary Brand Colors
+			===================================================== */
+				--fd-occ-green: #046a38;
+				--fd-green-dark: #034f2a;
+				--fd-green-light: #eef7f1;
+
+				/* =====================================================
+			   Office Variant
+			===================================================== */
+				--fd-office: #186c7f;
+				--fd-office-dark: #145766;
+				--fd-office-light: #eef6f8;
+
+				/* =====================================================
+			   Developer Variant
+			===================================================== */
+				--fd-dev: #495057;
+				--fd-dev-dark: #212529;
+				--fd-dev-light: #f1f3f5;
+
+				/* =====================================================
+			   Warning Variant
+			===================================================== */
+				--fd-warning: #fbd502;
+				--fd-warning-dark: #c7a800;
+				--fd-warning-light: #fff8d6;
+
+				/* =====================================================
+			   Error Variant
+			===================================================== */
+				--fd-error: #b00020;
+				--fd-error-dark: #7a0016;
+				--fd-error-light: #fdecef;
+
+				/* =====================================================
+			   Info Variant
+			===================================================== */
+				--fd-info: #5ebace;
+				--fd-info-dark: #3d8fa8;
+				--fd-info-light: #edf8fc;
+
+				/* =====================================================
+			   Supporting Brand Palette
+			===================================================== */
+				--fd-apple: #50b848;
+				--fd-seafoam: #7ac69b;
+				--fd-lime: #9dea01;
+
+				--fd-bumblebee: #fbd502;
+				--fd-habanero: #f49c4a;
+				--fd-strong-red: #d83968;
+
+				--fd-violet: #6c2a7c;
+
+				--fd-dark-teal: #186c7f;
+				--fd-space-blue: #213671;
+				--fd-lighter-blue: #3274b9;
+				--fd-sky-blue: #5ebace;
+
+				/* =====================================================
+			   Neutral Colors
+			===================================================== */
+				--fd-white: #ffffff;
+				--fd-black: #000000;
+
+				--fd-gray-100: #f8f9fa;
+				--fd-gray-200: #e9ecef;
+				--fd-gray-300: #dee2e6;
+				--fd-gray-500: #6c757d;
+				--fd-gray-700: #495057;
+				--fd-gray-900: #212529;
+			}
+
+			body {
+				font-family: Arial, sans-serif;
+				background: #f4f4f4;
+				padding: 32px;
+				color: #212529;
+				line-height: 1.5;
+			}
+
+			h1 {
+				color: var(--fd-occ-green);
+				margin-bottom: 32px;
+			}
+
+			h2 {
+				margin-top: 40px;
+				margin-bottom: 12px;
+				color: var(--fd-green-dark);
+			}
+
+			pre {
+				background: #212529;
+				color: #f8f9fa;
+				padding: 16px;
+				border-radius: 8px;
+				overflow-x: auto;
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+			}
+
+			code {
+				font-family: Consolas, Monaco, monospace;
+				font-size: 14px;
+			}
+
+			.palette-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+				gap: 16px;
+				margin-top: 20px;
+			}
+
+			.color-card {
+				border-radius: 8px;
+				overflow: hidden;
+				box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+				background: white;
+				border: 1px solid #ddd;
+			}
+
+			.color-swatch {
+				height: 80px;
+			}
+
+			.color-info {
+				padding: 12px;
+			}
+
+			.color-name {
+				font-weight: bold;
+				margin-bottom: 4px;
+			}
+
+			.color-value {
+				font-family: Consolas, monospace;
+				font-size: 13px;
+				color: #555;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>OCC Forms Design System Reference</h1>
+
+		<h2>Stylesheets</h2>
+
+		<pre><code>&lt;link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css" /&gt;
+&lt;link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css" /&gt;
+&lt;link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css" /&gt;
+&lt;link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css" /&gt;</code></pre>
+
+		<h2>Logo Image</h2>
+
+		<pre><code>&lt;img
+	data-bind="attr:{src:'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+	alt="Oakland Community College Logo"
+/&gt;</code></pre>
+
+		<h2>Color Palette</h2>
+
+		<div class="palette-grid">
+			<div class="color-card">
+				<div
+					class="color-swatch"
+					style="background: var(--fd-occ-green)"
+				></div>
+				<div class="color-info">
+					<div class="color-name">--fd-occ-green</div>
+					<div class="color-value">#046a38</div>
+				</div>
+			</div>
+
+			<div class="color-card">
+				<div
+					class="color-swatch"
+					style="background: var(--fd-green-dark)"
+				></div>
+				<div class="color-info">
+					<div class="color-name">--fd-green-dark</div>
+					<div class="color-value">#034f2a</div>
+				</div>
+			</div>
+
+			<div class="color-card">
+				<div
+					class="color-swatch"
+					style="background: var(--fd-green-light)"
+				></div>
+				<div class="color-info">
+					<div class="color-name">--fd-green-light</div>
+					<div class="color-value">#eef7f1</div>
+				</div>
+			</div>
+
+			<div class="color-card">
+				<div
+					class="color-swatch"
+					style="background: var(--fd-office)"
+				></div>
+				<div class="color-info">
+					<div class="color-name">--fd-office</div>
+					<div class="color-value">#186c7f</div>
+				</div>
+			</div>
+
+			<div class="color-card">
+				<div
+					class="color-swatch"
+					style="background: var(--fd-office-dark)"
+				></div>
+				<div class="color-info">
+					<div class="color-name">--fd-office-dark</div>
+					<div class="color-value">#145766</div>
+				</div>
+			</div>
+
+			<div class="color-card">
+				<div
+					class="color-swatch"
+					style="background: var(--fd-office-light)"
+				></div>
+				<div class="color-info">
+					<div class="color-name">--fd-office-light</div>
+					<div class="color-value">#eef6f8</div>
+				</div>
+			</div>
+
+			<div class="color-card">
+				<div
+					class="color-swatch"
+					style="background: var(--fd-warning)"
+				></div>
+				<div class="color-info">
+					<div class="color-name">--fd-warning</div>
+					<div class="color-value">#fbd502</div>
+				</div>
+			</div>
+
+			<div class="color-card">
+				<div
+					class="color-swatch"
+					style="background: var(--fd-error)"
+				></div>
+				<div class="color-info">
+					<div class="color-name">--fd-error</div>
+					<div class="color-value">#b00020</div>
+				</div>
+			</div>
+
+			<div class="color-card">
+				<div
+					class="color-swatch"
+					style="background: var(--fd-info)"
+				></div>
+				<div class="color-info">
+					<div class="color-name">--fd-info</div>
+					<div class="color-value">#5ebace</div>
+				</div>
+			</div>
+
+			<div class="color-card">
+				<div
+					class="color-swatch"
+					style="background: var(--fd-gray-700)"
+				></div>
+				<div class="color-info">
+					<div class="color-name">--fd-gray-700</div>
+					<div class="color-value">#495057</div>
+				</div>
+			</div>
+
+			<div class="color-card">
+				<div
+					class="color-swatch"
+					style="background: var(--fd-gray-900)"
+				></div>
+				<div class="color-info">
+					<div class="color-name">--fd-gray-900</div>
+					<div class="color-value">#212529</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <style>
+            body .container {
+            width: 85%;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col3" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele4" name="ele37" class="text-right  "><i>Revised 11/24</i></h5>
+                </div>
+                <div id="HeaderLeft5" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo6" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="50%"
+                    />
+                </div>
+                <div id="HeaderRight7" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_8" name="h2_27" class="text-center  "><b>Out-of-State Remote Work Agreement</b></h2>
+                </div>
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele10" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Section I: Remote Worker Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow16" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn17" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Employee Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn19" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Employee ID</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn21" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeePosition">Employee Position</label>
+                        <input id="employeePosition" name="employeePosition"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn23" name="quickInputsColumn4" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeDepartment">Department</label>
+                        <input id="employeeDepartment" name="employeeDepartment"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col25" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input id="phoneNumber" name="phoneNumber" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col28" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele29" name="ele29" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow103" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn104" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmall105" name="quickHeadingSmall" class="text-left  "><strong>Proposed Remote Worksite</strong> (Remote work outside Michigan requires written approval  of Human Resources and Financial Services.)</h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow107" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn108" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest109" name="quickHeadingSmallest" class="text-left  "><strong>Proposed Effective Dates:</strong></h5>
+                </div>
+            </div>
+            <div id="quickInputsRow111" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn112" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="effectiveDateFrom">From</label>
+                        <input id="effectiveDateFrom" name="effectiveDateFrom" class="text-left  "
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn114" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="effectiveDateTo">To</label>
+                        <input id="effectiveDateTo" name="effectiveDateTo" class="text-left  "
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col116" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="locations">Locations</label>
+                    <select id="locations" name="locations" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Home">Home</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow120" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn121" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="address">Street Address (PO Box <u>not</u> Acceptable)</label>
+                        <input id="address"
+                        name="address" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn123" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="city">City</label>
+                        <input id="city" name="city" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn125" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="state">State</label>
+                        <input id="state" name="state" class="text-left  " type="text"
+                        data-bind="state" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn127" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="zipCode">Zip</label>
+                        <input id="zipCode" name="zipCode" class="text-left  " type="text"
+                        data-bind="mask: 'zip' " />
+                    </div>
+                </div>
+                <div id="col129" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele130" name="ele130" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow1244" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn134" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall144" name="quickHeadingSmall144" class="text-center  "
+                    style=" font-weight: bold; ">Section II: Certifications, Work Rules &amp; Schedule and Acknowledgement</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow98" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn99" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  "><span id="quickInputsText100" name="quickInputsText1" class="text-left  "><style>
+    /* Custom Table Styles */
+    table {
+        background-color: #c8dfea; /* Light blue background */
+        border-collapse: separate; /* Allow border radius */
+        border-spacing: 0; /* No gaps between cells */
+        border: 5px solid #365563; /* Solid outer border around the entire table */
+        border-radius: 15px; /* Rounded corners for the table */
+        width: 100%; /* Make the table span the full width of its container */
+        overflow: hidden; /* Ensure rounded corners apply correctly */
+        padding: 10px; /* Add padding around the table */
+        margin: 20px auto; /* Center the table and add spacing around it */
+    }
+    th, td {
+        border: 1px solid #365563; /* Dark blue borders for individual cells */
+        text-align: center; /* Center align text in cells */
+        padding: 8px; /* Add padding to improve spacing within cells */
+    }
+    th {
+        background-color: #365563; /* Dark blue background for header */
+        color: white; /* White text for header */
+    }
+    input.form-control {
+        background-color: #ffffff; /* White background for inputs */
+        border: 1px solid #365563; /* Match border color */
+    }
+</style>
+
+
+
+<div class="container my-4">
+        <h4 class="mb-4 text-center"><strong>REMOTE WORK SCHEDULE</strong></h4>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="table-light">
+                    <tr>
+                        <th></th>
+                        <th>SUN</th>
+                        <th>MON</th>
+                        <th>TUES</th>
+                        <th>WED</th>
+                        <th>THURS</th>
+                        <th>FRI</th>
+                        <th>SAT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>START 1</td>
+                        <td><input id="sunStart1" name="sunStart1" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="monStart1" name="monStart1" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="tuesStart1" name="tuesStart1" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="wedStart1" name="wedStart1" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="thursStart1" name="thursStart1" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="friStart1" name="friStart1" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="satStart1" name="satStart1" class="form-control" data-bind="timepicker" /></td>
+                    </tr>
+                    <tr>
+                        <td>END 1</td>
+                        <td><input id="sunEnd1" name="sunEnd1" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="monEnd1" name="monEnd1" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="tuesEnd1" name="tuesEnd1" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="wedEnd1" name="wedEnd1" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="thursEnd1" name="thursEnd1" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="friEnd1" name="friEnd1" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="satEnd1" name="satEnd1" class="form-control" data-bind="timepicker" /></td>
+                    </tr>
+                    <tr>
+                        <td>START 2</td>
+                        <td><input id="sunStart2" name="sunStart2" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="monStart2" name="monStart2" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="tuesStart2" name="tuesStart2" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="wedStart2" name="wedStart2" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="thursStart2" name="thursStart2" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="friStart2" name="friStart2" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="satStart2" name="satStart2" class="form-control" data-bind="timepicker" /></td>
+                    </tr>
+                    <tr>
+                        <td>END 2</td>
+                        <td><input id="sunEnd2" name="sunEnd2" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="monEnd2" name="monEnd2" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="tuesEnd2" name="tuesEnd2" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="wedEnd2" name="wedEnd2" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="thursEnd2" name="thursEnd2" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="friEnd2" name="friEnd2" class="form-control" data-bind="timepicker" /></td>
+                        <td><input id="satEnd2" name="satEnd2" class="form-control" data-bind="timepicker" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div></span>
+                </div>
+            </div>
+            <div id="quickParagraphRow45" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn46" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_47" name="p_263" class="text-left  "><strong>By entering my name below and submitting this form</strong>
+                        <br
+                        />
+<strong>I certify that:</strong>
+                        <br />
+                    </p>
+                    <ol>
+                        <li>I have read OCC’s Remote Work Policy and Procedures and work rules, and
+                            agree to abide by all their provisions.</li>
+                        <li>I have reviewed expectations and communication requirements in my remote-
+                            work plan and security requirements for remote work with my supervisor.</li>
+                        <li>I have agreed to establish a remote workspace at the location identified
+                            above and certify that my remote work site is safe and secure.</li>
+                    </ol>
+<strong>I understand that:</strong>
+                    <br />
+                    <ol>
+                        <li>I must follow all College policies and work rules. Failure to follow policies
+                            and work rules may result in disciplinary action and termination of remote
+                            work.</li>
+                        <li>I will promptly notify my supervisor if I need to change any term of this
+                            agreement so that a revised agreement can be entered.</li>
+                        <li>Reimbursement for travel and meals will not be available to me for work
+                            at an authorized remote work location.</li>
+                        <li>If approved to use a privately-owned phone or device during remote work,
+                            my device may be subject to discovery under court rules, court orders or
+                            litigation holds, acceptable-use or cyber-security incident investigations
+                            by OCC, and Freedom of Information Act (FOIA) requests.</li>
+                    </ol>
+<strong>I further understand that: </strong>
+                    <br />
+                    <ol>
+                        <li>This Remote Work Agreement can be ended by the appointing authority any
+                            time for any reason and that I can end this agreement. If feasible, when
+                            ending a Remote Work Agreement, two weeks' notice will be given.</li>
+                    </ol>
+                    <p></p>
+                </div>
+            </div>
+            <div id="quickInputsRow49" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn50" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText51" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickHeadingRow1277" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn137" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall147" name="quickHeadingSmall147" class="text-center  "
+                    style=" font-weight: bold; ">Signatures</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow57" name="quickInputsRow" class="text-left row employeeSignature ">
+                <div id="quickInputsColumn58" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSignature">Employee: Enter Name</label>
+                        <input id="employeeSignature" name="employeeSignature"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn60" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSignatureDate">Signature Date</label>
+                        <input id="employeeSignatureDate" name="employeeSignatureDate"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow5799" name="quickInputsRow" class="text-left row supervisorSignature ">
+                <div id="quickInputsColumn589" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSignature">Supervisor: Enter Name</label>
+                        <input id="supervisorSignature" name="supervisorSignature"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn609" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSignatureDate">Signature Date</label>
+                        <input id="supervisorSignatureDate" name="supervisorSignatureDate"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow57991010" name="quickInputsRow" class="text-left row hrSignature ">
+                <div id="quickInputsColumn58910" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="humanResourcesSignature">Human Resources: Enter Name</label>
+                        <input id="humanResourcesSignature"
+                        name="humanResourcesSignature" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn60910" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="humanResourcesSignatureDate">Signature Date</label>
+                        <input id="humanResourcesSignatureDate" name="humanResourcesSignatureDate"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow579910101111" name="quickInputsRow" class="text-left row fsSignature ">
+                <div id="quickInputsColumn5891011" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="financialServicesSignature">Financial Services: Enter Name</label>
+                        <input id="financialServicesSignature"
+                        name="financialServicesSignature" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn6091011" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="financialServicesSignatureDate">Signature Date</label>
+                        <input id="financialServicesSignatureDate" name="financialServicesSignatureDate"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow5799101011111212" name="quickInputsRow" class="text-left row isSignature ">
+                <div id="quickInputsColumn589101112" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="informationServicesSignature">Information Services: Enter Name</label>
+                        <input id="informationServicesSignature"
+                        name="informationServicesSignature" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn609101112" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="informationServicesSignatureDate">Signature Date</label>
+                        <input id="informationServicesSignatureDate" name="informationServicesSignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow83" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn84" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText85" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="loadingSpinner.css" />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col3" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele4" name="ele37" class="text-right  "><i>Revised 03/25</i></h5>
+                </div>
+                <div id="HeaderLeft5" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo6" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    />
+                </div>
+                <div id="HeaderRight7" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_8" name="h2_27" class="text-center  "><b>Application to Become an Authorized Driver</b></h2>
+                </div>
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele10" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow44" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn45" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">Origination Date</label>
+                        <input id="originationDate" name="originationDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Employee Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow30" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn31" name="quickInputsColumn1" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeLastName">Last Name</label>
+                        <input id="employeeLastName" name="employeeLastName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn33" name="quickInputsColumn3" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeFirstName">First Name</label>
+                        <input id="employeeFirstName" name="employeeFirstName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn35" name="quickInputsColumn2" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeMiddleInitial">Middle Initial</label>
+                        <input id="employeeMiddleInitial" name="employeeMiddleInitial"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col37" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Employee ID</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " required="required" readonly="true" />
+                    </div>
+                </div>
+                <div id="col50" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeDOB">Employee Date of Birth</label>
+                        <input id="employeeDOB" name="employeeDOB"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col41" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="jobTitle">Job Title</label>
+                        <input id="jobTitle" name="jobTitle" class="text-left  "
+                        required="required" readonly="true" />
+                    </div>
+                </div>
+                <div id="col64" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeDriversLicenseNumber">Employee Drivers License Number</label>
+                        <input id="employeeDriversLicenseNumber"
+                        name="employeeDriversLicenseNumber" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col65" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="stateOfIssue">State of Issue</label>
+                        <input id="stateOfIssue" name="stateOfIssue" class="text-left  "
+                        required="required" data-bind="state" />
+                    </div>
+                </div>
+                <div id="col47" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele48" name="ele48" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickParagraphRow141" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn142" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_143" name="p_12139" class="text-left  "><strong>Note: </strong>If the Supervisor shown after selecting your Job
+                        Title is incorrect, please start typing to search for and select the correct
+                        Supervisor.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow145" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn146" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSearch">Supervisor Name</label>
+                        <input id="supervisorSearch" name="supervisorSearch"
+                        class="text-left  " type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: true, labelMask: ['UserName'],  formFields: {'supervisorEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn148" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorEmail">Supervisor Email</label>
+                        <input id="supervisorEmail" name="supervisorEmail"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow1266" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn136" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall146" name="quickHeadingSmall146" class="text-center  "
+                    style=" font-weight: bold; ">Reason for Vehicle Use</h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow74" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn75" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="reasonForVehicleUse">Reason for Vehicle Use</label>
+                    <textarea id="reasonForVehicleUse" name="reasonForVehicleUse"
+                    class="text-left  " required="required"></textarea>
+                </div>
+                <div id="col77" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_79" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow98" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn99" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall100" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Signature and Acknowledgements</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow102" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn103" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_104" name="p_263" class="text-left  "><strong>By entering my name below and submitting this form</strong> I acknowledge
+                        that I reviewed and understand the <a href="https://www.oaklandcc.edu/policies/business-services-policies/vehicle-use"
+                        target="blank">OCC Vehicle Use Policy and Procedure</a>.
+                        <br />
+                        <br />I hereby authorize all public record repository records relating to my
+                        driving records, if any, to be released to Oakland Community College (“OCC”).
+                        I acknowledge that OCC has made a full and complete disclosure of its intention
+                        to obtain such reports on me as required by law. I further understand and
+                        acknowledge that should I hold a position that requires me to operate a
+                        motor vehicle as part of my essential job duties, OCC, through the Human
+                        Resources Department, will perform periodic checks of my driving record.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow106" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn107" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSignature">Employee: Please Enter Your Name</label>
+                        <input id="employeeSignature"
+                        name="employeeSignature" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn109" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSignatureDate">Date</label>
+                        <input id="employeeSignatureDate" name="employeeSignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col111" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele112" name="ele112" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow981414" name="quickHeadingRow" class="text-left row supervisor "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn9914" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall10014" name="quickHeadingSmall10014" class="text-center  "
+                    style=" font-weight: bold; ">Supervisor Signature</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow1061515" name="quickInputsRow" class="text-left row supervisor ">
+                <div id="quickInputsColumn10715" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSignature">Supervisor: Please Enter Your Name</label>
+                        <input id="supervisorSignature"
+                        name="supervisorSignature" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn10915" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSignatureDate">Date</label>
+                        <input id="supervisorSignatureDate" name="supervisorSignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col11115" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele11215" name="ele112" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow126688" name="quickHeadingRow" class="text-left row humanResources "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1368" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1468" name="quickHeadingSmall1468" class="text-center  "
+                    style=" font-weight: bold; ">HR Use Only</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow92" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn93" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hrStaffSignature">HR Staff: Please Enter Your Name</label>
+                        <input id="hrStaffSignature" name="hrStaffSignature"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn95" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hrStaffSignatureDate">Date</label>
+                        <input id="hrStaffSignatureDate" name="hrStaffSignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col114" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele115" name="ele115" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow58" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn59" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall60" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+                <div id="col61" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="routeSupervisorEmail">routeSupervisorEmail (hidden)</label>
+                        <input id="routeSupervisorEmail"
+                        name="routeSupervisorEmail" class="text-left  " />
+                    </div>
+                </div>
+                <div id="col117" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeName">employeeName (hidden)</label>
+                        <input id="employeeName" name="employeeName"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col120" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col121" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hrDocType">hrDocType (hidden)</label>
+                        <input id="hrDocType" name="hrDocType" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow127" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn128" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left loading ">
+                        <label for="quickInputsText129">Loading Spinner (Do not Remove)</label>
+                        <input id="quickInputsText129"
+                        name="quickInputsText1" class="text-left loading " type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -38,11 +38,11 @@ CHROME_USER_DATA_DIR = Path.home() / "AppData/Local/ChromePlaywrightSoftdocs"
 # Script defaults
 # ---------------------------------------
 
-DEFAULT_MIN_ID = 213
-DEFAULT_MAX_ID = 215
+DEFAULT_MIN_ID = 243
+DEFAULT_MAX_ID = 320
 DEFAULT_OUTPUT_ROOT = "backups"
-FAILED_FORM_IDS_CSV_DEFAULT = r"C:\Users\axvasava\Desktop\repos\soft-docs-forms-backup\backups\2026-05-15_113307\failed_form_ids.csv"
-DEFAULT_FORM_DETAILS_JSON = "form-details/output/2026-05-15-form-details-deduped.json"
+FAILED_FORM_IDS_CSV_DEFAULT = ""
+DEFAULT_FORM_DETAILS_JSON = "form-details/output/2026-06-12-form-details.json"
 
 
 # ---------------------------------------

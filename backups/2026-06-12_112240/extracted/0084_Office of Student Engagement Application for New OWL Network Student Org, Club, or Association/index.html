@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row240" class="text-left row fd-form-masthead ">
+                <div id="col241" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn242" name="revisedOn" class="col-sm-12 text-right  ">Revised 10/25</span>
+                </div>
+                <div id="col243" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele244" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col245" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele246" name="ele21" class="text-left form-title with-subtitle ">Application for New OWL Network Student Org, Club, or Association</h1><span id="ele247" name="ele23" class="text-left form-subtitle ">Office of Student Engagement</span>
+                </div>
+                <div id="col248" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele249" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row226" class="text-left row ">
+                <div id="col227" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote228" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Student Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow16" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn17" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Student Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn19" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Student ID</label>
+                        <input id="originatorErpId" name="originatorErpId" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow22" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn23" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_24" class="text-left  " />
+                </div>
+            </div>
+            <div id="advisorRow3636" name="advisorRow" class="text-left row ">
+                <div id="quickInputsColumn2736" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="advisor">Please select an advisor for this RSO</label>
+                        <input id="advisor" name="advisor"
+                        class="text-left  " required="required" type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  labelLength: 2000,  clearOnFocus: true, labelMask: ['UserName', ' | ', 'Email'], selectedMask: ['UserName'],  formFields: {'advisorEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col2936" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="advisorEmail">Advisor Email</label>
+                        <input id="advisorEmail" name="advisorEmail" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col15536" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="advisorPhone">AdvisorPhone</label>
+                        <input id="advisorPhone" name="advisorPhone" class="text-left  "
+                        data-bind="mask: 'phone' " />
+                    </div>
+                </div>
+                <div id="col18836" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele18936" name="ele189" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickDropdownRow201" name="quickDropdownRow" class="text-left row additionalAdvisors ">
+                <div id="quickDropdownColumn202" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="additionalAdvisors">Are there additional advisors associated with this RSO?</label>
+                    <select
+                    id="additionalAdvisors" name="additionalAdvisors" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+                <div id="col204" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele205" name="ele205" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="advisorRow" name="advisorRow" class="text-left row " data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addAnotherAdvisor',  removeButtonID: 'removeLastAdvisor',  maxLength: 5 }, visible: ( ( additionalAdvisors() == 'Yes' ) )  ">
+                <div id="quickInputsColumn27" name="quickInputsColumn1" class="col-xs-12 col-sm-7 text-left  ">
+                    <div class="text-left  ">
+                        <label for="additionalAdvisor">Please select an additional advisor for this RSO</label>
+                        <input id="additionalAdvisor"
+                        name="additionalAdvisor" class="text-left  " required="required" type="text"
+                        data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  labelLength: 2000,  clearOnFocus: true,  labelMask: ['UserName'],  selectedMask: [''],  formFields: {'additionalAdvisorEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col218" class="col-xs-5 col-sm-5 text-left hidden ">
+                    <div class="text-left  ">
+                        <label for="additionalAdvisorNameHidden">additionalAdvisorNameHidden (hidden)</label>
+                        <input id="additionalAdvisorNameHidden"
+                        name="additionalAdvisorNameHidden" class="text-left  " />
+                    </div>
+                </div>
+                <div id="col29" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="additionalAdvisorEmail">Advisor Email</label>
+                        <input id="additionalAdvisorEmail" name="additionalAdvisorEmail"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col155" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="additionalAdvisorPhone">AdvisorPhone</label>
+                        <input id="additionalAdvisorPhone" name="additionalAdvisorPhone"
+                        class="text-left  " data-bind="mask: 'phone' " />
+                    </div>
+                </div>
+                <div id="col188" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele189" name="ele189" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow181" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( additionalAdvisors() == 'Yes' ) ) ">
+                <div id="quickInputsColumn182" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <button id="addAnotherAdvisor" name="addAnotherAdvisor" class="text-left btn btn-primary "
+                    style="" undefined="">Add Another Advisor</button>
+                </div>
+                <div id="quickInputsColumn184" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <button id="removeLastAdvisor" name="removeLastAdvisor" class="text-left btn btn-danger "
+                    style="" undefined="">Remove Last Advisor</button>
+                </div>
+            </div>
+            <div id="quickInputsRow2266" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( additionalAdvisors() == 'Yes' ) ) ">
+                <div id="quickInputsColumn236" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_246" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow1277" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn137" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall147" name="quickHeadingSmall147" class="text-center  "
+                    style=" font-weight: bold; ">RSO Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow39" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn40" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="proposedRSOName">Proposed RSO Name</label>
+                        <input id="proposedRSOName" name="proposedRSOName"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow43" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn44" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="orgPurpOrMS">Organization, Purpose or Mission Statement</label>
+                    <textarea id="orgPurpOrMS"
+                    name="orgPurpOrMS" class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow51" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn52" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="orgnaizationType">Type of Organization</label>
+                    <select id="orgnaizationType" name="orgnaizationType"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Academic">Academic</option>
+                        <option value="Social">Social</option>
+                        <option value="Political">Political</option>
+                        <option value="Recreational">Recreational</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow177" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( orgnaizationType() == 'Other' ) ) ">
+                <div id="quickInputsColumn178" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="otherOrganizationType">Please enter other type of organizationi.</label>
+                        <input id="otherOrganizationType"
+                        name="otherOrganizationType" class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickDropdownRow55" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn56" name="quickDropdownColumn" class="col-xs-12 col-sm-8 text-left  ">
+                    <label for="affiliation">Do you have affiliation with state, local or national organizations?</label>
+                    <select
+                    id="affiliation" name="affiliation" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+            </div>
+            <div id="quickHeadingRow59" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( affiliation() == 'Yes' ) ) ">
+                <div id="quickHeadingColumn60" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmallest61" name="quickHeadingSmallest" class="text-left  "><strong>Please provide name and website of the affiliated organization.</strong></h4>
+                </div>
+            </div>
+            <div id="quickInputsRow63" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( affiliation() == 'Yes' ) ) ">
+                <div id="quickInputsColumn64" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="orgName">Affiliated Organization Name</label>
+                        <input id="orgName" name="orgName"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn66" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="orgWebsite">Affilaited Organization Website</label>
+                        <input id="orgWebsite" name="orgWebsite"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow70" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( affiliation() == 'Yes' ) ) ">
+                <div id="quickInputsColumn71" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <label for="taxExempt">Is the state, local, or national organization a tax exempt entity?</label>
+                    <select
+                    id="taxExempt" name="taxExempt" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+            </div>
+            <div id="quickInputsRow75" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( taxExempt() == 'Yes' ) ) ">
+                <div id="quickInputsColumn76" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="taxExemptID">Please provide the tax exempt ID of the affiliate organization.</label>
+                        <input
+                        id="taxExemptID" name="taxExemptID" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickDropdownRow83" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn84" name="quickDropdownColumn" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="duesCollected">Will dues be collected?</label>
+                    <select id="duesCollected" name="duesCollected"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickParagraphRow87" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px " data-bind="visible: ( ( duesCollected() == 'Yes' ) ) ">
+                <div id="quickParagraphColumn88" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_89" name="p_263" class="text-left  "><strong>NOTE:</strong> You must create a 511 account. <strong><i>Work with the Student Engagement Coordinator and the Business Manager to create the 511 account.</i></strong> For
+                        511 account information see the Student Organization Handbook here: <a href="https://www.oaklandcc.edu/studentengagement/student_org_handbook#forms"
+                        target="blank">https://www.oaklandcc.edu/studentengagement/student_org_handbook#forms</a>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow91" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( duesCollected() == 'Yes' ) ) ">
+                <div id="quickInputsColumn92" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="collectionAount">Amount of Collection</label>
+                        <input id="collectionAount" name="collectionAount"
+                        class="text-left  " required="required" type="text" data-bind="money" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn94" name="quickInputsColumn2" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="collectionFrequency">Frequency of Collection</label>
+                        <input id="collectionFrequency" name="collectionFrequency"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickDropdownRow97" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn98" name="quickDropdownColumn" class="col-xs-12 col-sm-8 text-left  ">
+                    <label for="fundraisingActivities">Will the group be involved in fundraising activities on campus?</label>
+                    <select
+                    id="fundraisingActivities" name="fundraisingActivities" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Unsure at this Time">Unsure at this Time</option>
+                        </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow101" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( fundraisingActivities() == 'Yes' ) ) ">
+                <div id="quickTextAreaColumn102" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="explainFundraising">Briefly Explain</label>
+                    <textarea id="explainFundraising" name="explainFundraising"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickDropdownRow105" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn106" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="offCampusActivities">Will the group be participating in off-campus activities, like trips,
+                        conferences, etc.)?</label>
+                    <select id="offCampusActivities" name="quickDropdownElement"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Unsure at this Time">Unsure at this Time</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow109" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( offCampusActivities() == 'Yes' ) ) ">
+                <div id="quickTextAreaColumn110" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="explainOffCampusActivities">Briefly Explain</label>
+                    <textarea id="explainOffCampusActivities" name="explainOffCampusActivities"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow79" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn80" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_81" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickParagraphRow113" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn114" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_115" name="p_263" class="text-left  ">Oakland Community College recognizes the right of any group of students
+                        to form a voluntary organization for any purpose not forbidden by law.
+                        If an organization composed chiefly or exclusively of students desires
+                        to hold meetings in College buildings, it is required to have an advisor
+                        who is a member of the professional staff of the College and to file required
+                        documents with the Office of Student Engagement. Information may be required
+                        about its purposes, officers, memberships, dues, etc. and shall be uniform
+                        for all organizations. An organization which has fulfilled these requirements
+                        is called a Recognized Student Organization (RSO). The College assumes
+                        no responsibility for recognized organizations or their programs; however,
+                        some organizations, if closely connected with the activities of academic
+                        departments of instruction, honor societies and/or student government may
+                        in some cases receive special help and supervision.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow1313434" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn13234" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_13334" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow117" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn118" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall119" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Acknowledgements and Signatures</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow121" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn122" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_123" name="p_263" class="text-left  ">By entering my name below and submitting or approving this form, I acknowledge
+                        that I <strong>have read and understand</strong> the procedures for forming
+                        a new student organization, the responsibilities of a student organization
+                        and the policies guidelines and procedures for student organizations at
+                        Oakland Community College. I am aware that our recognition may be revoked
+                        if we do not adhere to student organizational policies and procedures outlined
+                        in the Student Organization Handbook</p>
+                </div>
+            </div>
+            <div id="quickInputsRow125" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn126" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSign">Student: Please Enter Your Name</label>
+                        <input id="studentSign" name="studentSign"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn128" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSignDate">Date</label>
+                        <input id="studentSignDate" name="studentSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow131" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn132" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_133" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickInputsRow1253030" name="quickInputsRow" class="text-left row advSigSec ">
+                <div id="quickInputsColumn12630" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="advisorSign">Advisor: Please Enter Your Name</label>
+                        <input id="advisorSign" name="advisorSign"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn12830" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="advisorSignDate">Date</label>
+                        <input id="advisorSignDate" name="advisorSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col149" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele150" name="ele150" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow144" name="quickInputsRow" class="text-left row secSigSec ">
+                <div id="quickInputsColumn145" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="secSign">SEC: Please Enter Your Name</label>
+                        <input id="secSign" name="secSign"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn147" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="secSignDate">Date</label>
+                        <input id="secSignDate" name="secSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col152" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele153" name="ele153" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow159" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn160" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall161" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow163" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn164" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicYear">academicYear (hidden)</label>
+                        <input id="academicYear" name="academicYear"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col169" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col172" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="secDocType">secDocType (hidden)</label>
+                        <input id="secDocType" name="secDocType" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col212" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="advisorNameHidden">advisorName (hidden)</label>
+                        <input id="advisorNameHidden" name="advisorNameHidden"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

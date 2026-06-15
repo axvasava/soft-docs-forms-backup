@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="quickInputsRow2" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn3" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="selectedKey">Selected Key</label>
+                        <input id="selectedKey" name="Selected Key" class="text-left  "
+                        placeholder="Selected Key" type="text" data-bind="autocomplete: { integrationSource: 'WE_Get_Keys',  clearOnFocus: true,  validate: true,  labelMask: ['siteCode','-','keyCode'], selectedMask: ['siteCode','-','keyCode'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

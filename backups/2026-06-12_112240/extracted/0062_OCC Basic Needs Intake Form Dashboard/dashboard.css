@@ -1,0 +1,156 @@
+/* Define CSS variables */
+:root {
+    --primary-color: #046A38;
+    --secondary-color: #1E72AE;
+    --accent-color: #dce2e6;
+}
+    
+body {
+    font-family: 'Calibri', sans-serif;
+}
+
+#myTable_wrapper {
+    padding: 20px;
+}
+
+#myTable_length, #myTable_filter {
+    margin-bottom: 10px;
+}
+
+.dataTables_length select, .dataTables_filter input {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color); /* PrimaryColor border */
+    background-color: #ffffff; /* White background */
+    color: var(--primary-color); /* PrimaryColor text */
+    font-size: 16px; /* Set font size to 16px */
+    
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color); /* PrimaryColor border */
+    background-color: #ffffff; /* White background */
+    color: var(--primary-color); /* PrimaryColor text */
+    font-size: 16px; /* Set font size to 16px */
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: var(--primary-color); /* PrimaryColor background */
+    color: #ffffff; /* White text */
+}
+
+.dataTables_wrapper .dataTables_info {
+    margin-top: 10px;
+    font-size: 16px; /* Set font size to 16px */
+}
+
+/* Styling for even and odd rows */
+#myTable tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White background */
+}
+
+#myTable tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White background */
+}
+
+/* Hover effect */
+#myTable tbody tr:hover {
+    background-color: var(--accent-color); /* AccentColor background */
+    color: #ffffff; /* White text */
+}
+
+/* Styling for header */
+#myTable thead th {
+    background-color: var(--primary-color); /* PrimaryColor background */
+    color: #ffffff; /* White text */
+    padding: 12px;
+    font-size: 16px; /* Set font size to 16px */
+}
+
+/* Styling for borders */
+#myTable {
+    border-collapse: collapse;
+    border: 1px solid var(--primary-color); /* PrimaryColor border */
+    width: 100%;
+}
+
+#myTable td, #myTable th {
+    border: 1px solid var(--primary-color); /* PrimaryColor border */
+    padding: 10px;
+    font-size: 16px; /* Set font size to 16px */
+}
+
+/* Custom Header Row Styling */
+#HeaderRow2 {
+    padding: 10px;
+    margin: 0;
+    color: var(--primary-color); /* PrimaryColor text */
+}
+
+#HeaderLeft3 {
+    background-color: transparent; /* Make background transparent */
+}
+
+#HeaderLeft3 img {
+    max-width: 250px;
+    height: auto;
+}
+
+#HeaderRight5 {
+    text-align: center; /* Center align text */
+    color: black; /* Black text */
+}
+
+#HeaderRight5 h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/*Custom Button CSS*/
+.custom-button {
+    font-family: 'Calibri', sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    background-color: lightgray; /* Light Gray Button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.custom-button:hover {
+    background-color: var(--secondary-color); /* Secondary color on hover */
+    transform: scale(1.05);
+    color: white;
+}
+
+.custom-button:active {
+    background-color: var(--secondary-color); /* Secondary color on click */
+    transform: scale(1);
+}
+
+.custom-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the buttons */
+    align-items: center;     /* Vertically center the buttons */
+    width: 100%;             /* Full width of the page */
+    padding: 20px;           /* Optional padding */
+    box-sizing: border-box;  /* Ensure padding doesn't affect width */
+}
+                                
+/* Right-align all cells in the DataTable */
+#myTable td {
+    text-align: right !important;
+}
