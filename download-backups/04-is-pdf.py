@@ -6,10 +6,10 @@ import csv
 
 CURRENT_DATE = datetime.now().strftime("%Y-%m-%d")
 
-INPUT_FILE = Path(f"./form-details/output/{CURRENT_DATE}-form-details-deduped.json")
-OUTPUT_FILE = Path(f"./form-details/output/{CURRENT_DATE}-form-details-deduped-with-pdf.json")
+INPUT_FILE = Path(f"./form-details/output/{CURRENT_DATE}-form-details.json")
+OUTPUT_FILE = Path(f"./form-details/output/{CURRENT_DATE}-form-details-with-pdf.json")
 PDF_ONLY_OUTPUT_FILE = Path(f"./form-details/output/{CURRENT_DATE}-pdf-only.json")
-FULL_CSV_OUTPUT_FILE = Path(f"./form-details/output/{CURRENT_DATE}-form-details-deduped-with-pdf.csv")
+FULL_CSV_OUTPUT_FILE = Path(f"./form-details/output/{CURRENT_DATE}-form-details-with-pdf.csv")
 
 FORM_ID_PREFIX_PATTERN = re.compile(r"^0*(\d+)_")
 
