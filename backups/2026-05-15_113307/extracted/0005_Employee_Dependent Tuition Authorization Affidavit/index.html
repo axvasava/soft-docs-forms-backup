@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row340" class="text-left row fd-form-masthead ">
+                <div id="col341" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn342" name="revisedOn" class="col-sm-12 text-right  ">Revised 05/25</span>
+                </div>
+                <div id="col343" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele344" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col345" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele346" name="ele21" class="text-left form-title with-subtitle ">Authorization Form</h1><span id="ele347" name="ele23" class="text-left form-subtitle ">Employee/Dependent Tuition</span>
+                </div>
+                <div id="col348" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele349" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row316" class="text-left row ">
+                <div id="col317" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote318" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickParagraphRow10" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn11" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "><span id="quickParagraphElement12" name="quickParagraphElement" class="text-left  "><strong>EMPLOYEES</strong> initiating their tuition waiver for classes 
+pursuant to OCC Administrative Policies 2.3.3 or a collective 
+bargaining agreement must complete the information in 
+Section I and submit the form to human resources. The 
+form need only be completed and submitted one time, 
+unless your classification changes. (e.g. Part-time to Full-time, Classified to Teamsters)
+<br /><br />
+<strong>DEPENDENTS / SPOUSES</strong> applying for a tuition waiver 
+for classes pursuant to OCC Administrative Policies 2.3.3 
+or a collective bargaining agreement must submit this form 
+to enrollment services every semester.
+<br /><br />
+<strong> FACULTY: (Full-time and retired)</strong> Full-time faculty and their spouses or retired faculty members and their spouse must pay for their classes and apply for a tuition reimbursement at the end of the semester.
+<br /><br />
+<strong> ADJUNCT FACULTY:</strong> Adjunct faculty members, their spouse and dependents must pay for their classes and apply for a tuition reimbursement at the end of the semester.</span>
+                </div>
+            </div>
+            <div id="quickHeadingRow183" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn184" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall185" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Employee Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow20" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn21" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorFirstName">Employee First Name</label>
+                        <input id="originatorFirstName" name="originatorFirstName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col219" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorLastName">Employee Last Name</label>
+                        <input id="originatorLastName" name="originatorLastName"
+                        class="text-left  " required="required" readonly="true" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn23" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Employee ID Number</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickDropdownRow259" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn260" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="employmentStatus">Employment Status</label>
+                    <select id="employmentStatus" name="employmentStatus"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Part-time">Part-time</option>
+                        <option value="Full-time">Full-time</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickDropdownRow190" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn191" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="employeeType">Employee Type</label>
+                    <select id="employeeType" name="employeeType" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="FT Classified">FT Classified</option>
+                        <option value="FT Exempt">FT Exempt</option>
+                        <option value="FT Faculty">FT Faculty</option>
+                        <option value="FT Teamster">FT Teamster</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Operating Engineers">Operating Engineers</option>
+                        <option value="PT Classified">PT Classified</option>
+                        <option value="PT Exempt">PT Exempt</option>
+                        <option value="PT Teamster">PT Teamster</option>
+                        <option value="Public Safety">Public Safety</option>
+                    </select>
+                </div>
+                <div id="col215" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="employeeLocation">Employee Location</label>
+                    <select id="employeeLocation" name="employeeLocation"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                        <option value="Southfield">Southfield</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickHeadingRow239" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( employeeType() == 'Faculty (FACD)' ) ) ">
+                <div id="quickHeadingColumn240" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest241" name="quickHeadingSmallest" class="text-left  "
+                    style=" background-color:#920b0b;  color:white; "><strong>Faculty members and spouses and retired faculty members and spouses shall be granted tuition reimbursement upon completion of a course. Faculty members shall not be compensated for their spouses or dependent children enrolled in their own sections.</strong></h5>
+                </div>
+            </div>
+            <div id="radioRow205" name="radioRow" class="text-left row ">
+                <div id="col212" class="col-xs-12 col-sm-5 text-left  "><span id="ele213" name="ele213" class="text-left  "><strong>Tuition Authorization Waiver is for:</strong></span>
+                </div>
+                <div id="radioCol206" name="radioCol1" class="col-xs-12 col-sm-2 text-left  ">
+                    <input id="waiverRecipientSelf" name="waiverRecipient" class="text-left margin-right: 5px; "
+                    style="  margin-right: 5px; " required="required" type="radio" value="Self"
+                    />
+                    <label for="waiverRecipientSelf">Self</label>
+                </div>
+                <div id="radioCol208" name="radioCol2" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="waiverRecipientSpouse" name="waiverRecipient" class="text-left  "
+                    style=" margin-right: 5px; " required="required" type="radio" value="Spouse/Dependent"
+                    />
+                    <label for="waiverRecipientSpouse">Spouse/Dependent</label>
+                </div>
+            </div>
+            <div id="quickInputsRow179" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn180" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="semester">For Enrollment in the</label>
+                        <input id="semester" name="semester" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { localSource: 'AcademicPeriodsAutocomplete',  clearOnFocus: true,  validate: true,  labelMask: ['termCode', ' | ', 'termTitle'],  formFields: {'selectedTerm':'termCode'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col200" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">Date</label>
+                        <input id="originationDate" name="originationDate" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow18324" name="quickHeadingRow18324" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( waiverRecipient() == 'Spouse/Dependent' ) ) ">
+                <div id="quickHeadingColumn18424" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingRow1832424" name="quickHeadingRow" class="text-center  "
+                    style=" font-weight: bold; ">Spouse/Dependent Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow201414" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( waiverRecipient() == 'Spouse/Dependent' ) ) ">
+                <div id="quickInputsColumn2114" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentName">Student First and Last Name</label>
+                        <input id="studentName" name="studentName"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn2314" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentNumber">Student ID Number</label>
+                        <input id="studentNumber" name="studentNumber"
+                        class="text-left  " type="text" data-bind="mask: '9999999' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow2014141515" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( waiverRecipient() == 'Spouse/Dependent' ) ) ">
+                <div id="quickInputsColumn211415" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="relationship">Relationship to Employee</label>
+                    <select id="relationship" name="relationship"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Spouse">Spouse</option>
+                        <option value="Child">Child</option>
+                        <option value="Step-Child">Step-Child</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn231415" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dateOfBirth">Date of Birth</label>
+                        <input id="dateOfBirth" name="dateOfBirth" class="text-left  "
+                        required="required" type="text" data-bind="mask: 'date' " />
+                    </div>
+                </div>
+            </div>
+            <div id="radioRow148" name="radioRow" class="text-left row " data-bind="visible: ( ( waiverRecipient() == 'Spouse/Dependent' ) ) ">
+                <div id="radioCol149" name="radioCol1" class="col-xs-12 col-sm-1 text-center  "
+                style=" padding:5px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <input id="studentCertification" name="studentCertification" class="text-left  "
+                    style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px;   width:30px; height:30px; "
+                    required="required" type="checkbox" value="Agreed" margin-right:="" 5px;=""
+                    />
+                </div>
+                <div id="col196" class="col-xs-12 col-sm-11 text-left  ">
+                    <label id="studentCertificationLbl" name="studentCertificationLbl" class="text-left  "
+                    for="studentCertification"><strong>I certify that the Student above is a bona fide dependent/spouse of the OCC employee listed in Section 1 of this form.</strong>
+                    </label>
+                </div>
+            </div>
+            <div id="quickHeadingRow1831313" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="show: { userParam: ['isNotOriginator'] } ">
+                <div id="quickHeadingColumn18413" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall18513" name="quickHeadingSmall18513" class="text-center  "
+                    style=" font-weight: bold; ">For Office Use Only</h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow229" name="quickTextAreaRow" class="text-left row "
+            data-bind="show: { packageParam: ['WFTuitionAuthorizationAffidavitHumanResources', 'End'] } ">
+                <div id="quickTextAreaColumn230" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="hrComments">HR Comments</label>
+                    <textarea id="hrComments" name="hrComments" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickTextAreaRow2291616" name="quickTextAreaRow" class="text-left row "
+            data-bind="show: { userParam: ['isNotOriginator'] } ">
+                <div id="quickTextAreaColumn23016" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="hrComments2">HR Comments for Student Services</label>
+                    <textarea id="hrComments2" name="hrComments2"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickTextAreaRow229161617" name="quickTextAreaRow229161617" class="text-left row "
+            data-bind="show: { userParam: ['isNotOriginator'] } ">
+                <div id="quickTextAreaColumn2301617" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="ssComments">Student Services Comments</label>
+                    <textarea id="ssComments" name="ssComments"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow291" name="quickHeadingRow" class="text-left row lookupCheck "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn292" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall293" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Lookup Check</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow295" name="quickParagraphRow" class="text-left row lookupCheck "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn296" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_297" name="p_12139" class="text-left  "><strong>The Softdocs Etrieve system requires a Student Lookup to be created so that this form can file in Etrieve Content. This requires a synch to take place with the ERP after the Student ID has been created in Colleague. Please enter a Student ID and click the 'Lookup Check' button below to ensure that the Lookup exists in Etrieve before submitting this form.<span style="color: red"> *</span></strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow303" name="quickInputsRow" class="text-left row lookupCheck ">
+                <div id="quickInputsColumn304" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <input id="studentIDLookupCheck" name="studentIDLookupCheck" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col306" class="col-xs-12 col-sm-6 text-left  ">
+                    <button id="lookupCheckButton" name="lookupCheckButton" class="text-left btn btn-primary "
+                    style="" undefined="">Lookup Check</button>
+                </div>
+                <div id="col308" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele309" name="ele309" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow266" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn267" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall268" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+                <div id="col272" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="selectedTerm">selectedTerm (hidden)</label>
+                        <input id="selectedTerm" name="selectedTerm"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col269" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicYear">academicYear (hidden)</label>
+                        <input id="academicYear" name="academicYear"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col275" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">originatorDisplayName (hidden)</label>
+                        <input id="originatorDisplayName"
+                        name="originatorDisplayName" class="text-left  " readonly="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

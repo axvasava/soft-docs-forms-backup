@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row184" class="text-left row fd-form-masthead ">
+                <div id="col185" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn186" name="revisedOn" class="col-sm-12 text-right  ">Revised 04/25</span>
+                </div>
+                <div id="col187" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele188" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col189" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele190" name="ele21" class="text-left form-title ">Accidental Drop/Re-Enrollment</h1>
+                </div>
+                <div id="col191" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele192" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row180" class="text-left row ">
+                <div id="col181" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote182" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickParagraphRow69" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn70" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement71" name="quickParagraphElement" class="text-left  ">Please fill out the information below if you accidentally dropped your
+                        class. Accidental drops can only be processed within 72 hours of the date
+                        the course was dropped.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow12" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn13" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Student Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn17" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Student ID Number</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col21" class="col-xs-12 col-sm-4 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">Student Email</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow40" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn41" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dropDate">Course Drop Date</label>
+                        <input id="dropDate" name="dropDate" class="text-left datepicker "
+                        required="required" type="text" data-bind="datepicker: { minDate: '#minDate',  maxDate: '#maxDate' } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="droppedClasses" name="droppedClasses" class="text-left row "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addClass',  removeButtonID: 'removeClass', maxLength: 5 } ">
+                <div id="quickInputsColumn438" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="courseCode">Course Code</label>
+                        <input id="courseCode" name="courseCode" class="text-left  "
+                        style=" padding:0em 0em 0em 0em;  margin:0em 0em 1em 0em; " required="required"
+                        placeholder="ENG-1510" type="text" />
+                    </div>
+                </div>
+                <div id="col147" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="section">Section Number</label>
+                        <input id="section" name="section" class="text-left  "
+                        required="required" placeholder="A1053 " />
+                    </div>
+                </div>
+                <div id="col148" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="courseTitle">Course Title</label>
+                        <input id="courseTitle" name="courseTitle" class="text-left  "
+                        placeholder="Composition 1" />
+                    </div>
+                </div>
+                <div id="col149" class="col-xs-12 col-sm-3 text-left officeSection ">
+                    <label for="status">Status</label>
+                    <select id="status" name="Status" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Approved">Approved</option>
+                        <option value="Declined">Declined</option>
+                    </select>
+                </div>
+                <div id="col168" class="col-xs-12 col-sm-12 text-left  "><span id="ele173" name="ele173" class="text-left  "></span>
+                </div>
+            </div>
+            <div id="quickInputsRow78" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn79" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <button id="addClass" name="addClase" class="text-left  " style="" undefined="">Add Row</button>
+                </div>
+                <div id="col81" class="col-xs-12 col-sm-3 text-left  ">
+                    <button id="removeClass" name="removeClass" class="text-left  " style=""
+                    undefined="">Remove Row</button>
+                </div>
+            </div>
+            <div id="quickHeadingRow144" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn145" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall146" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Signatures and Acknowledgements</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow136" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn137" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_138" name="p_263" class="text-left  "><strong>Student:</strong> By entering my name below and submitting this
+                        form, I certify that all of the information reported on this form is complete
+                        and correct. Signature may be your legal name or your chosen name.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow112" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn113" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSign">Student: Please Enter Your Name</label>
+                        <input id="studentSign" name="studentSign"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn115" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">Date</label>
+                        <input id="originationDate" name="originationDate" class="text-left datepicker "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow104" name="quickHeadingRow" class="text-left row declineHide "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn105" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall106" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Reason for Decline</h4>
+                </div>
+            </div>
+            <div id="row107" class="text-left row declineHide ">
+                <div id="col108" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="reasonForDecline">Reason For Decline</label>
+                    <textarea id="reasonForDecline" name="reasonForDecline"
+                    class="text-left  " required="required" placeholder="The reason will be sent in an email to the student"></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow157" name="quickHeadingRow" class="text-left row officeSection "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn158" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall159" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">For Office Use Only</h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow161" name="quickTextAreaRow" class="text-left row officeSection ">
+                <div id="quickTextAreaColumn162" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="comments">Comments to student</label>
+                    <textarea id="comments" name="comments" class="text-left  "
+                    placeholder="These comments will be sent in an email to the student"></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow46" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn47" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall48" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow50" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn51" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="minDate">minDate (hidden)</label>
+                        <input id="minDate" name="minDate" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col53" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow5066" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn516" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="maxDate">maxDate (hidden)</label>
+                        <input id="maxDate" name="maxDate" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col98" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicYear">academicYear (hidden)</label>
+                        <input id="academicYear" name="academicYear"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow165" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn166" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="summaryEmail">summaryEmail</label>
+                        <input id="summaryEmail" name="summaryEmail" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col170" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="partialApproval">partialApproval</label>
+                        <input id="partialApproval" name="partialApproval"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

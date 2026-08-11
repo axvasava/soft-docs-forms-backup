@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col3" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele4" name="ele37" class="text-right  "><i>Revised 08/24</i></h5>
+                </div>
+                <div id="HeaderLeft5" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo6" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/foundationlogo.jpg" width="80%"
+                    alt="Oakland Community College Foundation Logo" />
+                </div>
+                <div id="HeaderRight7" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_8" name="h2_27" class="text-center  "><b>Payroll Gift Deduction Authorization</b></h2>
+                </div>
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele10" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow196" name="quickHeadingRow" class="text-left row foundationUseOnly "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn197" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall198" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Foundation Employee Use Only</h4>
+                </div>
+            </div>
+            <div id="quickDropdownRow200" name="quickDropdownRow" class="text-left row foundationUseOnly ">
+                <div id="quickDropdownColumn201" name="quickDropdownColumn" class="col-xs-12 col-sm-8 text-left  ">
+                    <label for="selfOrElse">Will you be submitting this form for yourself or for someone else?</label>
+                    <select
+                    id="selfOrElse" name="selfOrElse" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Self">Self</option>
+                        <option value="Someone Else">Someone Else</option>
+                        </select>
+                </div>
+            </div>
+            <div id="quickInputsRow208" name="quickInputsRow" class="text-left row employeeSearchRow ">
+                <div id="quickInputsColumn209" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSearch">Enter an Employee ID</label>
+                        <input id="employeeSearch" name="employeeSearch"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn211" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  "
+                style=" margin-top: 24px; ">
+                    <button id="employeeSearchBtn" name="employeeSearchBtn" class="text-left btn btn-primary "
+                    style="" undefined="">Search</button>
+                </div>
+            </div>
+            <div id="quickInputsRow204" name="quickInputsRow" class="text-left row foundationUseOnly ">
+                <div id="quickInputsColumn205" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_206" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow122" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn123" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall124" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Employee Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow54" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn55" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fullName">Name</label>
+                        <input id="fullName" name="fullName" class="text-left  " required="required"
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn57" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeID">ID Number</label>
+                        <input id="employeeID" name="employeeID" class="text-left  "
+                        required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col118" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="occEmail">OCC Email</label>
+                        <input id="occEmail" name="occEmail" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn59" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="personalEmail">Personal Email (Update if Neccessary)</label>
+                        <input id="personalEmail"
+                        name="personalEmail" class="text-left  " type="text" data-bind="email"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn61" name="quickInputsColumn4" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="personalPhone">Personal Phone Number (Update if Necessary)</label>
+                        <input id="personalPhone"
+                        name="personalPhone" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col63" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeAddress">Address</label>
+                        <input id="employeeAddress" name="employeeAddress" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col65" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeCity">City</label>
+                        <input id="employeeCity" name="employeeCity" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col67" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeState">State</label>
+                        <input id="employeeState" name="employeeState" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col69" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeZipCode">Zip Code</label>
+                        <input id="employeeZipCode" name="employeeZipCode" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow86" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn87" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall88" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Deduction Options</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow134" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn135" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="newOrExisitingDeduction">I would like to...</label>
+                    <select id="newOrExisitingDeduction" name="newOrExisitingDeduction"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Start a new payroll deduction.">Start a new payroll deduction.</option>
+                        <option value="Increase my current payroll deduction.">Increase my current payroll deduction.</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickDropdownRow99" name="quickDropdownRow" class="text-left row ">
+                <div id="col102" name="col102" class="col-xs-12 col-sm-5 text-left  "
+                data-bind="visible: ( ( newOrExisitingDeduction() ) ) ">
+                    <div class="text-left  ">
+                        <label for="scholarshipOrFund">I would like my gift to support:</label>
+                        <input id="scholarshipOrFund"
+                        name="scholarshipOrFund" class="text-left  " required="required" data-bind="autocomplete: { integrationSource: 'FundType',  clearOnFocus: true,  validate: true,  labelMask: ['Fund_Type'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col156" name="col156" class="col-xs-12 col-sm-7 text-left  "
+                data-bind="visible: ( ( newOrExisitingDeduction() == 'Start a new payroll deduction.' ) ) ">
+                    <div class="text-left  ">
+                        <label for="newDeductionAmount">Per pay, I would like to contribute:</label>
+                        <input id="newDeductionAmount"
+                        name="newDeductionAmount" class="text-left  " required="required" data-bind="money"
+                        />
+                    </div>
+                </div>
+                <div id="col176" name="col176" class="col-xs-12 col-sm-7 text-left  "
+                data-bind="visible: ( ( newOrExisitingDeduction() == 'Increase my current payroll deduction.' ) ) ">
+                    <div class="text-left  ">
+                        <label for="increaseCurrentAmount">Per pay, increase my payroll deduction by an additional:</label>
+                        <input
+                        id="increaseCurrentAmount" name="increaseCurrentAmount" class="text-left  "
+                        required="required" data-bind="money" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow153" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( scholarshipOrFund() == 'Other' ) ) ">
+                <div id="quickInputsColumn154" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="otherFundType">Fund or Scholarship Name</label>
+                        <input id="otherFundType" name="otherFundType"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow165" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( newOrExisitingDeduction() ) ) ">
+                <div id="quickTextAreaColumn166" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="generalComments">Please enter any additional comments:</label>
+                    <textarea id="generalComments"
+                    name="generalComments" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickParagraphRow173" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px " data-bind="visible: ( ( newOrExisitingDeduction() ) ) ">
+                <div id="quickParagraphColumn174" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_175" name="p_263" class="text-left  "><strong>NOTE:</strong> Your payroll deduction will renew automatically
+                        at the start of each fiscal year unless you notify us otherwise. Please
+                        contact us at <a href="/cdn-cgi/l/email-protection#ca8589898ca5bfa4aeabbea3a5a48aa5aba1a6aba4aea9a9e4afaebf"><span class="__cf_email__" data-cfemail="c9868a8a8fa6bca7ada8bda0a6a789a6a8a2a5a8a7adaaaae7acadbc">[email&#160;protected]</span></a> if
+                        you would like to change designation, reduce, or conclude your current
+                        payroll contribution.</p>
+                </div>
+            </div>
+            <div id="row9088" name="" class="text-left row ">
+                <div id="col918" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele928" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="quickParagraphRow112" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn113" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement114" name="quickParagraphElement" class="text-right  ">By submitting this form, I authorize the Payroll Department of Oakland
+                        Community College to deduct from my wages my tax-deductible donation to
+                        the Oakland Community College Foundation in the following amount each pay
+                        period (minimum of $10 per pay period)
+                        <br />
+                        <br />If you have any questions, please contact the OCC Foundation via <a href="/cdn-cgi/l/email-protection#77181414111802191316031e18193718161c1b161913141459121302">email</a>,
+                        or at <a href="tel:248-341-2137">248.341.2137</a>.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow191" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn192" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_194" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow215" name="quickHeadingRow" class="text-left row originatorInfo "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( selfOrElse() == 'Someone Else' ) ) ">
+                <div id="quickHeadingColumn216" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall217" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Originator Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow219" name="quickInputsRow" class="text-left row hidden ">
+                <div id="quickInputsColumn220" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">originatorDisplayName (hidden)</label>
+                        <input id="originatorDisplayName"
+                        name="originatorDisplayName" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col232" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">originationDate (hidden)</label>
+                        <input id="originationDate" name="originationDate"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col235" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">originatorEmail (hidden)</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickParagraphRow229" name="quickParagraphRow" class="text-left row originatorInfo "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px " data-bind="visible: ( ( selfOrElse() == 'Someone Else' ) ) ">
+                <div id="quickParagraphColumn230" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_231" name="p_263" class="text-left  "><strong>NOTE:</strong> This form was completed by <span data-bind="html: originatorDisplayName"></span> on
+                        behalf of <span data-bind="html: fullName"></span> on <span data-bind="html: originationDate"></span>.
+                        For questions, <span data-bind="html: originatorDisplayName"></span> can
+                        be reached at <span data-bind="html: originatorEmail"></span>.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow225" name="quickInputsRow" class="text-left row originatorInfo "
+            data-bind="visible: ( ( selfOrElse() == 'Someone Else' ) ) ">
+                <div id="quickInputsColumn226" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_227" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow181" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn182" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall183" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow185" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn186" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="amountForEmailTemplate">amountForEmailTemplate (hidden)</label>
+                        <input id="amountForEmailTemplate"
+                        name="amountForEmailTemplate" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn188" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fundForEmailTemplate">fundForEmailTemplate (hidden)</label>
+                        <input id="fundForEmailTemplate"
+                        name="fundForEmailTemplate" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col238" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+</html>

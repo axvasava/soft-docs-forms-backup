@@ -1,0 +1,57 @@
+/* Primary font */
+@font-face {
+	font-family: "Avenir Next";
+	src: url("https://webapps.oaklandcc.edu/cdn/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Condensed font */
+@font-face {
+	font-family: "Avenir Next Condensed";
+	src: url("https://webapps.oaklandcc.edu/cdn/fonts/AvenirNextLTPro-Cn.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Back up font */
+@font-face {
+	font-family: "Open Sans";
+	src: url("https://webapps.oaklandcc.edu/cdn/fonts/OpenSans-VariableFont.ttf") format("truetype");
+	font-weight: 100 900;
+	font-style: normal;
+}
+
+/* =========================================================
+   Global Typography Defaults
+   Applies primary accessible text color system-wide
+========================================================= */
+
+body,
+input,
+select,
+textarea,
+button {
+	font-family: "Avenir Next", Arial, sans-serif;
+	color: var(--fd-text-primary);
+}
+
+input::placeholder {
+	font-style: italic;
+	color: var(--fd-gray-500);
+}
+
+input::-webkit-input-placeholder {
+	font-style: italic;
+	color: var(--fd-gray-500);
+}
+
+input::-moz-placeholder {
+	font-style: italic;
+	color: var(--fd-gray-500);
+}
+
+input:-ms-input-placeholder {
+	font-style: italic;
+	color: var(--fd-gray-500);
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <title>HTML Template</title>
+    <script src="https://softdocscdn.etrieve.cloud/lib/bootstrap.4.bundle.js"></script>
+    <link rel="stylesheet" href="https://softdocscdn.etrieve.cloud/styles/bootstrap.css" />
+    <!--<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="https://softdocscdn.etrieve.cloud/styles/softdocs-bootstrap.css" />
+    <link rel="stylesheet" href="softdocs.css" />
+    <style>
+        /* Removing border + box-shadow */
+        /*
+        .page {
+            border: none !important;
+            box-shadow: none !important;
+        }
+        */
+    </style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">FVDPX2ED2USH-59979594-54473</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">1a0cb8c8-3f1d-46ca-a26e-2a068fb745ec</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://softdocs.sharepoint.com/ProfessionalServices/HigherEducation/_layouts/15/DocIdRedir.aspx?ID=FVDPX2ED2USH-59979594-54473, FVDPX2ED2USH-59979594-54473</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    
+    <main role="main" class="page container-fluid">
+        <section>
+            <!-- Header Section -->
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="header-image" src="Softdocs_Purple_RGB_Padded.png" />
+                    </div>
+                    <div class="col-md-6 mt-4 text-center text-md-right">
+                        <h3 class="bold">
+                            {{Form Title}}
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none">
+                <!-- Hidden inputs go here -->
+                <input type="hidden" id="originationDate" name="originationDate" class="form-control" />
+                <input type="hidden" id="longOriginationDate" name="longOriginationDate" class="form-control" />
+                <input type="hidden" id="mileageRate" name="mileageRate" class="form-control" />
+            </div>
+        </section>
+        
+        <!-- EMPLOYEE INFORMATION SECTION -->
+        <section>
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="card-title">
+                        Employee Information
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="row form-group">
+                        <div class="col-8">
+                            <label for="originatorDisplayName">Employee Name</label>
+                            <input id="originatorDisplayName" name="originatorDisplayName" class="form-control" readonly />
+                        </div>
+                        <div class="col">
+                            <label for="originatorEmployeeID">Employee ID</label>
+                            <input id="originatorEmployeeID" name="originatorEmployeeID" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <h5 class="card-subtitle mb-2 text-muted">
+                        Mailing Address
+                    </h5>
+                    
+                    <div class="row form-group">
+                        <div class="col">
+                            <label for="addressStreet">Street</label>
+                            <input id="addressStreet" name="addressStreet" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-4">
+                            <label for="addressCity">City</label>
+                            <input id="addressCity" name="addressCity" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="addressState">State</label>
+                            <!-- <input id="addressState" name="addressState" class="form-control" /> -->
+                            <select id="addressState" name="addressState" class="form-control custom-select">
+                                    <option></option>
+                                    <option value="AL">AL</option>
+                                    <option value="AK">AK</option>
+                                    <option value="AZ">AZ</option>
+                                    <option value="AR">AR</option>
+                                    <option value="CA">CA</option>
+                                    <option value="CO">CO</option>
+                                    <option value="CT">CT</option>
+                                    <option value="DE">DE</option>
+                                    <option value="DC">DC</option>
+                                    <option value="FL">FL</option>
+                                    <option value="GA">GA</option>
+                                    <option value="HI">HI</option>
+                                    <option value="ID">ID</option>
+                                    <option value="IL">IL</option>
+                                    <option value="IN">IN</option>
+                                    <option value="IA">IA</option>
+                                    <option value="KS">KS</option>
+                                    <option value="KY">KY</option>
+                                    <option value="LA">LA</option>
+                                    <option value="ME">ME</option>
+                                    <option value="MD">MD</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MI">MI</option>
+                                    <option value="MN">MN</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MO">MO</option>
+                                    <option value="MT">MT</option>
+                                    <option value="NE">NE</option>
+                                    <option value="NV">NV</option>
+                                    <option value="NH">NH</option>
+                                    <option value="NJ">NJ</option>
+                                    <option value="NM">NM</option>
+                                    <option value="NY">NY</option>
+                                    <option value="NC">NC</option>
+                                    <option value="ND">ND</option>
+                                    <option value="OH">OH</option>
+                                    <option value="OK">OK</option>
+                                    <option value="OR">OR</option>
+                                    <option value="PA">PA</option>
+                                    <option value="RI">RI</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SD">SD</option>
+                                    <option value="TN">TN</option>
+                                    <option value="TX">TX</option>
+                                    <option value="UT">UT</option>
+                                    <option value="VT">VT</option>
+                                    <option value="VA">VA</option>
+                                    <option value="WA">WA</option>
+                                    <option value="WV">WV</option>
+                                    <option value="WI">WI</option>
+                                    <option value="WY">WY</option>
+                                </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="addressZip">Zip</label>
+                            <input id="addressZip" name="addressZip" class="form-control" data-bind="mask: 'zip'" />
+                        </div>
+                    </div>
+                    
+                    <h5 class="card-subtitle mb-2 text-muted">
+                        Contact Information
+                    </h5>
+                    
+                    <div class="row form-group">
+                        <div class="col-md-4">
+                            <label for="homePhone">Home Phone</label>
+                            <input id="homePhone" name="homePhone" class="form-control" data-bind="mask: 'phone'" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="workPhone">Work Phone</label>
+                            <input id="workPhone" name="workPhone" class="form-control" data-bind="mask: 'phone_ext'" />
+                        </div>
+                        <div class="col-md-4">
+                            <label for="cellPhone">Cell Phone</label>
+                            <input id="cellPhone" name="cellPhone" class="form-control" data-bind="mask: 'phone'" />
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            <label for="originatorEmail">Email</label>
+                            <input id="originatorEmail" name="originatorEmail" class="form-control" readonly />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="emailAddress">Other Email</label>
+                            <input id="emailAddress" name="emailAddress" class="form-control" data-bind="email" />
+                        </div>
+                    </div>
+              </div>
+            </div>
+        </section>
+        
+        <!-- TRAVEL INFORMATION SECTION -->
+        <section>
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="card-title">
+                        Travel Information
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="d-none d-md-block">
+                        <div class="row text-center bg-info text-white bold rounded m-1">
+                            <div class="col-md-2">
+                                <label>Date</label>
+                            </div>
+                            <div class="col-md-2">
+                                <label>From</label>
+                            </div>
+                            <div class="col-md-2">
+                                <label>To</label>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Roundtrip</label>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Purpose</label>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Mileage</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="travelDetails"
+                        data-bind="dynamicList: true, dynamicListProperties: { min: 1 }">
+                        <div class="row form-group">
+                            <div class="col-md-2">
+                                <label for="travelDate" class="d-block d-md-none">Date</label>
+                                <input id="travelDate" name="travelDate" class="form-control" data-bind="datepicker" />
+                            </div>
+                            <div class="col-md-2">
+                                <label for="fromLocation" class="d-block d-md-none">From</label>
+                                <input id="fromLocation" name="fromLocation" class="form-control" />
+                            </div>
+                            <div class="col-md-2">
+                                <label for="toLocation" class="d-block d-md-none">To</label>
+                                <input id="toLocation" name="toLocation" class="form-control" />
+                            </div>
+                            <div class="col-md-2">
+                                <label for="roundtrip" class="d-block d-md-none">Roundtrip</label>
+                                <!--<input id="roundtrip" name="roundtrip" class="form-control" />-->
+                                <select id="roundtrip" name="roundtrip" class="form-control custom-select">
+                                    <option value="" disabled></option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="purpose" class="d-block d-md-none">Purpose</label>
+                                <input id="purpose" name="purpose" class="form-control" />
+                            </div>
+                            <div class="col-md-2">
+                                <label for="mileage" class="d-block d-md-none">Mileage</label>
+                                <input id="mileage" name="mileage" class="form-control" data-bind="numeric" />
+                            </div>
+                            <hr class="d-block d-md-none" />
+                        </div>
+                    </div>
+                    <div class="row form-group bold">
+                        <div class="col-6 col-md-2">
+                            <button class="btn btn-block btn-success" type="button"
+                                data-bind="click: travelDetailsAdd">Add Row</button>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <button class="btn btn-block btn-danger" type="button"
+                                data-bind="click:travelDetailsDeleteLast, disable: travelDetails().length < 2">Remove Last Row</button>
+                        </div>
+                        <div class="col-md-4 offset-md-4 mt-3 mt-md-0">
+                            <input id="totalMiles" name="totalMiles" class="form-control" data-bind="addOn: { type: 'prepend', snippet: 'Total Miles', bs4: true } ,numeric, calculate: 'travelDetails:mileage' " />
+                        </div>
+                    </div>
+                    <div class="row form-group bold">
+                        <div class="col-md-4 offset-md-8">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Amount Due (x $<span xdata-bind="text: mileageRate()"></span>&nbsp;per mile) $</span>
+                                </div>
+                                <input id="amountDue" name="amountDue" class="form-control" data-bind="numeric, calculate: 'totalMiles * mileageRate' " />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCT INFORMATION SECTION -->
+        <section >
+            <div class="card mb-3">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="card-title">
+                        Product Information
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="d-none d-md-block">
+                        <div class="row text-center bg-warning text-white bold rounded m-1">
+                            <div class="col-md-2">
+                                <label>Quantity</label>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Unit Type</label>
+                            </div>
+                            <div class="col-md-4">
+                                <label>Description</label>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Unit Price</label>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Total</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="productsList" data-bind="dynamicList: true, dynamicListProperties: { min: 1 }">
+                        <div class="row form-group">
+                            <div class="col-md-2 form-inline mb-1">
+                                <label for="productQuantity" class="d-block d-md-none col-4">Quantity</label>
+                                <input name="productQuantity" id="productQuantity" class="form-control col-8 col-md-12" data-bind="numeric: { type: 'int' }" />
+                            </div>
+                            <div class="col-md-2 form-inline mb-1">
+                                <label for="productUnitType" class="d-block d-md-none col-4">Unit Type</label>
+                                <select name="productUnitType" id="productUnitType" class="form-control col-8 col-md-12 custom-select">
+                                    <option value="" disabled></option>
+                                    <option>BD</option>
+                                    <option>BG</option>
+                                    <option>BT</option>
+                                    <option>BX</option>
+                                    <option>CS</option>
+                                    <option>DZ</option>
+                                    <option>EA</option>
+                                    <option>FT</option>
+                                    <option>GL</option>
+                                    <option>GR</option>
+                                    <option>MO</option>
+                                    <option>PG</option>
+                                    <option>RM</option>
+                                    <option>YR</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 form-inline mb-1">
+                                <label for="productDescription" class="d-block d-md-none col-4">Description</label>
+                                <input name="productDescription" id="productDescription" class="form-control col-8 col-md-12" />
+                            </div>
+                            <div class="col-md-2 form-inline mb-1">
+                                <label for="productUnitPrice" class="d-block d-md-none col-4">Unit Price</label>
+                                <input name="productUnitPrice" id="productUnitPrice" class="form-control col-8 col-md-12" data-bind="money" />
+                            </div>
+                            <div class="col-md-2 form-inline mb-1">
+                                <label for="productTotalAmount" class="d-block d-md-none col-4">Total</label>
+                                <input name="productTotalAmount" id="productTotalAmount" class="form-control col-8 col-md-12" readonly data-bind="money, calculate: 'productQuantity * unitPrice' " />
+                            </div>
+                            <hr class="d-block d-md-none" />
+                        </div>
+                    </div>
+                    <div class="row form-group bold">
+                        <div class="col-6 col-md-2">
+                            <button class="btn btn-block btn-success" type="button" data-bind="click: productsListAdd">Add Product</button>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <button class="btn btn-block btn-danger" type="button"
+                                data-bind="click:productsListDeleteLast, disable: productsList().length < 2">Remove Last Product</button>
+                        </div>
+                        <div class="col-md-4 offset-md-3 mt-3 mt-md-0">
+                            <input id="productsListTotal" name="productsListTotal" class="form-control" data-bind="money, calculate: 'productsList:productTotalAmount' " />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- OFFICE USE ONLY SECTION -->
+        <section>
+        <!--<section data-bind="show: { userParam: ['isNotOriginator'] }"> -->
+            <div class="card mb-3">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="card-title">
+                        Office Use Only
+                    </h4>
+                </div>
+                <div class="card-body">
+                    Office Use Only stuff
+                </div>
+            </div>
+        </section>
+        <!-- END Office Use Only section -->
+
+    </main>
+</body>
+</html>

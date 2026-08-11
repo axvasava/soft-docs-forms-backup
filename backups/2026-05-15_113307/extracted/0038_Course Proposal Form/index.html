@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row509" class="text-left row fd-form-masthead ">
+                <div id="col510" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn511" name="revisedOn" class="col-sm-12 text-right  ">Revised 03/25</span>
+                </div>
+                <div id="col512" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele513" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col514" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele515" name="ele21" class="text-left form-title ">Course Proposal Form</h1>
+                </div>
+                <div id="col516" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele517" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row505" class="text-left row ">
+                <div id="col506" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote507" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickDropdownRow495" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn496" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="catalogYear">In what catalog year should this be applied?</label>
+                    <select id="catalogYear"
+                    name="catalogYear" class="text-left  " data-bind="dynamicYear: { format: 'YYYY-YY[1,  2]' } ">
+                        <option value=""></option>
+                        <option value="Option1">Option1</option>
+                        <option value="Option2">Option2</option>
+                        <option value="Option3">Option3</option>
+                        <option value="Option4">Option4</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickDropdownRow8" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn9" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="typeOfProposal">Type of Proposal</label>
+                    <select id="typeOfProposal" name="typeOfProposal"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Minor Course Revision">Minor Course Revision</option>
+                        <option value="Major Course Revision">Major Course Revision</option>
+                        <option value="New Course">New Course</option>
+                        <option value="Reactivated Course">Reactivated Course</option>
+                    </select>
+                </div>
+                <div id="col293" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="location">Which CIC Campus chair are you working with?</label>
+                    <select id="location"
+                    name="location" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak/Southfield">Royal Oak/Southfield</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow290" name="quickInputsRow" class="text-left row "
+            -data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Major Course Revision' )  ||  ( typeOfProposal() == 'Minor Course Revision' ) ) ">
+                <div id="quickInputsColumn291" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="proposalPurpose">Purpose of this Proposal</label>
+                        <input id="proposalPurpose" name="proposalPurpose"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow297" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn298" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dean">Dean</label>
+                        <input id="dean" name="dean" class="text-left  " required="required"
+                        type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_Dean_Information',  minSearchLength: 0,  clearOnFocus: true,  validate: true,  labelMask: ['Dean'],  formFields: {'deanEmail':'Dean_Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn300" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanEmail">Deans's Email</label>
+                        <input id="deanEmail" name="deanEmail" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row9815153737" name="" class="text-left row " data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="col991537" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele1001537" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:5px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow60" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickHeadingColumn61" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall62" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Current Course Description (as it appears in the catalog)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow12" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn13" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentCourseCode">Current Course Code</label>
+                        <input id="currentCourseCode" name="currentCourseCode"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn15" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentCredits">Current Number of Credits</label>
+                        <input id="currentCredits" name="currentCredits"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn17" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentBillableHours">Billable Contact Hours</label>
+                        <input id="currentBillableHours" name="currentBillableHours"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow27" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn28" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentCourseLongTitle">Current Course Long Title</label>
+                        <input id="currentCourseLongTitle" name="currentCourseLongTitle"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow64" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn65" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentEquivalent">Equivalent (n/a if not applicable)</label>
+                        <input id="currentEquivalent"
+                        name="currentEquivalent" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn67" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="currentPrerequisite">Prerequisite (n/a if not applicable)</label>
+                    <textarea id="currentPrerequisite"
+                    name="currentPrerequisite" class="text-left  "></textarea>
+                </div>
+                <div id="quickInputsColumn69" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentCorequisite">Corequisite (n/a if not applicable)</label>
+                        <input id="currentCorequisite"
+                        name="currentCorequisite" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn71" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="currentTaken">This is taken</label>
+                    <select id="currentTaken" name="currentTaken" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Previously">Previously</option>
+                        <option value="Concurrently">Concurrently</option>
+                    </select>
+                </div>
+                <div id="col74" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="currentOption">This course is</label>
+                    <select id="currentOption" name="currentOption"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Recommended">Recommended</option>
+                        <option value="Required">Required</option>
+                    </select>
+                </div>
+                <div id="col91" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="currentDescription">Current course description as it appears in the catalog</label>
+                    <textarea
+                    id="currentDescription" name="currentDescription" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow601010" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickHeadingColumn6110" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall6210" name="quickHeadingSmall6210" class="text-center  "
+                    style=" font-weight: bold; ">Proposed Course Description - As it will appear in the catalog. (Please only fill out the fields that are being updated)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow1244" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn134" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="proposedCourseCode">Proposed Course Code</label>
+                        <input id="proposedCourseCode" name="proposedCourseCode"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn154" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="porposedCredits">Proposed Number of Credits</label>
+                        <input id="porposedCredits" name="porposedCredits"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn174" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="proposedBillableHours">Proposed Billable Hours</label>
+                        <input id="proposedBillableHours" name="proposedBillableHours"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow31" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn32" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="proposedCourseLongTitle">Proposed Course Long Title</label>
+                        <input id="proposedCourseLongTitle"
+                        name="proposedCourseLongTitle" class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow42" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn43" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="courseShortTitle">Proposed Course Short Title</label>
+                        <input id="courseShortTitle" name="courseShortTitle"
+                        class="text-left  " placeholder="Max of 30 Characters, including spaces"
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow641111" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn6511" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="proposedEquivalent">Equivalent (n/a if not applicable)</label>
+                        <input id="proposedEquivalent"
+                        name="proposedEquivalent" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn6711" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="proposedPrerequisite">Prerequisite (n/a if not applicable)</label>
+                    <textarea id="proposedPrerequisite"
+                    name="proposedPrerequisite" class="text-left  "></textarea>
+                </div>
+                <div id="quickInputsColumn6911" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="proposedCorequisite">Corequisite (n/a if not applicable)</label>
+                        <input id="proposedCorequisite"
+                        name="proposedCorequisite" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn7111" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="proposedTaken">This is taken</label>
+                    <select id="proposedTaken" name="proposedTaken" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Previously">Previously</option>
+                        <option value="Concurrently">Concurrently</option>
+                    </select>
+                </div>
+                <div id="col7411" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="proposedOption">This course is</label>
+                    <select id="proposedOption" name="proposedOption"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Recommended">Recommended</option>
+                        <option value="Required">Required</option>
+                    </select>
+                </div>
+                <div id="col94" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="proposedDescription">Proposed course description as it will appear in the catalog</label>
+                    <textarea
+                    id="proposedDescription" name="proposedDescription" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row313" name="row38" class="text-left row " data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="col314" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele315" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:5px; "
+                    />
+                </div>
+            </div>
+            <div id="quickDropdownRow281" name="quickDropdownRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickDropdownColumn282" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="courseChange">Is this course change part of an existing program requirement?</label>
+                    <select
+                    id="courseChange" name="courseChange" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+            </div>
+            <div id="quickDropdownRow286" name="quickDropdownRow" class="text-left row "
+            data-bind="visible: ( ( courseChange() == 'Yes' ) ) ">
+                <div id="quickDropdownColumn287" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="courseChangeAdditional">Do you plan to bring other course changes through the process this academic
+                        year?</label>
+                    <select id="courseChangeAdditional" name="courseChangeAdditional"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow102" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickTextAreaColumn103" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="learningObjectives">If relevant, explicitly state the intended student learning objectives
+                        for the proposed course.</label>
+                    <textarea id="learningObjectives" name="learningObjectives"
+                    class="text-left  " placeholder="Highlight student performance goals, IE; Reading, Writing, Speaking, Listening and Critical thinking objectives and goals"></textarea>
+                </div>
+            </div>
+            <div id="quickTextAreaRow106" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickTextAreaColumn107" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="courseOutcomes">Common Course Outcomes</label>
+                    <textarea id="courseOutcomes" name="courseOutcomes"
+                    class="text-left  " placeholder="Please be as descriptive as possible"></textarea>
+                </div>
+            </div>
+            <div id="row981515" name="" class="text-left row " data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="col9915" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele10015" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:5px; "
+                    />
+                </div>
+            </div>
+            <div id="quickParagraphRow113" name="quickParagraphRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickParagraphColumn114" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement115" name="quickParagraphElement" class="text-left  "><b>Proposed Billable Contact Hours / Instructional Method (Example: 45 contact hours for a 3-credit lecture course) 
+refer to example in Appendix C, in the Curriculum User Handbook</b>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow117" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn118" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="lecture">Lecture (1:1)</label>
+                        <input id="lecture" name="lecture" class="text-left  "
+                        type="text" data-bind="numeric: { type: 'decimal',  precision: 1 } " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn120" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="lab">Lab (2-3:1)</label>
+                        <input id="lab" name="lab" class="text-left  " type="text"
+                        data-bind="numeric: { type: 'decimal',  precision: 1 } " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn122" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="clinical">Clinical (3:1)</label>
+                        <input id="clinical" name="clinical" class="text-left  "
+                        type="text" data-bind="numeric: { type: 'decimal',  precision: 1 } " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn124" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="coop">Co-Op (3:1)</label>
+                        <input id="coop" name="coop" class="text-left  " type="text"
+                        data-bind="numeric: { type: 'decimal',  precision: 1 } " />
+                    </div>
+                </div>
+                <div id="col126" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="internOrExtern">Internship/Externship (3:1)</label>
+                        <input id="internOrExtern" name="internOrExtern"
+                        class="text-left  " data-bind="numeric: { type: 'decimal',  precision: 1 } "
+                        />
+                    </div>
+                </div>
+                <div id="col127" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fieldProject">Field Project (3:1)</label>
+                        <input id="fieldProject" name="fieldProject"
+                        class="text-left  " type="text" data-bind="numeric: { type: 'decimal',  precision: 1 } "
+                        />
+                    </div>
+                </div>
+                <div id="col128" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="independentStudy">Independent Study (3:1)</label>
+                        <input id="independentStudy" name="independentStudy"
+                        class="text-left  " data-bind="numeric: { type: 'decimal',  precision: 1 } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow136" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn137" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="groupClassification">Group Classification</label>
+                    <select id="groupClassification" name="groupClassification"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="30 Students (All UG Courses)">30 Students (All UG Courses)</option>
+                        <option value="20 Students (DEV Courses)">20 Students (DEV Courses)</option>
+                    </select>
+                </div>
+                <div id="col140" class="col-xs-12 col-sm-8 text-left  ">
+                    <label for="englishPlacement">Can students who have placed into ESL 2510 take this course?</label>
+                    <select
+                    id="englishPlacement" name="englishPlacement" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+            </div>
+            <div id="row98" name="row38" class="text-left row " data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="col99" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele100" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:5px; "
+                    />
+                </div>
+            </div>
+            <div id="quickParagraphRow1131919" name="quickParagraphRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickParagraphColumn11419" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement11519" name="quickParagraphElement11519" class="text-left  "><b>Which General Education Outcome(s) are being assessed? Please reference the GEO’s connected to this course
+in eLumen. These can be found via eLumen. Check all that apply.</b>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow395" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn396" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="criticalThinking1" name="criticalThinking" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn398" name="quickInputsColumn2" class="col-xs-11 col-sm-5 text-left  ">
+                    <label id="criticalThinkingLbl" name="criticalThinkingLbl" class="text-left  "
+                    for="criticalThinking">Critical Thinking</label>
+                </div>
+                <div id="col400" class="col-xs-12 col-sm-1 text-center  ">
+                    <input id="oralCommunication" name="oralCommunication" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="col401" class="col-xs-12 col-sm-5 text-left  ">
+                    <label id="oralCommunicationLbl" name="oralCommunicationLbl" class="text-left  "
+                    for="oralCommunication">Oral Communication</label>
+                </div>
+            </div>
+            <div id="quickInputsRow3954646" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn39646" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="writtenComm" name="writtenComm" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn39846" name="quickInputsColumn2" class="col-xs-11 col-sm-5 text-left  ">
+                    <label id="writtenCommLbl" name="writtenCommLbl" class="text-left  " for="writtenComm">Written Communication</label>
+                </div>
+                <div id="col40046" class="col-xs-12 col-sm-1 text-center  ">
+                    <input id="informationLiteracy" name="informationLiteracy" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="col40146" class="col-xs-12 col-sm-5 text-left  ">
+                    <label id="informationLiteracyLbl" name="informationLiteracyLbl" class="text-left  "
+                    for="informationLiteracy">Information Literacy</label>
+                </div>
+            </div>
+            <div id="quickInputsRow39546464646" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn3964646" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="scientificLiteracy" name="scientificLiteracy" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn3984646" name="quickInputsColumn2" class="col-xs-11 col-sm-5 text-left  ">
+                    <label id="scientificLiteracyLbl" name="scientificLiteracyLbl" class="text-left  "
+                    for="scientificLiteracy">Scientific Literacy</label>
+                </div>
+                <div id="col4004646" class="col-xs-12 col-sm-1 text-center  ">
+                    <input id="socialResponsibility" name="socialResponsibility" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="col4014646" class="col-xs-12 col-sm-5 text-left  ">
+                    <label id="socialResponsibilityLbl" name="socialResponsibilityLbl" class="text-left  "
+                    for="socialResponsibility">Social Responsibility</label>
+                </div>
+            </div>
+            <div id="quickInputsRow3954646464647" name="quickInputsRow3954646464647"
+            class="text-left row " data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn396464647" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="aestheticAwareness" name="aestheticAwareness" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn398464647" name="quickInputsColumn2" class="col-xs-11 col-sm-5 text-left  ">
+                    <label id="aestheticAwarenessLbl" name="aestheticAwarenessLbl" class="text-left  "
+                    for="aestheticAwareness">Aesthetic Awareness</label>
+                </div>
+                <div id="col400464647" class="col-xs-12 col-sm-1 text-center  ">
+                    <input id="personalDevelopment" name="personalDevelopment" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="col401464647" class="col-xs-12 col-sm-5 text-left  ">
+                    <label id="personalDevelopmentLbl" name="personalDevelopmentLbl" class="text-left  "
+                    for="personalDevelopment">Personal Development</label>
+                </div>
+            </div>
+            <div id="quickInputsRow39546464646474848" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn39646464748" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="quantitiveLiteracy" name="quantitiveLiteracy" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn39846464748" name="quickInputsColumn2" class="col-xs-11 col-sm-5 text-left  ">
+                    <label id="quantitiveLiteracyLbl" name="quantitiveLiteracyLbl" class="text-left  "
+                    for="quantitiveLiteracy">Quantitive Literacy</label>
+                </div>
+                <div id="col40046464748" class="col-xs-12 col-sm-1 text-center  ">
+                    <input id="globalUnderstanding" name="globalUnderstanding" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="col40146464748" class="col-xs-12 col-sm-5 text-left  ">
+                    <label id="globalUnderstandingLbl" name="globalUnderstandingLbl" class="text-left  "
+                    for="globalUnderstanding">Global Understanding &amp; Responsibility</label>
+                </div>
+            </div>
+            <div id="row982323" name="" class="text-left row " data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="col9923" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele10023" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:5px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow183" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn184" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="genEdDistListChoice">Are you proposing a General Education Distribution List Inclusion for
+                        this course?</label>
+                    <select id="genEdDistListChoice" name="genEdDistListChoice"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="No Change">No Change</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickParagraphRow202" name="quickParagraphRow" class="text-left row "
+            data-bind="visible: ( ( genEdDistListChoice() == 'Yes' ) ) ">
+                <div id="quickParagraphColumn203" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement204" name="quickParagraphElement" class="text-left  ">Since you selected <b>yes</b>, please select category and attach <b>General Education Distribution Form</b>
+                        <br
+                        />***Please Choose a max of two from the list below***</p>
+                </div>
+            </div>
+            <div id="quickInputsRow354" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( genEdDistListChoice() == 'Yes' ) ) ">
+                <div id="quickInputsColumn355" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="englishOrCommunications" name="englishOrCommunications" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn357" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="englishOrCommunicationsLbl" name="englishOrCommunicationsLbl"
+                    class="text-left  " for="englishOrCommunications">Communication/English</label>
+                </div>
+            </div>
+            <div id="quickInputsRow372" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( genEdDistListChoice() == 'Yes' ) ) ">
+                <div id="quickInputsColumn373" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="fineArtsOrHumanities" name="fineArtsOrHumanities" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn375" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="fineArtsOrHumanitiesLbl" name="fineArtsOrHumanitiesLbl" class="text-left  "
+                    for="fineArtsOrHumanities">Fine Arts/Humanities</label>
+                </div>
+            </div>
+            <div id="quickInputsRow360" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( genEdDistListChoice() == 'Yes' ) ) ">
+                <div id="quickInputsColumn361" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  "
+                style=" margin-top:28px ">
+                    <input id="mathOrScience" name="mathOrScience" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn363" name="quickInputsColumn2" class="col-xs-11 col-sm-5 text-left  "
+                style=" margin-top: 28px ">
+                    <label id="mathOrScienceLbl" name="mathOrScienceLbl" class="text-left  "
+                    for="mathOrScience">Mathematics/Science</label>
+                </div>
+                <div id="col383" name="col383" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( mathOrScience() ) ) ">
+                    <label for="labScience">Lab Science</label>
+                    <select id="labScience" name="labScience" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow366" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( genEdDistListChoice() == 'Yes' ) ) ">
+                <div id="quickInputsColumn367" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="socialScience" name="socialScience" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn369" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="socialScienceLbl" name="socialScienceLbl" class="text-left  "
+                    for="socialScience">Social Science</label>
+                </div>
+            </div>
+            <div id="quickInputsRow389" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( genEdDistListChoice() == 'Yes' ) ) ">
+                <div id="quickInputsColumn390" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="writtenCommunication" name="writtenCommunication" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn392" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="writtenCommunicationLbl" name="writtenCommunicationLbl" class="text-left  "
+                    for="writtenCommunication">Written Communication</label>
+                </div>
+            </div>
+            <div id="row9823232828" name="" class="text-left row " data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="col992328" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele1002328" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:5px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow224" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn225" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="michiganTransfer">Are your proposing a Michigan Transfer Agreement List Inclusion for this
+                        course?</label>
+                    <select id="michiganTransfer" name="michiganTransfer" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="No Change">No Change</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickParagraphRow2023030" name="quickParagraphRow" class="text-left row "
+            data-bind="visible: ( ( michiganTransfer() == 'Yes' ) ) ">
+                <div id="quickParagraphColumn20330" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement20430" name="quickParagraphElement20430" class="text-left  ">Since you selected yes, please select category and attach <b>Form OCC 63N</b>
+                        <br
+                        />***Please choose a max of two from the list below***</p>
+                </div>
+            </div>
+            <div id="quickInputsRow3954949" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( michiganTransfer() == 'Yes' ) ) ">
+                <div id="quickInputsColumn39649" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="mtaEnglishComposition" name="mtaEnglishComposition" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn39849" name="quickInputsColumn2" class="col-xs-11 col-sm-5 text-left  ">
+                    <label id="mtaEnglishCompositionLbl" name="mtaEnglishCompositionLbl" class="text-left  "
+                    for="mtaEnglishComposition">English Composition</label>
+                </div>
+                <div id="col40049" class="col-xs-12 col-sm-1 text-center  ">
+                    <input id="mtaComms" name="mtaComms" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="col40149" class="col-xs-12 col-sm-5 text-left  ">
+                    <label id="mtaCommsLbl" name="mtaCommsLbl" class="text-left  " for="mtaComms">Communications</label>
+                </div>
+            </div>
+            <div id="quickInputsRow39549494949" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( michiganTransfer() == 'Yes' ) ) ">
+                <div id="quickInputsColumn3964949" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="mtaMath" name="mtaMath" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn3984949" name="quickInputsColumn2" class="col-xs-11 col-sm-5 text-left  ">
+                    <label id="mtaMathLbl" name="mtaMathLbl" class="text-left  " for="mtaMath">Mathematics</label>
+                </div>
+                <div id="col4004949" class="col-xs-12 col-sm-1 text-center  ">
+                    <input id="mtaSocialSciences" name="mtaSocialSciences" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="col4014949" class="col-xs-12 col-sm-5 text-left  ">
+                    <label id="mtaSocialScienceLbl" name="mtaSocialScienceLbl" class="text-left  "
+                    for="mtaSocialScience">Social Science</label>
+                </div>
+            </div>
+            <div id="quickInputsRow395494949495050" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( michiganTransfer() == 'Yes' ) ) ">
+                <div id="quickInputsColumn396494950" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="mtaFineArtsHumanities" name="mtaFineArtsHumanities" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn398494950" name="quickInputsColumn2" class="col-xs-11 col-sm-5 text-left  ">
+                    <label id="mtaFineArtsHumanitiesLbl" name="mtaFineArtsHumanitiesLbl" class="text-left  "
+                    for="mtaFineArtsHumanities">Fine Arts/Humanities</label>
+                </div>
+                <div id="col400494950" class="col-xs-12 col-sm-1 text-center  ">
+                    <input id="mtaNaturalScience" name="mtaNaturalScience" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="col401494950" class="col-xs-12 col-sm-5 text-left  ">
+                    <label id="mtaSocialScienceLbl50" name="mtaSocialScienceLbl50" class="text-left  "
+                    for="mtaSocialScience">Natural Science</label>
+                </div>
+            </div>
+            <div id="quickHeadingRow250" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickHeadingColumn251" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall252" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Ballot Results</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow254" name="quickParagraphRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickParagraphColumn255" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement256" name="quickParagraphElement" class="text-left  ">Please provide the results of the College-wide balloting - attach printed
+                        ballots to original</p>
+                </div>
+            </div>
+            <div id="quickInputsRow258" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickInputsColumn259" name="quickInputsColumn1" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="votedYes">Yes</label>
+                        <input id="votedYes" name="votedYes" class="text-left  " type="text"
+                        data-bind="numeric: { type: 'int',  allowNegative: false } " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn261" name="quickInputsColumn2" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="votedNo">No</label>
+                        <input id="votedNo" name="votedNo" class="text-left  " type="text"
+                        data-bind="numeric: { type: 'int',  allowNegative: false } " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn263" name="quickInputsColumn3" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="votedAbstain">Abstain</label>
+                        <input id="votedAbstain" name="votedAbstain" class="text-left  "
+                        type="text" data-bind="numeric: { type: 'int',  allowNegative: false } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn265" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="votedNoResponse">No Response</label>
+                        <input id="votedNoResponse" name="votedNoResponse"
+                        class="text-left  " type="text" data-bind="numeric: { type: 'int',  allowNegative: false } "
+                        />
+                    </div>
+                </div>
+                <div id="col267" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="votedTotalMailed">Total Mailed</label>
+                        <input id="votedTotalMailed" name="votedTotalMailed"
+                        class="text-left  " data-bind="numeric: { type: 'int',  allowNegative: false } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow271" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickTextAreaColumn272" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="ballotedTextArea">Please list all departments or disciplines that were balloted</label>
+                    <textarea
+                    id="ballotedTextArea" name="ballotedTextArea" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickTextAreaRow27136" name="quickTextAreaRow27136" class="text-left row "
+            data-bind="visible: ( ( typeOfProposal() == 'New Course' )  ||  ( typeOfProposal() == 'Reactivated Course' )  ||  ( typeOfProposal() == 'Minor Course Revision' )  ||  ( typeOfProposal() == 'Major Course Revision' ) ) ">
+                <div id="quickTextAreaColumn27236" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="notifiedTextArea">Please list all departments or disciplines that were notified</label>
+                    <textarea
+                    id="notifiedTextArea" name="notifiedTextArea" class="text-left  "></textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row175" class="text-left row fd-form-masthead ">
+                <div id="col176" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn177" name="revisedOn" class="col-sm-12 text-right  ">Revised 12/25</span>
+                </div>
+                <div id="col178" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele179" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col180" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele181" name="ele21" class="text-left form-title ">Official Change of Grade Request</h1>
+                </div>
+                <div id="col182" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele183" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row171" class="text-left row ">
+                <div id="col172" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote173" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow128" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn129" name="quickInputsColumn1" class="col-xs-6 col-sm-6 text-left  ">
+                    <label for="facultyStatus">What type of faculty are you?</label>
+                    <select id="facultyStatus" name="facultyStatus"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Adjunct Faculty">Adjunct Faculty</option>
+                        <option value="Dean">Dean</option>
+                        <option value="Faculty Secretary">Faculty Secretary</option>
+                        <option value="Full-Time Faculty">Full-Time Faculty</option>
+                    </select>
+                </div>
+                <div id="col184" name="col184" class="col-xs-6 col-sm-6 text-left  " data-bind="visible: ( ( facultyStatus() == 'Faculty Secretary' ) ) ">
+                    <label for="secretaryFor">Faculty Secretary For</label>
+                    <select id="secretaryFor" name="secretaryFor"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Full-Time Faculty">Full-Time Faculty</option>
+                        <option value="Adjunct Faculty">Adjunct Faculty</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickDropdownRow153" name="quickDropdownRow" class="text-left row "
+            data-bind="visible: ( ( facultyStatus() == 'Faculty Secretary' ) ) ">
+                <div id="quickDropdownColumn154" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="facultyName">Faculty Name</label>
+                        <input id="facultyName" name="facultyName" class="text-left  "
+                        required="required" data-bind="autocomplete: { integrationSource: 'Security_Get_CW_Employees',  labelMask: ['UserName', ' | ', 'Email'],  selectedMask: ['UserName'],  formFields: {'facultyEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col156" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="facultyEmail">Faculty Email</label>
+                        <input id="facultyEmail" name="facultyEmail" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow22" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn23" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall24" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Student Information</h4>
+                </div>
+            </div>
+            <div id="row104" class="text-left row ">
+                <div id="col105" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="colleagueID">Student ID</label>
+                        <input id="colleagueID" name="colleagueID" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col107" class="col-xs-12 col-sm-2 text-left  " style=" padding:0px 0px 0px 0px;  margin:20px 0px 0px 0px; ">
+                    <button id="personIdSearchBtn" name="personIdSearchBtn" class="col-sm-12 text-left btn btn-primary "
+                    style="" undefined="">Search</button>
+                </div>
+                <div id="col111" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentPreferredName">Student Name</label>
+                        <input id="studentPreferredName" name="studentPreferredName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                    <div class="text-left hide ">
+                        <label for="personGUID">personGUID</label>
+                        <input id="personGUID" name="personGUID" class="text-left hide "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col113" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">Date</label>
+                        <input id="originationDate" name="originationDate" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow2266" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn236" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall246" name="quickHeadingSmall246" class="text-center  "
+                    style=" font-weight: bold; ">Grade Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow26" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn27" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="courseSection">Course Section</label>
+                        <input id="courseSection" name="courseSection" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { localSource: 'studentCourseReg', clearOnFocus: true, validate: true,  labelMask: ['registrationTerm', ' ', 'registrationSection'],  selectedMask: ['registrationSection'],  formFields: {'locationGUID':'registrationLocation', 'semester':'registrationTerm', 'classEndDate':'registrationEndDate', 'sectionGUID':'registrationSectionID'} } "
+                        />
+                    </div>
+                    <div class="text-left hidden ">
+                        <label for="termGUID">termGUID</label>
+                        <input id="termGUID" name="termGUID" class="text-left hidden "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn29" name="quickInputsColumn2" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="semester">Semester</label>
+                        <input id="semester" name="semester" class="text-left  "
+                        required="required" readonly="true" type="text" data-bind="autocomplete: { localSource: 'SectionsAutocomplete',  labelMask: ['secName'] } "
+                        />
+                    </div>
+                    <div class="text-left hidden ">
+                        <label for="subject">subject</label>
+                        <input id="subject" name="subject" class="text-left hidden "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col117" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="instructor">Instructor Name</label>
+                        <input id="instructor" name="instructor" class="text-left  "
+                        required="required" data-bind="autocomplete: { integrationSource: 'Security_Get_CW_Employees',  clearOnFocus: true, labelMask: ['UserName', ' | ', 'Email'],  selectedMask: ['UserName'] } "
+                        />
+                    </div>
+                    <div class="text-left hide ">
+                        <label for="locationGUID">locationGUID</label>
+                        <input id="locationGUID" name="locationGUID" class="text-left hide "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col58" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="campus">Campus</label>
+                        <input id="campus" name="campus" class="text-left  " required="required"
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col35" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="currentGrade">Current Grade</label>
+                    <select id="currentGrade" name="currentGrade" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="D-">D-</option>
+                        <option value="F">F</option>
+                        <option value="I">I</option>
+                        <option value="NR – Not Reported">NR – Not Reported</option>
+                        <option value="WS">WS</option>
+                    </select>
+                </div>
+                <div id="col36" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="newGrade">Replacement Grade</label>
+                    <select id="newGrade" name="newGrade" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                        <option value="I">I</option>
+                        <option value="WS">WS</option>
+                    </select>
+                </div>
+                <div id="col41" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="lastDateOfAttendance">Last Date of Attendance</label>
+                        <input id="lastDateOfAttendance" name="lastDateOfAttendance"
+                        class="text-left  " type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col122" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="classEndDate">Section End Date</label>
+                        <input id="classEndDate" name="classEndDate" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickParagraphRow48" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn49" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement50" name="quickParagraphElement" class="text-left  "></p>
+                    <ul>
+                        <li>Last Date of Attendance is only required for 'F' grades and 'WS' marks.</li>
+                        <li>Incomplete change of grade requests should indicate the semester the student
+                            originally received the incomplete, not the semester the student completed
+                            the course work.</li>
+                    </ul>
+                    <p></p>
+                </div>
+            </div>
+            <div id="quickTextAreaRow52" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn53" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="changeReason">Instructor's reason for the change of grade is required</label>
+                    <textarea
+                    id="changeReason" name="changeReason" class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickParagraphRow4899" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn499" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement509" name="quickParagraphElement509" class="text-left  "><strong>CHANGE OF GRADE POLICY</strong>
+                        <br />A change of grade may not be submitted after one calendar year from the
+                        time the original grade is formally issued.
+<strong>PLEASE NOTE</strong>
+
+                    </p>
+                    <ul>
+                        <li>An official Change of Grade cannot be approved from a "Blank Grade" to
+                            a "Letter Grade" unless proof of registration and payment are attached.</li>
+                        <li>All exceptions must have the Academic Dean's explicit approval.</li>
+                    </ul>
+                    <p></p>
+                </div>
+            </div>
+            <div id="quickInputsRow63" name="quickInputsRow" class="text-left row developer "
+            style="overflow: auto;  xdisplay: none ">
+                <div id="quickInputsColumn66" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanEmail">deanEmail</label>
+                        <input id="deanEmail" name="deanEmail" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn68" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="departmentChairEmail">departmentChairEmail</label>
+                        <input id="departmentChairEmail" name="departmentChairEmail"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn70" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="administrativeSpecialistEmail">administrativeSpecialistEmail</label>
+                        <input id="administrativeSpecialistEmail"
+                        name="administrativeSpecialistEmail" class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow74" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn75" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">originatorDisplayName</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn77" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">originatorErpId</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col90" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">originatorEmail</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow741212" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn7512" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="skipDepartmentChair">skipDepartmentChair</label>
+                        <input id="skipDepartmentChair" name="skipDepartmentChair"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn7712" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="skipDean">skipDean</label>
+                        <input id="skipDean" name="skipDean" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col142" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentEmail">studentEmail (hidden)</label>
+                        <input id="studentEmail" name="studentEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col145" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicYear">academicYear</label>
+                        <input id="academicYear" name="academicYear" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col187" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sectionGUID">sectionGUID (hidden)</label>
+                        <input id="sectionGUID" name="sectionGUID"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col190" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="instructorGUID">instructorGUID (hidden)</label>
+                        <input id="instructorGUID" name="instructorGUID"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

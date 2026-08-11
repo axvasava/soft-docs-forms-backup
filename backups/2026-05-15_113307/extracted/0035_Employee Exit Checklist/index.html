@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row283" class="text-left row fd-form-masthead ">
+                <div id="col284" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn285" name="revisedOn" class="col-sm-12 text-right  ">Revised 07/24</span>
+                </div>
+                <div id="col286" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele287" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col288" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele289" name="ele21" class="text-left form-title ">Employee Exit Checklist</h1>
+                </div>
+                <div id="col290" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele291" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row279" class="text-left row ">
+                <div id="col280" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote281" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow8" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn9" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall10" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Employee Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow23" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn26" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeId">ID Number</label>
+                        <input id="employeeId" name="employeeId" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col265" class="col-xs-12 col-sm-3 text-left  " style=" margin-top: 28px; ">
+                    <button id="employeeSearch" name="employeeSearch" class="text-left btn btn-primary "
+                    style="" undefined="">Search Employee</button>
+                </div>
+                <div id="quickInputsColumn24" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fullName">Name</label>
+                        <input id="fullName" name="fullName" class="text-left  " required="required"
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn28" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="personalEmail">Personal Email</label>
+                        <input id="personalEmail" name="personalEmail" class="text-left  "
+                        required="required" type="text" data-bind="email" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn30" name="quickInputsColumn4" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="personalPhone">Personal Phone Number</label>
+                        <input id="personalPhone" name="personalPhone"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col32" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeAddress">Address</label>
+                        <input id="employeeAddress" name="employeeAddress" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col33" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeCity">City</label>
+                        <input id="employeeCity" name="employeeCity" class="text-left  "
+                        required="required" readonly="true" />
+                    </div>
+                </div>
+                <div id="col34" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeState">State</label>
+                        <input id="employeeState" name="employeeState" class="text-left  "
+                        required="required" readonly="true" />
+                    </div>
+                </div>
+                <div id="col35" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeZipCode">Zip Code</label>
+                        <input id="employeeZipCode" name="employeeZipCode" class="text-left  "
+                        required="required" readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickDropdownRow12" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn13" name="quickDropdownColumn" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="reasonForExit">Reason for Exit</label>
+                    <select id="reasonForExit" name="reasonForExit"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Resignation">Resignation</option>
+                        <option value="Retirement">Retirement</option>
+                        <option value="Layoff">Layoff</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div id="col15" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="facultyMamber">Are you a member of the College Faculty?</label>
+                    <select id="facultyMamber"
+                    name="facultyMamber" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="col44" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="lastDayWorked">Last Day Worked</label>
+                        <input id="lastDayWorked" name="lastDayWorked"
+                        class="text-left  " required="required" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow19" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( reasonForExit() == 'Other' ) ) ">
+                <div id="quickInputsColumn20" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="otherReasonForExit">Please enter your reason for exiting the College.</label>
+                        <input id="otherReasonForExit"
+                        name="otherReasonForExit" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row182" class="text-left row ">
+                <div id="col183" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele184" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow48" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn49" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall50" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Department/Division</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow52" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn53" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="departmentItemsCheck" name="departmentItemsCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn55" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="departmentItemsCheckLabel" name="departmentItemsCheckLabel"
+                    class="text-left  " for="departmentItemsCheck">Department specific items checked in</label>
+                </div>
+            </div>
+            <div id="quickInputsRow60" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn61" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="keyAccessControlCheck" name="keyAccessControlCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn63" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="keyAccessControlCheckLabel" name="keyAccessControlCheckLabel"
+                    class="text-left  " for="keyAccessControlCheck">Keys/access control cards returned</label>
+                </div>
+            </div>
+            <div id="quickInputsRow66" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn67" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="mailAddressesCheck" name="mailAddressesCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn69" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="mailAddressesCheckLabel" name="mailAddressesCheckLabel" class="text-left  "
+                    for="mailAddressesCheck">Mail address/telephone verified</label>
+                </div>
+            </div>
+            <div id="quickInputsRow72" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn73" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="manualsDeskReferenceCheck" name="manualsDeskReferenceCheck"
+                    class="text-left  " style=" transform: scale(1.5); " type="checkbox" transform:=""
+                    scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn75" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="manualsDeskReferenceCheckLavel" name="manualsDeskReferenceCheckLavel"
+                    class="text-left  " for="manualsDeskReferenceCheck">Manuals/desk reference returned</label>
+                </div>
+            </div>
+            <div id="quickInputsRow78" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn79" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="officeWorkStationCheck" name="officeWorkStationCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn81" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="officeWorkStationCheckLabel82" name="officeWorkStationCheckLabel82"
+                    class="text-left  " for="officeWorkStationCheck">Office/workstation cleared</label>
+                </div>
+            </div>
+            <div id="quickInputsRow84" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn85" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="timesSubmittedCheck" name="timesSubmittedCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn87" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="timesSubmittedCheckLabel" name="timesSubmittedCheckLabel" class="text-left  "
+                    for="timesSubmittedCheck">Time Exception/time sheets submitted</label>
+                </div>
+            </div>
+            <div id="row170" class="text-left row ">
+                <div id="col171" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele172" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow90" name="quickHeadingRow" class="text-left row faculty "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( facultyMamber() == 'Yes' ) ) ">
+                <div id="quickHeadingColumn91" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall92" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Faculty</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow94" name="quickInputsRow" class="text-left row faculty "
+            data-bind="visible: ( ( facultyMamber() == 'Yes' ) ) ">
+                <div id="quickInputsColumn95" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="collegeOwnedMaterialsCheck" name="collegeOwnedMaterialsCheck"
+                    class="text-left  " style=" transform: scale(1.5); " type="checkbox" transform:=""
+                    scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn97" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="collegeOwnedMaterialsCheckLabel" name="collegeOwnedMaterialsCheckLabel"
+                    class="text-left  " for="collegeOwnedMaterialsCheck">College owned materials returned</label>
+                </div>
+            </div>
+            <div id="quickInputsRow100" name="quickInputsRow" class="text-left row faculty "
+            data-bind="visible: ( ( facultyMamber() == 'Yes' ) ) ">
+                <div id="quickInputsColumn101" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="gradesSubmittedCheck" name="gradesSubmittedCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn103" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="gradesSubmittedCheckLabel" name="gradesSubmittedCheckLabel"
+                    class="text-left  " for="gradesSubmittedCheck">Grades submitted</label>
+                </div>
+            </div>
+            <div id="row166" name="row38" class="text-left row " data-bind="visible: ( ( facultyMamber() == 'Yes' ) ) ">
+                <div id="col167" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele168" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow106" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn107" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall108" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">College Items</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow110" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn111" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="alarmCodeCheck" name="alarmCodeCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn113" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="alarmCodeCheckLabel" name="alarmCodeCheckLabel" class="text-left  "
+                    for="alarmCodeCheck">Alarm code disabled</label>
+                </div>
+            </div>
+            <div id="quickInputsRow116" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn117" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="cellPhoneCheck" name="cellPhoneCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn119" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="cellPhoneCheckLabel" name="cellPhoneCheckLabel" class="text-left  "
+                    for="cellPhoneCheck">Cell Phone</label>
+                </div>
+            </div>
+            <div id="quickInputsRow122" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn123" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="cardsReturnedCheck" name="cardsReturnedCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn125" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="cardsReturnedCheckLabel" name="cardsReturnedCheckLabel" class="text-left  "
+                    for="cardsReturnedCheck">Gas card/credit card returned</label>
+                </div>
+            </div>
+            <div id="quickInputsRow128" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn129" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="idCardCheck" name="idCardCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn131" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="idCardCheckLabel" name="idCardCheckLabel" class="text-left  "
+                    for="idCardCheck">ID card returned and disabled</label>
+                </div>
+            </div>
+            <div id="quickInputsRow134" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn135" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="libraryAVCheck" name="libraryAVCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn137" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="libraryAVCheckLabel" name="libraryAVCheckLabel" class="text-left  "
+                    for="libraryAVCheck">Library/AV material cleared</label>
+                </div>
+            </div>
+            <div id="quickInputsRow140" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn141" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="computerEquipmentCheck" name="computerEquipmentCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn143" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="computerEquipmentCheckLabel" name="computerEquipmentCheckLabel"
+                    class="text-left  " for="computerEquipmentCheck">Computer equipment returned</label>
+                </div>
+            </div>
+            <div id="quickInputsRow146" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn147" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="voicemailNeworkCheck" name="voicemailNeworkCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn149" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="voicemailNeworkCheckLabel" name="voicemailNeworkCheckLabel"
+                    class="text-left  " for="voicemailNeworkCheck">Voicemail/network access removed</label>
+                </div>
+            </div>
+            <div id="quickInputsRow152" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn153" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="raiderOneCardCheck" name="raiderOneCardCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn155" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="raiderOneCardCheckLabel" name="raiderOneCardCheckLabel" class="text-left  "
+                    for="raiderOneCardCheck">Raider One Card deactivated and retained by former employee</label>
+                </div>
+            </div>
+            <div id="row174" class="text-left row ">
+                <div id="col175" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele176" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow158" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn159" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall160" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Notes</h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow162" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn163" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="exitNotes">Exit Notes</label>
+                    <textarea id="exitNotes" name="exitNotes" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row178" class="text-left row ">
+                <div id="col179" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele180" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow186" name="quickHeadingRow" class="text-left row humanResources "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn187" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall188" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">HR Office Use Only</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow190" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn191" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="resignationLetterCheck" name="resignationLetterCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn193" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="resignationLetterCheckLabel" name="resignationLetterCheckLabel"
+                    class="text-left  " for="resignationLetterCheck">Resignation letter received</label>
+                </div>
+            </div>
+            <div id="quickInputsRow196" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn197" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="finalEmployeeActionCheck" name="finalEmployeeActionCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn199" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="finalEmployeeActionCheckLabel" name="finalEmployeeActionCheckLabel"
+                    class="text-left  " for="finalEmployeeActionCheck">Final Employee Action Form received</label>
+                </div>
+            </div>
+            <div id="quickInputsRow202" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn203" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="retirementBenefitsCheck" name="retirementBenefitsCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn205" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="retirementBenefitsCheckLabel" name="retirementBenefitsCheckLabel"
+                    class="text-left  " for="retirementBenefitsCheck">Retirement/benefit options reviewed</label>
+                </div>
+            </div>
+            <div id="quickInputsRow208" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn209" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="COBRACheck" name="COBRACheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn211" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="COBRACheckLabel" name="COBRACheckLabel" class="text-left  "
+                    for="COBRACheck">COBRA options explained</label>
+                </div>
+            </div>
+            <div id="row1784242" name="" class="text-left row humanResources ">
+                <div id="col17942" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele18042" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow218" name="quickHeadingRow" class="text-left row payroll "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn219" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall220" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Payroll Department Office Use Only</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow222" name="quickInputsRow" class="text-left row payroll ">
+                <div id="quickInputsColumn223" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="accountsReceivableCheck" name="accountsReceivableCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn225" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="accountsReceivableCheckLabel" name="accountsReceivableCheckLabel"
+                    class="text-left  " for="accountsReceivableCheck">Accounts receivables cleared</label>
+                </div>
+            </div>
+            <div id="quickInputsRow228" name="quickInputsRow" class="text-left row payroll ">
+                <div id="quickInputsColumn229" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="finalCompCheck" name="finalCompCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn231" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="finalCompCheckLabel" name="finalCompCheckLabel" class="text-left  "
+                    for="finalCompCheck">Final compensation calculated</label>
+                </div>
+            </div>
+            <div id="quickInputsRow234" name="quickInputsRow" class="text-left row payroll ">
+                <div id="quickInputsColumn235" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="timeCheck" name="timeCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn237" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="timeCheckLabel" name="timeCheckLabel" class="text-left  " for="timeCheck">Time Exception/time sheets received</label>
+                </div>
+            </div>
+            <div id="quickInputsRow240" name="quickInputsRow" class="text-left row payroll ">
+                <div id="quickInputsColumn241" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="vacationCheck" name="vacationCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn243" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="vacationCheckLabel" name="vacationCheckLabel" class="text-left  "
+                    for="vacationCheck">Verified remaining vacation time</label>
+                </div>
+            </div>
+            <div id="row17842424343" name="" class="text-left row payroll ">
+                <div id="col1794243" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele1804243" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

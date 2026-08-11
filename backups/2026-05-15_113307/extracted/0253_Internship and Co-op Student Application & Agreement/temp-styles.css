@@ -1,0 +1,25 @@
+/* to be replaced later with styles from universal style sheets */
+
+.internship-agreement-intro {
+    margin: 1rem 0 1.25rem;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid #046a38;
+    background: #eef7f1;
+    color: #212529;
+    line-height: 1.6;
+}
+
+.initial-instruction {
+    margin: 1rem 0;
+    padding: 0.75rem 1rem;
+    border: 1px solid #c7a800;
+    border-left: 4px solid #fbd502;
+    background: #fff8d6;
+    color: #212529;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.initial-instruction p {
+    margin: 0;
+}

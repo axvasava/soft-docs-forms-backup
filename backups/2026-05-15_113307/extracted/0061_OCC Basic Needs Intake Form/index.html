@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row439" class="text-left row fd-form-masthead ">
+                <div id="col440" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn441" name="revisedOn" class="col-sm-12 text-right  ">Revised 05/25</span>
+                </div>
+                <div id="col442" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele443" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col444" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele445" name="ele21" class="text-left form-title ">OCC Basic Needs Intake Form</h1>
+                </div>
+                <div id="col446" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele447" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row435" class="text-left row ">
+                <div id="col436" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote437" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickParagraphRow12" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn13" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_14" name="p_263" class="text-left  ">If you are a current OCC student who is facing challenges with your access
+                        to basic needs such as adequate food, stable housing, or general technological
+                        resources, you’re encouraged to complete this form. This form will be used
+                        to connect you with resources related to your identified areas of need.
+                        If you need assistance completing the form or have questions, please contact:
+                        <a href="/cdn-cgi/l/email-protection#b0ddd9d2d5ded5d6d9c4c3f0dfd1dbdcd1ded4d3d39ed5d4c5"><span class="__cf_email__" data-cfemail="3b5652595e555e5d524f487b545a50575a555f5858155e5f4e">[email&#160;protected]</span></a>
+                    </p>
+                </div>
+            </div>
+            <div id="quickHeadingRow16" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn17" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall18" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Student Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow20" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn21" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn23" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Student ID</label>
+                        <input id="originatorErpId" name="originatorErpId" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col386" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dateOfBirth">Date of Birth</label>
+                        <input id="dateOfBirth" name="dateOfBirth" class="text-left  "
+                        required="required" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow26" name="quickInputsRow" class="text-left row ">
+                <div id="col371" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="preferredPronouns">Preferred Pronouns (optional)</label>
+                        <input id="preferredPronouns" name="preferredPronouns"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn27" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" name="phone" class="text-left  "
+                        required="required" type="text" data-bind="mask: 'phone' " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn29" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="email">OCC Email Address</label>
+                        <input id="email" name="email" class="text-left  "
+                        required="required" readonly="true" type="text" data-bind="email" />
+                    </div>
+                </div>
+                <div id="col372" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="otherEmail">Other Email</label>
+                        <input id="otherEmail" name="otherEmail" class="text-left  "
+                        data-bind="email" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow164747" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1747" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1847" name="quickHeadingSmall1847" class="text-center  "
+                    style=" font-weight: bold; ">FERPA Statement</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow400" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn401" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement402" name="quickParagraphElement" class="text-left  "><strong><a href="https://www.oaklandcc.edu/mdhhs/#ferpa" target="blank">https://www.oaklandcc.edu/mdhhs/#ferpa</a></strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow415" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn416" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="consentToFERPA" name="consentToFERPA" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn418" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="quickInputsText419" name="quickInputsText2" class="text-left  "
+                    for="consentToFERPA">I have read the FERPA information at the above link and consent to release
+                        the following to MDHHS:
+                        <ul>
+                            <li>All Student, Academic, Graduation, and Registration records and data</li>
+                            <li>All Student Life and Counseling records</li>
+                            <li>All Financial Aid information and records</li>
+                        </ul>
+                    </label>
+                </div>
+            </div>
+            <div id="quickInputsRow4155050" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn41650" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="doNotConsentToFERPA" name="doNotConsentToFERPA" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="quickInputsColumn41850" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="quickInputsText41950" name="quickInputsText41950" class="text-left  "
+                    for="doNotConsentToFERPA">I do NOT Consent</label>
+                </div>
+            </div>
+            <div id="quickInputsRow407" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn408" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText409" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickDropdownRow32" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn33" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <h5 id="preferredContactMethod" name="preferredContactMethod" class="text-left  "><strong>Prefered method of contact (Select all that apply)</strong></h5>
+                </div>
+            </div>
+            <div id="quickInputsRow329" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn330" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="emailContactCheck" name="emailContactCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="quickInputsColumn332" name="quickInputsColumn2" class="col-xs-11 col-sm-1 text-left  ">
+                    <label id="quickInputsText333" name="quickInputsText2" class="text-left  "
+                    for="emailContactCheck">Email</label>
+                </div>
+                <div id="quickInputsColumn334" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="phoneContactCheck" name="phoneContactCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="quickInputsColumn336" name="quickInputsColumn4" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText337" name="quickInputsText4" class="text-left  "
+                    for="phoneContactCheck">Phone</label>
+                </div>
+            </div>
+            <div id="quickInputsRow349" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn350" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="meetingLocation">Where could you meet with an MDHHS (Michigan Department of Health and
+                        Human Services) specialist?</label>
+                    <select id="meetingLocation" name="meetingLocation"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Online">Online</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickHeadingRow642626" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn6526" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest6626" name="quickHeadingSmallest6626" class="text-left  "><strong>What days and time are you available for someone to follow up? (Check any day that applies and add hours). </strong></h5>
+                </div>
+            </div>
+            <div id="quickInputsRow263" name="quickInputsRow" class="text-left row "
+            style="overflow: auto;  background-color:#046A38;  padding: 5px ">
+                <div id="quickInputsColumn264" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="mondayHoursCheck" name="mondayHoursCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn266" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="mondayHoursCheckLabel" name="mondayHoursCheckLabel" class="text-left  "
+                    style=" color:#ffffff; " for="mondayHoursCheck">Monday Follow Up Availability</label>
+                </div>
+            </div>
+            <div id="quickInputsRow155" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( mondayHoursCheck() ) ) ">
+                <div id="quickInputsColumn158" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="mondayMorningStart">Mon. Morning Start</label>
+                        <input id="mondayMorningStart" name="mondayMorningStart"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'startTimes',  clearOnFocus: true,  validate: true,  labelMask: ['startTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn160" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="mondayMorningEnd">Mon. Morning End</label>
+                        <input id="mondayMorningEnd" name="mondayMorningEnd"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'startTimes',  clearOnFocus: true,  validate: true,  labelMask: ['startTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn162" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="mondayAfternoonStart">Mon. Afternoon Start</label>
+                        <input id="mondayAfternoonStart" name="mondayAfternoonStart"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'endTimes',  clearOnFocus: true,  validate: true,  labelMask: ['endTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col204" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="mondayAfternoonEnd">Mon. Afternoon End</label>
+                        <input id="mondayAfternoonEnd" name="mondayAfternoonEnd"
+                        class="text-left  " data-bind="autocomplete: { localSource: 'endTimes',  clearOnFocus: true,  validate: true,  labelMask: ['endTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col207" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele208" name="ele208" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow2633737" name="quickInputsRow" class="text-left row "
+            style="overflow: auto;  background-color:#046A38;  padding: 5px ">
+                <div id="quickInputsColumn26437" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="tuesdayHoursCheck" name="tuesdayHoursCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn26637" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="tuesdayHoursCheckLabel" name="tuesdayHoursCheckLabel" class="text-left  "
+                    style=" color:#ffffff; " for="tuesdayHoursCheck">Tuesday Follow Up Availability</label>
+                </div>
+            </div>
+            <div id="quickInputsRow1552828" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( tuesdayHoursCheck() ) ) ">
+                <div id="quickInputsColumn15828" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="tuesdayMorningStart">Tues. Morning Start</label>
+                        <input id="tuesdayMorningStart" name="tuesdayMorningStart"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'startTimes',  clearOnFocus: true,  validate: true,  labelMask: ['startTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn16028" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="tuesdayMorningEnd">Tues. Morning End</label>
+                        <input id="tuesdayMorningEnd" name="tuesdayMorningEnd"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'startTimes',  clearOnFocus: true,  validate: true,  labelMask: ['startTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn16228" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="tuesdayAfternoonStart">Tues. Afternoon Start</label>
+                        <input id="tuesdayAfternoonStart" name="tuesdayAfternoonStart"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'endTimes',  clearOnFocus: true,  validate: true,  labelMask: ['endTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col20428" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="tuesdayAfternoonEnd">Tues. Afternoon End</label>
+                        <input id="tuesdayAfternoonEnd" name="tuesdayAfternoonEnd"
+                        class="text-left  " data-bind="autocomplete: { localSource: 'endTimes',  clearOnFocus: true,  validate: true,  labelMask: ['endTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col312" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele313" name="ele313" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow26337373838" name="quickInputsRow" class="text-left row "
+            style="overflow: auto;  background-color:#046A38;  padding: 5px ">
+                <div id="quickInputsColumn2643738" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="wednesdayHoursCheck" name="wednesdayHoursCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn2663738" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="wednesdayHoursCheckLabel" name="wednesdayHoursCheckLabel" class="text-left  "
+                    style=" color:#ffffff; " for="wednesdayHoursCheck">Wednesday Follow Up Availability</label>
+                </div>
+            </div>
+            <div id="quickInputsRow15528282929" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( wednesdayHoursCheck() ) ) ">
+                <div id="quickInputsColumn1582829" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="wednesdayMorningStart">Wed. Morning Start</label>
+                        <input id="wednesdayMorningStart" name="wednesdayMorningStart"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'startTimes',  clearOnFocus: true,  validate: true,  labelMask: ['startTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn1602829" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="wednesdayMorningEnd">Wed. Morning End</label>
+                        <input id="wednesdayMorningEnd" name="wednesdayMorningEnd"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'startTimes',  clearOnFocus: true,  validate: true,  labelMask: ['startTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn1622829" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="wednesdayAfternoonStart">Wed. Afternoon Start</label>
+                        <input id="wednesdayAfternoonStart" name="wednesdayAfternoonStart"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'endTimes',  clearOnFocus: true,  validate: true,  labelMask: ['endTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col2042829" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="wednesdayAfternoonEnd">Wed. Afternoon End</label>
+                        <input id="wednesdayAfternoonEnd" name="wednesdayAfternoonEnd"
+                        class="text-left  " data-bind="autocomplete: { localSource: 'endTimes',  clearOnFocus: true,  validate: true,  labelMask: ['endTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col2072829" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele2082829" name="ele208" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow263373738383939" name="quickInputsRow" class="text-left row "
+            style="overflow: auto;  background-color:#046A38;  padding: 5px ">
+                <div id="quickInputsColumn264373839" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="thursdayHoursCheck" name="thursdayHoursCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn266373839" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="thursdayHoursCheckLabel" name="thursdayHoursCheckLabel" class="text-left  "
+                    style=" color:#ffffff; " for="thursdayHoursCheck">Thursday Follow Up Availability</label>
+                </div>
+            </div>
+            <div id="quickInputsRow155282829293030" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( thursdayHoursCheck() ) ) ">
+                <div id="quickInputsColumn158282930" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="thursdayMorningStart">Thurs. Morning Start</label>
+                        <input id="thursdayMorningStart" name="thursdayMorningStart"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'startTimes',  clearOnFocus: true,  validate: true,  labelMask: ['startTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn160282930" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="thursdayMorningEnd">Thurs. Morning End</label>
+                        <input id="thursdayMorningEnd" name="thursdayMorningEnd"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'startTimes',  clearOnFocus: true,  validate: true,  labelMask: ['startTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn162282930" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="thursdayAfternoonStart">Thurs. Afternoon Start</label>
+                        <input id="thursdayAfternoonStart" name="thursdayAfternoonStart"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'endTimes',  clearOnFocus: true,  validate: true,  labelMask: ['endTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col204282930" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="thursdayAfternoonEnd">Thurs. Afternoon End</label>
+                        <input id="thursdayAfternoonEnd" name="thursdayAfternoonEnd"
+                        class="text-left  " data-bind="autocomplete: { localSource: 'endTimes',  clearOnFocus: true,  validate: true,  labelMask: ['endTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col207282930" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele208282930" name="ele208" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow2633737383839394040" name="quickInputsRow" class="text-left row "
+            style="overflow: auto;  background-color:#046A38;  padding: 5px ">
+                <div id="quickInputsColumn26437383940" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="fridayHoursCheck" name="fridayHoursCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn26637383940" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="fridayHoursCheckLabel" name="fridayHoursCheckLabel" class="text-left  "
+                    style=" color:#ffffff; " for="fridayHoursCheck">Friday Follow Up Availability</label>
+                </div>
+            </div>
+            <div id="quickInputsRow1552828292930303131" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( fridayHoursCheck() ) ) ">
+                <div id="quickInputsColumn15828293031" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fridayMorningStart">Fri. Morning Start</label>
+                        <input id="fridayMorningStart" name="fridayMorningStart"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'startTimes',  clearOnFocus: true,  validate: true,  labelMask: ['startTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn16028293031" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fridayMorningEnd">Fri. Morning End</label>
+                        <input id="fridayMorningEnd" name="fridayMorningEnd"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'startTimes',  clearOnFocus: true,  validate: true,  labelMask: ['startTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn16228293031" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fridayAfternoonStart">Fri. Afternoon Start</label>
+                        <input id="fridayAfternoonStart" name="fridayAfternoonStart"
+                        class="text-left  " type="text" data-bind="autocomplete: { localSource: 'endTimes',  clearOnFocus: true,  validate: true,  labelMask: ['endTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col20428293031" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fridayAfternoonEnd">Fri. Afternoon End</label>
+                        <input id="fridayAfternoonEnd" name="fridayAfternoonEnd"
+                        class="text-left  " data-bind="autocomplete: { localSource: 'endTimes',  clearOnFocus: true,  validate: true,  labelMask: ['endTime'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col20728293031" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele20828293031" name="ele208" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickDropdownRow40" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn41" name="quickDropdownColumn" class="col-xs-12 col-sm-10 text-left  ">
+                    <label for="howDidYouHear">How did you hear about this Basic Needs Assessment? (Select the most applicable)</label>
+                    <select
+                    id="howDidYouHear" name="howDidYouHear" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="OCC Website">OCC Website</option>
+                        <option value="Email Communication">Email Communication</option>
+                        <option value="Social Media Post (Facebook, Instagram, Twitter, etc.)">Social Media Post (Facebook, Instagram, Twitter, etc.)</option>
+                        <option
+                        value="Class Announcement (D2L Notification, Faculty Email, etc.)">Class Announcement (D2L Notification, Faculty Email, etc.)</option>
+                            <option
+                            value="Other">Other</option>
+                                </select>
+                </div>
+                <div id="col353" name="col353" class="col-xs-12 col-sm-10 text-left  "
+                data-bind="visible: ( ( howDidYouHear() == 'Other' ) ) ">
+                    <div class="text-left  ">
+                        <label for="otherHowDidYouHear">Please specify.</label>
+                        <input id="otherHowDidYouHear" name="otherHowDidYouHear"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow44" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn45" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="currentlyEnrolled">Are you currently enrolled at OCC?</label>
+                    <select id="currentlyEnrolled"
+                    name="currentlyEnrolled" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn47" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( currentlyEnrolled() == 'Yes' ) ) ">
+                    <label for="yourEnrollment">You are enrolled...</label>
+                    <select id="yourEnrollment" name="yourEnrollment"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Part-Time (less than 12 hours)">Part-Time (less than 12 hours)</option>
+                        <option value="Full-Time (23 or more hours)">Full-Time (23 or more hours)</option>
+                        <option value="Unsure">Unsure</option>
+                    </select>
+                </div>
+                <div id="col427" name="col427" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( currentlyEnrolled() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="programOfStudy">Program of Study</label>
+                        <input id="programOfStudy" name="programOfStudy"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickDropdownRow52" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn53" name="quickDropdownColumn" class="col-xs-12 col-sm-8 text-left  ">
+                    <label for="completedFAFSA">Have you completed you FAFSA for the current academic year?</label>
+                    <select
+                    id="completedFAFSA" name="completedFAFSA" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+            </div>
+            <div id="quickInputsRow56" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn59" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="internationalStudent">Are you an international student?</label>
+                    <select id="internationalStudent"
+                    name="internationalStudent" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn57" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="currentlyWorking">Are you currently working?</label>
+                    <select id="currentlyWorking" name="currentlyWorking"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickHeadingRow64" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn65" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest66" name="quickHeadingSmallest" class="text-left  "><strong>Are you receiving any of the following forms of aid or income? (Check all that apply)</strong></h5>
+                </div>
+            </div>
+            <div id="quickInputsRow68" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn69" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="atLeast20Hours" name="atLeast20Hours" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn71" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="atLeast20HoursCheckLabel" name="atLeast20HoursCheckLabel" class="text-left  "
+                    for="atLeast20HoursCheck">Working at least 20 hours per week</label>
+                </div>
+            </div>
+            <div id="quickInputsRow74" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn75" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="perkinsLoanCheck" name="perkinsLoanCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn77" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="perkinsLoanCheckLabel" name="perkinsLoanCheckLabel" class="text-left  "
+                    for="perkinsLoanCheck">Perkins Loan</label>
+                </div>
+            </div>
+            <div id="quickInputsRow80" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn81" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="fafsaEFCCheck" name="fafsaEFCCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn83" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="fafsaEFCCheckLabel" name="fafsaEFCCheckLabel" class="text-left  "
+                    for="fafsaEFCCheck">FAFSA/SAI (Student Aid Index) - Zero Income</label>
+                </div>
+            </div>
+            <div id="quickInputsRow804242" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn8142" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="unsureAboutAidCheck" name="unsureAboutAidCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn8342" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="unsureAboutAidCheckLabel" name="unsureAboutAidCheckLabel" class="text-left  "
+                    for="unsureAboutAidCheck">Unsure</label>
+                </div>
+            </div>
+            <div id="quickDropdownRow86" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn87" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Non-Binary">Non-Binary</option>
+                        <option value="Decline to State">Decline to State</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div id="col89" name="col89" class="col-xs-12 col-sm-6 text-left  " data-bind="visible: ( ( gender() == 'Other' ) ) ">
+                    <div class="text-left  ">
+                        <label for="specifyOtherGender">Please specify.</label>
+                        <input id="specifyOtherGender" name="specifyOtherGender"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow93" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn94" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="maritalStatus">Marital Status (Select most applicable)</label>
+                    <select id="maritalStatus"
+                    name="maritalStatus" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Single/Never Married">Single/Never Married</option>
+                        <option value="Married/Domestic Partnership">Married/Domestic Partnership</option>
+                        <option value="Divorced">Divorced</option>
+                        <option value="Widowed">Widowed</option>
+                        <option value="Separated">Separated</option>
+                        <option value="Decline to State">Decline to State</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn96" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="ethnicity">Ethnicity</label>
+                    <select id="ethnicity" name="ethnicity" class="text-left  ">
+                        <option value=""></option>
+                        <option value="American Indian/Alaska Native">American Indian/Alaska Native</option>
+                        <option value="Asian">Asian</option>
+                        <option value="Black/African American">Black/African American</option>
+                        <option value="Filipino/a">Filipino/a</option>
+                        <option value="Latinx">Latinx</option>
+                        <option value="Pacific Islander">Pacific Islander</option>
+                        <option value="White">White</option>
+                        <option value="Two or More Races">Two or More Races</option>
+                        <option value="Unknown">Unknown</option>
+                        <option value="Decline to State">Decline to State</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickDropdownRow101" name="quickDropdownRow" class="text-left row ">
+                <div id="col396" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="countyOfResidence">County of Current Residence</label>
+                        <input id="countyOfResidence" name="countyOfResidence"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="quickDropdownColumn102" name="quickDropdownColumn" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="primaryLanguage">Primary Language</label>
+                    <select id="primaryLanguage" name="primaryLanguage"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="English">English</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div id="col104" name="col104" class="col-xs-12 col-sm-4 text-left  "
+                data-bind="visible: ( ( primaryLanguage() == 'Other' ) ) ">
+                    <div class="text-left  ">
+                        <label for="otherPrimaryLanguage">Please specify.</label>
+                        <input id="otherPrimaryLanguage" name="otherPrimaryLanguage"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow641818" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn6518" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest6618" name="quickHeadingSmallest6618" class="text-left  "><strong>Which MDHHS Programs are you interested in?</strong></h5>
+                </div>
+            </div>
+            <div id="quickInputsRow111" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn112" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="foodProgramCheck" name="foodProgramCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn114" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="foodProgramCheckLabel" name="foodProgramCheckLabel" class="text-left  "
+                    for="foodProgramCheck">Food</label>
+                </div>
+            </div>
+            <div id="quickInputsRow117" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn118" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="medicalProgramCheck" name="medicalProgramCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn120" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="medicalProgramCheckCheckLabel" name="medicalProgramCheckCheckLabel"
+                    class="text-left  " for="medicalProgramCheckCheck">Medical</label>
+                </div>
+            </div>
+            <div id="quickInputsRow123" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn124" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="childDaycareProgramCheck" name="childDaycareProgramCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn126" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="childDaycareProgramCheckLabel" name="childDaycareProgramCheckLabel"
+                    class="text-left  " for="childDaycareProgramCheck">Child Daycare</label>
+                </div>
+            </div>
+            <div id="quickInputsRow129" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn130" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="cashProgramCheck" name="cashProgramCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn132" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="cashProgramCheckLabel" name="cashProgramCheckLabel" class="text-left  "
+                    for="cashProgramCheck">Cash Assistance</label>
+                </div>
+            </div>
+            <div id="quickInputsRow135" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn136" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="stateEmergencyReliefProgramCheck" name="stateEmergencyReliefProgramCheck"
+                    class="text-left  " style=" transform: scale(1.5); " type="checkbox" transform:=""
+                    scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn138" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="stateEmergencyReliefProgramCheckLabel" name="stateEmergencyReliefProgramCheckLabel"
+                    class="text-left  " for="stateEmergencyReliefProgramCheck">State Emergency Relief (Emergency Rent, Utilities, Etc.)</label>
+                </div>
+            </div>
+            <div id="quickInputsRow141" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn142" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="vehicleRepairProgramCheck" name="vehicleRepairProgramCheck"
+                    class="text-left  " style=" transform: scale(1.5); " type="checkbox" transform:=""
+                    scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn144" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="vehicleRepairProgramCheckLabel" name="departmentItemsCheckLabel"
+                    class="text-left  " for="vehicleRepairProgramCheck">Vehicle Repair (as funds are available)
+                        <br />Note: This is generally only available in October.</label>
+                </div>
+            </div>
+            <div id="quickDropdownRow368" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn369" name="quickDropdownColumn" class="col-xs-12 col-sm-9 text-left  ">
+                    <label for="appliedActiveCase">Have you applied for any MDHHS programs and/or do you have an active case?</label>
+                    <select
+                    id="appliedActiveCase" name="appliedActiveCase" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Applied with active case">Applied with active case</option>
+                        <option value="Applied, but no active case">Applied, but no active case</option>
+                        <option value="No, have never replied">No, have never replied</option>
+                        </select>
+                </div>
+                <div id="col393" name="col393" class="col-xs-12 col-sm-3 text-left  "
+                data-bind="visible: ( ( appliedActiveCase() == 'Applied with active case' ) ) ">
+                    <div class="text-left  ">
+                        <label for="caseNumber">Case Number</label>
+                        <input id="caseNumber" name="caseNumber" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickParagraphRow316" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn317" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement318" name="quickParagraphElement" class="text-left  "><strong>OCC strives to provide inclusive, accessible services that enable all individuals to engage fully. To request a reasonable accommodation, please choose from the options below.  Please note that advance notice is necessary to arrange for some accessibility needs.</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickDropdownRow320" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn321" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="accomodationRequest">Accomodation Request</label>
+                    <select id="accomodationRequest" name="accomodationRequest"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="ASL Interpreter">ASL Interpreter</option>
+                        <option value="An Assistant will accompany me">An Assistant will accompany me</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow324" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( accomodationRequest() == 'Other' ) ) ">
+                <div id="quickTextAreaColumn325" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="otherAccomodationRequest">Please explain.</label>
+                    <textarea id="otherAccomodationRequest" name="otherAccomodationRequest"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow147" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn148" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText149" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickHeadingRow379" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn380" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall381" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow383" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn384" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col390" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="submissionDate">submissionDate (hidden)</label>
+                        <input id="submissionDate" name="submissionDate"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+</html>

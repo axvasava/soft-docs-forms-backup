@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row144" class="text-left row fd-form-masthead ">
+                <div id="col145" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn146" name="revisedOn" class="col-sm-12 text-right  ">Revised 04/26</span>
+                </div>
+                <div id="col147" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele148" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col149" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele150" name="ele21" class="text-left form-title ">Internship and Co-op Learning Objectives</h1>
+                </div>
+                <div id="col151" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele152" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row140" class="text-left row ">
+                <div id="col141" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote142" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="row35" class="text-left row ">
+                <div id="col36" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele37" name="ele37" class="col-xs-12 col-sm-12 text-left  "><strong>Developing learning objectives is an important part of your internship/co-op work experience. Learning objectives will help you to focus on what your faculty sponsor and employer hope you will gain from the assignment. Please determine three learning objectives for your internship/co-op work assignment. The Learning Objectives form <u>is due two weeks after starting your internship/co-op </u>. It is the student’s responsibility to complete this form, review with the Faculty Supervisor/Coordinator and obtain signature. We recommend that you retain a copy of your learning objectives to assist you when writing your final report. </strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickHeadingRow20" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn21" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall22" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Student Information</h4>
+                </div>
+            </div>
+            <div id="row24" class="text-left row ">
+                <div id="col25" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="originatorErpId">Student ID</label>
+                        <input id="originatorErpId" name="originatorErpId" class="col-xs-12 col-sm-12 text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col27" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="originatorDisplayName">Student Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="col-xs-12 col-sm-12 text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col29" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="jobTitle">Internship / Co-op Job Title</label>
+                        <input id="jobTitle" name="jobTitle"
+                        class="col-xs-12 col-sm-12 text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="col33" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="semester">Term</label>
+                        <input id="semester" name="semester" class="col-xs-12 col-sm-12 text-left  "
+                        required="required" data-bind="autocomplete: { localSource: 'AcademicPeriodsAutocomplete',  clearOnFocus: true,  validate: true,  labelMask: ['termCode', ' | ', 'termTitle'],  formFields: {'selectedTerm':'termCode'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col31" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="program">Academic Program / Major</label>
+                        <input id="program" name="program" class="col-xs-12 col-sm-12 text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col42" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisor">Faculty Supervisor / Coordinator</label>
+                        <input id="supervisor" name="supervisor"
+                        class="text-left  " required="required" data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_Program_Coordinator_Routing_Data',  clearOnFocus: true,  validate: true,  labelMask: ['Program_Coordinator_Name', ' | ', 'Program'],  formFields: {'supervisorEmail':'Program_Coordinator_Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col81" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employerName">Employer Name</label>
+                        <input id="employerName" name="employerName" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col84" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employerEmail">Employer Email</label>
+                        <input id="employerEmail" name="employerEmail" class="text-left  "
+                        required="required" data-bind="email" />
+                    </div>
+                </div>
+                <div id="col45" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="jobDescription">Job Description</label>
+                    <textarea id="jobDescription" name="jobDescription"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow92" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn93" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_94" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickParagraphRow112" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  line-height: 1.55; ">
+                <div id="quickParagraphColumn113" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#d7e3ff;  border: 1px solid #005cbb; border-radius:16px; padding:10px; ">
+                    <h4 id="ele126" name="ele126" class="text-left  " style=" font-weight: 600;  "><span>ℹ️</span> <strong>Learning Objectives Guidance</strong></h4>
+                    <p id="ele118" name="ele118" class="text-left  ">When developing learning objectives for your work assignment, consider:
+                        the tasks you will be doing, what you expect to learn, and how you will
+                        learn it.</p>
+                    <p id="ele119" name="ele119" class="text-left  " style=" background-color:#FFF;  padding:10px; border-radius: 10px;  font-weight: 600; border-left: 4px solid #005cbb ">Objectives must be specific, measurable, attainable, and approved by your
+                        Faculty Supervisor/Coordinator and on-site supervisor.
+                        <br />
+                        <br />You will be responsible for demonstrating your written and verbal communication
+                        skills, as well as your interpersonal skills. When developing these learning
+                        objectives make sure to include the ways in which you will demonstrate
+                        your skills during the internship/co-op.</p>
+                    <p id="ele132" name="ele132"
+                    class="text-left  "></p>
+                    <p id="ele121" name="ele121" class="text-left  " style=" li: margin-bottom: 3px;  "></p>
+                    <h4>Evaluation Methods</h4>
+
+                    <ul>
+                        <li>Employer evaluations</li>
+                        <li>Final reports</li>
+                        <li>Portfolios</li>
+                        <li>Special projects</li>
+                        <li>Site visits</li>
+                        <li>Journal notations</li>
+                        <li>Oral presentations or demonstrations</li>
+                        <li>Other methods approved by your supervisor</li>
+                    </ul>
+                    <p></p>
+                </div>
+            </div>
+            <div id="row48" class="text-left row ">
+                <div id="col51" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="objective1">Objective #1</label>
+                    <textarea id="objective1" name="objective1" class="text-left  "
+                    required="required"></textarea>
+                </div>
+            </div>
+            <div id="row49" class="text-left row ">
+                <div id="col54" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="objective2">Objective #2</label>
+                    <textarea id="objective2" name="objective2" class="text-left  "
+                    required="required"></textarea>
+                </div>
+            </div>
+            <div id="row50" class="text-left row ">
+                <div id="col57" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="objective3">Objective #3</label>
+                    <textarea id="objective3" name="objective3" class="text-left  "
+                    required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow2099" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn219" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall229" name="quickHeadingSmall229" class="text-center  "
+                    style=" font-weight: bold; ">Signatures</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow64" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn65" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSignature">Student: Please Enter Your Name</label>
+                        <input id="studentSignature" name="studentSignature"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn67" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSignDate">Date</label>
+                        <input id="studentSignDate" name="studentSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow70" name="quickInputsRow" class="text-left row employer ">
+                <div id="quickInputsColumn71" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employerSignature">Employer: Please Enter Your Name</label>
+                        <input id="employerSignature"
+                        name="employerSignature" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn73" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employerSignDate">Date</label>
+                        <input id="employerSignDate" name="employerSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow76" name="quickInputsRow" class="text-left row supervisor ">
+                <div id="quickInputsColumn77" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="supervisorSignature" name="supervisorSignature" class="text-left  "><strong>Faculty Supervisor / Coordinator<br />
+By clicking approve, you are submitting your electronic signature and approval of the information contained in this document.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow96" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn97" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_98" class="text-left  " />
+                </div>
+            </div>
+            <div id="row99" class="text-left row developer ">
+                <div id="col100" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorEmail">supervisorEmail (hidden)</label>
+                        <input id="supervisorEmail" name="supervisorEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col101" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentAcademicYear">academicYear (hidden)</label>
+                        <input id="currentAcademicYear" name="currentAcademicYear"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col115" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="selectedTerm">selectedTerm (hidden)</label>
+                        <input id="selectedTerm" name="selectedTerm"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row198" class="text-left row fd-form-masthead ">
+                <div id="col199" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn200" name="revisedOn" class="col-sm-12 text-right  ">Revised 11/25</span>
+                </div>
+                <div id="col201" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele202" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col203" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele204" name="ele21" class="text-left form-title ">AP Invoices</h1>
+                </div>
+                <div id="col205" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele206" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row194" class="text-left row ">
+                <div id="col195" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote196" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow121111" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1311" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1411" name="quickHeadingSmall1411" class="text-center  "
+                    style=" font-weight: bold; ">Originator Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow39" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn40" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Employee Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn42" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">Employee Email</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Invoice Information</h4>
+                </div>
+            </div>
+            <div id="attachNote" name="attachNote" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn18121" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_18221" name="p_18221" class="text-left  "><strong>To view or add attachments: </strong>Select the paper clip icon
+                        at the bottom of the document, then the 3 dots menu to <strong>view an attachment</strong>.
+                        Attachments may be <strong>added using the upload button</strong> next to
+                        the 3 dots menu.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow113" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn114" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  "
+                data-bind="readonly: { userParam: ['isNotOriginator'] } ">
+                    <div class="text-left  ">
+                        <label for="invoiceNumber">Invoice Number</label>
+                        <input id="invoiceNumber" name="invoiceNumber" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn118" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="poBPO">PO/BPO</label>
+                        <input id="poBPO" name="poBPO" class="text-left  " placeholder="ex: P12345, B12345"
+                        type="text" data-bind="required: { packageParam: ['ConditionalActorFirstApprover'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn116" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  "
+                data-bind="readonly: { userParam: ['isNotOriginator'] } ">
+                    <div class="text-left  ">
+                        <label for="invoiceDate">Invoice Date</label>
+                        <input id="invoiceDate" name="invoiceDate" class="text-left  "
+                        required="required" type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col122" name="col122" class="col-xs-12 col-sm-3 text-left  "
+                data-bind="readonly: { userParam: ['isNotOriginator'] } ">
+                    <div class="text-left  ">
+                        <label for="invoiceAmount">Invoice Amount</label>
+                        <input id="invoiceAmount" name="invoiceAmount" class="text-left  "
+                        required="required" type="text" data-bind="addOn: { type: 'prepend',  snippet: '$' } "
+                        />
+                    </div>
+                </div>
+                <div id="col173" name="col173" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="readonly: { userParam: ['isNotOriginator'] } ">
+                    <label for="empComments">Comments</label>
+                    <textarea id="empComments" name="empComments" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickParagraphRow180" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn181" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_182" name="p_12139" class="text-left  "><strong>Note: </strong>It is the responsibility for the approver to add
+                        the PO/BPO Number in the above “PO/BPO” box. The current PO/BPO may be
+                        on the attached invoice. If the PO/BPO on the invoice is not correct, use
+                        the Colleague Command "VENI" to find the correct PO/BPO.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow16" name="quickInputsRow" class="text-left row "
+            data-bind="readonly: { userParam: ['isNotOriginator'] } ">
+                <div id="quickInputsColumn17" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vendorSearch">Vendor Search</label>
+                        <input id="vendorSearch" name="vendorSearch" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn19" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  "
+                style=" margin-top: 25px; " data-bind="readonly: { userParam: ['isNotOriginator'] } ">
+                    <button id="vendorSearchButton" name="vendorSearchButton" class="text-left btn btn-primary btn-block "
+                    style="" undefined="">Search</button>
+                </div>
+            </div>
+            <div id="quickInputsRow77" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn78" name="quickInputsColumn1" class="col-xs-12 col-sm-10 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vendorPayeeName">Vendor/Payee Name</label>
+                        <input id="vendorPayeeName" name="vendorPayeeName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col80" name="col224" class="col-xs-12 col-sm-2 text-center  "
+                data-bind="readonly: { userParam: ['isNotOriginator'] } ">
+                    <input id="differentPayee" name="differentPayee" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                    <label for="differentPayee">Enter Different Payee</label>
+                </div>
+            </div>
+            <div id="quickInputsRow83" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( differentPayee() ) ), readonly: { userParam: ['isNotOriginator'] } ">
+                <div id="quickInputsColumn84" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentVendorPayeeName">Enter Different Vendor/Payee Name</label>
+                        <input id="differentVendorPayeeName"
+                        name="differentVendorPayeeName" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow87" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn88" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="address">Address</label>
+                        <input id="address" name="address" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn90" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="city">City</label>
+                        <input id="city" name="city" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn92" name="quickInputsColumn3" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="state">State</label>
+                        <input id="state" name="state" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn94" name="quickInputsColumn4" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="zip">Zip Code</label>
+                        <input id="zip" name="zip" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col96" name="col227" class="col-xs-12 col-sm-2 text-center  "
+                style=" margin-top: 10px; " data-bind="readonly: { userParam: ['isNotOriginator'] } ">
+                    <input id="differentAddress" name="differentAddress" class="text-left  "
+                    style=" transform: scale(1.5) " type="checkbox" />
+                    <label for="differentAddress">Enter Different Address</label>
+                </div>
+                <div id="col98" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele99" name="ele153" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow101" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( differentAddress() ) ), readonly: { userParam: ['isNotOriginator'] } ">
+                <div id="quickInputsColumn102" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentAddressField">Address</label>
+                        <input id="differentAddressField" name="differentAddressField"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn104" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentCity">City</label>
+                        <input id="differentCity" name="differentCity" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn106" name="quickInputsColumn3" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentState">State</label>
+                        <input id="differentState" name="differentState" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn108" name="quickInputsColumn4" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentZip">Zip Code</label>
+                        <input id="differentZip" name="differentZip" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col110" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele111" name="ele153" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow1266" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn136" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall146" name="quickHeadingSmall146" class="text-center  "
+                    style=" font-weight: bold; ">Approvers</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow45" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn46" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="firstApproverSearch">First Approver Search</label>
+                        <input id="firstApproverSearch" name="firstApproverSearch"
+                        class="text-left  " required="required" type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: true,   labelMask: ['UserName', ' | ', 'Email'], selectedMask: ['UserName'],  formFields: {'firstApproverEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn48" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="firstApproverEmail">First Approver Email</label>
+                        <input id="firstApproverEmail" name="firstApproverEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow132" name="quickInputsRow" class="text-left row secondApprover ">
+                <div id="quickInputsColumn133" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="readonly: { packageParam: ['ConditionalActorSecondApprover'] } ">
+                    <label for="secondApproverQuestion">Does there need to be a second approver for this invoice?</label>
+                    <select
+                    id="secondApproverQuestion" name="secondApproverQuestion" class="text-left  "
+                    required="required" data-bind="readonly: { packageParam: ['ConditionalActorSecondApprover'] } ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+            </div>
+            <div id="quickInputsRow451616" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( secondApproverQuestion() == 'Yes' ) )  ">
+                <div id="quickInputsColumn4616" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="secondApproverSearch">Second Approver Search</label>
+                        <input id="secondApproverSearch" name="secondApproverSearch"
+                        class="text-left  " required="required" type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: false,   labelMask: ['UserName', ' | ', 'Email'], selectedMask: ['UserName'],  formFields: {'secondApproverEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn4816" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="secondApproverEmail">Second Approver Email</label>
+                        <input id="secondApproverEmail" name="secondApproverEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow12661818" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="show: { packageParam: ['ConditionalActorFirstApprover', 'ConditionalActorSecondApprover'] } ">
+                <div id="quickHeadingColumn13618" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14618" name="quickHeadingSmall14618" class="text-center  "
+                    style=" font-weight: bold; ">Signatures</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow1802222" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn18122" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_18222" name="p_18222" class="text-left  "><strong>Note to Approvers: </strong> Please enter your name and then click
+                        the <strong>Approve</strong> button below.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow140" name="quickInputsRow" class="text-left row "
+            data-bind="show: { packageParam: ['ConditionalActorFirstApprover', 'ConditionalActorSecondApprover'] }">
+                <div id="quickInputsColumn141" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  "
+                data-bind="readonly: { packageParam: ['ConditionalActorSecondApprover'] } ">
+                    <div class="text-left  ">
+                        <label for="firstApproverSign">First Approver: Please Enter Your Name</label>
+                        <input id="firstApproverSign"
+                        name="firstApproverSign" class="text-left  " required="required" type="text"
+                        data-bind="readonly: { packageParam: ['ConditionalActorSecondApprover'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn143" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="firstApproverSignDate">Date</label>
+                        <input id="firstApproverSignDate" name="firstApproverSignDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col167" name="col167" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="readonly: { packageParam: ['ConditionalActorSecondApprover'] } ">
+                    <label for="firstAppNotes">Notes from First Approver</label>
+                    <textarea id="firstAppNotes" name="firstAppNotes"
+                    class="text-left  " data-bind="readonly: { packageParam: ['ConditionalActorSecondApprover'] } "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow146" name="quickInputsRow" class="text-left row "
+            data-bind="show: { packageParam: ['ConditionalActorSecondApprover'] } ">
+                <div id="quickInputsColumn147" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="secondApproverSign">Second Approver: Please Enter Your Name</label>
+                        <input id="secondApproverSign"
+                        name="secondApproverSign" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn149" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="secondApproverSignDate">Date</label>
+                        <input id="secondApproverSignDate" name="secondApproverSignDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col170" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="secondAppNotes">Notes from Second Approver</label>
+                    <textarea id="secondAppNotes" name="secondAppNotes"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickParagraphRow56" name="quickParagraphRow" class="text-left row originatorNote "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn57" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_58" name="p_12139" class="text-left  "><strong>Note to Originator: </strong>You are required to attach at least
+                        one document before submitting this form.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow70" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn71" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall72" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+                <div id="col73" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationAddressId">organizationAddressID (hidden)</label>
+                        <input id="organizationAddressId"
+                        name="organizationAddressId" class="text-left  " />
+                    </div>
+                </div>
+                <div id="col176" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="invoiceAmt">invoiceAmt (hidden/export)</label>
+                        <input id="invoiceAmt" name="invoiceAmt"
+                        class="text-left  " type="Number" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

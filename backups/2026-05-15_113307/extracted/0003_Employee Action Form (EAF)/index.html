@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="loadingSpinner.css" />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row1189" class="text-left row fd-form-masthead ">
+                <div id="col1190" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn1191" name="revisedOn" class="col-sm-12 text-right  ">Revised 03/26</span>
+                </div>
+                <div id="col1192" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele1193" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col1194" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele1195" name="ele21" class="text-left form-title ">Employee Action Form (EAF)</h1>
+                </div>
+                <div id="col1196" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele1197" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row1175" class="text-left row ">
+                <div id="col1176" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote1177" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="row14" class="text-left row ">
+                <div id="col17" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="colleagueID">Employee ID</label>
+                        <input id="colleagueID" name="colleagueID" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col681" class="col-xs-12 col-sm-2 text-left  " style=" padding:0px 0px 0px 0px;  margin:20px 0px 0px 0px; ">
+                    <button id="personIdSearchBtn" name="personIdSearchBtn" class="col-sm-12 text-left btn btn-primary "
+                    style="" undefined="">Search</button>
+                </div>
+                <div id="col15" class="col-xs-12 col-sm-6 text-left hide ">
+                    <div class="text-left  ">
+                        <label for="employeeName">Employee Name</label>
+                        <input id="employeeName" name="employeeName" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col842" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeFirstName">Employee First Name</label>
+                        <input id="employeeFirstName" name="employeeFirstName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col843" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeLastName">Employee Last Name</label>
+                        <input id="employeeLastName" name="employeeLastName"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickDropdownRow313" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn314" name="quickDropdownColumn" class="col-xs-12 col-sm-8 text-left  ">
+                    <label for="actionType">Action Type</label>
+                    <select id="actionType" name="actionType" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Additional Appointment">Additional Appointment</option>
+                        <option value="Remove Additional Appointment">Remove Additional Appointment</option>
+                        <option value="End Probation">End Probation</option>
+                        <option value="Leave">Leave</option>
+                        <option value="New Position">New Position</option>
+                        <option value="Pay Adjustment">Pay Adjustment</option>
+                        <option value="Probation Extension">Probation Extension</option>
+                        <option value="Return from leave">Return from leave</option>
+                        <option value="Stipend Request">Stipend Request</option>
+                        <option value="Separation">Separation</option>
+                    </select>
+                </div>
+                <div id="col678" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">Date</label>
+                        <input id="originationDate" name="originationDate" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow632" name="quickHeadingRow" class="text-left row currentPositionRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn633" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall634" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Position Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow16644" name="quickInputsRow" class="text-left row currentPositionRow ">
+                <div id="quickInputsColumn1694" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentPositionTitle">Position Title</label>
+                        <input id="currentPositionTitle" name="currentPositionTitle"
+                        class="text-left  " required="required" type="text" data-bind="autocomplete: { localSource: 'personsPositionsList',  labelMask: ['positionTitle', ' | ', 'positionCode', ' | ', 'campusTitle'],  selectedMask: ['positionTitle'],  formFields: {'currentPositionID':'positionCode', 'currentCampus':'campusTitle', 'positionGUID' : 'positionGUID', 'departmentGUID' : 'positionDepartmentGUID','supervisorGUID' : 'supervisorGUID'&#10;} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn1674" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentPositionID">Position ID</label>
+                        <input id="currentPositionID" name="currentPositionID"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col1005" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left hide ">
+                        <label for="positionGUID">positionGUID</label>
+                        <input id="positionGUID" name="positionGUID" class="text-left hide "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col1008" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left hide ">
+                        <label for="supervisorGUID">supervisorGUID</label>
+                        <input id="supervisorGUID" name="supervisorGUID"
+                        class="text-left hide " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow166" name="quickInputsRow" class="text-left row currentPositionRow ">
+                <div id="quickInputsColumn167" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentCampus">Campus / Site</label>
+                        <input id="currentCampus" name="currentCampus" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col1002" class="col-xs-12 col-sm-6 text-left hide ">
+                    <div class="text-left  ">
+                        <label for="departmentGUID">departmentGUID</label>
+                        <input id="departmentGUID" name="departmentGUID"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn169" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentDepartment">Department</label>
+                        <input id="currentDepartment" name="currentDepartment"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow166445858" name="quickInputsRow" class="text-left row currentPositionRow ">
+                <div id="quickInputsColumn169458" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorName">Supervisor</label>
+                        <input id="supervisorName" name="supervisorName" class="text-left  "
+                        type="text" data-bind="autocomplete: { integrationSource: 'Security_Get_CW_Employees',  clearOnFocus: true,  labelMask: ['UserName', ' | ', 'Email'], selectedMask: ['UserName'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn167458" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="timeEntryApprover">Time Entry Approver</label>
+                        <input id="timeEntryApprover" name="timeEntryApprover"
+                        class="text-left  " type="text" data-bind="autocomplete: { integrationSource: 'Security_Get_CW_Employees',  clearOnFocus: true,  validate: true,  labelMask: ['UserName'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="NewPos45757" name="NewPos4" class="text-left row currentPositionRow ">
+                <div id="quickInputsColumn59757" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="currentPosEmployeeClassification">Employee Classification</label>
+                    <select id="currentPosEmployeeClassification"
+                    name="currentPosEmployeeClassification" class="col-sm-6 text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Adjunct Non-teaching">Adjunct Non-teaching</option>
+                        <option value="Adjunct Teaching">Adjunct Teaching</option>
+                        <option value="FT Classified">FT Classified</option>
+                        <option value="FT Exempt ">FT Exempt</option>
+                        <option value="FT Faculty">FT Faculty</option>
+                        <option value="FT Teamster">FT Teamster</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Operating Engineers">Operating Engineers</option>
+                        <option value="PT Classified">PT Classified</option>
+                        <option value="PT Exempt">PT Exempt</option>
+                        <option value="PT Hourly">PT Hourly</option>
+                        <option value="PT Teamster">PT Teamster</option>
+                        <option value="Public Safety">Public Safety</option>
+                        <option value="Student">Student</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickHeadingRow6326767" name="quickHeadingRow" class="text-left row returnFromLeaveRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn63367" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall63467" name="quickHeadingSmall63467" class="text-center  "
+                    style=" font-weight: bold; ">Return from Leave</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow1126" name="quickInputsRow" class="text-left row returnFromLeaveRow ">
+                <div id="quickInputsColumn1127" name="quickInputsColumn1" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeReturningDate">Date employee will be returning</label>
+                        <input id="employeeReturningDate"
+                        name="employeeReturningDate" class="text-left  " required="required" type="text"
+                        data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow636" name="quickHeadingRow" class="text-left row additionalAppointmentRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn637" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall638" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Additional Appointment</h4>
+                </div>
+            </div>
+            <div id="additionalApptPosition" name="additionalApptPosition" class="text-left row additionalAppointmentRow "
+            style="overflow: auto;  border-bottom: 1px solid #D3D3D3; " data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addlApptAddPosition' } ">
+                <div id="quickInputsColumn1679" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="addApptCampus">Campus / Site</label>
+                    <select id="addApptCampus" name="addApptCampus" class="text-left  "
+                    required="required" xdata-bind="autocomplete: { integrationSource: 'Web_Ethos_Get_Locations',  clearOnFocus: true,  labelMask: ['title'] } ">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="College Wide">College Wide</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                        <option value="Southfield">Southfield</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn1699" name="quickInputsColumn2" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addApptDepartment">Department</label>
+                        <input id="addApptDepartment" name="addApptDepartment"
+                        class="text-left  " type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_HR_Departments',  validate: true,  labelMask: ['DepartmentCode', ' | ', 'DepartmentName'],  selectedMask: ['DepartmentName'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col282" class="col-xs-12 col-sm-1 text-center  " style=" padding:32px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <button id="removePosition" name="removePosition" class="text-left  "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col693" class="col-xs-12 col-sm-6 text-left column hidden ">
+                    <div class="text-left  ">
+                        <label for="addApptLocationID">LocationID</label>
+                        <input id="addApptLocationID" name="addApptLocationID"
+                        class="text-left  " placeholder="LocationID" type="text" />
+                    </div>
+                    <div class="text-left  ">
+                        <label for="addApptDepartmentID">addApptDepartmentID</label>
+                        <input id="addApptDepartmentID" name="addApptDepartmentID"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col1058" class="col-xs-12 col-sm-12 text-left  "><span id="ele1059" name="ele1059" class="text-left  "><div class="col-xs-12 col-sm-6 text-left">
+	<label for="addApptTitle">Position Title</label>
+	<input id="addApptTitle" name="addApptTitle" class="col-sm-6 text-left" type="text" data-bind="autocomplete: { localSource: 'filteredPositionTitle',  labelMask: ['PositionID', ' - ', 'PositionTitle'],  formFields: {'addApptPositionID':'PositionID'} } " />					
+</div>
+<div class="col-xs-12 col-sm-6 text-left">
+	<label for="addApptPositionID">Position ID</label>
+	<input id="addApptPositionID" name="addApptPositionID" class="col-sm-6 text-left" type="text" />
+</div>
+<div class="col-xs-12 col-sm-6 text-left">
+	<label for="addApptSupervisor">Primary Supervisor</label>
+	<input id="addApptSupervisor" name="addApptSupervisor" class="col-sm-6 text-left" type="text" />					
+</div>
+<div class="col-xs-12 col-sm-6 text-left">
+	<label for="addApptAlternateSupervisor">Alternate Supervisor</label>
+	<input id="addApptAlternateSupervisor" name="addApptAlternateSupervisor" class="col-sm-6 text-left" type="text" />					
+</div></span>
+                </div>
+                <div id="col1061" class="col-xs-12 col-sm-12 text-left  "><span id="ele1062" name="ele1062" class="text-left  "><div class="col-xs-12 col-sm-6 text-left">
+    <label for="employeeClassificationAdditionalAppointment">Employee Classification</label>
+    <select id="employeeClassificationAdditionalAppointment" name="employeeClassificationAdditionalAppointment" class="text-left">
+        <option value=""></option>
+        <option value="Adjunct Non-Teaching">Adjunct Non-Teaching</option>
+        <option value="Adjunct Teaching">Adjunct Teaching</option>
+        <option value="FT Classified">FT Classified</option>
+        <option value="FT Exempt">FT Exempt</option>
+		<option value="FT Faculty">FT Faculty</option>
+        <option value="FT Teamster">FT Teamster</option>
+        <option value="Maintenance">Maintenance</option>
+        <option value="Operating Engineers">Operating Engineers</option>
+        <option value="PT Classified">PT Classified</option>
+        <option value="PT Exempt">PT Exempt</option>
+        <option value="PT Faculty">PT Faculty</option>
+        <option value="PT Hourly">PT Hourly</option>
+        <option value="PT Teamster">PT Teamster</option>
+        <option value="Public Safety">Public Safety</option>
+        <option value="Student">Student</option>
+        <option value="Temporary Full-Time Faculty">Temporary Full-Time Faculty</option>
+    </select>
+</div></span>
+                </div>
+                <div id="col265" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addApptStartingDate">Starting Date</label>
+                        <input id="addApptStartingDate" name="addApptStartingDate"
+                        class="text-left  " type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col266" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addApptEndingDate">Ending Date</label>
+                        <input id="addApptEndingDate" name="addApptEndingDate"
+                        class="text-left  " type="text" data-bind="datepicker: { minDate: 'addApptStartingDate' } "
+                        />
+                    </div>
+                </div>
+                <div id="col267" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addApptAmount">Amount</label>
+                        <input id="addApptAmount" name="addApptAmount" class="text-left  "
+                        data-bind="addOn: { type: 'prepend',  snippet: '$' } " />
+                    </div>
+                </div>
+                <div id="col268" class="col-xs-12 col-sm-12 text-left  " style=" border-bottom: 1px solid #D3D3D3; ">
+                    <label for="addApptComment">Comment / Reason</label>
+                    <textarea id="addApptComment" name="addApptComment"
+                    class="text-left  "></textarea>
+                </div>
+                <div id="col320" class="col-xs-12 col-sm-12 text-left  "><span id="addAppointmentSpan" name="addApptGLNumber" class="text-left  "><div class="col-xs-12 col-sm-6 text-left  ">
+	<label for="addApptGLNumber">General Ledger Number</label>
+	<input id="addApptGLNumber" name="addApptGLNumber" class="col-sm- text-left  " type="text" data-bind="mask: '999-99-999999-99999' " />
+</div>
+<div class="col-xs-12 col-sm-6 text-left  ">
+	<label for="addApptGLNumberDesc">Description</label>
+	<input id="addApptGLNumberDesc" name="addApptGLNumberDesc" class="col-sm- text-left  " type="text" readonly="true" />					
+</div>
+<div class="col-xs-12 col-sm-6 text-left  ">
+	<label for="grantFundedAddApp">Grant Funded?</label>
+	<select id="grantFundedAddApp" name="grantFundedAddApp" class="col-sm- text-left  ">
+		<option value=""></option>
+		<option value="Yes">Yes</option>
+		<option value="No">No</option>
+	</select>
+</div>
+                </span>
+                </div>
+                <div id="col881" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele882" name="ele882" class="text-left  " style=" border-color:#046A38; "
+                    />
+                </div>
+            </div>
+            <div id="additionalApptBtnRow" name="additionalApptBtnRow" class="text-left row additionalAppointmentRow ">
+                <div id="col28510" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="addlApptAddPosition" name="addlApptAddPosition" class="col-sm-12 text-left btn btn-primary "
+                    style="" undefined="">Add Additional Appointment</button>
+                </div>
+            </div>
+            <div id="quickHeadingRow1144" name="quickHeadingRow" class="text-left row removeAppointmentRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1145" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1146" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Remove Additional Appointment</h4>
+                </div>
+            </div>
+            <div id="additionalApptPosition1148" name="additionalApptPosition" class="text-left row removeAppointmentRow "
+            style="overflow: auto;  border-bottom: 1px solid #D3D3D3; " data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addlApptAddPosition' } ">
+                <div id="quickInputsColumn1149" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="removeApptCampus1150">Campus / Site</label>
+                    <select id="removeApptCampus1150" name="removeApptCampus"
+                    class="text-left  " required="required" xdata-bind="autocomplete: { integrationSource: 'Web_Ethos_Get_Locations',  clearOnFocus: true,  labelMask: ['title'] } ">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="College Wide">College Wide</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                        <option value="Southfield">Southfield</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn1151" name="quickInputsColumn2" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="removeApptDepartment">Department</label>
+                        <input id="removeApptDepartment" name="removeApptDepartment"
+                        class="text-left  " type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_HR_Departments',  validate: true,  labelMask: ['DepartmentCode', ' | ', 'DepartmentName'],  selectedMask: ['DepartmentName'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col1153" class="col-xs-12 col-sm-1 text-center  " style=" padding:32px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <button id="removePosition1154" name="removePosition" class="text-left  "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col1155" class="col-xs-12 col-sm-6 text-left column hidden ">
+                    <div class="text-left  ">
+                        <label for="removeApptLocationID">LocationID</label>
+                        <input id="removeApptLocationID" name="removeApptLocationID"
+                        class="text-left  " placeholder="LocationID" type="text" />
+                    </div>
+                    <div class="text-left  ">
+                        <label for="removeApptDepartmentID">addApptDepartmentID</label>
+                        <input id="removeApptDepartmentID" name="removeApptDepartmentID"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col1158" class="col-xs-12 col-sm-12 text-left  "><span id="ele1159" name="ele1059" class="text-left  "><div class="col-xs-12 col-sm-6 text-left">
+	<label for="addApptTitle">Position Title</label>
+	<input id="addApptTitle" name="addApptTitle" class="col-sm-6 text-left" type="text" data-bind="autocomplete: { localSource: 'filteredPositionTitle',  labelMask: ['PositionID', ' - ', 'PositionTitle'],  formFields: {'addApptPositionID':'PositionID'} } " />					
+</div>
+<div class="col-xs-12 col-sm-6 text-left">
+	<label for="addApptPositionID">Position ID</label>
+	<input id="addApptPositionID" name="addApptPositionID" class="col-sm-6 text-left" type="text" />
+</div></span>
+                </div>
+                <div id="col1160" class="col-xs-12 col-sm-6 text-left  "><span id="ele1161" name="ele1062" class="col-sm-12 text-left  "><div class="col-xs-12 text-left">
+    <label for="employeeClassificationAdditionalAppointment">Employee Classification</label>
+    <select id="employeeClassificationAdditionalAppointment" name="employeeClassificationAdditionalAppointment" class="text-left">
+        <option value=""></option>
+        <option value="Adjunct Non-Teaching">Adjunct Non-Teaching</option>
+        <option value="Adjunct Teaching">Adjunct Teaching</option>
+        <option value="FT Classified">FT Classified</option>
+        <option value="FT Exempt">FT Exempt</option>
+		<option value="FT Faculty">FT Faculty</option>
+        <option value="FT Teamster">FT Teamster</option>
+        <option value="Maintenance">Maintenance</option>
+        <option value="Operating Engineers">Operating Engineers</option>
+        <option value="PT Classified">PT Classified</option>
+        <option value="PT Exempt">PT Exempt</option>
+        <option value="PT Faculty">PT Faculty</option>
+        <option value="PT Hourly">PT Hourly</option>
+        <option value="PT Teamster">PT Teamster</option>
+        <option value="Public Safety">Public Safety</option>
+        <option value="Student">Student</option>
+        <option value="Temporary Full-Time Faculty">Temporary Full-Time Faculty</option>
+    </select>
+</div></span>
+                </div>
+                <div id="col1164" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="removeApptEndingDate">Ending Date</label>
+                        <input id="removeApptEndingDate" name="removeApptEndingDate"
+                        class="text-left  " type="text" data-bind="datepicker: { minDate: 'addApptStartingDate' } "
+                        />
+                    </div>
+                </div>
+                <div id="col1168" class="col-xs-12 col-sm-12 text-left  " style=" border-bottom: 1px solid #D3D3D3; ">
+                    <label for="removeApptComment1169">Comment / Reason</label>
+                    <textarea id="removeApptComment1169" name="removeApptComment"
+                    class="text-left  "></textarea>
+                </div>
+                <div id="col1172" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele1173" name="ele882" class="text-left  " style=" border-color:#046A38; "
+                    />
+                </div>
+            </div>
+            <div id="leaveRowTitle" name="leaveRowTitle" class="text-left row leaveRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn64161" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="Leave" name="Leave" class="text-center  " style=" font-weight: bold; ">Leave</h4>
+                </div>
+            </div>
+            <div id="leaveTable" name="leaveTable" class="text-left row leaveRow "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addAdditionalLeave',  maxLength: 50 } ">
+                <div id="quickInputsColumn560" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="leaveStartDate">Leave Start Date</label>
+                        <input id="leaveStartDate" name="leaveStartDate"
+                        class="text-left  " type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn562" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="leaveEndDate">Leave End Date</label>
+                        <input id="leaveEndDate" name="leaveEndDate" class="text-left  "
+                        type="text" data-bind="datepicker: { minDate: 'leaveStartDate' } " />
+                    </div>
+                </div>
+                <div id="col720" class="col-xs-12 col-sm-5 text-left  ">
+                    <label for="leaveType">Leave Type</label>
+                    <select id="leaveType" name="leaveType" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Educational">Educational</option>
+                        <option value="Family">Family</option>
+                        <option value="General">General</option>
+                        <option value="Long Term Disability">Long Term Disability</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Military">Military</option>
+                        <option value="Parental">Parental</option>
+                        <option value="Sabbatical">Sabbatical</option>
+                        <option value="Short Term Disability">Short Term Disability</option>
+                        <option value="Worker's Compensation">Worker's Compensation</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div id="col726" class="col-xs-12 col-sm-1 text-left  " style=" padding:32px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <button id="removeLeave" name="removeLeave" class="text-left  " style=""
+                    undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col812" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="leaveComments">Comments</label>
+                    <textarea id="leaveComments" name="leaveComments" class="text-left  "></textarea>
+                </div>
+                <div id="col1031" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele1032" name="ele1032" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="leave3" name="leave3" class="text-left row leaveRow ">
+                <div id="col285101856" class="col-xs-12 col-sm-4 text-left columnX " style=" padding:25px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <button id="addAdditionalLeave" name="addAdditionalLeave" class="col-sm-12 text-left btn btn-primary "
+                    style="" undefined="">Add Additional Leave Dates</button>
+                </div>
+            </div>
+            <div id="newEmployee1" name="newEmployee1" class="text-left row newEmployeeRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn641616263646162" name="quickHeadingColumn"
+                class="col-xs-12 col-sm-12 text-left  " style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall642616263646162" name="quickHeadingSmall642616263646162"
+                    class="text-center  " style=" font-weight: bold; ">New Employee</h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow8675454" name="quickHeadingRow" class="text-left row endProbationRow ">
+                <div id="quickHeadingColumn86854" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest86954" name="quickHeadingSmallest86954" class="text-left  "><strong>New Employee is not to start until Human Resources receives their I-9 form.</strong></h5>
+                </div>
+            </div>
+            <div id="newEmployeeRow" name="newEmployeeRow" class="text-left row newEmployeeRow "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addAdditionalNewPosition',  maxLength: 10 } ">
+                <div id="quickInputsColumn328" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="newEmpCampus">Campus / Site</label>
+                    <select id="newEmpCampus" name="newEmpCampus" class="text-left  "
+                    xdata-bind="autocomplete: { integrationSource: 'Web_Ethos_Get_Locations',  clearOnFocus: true,  labelMask: ['title'] } ">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="College Wide">College Wide</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                        <option value="Southfield">Southfield</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn330" name="quickInputsColumn2" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newEmpDepartment">Department</label>
+                        <input id="newEmpDepartment" name="newEmpDepartment"
+                        class="text-left  " type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_HR_Departments',  validate: true,  labelMask: ['DepartmentCode', ' | ', 'DepartmentName'],  selectedMask: ['DepartmentName'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col908" class="col-xs-12 col-sm-1 text-center  ">
+                    <button id="removeNewPosButton" name="removeNewPosButton" class="text-left  "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col885" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newEmpPositionTitle">Position Title</label>
+                        <input id="newEmpPositionTitle" name="newEmpPositionTitle"
+                        class="text-left  " xdata-bind="autocomplete: { integrationSource: 'Web_Ethos_Get_Active_Positions',  clearOnFocus: true,  validate: true,  labelMask: ['title', ' (', 'code', ')'],  selectedMask: ['title'],  formFields: {'newEmpPositionId':'code'}} "
+                        />
+                    </div>
+                </div>
+                <div id="col889" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newEmpPositionId">Position ID</label>
+                        <input id="newEmpPositionId" name="newEmpPositionId"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col1064" class="col-xs-12 col-sm-12 text-left  "><span id="ele1065" name="ele1065" class="text-left  "><div class="col-xs-12 col-sm-6 text-left">
+	<label for="newEmpSupervisor">Primary Supervisor</label>
+	<input id="newEmpSupervisor" name="newEmpSupervisor" class="col-sm-6 text-left" type="text" />					
+</div>
+<div class="col-xs-12 col-sm-6 text-left">
+	<label for="newEmpAltSupervisor">Alternate Supervisor</label>
+	<input id="newEmpAltSupervisor" name="newEmpAltSupervisor" class="col-sm-6 text-left" type="text" />					
+</div></span>
+                </div>
+                <div id="col898" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="newEmpEmployeeType">Employee Classification</label>
+                    <select id="newEmpEmployeeType" name="newEmpEmployeeType"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Adjunct Non-Teaching">Adjunct Non-Teaching</option>
+                        <option value="Adjunct Teaching">Adjunct Teaching</option>
+                        <option value="FT Classified">FT Classified</option>
+                        <option value="FT Exempt ">FT Exempt</option>
+                        <option value="FT Faculty">FT Faculty</option>
+                        <option value="FT Teamster">FT Teamster</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Operating Engineers">Operating Engineers</option>
+                        <option value="PT Classified">PT Classified</option>
+                        <option value="PT Exempt">PT Exempt</option>
+                        <option value="PT Hourly">PT Hourly</option>
+                        <option value="PT Teamster">PT Teamster</option>
+                        <option value="Public Safety">Public Safety</option>
+                        <option value="Student">Student</option>
+                        <option value="Temporary Full-Time Faculty">Temporary Full-Time Faculty</option>
+                    </select>
+                </div>
+                <div id="col899" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newEmpDesiredStartDate">Desired Start Date</label>
+                        <input id="newEmpDesiredStartDate" name="newEmpDesiredStartDate"
+                        class="text-left  " type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col900" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newEmpRate">Rate</label>
+                        <input id="newEmpRate" name="newEmpRate" class="text-left  "
+                        type="text" data-bind="addOn: { type: 'prepend',  snippet: '$' } " />
+                    </div>
+                </div>
+                <div id="col969" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="grantFundedNewEmp">Grant Funded?</label>
+                    <select id="grantFundedNewEmp" name="grantFundedNewEmp"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="col909" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele912" name="ele912" class="text-left  " style=" border-color:#046A38; "
+                    />
+                </div>
+            </div>
+            <div id="newEmployee9" name="newEmployee9" class="text-left row newEmployeeRow ">
+                <div id="col2851018" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="addAdditionalNewPosition" name="addAdditionalNewPosition"
+                    class="col-sm-12 text-left btn btn-primary " style="" undefined="">Add Additional Position</button>
+                </div>
+            </div>
+            <div id="payAdjust1" name="payAdjust1" class="text-left row payAdjustmentRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn64161626364" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall64261626364" name="quickHeadingSmall64261626364"
+                    class="text-center  " style=" font-weight: bold; ">Pay Adjustment</h4>
+                </div>
+            </div>
+            <div id="payAdjust2" name="payAdjust2" class="text-left row payAdjustmentRow ">
+                <div id="quickInputsColumn427" name="quickInputsColumn2" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="adjStartDate">Start Date</label>
+                        <input id="adjStartDate" name="adjStartDate" class="text-left  "
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn429" name="quickInputsColumn3" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="adjEndDate">End Date</label>
+                        <input id="adjEndDate" name="adjEndDate" class="text-left  "
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="payAdjust3" name="payAdjust3" class="text-left row payAdjustmentRow ">
+                <div id="quickInputsColumn433" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="adjustTerm">Term</label>
+                        <input id="adjustTerm" name="adjustTerm" class="text-left  "
+                        type="text" data-bind="autocomplete: { localSource: 'AcademicPeriodsAutocomplete',  clearOnFocus: true,  validate: true,  labelMask: ['termCode', ' (', 'termTitle', ')'],  selectedMask: ['termCode'],  formFields: {'termGUID':'termGUID'} } "
+                        />
+                    </div>
+                    <div class="text-left hide ">
+                        <label for="termGUID">termGUID</label>
+                        <input id="termGUID" name="termGUID" class="text-left hide "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn435" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="adjustCourseSection">Course Section</label>
+                        <input id="adjustCourseSection" name="adjustCourseSection"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="payAdjust4" name="payAdjust4" class="text-left row payAdjustmentRow ">
+                <div id="col815" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="adjustmentType">Adjustment Type</label>
+                    <select id="adjustmentType" name="adjustmentType"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="One Time">One Time</option>
+                        <option value="Ongoing">Ongoing</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn439" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="adjustCurrentAmount">Current Amount</label>
+                        <input id="adjustCurrentAmount" name="adjustCurrentAmount"
+                        class="text-left  " type="text" data-bind="addOn: { type: 'prepend',  snippet: '$' } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn441" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="adjustAdjustedAmount">Proposed Amount</label>
+                        <input id="adjustAdjustedAmount" name="adjustAdjustedAmount"
+                        class="text-left  " type="text" data-bind="addOn: { type: 'prepend',  snippet: '$' } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="payAdjust5" name="payAdjust5" class="text-left row payAdjustmentRow ">
+                <div id="quickTextAreaColumn39230" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="adjustComment">Comment / Reason</label>
+                    <textarea id="adjustComment" name="adjustComment"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="payAdjustAccountingRow" name="payAdjustAccountingRow" class="text-left row payAdjustmentRow "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'payAdjustAddAdditionalAccount' }  ">
+                <div id="quickInputsColumn3702262" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="payAdjustAccountingInfo">General Ledger Number</label>
+                        <input id="payAdjustAccountingInfo" name="payAdjustAccountingInfo"
+                        class="text-left  " type="text" data-bind="mask: '999-99-999999-99999' "
+                        />
+                    </div>
+                </div>
+                <div id="col839" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="payAdjustAccountingInfoDesc">Description</label>
+                        <input id="payAdjustAccountingInfoDesc" name="payAdjustAccountingInfoDesc"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col3722262" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="payAdjustEmpGLPercent">Percentage</label>
+                        <input id="payAdjustEmpGLPercent" name="payAdjustEmpGLPercent"
+                        class="text-left  " type="text" data-bind="addOn: { type: 'append',  snippet: '%' }, numeric: { type: 'decimal',  allowNegative: false,  max: 100,  precision: 1 }  "
+                        />
+                    </div>
+                </div>
+                <div id="col3752262" class="col-xs-12 col-sm-1 text-center  " style=" padding:32px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <button id="payAdjustEmpRemoveGL62" name="payAdjustEmpRemoveGL" class="text-left  "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col1022" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele1023" name="ele1023" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="payChange56363" name="payChange5" class="text-left row payAdjustmentRow ">
+                <div id="col28510182363" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="payAdjustAddAdditionalAccount" name="payAdjustAddAdditionalAccount"
+                    class="col-sm-12 text-left btn btn-primary " style="" undefined="">Add Additional Account</button>
+                </div>
+                <div id="col980" class="col-xs-12 col-sm-4 text-left  "><span id="ele982" name="ele982" class="text-left  "></span>
+                </div>
+                <div id="col981" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <input id="payAdjusmentTotal" name="payAdjusmentTotal" class="text-left  "
+                        type="text" data-bind="calculate: 'payAdjustAccountingRow:payAdjustEmpGLPercent' , addOn: { type: 'prepend',  snippet: '% Total' } , numeric: { type: 'decimal'}"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="separation1" name="separation1" class="text-left row separationRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn6416162" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall6426162" name="quickHeadingSmall6426162" class="text-center  "
+                    style=" font-weight: bold; ">Separation</h4>
+                </div>
+            </div>
+            <div id="separation2" name="separation2" class="text-left row separationRow ">
+                <div id="quickParagraphColumn531" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "><span id="quickParagraphElement532" name="quickParagraphElement" class="text-left  "><strong>Separation Reason</strong></span>
+                </div>
+            </div>
+            <div id="separation3" name="separation3" class="text-left row separationRow ">
+                <div id="radioCol503" name="radioCol1" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="separationReasonResignation" name="separationReason" class="text-left margin-right: 5px; "
+                    style=" margin-right: 10px;&#10; " type="radio" value="Resignation" />
+                    <label for="separationReasonResignation">Resignation</label>
+                </div>
+                <div id="radioCol505" name="radioCol2" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="separationReasonRetirement" name="separationReason" class="text-left  "
+                    style=" margin-right: 5px;&#10; " type="radio" value="Retirement" />
+                    <label for="separationReasonRetirement">Retirement</label>
+                </div>
+                <div id="radioCol507" name="radioCol3" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="separationReasonEnd" name="separationReason" class="text-left  "
+                    style=" margin-right: 5px; " type="radio" value="Assignment / Contract End"
+                    />
+                    <label for="separationReasonEnd">Assignment / Contract End</label>
+                </div>
+            </div>
+            <div id="separation4" name="separation4" class="text-left row separationRow ">
+                <div id="radioCol50341" name="radioCol1" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="separationReasonGrantEnd" name="separationReason" class="text-left margin-right: 5px; "
+                    style=" margin-right: 10px;&#10; " type="radio" value="Grant Funds End"
+                    />
+                    <label for="separationReasonGrantEnd">Grant Funds End</label>
+                </div>
+                <div id="radioCol50541" name="radioCol2" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="separationReasonInvoluntary" name="separationReason" class="text-left  "
+                    style=" margin-right: 5px;&#10; " type="radio" value="Involuntary Separation"
+                    />
+                    <label for="separationReasonInvoluntary">Involuntary Separation</label>
+                </div>
+                <div id="radioCol50741" name="radioCol3" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="separationReasonLayoff" name="separationReason" class="text-left  "
+                    style=" margin-right: 5px; " type="radio" value="Layoff" />
+                    <label for="separationReasonLayoff">Layoff</label>
+                </div>
+            </div>
+            <div id="separation5" name="separation5" class="text-left row separationRow ">
+                <div id="radioCol5034142" name="radioCol1" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="separationReasonInactive" name="separationReason" class="text-left margin-right: 5px; "
+                    style=" margin-right: 10px;&#10; " type="radio" value="Inactive" />
+                    <label for="separationReasonInactive">Inactive</label>
+                </div>
+                <div id="col1100" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="separationReasonDeceased" name="separationReason" class="text-left  "
+                    type="radio" value="Death/Deceased" />
+                    <label for="separationReasonDeceased">Death/Deceased</label>
+                </div>
+            </div>
+            <div id="separation6" name="separation6" class="text-left row separationRow ">
+                <div id="quickInputsColumn42951" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="separationEndDate">End Date</label>
+                        <input id="separationEndDate" name="separationEndDate"
+                        class="text-left  " type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col745" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="separationSlotNumber">Slot Number</label>
+                        <input id="separationSlotNumber" name="separationSlotNumber"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col834" class="col-xs-12 col-sm-1 text-left hidden ">
+                    <div class="text-left  ">
+                        <label for="notifyFinance">notifyFinance</label>
+                        <input id="notifyFinance" name="notifyFinance" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="stipend1" name="stipend1" class="text-left row stipendRequestRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn64161" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall64261" name="quickHeadingSmall64261" class="text-center  "
+                    style=" font-weight: bold; ">Stipend Request</h4>
+                </div>
+            </div>
+            <div id="stipend4" name="stipend4" class="text-left row stipendRequestRow ">
+                <div id="quickTextAreaColumn3923033" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="stipendComment">Comment / Reason</label>
+                    <textarea id="stipendComment" name="stipendComment"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="stipend5" name="stipend5" class="text-left row stipendRequestRow ">
+                <div id="quickInputsColumn460" name="quickInputsColumn1" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="stipendStartDate">Start Date</label>
+                        <input id="stipendStartDate" name="stipendStartDate"
+                        class="text-left  " type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn462" name="quickInputsColumn2" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="stipendEndDate">End Date</label>
+                        <input id="stipendEndDate" name="stipendEndDate" class="text-left  "
+                        type="text" data-bind="datepicker: { minDate: 'stipendStartDate' } " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn464" name="quickInputsColumn3" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="stipendHours">Hours</label>
+                        <input id="stipendHours" name="stipendHours" class="text-left  "
+                        required="required" type="text" data-bind="numeric: { type: 'decimal',  allowNegative: false,  precision: 2 } "
+                        />
+                    </div>
+                </div>
+                <div id="col831" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="numberOfPayments">Number Of Payments</label>
+                        <input id="numberOfPayments" name="numberOfPayments"
+                        class="text-left  " type="text" data-bind="numeric: { type: 'int',  allowNegative: false } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn466" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="stipendAmount">Total Stipend Amount</label>
+                        <input id="stipendAmount" name="stipendAmount"
+                        class="text-left  " required="required" type="text" data-bind="addOn: { type: 'prepend',  snippet: '$' } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="stipend6" name="stipend6" class="text-left row stipendRequestRow ">
+                <div id="col1097" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="rateOfPay">Rate Of Pay</label>
+                        <input id="rateOfPay" name="rateOfPay" class="text-left  "
+                        data-bind="addOn: { type: 'prepend',  snippet: '$' } " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn470" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="stipendProject">Project</label>
+                    <select id="stipendProject" name="stipendProject" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn472" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  "
+                data-bind="visible: ( ( stipendProject() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="stipendProjectNumber">Project Number</label>
+                        <input id="stipendProjectNumber" name="stipendProjectNumber"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="stipend8" name="stipend8" class="text-left row stipendRequestRow ">
+                <div id="quickInputsColumn62165" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="grantFundedStipend">Grant Funded</label>
+                    <select id="grantFundedStipend" name="grantFundedStipend"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="stipendAccountingRow" name="stipendAccountingRow" class="text-left row stipendRequestRow "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'stipendAddAdditionalAccount' }  ">
+                <div id="quickInputsColumn3702236" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="stipendAccountingInfo">General Ledger Number</label>
+                        <input id="stipendAccountingInfo" name="stipendAccountingInfo"
+                        class="text-left  " type="text" data-bind="mask: '999-99-999999-99999' "
+                        />
+                    </div>
+                </div>
+                <div id="col851" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="stipendAccountingInfoDesc">Description</label>
+                        <input id="stipendAccountingInfoDesc" name="stipendAccountingInfoDesc"
+                        class="text-left  " required="required" readonly="true" />
+                    </div>
+                </div>
+                <div id="col3722236" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="stipendEmpGLPercent">Percentage</label>
+                        <input id="stipendEmpGLPercent" name="stipendEmpGLPercent"
+                        class="text-left  " type="text" data-bind="addOn: { type: 'append',  snippet: '%' }, numeric: { type: 'decimal',  allowNegative: false,  max: 100,  precision: 1 }  "
+                        />
+                    </div>
+                </div>
+                <div id="col3752236" class="col-xs-12 col-sm-1 text-center  " style=" padding:32px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <button id="stipendEmpRemoveGL" name="stipendEmpRemoveGL" class="text-left  "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col1025" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele1026" name="ele1026" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="stipend7" name="stipend7" class="text-left row stipendRequestRow ">
+                <div id="col28510182337" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="stipendAddAdditionalAccount" name="stipendAddAdditionalAccount"
+                    class="col-sm-12 text-left btn btn-primary " style="" undefined="">Add Additional Account</button>
+                </div>
+                <div id="col921" class="col-xs-12 col-sm-4 text-left  "><span id="ele922" name="ele922" class="text-left  "></span>
+                </div>
+                <div id="col918" class="col-xs-12 col-sm-4 text-left xhidden ">
+                    <div class="text-left  ">
+                        <input id="percentageTotal" name="percentageTotal" class="text-left  "
+                        readonly="true" type="text" data-bind="calculate: 'stipendAccountingRow:stipendEmpGLPercent' , addOn: { type: 'prepend',  snippet: '% Total' } , numeric: { type: 'decimal'} "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="NewPos1" name="NewPos1" class="text-left row newPositionRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn641" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall642" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">New Position</h4>
+                </div>
+            </div>
+            <div id="NewPos2" name="NewPos2" class="text-left row newPositionRow ">
+                <div id="quickInputsColumn3282053" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="newPosCampus">Campus / Site</label>
+                    <select id="newPosCampus" name="newPosCampus" class="text-left  "
+                    xdata-bind="autocomplete: { integrationSource: 'Web_Ethos_Get_Locations',  clearOnFocus: true,  validate: true,  labelMask: ['title', ' - ', 'code'],  selectedMask: ['title'] } ">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="College Wide">College Wide</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                        <option value="Southfield">Southfield</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn3302053" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPosDepartment">Department</label>
+                        <input id="newPosDepartment" name="newPosDepartment"
+                        class="text-left  " type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_HR_Departments',  validate: true,  labelMask: ['DepartmentCode', ' | ', 'DepartmentName'],  selectedMask: ['DepartmentName'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col703" class="col-xs-12 col-sm-6 text-left column hidden ">
+                    <div class="text-left  ">
+                        <label for="newPosCampusID">newPosCampusID</label>
+                        <input id="newPosCampusID" name="newPosCampusID"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col714" class="col-xs-12 col-sm-6 text-left column hidden ">
+                    <div class="text-left  ">
+                        <label for="newPosDepartmentID">newPosDepartmentID</label>
+                        <input id="newPosDepartmentID" name="newPosDepartmentID"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="NewPos3" name="NewPos3" class="text-left row newPositionRow ">
+                <div id="quickInputsColumn328202554" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPosPosition">Position</label>
+                        <input id="newPosPosition" name="newPosPosition" class="text-left  "
+                        type="text" xdata-bind="autocomplete: { integrationSource: 'Web_Ethos_Get_Active_Positions',  clearOnFocus: true,  validate: true,  labelMask: ['title', ' (', 'code', ')'],  selectedMask: ['title'],  formFields: {'newPosPositionID':'code'}} "
+                        />
+                    </div>
+                </div>
+                <div id="col717" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPosPositionID">Position ID</label>
+                        <input id="newPosPositionID" name="newPosPositionID"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn330202554" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPosStartDate">Start Date</label>
+                        <input id="newPosStartDate" name="newPosStartDate" class="text-left  "
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="NewPos4" name="NewPos4" class="text-left row newPositionRow ">
+                <div id="quickInputsColumn597" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="newPosEmployeeClassification">Employee Classification</label>
+                    <select id="newPosEmployeeClassification"
+                    name="newPosEmployeeClassification" class="col-sm-6 text-left  ">
+                        <option value=""></option>
+                        <option value="Adjunct Non-Teaching">Adjunct Non-Teaching</option>
+                        <option value="Adjunct Teaching">Adjunct Teaching</option>
+                        <option value="FT Classified">FT Classified</option>
+                        <option value="FT Exempt ">FT Exempt</option>
+                        <option value="FT Faculty">FT Faculty</option>
+                        <option value="FT Teamster">FT Teamster</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Operating Engineers">Operating Engineers</option>
+                        <option value="PT Classified">PT Classified</option>
+                        <option value="PT Exempt">PT Exempt</option>
+                        <option value="PT Hourly">PT Hourly</option>
+                        <option value="PT Teamster">PT Teamster</option>
+                        <option value="Public Safety">Public Safety</option>
+                        <option value="Student">Student</option>
+                        <option value="Temporary Full-Time Faculty">Temporary Full-Time Faculty</option>
+                    </select>
+                </div>
+                <div id="col610" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPosSupervisor">Primary Supervisor</label>
+                        <input id="newPosSupervisor" name="newPosSupervisor"
+                        class="text-left  " type="text" xdata-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  labelLength: 100,  clearOnFocus: true,  labelMask: ['UserName'],  selectedMask: ['UserName'],  formFields: {'newPosSupervisorEmail':'UserLoginID'} } "
+                        />
+                    </div>
+                    <div class="text-left  ">
+                        <input id="newPosSupervisorEmail" name="newPosSupervisorEmail" class="text-left  "
+                        style=" display:none " type="text" />
+                    </div>
+                </div>
+                <div id="col738" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPosAltSupervisor">Alternate Supervisor</label>
+                        <input id="newPosAltSupervisor" name="newPosAltSupervisor"
+                        class="text-left  " type="text" xdata-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  labelLength: 100,  clearOnFocus: true,  labelMask: ['UserName'],  selectedMask: ['UserName'],  formFields: {'newPosAltSupervisorEmail':'UserLoginID'} } "
+                        />
+                    </div>
+                    <div class="text-left  ">
+                        <input id="newPosAltSupervisorEmail" name="newPosAltSupervisorEmail" class="text-left  "
+                        style=" display:none " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="NewPos5" name="NewPos5" class="text-left row newPositionRow ">
+                <div id="quickInputsColumn615" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPosRate">Salary or Hourly Rate</label>
+                        <input id="newPosRate" name="newPosRate"
+                        class="text-left  " type="text" data-bind="addOn: { type: 'prepend',  snippet: '$' }"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn617" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPosGrade">Grade</label>
+                        <input id="newPosGrade" name="newPosGrade" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col828" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPosStep">Step</label>
+                        <input id="newPosStep" name="newPosStep" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="NewPos6" name="NewPos6" class="text-left row newPositionRow ">
+                <div id="col878" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPosSlotNumber">Slot Number</label>
+                        <input id="newPosSlotNumber" name="newPosSlotNumber"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn621" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="newPosGrantFunded">Grant Funded</label>
+                    <select id="newPosGrantFunded" name="newPosGrantFunded"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn623" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  "
+                data-bind="visible: ( ( newPosGrantFunded() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="newPosProjectNumber">Project Number</label>
+                        <input id="newPosProjectNumber" name="newPosProjectNumber"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="newPosAccountingRow" name="newPosAccountingRow" class="text-left row newPositionRow "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'newPosAddAdditionalAccount' }">
+                <div id="quickInputsColumn370223657" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPosAccountingInfo">General Ledger Number</label>
+                        <input id="newPosAccountingInfo" name="newPosAccountingInfo"
+                        class="text-left  " type="text" data-bind="mask: '999-99-999999-99999' "
+                        />
+                    </div>
+                </div>
+                <div id="col854" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPosAccountingInfoDesc">Description</label>
+                        <input id="newPosAccountingInfoDesc" name="newPosAccountingInfoDesc"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col372223657" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPosEmpGLPercent">Percentage</label>
+                        <input id="newPosEmpGLPercent" name="newPosEmpGLPercent"
+                        class="text-left  " type="text" data-bind="addOn: { type: 'append',  snippet: '%' }, numeric: { type: 'decimal',  allowNegative: false,  max: 100,  precision: 1 }  "
+                        />
+                    </div>
+                </div>
+                <div id="col375223657" class="col-xs-12 col-sm-1 text-center  " style=" padding:32px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <button id="newPosEmpRemoveGL" name="newPosEmpRemoveGL" class="text-left  "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col1028" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele1029" name="ele1029" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="newPos7" name="newPos7" class="text-left row newPositionRow "
+            xdata-bind="visible: ( ( actionType() == 'New Position' ) ) ">
+                <div id="col2851018233758" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="newPosAddAdditionalAccount" name="newPosAddAdditionalAccount"
+                    class="col-sm-12 text-left btn btn-primary " style="" undefined="">Add Additional Account</button>
+                </div>
+                <div id="col986" class="col-xs-12 col-sm-4 text-left  "><span id="ele988" name="ele988" class="text-left  "></span>
+                </div>
+                <div id="col987" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <input id="newPosAcctTotal" name="newPosAcctTotal" class="text-left  "
+                        type="text" data-bind="calculate: 'newPosAccountingRow:newPosEmpGLPercent', addOn: { type: 'prepend',  snippet: '% Total' } , numeric: { type: 'decimal'} "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="newPos8" name="newPos8" class="text-left row newPositionRow ">
+                <div id="quickTextAreaColumn39255" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="newPosComment">Comment / Reason</label>
+                    <textarea id="newPosComment" name="newPosComment"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="endProbation2" name="endProbation2" class="text-left row endProbationRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn6416157" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="endProbation" name="endProbation" class="text-center  " style=" font-weight: bold; ">End Probation</h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow867" name="quickHeadingRow" class="text-left row endProbationRow ">
+                <div id="quickHeadingColumn868" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest869" name="quickHeadingSmallest" class="text-left  "><strong>Please note that all absences during probation shall extend the probationary period on a day-for-day basis. Additionally, any holiday time that may fall within the probationary period is not factored into the count of working days.</strong></h5>
+                </div>
+            </div>
+            <div id="quickInputsRow1036" name="quickInputsRow" class="text-left row endProbationRow "></div>
+            <div id="endProbation3" name="endProbation3" class="text-left row endProbationRow ">
+                <div id="quickInputsColumn764" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hireDate">Hire Date</label>
+                        <input id="hireDate" name="hireDate" class="text-left  "
+                        required="required" type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn766" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="probationEndDate">Probation End Date</label>
+                        <input id="probationEndDate" name="probationEndDate"
+                        class="text-left  " required="required" type="text" data-bind="datepicker"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="endProbation4" name="endProbation4" class="text-left row endProbationRow ">
+                <div id="quickTextAreaColumn3925559" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="endProbComment">Comment</label>
+                    <textarea id="endProbComment" name="endProbComment" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow1087" name="quickHeadingRow" class="text-left row probationExtensionRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1088" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1089" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Probation Extension</h4>
+                </div>
+                <div id="col1090" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="probationExDate">Probation Extension Date</label>
+                        <input id="probationExDate" name="probationExDate"
+                        class="text-left  " required="required" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="stipend157575656" name="stipend1" class="text-left row " style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; "
+            data-bind="show: { packageParam: ['Start'] } ">
+                <div id="quickHeadingColumn641615756" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall642615756" name="quickHeadingSmall642615756"
+                    class="text-center  " style=" font-weight: bold; ">Form Routing</h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow8675858" name="quickHeadingRow" class="text-left row "
+            data-bind="show: { packageParam: ['Start'] } ">
+                <div id="quickHeadingColumn86858" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest86958" name="quickHeadingSmallest86958" class="text-left  "><strong>Please select where this form should be routed to next.</strong></h5>
+                </div>
+            </div>
+            <div id="separation35757" name="separation3" class="text-left row " data-bind="show: { packageParam: ['Start'] } ">
+                <div id="radioCol50357" name="radioCol1" class="col-xs-12 col-sm-6 text-left  ">
+                    <input id="routeSupervisor" name="route" class="text-left margin-right: 5px; "
+                    style=" margin-right: 10px;&#10; " required="required" type="radio" value="supervisor"
+                    />
+                    <label for="routeSupervisor">Route to Supervisor / Dean / Dept Admin</label>
+                </div>
+                <div id="col955" name="col955" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( route() == 'supervisor' ) ) ">
+                    <div class="text-left  ">
+                        <label for="routeSupervisorName">Supervisor / Dean / Dept Admin Name</label>
+                        <input id="routeSupervisorName"
+                        name="routeSupervisorName" class="text-left  " required="required" type="text"
+                        data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: true,  validate: true, labelMask: ['UserName', ' | ', 'Email'], selectedMask: ['UserName'],  formFields: {'routeSupervisorEmail':'Email'} } "
+                        />
+                    </div>
+                    <div class="text-left  ">
+                        <label for="routeSupervisorEmail">Email</label>
+                        <input id="routeSupervisorEmail" name="routeSupervisorEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="separation3575759596060" name="separation3" class="text-left row "
+            data-bind="show: { packageParam: ['Start'] } ">
+                <div id="radioCol503575960" name="radioCol1" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="routeHR" name="route" class="text-left margin-right: 5px; "
+                    style=" margin-right: 10px;&#10; " required="required" type="radio" value="HR"
+                    />
+                    <label for="routeHR">Route directly to Human Resources</label>
+                </div>
+            </div>
+            <div id="separation35757595960606161" name="separation3" class="text-left row "
+            data-bind="show: { packageParam: ['Start'] } ">
+                <div id="radioCol50357596061" name="radioCol1" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="routePayroll" name="route" class="text-left margin-right: 5px; "
+                    style=" margin-right: 10px;&#10; " required="required" type="radio" value="Payroll"
+                    />
+                    <label for="routePayroll">Route directly to Payroll (HR Use Only)</label>
+                </div>
+            </div>
+            <div id="stipend15757" name="stipend1" class="text-left row payrollRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="show: { packageParam: ['WFPayroll', 'End'] } ">
+                <div id="quickHeadingColumn6416157" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall6426157" name="quickHeadingSmall6426157" class="text-center  "
+                    style=" font-weight: bold; ">Payroll Use Only</h4>
+                </div>
+            </div>
+            <div id="endProbation35858" name="endProbation3" class="text-left row payrollRow "
+            data-bind="show: { packageParam: ['WFPayroll', 'End'] } ">
+                <div id="quickInputsColumn76458" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="effectiveDate">Pay Period Effective Date</label>
+                        <input id="effectiveDate" name="effectiveDate"
+                        class="text-left  " type="text" data-bind="required: { packageParam: ['WFPayroll'] }, datepicker "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow1094" name="quickTextAreaRow" class="text-left row payrollRow "
+            data-bind="show: { packageParam: ['WFPayroll', 'End'] } ">
+                <div id="quickTextAreaColumn1095" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="payrollNotes">Notes</label>
+                    <textarea id="payrollNotes" name="payrollNotes" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow930" name="quickInputsRow" class="text-left row hidden ">
+                <div id="quickInputsColumn931" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeClassification">employeeClassification</label>
+                        <input id="employeeClassification" name="employeeClassification"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow973" name="quickInputsRow" class="text-left row hidden ">
+                <div id="quickInputsColumn974" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="grantFunding">grantFunding (hidden)</label>
+                        <input id="grantFunding" name="grantFunding"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="stipend157576565" name="stipend1" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="show: { packageParam: ['WFPayroll', 'End'] } ">
+                <div id="quickHeadingColumn641615765" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="developer" name="developer" class="text-center  " style=" font-weight: bold; ">Developer</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow1117" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn1120" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="departmentSelectionAddSection">departmentSelectionAddSection</label>
+                        <input id="departmentSelectionAddSection"
+                        name="departmentSelectionAddSection" class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

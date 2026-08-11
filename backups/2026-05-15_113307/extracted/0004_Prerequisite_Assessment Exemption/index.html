@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row438" class="text-left row fd-form-masthead ">
+                <div id="col439" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn440" name="revisedOn" class="col-sm-12 text-right  ">Revised 06/25</span>
+                </div>
+                <div id="col441" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele442" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col443" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele444" name="ele21" class="text-left form-title ">Prerequisite/Assessment Exemption</h1>
+                </div>
+                <div id="col445" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele446" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row424" class="text-left row ">
+                <div id="col425" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote426" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickDropdownRow364" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn365" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="occRole">What is your role at OCC?</label>
+                    <select id="occRole" name="occRole" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Advisor">Advisor</option>
+                        <option value="Counselor">Counselor</option>
+                        <option value="Dean">Dean</option>
+                        <option value="Faculty">Faculty</option>
+                        <option value="Faculty Secretary">Faculty Secretary</option>
+                        <option value="Program Coordinator">Program Coordinator</option>
+                        <option value="Department Chair">Department Chair</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickDropdownRow418" name="quickDropdownRow" class="text-left row "
+            data-bind="visible: ( ( occRole() == 'Faculty Secretary' ) ) ">
+                <div id="quickDropdownColumn419" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="facultyName">Faculty Name</label>
+                        <input id="facultyName" name="facultyName" class="text-left  "
+                        required="required" data-bind="autocomplete: { integrationSource: 'Security_Get_CW_Employees',  labelMask: ['UserName', ' | ', 'Email'],  selectedMask: ['UserName'],  formFields: {'facultyEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col421" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="facultyEmail">Faculty Email</label>
+                        <input id="facultyEmail" name="facultyEmail" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="row342" class="text-left row ">
+                <div id="col343" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="colleagueID">Student ID</label>
+                        <input id="colleagueID" name="colleagueID" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col345" class="col-xs-12 col-sm-2 text-left  " style=" padding:0px 0px 0px 0px;  margin:20px 0px 0px 0px; ">
+                    <button id="personIdSearchBtn" name="personIdSearchBtn" class="col-sm-12 text-left btn btn-primary "
+                    style="" undefined="">Search</button>
+                </div>
+                <div id="col347" class="col-xs-12 col-sm-6 text-left hide ">
+                    <div class="text-left  ">
+                        <label for="employeeName348">Employee Name</label>
+                        <input id="employeeName348" name="employeeName" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col349" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentFirstName">Student First Name</label>
+                        <input id="studentFirstName" name="studentFirstName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col351" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentLastName">Student Last Name</label>
+                        <input id="studentLastName" name="studentLastName"
+                        class="text-left  " required="required" readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow229" name="quickInputsRow" class="text-left row hidden "
+            style="overflow: auto;    ">
+                <div id="quickInputsColumn230" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorFirstName">originatorFirstName</label>
+                        <input id="originatorFirstName" name="originatorFirstName"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn232" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorLastName">originatorLastName</label>
+                        <input id="originatorLastName" name="originatorLastName"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col234" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">originatorLastName</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row141111" name="" class="text-left row ">
+                <div id="col15811" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="campus">Campus</label>
+                    <select id="campus" name="campus" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak/Southfield">Royal Oak/Southfield</option>
+                    </select>
+                </div>
+                <div id="col353" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="academicYear">Academic Year</label>
+                    <select id="academicYear" name="academicYear" class="text-left  "
+                    required="required" data-bind="dynamicYear: { format: 'YYYY-YY[-1,  0]' } ">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div id="col1911" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">Date</label>
+                        <input id="originationDate" name="originationDate" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow1911414" name="quickInputsRow" class="text-left row hidden ">
+                <div id="quickInputsColumn19214" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentsCounselor">Student's Counselor</label>
+                        <input id="studentsCounselor" name="studentsCounselor"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn19414" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="counselorEmail">Counselor Email</label>
+                        <input id="counselorEmail" name="counselorEmail"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow324" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn325" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall326" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Exemption Information</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow1202828" name="quickParagraphRow" class="text-left row "
+            style="overflow: auto;  border-top: 1px solid #D3D3D3; ">
+                <div id="quickParagraphColumn12128" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement12228" name="quickParagraphElement12228" class="text-left  "><strong>Please select all applicable exemptions below. Then complete the Allows Registration Into section if applicable.</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow4756677811111818" name="quickInputsRow" class="text-left row question1Row "
+            style="overflow: auto;   &#10; ">
+                <div id="quickInputsColumn4856781118" name="quickInputsColumn1" class="col-xs-12 col-sm-1 text-left  ">
+                    <input id="optionA" name="optionA" class="text-left   " style=" padding:0px 0px 0px 0px;  margin:17px 0px 0px 10px;  width:20px; height:20px; "
+                    type="checkbox" value="Yes" />
+                </div>
+                <div id="quickInputsColumn5056781118" name="quickInputsColumn2" class="col-xs-12 col-sm-11 text-left  ">
+                    <label id="optionALbl" name="optionALbl" class="text-left  " for="optionA"> <strong> Student has completed (with a minimum grade of 'C') the equivalent to, or has the requisite knowledge of, the following course (e.g. ACC-1810)</strong>
+                    </label>
+                </div>
+            </div>
+            <div id="quickInputsRow475667781111" name="quickInputsRow" class="text-left   "
+            style="overflow: auto;   &#10; " data-bind="visible: ( ( optionA() ) ) ">
+                <div id="col291" class="col-xs-12 col-sm-1 text-left  "><span id="blankA" name="blankA" class="text-left  "> </span>
+                </div>
+                <div id="col393" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="optionAPlacingOutOf">Student is placing out of Course code: (e.g. MAT-1150)</label>
+                        <input id="optionAPlacingOutOf"
+                        name="optionAPlacingOutOf" class="text-left  " />
+                    </div>
+                </div>
+                <div id="col13811" name="col13811" class="col-xs-12 col-sm-5 text-center  ">
+                    <div class="text-center  ">
+                        <label for="optionARegistration">Allow registration into
+                            <br />Course code: (e.g. MAT-1150)</label>
+                        <input id="optionARegistration" name="optionARegistration"
+                        class="text-center  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col396" class="col-xs-12 col-sm-3 text-left  "><span id="ele397" name="ele397" class="text-left  ">  </span>
+                </div>
+                <div id="quickInputsRow47566778811" name="quickInputsRow47566778811" class="col-xs-12 col-sm-6 text-center  "
+                style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; "><span id="optionAInstructions" name="optionAInstructions" class="text-left  "><strong>OCC Staff Instructions<br />Enter exemption score from 
+prerequisite grid</strong></span>
+                </div>
+                <div id="col406" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele407" name="ele407" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickTextAreaRow400" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( optionA() ) ) ">
+                <div id="col403" class="col-xs-12 col-sm-1 text-left  "><span id="ele404" name="ele404" class="text-left  "> </span>
+                </div>
+                <div id="quickTextAreaColumn401" name="quickTextAreaColumn" class="col-xs-11 col-sm-11 text-left  ">
+                    <label for="OptionANotes">Please enter any relevant notes below.</label>
+                    <textarea id="OptionANotes"
+                    name="OptionANotes" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row300" class="text-left row question1Row ">
+                <div id="col301" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_303" name="hr_303" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow4751919" name="quickInputsRow" class="text-left row question2Row "
+            style="overflow: auto;    ">
+                <div id="quickInputsColumn48519" name="quickInputsColumn1" class="col-xs-12 col-sm-1 text-left  ">
+                    <input id="optionB" name="optionB" class="text-left   " style=" padding:0px 0px 0px 0px;  margin:10px 0px 0px 10px;  width:20px; height:20px; "
+                    type="checkbox" value="Yes" />
+                </div>
+                <div id="quickInputsColumn50519" name="quickInputsColumn2" class="col-xs-12 col-sm-11 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:5px 0px 0px 0px; ">
+                    <label id="optionBLbl" name="optionBLbl" class="text-left  " for="optionB">Student has been given 'Consent of Instructor' to register for the following
+                        course (e.g. ARC-1130).</label>
+                </div>
+            </div>
+            <div id="quickInputsRow475" name="quickInputsRow475" class="text-left   "
+            style="overflow: auto;    " data-bind="visible: ( ( optionB() ) ) ">
+                <div id="quickInputsColumn505" name="quickInputsColumn2" class="col-xs-12 col-sm-1 text-left  "><span id="blankB" name="blankB" class="text-left  "> </span>
+                </div>
+                <div id="col129" name="col129" class="col-xs-12 col-sm-5 text-left  "
+                style=" background-color:white; ">
+                    <div class="text-center  ">
+                        <label for="optionBRegistration">Allow registration into
+                            <br />Course code: (e.g. ACC-1820)</label>
+                        <input id="optionBRegistration" name="optionBRegistration"
+                        class="text-center  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn545" name="quickInputsColumn545" class="col-xs-12 col-sm-6 text-center  "><span id="optionBInstructions" name="optionBInstructions" class="text-left  "><strong>OCC Staff Instructions<br />Enter exemption score from prerequisite grid</strong></span>
+                </div>
+                <div id="col409" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele410" name="ele410" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickTextAreaRow387" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( optionB() ) ) ">
+                <div id="col390" class="col-xs-1 col-sm-1 text-left  "><span id="ele391" name="ele391" class="text-left  "> </span>
+                </div>
+                <div id="quickTextAreaColumn388" name="quickTextAreaColumn" class="col-xs-11 col-sm-11 text-left  ">
+                    <label for="consentOfInstructorNotes">Please enter any relevant notes below.</label>
+                    <textarea id="consentOfInstructorNotes"
+                    name="consentOfInstructorNotes" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row3002424" name="" class="text-left row question2Row ">
+                <div id="col30124" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_30324" name="hr_303" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow47519192020" name="quickInputsRow" class="text-left row question3Row "
+            style="overflow: auto;    ">
+                <div id="quickInputsColumn4851920" name="quickInputsColumn1" class="col-xs-12 col-sm-1 text-left  ">
+                    <input id="optionC" name="optionC" class="text-left   " style=" padding:0px 0px 0px 0px;  margin:10px 0px 0px 10px;  width:20px; height:20px; "
+                    type="checkbox" value="Yes" />
+                </div>
+                <div id="quickInputsColumn5051920" name="quickInputsColumn2" class="col-xs-12 col-sm-11 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:5px 0px 0px 0px; ">
+                    <label id="optionCLbl" name="optionCLbl" class="text-left  " for="optionC">Student has earned a Bachelor degree or higher from an accredited U.S.
+                        college/university.</label>
+                </div>
+            </div>
+            <div id="quickParagraphRow12028282626" name="quickParagraphRow" class="text-left  row question3Row "
+            style="overflow: auto;  border-top: 1px solid #D3D3D3; ">
+                <div id="quickParagraphColumn1212826" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement1222826" name="quickParagraphElement1222826"
+                    class="text-left  "><strong>Please verify that OCC has a copy of the student's diploma or transcript on file. If documentation of degree is not on file, please attach a copy to this form.</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow47566" name="quickInputsRow" class="text-left   "
+            style="overflow: auto;    " data-bind="visible: ( ( optionC() ) ) ">
+                <div id="quickInputsColumn4856" name="quickInputsColumn1" class="col-xs-12 col-sm-1 text-left  "><span id="blankC" name="blankC" class="text-left  "> </span>
+                </div>
+                <div id="col132" name="col132" class="col-xs-12 col-sm-5 text-center  "><span id="optionCRegistration" name="optionCRegistration" class="text-center  "><strong>Allow registration into<br />Any English, math, or other course with requisites. Excludes ESL and restricted programs/courses</strong></span>
+                </div>
+                <div id="quickInputsColumn5456" name="quickInputsColumn5456" class="col-xs-12 col-sm-6 text-center  "
+                style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; "><span id="optionCInstructions" name="optionCInstructions" class="text-left  "><strong>OCC Staff Instructions<br />ASSESS.XMP score of 6</strong></span>
+                </div>
+            </div>
+            <div id="row30024242424" name="" class="text-left row question3Row ">
+                <div id="col3012424" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_3032424" name="hr_303" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow47566772121" name="quickInputsRow" class="text-left row question4Row "
+            style="overflow: auto;    ">
+                <div id="quickInputsColumn4856721" name="quickInputsColumn1" class="col-xs-12 col-sm-1 text-left  ">
+                    <input id="optionD" name="optionD" class="text-left   " style=" padding:0px 0px 0px 0px;  margin:17px 0px 0px 10px;  width:20px; height:20px; "
+                    type="checkbox" value="Yes" />
+                </div>
+                <div id="quickInputsColumn5056721" name="quickInputsColumn2" class="col-xs-12 col-sm-11 text-left  ">
+                    <label id="optionDLbl" name="optionDLbl" class="text-left  " for="optionD">Student has completed a course equivalent to ENG-1510, with a minimum
+                        grade of 'C', at an accredited U.S. college/university.</label>
+                </div>
+            </div>
+            <div id="quickInputsRow4756677" name="quickInputsRow" class="text-left   "
+            style="overflow: auto;    " data-bind="visible: ( ( optionD() ) ) ">
+                <div id="quickInputsColumn48567" name="quickInputsColumn1" class="col-xs-12 col-sm-1 text-left  "><span id="blankD" name="blankD" class="text-left  "> </span>
+                </div>
+                <div id="col135" name="col135" class="col-xs-12 col-sm-5 text-center  "
+                style=" padding:0% 0% 0% 0%;  margin:0% 0% 0% 0%; "><span id="optionDRegistration" name="optionDRegistration" class="text-left  "><strong>Allow registration into
+<br />ENG-1520</strong></span>
+                </div>
+                <div id="quickInputsColumn54567" name="quickInputsColumn54567" class="col-xs-12 col-sm-6 text-center  "
+                style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; "><span id="optionDInstructions" name="optionDInstructions" class="text-left  "><strong>OCC Staff Instructions<br />ASSESS.XMP score of 2</strong></span>
+                </div>
+            </div>
+            <div id="row300242424242525" name="" class="text-left row question5Row ">
+                <div id="col301242425" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_303242425" name="hr_303" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow475667782222" name="quickInputsRow" class="text-left row question5Row "
+            style="overflow: auto;   &#10; ">
+                <div id="quickInputsColumn48567822" name="quickInputsColumn1" class="col-xs-12 col-sm-1 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:10px 0px 0px 0px; ">
+                    <input id="optionE" name="optionE" class="text-left   " style=" padding:0px 0px 0px 0px;  margin:17px 0px 0px 10px;  width:20px; height:20px; "
+                    type="checkbox" value="Yes" />
+                </div>
+                <div id="quickInputsColumn50567822" name="quickInputsColumn2" class="col-xs-12 col-sm-11 text-left  ">
+                    <label id="optionELbl" name="optionELbl" class="text-left  " for="optionE">Student has completed the following math course at an accredited U.S.
+                        college/university with a 'C' or better within the last three years (e.g.
+                        MAT-1100). (Note: Enter highest level math course completed).</label>
+                </div>
+            </div>
+            <div id="quickInputsRow47566778" name="quickInputsRow47566778" class="text-left   "
+            style="overflow: auto;   &#10; " data-bind="visible: ( ( optionE() ) ) ">
+                <div id="quickInputsColumn485678" name="quickInputsColumn1" class="col-xs-12 col-sm-1 text-left  "><span id="blankE" name="blankE" class="text-left  "> </span>
+                </div>
+                <div id="col138" name="col138" class="col-xs-12 col-sm-5 text-center  ">
+                    <div class="text-center  ">
+                        <label for="optionERegistration">Allow registration into
+                            <br />Temporary (180-day) exemption into (e.g. MAT-1150)</label>
+                        <input id="optionERegistration"
+                        name="optionERegistration" class="text-center  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsRow475667788" name="quickInputsRow" class="col-xs-12 col-sm-6 text-center  "
+                style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; "><span id="optionEInstructions" name="optionEInstructions" class="text-left  "><strong>OCC Staff Instructions<br />Enter MATPLA.TMP score from grid</strong></span>
+                </div>
+            </div>
+            <div id="quickHeadingRow3242727" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn32527" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall32627" name="quickHeadingSmall32627" class="text-center  "
+                    style=" font-weight: bold; ">Important Process Information</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow1201212" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn12112" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement12212" name="quickParagraphElement12212" class="text-left  "><strong><em>Instructor, please note:</em></strong> Exemptions from instructors
+                        may only be given by full-time faculty members. For classes taught by adjunct
+                        faculty, approval from the department chair is required.</p>
+                </div>
+            </div>
+            <div id="row220" name="row220" class="text-left row " style="overflow: auto;  display:none "
+            display:none="">
+                <div id="col221" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formName">Form Name</label>
+                        <input id="formName" name="formName" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

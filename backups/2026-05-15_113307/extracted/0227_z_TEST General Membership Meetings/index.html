@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row326" class="text-left row fd-form-masthead ">
+                <div id="col327" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn328" name="revisedOn" class="col-sm-12 text-right  ">Revised 03/26</span>
+                </div>
+                <div id="col329" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele330" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col331" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele332" name="ele21" class="text-left form-title with-subtitle ">General Membership Meetings</h1><span id="ele333" name="ele23" class="text-left form-subtitle ">OWL Network</span>
+                </div>
+                <div id="col334" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele335" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row312" class="text-left row ">
+                <div id="col313" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote314" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow28" name="quickInputsRow" class="text-left row ">
+                <div id="groupNameRow" name="groupNameRow" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="groupName">Name of Student Group</label>
+                        <input id="groupName" name="groupName" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="contactRow" name="contactRow" class="text-left row ">
+                <div id="quickInputsColumn41" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="quickInputsText42">Name</label>
+                        <input id="quickInputsText42" name="quickInputsText1" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn43" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="quickInputsText44">Email</label>
+                        <input id="quickInputsText44" name="quickInputsText2" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="semesterYearRow" name="semesterYearRow" class="text-left row ">
+                <div id="col49" class="col-xs-12 col-sm-6 text-left display:flex; flex-direction:column; "
+                style=" padding:0px 0px 0px 0px;  margin:24px 0px 0px 0px; ">
+                    <input id="ele50" name="ele50" class="text-left  " style=" padding:0em 0em 0em 1em;  margin:0em 0em 0em 2em; "
+                    required="required" type="checkbox" value="fall" />
+                    <label for="ele50">Fall</label>
+                    <input id="ele53" name="ele53" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 3em; "
+                    type="checkbox" value="winter" />
+                    <label for="ele53">Winter</label>
+                    <input id="ele54" name="ele54" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 2em; "
+                    required="required" type="checkbox" value="spring" />
+                    <label for="ele54">Spring/Summer</label>
+                </div>
+                <div id="col57" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ele58">Year</label>
+                        <input id="ele58" name="ele58" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="meetingInfoRow" name="meetingInfoRow" class="text-left row border: 2px solid black; "
+            style="overflow: auto;  padding:1em 1em 1em 1em;  margin:1em 0em 1em 0em;  border: 2px solid #046A38; border-radius: 15px; "
+            data-bind="dynamicList: true, dynamicListProperties: { &#10;addButtonID: 'addRowBtn',  removeButtonID: 'deleteRowBtn' }">
+                <div id="col88" class="col-xs-12 col-sm-2 text-left  ">
+                    <label for="dayOfWeek">Day of Week</label>
+                    <select id="dayOfWeek" name="dayOfWeek" class="text-left  "
+                    required="required">
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+                </div>
+                <div id="col89" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="datePicker">Date</label>
+                        <input id="datePicker" name="datePicker" class="text-left datepicker "
+                        required="required" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col90" class="col-xs-12 col-sm-2 text-left  ">
+                    <label for="year">Year</label>
+                    <select id="year" name="year" class="text-left  " required="required"
+                    data-bind="dynamicYear: { format: 'YYYY[0, 3]' } ">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div id="col154" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="campusSelect">Campus</label>
+                    <select id="campusSelect" name="campusSelect" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                        <option value="Southfield">Southfield</option>
+                    </select>
+                </div>
+                <div id="col155" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="locationInput">Room Number</label>
+                        <input id="locationInput" name="locationInput" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col160" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="zoomLink">Zoom Link</label>
+                        <input id="zoomLink" name="zoomLink" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col299" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <button id="ele300" name="ele300" class="text-left btn btn-danger " style=" padding:em 0em 0em 0em;  margin:0em 0em 0em 0em;  display: block; margin: 0 auto; "
+                    undefined="" data-bind="dynamicListRemoveRow: true">Delete Meeting</button>
+                </div>
+            </div>
+            <div id="row306" class="text-left row ">
+                <div id="col307" class="col-xs-12 col-sm-12 text-left  ">
+                    <button id="addRowBtn" name="addRowBtn" class="text-left btn btn-primary "
+                    style=" display: block; margin: 0 auto; " onclick="" data-bind="click: addRowBtn, disable: meetingInfoRow.length==5">Add Meeting</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

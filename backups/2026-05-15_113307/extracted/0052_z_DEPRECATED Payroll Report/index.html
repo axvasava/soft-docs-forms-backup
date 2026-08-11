@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col3" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele4" name="ele37" class="text-right  "><i>Revised 12/24</i></h5>
+                </div>
+                <div id="HeaderLeft5" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo6" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="occ-horizontal-green.jpg" />
+                </div>
+                <div id="HeaderRight7" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_8" name="h2_27" class="text-center  "><b>Payroll Report</b></h2>
+                </div>
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele10" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow12" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn13" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeName">Employee Name</label>
+                        <input id="employeeName" name="employeeName" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn15" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Employee ID</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col17" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="primaryStatus">Primary Status</label>
+                    <select id="primaryStatus" name="primaryStatus"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Classified">Classified</option>
+                        <option value="Classified (PT)">Classified (PT)</option>
+                        <option value="Faculty">Faculty</option>
+                        <option value="Management Staff">Management Staff</option>
+                        <option value="Public Safety">Public Safety</option>
+                        <option value="PT-Hourly">PT-Hourly</option>
+                        <option value="Student">Student</option>
+                        <option value="Work Study">Work Study</option>
+                    </select>
+                </div>
+            </div>
+            <div id="row31" class="text-left row ">
+                <div id="col38" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorName">Supervisor Name</label>
+                        <input id="supervisorName" name="supervisorName"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col41" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorEmail">Supervisor Email</label>
+                        <input id="supervisorEmail" name="supervisorEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="timesheet" name="timesheet" class="text-left row ">
+                <div id="col33" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="payPeriod">Pay Period</label>
+                        <input id="payPeriod" name="payPeriod" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col321" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="position">Position</label>
+                        <input id="position" name="position" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col551" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele552" name="ele552" class="text-left  ">*Date selection for pay period should correlate to a Sunday that begins
+                        the pay period. All hours in the pay period must be included even if this
+                        is a revised sheet</p>
+                </div>
+            </div>
+            <div id="row1201010" name="" class="text-left row ">
+                <div id="col12110" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele12210" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row568" class="text-left row ">
+                <div id="col578" class="col-xs-12 col-sm-12 text-center  ">
+                    <h4 id="ele658" name="ele658" class="text-center  ">Week 1</h4>
+                </div>
+            </div>
+            <div id="row13417172727" name="" class="text-left row ">
+                <div id="col1351727" class="col-xs-12 col-sm-2 text-left grid-row ">
+                    <h5 id="ele1441727" name="ele144" class="text-left  ">Sunday</h5>
+                </div>
+                <div id="col1361727" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sun1in">Time In</label>
+                        <input id="sun1in" name="sun1in" class="text-left  " type="text"
+                        data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col1371727" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sun1out">Time Out</label>
+                        <input id="sun1out" name="sun1out" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col1381727" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sun1reg">Reg Hours</label>
+                        <input id="sun1reg" name="sun1reg" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col1391727" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sun1ot">OT Hours</label>
+                        <input id="sun1ot" name="sun1ot" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="col38727" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele39027">Exception Code</label>
+                    <select id="ele39027" name="ele39027" class="text-left  ">
+                        <option value=""></option>
+                        <option value="F - First Day Worked">F - First Day Worked</option>
+                        <option value="L - Last Day Worked">L - Last Day Worked</option>
+                        <option value="1 - Sick">1 - Sick</option>
+                        <option value="2 - Vacation">2 - Vacation</option>
+                        <option value="3 - College Business">3 - College Business</option>
+                        <option value="4 - Jury Duty">4 - Jury Duty</option>
+                        <option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+                        <option value="6 - Holiday">6 - Holiday</option>
+                        <option value="7 - Personal Business">7 - Personal Business</option>
+                        <option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+                        <option value="9 - Union Business">9 - Union Business</option>
+                        <option value="10 - Emergency Closing">10 - Emergency Closing</option>
+                    </select>
+                </div>
+                <div id="col38827" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele39227">Out of Classification Code</label>
+                    <select id="ele39227" name="ele392"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="* = 10% Diff">* = 10% Diff</option>
+                        <option value="** = 2nd shift">** = 2nd shift</option>
+                        <option value="*** = 3rd shift">*** = 3rd shift</option>
+                        <option value="A = Level 2">A = Level 2</option>
+                        <option value="B = Level 3">B = Level 3</option>
+                        <option value="C = Level 4">C = Level 4</option>
+                        <option value="D = Level 5">D = Level 5</option>
+                    </select>
+                </div>
+                <div id="col38927" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele39627" name="ele396" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row13412" class="text-left row ">
+                <div id="col13512" class="col-xs-12 col-sm-2 text-left grid-row ">
+                    <h5 id="row1341212" name="" class="text-left  ">Monday</h5>
+                </div>
+                <div id="col13612" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="mon1in">Time In</label>
+                        <input id="mon1in" name="mon1in" class="text-left  " type="text"
+                        data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col13712" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="mon1out">Time Out</label>
+                        <input id="mon1out" name="mon1out" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col13812" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="mon1reg">Reg Hours</label>
+                        <input id="mon1reg" name="mon1reg" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col13912" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="mon1ot">OT Hours</label>
+                        <input id="mon1ot" name="mon1ot" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="col326" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="sel329">Exception Code</label>
+                    <select id="sel329" name="sel329" class="text-left  ">
+                        <option value=""></option>
+                        <option value="F - First Day Worked">F - First Day Worked</option>
+                        <option value="L - Last Day Worked">L - Last Day Worked</option>
+                        <option value="1 - Sick">1 - Sick</option>
+                        <option value="2 - Vacation">2 - Vacation</option>
+                        <option value="3 - College Business">3 - College Business</option>
+                        <option value="4 - Jury Duty">4 - Jury Duty</option>
+                        <option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+                        <option value="6 - Holiday">6 - Holiday</option>
+                        <option value="7 - Personal Business">7 - Personal Business</option>
+                        <option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+                        <option value="9 - Union Business">9 - Union Business</option>
+                        <option value="10 - Emergency Closing">10 - Emergency Closing</option>
+                    </select>
+                </div>
+                <div id="col327" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele331">Out of Classification Code</label>
+                    <select id="ele331" name="ele331" class="text-left  ">
+                        <option value=""></option>
+                        <option value="* = 10% Diff">* = 10% Diff</option>
+                        <option value="** = 2nd shift">** = 2nd shift</option>
+                        <option value="*** = 3rd shift">*** = 3rd shift</option>
+                        <option value="A = Level 2">A = Level 2</option>
+                        <option value="B = Level 3">B = Level 3</option>
+                        <option value="C = Level 4">C = Level 4</option>
+                        <option value="D = Level 5">D = Level 5</option>
+                    </select>
+                </div>
+                <div id="col336" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele337" name="ele337" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row134121313" name="" class="text-left row ">
+                <div id="col1351213" class="col-xs-12 col-sm-2 text-left grid-row ">
+                    <h5 id="row134121213" name="row134121213" class="text-left  ">Tuesday</h5>
+                </div>
+                <div id="col1361213" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="tues1in">Time In</label>
+                        <input id="tues1in" name="tues1in" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col1371213" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="tues1out">Time Out</label>
+                        <input id="tues1out" name="tues1out" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col1381213" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="tues1reg">Reg Hours</label>
+                        <input id="tues1reg" name="tues1reg" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col1391213" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="tues1ot">OT Hours</label>
+                        <input id="tues1ot" name="tues1ot" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col339" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele342">Exception Code</label>
+                    <select id="ele342" name="ele342" class="text-left  ">
+                        <option value=""></option>
+                        <option value="F - First Day Worked">F - First Day Worked</option>
+                        <option value="L - Last Day Worked">L - Last Day Worked</option>
+                        <option value="1 - Sick">1 - Sick</option>
+                        <option value="2 - Vacation">2 - Vacation</option>
+                        <option value="3 - College Business">3 - College Business</option>
+                        <option value="4 - Jury Duty">4 - Jury Duty</option>
+                        <option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+                        <option value="6 - Holiday">6 - Holiday</option>
+                        <option value="7 - Personal Business">7 - Personal Business</option>
+                        <option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+                        <option value="9 - Union Business">9 - Union Business</option>
+                        <option value="10 - Emergency Closing">10 - Emergency Closing</option>
+                    </select>
+                </div>
+                <div id="col340" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele344">Out of Classification Code</label>
+                    <select id="ele344" name="ele344" class="text-left  ">
+                        <option value=""></option>
+                        <option value="* = 10% Diff">* = 10% Diff</option>
+                        <option value="** = 2nd shift">** = 2nd shift</option>
+                        <option value="*** = 3rd shift">*** = 3rd shift</option>
+                        <option value="A = Level 2">A = Level 2</option>
+                        <option value="B = Level 3">B = Level 3</option>
+                        <option value="C = Level 4">C = Level 4</option>
+                        <option value="D = Level 5">D = Level 5</option>
+                    </select>
+                </div>
+                <div id="col341" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele346" name="ele346" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row1341213131414" name="" class="text-left row ">
+                <div id="col135121314" class="col-xs-12 col-sm-2 text-left grid-row ">
+                    <h5 id="row13412121314" name="row13412121314" class="text-left  ">Wednesday</h5>
+                </div>
+                <div id="col136121314" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="wed1in">Time In</label>
+                        <input id="wed1in" name="wed1in" class="text-left  " type="text"
+                        data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col137121314" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="wed1out">Time Out</label>
+                        <input id="wed1out" name="wed1out" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col138121314" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="wed1reg">Reg Hours</label>
+                        <input id="wed1reg" name="wed1reg" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col139121314" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="wed1ot">OT Hours</label>
+                        <input id="wed1ot" name="wed1ot" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="col348" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele350">Exception Code</label>
+                    <select id="ele350" name="ele350" class="text-left  ">
+                        <option value=""></option>
+                        <option value="F - First Day Worked">F - First Day Worked</option>
+                        <option value="L - Last Day Worked">L - Last Day Worked</option>
+                        <option value="1 - Sick">1 - Sick</option>
+                        <option value="2 - Vacation">2 - Vacation</option>
+                        <option value="3 - College Business">3 - College Business</option>
+                        <option value="4 - Jury Duty">4 - Jury Duty</option>
+                        <option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+                        <option value="6 - Holiday">6 - Holiday</option>
+                        <option value="7 - Personal Business">7 - Personal Business</option>
+                        <option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+                        <option value="9 - Union Business">9 - Union Business</option>
+                        <option value="10 - Emergency Closing">10 - Emergency Closing</option>
+                    </select>
+                </div>
+                <div id="col349" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele353">Out of Classification Code</label>
+                    <select id="ele353" name="ele353" class="text-left  ">
+                        <option value=""></option>
+                        <option value="* = 10% Diff">* = 10% Diff</option>
+                        <option value="** = 2nd shift">** = 2nd shift</option>
+                        <option value="*** = 3rd shift">*** = 3rd shift</option>
+                        <option value="A = Level 2">A = Level 2</option>
+                        <option value="B = Level 3">B = Level 3</option>
+                        <option value="C = Level 4">C = Level 4</option>
+                        <option value="D = Level 5">D = Level 5</option>
+                    </select>
+                </div>
+                <div id="col352" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele356" name="ele356" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row13412131314141515" name="" class="text-left row ">
+                <div id="col13512131415" class="col-xs-12 col-sm-2 text-left grid-row ">
+                    <h5 id="row1341212131415" name="row1341212131415" class="text-left  ">Thursday</h5>
+                </div>
+                <div id="col13612131415" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="thurs1in">Time In</label>
+                        <input id="thurs1in" name="thurs1in" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col13712131415" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="thurs1out">Time Out</label>
+                        <input id="thurs1out" name="thurs1out" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col13812131415" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="thurs1reg">Reg Hours</label>
+                        <input id="thurs1reg" name="thurs1reg" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col13912131415" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="thurs1ot">OT Hours</label>
+                        <input id="thurs1ot" name="thurs1ot" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col358" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele361">Exception Code</label>
+                    <select id="ele361" name="ele361" class="text-left  ">
+                        <option value=""></option>
+                        <option value="F - First Day Worked">F - First Day Worked</option>
+                        <option value="L - Last Day Worked">L - Last Day Worked</option>
+                        <option value="1 - Sick">1 - Sick</option>
+                        <option value="2 - Vacation">2 - Vacation</option>
+                        <option value="3 - College Business">3 - College Business</option>
+                        <option value="4 - Jury Duty">4 - Jury Duty</option>
+                        <option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+                        <option value="6 - Holiday">6 - Holiday</option>
+                        <option value="7 - Personal Business">7 - Personal Business</option>
+                        <option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+                        <option value="9 - Union Business">9 - Union Business</option>
+                        <option value="10 - Emergency Closing">10 - Emergency Closing</option>
+                    </select>
+                </div>
+                <div id="col359" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele364">Out of Classification Code</label>
+                    <select id="ele364" name="ele364" class="text-left  ">
+                        <option value=""></option>
+                        <option value="* = 10% Diff">* = 10% Diff</option>
+                        <option value="** = 2nd shift">** = 2nd shift</option>
+                        <option value="*** = 3rd shift">*** = 3rd shift</option>
+                        <option value="A = Level 2">A = Level 2</option>
+                        <option value="B = Level 3">B = Level 3</option>
+                        <option value="C = Level 4">C = Level 4</option>
+                        <option value="D = Level 5">D = Level 5</option>
+                    </select>
+                </div>
+                <div id="col360" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele366" name="ele366" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row134121313141415151616" name="" class="text-left row ">
+                <div id="col1351213141516" class="col-xs-12 col-sm-2 text-left grid-row ">
+                    <h5 id="row134121213141516" name="row134121213141516" class="text-left  ">Friday</h5>
+                </div>
+                <div id="col1361213141516" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fri1in">Time In</label>
+                        <input id="fri1in" name="fri1in" class="text-left  " type="text"
+                        data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col1371213141516" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fri1out">Time Out</label>
+                        <input id="fri1out" name="fri1out" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col1381213141516" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fri1reg">Reg Hours</label>
+                        <input id="fri1reg" name="fri1reg" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col1391213141516" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fri1ot">OT Hours</label>
+                        <input id="fri1ot" name="fri1ot" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="col369" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele372">Exception Code</label>
+                    <select id="ele372" name="ele372" class="text-left  ">
+                        <option value=""></option>
+                        <option value="F - First Day Worked">F - First Day Worked</option>
+                        <option value="L - Last Day Worked">L - Last Day Worked</option>
+                        <option value="1 - Sick">1 - Sick</option>
+                        <option value="2 - Vacation">2 - Vacation</option>
+                        <option value="3 - College Business">3 - College Business</option>
+                        <option value="4 - Jury Duty">4 - Jury Duty</option>
+                        <option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+                        <option value="6 - Holiday">6 - Holiday</option>
+                        <option value="7 - Personal Business">7 - Personal Business</option>
+                        <option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+                        <option value="9 - Union Business">9 - Union Business</option>
+                        <option value="10 - Emergency Closing">10 - Emergency Closing</option>
+                    </select>
+                </div>
+                <div id="col370" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele374">Out of Classification Code</label>
+                    <select id="ele374" name="ele374" class="text-left  ">
+                        <option value=""></option>
+                        <option value="* = 10% Diff">* = 10% Diff</option>
+                        <option value="** = 2nd shift">** = 2nd shift</option>
+                        <option value="*** = 3rd shift">*** = 3rd shift</option>
+                        <option value="A = Level 2">A = Level 2</option>
+                        <option value="B = Level 3">B = Level 3</option>
+                        <option value="C = Level 4">C = Level 4</option>
+                        <option value="D = Level 5">D = Level 5</option>
+                    </select>
+                </div>
+                <div id="col371" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele376" name="ele376" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row1341213131414151516161717" name="" class="text-left row ">
+                <div id="col135121314151617" class="col-xs-12 col-sm-2 text-left grid-row ">
+                    <h5 id="row13412121314151617" name="row13412121314151617" class="text-left  ">Saturday</h5>
+                </div>
+                <div id="col136121314151617" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sat1in">Time In</label>
+                        <input id="sat1in" name="sat1in" class="text-left  " type="text"
+                        data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col137121314151617" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sat1out">Time Out</label>
+                        <input id="sat1out" name="sat1out" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col138121314151617" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sat1reg">Reg Hours</label>
+                        <input id="sat1reg" name="sat1reg" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col139121314151617" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sat1ot">OT Hours</label>
+                        <input id="sat1ot" name="sat1ot" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="col378" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele381">Exception Code</label>
+                    <select id="ele381" name="ele381" class="text-left  ">
+                        <option value=""></option>
+                        <option value="F - First Day Worked">F - First Day Worked</option>
+                        <option value="L - Last Day Worked">L - Last Day Worked</option>
+                        <option value="1 - Sick">1 - Sick</option>
+                        <option value="2 - Vacation">2 - Vacation</option>
+                        <option value="3 - College Business">3 - College Business</option>
+                        <option value="4 - Jury Duty">4 - Jury Duty</option>
+                        <option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+                        <option value="6 - Holiday">6 - Holiday</option>
+                        <option value="7 - Personal Business">7 - Personal Business</option>
+                        <option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+                        <option value="9 - Union Business">9 - Union Business</option>
+                        <option value="10 - Emergency Closing">10 - Emergency Closing</option>
+                    </select>
+                </div>
+                <div id="col379" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele383">Out of Classification Code</label>
+                    <select id="ele383" name="ele383" class="text-left  ">
+                        <option value=""></option>
+                        <option value="* = 10% Diff">* = 10% Diff</option>
+                        <option value="** = 2nd shift">** = 2nd shift</option>
+                        <option value="*** = 3rd shift">*** = 3rd shift</option>
+                        <option value="A = Level 2">A = Level 2</option>
+                        <option value="B = Level 3">B = Level 3</option>
+                        <option value="C = Level 4">C = Level 4</option>
+                        <option value="D = Level 5">D = Level 5</option>
+                    </select>
+                </div>
+            </div>
+            <div id="row307" class="text-left row ">
+                <div id="col308" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele309" name="ele309" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row5681616" name="" class="text-left row ">
+                <div id="col57816" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="ele65816" name="ele65816" class="text-center  ">Week 2</h4>
+                </div>
+            </div>
+            <div id="row1341717" name="" class="text-left row ">
+                <div id="col13517" class="col-xs-12 col-sm-2 text-left grid-row ">
+                    <h5 id="ele14417" name="ele144" class="text-left  ">Sunday</h5>
+                </div>
+                <div id="col13617" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sun2in">Time In</label>
+                        <input id="sun2in" name="sun2in" class="text-left  " type="text"
+                        data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col13717" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sun2out">Time Out</label>
+                        <input id="sun2out" name="sun2out" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col13817" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sun2reg">Reg Hours</label>
+                        <input id="sun2reg" name="sun2reg" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col13917" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sun2ot">OT Hours</label>
+                        <input id="sun2ot" name="sun2ot" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="col387" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele390">Exception Code</label>
+                    <select id="ele390" name="ele390" class="text-left  ">
+                        <option value=""></option>
+                        <option value="F - First Day Worked">F - First Day Worked</option>
+                        <option value="L - Last Day Worked">L - Last Day Worked</option>
+                        <option value="1 - Sick">1 - Sick</option>
+                        <option value="2 - Vacation">2 - Vacation</option>
+                        <option value="3 - College Business">3 - College Business</option>
+                        <option value="4 - Jury Duty">4 - Jury Duty</option>
+                        <option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+                        <option value="6 - Holiday">6 - Holiday</option>
+                        <option value="7 - Personal Business">7 - Personal Business</option>
+                        <option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+                        <option value="9 - Union Business">9 - Union Business</option>
+                        <option value="10 - Emergency Closing">10 - Emergency Closing</option>
+                    </select>
+                </div>
+                <div id="col388" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele392">Out of Classification Code</label>
+                    <select id="ele392" name="ele392" class="text-left  ">
+                        <option value=""></option>
+                        <option value="* = 10% Diff">* = 10% Diff</option>
+                        <option value="** = 2nd shift">** = 2nd shift</option>
+                        <option value="*** = 3rd shift">*** = 3rd shift</option>
+                        <option value="A = Level 2">A = Level 2</option>
+                        <option value="B = Level 3">B = Level 3</option>
+                        <option value="C = Level 4">C = Level 4</option>
+                        <option value="D = Level 5">D = Level 5</option>
+                    </select>
+                </div>
+                <div id="col389" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele396" name="ele396" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row134121818" name="" class="text-left row ">
+                <div id="col1351218" class="col-xs-12 col-sm-2 text-left grid-row ">
+                    <h5 id="row134121218" name="" class="text-left  ">Monday</h5>
+                </div>
+                <div id="col1361218" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="mon2in">Time In</label>
+                        <input id="mon2in" name="mon2in" class="text-left  " type="text"
+                        data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col1371218" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="mon2out">Time Out</label>
+                        <input id="mon2out" name="mon2out" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col1381218" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="mon2reg">Reg Hours</label>
+                        <input id="mon2reg" name="mon2reg" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col1391218" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="mon2ot">OT Hours</label>
+                        <input id="mon2ot" name="mon2ot" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="col398" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele401">Exception Code</label>
+                    <select id="ele401" name="ele401" class="text-left  ">
+                        <option value=""></option>
+                        <option value="F - First Day Worked">F - First Day Worked</option>
+                        <option value="L - Last Day Worked">L - Last Day Worked</option>
+                        <option value="1 - Sick">1 - Sick</option>
+                        <option value="2 - Vacation">2 - Vacation</option>
+                        <option value="3 - College Business">3 - College Business</option>
+                        <option value="4 - Jury Duty">4 - Jury Duty</option>
+                        <option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+                        <option value="6 - Holiday">6 - Holiday</option>
+                        <option value="7 - Personal Business">7 - Personal Business</option>
+                        <option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+                        <option value="9 - Union Business">9 - Union Business</option>
+                        <option value="10 - Emergency Closing">10 - Emergency Closing</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div id="col399" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele403">Out of Classification Code</label>
+                    <select id="ele403" name="ele403" class="text-left  ">
+                        <option value=""></option>
+                        <option value="* = 10% Diff">* = 10% Diff</option>
+                        <option value="** = 2nd shift">** = 2nd shift</option>
+                        <option value="*** = 3rd shift">*** = 3rd shift</option>
+                        <option value="A = Level 2">A = Level 2</option>
+                        <option value="B = Level 3">B = Level 3</option>
+                        <option value="C = Level 4">C = Level 4</option>
+                        <option value="D = Level 5">D = Level 5</option>
+                    </select>
+                </div>
+                <div id="col400" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele405" name="ele405" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row1341213131919" name="" class="text-left row ">
+                <div id="col135121319" class="col-xs-12 col-sm-2 text-left grid-row ">
+                    <h5 id="row13412121319" name="row134121213" class="text-left  ">Tuesday</h5>
+                </div>
+                <div id="col136121319" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="tues2in">Time In</label>
+                        <input id="tues2in" name="tues2in" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col137121319" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="tues2out">Time Out</label>
+                        <input id="tues2out" name="tues2out" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col138121319" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="tues2reg">Reg Hours</label>
+                        <input id="tues2reg" name="tues2reg" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col139121319" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="tues2ot">OT Hours</label>
+                        <input id="tues2ot" name="tues2ot" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col407" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele410">Exception Code</label>
+                    <select id="ele410" name="ele410" class="text-left  ">
+                        <option value=""></option>
+                        <option value="F - First Day Worked">F - First Day Worked</option>
+                        <option value="L - Last Day Worked">L - Last Day Worked</option>
+                        <option value="1 - Sick">1 - Sick</option>
+                        <option value="2 - Vacation">2 - Vacation</option>
+                        <option value="3 - College Business">3 - College Business</option>
+                        <option value="4 - Jury Duty">4 - Jury Duty</option>
+                        <option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+                        <option value="6 - Holiday">6 - Holiday</option>
+                        <option value="7 - Personal Business">7 - Personal Business</option>
+                        <option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+                        <option value="9 - Union Business">9 - Union Business</option>
+                        <option value="10 - Emergency Closing">10 - Emergency Closing</option>
+                    </select>
+                </div>
+                <div id="col408" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele412">Out of Classification Code</label>
+                    <select id="ele412" name="ele412" class="text-left  ">
+                        <option value=""></option>
+                        <option value="* = 10% Diff">* = 10% Diff</option>
+                        <option value="** = 2nd shift">** = 2nd shift</option>
+                        <option value="*** = 3rd shift">*** = 3rd shift</option>
+                        <option value="A = Level 2">A = Level 2</option>
+                        <option value="B = Level 3">B = Level 3</option>
+                        <option value="C = Level 4">C = Level 4</option>
+                        <option value="D = Level 5">D = Level 5</option>
+                    </select>
+                </div>
+                <div id="col409" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele414" name="ele414" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row13412131314142020" name="" class="text-left row ">
+                <div id="col13512131420" class="col-xs-12 col-sm-2 text-left grid-row ">
+                    <h5 id="row1341212131420" name="row13412121314" class="text-left  ">Wednesday</h5>
+                </div>
+                <div id="col13612131420" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="wed2in">Time In</label>
+                        <input id="wed2in" name="wed2in" class="text-left  " type="text"
+                        data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col13712131420" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="wed2out">Time Out</label>
+                        <input id="wed2out" name="wed2out" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col13812131420" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="wed2reg">Reg Hours</label>
+                        <input id="wed2reg" name="wed2reg" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col13912131420" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="wed2ot">OT Hours</label>
+                        <input id="wed2ot" name="wed2ot" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="col416" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele419">Exception Code</label>
+                    <select id="ele419" name="ele419" class="text-left  ">
+                        <option value=""></option>
+                        <option value="F - First Day Worked">F - First Day Worked</option>
+                        <option value="L - Last Day Worked">L - Last Day Worked</option>
+                        <option value="1 - Sick">1 - Sick</option>
+                        <option value="2 - Vacation">2 - Vacation</option>
+                        <option value="3 - College Business">3 - College Business</option>
+                        <option value="4 - Jury Duty">4 - Jury Duty</option>
+                        <option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+                        <option value="6 - Holiday">6 - Holiday</option>
+                        <option value="7 - Personal Business">7 - Personal Business</option>
+                        <option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+                        <option value="9 - Union Business">9 - Union Business</option>
+                        <option value="10 - Emergency Closing">10 - Emergency Closing</option>
+                    </select>
+                </div>
+                <div id="col417" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele421">Out of Classification Code</label>
+                    <select id="ele421" name="ele421" class="text-left  ">
+                        <option value=""></option>
+                        <option value="* = 10% Diff">* = 10% Diff</option>
+                        <option value="** = 2nd shift">** = 2nd shift</option>
+                        <option value="*** = 3rd shift">*** = 3rd shift</option>
+                        <option value="A = Level 2">A = Level 2</option>
+                        <option value="B = Level 3">B = Level 3</option>
+                        <option value="C = Level 4">C = Level 4</option>
+                        <option value="D = Level 5">D = Level 5</option>
+                    </select>
+                </div>
+                <div id="col418" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele423" name="ele423" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row134121313141415152121" name="" class="text-left row ">
+                <div id="col1351213141521" class="col-xs-12 col-sm-2 text-left grid-row ">
+                    <h5 id="row134121213141521" name="row1341212131415" class="text-left  ">Thursday</h5>
+                </div>
+                <div id="col1361213141521" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="thurs2in">Time In</label>
+                        <input id="thurs2in" name="thurs2in" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col1371213141521" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="thurs2out">Time Out</label>
+                        <input id="thurs2out" name="thurs2out" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col1381213141521" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="thurs2reg">Reg Hours</label>
+                        <input id="thurs2reg" name="thurs2reg" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col1391213141521" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="thurs2ot">OT Hours</label>
+                        <input id="thurs2ot" name="thurs2ot" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col425" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele428">Exception Code</label>
+                    <select id="ele428" name="ele428" class="text-left  ">
+                        <option value=""></option>
+                        <option value="F - First Day Worked">F - First Day Worked</option>
+                        <option value="L - Last Day Worked">L - Last Day Worked</option>
+                        <option value="1 - Sick">1 - Sick</option>
+                        <option value="2 - Vacation">2 - Vacation</option>
+                        <option value="3 - College Business">3 - College Business</option>
+                        <option value="4 - Jury Duty">4 - Jury Duty</option>
+                        <option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+                        <option value="6 - Holiday">6 - Holiday</option>
+                        <option value="7 - Personal Business">7 - Personal Business</option>
+                        <option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+                        <option value="9 - Union Business">9 - Union Business</option>
+                        <option value="10 - Emergency Closing">10 - Emergency Closing</option>
+                    </select>
+                </div>
+                <div id="col426" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele430">Out of Classification Code</label>
+                    <select id="ele430" name="ele430" class="text-left  ">
+                        <option value=""></option>
+                        <option value="* = 10% Diff">* = 10% Diff</option>
+                        <option value="** = 2nd shift">** = 2nd shift</option>
+                        <option value="*** = 3rd shift">*** = 3rd shift</option>
+                        <option value="A = Level 2">A = Level 2</option>
+                        <option value="B = Level 3">B = Level 3</option>
+                        <option value="C = Level 4">C = Level 4</option>
+                        <option value="D = Level 5">D = Level 5</option>
+                    </select>
+                </div>
+                <div id="col427" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele432" name="ele432" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row1341213131414151516162222" name="" class="text-left row ">
+                <div id="col135121314151622" class="col-xs-12 col-sm-2 text-left grid-row ">
+                    <h5 id="row13412121314151622" name="row134121213141516" class="text-left  ">Friday</h5>
+                </div>
+                <div id="col136121314151622" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fri2in">Time In</label>
+                        <input id="fri2in" name="fri2in" class="text-left  " type="text"
+                        data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col137121314151622" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fri2out">Time Out</label>
+                        <input id="fri2out" name="fri2out" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col138121314151622" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fri2reg">Reg Hours</label>
+                        <input id="fri2reg" name="fri2reg" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col139121314151622" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fri2ot">OT Hours</label>
+                        <input id="fri2ot" name="fri2ot" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="col434" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele437">Exception Code</label>
+                    <select id="ele437" name="ele437" class="text-left  ">
+                        <option value=""></option>
+                        <option value="F - First Day Worked">F - First Day Worked</option>
+                        <option value="L - Last Day Worked">L - Last Day Worked</option>
+                        <option value="1 - Sick">1 - Sick</option>
+                        <option value="2 - Vacation">2 - Vacation</option>
+                        <option value="3 - College Business">3 - College Business</option>
+                        <option value="4 - Jury Duty">4 - Jury Duty</option>
+                        <option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+                        <option value="6 - Holiday">6 - Holiday</option>
+                        <option value="7 - Personal Business">7 - Personal Business</option>
+                        <option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+                        <option value="9 - Union Business">9 - Union Business</option>
+                        <option value="10 - Emergency Closing">10 - Emergency Closing</option>
+                    </select>
+                </div>
+                <div id="col435" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele439">Out of Classification Code</label>
+                    <select id="ele439" name="ele439" class="text-left  ">
+                        <option value=""></option>
+                        <option value="* = 10% Diff">* = 10% Diff</option>
+                        <option value="** = 2nd shift">** = 2nd shift</option>
+                        <option value="*** = 3rd shift">*** = 3rd shift</option>
+                        <option value="A = Level 2">A = Level 2</option>
+                        <option value="B = Level 3">B = Level 3</option>
+                        <option value="C = Level 4">C = Level 4</option>
+                        <option value="D = Level 5">D = Level 5</option>
+                    </select>
+                </div>
+                <div id="col436" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele441" name="ele441" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row13412131314141515161617172323" name="" class="text-left row ">
+                <div id="col13512131415161723" class="col-xs-12 col-sm-2 text-left grid-row ">
+                    <h5 id="row1341212131415161723" name="row13412121314151617" class="text-left  ">Saturday</h5>
+                </div>
+                <div id="col13612131415161723" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sat2in">Time In</label>
+                        <input id="sat2in" name="sat2in" class="text-left  " type="text"
+                        data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col13712131415161723" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sat2out">Time Out</label>
+                        <input id="sat2out" name="sat2out" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col13812131415161723" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sat2reg">Reg Hours</label>
+                        <input id="sat2reg" name="sat2reg" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col13912131415161723" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sat2ot">OT Hours</label>
+                        <input id="sat2ot" name="sat2ot" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="col443" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele446">Exception Code</label>
+                    <select id="ele446" name="ele446" class="text-left  ">
+                        <option value=""></option>
+                        <option value="F - First Day Worked">F - First Day Worked</option>
+                        <option value="L - Last Day Worked">L - Last Day Worked</option>
+                        <option value="1 - Sick">1 - Sick</option>
+                        <option value="2 - Vacation">2 - Vacation</option>
+                        <option value="3 - College Business">3 - College Business</option>
+                        <option value="4 - Jury Duty">4 - Jury Duty</option>
+                        <option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+                        <option value="6 - Holiday">6 - Holiday</option>
+                        <option value="7 - Personal Business">7 - Personal Business</option>
+                        <option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+                        <option value="9 - Union Business">9 - Union Business</option>
+                        <option value="10 - Emergency Closing">10 - Emergency Closing</option>
+                    </select>
+                </div>
+                <div id="col444" class="col-xs-12 col-sm-4 text-left codeOption ">
+                    <label for="ele448">Out of Classification Code</label>
+                    <select id="ele448" name="ele448" class="text-left  ">
+                        <option value=""></option>
+                        <option value="* = 10% Diff">* = 10% Diff</option>
+                        <option value="** = 2nd shift">** = 2nd shift</option>
+                        <option value="*** = 3rd shift">*** = 3rd shift</option>
+                        <option value="A = Level 2">A = Level 2</option>
+                        <option value="B = Level 3">B = Level 3</option>
+                        <option value="C = Level 4">C = Level 4</option>
+                        <option value="D = Level 5">D = Level 5</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickHeadingRow500" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn501" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall502" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Totals</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow504" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn505" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="totalRegHours">Total Regular Hours</label>
+                        <input id="totalRegHours" name="totalRegHours"
+                        class="text-left  " type="text" data-bind="calculate: 'sun1reg + mon1reg + tues1reg + wed1reg + thurs1reg + fri1reg + sat1reg + sun2reg + mon2reg + tues2reg + wed2reg + thurs2reg + fri2reg + sat2reg ' "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn507" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="totalHoursOT">Total Overtime Hours</label>
+                        <input id="totalHoursOT" name="totalHoursOT"
+                        class="text-left  " type="text" data-bind="calculate: 'sun1ot + mon1ot + tues1ot + wed1ot + thurs1ot + fri1ot + sat1ot + sun2ot + mon2ot + tues2ot + wed2ot + thurs2ot + fri2ot + sat2ot ' "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow5002626" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn50126" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall50226" name="quickHeadingSmall50226" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow510" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn511" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="endDate">PPE (hidden)</label>
+                        <input id="endDate" name="endDate" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn513" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="quickInputsText514">Label2</label>
+                        <input id="quickInputsText514" name="quickInputsText2" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

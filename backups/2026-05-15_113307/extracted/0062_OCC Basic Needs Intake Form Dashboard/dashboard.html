@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div id="HeaderRow2" name="HeaderRow" class="text-left row">
+        <div id="HeaderLeft3" name="HeaderLeft" class="col-xs-12 col-sm-6 text-left">
+            <img id="ele4" name="ele103" class="text-left" src="occ-horizontal-green1.png" />
+        </div>
+        <div id="HeaderRight5" name="HeaderRight" class="col-xs-12 col-sm-6 text-right">
+            <h2 id="h2_6" name="h2_24" class="text-left">Dashboard</h2>
+        </div>
+    </div>
+        <div class="button-container">
+            <button id="downloadCSV" class="btn custom-button">Download CSV</button>
+            <button id="downloadXLS" class="btn custom-button">Download XLS</button>
+    
+            <!-- <button id="Filter1" class="btn custom-button">Filter1</button> 
+            <button id="Filter2" class="btn custom-button">Filter2</button>  -->
+
+            <button id="ClearFilter" class="btn custom-button">Clear Filter</button> 
+    </div>
+    <table id="myTable" class="display"> </table>
+
+</body>
+</html>

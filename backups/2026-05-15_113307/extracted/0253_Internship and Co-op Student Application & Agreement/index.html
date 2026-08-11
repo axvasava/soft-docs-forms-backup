@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="./temp-styles.css" />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row373" class="text-left row fd-form-masthead ">
+                <div id="col374" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn375" name="revisedOn" class="col-sm-12 text-right  ">Revised 04/26</span>
+                </div>
+                <div id="col376" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele377" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col378" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele379" name="ele21" class="text-left form-title ">Internship and Co-op Student Application &amp; Agreement</h1>
+                </div>
+                <div id="col380" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele381" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row369" class="text-left row ">
+                <div id="col370" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote371" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Student Information</h4>
+                </div>
+            </div>
+            <div id="row16" class="text-left row ">
+                <div id="col19" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="originatorDisplayName">Student Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="col-xs-12 col-sm-12 text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col17" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="originatorErpId">Student ID</label>
+                        <input id="originatorErpId" name="originatorErpId" class="col-xs-12 col-sm-12 text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow44" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn45" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="address">Address</label>
+                        <input id="address" name="address" class="text-left datepicker "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn47" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="city">City</label>
+                        <input id="city" name="city" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn49" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="state">State</label>
+                        <input id="state" name="state" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn51" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="zipCode">Zip</label>
+                        <input id="zipCode" name="zipCode" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row161010" name="" class="text-left row ">
+                <div id="col2310" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left maskphone ">
+                        <label for="studentPhoneNumber">Phone Number</label>
+                        <input id="studentPhoneNumber" name="studentPhoneNumber"
+                        class="col-xs-12 col-sm-12 text-left maskphone " readonly="true" />
+                    </div>
+                </div>
+                <div id="col66" class="col-xs-6 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">Student Email</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col2110" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorCoordinator">Faculty Supervisor / Coordinator</label>
+                        <input id="supervisorCoordinator"
+                        name="supervisorCoordinator" class="text-left  " required="required" data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_Program_Coordinator_Routing_Data',  clearOnFocus: true,  validate: true,  labelMask: ['Program_Coordinator_Name', ' | ', 'Program'],  formFields: {'supervisorEmail':'Program_Coordinator_Email'} } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow28" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn29" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall30" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">F1 Visa Students</h4>
+                </div>
+            </div>
+            <div id="row31" class="text-left row ">
+                <div id="col69" class="col-xs-6 col-sm-6 text-left  ">
+                    <label for="ddInternational">Are you an international student?</label>
+                    <select id="ddInternational"
+                    name="ddInternational" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="col72" name="col72" class="col-xs-6 col-sm-6 text-left hidden "
+                zdata-bind="visible: ( ( ddInternational() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="visaType">Visa Type</label>
+                        <input id="visaType" name="visaType" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row36" name="row36" class="text-left row " data-bind="visible: ( ( ddInternational() == 'Yes' ) ) ">
+                <div id="col75" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele76" name="ele76" class="col-xs-12 col-sm-12 text-left  ">Verification and approval must be obtained from the International Students
+                        Office (ISO) prior to progressing further in the Internship/Co-op process.</p>
+                    <ul>
+                        <li>Due to your student status, please complete the <a href="InternshipCoopVerificationOfTraining.pdf"> Internship and Co-op Verification of Training form </a> instead
+                            and return it to the International Student's Office.</li>
+                    </ul>
+                    <p></p>
+                </div>
+            </div>
+            <div id="quickHeadingRow33" name="quickHeadingRow" class="text-left row hidden "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn34" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall35" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">International Students Office</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow38" name="quickInputsRow" class="text-left row hidden ">
+                <div id="quickInputsColumn39" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="isoSignature">International Students Office: Please Enter Your Name</label>
+                        <input id="isoSignature"
+                        name="isoSignature" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn41" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="isoSignDate">Date</label>
+                        <input id="isoSignDate" name="isoSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow281111" name="quickHeadingRow" class="text-left row f1 "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn2911" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall3011" name="quickHeadingSmall3011" class="text-center  "
+                    style=" font-weight: bold; ">Education</h4>
+                </div>
+            </div>
+            <div id="educationRow" name="educationRow" class="text-left row f1 " style="overflow: auto;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px "
+            data-bind="dynamicList: true, dynamicListProperties: {addButtonID: 'addEducationBtn',  removeButtonID: 'removeEducationBtn'}">
+                <div id="col82" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="school">School / College Attended</label>
+                        <input id="school" name="school" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col83" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dates">Dates (From and To)</label>
+                        <input id="dates" name="dates" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col84" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="degree">Degree</label>
+                        <input id="degree" name="degree" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col85" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="programOfStudy">Program / Field of Study</label>
+                        <input id="programOfStudy" name="programOfStudy"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="col86" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="gpa">GPA</label>
+                        <input id="gpa" name="gpa" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col88" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentCreditHours">Current credit hours this term</label>
+                        <input id="currentCreditHours" name="currentCreditHours"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="col89" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="totalAccruedCredit">Total accrued credit earned</label>
+                        <input id="totalAccruedCredit" name="totalAccruedCredit"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="col90" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="expectedGradDate">Expected graduation date</label>
+                        <input id="expectedGradDate" name="expectedGradDate"
+                        class="text-left  " required="required" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col91" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="creditEarnedProgramArea">Credit earned in programs area only</label>
+                        <input id="creditEarnedProgramArea"
+                        name="creditEarnedProgramArea" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col87" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="specializedTraining">Specialized Courses, Training, Projects</label>
+                    <textarea id="specializedTraining"
+                    name="specializedTraining" class="text-left  " required="required"></textarea>
+                </div>
+                <div id="col92" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="scholarshipsAwards">Scholarships, Awards, Activities</label>
+                    <textarea id="scholarshipsAwards"
+                    name="scholarshipsAwards" class="text-left  " required="required"></textarea>
+                </div>
+                <div id="col93" class="col-xs-12 col-sm-12 text-center  " style=" padding:0px 0px 0px 0px;  margin:20px 0px 0px 0px; ">
+                    <button id="ele133" name="ele133" class="text-left btn btn-danger btn-delete-item "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">Delete</button>
+                </div>
+            </div>
+            <div id="quickInputsRow136" name="quickInputsRow" class="text-left row f1 ">
+                <div id="col137" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="quickInputsRow138" name="quickInputsRow" class="text-left  "></p>
+                </div>
+                <div id="quickInputsColumn139" name="quickInputsColumn1" class="col-xs-4 col-sm-4 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <button id="addEducationBtn" name="addEducationBtn" class="col-xs-12 col-sm-12 text-center btn btn-primary addEducationBtn "
+                    style="" undefined="">Add Education</button>
+                </div>
+                <div id="col141" class="col-xs-4 col-sm-4 text-left  ">
+                    <button id="removeEducationBtn" name="removeEducationBtn" class="col-xs-12 col-sm-12 text-left btn btn-danger removeEducationBtn "
+                    style="" undefined="">Remove Last Edcation</button>
+                </div>
+                <div id="col143" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="ele144" name="ele423" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="quickHeadingRow2811111313" name="quickHeadingRow" class="text-left row f1 "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn291113" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall301113" name="quickHeadingSmall3011" class="text-center  "
+                    style=" font-weight: bold; ">Employment History (list most recent employer first)</h4>
+                </div>
+            </div>
+            <div id="employmentRow" name="employmentRow" class="text-left row f1 "
+            style="overflow: auto;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px "
+            data-bind="dynamicList: true, dynamicListProperties: {addButtonID: 'addEmploymentBtn',  removeButtonID: 'removeEmploymentBtn'}">
+                <div id="col8215" class="col-xs-8 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="company">Company</label>
+                        <input id="company" name="company" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col8315" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fromDate">From</label>
+                        <input id="fromDate" name="fromDate" class="text-left datepicker "
+                        required="required" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col8415" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="toDate">To</label>
+                        <input id="toDate" name="toDate" class="text-left  " required="required"
+                        data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col8515" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="jobTitle">Job Title</label>
+                        <input id="jobTitle" name="jobTitle" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col9315" class="col-xs-12 col-sm-12 text-center  " style=" padding:0px 0px 0px 0px;  margin:20px 0px 0px 0px; ">
+                    <button id="ele13315" name="ele13315" class="text-left btn btn-danger btn-delete-item "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">Delete</button>
+                </div>
+            </div>
+            <div id="quickInputsRow1361616" name="quickInputsRow" class="text-left row f1 ">
+                <div id="col13716" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="quickInputsRow13816" name="quickInputsRow" class="text-left  "></p>
+                </div>
+                <div id="quickInputsColumn13916" name="quickInputsColumn1" class="col-xs-4 col-sm-4 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <button id="addEmploymentBtn" name="addEmploymentBtn" class="col-xs-12 col-sm-12 text-center btn btn-primary addEmploymentBtn "
+                    style="" undefined="">Add Employment</button>
+                </div>
+                <div id="col14116" class="col-xs-4 col-sm-4 text-left  ">
+                    <button id="removeEmploymentBtn" name="removeEmploymentBtn" class="col-xs-12 col-sm-12 text-left btn btn-danger removeEmploymentBtn "
+                    style="" undefined="">Remove Employment</button>
+                </div>
+                <div id="col14316" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="ele14416" name="ele423" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="quickInputsRow180" name="quickInputsRow" class="text-left row f1 ">
+                <div id="quickInputsColumn181" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_182" class="text-left  " />
+                </div>
+            </div>
+            <div id="row1834747" name="" class="text-left row f1 ">
+                <div id="col18447" class="col-xs-10 col-sm-10 text-left  ">
+                    <label for="convictedCriminal"><strong>Have you been convicted of a criminal offense (felony or misdemeanor)? </strong>
+                    </label>
+                    <select id="convictedCriminal" name="convictedCriminal" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="row195" name="row195" class="text-left row criminal ">
+                <div id="col196" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="describeCriminalConviction">Please describe the crime – state the nature of the crime(s), when and
+                        where convicted and disposition of the case</label>
+                    <textarea id="describeCriminalConviction"
+                    name="describeCriminalConviction" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow284646" name="quickHeadingRow" class="text-left row f1 "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn2946" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall3046" name="quickHeadingSmall3046" class="text-center  "
+                    style=" font-weight: bold; ">Agreements</h4>
+                </div>
+            </div>
+            <div id="row199" class="text-left row f1 ">
+                <div id="col200" class="col-xs-12 col-sm-12 text-left internship-agreement-intro ">
+                    <p id="ele201" name="ele201" class="col-xs-12 col-sm-12 text-left  ">As you are beginning your internship/co-op job search, please take a few
+                        minutes to complete this agreement and make sure you have covered all the
+                        requirements necessary for participation in the program. Initial in the
+                        blank space preceding each statement and then submit a signed copy to your
+                        coordinator for placement in your student file. Good luck and best wishes
+                        for a profitable and productive work assignment.</p>
+                </div>
+                <div id="col382" class="col-xs-12 col-sm-12 text-left initial-instruction ">
+                    <p id="ele383" name="ele383" class="text-left  ">Initial within each box to demonstrate you have read and understand this
+                        agreement.</p>
+                </div>
+            </div>
+            <div id="row203" class="text-left row f1 ">
+                <div id="col204" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial1" name="initial1" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col205" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement1" name="agreement1" class="col-xs-12 col-sm-12 text-left  "><strong>I have received approval to participate in the internship/co-op program and have submitted this written authorization to my faculty/program coordinator.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row20322" class="text-left row f1 ">
+                <div id="col20422" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial2" name="initial2" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col20522" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement2" name="agreement2" class="col-xs-12 col-sm-12 text-left  "><strong>I have met with my faculty/program coordinator for orientation to the program, discussing how we will work together to secure an internship/co-op placement.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row2032223" class="text-left row f1 ">
+                <div id="col2042223" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial3" name="initial3" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col2052223" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement3" name="agreement3" class="col-xs-12 col-sm-12 text-left  "><strong>If I need assistance in my interviewing skills, I will attend one of the workshops that are facilitated by the Career Services Department.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row203222324" class="text-left row f1 ">
+                <div id="col204222324" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial4" name="initial4" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col205222324" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement4" name="agreement4" class="col-xs-12 col-sm-12 text-left  "><strong>I agree to inform my faculty/program coordinator when I am contacted by companies for interviews, so that pertinent information can be documented in my file.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row20322232425" class="text-left row f1 ">
+                <div id="col20422232425" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial5" name="initial5" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col20522232425" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement5" name="agreement5" class="col-xs-12 col-sm-12 text-left  "><strong>I agree to register for the appropriate Internship and Cooperative Education course during the registration period for the semester that I have completed this application or the next semester’s registration period. Failure to register will prevent me from participation in the Internship &amp; Cooperative Education Program registration period. Failure to register will prevent me from participation in the Internship &amp; Cooperative Education Program.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row2032223242526" class="text-left row f1 ">
+                <div id="col2042223242526" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial6" name="initial6" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col2052223242526" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement6" name="agreement6" class="col-xs-12 col-sm-12 text-left  "><strong>I agree to submit a completed Application &amp; Student Agreement Form, Resume and unofficial transcript to my faculty/program coordinator before any company referrals take place.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row203222324252627" class="text-left row f1 ">
+                <div id="col204222324252627" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial7" name="initial7" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col205222324252627" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement7" name="agreement7" class="col-xs-12 col-sm-12 text-left  "><strong>I agree to submit a copy of my learning objectives approved and signed by my faculty sponsor to my coordinator in the Internship &amp; Co-op Office within two weeks of beginning my work assignment.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row20322232425262728" class="text-left row f1 ">
+                <div id="col20422232425262728" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial8" name="initial8" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col20522232425262728" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement8" name="agreement8" class="col-xs-12 col-sm-12 text-left  "><strong>It is my responsibility to submit my final report, and my sponsoring company's evaluation of my performance to my faculty/program coordinator. The assignment is due two weeks before the end of the semester, after I have accepted a work 
+assignment. It is also my responsibility to attend any required seminars or meetings that my faculty sponsor or the Program Coordinator may require.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row2032223242526272829" class="text-left row f1 ">
+                <div id="col2042223242526272829" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial9" name="initial9" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col2052223242526272829" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement9" name="agreement9" class="col-xs-12 col-sm-12 text-left  "><strong>I understand that internship/co-op experiences are training assignments and therefore, I am not by law eligible for unemployment compensation at the completion of my work assignment.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row203222324252627282930" class="text-left row f1 ">
+                <div id="col204222324252627282930" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial10" name="initial10" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col205222324252627282930" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement10" name="agreement10" class="col-xs-12 col-sm-12 text-left  "><strong>I have discussed my internship/co-op work pattern with my academic counselor and understand how this assignment will fit into my school schedule and graduation date.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row20322232425262728293031" class="text-left row f1 ">
+                <div id="col20422232425262728293031" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial11" name="initial11" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col20522232425262728293031" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement11" name="agreement11" class="col-xs-12 col-sm-12 text-left  "><strong>I understand that the Career Services &amp; Cooperative Education Office cannot guarantee a placement.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row2032223242526272829303132" class="text-left row f1 ">
+                <div id="col2042223242526272829303132" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial12" name="initial12" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col2052223242526272829303132" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement12" name="agreement12" class="col-xs-12 col-sm-12 text-left  "><strong>If problems arise on my work assignment, which I cannot handle, I know that I should contact my faculty/program coordinator immediately. (a) I will not quit my internship without first speaking with the faculty/program coordinator. (b) I can only enroll in the internship classes one time.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row203222324252627282930313233" class="text-left row f1 ">
+                <div id="col204222324252627282930313233" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial13" name="initial13" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col205222324252627282930313233" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement13" name="agreement13" class="col-xs-12 col-sm-12 text-left  "><strong>I understand that in order to enter and continue in the program, I must maintain the minimum GPA required by my academic department for participation in the Internship &amp; Cooperative Education Program and the required GPA of my co-op/internship sponsoring company.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row20322232425262728293031323334" class="text-left row f1 ">
+                <div id="col20422232425262728293031323334" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial14" name="initial14" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col20522232425262728293031323334" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement14" name="agreement14" class="col-xs-12 col-sm-12 text-left  "><strong>I agree to adhere to all policies and regulations of my co-op/internship sponsoring organization, and of Oakland Community College as stated in the college catalog and required documentation.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row2032223242526272829303132333435" class="text-left row f1 ">
+                <div id="col2042223242526272829303132333435" class="col-xs-1 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <input id="initial15" name="initial15" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col2052223242526272829303132333435" class="col-xs-11 col-sm-11 text-left  ">
+                    <p id="agreement15" name="agreement15" class="col-xs-12 col-sm-12 text-left  "><strong>I have made my own investigation and assessment of the risks described above, and agree, on behalf of my family, heirs and personal representative(s), to knowingly and willingly assume all the risks and responsibilities associated with my participation in the internship. To the maximum extent permitted by law, I release, hold harmless and agree to indemnify OCC and its trustees, elected officials, officers, directors, faculty, staff, representatives, employees and agents, from and against any present or future claim, loss or liability for injury to person or property which I may suffer, or for which I may be liable to any other person, related to my participation in the internship (including periods in transit to or from my destination), resulting from any 
+cause, including but not limited to ordinary negligence, gross negligence, or willful acts.
+</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickHeadingRow28111113133636" name="quickHeadingRow" class="text-left row f1 "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn29111336" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall30111336" name="quickHeadingSmall30111336" class="text-center  "
+                    style=" font-weight: bold; ">Other Conditions</h4>
+                </div>
+            </div>
+            <div id="row285" class="text-left row f1 ">
+                <div id="col286" class="col-xs-6 col-sm-6 text-left  ">
+                    <label for="eligibleToWork">Eligible to work in US?</label>
+                    <select id="eligibleToWork" name="eligibleToWork"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="col287" class="col-xs-6 col-sm-6 text-left  ">
+                    <label for="veteran">Are you a Veteran?</label>
+                    <select id="veteran" name="veteran" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="row2853839" class="text-left row f1 ">
+                <div id="col2863839" class="col-xs-6 col-sm-6 text-left  ">
+                    <label for="accommodation">Do you require ADA accommodations?</label>
+                    <select id="accommodation" name="accommodation"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="row309" name="row309" class="text-left row ada ">
+                <div id="col310" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="explainAccommodations">Please explain</label>
+                    <textarea id="explainAccommodations" name="explainAccommodations"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow281111131336364343" name="quickHeadingRow" class="text-left row f1 "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn2911133643" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall3011133643" name="quickHeadingSmall3011133643"
+                    class="text-center  " style=" font-weight: bold; ">Signatures</h4>
+                </div>
+            </div>
+            <div id="row28538394141" name="" class="text-left row f1 ">
+                <div id="col287383941" class="col-xs-2 col-sm-2 text-center  ">
+                    <input id="authorizeY" name="authorize" class="text-left  " required="required"
+                    type="radio" value="yes" />
+                    <label for="authorizeY">  Yes</label>
+                </div>
+                <div id="col288383941" class="col-xs-2 col-sm-2 text-center  ">
+                    <input id="authorizeN" name="authorize" class="text-left  " type="radio"
+                    value="no" />
+                    <label for="authorizeN">  No</label>
+                </div>
+                <div id="col286383941" class="col-xs-8 col-sm-8 text-left  ">
+                    <p id="row28538383941" name="row28538383941" class="col-xs-12 col-sm-12 text-left  "><strong>I authorize the College to release my resume to prospective employers and/or their authorized agents. Furthermore, pursuant to Section 438 (b) 4 (B), of the Family Education Rights and Privacy Act of 1974, I authorize my faculty/program coordinator to obtain and to release on my behalf to actual and prospective employers such information contained in my academic records as is necessary to aid such employers in assessing my potential and eligibility for internship/co-op/field experiences.  </strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow328" name="quickInputsRow" class="text-left row f1 ">
+                <div id="quickInputsColumn329" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSignature">Student: Please Enter Your Name</label>
+                        <input id="studentSignature" name="studentSignature"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn331" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSignDate">Date</label>
+                        <input id="studentSignDate" name="studentSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow334" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn335" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_336" class="text-left  " />
+                </div>
+            </div>
+            <div id="row337" class="text-left row developer ">
+                <div id="col338" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorEmail">supervisorEmail (hidden)</label>
+                        <input id="supervisorEmail" name="supervisorEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col347" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="isInternationalStudent">isInternationalStudent (hidden)</label>
+                        <input id="isInternationalStudent"
+                        name="isInternationalStudent" class="text-left  " />
+                    </div>
+                </div>
+                <div id="col350" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicYear">academicYear (hidden)</label>
+                        <input id="academicYear" name="academicYear"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

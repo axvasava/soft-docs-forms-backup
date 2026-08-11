@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row neverHide "
+            style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="HeaderLeft3" name="HeaderLeft" class="col-xs-12 col-sm-6 text-left  ">
+                    <img id="h5_4" name="h5_7" class="text-left  " src="https://online.usw.edu/media/1004/usw-title.png"
+                    width="75%" />
+                </div>
+                <div id="HeaderRight5" name="HeaderRight" class="col-xs-12 col-sm-6 text-left  ">
+                    <h3 id="h3_6" name="h3_9" class="text-left  ">Admissions Application</h3>
+                </div>
+                <div id="col7" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele8" name="ele13" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow338" name="quickInputsRow" class="text-left row neverHide ">
+                <div id="quickInputsColumn339" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_340" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>Application Type</strong> </h4>
+                </div>
+            </div>
+            <div id="quickDropdownRow342" name="quickDropdownRow" class="text-left row neverHide ">
+                <div id="quickDropdownColumn343" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="applicationType">What type of application will you be submitting?</label>
+                    <select id="applicationType"
+                    name="applicationType" class="text-left  " data-bind="readonly: { userParam: ['isNotOriginator'] } ">
+                        <option value=""></option>
+                        <option value="Undergraduate Admission Application">Undergraduate Admission Application</option>
+                        <option value="International Undergraduate Admission Application">International Undergraduate Admission Application</option>
+                        <option value="Graduate Admissions Application">Graduate Admissions Application</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow690" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn691" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_693" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickInputsRow10" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn11" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_12" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>Biographical Information</strong> </h4>
+                </div>
+            </div>
+            <div id="quickInputsRow20" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn21" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="firstName">Legal First Name<span style="color: red"> *</span>
+                        </label>
+                        <input id="firstName" name="firstName" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn23" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="middleName">Middle Name</label>
+                        <input id="middleName" name="middleName" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn25" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="lastName">Legal Last Name<span style="color: red"> *</span>
+                        </label>
+                        <input id="lastName" name="lastName" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow334" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Graduate Admissions Application' )  ||  ( applicationType() == 'Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn335" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="otherNames">Other Names on Transcripts</label>
+                        <input id="otherNames" name="otherNames"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow28" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn29" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="preferredName">Preferred Name</label>
+                        <input id="preferredName" name="preferredName" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn31" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="maidenName">Maiden Name</label>
+                        <input id="maidenName" name="maidenName" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col613" name="col613" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="suffix">Suffix</label>
+                        <input id="suffix" name="suffix" class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow350" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickInputsColumn351" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="citizenshipCountryGrad">Country of Citizenship<span style="color: red"> *</span>
+                        </label>
+                        <input id="citizenshipCountryGrad" name="citizenshipCountryGrad" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { localSource: 'countryList',  clearOnFocus: true,  validate: true,  labelMask: ['country'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow34" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn35" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  "
+                data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' ) ) ">
+                    <div class="text-left  ">
+                        <label for="ssn">Social Security Number<span style="color: red"> *</span>
+                        </label>
+                        <input id="ssn" name="ssn" class="text-left  " required="required" type="text"
+                        data-bind="mask: 'ssn' " />
+                    </div>
+                </div>
+                <div id="col735" name="col735" class="col-xs-12 col-sm-1 text-left hidden "
+                style=" margin-top: 22px; " data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                    <button id="reasonForSSN" name="reasonForSSN" class="text-left  " style=""
+                    undefined="">?</button>
+                </div>
+                <div id="quickInputsColumn37" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  "
+                data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' ) ) ">
+                    <div class="text-left  ">
+                        <label for="ssnConfirm">Confirm SSN<span style="color: red"> *</span>
+                        </label>
+                        <input id="ssnConfirm" name="ssnConfirm" class="text-left  " required="required"
+                        type="text" data-bind="mask: 'ssn' " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn39" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  "
+                data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                    <div class="text-left  ">
+                        <label for="dateOfBirth">Date of Birth<span style="color: red"> *</span>
+                        </label>
+                        <input id="dateOfBirth" name="dateOfBirth" class="text-left  " required="required"
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow794" name="quickInputsRow" class="text-left row gradSSNRow "
+            xdata-bind="visible: ( (( applicationType() == 'Graduate Admissions Application' ))  &amp;&amp; ( ( citizenshipCountryGrad() == 'United States' )  ||  ( citizenshipCountryGrad() == 'United States Minor Outlying Islands' )  ||  ( citizenshipCountryGrad() == 'United States Virgin Islands' )  ||  ( citizenshipCountryGrad() )) ) ">
+                <div id="quickInputsColumn795" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="gradSSN">Social Security Number<span style="color: red"> *</span>
+                        </label>
+                        <input id="gradSSN" name="gradSSN" class="text-left  " required="required"
+                        type="text" data-bind="mask: 'ssn' " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn797" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="gradSSNValidate">Reenter Social Security Number<span style="color: red"> *</span>
+                        </label>
+                        <input id="gradSSNValidate" name="gradSSNValidate" class="text-left  "
+                        required="required" type="text" data-bind="mask: 'ssn' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow42" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn43" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="usCitizen">Are you a U.S. Citizen?<span style="color: red"> *</span>
+                    </label>
+                    <select id="usCitizen" name="usCitizen" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn45" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( usCitizen() == 'No' ) ) ">
+                    <div class="text-left  ">
+                        <label for="citizenshipCountry">What is your country of citizenship?</label>
+                        <input id="citizenshipCountry"
+                        name="citizenshipCountry" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow49" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn50" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="permanentResidentStatus">Do you hold Permanent Resident status (valid I-551) for the U.S.?
+                        <span
+                        style="color: red">*</span>
+                    </label>
+                    <select id="permanentResidentStatus" name="permanentResidentStatus" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="N/A">N/A</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn52" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( permanentResidentStatus() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="permanentResidenDate">Date on which your Permanent Resident card was issued<span style="color: red"> *</span>
+                        </label>
+                        <input id="permanentResidenDate" name="permanentResidenDate" class="text-left  "
+                        required="required" type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow56" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn57" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="alienIDNumber">Alien Identification Number</label>
+                        <input id="alienIDNumber" name="alienIDNumber"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickDropdownRow760" name="quickDropdownRow" class="text-left row usAddress "
+            data-bind="visible: ( ( applicationType() == 'Graduate Admissions Application' )  &amp;&amp;  ( citizenshipCountryGrad() != 'United States' )  &amp;&amp;  ( citizenshipCountryGrad() != 'United States Minor Outlying Islands' )  &amp;&amp;  ( citizenshipCountryGrad() != 'United States Virgin Islands' )  &amp;&amp;  ( citizenshipCountryGrad() ) ) ">
+                <div id="quickDropdownColumn761" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="usAddressGraduate">Do you have a current United States address?<span style="color: red"> *</span> 
+                    </label>
+                    <select id="usAddressGraduate" name="usAddressGraduate" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow354" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( usAddressGraduate() == 'Yes' )  &amp;&amp;  ( applicationType() == 'Graduate Admissions Application' )  &amp;&amp;  ( usAddressGraduate() ) ) ">
+                <div id="quickInputsColumn355" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="visaOrPermanentResidentNumber">If you are not a US citizen but you live in the US, please indicate your
+                            VISA status or permanent resident number.</label>
+                        <input id="visaOrPermanentResidentNumber"
+                        name="visaOrPermanentResidentNumber" class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow358" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn359" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="graduateFelony">Have you ever been convicted of a felony or any sexual, narcotics, or
+                        drug offense?</label>
+                    <select id="graduateFelony" name="graduateFelony"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow363" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( graduateFelony() == 'Yes' ) ) ">
+                <div id="quickTextAreaColumn364" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="graduateFelonyExplanation">Please provide an explanation</label>
+                    <textarea id="graduateFelonyExplanation"
+                    name="graduateFelonyExplanation" class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow455" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn456" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_457" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>Foreign Nationality</strong> </h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow459" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickHeadingColumn460" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest461" name="quickHeadingSmallest" class="text-left  "><strong>Enter International Citizenship and Foreign Address Information Here</strong></h5>
+                </div>
+            </div>
+            <div id="quickInputsRow463" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn464" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="birthCountry">Country of Birth<span style="color: red"> *</span>
+                        </label>
+                        <input id="birthCountry" name="birthCountry" class="text-left  " required="required"
+                        type="text" data-bind="autocomplete: { localSource: 'countryList',  clearOnFocus: true,  validate: true,  labelMask: ['country'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn466" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="citizenshipCountryInternational">Country of Citizenship<span style="color: red"> *</span>
+                        </label>
+                        <input id="citizenshipCountryInternational" name="citizenshipCountryInternational"
+                        class="text-left  " required="required" type="text" data-bind="autocomplete: { localSource: 'countryList',  clearOnFocus: true,  validate: true,  labelMask: ['country'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow469" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn470" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="numberAndStreetInt">Number and Street<span style="color: red"> *</span>
+                        </label>
+                        <input id="numberAndStreetInt" name="numberAndStreetInt" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn472" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="cityInt">City<span style="color: red"> *</span>
+                        </label>
+                        <input id="cityInt" name="cityInt" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn474" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="provinceState">Province/State<span style="color: red"> *</span>
+                        </label>
+                        <input id="provinceState" name="provinceState" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col476" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="territorialPostalCode">Territorial Postal Code<span style="color: red"> *</span>
+                        </label>
+                        <input id="territorialPostalCode" name="territorialPostalCode" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow480" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn481" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="countryInt">Country<span style="color: red"> *</span>
+                        </label>
+                        <input id="countryInt" name="countryInt" class="text-left  " required="required"
+                        type="text" data-bind="autocomplete: { localSource: 'countryList',  clearOnFocus: true,  validate: true,  labelMask: ['country'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow484" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn485" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_486" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>U.S. Address</strong> </h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow496" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickHeadingColumn497" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest498" name="quickHeadingSmallest" class="text-left  "><strong>Enter U.S. Mailing/Billing Address if applicable.</strong></h5>
+                </div>
+            </div>
+            <div id="quickInputsRow488" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn489" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="streetAddOneInt">Street Address Line 1</label>
+                        <input id="streetAddOneInt" name="streetAddOneInt"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn491" name="quickInputsColumn2" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="streetAddTwoInt">Street Address 2</label>
+                        <input id="streetAddTwoInt" name="streetAddTwoInt"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn493" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="apartmentDesignationInt">Apartment Designation</label>
+                        <input id="apartmentDesignationInt" name="apartmentDesignationInt"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow500" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn501" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="usCityInt">City</label>
+                        <input id="usCityInt" name="usCityInt" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn503" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="usStateInt">State</label>
+                        <input id="usStateInt" name="usStateInt" class="text-left  "
+                        type="text" data-bind="state" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn505" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="usZipInt">Zipcode</label>
+                        <input id="usZipInt" name="usZipInt" class="text-left  "
+                        type="text" data-bind="mask: 'zip' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow508" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn509" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_510" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>Current Contact Information</strong> </h4>
+                </div>
+            </div>
+            <div id="quickInputsRow512" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn513" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="internationalTelephone">International Telephone</label>
+                        <input id="internationalTelephone" name="internationalTelephone"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn515" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="usTelephone">U.S. Telephone</label>
+                        <input id="usTelephone" name="usTelephone" class="text-left  "
+                        type="text" data-bind="mask: 'phone' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow518" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn519" name="quickInputsColumn1" class="col-xs-12 col-sm-9 text-left  ">
+                    <label for="bestWayToContact">What is the best way to contact you?<span style="color: red"> *</span>
+                    </label>
+                    <select id="bestWayToContact" name="bestWayToContact" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Email">Email</option>
+                        <option value="International Telephone">International Telephone</option>
+                        <option value="U.S. Telephone">U.S. Telephone</option>
+                        <option value="Mail (International Address)">Mail (International Address)</option>
+                        <option value="Mail (U.S. Address)">Mail (U.S. Address)</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn521" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="preferredEmailInt">Preferred Email Address<span style="color: red"> *</span>
+                        </label>
+                        <input id="preferredEmailInt" name="preferredEmailInt" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn523" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="confirmEmailInt">Confirm Email Address<span style="color: red"> *</span>
+                        </label>
+                        <input id="confirmEmailInt" name="confirmEmailInt" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow739" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( usAddressGraduate() == 'No' ) ) ">
+                <div id="quickInputsColumn740" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_741" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>Foreign Address</strong> </h4>
+                </div>
+            </div>
+            <div id="quickInputsRow463107107" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( usAddressGraduate() == 'No' ) ) ">
+                <div id="quickInputsColumn464107" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="birthCountryGraduate">Country of Birth<span style="color: red"> *</span>
+                        </label>
+                        <input id="birthCountryGraduate" name="birthCountryGraduate" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { localSource: 'countryList',  clearOnFocus: true,  validate: true,  labelMask: ['country'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn466107" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="citizenshipCountryGraduate">Country of Citizenship<span style="color: red"> *</span>
+                        </label>
+                        <input id="citizenshipCountryGraduate" name="citizenshipCountryGraduate"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow469108108" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( usAddressGraduate() == 'No' ) ) ">
+                <div id="quickInputsColumn470108" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="numberAndStreetGraduate">Number and Street<span style="color: red"> *</span>
+                        </label>
+                        <input id="numberAndStreetGraduate" name="numberAndStreetGraduate" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn472108" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="cityGraduate">City<span style="color: red"> *</span>
+                        </label>
+                        <input id="cityGraduate" name="cityGraduate" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn474108" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="provinceStateGraduate">Province/State<span style="color: red"> *</span>
+                        </label>
+                        <input id="provinceStateGraduate" name="provinceStateGraduate" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col476108" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="territorialPostalCodeGraduate">Territorial Postal Code<span style="color: red"> *</span>
+                        </label>
+                        <input id="territorialPostalCodeGraduate" name="territorialPostalCodeGraduate"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow480109109" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( usAddressGraduate() == 'No' ) ) ">
+                <div id="quickInputsColumn481109" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="countryGraduate">Country<span style="color: red"> *</span>
+                        </label>
+                        <input id="countryGraduate" name="countryGraduate" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { localSource: 'countryList',  clearOnFocus: true,  validate: true,  labelMask: ['country'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow73" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickInputsColumn74" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_75" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>Contact Information</strong> </h4>
+                </div>
+            </div>
+            <div id="quickDropdownRow790" name="quickDropdownRow" class="text-left row gradNoUSAddress "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickDropdownColumn791" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="bestContactUGGR">What is the best way to contact you?<span style="color: red"> *</span>
+                    </label>
+                    <select id="bestContactUGGR" name="bestContactUGGR" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Email">Email</option>
+                        <option value="International Telephone">International Telephone</option>
+                        <option value="U.S. Telephone">U.S. Telephone</option>
+                        <option value="Mail (International Address)">Mail (International Address)</option>
+                        <option value="Mail (U.S. Address)">Mail (U.S. Address)</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow77" name="quickInputsRow" class="text-left row gradNoUSAddress "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickInputsColumn78" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="streetAddressOne">Street Address Line 1<span style="color: red"> *</span>
+                        </label>
+                        <input id="streetAddressOne" name="streetAddressOne" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow81" name="quickInputsRow" class="text-left row gradNoUSAddress "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickInputsColumn82" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="streetAddressTwo">Street Address Line 2</label>
+                        <input id="streetAddressTwo" name="streetAddressTwo"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow85" name="quickInputsRow" class="text-left row gradNoUSAddress "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickInputsColumn86" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="city">City<span style="color: red"> *</span>
+                        </label>
+                        <input id="city" name="city" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn88" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="state">State<span style="color: red"> *</span>
+                        </label>
+                        <input id="state" name="state" class="text-left  " required="required"
+                        type="text" data-bind="state" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn90" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="zipCode">Zip/Postal Code<span style="color: red"> *</span>
+                        </label>
+                        <input id="zipCode" name="zipCode" class="text-left  " required="required"
+                        type="text" data-bind="mask: 'zip' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow93116116" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Graduate Admissions Application' )  &amp;&amp; (usAddressGraduate()=='No')) ">
+                <div id="quickInputsColumn94116" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="primaryPhoneNoUSAddress">Primary Phone Number<span style="color: red"> *</span>
+                        </label>
+                        <input id="primaryPhoneNoUSAddress" name="primaryPhoneNoUSAddress" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn96116" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="alternatePhoneNoUSAddress">Alternate Phone Number</label>
+                        <input id="alternatePhoneNoUSAddress" name="alternatePhoneNoUSAddress"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow93" name="quickInputsRow" class="text-left row gradNoUSAddress "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickInputsColumn94" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="primaryPhone">Primary Phone Number<span style="color: red"> *</span>
+                        </label>
+                        <input id="primaryPhone" name="primaryPhone" class="text-left  " required="required"
+                        type="text" data-bind="mask: 'phone' " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn96" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="alternatePhone">Alternate Phone Number</label>
+                        <input id="alternatePhone" name="alternatePhone"
+                        class="text-left  " type="text" data-bind="mask: 'phone' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow99" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickInputsColumn100" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="preferredEmail">Preferred Email Address<span style="color: red"> *</span>
+                        </label>
+                        <input id="preferredEmail" name="preferredEmail" class="text-left  " required="required"
+                        type="text" data-bind="email" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn102" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="emailConfirm">Confirm Email Address<span style="color: red"> *</span>
+                        </label>
+                        <input id="emailConfirm" name="emailConfirm" class="text-left  " required="required"
+                        type="text" data-bind="email" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow105" name="quickInputsRow" class="text-left row under18 ">
+                <div id="quickInputsColumn106" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_107" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>Parent or Legal Guardian</strong> </h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow141" name="quickParagraphRow" class="text-left under18 ">
+                <div id="quickParagraphColumn142" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement143" name="quickParagraphElement" class="text-left  "><strong>Since your Date of Birth entry above indicates that you are under the age of 18, please list the contact information for your parent or legal guardian.</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow109" name="quickInputsRow" class="text-left row under18 ">
+                <div id="quickInputsColumn110" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="firstNameParent">First Name</label>
+                        <input id="firstNameParent" name="firstNameParent" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn112" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="lastNameParent">Last Name</label>
+                        <input id="lastNameParent" name="lastNameParent" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow115" name="quickInputsRow" class="text-left row under18 ">
+                <div id="quickInputsColumn116" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="primaryPhoneParent">Primary Phone Number</label>
+                        <input id="primaryPhoneParent" name="primaryPhoneParent"
+                        class="text-left  " required="required" type="text" data-bind="mask: 'phone' "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn118" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="emailAddress">Email Address</label>
+                        <input id="emailAddress" name="emailAddress" class="text-left  "
+                        required="required" type="text" data-bind="email" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow527" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn528" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_529" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>Immigration Information</strong> </h4>
+                </div>
+            </div>
+            <div id="quickInputsRow531" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn532" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="requireVisa">Will you require a Student VISA?<span style="color: red"> *</span>
+                    </label>
+                    <select id="requireVisa" name="requireVisa" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow536" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn537" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="possessVisa">Do you already possess a VISA?<span style="color: red"> *</span>
+                    </label>
+                    <select id="possessVisa" name="possessVisa" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn539" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( possessVisa() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="visaNumber">Visa Number<span style="color: red"> *</span>
+                        </label>
+                        <input id="visaNumber" name="visaNumber" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow542" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn543" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="immigrantRegNumber">Do you have an Immigrant Registration Number?<span style="color: red"> *</span>
+                    </label>
+                    <select id="immigrantRegNumber" name="immigrantRegNumber" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn545" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( immigrantRegNumber() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="enterImmRegNumber">Immigrant Registration Number<span style="color: red"> *</span>
+                        </label>
+                        <input id="enterImmRegNumber" name="enterImmRegNumber" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow121" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn122" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_123" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>Emergency Contact Information</strong> </h4>
+                </div>
+            </div>
+            <div id="quickInputsRow125" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn126" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="emergencyRelation">Nature of Relationship to Applicant<span style="color: red"> *</span>
+                        </label>
+                        <input id="emergencyRelation" name="emergencyRelation" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow129" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn130" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="emergencyFirstName">First Name<span style="color: red"> *</span>
+                        </label>
+                        <input id="emergencyFirstName" name="emergencyFirstName" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn132" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="emergencyLastName">Last Name<span style="color: red"> *</span>
+                        </label>
+                        <input id="emergencyLastName" name="emergencyLastName" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow135" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn136" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="emergencyPhone">Phone Number<span style="color: red"> *</span>
+                        </label>
+                        <input id="emergencyPhone" name="emergencyPhone" class="text-left  " required="required"
+                        type="text" data-bind="mask: 'phone' " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn138" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="emergencyAlternatePhone">Alternate Phone Number<span style="color: red"> *</span>
+                        </label>
+                        <input id="emergencyAlternatePhone" name="emergencyAlternatePhone" class="text-left  "
+                        required="required" type="text" data-bind="mask: 'phone' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow145" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn146" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_147" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>Demographic Information</strong> </h4>
+                </div>
+            </div>
+            <div id="quickInputsRow149" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn150" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="gender">Gender<span style="color: red"> *</span>
+                    </label>
+                    <select id="gender" name="gender" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                        <option value="Prefer Not To Say">Prefer Not To Say</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow154" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn155" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="hispanicLatinAmerican">Are you of Hispanic or Latin American Descent?</label>
+                    <select id="hispanicLatinAmerican"
+                    name="hispanicLatinAmerican" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Prefer Not to Say">Prefer Not to Say</option>
+                    </select>
+                </div>
+                <div id="col369" name="col369" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( applicationType() == 'Graduate Admissions Application' )  &amp;&amp;  ( hispanicLatinAmerican() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="hispanicLatinoBackgrounds">Please select one: (graduate)</label>
+                        <input id="hispanicLatinoBackgrounds"
+                        name="hispanicLatinoBackgrounds" class="text-left  " data-bind="autocomplete: { integrationSource: 'getHispanicLatinAmericanBackgrounds',  clearOnFocus: true,  validate: true,  labelMask: ['background'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickParagraphRow159" name="quickParagraphRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'Graduate Admissions Application' ) ||  ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickParagraphColumn160" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement161" name="quickParagraphElement" class="text-left  "><strong>Please select the racial category or categories with which you most closely identify. Check as many as apply.</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow163" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'Graduate Admissions Application' ) ||  ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn164" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="americanIndianAlaska" name="americanIndianAlaska" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="quickInputsColumn166" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="h5_181" name="h5_181" class="text-left  ">American Indian or Alaska Native</label>
+                </div>
+                <div id="quickInputsColumn168" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="asian" name="asian" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn170" name="quickInputsColumn4" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="asianLabel" name="asianLabel" class="text-left  " for="asian">Asian</label>
+                </div>
+                <div id="col172" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="blackOrAfricanAmerican" name="blackOrAfricanAmerican" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="col173" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="blackOrAALabel" name="blackOrAALabel" class="text-left  " for="blackOrAfricanAmerican">Black or African American</label>
+                </div>
+                <div id="col174" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="hawaiianPacificIslander" name="hawaiianPacificIslander" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="col175" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="hawaiianPacificIslanderLabel" name="hawaiianPacificIslanderLabel"
+                    class="text-left  " for="hawaiianPacificIslander">Native Hawaiian or Other Pacific Islander</label>
+                </div>
+                <div id="col176" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="white" name="white" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="col177" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="whiteLabel" name="whiteLabel" class="text-left  " for="white">White</label>
+                </div>
+                <div id="col766" class="col-xs-12 col-sm-1 text-center  ">
+                    <input id="preferNotToSay" name="preferNotToSay" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="col767" class="col-xs-12 col-sm-11 text-left  ">
+                    <label id="preferNotToSayLabel" name="preferNotToSayLabel" class="text-left  "
+                    for="preferNotToSay">Prefer Not to Say</label>
+                </div>
+            </div>
+            <div id="quickInputsRow197" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn198" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <label for="firstGenStudent">Are you a first generation student? (Neither parent completed college)
+                        <span
+                        style="color: red">*</span>
+                    </label>
+                    <select id="firstGenStudent" name="firstGenStudent" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow435" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn436" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="howDidYouLearn">How did you learn about University of the Southwest?</label>
+                        <input id="howDidYouLearn"
+                        name="howDidYouLearn" class="text-left  " type="text" data-bind="autocomplete: { integrationSource: 'getHowYouHeard',  clearOnFocus: true,  validate: true,  labelMask: ['how_you_heard'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow451" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( howDidYouLearn() == 'Other*' ) ) ">
+                <div id="quickTextAreaColumn452" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="specifyHowYouHeard">Please Specify</label>
+                    <textarea id="specifyHowYouHeard" name="specifyHowYouHeard"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow202" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn203" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_204" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>Student Intentions</strong> </h4>
+                </div>
+            </div>
+            <div id="quickInputsRow206" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn207" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="applyingAs">You are applying as a:<span style="color: red"> *</span>
+                    </label>
+                    <select id="applyingAs" name="applyingAs" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="First-time Freshman (includes dual credit)">First-time Freshman (includes dual credit)</option>
+                        <option value="Transfer (1+ college credit hours post high school graduation)">Transfer (1+ college credit hours post high school graduation)</option>
+                        <option
+                        value="Non-Degree Seeking">Non-Degree Seeking</option>
+                            <option value="NeXT+ Program">NeXT+ Program</option>
+                            <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow211" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( applyingAs() == 'Other' ) ) ">
+                <div id="quickTextAreaColumn212" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="applyingAsOtherComment">Please explain:</label>
+                    <textarea id="applyingAsOtherComment" name="applyingAsOtherComment"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow239" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn240" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="studentAthlete">Will you be attending USW as a student-athlete?<span style="color: red"> *</span>
+                    </label>
+                    <select id="studentAthlete" name="studentAthlete" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow251" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( studentAthlete() == 'Yes' ) ) ">
+                <div id="quickInputsColumn252" name="quickInputsColumn1" class="col-xs-12 col-sm-7 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sport">Please select the sport for which you are being recruited.<span style="color: red"> *</span>
+                        </label>
+                        <input id="sport" name="sport" class="text-left  " required="required"
+                        type="text" data-bind="autocomplete: { integrationSource: 'getSports',  clearOnFocus: true,  validate: true,  labelMask: ['sport'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow215" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn216" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( studentAthlete() == 'No' ) ) ">
+                    <label for="howAttending">Please select how you will be attending.<span style="color: red"> *</span>
+                    </label>
+                    <select id="howAttending" name="howAttending" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Resident (plan to live on campus)">Resident (plan to live on campus)</option>
+                        <option value="Commuter (will commute to campus for classes)">Commuter (will commute to campus for classes)</option>
+                        <option value="Online">Online</option>
+                    </select>
+                </div>
+                <div id="col698" name="col698" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( studentAthlete() == 'Yes' ) ) ">
+                    <label for="howAttendingStudentAthlete">Please select how you will be attending.<span style="color: red"> *</span>
+                    </label>
+                    <select id="howAttendingStudentAthlete" name="howAttendingStudentAthlete"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Resident (plan to live on campus)">Resident (plan to live on campus)</option>
+                        <option value="Commuter (will commute to campus for classes)">Commuter (will commute to campus for classes)</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow220" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn221" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="intendedStartYear">Intended Start Year<span style="color: red"> *</span>
+                    </label>
+                    <select id="intendedStartYear" name="intendedStartYear" class="text-left  "
+                    required="required" data-bind="dynamicYear: { format: 'YYYY[0,2]' } ">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn223" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                    <label for="intendedStartTermUndergrad">Intended Start Term<span style="color: red"> *</span>
+                    </label>
+                    <select id="intendedStartTermUndergrad" name="intendedStartTermUndergrad"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Fall - August">Fall - August</option>
+                        <option value="Spring - January">Spring - January</option>
+                    </select>
+                </div>
+                <div id="col645" name="col645" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                    <label for="intendedStartTermGrad">Intended Start Term<span style="color: red"> *</span>
+                    </label>
+                    <select id="intendedStartTermGrad" name="intendedStartTermGrad" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Fall(A) - August - Online">Fall(A) - August - Online</option>
+                        <option value="Fall(B) - October - Online">Fall(B) - October - Online</option>
+                        <option value="Spring(A) - January - Online">Spring(A) - January - Online</option>
+                        <option value="Spring(B) - March - Online">Spring(B) - March - Online</option>
+                        <option value="Summer(A) - May - Online">Summer(A) - May - Online</option>
+                        <option value="Summer(B) - June - Online">Summer(B) - June - Online</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickHeadingRow574" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickHeadingColumn575" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest576" name="quickHeadingSmallest" class="text-left  "><strong>Funding Source  - Please indicate all that apply.</strong></h5>
+                </div>
+            </div>
+            <div id="quickInputsRow1639191" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn16491" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="personalFunding" name="personalFunding" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" value="personalFunding"
+                    />
+                </div>
+                <div id="quickInputsColumn16691" name="quickInputsColumn2" class="col-xs-11 col-sm-2 text-left  ">
+                    <label id="personalFundingText" name="personalFundingText" class="text-left  "
+                    for="personalFunding">Personal</label>
+                </div>
+                <div id="quickInputsColumn16891" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="governmentFunding" name="governmentFunding" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" value="governmentFunding"
+                    />
+                </div>
+                <div id="quickInputsColumn17091" name="quickInputsColumn4" class="col-xs-11 col-sm-2 text-left  ">
+                    <label id="governmentFundingText" name="governmentFundingText" class="text-left  "
+                    for="governmentFunding">Government</label>
+                </div>
+                <div id="col17291" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="schoolFunding" name="schoolFunding" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" value="schoolFunding" />
+                </div>
+                <div id="col17391" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="schoolFundingText" name="schoolFundingText" class="text-left  "
+                    for="schoolFunding">School</label>
+                </div>
+            </div>
+            <div id="quickInputsRow377" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickInputsColumn378" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="degreeNonDegree">I will be a:<span style="color: red"> *</span>
+                    </label>
+                    <select id="degreeNonDegree" name="degreeNonDegree" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Degree Seeking Student">Degree Seeking Student</option>
+                        <option value="Non-Degree Seeking Student">Non-Degree Seeking Student</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow387" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickInputsColumn388" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="graduateProgram">Which graduate program are you applying for?<span style="color: red"> *</span>
+                        </label>
+                        <input id="graduateProgram" name="graduateProgram" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { integrationSource: 'getGraduatePrograms',  clearOnFocus: true,  validate: true,  labelMask: ['Title'],  formFields: {'graduateAdvisorEmail':'Advisor_Email'} } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow391" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickInputsColumn392" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="leapStudent">Are you a LEAP or ALD student?</label>
+                    <select id="leapStudent" name="leapStudent"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow228" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn229" name="quickInputsColumn1" class="col-xs-12 col-sm-7 text-left  ">
+                    <div class="text-left  ">
+                        <label for="intendedMajor">Intended Major<span style="color: red"> *</span>
+                        </label>
+                        <input id="intendedMajor" name="intendedMajor" class="text-left  " required="required"
+                        type="text" data-bind="autocomplete: { integrationSource: 'getMajors',  clearOnFocus: true,  validate: true,  labelMask: ['Title'],  formFields: {'undergraduateAdvisorEmail':'Advisor_Email'} } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow234" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn235" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="teacherLicensure">Will you be seeking teacher licensure?<span style="color: red"> *</span>
+                    </label>
+                    <select id="teacherLicensure" name="teacherLicensure" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickDropdownRow247" name="quickDropdownRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickDropdownColumn248" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="financialAid">Do you intend to apply for or use financial aid?<span style="color: red"> *</span>
+                    </label>
+                    <select id="financialAid" name="financialAid" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow627" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickInputsColumn628" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="vaBenefits">Do you intend to apply for or use VA Benefits?<span style="color: red"> *</span>
+                    </label>
+                    <select id="vaBenefits" name="vaBenefits" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow255" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn256" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_257" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>Educational Background</strong> </h4>
+                </div>
+            </div>
+            <div id="quickDropdownRow259" name="quickDropdownRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() ) ) ">
+                <div id="quickDropdownColumn260" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="previouslyApplied">Have you previously applied to USW?<span style="color: red"> *</span>
+                    </label>
+                    <select id="previouslyApplied" name="previouslyApplied" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow263" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn264" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="highSchoolName">High School Name<span style="color: red"> *</span>
+                        </label>
+                        <input id="highSchoolName" name="highSchoolName" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn266" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="highSchoolCity">High School City<span style="color: red"> *</span>
+                        </label>
+                        <input id="highSchoolCity" name="highSchoolCity" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn268" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="highSchoolState">High School State<span style="color: red"> *</span>
+                        </label>
+                        <input id="highSchoolState" name="highSchoolState" class="text-left  "
+                        required="required" type="text" data-bind="state" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow271" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn272" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="highSchoolGraduationDate">High School Graduation Date<span style="color: red"> *</span>
+                        </label>
+                        <input id="highSchoolGraduationDate" name="highSchoolGraduationDate" class="text-left  "
+                        required="required" type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow275" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn276" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="GED">Do you have a GED?</label>
+                    <select id="GED" name="GED" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickDropdownRow578" name="quickDropdownRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickDropdownColumn579" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="intOnCampus">While attending USW will you live on the USW Campus? If No, please Fill
+                        out residence information below.<span style="color: red"> *</span>
+                    </label>
+                    <select id="intOnCampus" name="intOnCampus" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow582" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( intOnCampus() == 'No' ) ) ">
+                <div id="quickInputsColumn583" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="intResStreetAddOne">Residence Street Address 1</label>
+                        <input id="intResStreetAddOne" name="intResStreetAddOne"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn585" name="quickInputsColumn2" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="intResAddTwo">Residence Street Address 2</label>
+                        <input id="intResAddTwo" name="intResAddTwo"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn587" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="intResAptNum">Residence Apartment Number</label>
+                        <input id="intResAptNum" name="intResAptNum"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow590" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( intOnCampus() == 'No' ) ) ">
+                <div id="quickInputsColumn591" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="intResCity">City</label>
+                        <input id="intResCity" name="intResCity" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn593" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="intResState">State</label>
+                        <input id="intResState" name="intResState" class="text-left  "
+                        type="text" data-bind="state" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn595" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="intResZipCode">Zipcode</label>
+                        <input id="intResZipCode" name="intResZipCode" class="text-left  "
+                        type="text" data-bind="mask: 'zip' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow284" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn285" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_286" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>Previous Colleges or Universities</strong> </h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow288" name="quickParagraphRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickParagraphColumn289" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement290" name="quickParagraphElement" class="text-left  "><strong>Please list all previous colleges or universities you have attended or are attending, including dual credit. Please include name of institution, city, state and hours attempted. Failure to list all institutions will be considered an intentional omission and may lead to forced withdrawal. Please send an official transcript from all schools listed.</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickHeadingRow598" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickHeadingColumn599" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest600" name="quickHeadingSmallest" class="text-left  "><strong>Please only send non U.S. college transcripts that have been evaluated.</strong></h5>
+                </div>
+            </div>
+            <div id="quickInputsRow292" name="quickInputsRow" class="text-left row "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addInstitution',  removeButtonID: 'removeInstitution' }, visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'International Undergraduate Admission Application' ) )  ">
+                <div id="quickInputsColumn293" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="nameOfInstitution">Name of Institution</label>
+                        <input id="nameOfInstitution" name="nameOfInstitution"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn295" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="previousCollegeUCity">City</label>
+                        <input id="previousCollegeUCity" name="previousCollegeUCity"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn297" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="previousCollegeUState">State</label>
+                        <input id="previousCollegeUState" name="previousCollegeUState"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn299" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hoursAttempted">Hours Attempted</label>
+                        <input id="hoursAttempted" name="hoursAttempted"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col304" class="col-xs-12 col-sm-1 text-left  " style=" margin-top: 25px; ">
+                    <button id="ele305" name="ele305" class="text-left  " style="" undefined=""
+                    data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col301" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele302" name="ele302" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow308" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickInputsColumn309" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <button id="addInstitution" name="addInstitution" class="text-left btn btn-primary btn-lg btn-block "
+                    style="" undefined="">Add Another Institution</button>
+                </div>
+                <div id="quickInputsColumn311" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <button id="removeInstitution" name="removeInstitution" class="text-left btn btn-danger btn-lg btn-block "
+                    style="" undefined="">Remove Last Institution</button>
+                </div>
+            </div>
+            <div id="quickDropdownRow439" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn440" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="academicProbationOrSuspension">Are you currently on academic probation or suspension from the last college
+                        or university attended?<span style="color: red"> *</span>
+                    </label>
+                    <select id="academicProbationOrSuspension" name="academicProbationOrSuspension"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Not Applicable">Not Applicable</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickDropdownRow443" name="quickDropdownRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Undergraduate Admission Application' )  ||  ( applicationType() == 'International Undergraduate Admission Application' ) ) ">
+                <div id="quickDropdownColumn444" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="dismissedFromCollegeOrUniversity">Have you ever been dismissed from a college or university?<span style="color: red"> *</span>
+                    </label>
+                    <select id="dismissedFromCollegeOrUniversity" name="dismissedFromCollegeOrUniversity"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Not Applicable">Not Applicable</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow447" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( dismissedFromCollegeOrUniversity() == 'Yes' ) ) ">
+                <div id="quickTextAreaColumn448" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="reasonForDismissal">Please Explain<span style="color: red"> *</span>
+                    </label>
+                    <textarea id="reasonForDismissal" name="reasonForDismissal" class="text-left  "
+                    required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow399" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickHeadingColumn400" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest401" name="quickHeadingSmallest" class="text-left  "><strong>When and from where did you earn your Bachelor's degree?</strong></h5>
+                </div>
+            </div>
+            <div id="quickInputsRow403" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Graduate Admissions Application' ) ) , dynamicList: true, dynamicListProperties: { addButtonID: 'addInstitutionGrad',  removeButtonID: 'removeInstitutionGrad' } ">
+                <div id="quickInputsColumn404" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="bachelorsInstitution">Name of Institution<span style="color: red"> *</span>
+                        </label>
+                        <input id="bachelorsInstitution" name="bachelorsInstitution" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn406" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="bachelorsDegreeDate">Date of Graduation<span style="color: red"> *</span>
+                        </label>
+                        <input id="bachelorsDegreeDate" name="bachelorsDegreeDate" class="text-left  "
+                        required="required" type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn408" name="quickInputsColumn3" class="col-xs-12 col-sm-7 text-left  ">
+                    <div class="text-left  ">
+                        <label for="bachelorsLocation">Location<span style="color: red"> *</span>
+                        </label>
+                        <input id="bachelorsLocation" name="bachelorsLocation" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col642" class="col-xs-12 col-sm-1 text-left  " style=" margin-top: 25px ">
+                    <button id="ele643" name="ele643" class="text-left  " style="" undefined=""
+                    data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col639" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele640" name="ele640" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow632" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickInputsColumn633" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <button id="addInstitutionGrad" name="addInstitutionGrad" class="text-left btn btn-primary "
+                    style="" undefined="">Add Another Institution</button>
+                </div>
+                <div id="quickInputsColumn635" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <button id="removeInstitutionGrad" name="removeInstitutionGrad" class="text-left btn btn-danger "
+                    style="" undefined="">Remove Last Institution</button>
+                </div>
+            </div>
+            <div id="quickDropdownRow414" name="quickDropdownRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickDropdownColumn415" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="graduateCredits">Do you already have graduate credits?</label>
+                    <select id="graduateCredits"
+                    name="graduateCredits" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow403111111" name="quickInputsRow" class="text-left row "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addGradInstitution',  removeButtonID: 'removeGradInstitution' }, visible: ( ( graduateCredits() == 'Yes' ) )  ">
+                <div id="quickInputsColumn404111" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="gradInstitution">Name of Institution<span style="color: red"> *</span>
+                        </label>
+                        <input id="gradInstitution" name="gradInstitution" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn406111" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="graduateDegreeDate">Date of Graduation</label>
+                        <input id="graduateDegreeDate" name="graduateDegreeDate"
+                        class="text-left  " type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn408111" name="quickInputsColumn3" class="col-xs-12 col-sm-7 text-left  ">
+                    <div class="text-left  ">
+                        <label for="graduateLocation">Location<span style="color: red"> *</span>
+                        </label>
+                        <input id="graduateLocation" name="graduateLocation" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col642111" class="col-xs-12 col-sm-1 text-left  " style=" margin-top: 25px ">
+                    <button id="ele643111" name="ele643" class="text-left  " style="" undefined=""
+                    data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col639111" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele640111" name="ele640" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow632112112" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( graduateCredits() == 'Yes' ) ) ">
+                <div id="quickInputsColumn633112" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <button id="addGradInstitution" name="addGradInstitution" class="text-left btn btn-primary "
+                    style="" undefined="">Add Another Institution</button>
+                </div>
+                <div id="quickInputsColumn635112" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <button id="removeGradInstitution" name="removeGradInstitution" class="text-left btn btn-danger "
+                    style="" undefined="">Remove Last Institution</button>
+                </div>
+            </div>
+            <div id="quickDropdownRow426" name="quickDropdownRow" class="text-left row "
+            data-bind="visible: ( ( applicationType() == 'Graduate Admissions Application' ) ) ">
+                <div id="quickDropdownColumn427" name="quickDropdownColumn" class="col-xs-12 col-sm-9 text-left  ">
+                    <label for="dismissed">Have you ever been dismissed from a higher education institution?</label>
+                    <select
+                    id="dismissed" name="dismissed" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow430" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( dismissed() == 'Yes' ) ) ">
+                <div id="quickTextAreaColumn431" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="dismissalExplanation">Please provide and explanation for your dismissal.</label>
+                    <textarea id="dismissalExplanation"
+                    name="dismissalExplanation" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow317" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn318" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_319" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>SMS Communication</strong> </h4>
+                </div>
+            </div>
+            <div id="quickInputsRow321" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn322" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  "
+                style=" margin-top: 35px; ">
+                    <input id="smsAgree" name="smsAgree" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn324" name="quickInputsColumn2" class="col-xs-11 col-sm-6 text-left  "
+                style=" margin-top: 30px; ">
+                    <p id="quickInputsText325" name="quickInputsText2" class="text-left  ">I agree to receive SMS Text Messages at the following phone number from
+                        University of the Southwest for marketing purposes for USW products. Message
+                        and data rates may apply.</p>
+                </div>
+                <div id="col328" class="col-xs-12 col-sm-1 text-left  "><span id="ele329" name="ele329" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn326" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="smsPhone">Phone</label>
+                        <input id="smsPhone" name="smsPhone" class="text-left  "
+                        type="text" data-bind="mask: 'phone' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow714" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn715" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_716" name="h4_19" class="text-left  " style=" background-color:#003D79;  color:#ffffff;  padding: 10px; "><strong>Disclaimer</strong> </h4>
+                </div>
+            </div>
+            <div id="quickInputsRow321107107" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn322107" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  "
+                style=" margin-top: 35px; ">
+                    <input id="disclaimerAcknowledgement" name="disclaimerAcknowledgement"
+                    class="text-left  " style=" transform: scale(1.5); " required="required"
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn324107" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  "
+                style=" margin-top: 30px; ">
+                    <p id="quickInputsText325107" name="quickInputsText325107" class="text-left  ">By submitting this form, I agree that University of the Southwest may
+                        contact me about educational services by email, phone, and text message
+                        at the contact information provided. Message &amp; data rates may apply.
+                        I understand that my consent to receiving email, phone, and/or text messages
+                        is not required in order for me to attend University of the Southwest.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow800" name="quickInputsRow" class="text-left row enrollmentComments ">
+                <div id="quickInputsColumn801" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_802" name="h4_19" class="text-left  " style=" background-color:#000000;  color:#ffffff;  padding: 10px; "><strong>Enrollment Review Comments</strong> </h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow804" name="quickTextAreaRow" class="text-left row enrollmentComments ">
+                <div id="quickTextAreaColumn805" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <textarea id="enrollmentReviewComments" name="enrollmentReviewComments"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow682" name="quickInputsRow" class="text-left row enrollmentCounselor ">
+                <div id="quickInputsColumn683" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_684" name="h4_19" class="text-left  " style=" background-color:#000000;  color:#ffffff;  padding: 10px; "><strong>Graduate Enrollment Counselor Assignment</strong> </h4>
+                </div>
+            </div>
+            <div id="quickInputsRow686" name="quickInputsRow" class="text-left row enrollmentCounselor ">
+                <div id="quickInputsColumn687" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="graduateEnrollmentCounselor">Please select the Graduate Enrollment Counselor who will be assigned to
+                            this application.</label>
+                        <input id="graduateEnrollmentCounselor" name="graduateEnrollmentCounselor"
+                        class="text-left  " required="required" type="text" data-bind="autocomplete: { integrationSource: 'getGraduateEnrollmentCounselorsGroupInfo',  clearOnFocus: true,  validate: true,  labelMask: ['username'],  formFields: {'graduateEnrollmentCouselorEmail':'email', 'graduateEnrollmentCounselorName':'username'} } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow653" name="quickInputsRow" class="text-left row lookupCheck ">
+                <div id="quickInputsColumn654" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_655" name="h4_19" class="text-left  " style=" background-color:#000000;  color:#ffffff;  padding: 10px; "><strong>Lookup Check</strong> </h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow664" name="quickParagraphRow" class="text-left row lookupCheck ">
+                <div id="quickParagraphColumn665" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement666" name="quickParagraphElement" class="text-left  "><strong>The Softdocs Etrieve system requires a Student Lookup to be created so that this form can file in Etrieve Content. This requires a synch to take place with the ERP after the Student ID has been created in Colleague. Please enter a Student ID and click the 'Lookup Check' button below to ensure that the Lookup exists in Etrieve before submitting this form.<span style="color: red"> *</span></strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow668" name="quickInputsRow" class="text-left row lookupCheck ">
+                <div id="quickInputsColumn669" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <input id="studentIDLookupCheck" name="studentIDLookupCheck" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col671" class="col-xs-12 col-sm-6 text-left  ">
+                    <button id="lookupCheckButton" name="lookupCheckButton" class="text-left btn btn-primary "
+                    style="" undefined="">Lookup Check</button>
+                </div>
+            </div>
+            <div id="quickInputsRow617" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn618" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickInputsRow619" name="quickInputsRow" class="text-left  " style=" background-color:#7F7F7F;  color:#ffffff;  padding: 10px; "><strong>Developer Section (hidden)</strong> </h4>
+                </div>
+            </div>
+            <div id="quickInputsRow621" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn622" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="graduateEnrollmentCouselorEmail">graduateEnrollmentCouselorEmail (hidden)</label>
+                        <input id="graduateEnrollmentCouselorEmail"
+                        name="graduateEnrollmentCouselorEmail" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="col726" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="graduateEnrollmentCounselorName">graduateEnrollmentCounselorName (hidden)</label>
+                        <input id="graduateEnrollmentCounselorName"
+                        name="graduateEnrollmentCounselorName" class="text-left  " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn624" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="graduateAdvisorEmail">graduateAdvisorEmail (hidden)</label>
+                        <input id="graduateAdvisorEmail"
+                        name="graduateAdvisorEmail" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col723" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="undergraduateAdvisorEmail">undergraduateAdvisorEmail (hidden)</label>
+                        <input id="undergraduateAdvisorEmail"
+                        name="undergraduateAdvisorEmail" class="text-left  " />
+                    </div>
+                </div>
+                <div id="col660" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="lookupCheck">lookupCheck (hidden)</label>
+                        <input id="lookupCheck" name="lookupCheck"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col675" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicYear">academicYear (hidden)</label>
+                        <input id="academicYear" name="academicYear"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col678" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="gpaGroup">gpaGroup (hidden)</label>
+                        <input id="gpaGroup" name="gpaGroup" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col701" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="contactEmail">contactEmail (hidden)</label>
+                        <input id="contactEmail" name="contactEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col720" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col763" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentFullName">studentFullName (hidden)</label>
+                        <input id="studentFullName" name="studentFullName"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow731" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn732" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  "><span id="quickInputsText733" name="quickInputsText1" class="text-left  "><div id="custom-confirm-modal" class="modal">
+    <div class="modal-content">
+        <p>
+            <strong>WHY WE REQUIRE A SOCIAL SECURITY NUMBER</strong>
+        </p>
+        <p>
+            We collect Social Security Numbers (SSN) for undergraduate applications and financial aid recipients to ensure accurate linkage with financial aid records. The SSN is the key identifier provided by the federal government in ISIR downloads after completing the FAFSA, facilitating efficient processing of financial assistance.
+        </p>
+        <div class="col-xs-12">
+            <button id="confirm-yes" type="button" class="col-xs-2 col-xs-offset-4 btn">Got it!</button>
+        </div>
+    </div>
+</div>
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1050;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .modal-content {
+        background-color: #fefefe;
+        border-radius: 5px;
+        padding: 20px;
+        display: inline-block;
+        text-align: left;
+        margin: 0 auto; /* Center horizontally */
+    }
+    button {
+        background-color: #003D79;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px;
+    }
+</style></span>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

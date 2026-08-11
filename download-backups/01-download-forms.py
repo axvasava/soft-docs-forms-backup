@@ -22,7 +22,7 @@ from playwright.sync_api import Browser, BrowserContext, Download, Page, Playwri
 # ---------------------------------------
 
 BASE_URL = "https://oaklandcccentral.etrieve.cloud"
-FORM_FILES_URL_TEMPLATE = BASE_URL + "/Index#/settings/forms/{form_id}/files"
+FORM_SETTINGS_URL_TEMPLATE = BASE_URL + "/Index#/settings/forms/{form_id}"
 
 
 # ---------------------------------------
@@ -38,11 +38,11 @@ CHROME_USER_DATA_DIR = Path.home() / "AppData/Local/ChromePlaywrightSoftdocs"
 # Script defaults
 # ---------------------------------------
 
-DEFAULT_MIN_ID = 1
-DEFAULT_MAX_ID = 10
+DEFAULT_MIN_ID = 243
+DEFAULT_MAX_ID = 320
 DEFAULT_OUTPUT_ROOT = "backups"
-FAILED_FORM_IDS_CSV_DEFAULT = "backups/2026-04-27_091138/failed_form_ids.csv"
-DEFAULT_FORM_DETAILS_JSON = "form-details/output/form-details-deduped-2026-04-27.json"
+FAILED_FORM_IDS_CSV_DEFAULT = ""
+DEFAULT_FORM_DETAILS_JSON = "form-details/output/2026-06-12-form-details.json"
 
 
 # ---------------------------------------
@@ -213,16 +213,31 @@ def page_probe(page: Page) -> ProbeResult:
     )
 
 
-def open_form_files_page(page: Page, form_id: int) -> ProbeResult:
-    """Open one form's Files page and return what the script found."""
+def click_files_sidebar_link(page: Page) -> None:
+    """Click the Files link in the form settings sidebar."""
 
-    url = FORM_FILES_URL_TEMPLATE.format(form_id=form_id)
+    files_link = page.locator('a[data-cy="files"], a[aria-label="Files"]').first
+    files_link.wait_for(state="visible", timeout=10000)
+    files_link.click(timeout=10000)
+
+    page.wait_for_timeout(POST_NAV_WAIT_MS)
+    wait_for_files_actions_ready(page)
+    wait_for_page_to_settle(page)
+
+
+def open_form_files_page(page: Page, form_id: int) -> ProbeResult:
+    """
+    Open one form's general settings page, click Files in the sidebar,
+    and return what the script found on the Files page.
+    """
+
+    url = FORM_SETTINGS_URL_TEMPLATE.format(form_id=form_id)
 
     page.goto(url, wait_until="domcontentloaded", timeout=PAGE_LOAD_TIMEOUT_MS)
     page.wait_for_timeout(POST_NAV_WAIT_MS)
-
-    wait_for_files_actions_ready(page)
     wait_for_page_to_settle(page)
+
+    click_files_sidebar_link(page)
 
     return page_probe(page)
 
@@ -397,6 +412,7 @@ def parse_form_ids_csv(csv_path: Path) -> list[int]:
 
     return form_ids
 
+
 def parse_form_ids_from_details_json(json_path: Path) -> list[int]:
     """Read form IDs from form-details-deduped.json."""
 
@@ -410,10 +426,15 @@ def parse_form_ids_from_details_json(json_path: Path) -> list[int]:
 
     form_ids: list[int] = []
     seen: set[int] = set()
+    skipped_new_forms_builder_count = 0
 
     for index, item in enumerate(data, start=1):
         if not isinstance(item, dict):
             raise ValueError(f"Item {index} is not a JSON object")
+
+        if item.get("new_forms_builder") is True:
+            skipped_new_forms_builder_count += 1
+            continue
 
         raw_form_id = item.get("form_id")
 
@@ -432,9 +453,12 @@ def parse_form_ids_from_details_json(json_path: Path) -> list[int]:
             form_ids.append(form_id)
 
     if not form_ids:
-        raise ValueError("No form_id values found in JSON")
+        raise ValueError("No downloadable form_id values found in JSON")
+
+    print(f"Skipped new forms builder forms: {skipped_new_forms_builder_count}")
 
     return form_ids
+
 
 def resolve_form_ids(
     min_id: int,
@@ -448,7 +472,7 @@ def resolve_form_ids(
 
     Priority:
     1. Failed form IDs CSV
-    2. form-details-deduped.json
+    2. form-details-deduped.json, excluding new forms builder forms
     3. Min/max ID range
     """
 
@@ -476,11 +500,12 @@ def scan_and_backup_forms(
     Main backup loop.
 
     For each form ID:
-    1. Open the Softdocs files page.
-    2. Select all files.
-    3. Download the zip.
-    4. Extract the zip.
-    5. Record success, empty, or failure in the manifest.
+    1. Open the Softdocs general form settings page.
+    2. Click Files in the sidebar.
+    3. Select all files.
+    4. Download the zip.
+    5. Extract the zip.
+    6. Record success, empty, or failure in the manifest.
     """
 
     results: list[dict[str, Any]] = manifest["results"]

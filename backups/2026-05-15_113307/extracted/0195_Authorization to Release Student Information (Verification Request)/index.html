@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row549" class="text-left row fd-form-masthead ">
+                <div id="col550" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn551" name="revisedOn" class="col-sm-12 text-right  ">Revised 02/26</span>
+                </div>
+                <div id="col552" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele553" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col554" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele555" name="ele21" class="text-left form-title with-subtitle ">Authorization to Release Student Information</h1><span id="ele556" name="ele23" class="text-left form-subtitle ">Verification Request</span>
+                </div>
+                <div id="col557" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele558" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row545" class="text-left row ">
+                <div id="col546" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote547" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow4666" name="quickHeadingRow" class="text-left row  "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn476" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall486" name="quickHeadingSmall486" class="text-center  "
+                    style=" font-weight: bold; ">General Information</h4>
+                </div>
+            </div>
+            <div id="row49" class="text-left row instructions " style="overflow: auto;  font-weight: bold ">
+                <div id="col54" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="ele55" name="ele55" class="col-xs-12 col-sm-12 text-left  " style=" font-weight: bold ">This form must be submitted with a copy of a valid photo ID (driver's license or state ID card)</h4>
+                </div>
+            </div>
+            <div id="row493939" name="" class="text-left row otherInstruction " style="overflow: auto;  font-weight: bold ">
+                <div id="col5439" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="ele5539" name="ele5539" class="col-xs-12 col-sm-12 text-left  "
+                    style=" font-weight: bold ">Please fill out this form in its entirety. After form submission, we will be in touch with you for required documentation.</h4>
+                </div>
+            </div>
+            <div id="row4939394040" name="" class="text-left row otherInstruction "
+            style="overflow: auto;  font-weight: bold ">
+                <div id="col543940" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="ele553940" name="ele553940" class="col-xs-12 col-sm-12 text-left  "
+                    style=" font-weight: bold ">If you are an existing student, please use the following link <a href="https://oaklandcc.etrieve.cloud/central/forms/224">Authorization to Release Student Information Form for Existing Students</a></h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow46" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn47" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall48" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Student Information</h4>
+                </div>
+            </div>
+            <div id="row41" class="text-left row other ">
+                <div id="col59" name="col59" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left maskssn ">
+                        <label for="SSN">Last 4 of SSN</label>
+                        <input id="SSN" name="SSN" class="text-left maskssn "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col65" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="DOB">Birth Date</label>
+                        <input id="DOB" name="DOB" class="text-left datepicker "
+                        required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="row50" class="text-left row other ">
+                <div id="col57" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="FirstName">First Name</label>
+                        <input id="FirstName" name="FirstName" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col58" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="MiddleName">Middle Name</label>
+                        <input id="MiddleName" name="MiddleName" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col68" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="LastName">Last Name</label>
+                        <input id="LastName" name="LastName" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="row69" class="text-left row other ">
+                <div id="col70" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formerNames">Former Name(s) (if applicable)</label>
+                        <input id="formerNames" name="formerNames"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="row79" class="text-left row other ">
+                <div id="col92" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="Address">Street Address</label>
+                        <input id="Address" name="Address" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="row80" class="text-left row other ">
+                <div id="col81" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="City">City</label>
+                        <input id="City" name="City" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col82" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="State">State</label>
+                        <input id="State" name="State" class="text-left  " required="required"
+                        data-bind="state" />
+                    </div>
+                </div>
+                <div id="col83" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left maskzip ">
+                        <label for="Zip">Zip</label>
+                        <input id="Zip" name="Zip" class="text-left maskzip " required="required"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row84" class="text-left row other ">
+                <div id="col85" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="StudentEmailAddress">Email Address</label>
+                        <input id="StudentEmailAddress" name="StudentEmailAddress"
+                        class="text-left  " required="required" data-bind="email" />
+                    </div>
+                </div>
+                <div id="col95" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left maskphone ">
+                        <label for="PhoneNumber">Phone #</label>
+                        <input id="PhoneNumber" name="PhoneNumber" class="text-left maskphone "
+                        required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow105" name="quickHeadingRow" class="text-left row otherRows "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn106" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall107" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Request Information and Delivery Method(s)</h4>
+                </div>
+            </div>
+            <div id="row108" class="text-left row otherRows ">
+                <div id="col128" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele129" name="ele129" class="col-xs-12 col-sm-12 text-left  " style=" font-weight: bold ">In accordance with the Family Educational Rights and Privacy Act (FERPA)
+                        I authorize Oakland Community College to release or disclose the information
+                        from my student record to: <span style="color: red;">*</span>
+                    </p>
+                </div>
+                <div id="col321" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="ReleaseOrDiscloseMyself" name="ReleaseOrDisclose" class="text-left  "
+                    required="required" type="radio" value="myself" />
+                </div>
+                <div id="col322" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="lblReleaseOrDiscloseMyself" name="lblReleaseOrDiscloseMyself"
+                    class="text-left  " for="ReleaseOrDiscloseMyself">Release information to myself</label>
+                </div>
+                <div id="col323" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="ReleaseOrDiscloseOrganization" name="ReleaseOrDisclose" class="text-left  "
+                    required="required" type="radio" value="organization" />
+                </div>
+                <div id="col324" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="lblReleaseOrDiscloseOrganization" name="lblReleaseOrDiscloseOrganization"
+                    class="text-left  " for="ReleaseOrDiscloseOrganization">Release information to another organization (such as a college, student
+                        loan lender, employer, or agency)</label>
+                </div>
+            </div>
+            <div id="row333" name="row333" class="text-left row " data-bind="visible: ( ( ReleaseOrDisclose() == 'organization' ) ) ">
+                <div id="col334" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="NameOfOrganization">Name of Organization</label>
+                        <input id="NameOfOrganization" name="NameOfOrganization"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickParagraphRow3703333" name="quickParagraphRow" class="text-left row requestDaysHours  otherRows "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn37133" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <h4 id="p_37233" name="p_37233" class="text-left  "><strong>INFORMATION TO BE RELEASED</strong></h4>
+                </div>
+            </div>
+            <div id="row11025" class="text-left row  otherRows ">
+                <div id="col342" class="col-xs-2 col-sm-2 text-center  ">
+                    <p id="ele343" name="ele343" class="text-center  "><strong>Credit Hours:</strong>
+                    </p>
+                </div>
+                <div id="col15225" class="col-xs-6 col-sm-6 text-left  ">
+                    <input id="CreditHoursInclude" name="CreditHours" class="text-left  "
+                    required="required" type="radio" value="include" />
+                    <label for="CreditHoursInclude">  Include</label>
+                </div>
+                <div id="col338" class="col-xs-6 col-sm-6 text-left  ">
+                    <input id="CreditHoursDoNot" name="CreditHours" class="text-left  " required="required"
+                    type="radio" value="donotinclude" />
+                    <label for="CreditHoursDoNot">  DO NOT Include</label>
+                </div>
+            </div>
+            <div id="row110" class="text-left row  otherRows ">
+                <div id="col148" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="Enrollment" name="Enrollment" class="text-left  " type="checkbox"
+                    value="enrollment" />
+                </div>
+                <div id="col149" class="col-xs-7 col-sm-7 text-left  ">
+                    <label id="lblEnrollment" name="lblEnrollment" class="col-xs-12 col-sm-12 text-left  "
+                    for="Enrollment">Confirmation of my enrollment in the college for semester</label>
+                </div>
+                <div id="col152" class="col-xs-4 col-sm-4 text-center  ">
+                    <select id="EnrollmentSemester" name="EnrollmentSemester" class="text-left  ">
+                        <option value=""></option>
+                        <option value="2026 Fall">2026 Fall</option>
+                        <option value="2026 Summer">2026 Summer</option>
+                        <option value="2026 Winter">2026 Winter</option>
+                        <option value="2025 Fall">2025 Fall</option>
+                        <option value="2025 Summer">2025 Summer</option>
+                        <option value="2025 Winter">2025 Winter</option>
+                        <option value="2024 Fall">2024 Fall</option>
+                        <option value="2024 Summer">2024 Summer</option>
+                        <option value="2024 Winter">2024 Winter</option>
+                    </select>
+                </div>
+            </div>
+            <div id="row111" class="text-left row otherRows ">
+                <div id="col174" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="TuitionFees" name="TuitionFees" class="text-left  " type="checkbox"
+                    value="tuitionfees" />
+                </div>
+                <div id="col175" class="col-xs-4 col-sm-4 text-left  ">
+                    <label id="ele188" name="ele188" class="col-xs-12 col-sm-12 text-left  ">Tuition and fees for semester/year</label>
+                </div>
+                <div id="col179" class="col-xs-4 col-sm-4 text-left  ">
+                    <select id="TuitionFeeReleaseSemesterYear" name="TuitionFeeReleaseSemesterYear"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="2026 Fall">2026 Fall</option>
+                        <option value="2026 Summer">2026 Summer</option>
+                        <option value="2026 Winter">2026 Winter</option>
+                        <option value="2025 Fall">2025 Fall</option>
+                        <option value="2025 Summer">2025 Summer</option>
+                        <option value="2025 Winter">2025 Winter</option>
+                        <option value="2024 Fall">2024 Fall</option>
+                        <option value="2024 Summer">2024 Summer</option>
+                        <option value="2024 Winter">2024 Winter</option>
+                    </select>
+                </div>
+            </div>
+            <div id="row112" class="text-left row otherRows ">
+                <div id="col194" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="AttachedForm" name="AttachedForm" class="text-left  " type="checkbox"
+                    />
+                </div>
+                <div id="col195" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="lblAttachedForm" name="lblAttachedForm" class="col-xs-12 col-sm-12 text-left  "
+                    for="AttachedForm">Completion of the attached form</label>
+                </div>
+                <div id="col200" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="Other" name="Other" class="text-left  " type="checkbox" value="Other"
+                    />
+                </div>
+                <div id="col201" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="lblOther" name="lblOther" class="col-xs-12 col-sm-12 text-left  "
+                    for="Other">Other (please add "other" comments below)</label>
+                </div>
+            </div>
+            <div id="row1123030" name="" class="text-left row otherRows " data-bind="visible: ( ( Other() ) ) ">
+                <div id="col20730" name="col207" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ((Other())) ">
+                    <textarea id="OtherComments" name="OtherComments" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickParagraphRow370" name="quickParagraphRow" class="text-left row requestDaysHours otherRows "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn371" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <h4 id="p_372" name="p_12139" class="text-left  "><strong>DELIVERY METHODS </strong></h4>
+                </div>
+            </div>
+            <div id="row114" class="text-left row otherRows ">
+                <div id="col236" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="MailTo" name="MailTo" class="text-left  " type="checkbox" value="mailto"
+                    />
+                </div>
+                <div id="col237" class="col-xs-2 col-sm-2 text-left  ">
+                    <label id="lblMailTo" name="lblMailTo" class="col-xs-12 col-sm-12 text-left  "
+                    for="MailTo">Mail To</label>
+                </div>
+                <div id="col238" name="col238" class="col-xs-9 col-sm-9 text-left  " data-bind="visible: ( ( MailTo() ) ) ">
+                    <div class="text-left  ">
+                        <input id="MailToAddress" name="MailToAddress" class="text-left  " placeholder="Full Mailing Address"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row115" class="text-left row otherRows ">
+                <div id="col239" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="FaxTo" name="FaxTo" class="text-left  " type="checkbox" />
+                </div>
+                <div id="col240" class="col-xs-2 col-sm-2 text-left  ">
+                    <label id="lblFaxTo" name="lblFaxTo" class="col-xs-12 col-sm-12 text-left  "
+                    for="FaxTo">Fax To</label>
+                </div>
+                <div id="col241" name="col241" class="col-xs-9 col-sm-9 text-left  " data-bind="visible: ( ( FaxTo() ) ) ">
+                    <div class="text-left maskphone ">
+                        <input id="FaxToNumber" name="FaxToNumber" class="text-left maskphone "
+                        placeholder="Fax Number" />
+                    </div>
+                </div>
+            </div>
+            <div id="row116" class="text-left row otherRows ">
+                <div id="col242" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="EmailTo" name="EmailTo" class="text-left  " type="checkbox"
+                    />
+                </div>
+                <div id="col243" class="col-xs-2 col-sm-2 text-left  ">
+                    <label id="lblEmailTo" name="lblEmailTo" class="col-xs-12 col-sm-12 text-left  "
+                    for="EmailTo">Email To</label>
+                </div>
+                <div id="col244" name="col244" class="col-xs-9 col-sm-9 text-left  " data-bind="visible: ( ( EmailTo() ) ) ">
+                    <div class="text-left  ">
+                        <input id="EmailToAddress" name="EmailToAddress" class="text-left  " placeholder="Email Address"
+                        data-bind="email" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow1202828" name="quickHeadingRow" class="text-left row studentSig "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn12128" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall12228" name="quickHeadingSmall12228" class="text-center  "
+                    style=" font-weight: bold; ">Signature</h4>
+                </div>
+            </div>
+            <div id="row123" class="text-left row studentSig ">
+                <div id="col124" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele125" name="ele125" class="col-xs-12 col-sm-12 text-left  " style=" font-weight: bold "><i>Due to the Family Education Rights and Privacy Act (FERPA) of 1974, a student signature is required for release of student information. </i>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow295" name="quickInputsRow" class="text-left row studentSig ">
+                <div id="quickInputsColumn296" name="quickInputsColumn1" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="StudentSignature">Student Signature</label>
+                        <input id="StudentSignature" name="StudentSignature"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn298" name="quickInputsColumn2" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="StudentSignatureDate">Date</label>
+                        <input id="StudentSignatureDate" name="StudentSignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow120" name="quickHeadingRow" class="text-left row OfficialUseOnly "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn121" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall122" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">For Official Use Only</h4>
+                </div>
+            </div>
+            <div id="row382" class="text-left row OfficialUseOnly ">
+                <div id="col407" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="noStudentFound" name="noStudentFound" class="text-left  " type="checkbox"
+                    />
+                    <label for="noStudentFound">  No user could be found</label>
+                </div>
+            </div>
+            <div id="row423" class="text-left row OfficialUseOnly ">
+                <div id="col424" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentID">Student ID</label>
+                        <input id="studentID" name="studentID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col426" class="col-xs-12 col-sm-2 text-left  " style=" padding:0px 0px 0px 0px;  margin:20px 0px 0px 0px; ">
+                    <button id="studentSearchButton" name="studentSearchButton" class="col-sm-12 text-left btn btn-primary "
+                    style="" undefined="">Search</button>
+                </div>
+                <div id="col430" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentFirstName">Student First Name</label>
+                        <input id="studentFirstName" name="studentFirstName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col432" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentLastName">Student Last Name</label>
+                        <input id="studentLastName" name="studentLastName"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow537" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn538" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_539" class="text-left  " />
+                </div>
+            </div>
+            <div id="row3823232" name="" class="text-left row developer ">
+                <div id="col41632" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="nisStudentName">nisStudentName (hidden)</label>
+                        <input id="nisStudentName" name="nisStudentName"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col41932" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentAcademicYear">currentAcademicYear (hidden)</label>
+                        <input id="currentAcademicYear" name="currentAcademicYear"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col448" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="nisID">nisID (hidden)</label>
+                        <input id="nisID" name="nisID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col479" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentStatus">studentStatus (hidden)</label>
+                        <input id="studentStatus" name="studentStatus"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="row38232323636" name="" class="text-left row  ">
+                <div id="col50436" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left loading ">
+                        <label for="loadingSpinnerRow">Loading Spinner (do not remove)</label>
+                        <input id="loadingSpinnerRow" name="loadingSpinnerRow"
+                        class="text-left loading " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

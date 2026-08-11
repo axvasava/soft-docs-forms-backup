@@ -7,9 +7,11 @@ from pathlib import Path
 CURRENT_DATE = datetime.now().strftime("%Y-%m-%d")
 
 # File paths
-INPUT_FILE = Path(f"./form-details/output/form-details-{CURRENT_DATE}.json")
-# INPUT_FILE = Path(f"./form-details/output/form-details-2026-04-27.json")
-OUTPUT_FILE = Path(f"./form-details/output/form-details-deduped-{CURRENT_DATE}.json")
+INPUT_FILE = Path(f"./form-details/output/{CURRENT_DATE}-form-details.json")
+OUTPUT_FILE = Path(f"./form-details/output/{CURRENT_DATE}-form-details-deduped.json")
+
+VERSION_SUFFIX_PATTERN = re.compile(r"\bV\d+$", re.IGNORECASE)
+
 
 
 def load_json_file(file_path: Path) -> list[dict]:
@@ -26,7 +28,26 @@ def write_json_file(file_path: Path, data: list[dict]) -> None:
         json.dump(data, file, indent=2)
 
 
-def remove_consecutive_duplicate_forms(forms: list[dict]) -> list[dict]:
+def has_version_suffix(form_name):
+    """Return true when the form name ends with a version like V1, V2, or V10."""
+
+    if not form_name:
+        return False
+
+    return bool(VERSION_SUFFIX_PATTERN.search(form_name.strip()))
+
+
+def add_new_forms_builder_field(forms):
+    """Add new_forms_builder based on whether form_name ends with a version number."""
+
+    for form in forms:
+        form_name = form.get("form_name", "")
+        form["new_forms_builder"] = has_version_suffix(form_name)
+
+    return forms
+
+
+def remove_consecutive_duplicate_forms(forms):
     """
     Remove consecutive duplicate form names.
 
@@ -107,9 +128,9 @@ def main() -> None:
     forms = load_json_file(INPUT_FILE)
 
     cleaned_forms = remove_consecutive_duplicate_forms(forms)
-    enriched_forms = add_derived_form_details(cleaned_forms)
+    cleaned_forms = add_new_forms_builder_field(cleaned_forms)
 
-    write_json_file(OUTPUT_FILE, enriched_forms)
+    write_json_file(OUTPUT_FILE, cleaned_forms)
 
     print(f"Original count: {len(forms)}")
     print(f"Cleaned count: {len(cleaned_forms)}")

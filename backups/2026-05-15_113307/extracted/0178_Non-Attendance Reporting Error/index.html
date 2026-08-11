@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row126" class="text-left row fd-form-masthead ">
+                <div id="col127" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn128" name="revisedOn" class="col-sm-12 text-right  ">Revised 02/26</span>
+                </div>
+                <div id="col129" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele130" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col131" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele132" name="ele21" class="text-left form-title ">Non-Attendance Reporting Error</h1>
+                </div>
+                <div id="col133" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele134" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row136" class="text-left row ">
+                <div id="col137" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote138" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Employee Information</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow16" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn17" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement18" name="quickParagraphElement" class="text-left  "><strong>NOTE TO SUBMITTER</strong> Only complete this form if you have
+                        made an error in reporting the student as not attending. Non-attendance
+                        reporting must be completed in a timely manner. This process is a federal
+                        compliance for students who receive financial aid and is not an attendance
+                        policy.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow20" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn21" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Employee Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn23" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">Employee Email</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow1255" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn135" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall145" name="quickHeadingSmall145" class="text-center  "
+                    style=" font-weight: bold; ">Student Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow29" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn30" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSearch">Student Search (Enter ID)</label>
+                        <input id="studentSearch" name="studentSearch"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col32" class="col-xs-12 col-sm-6 text-left  " style=" margin-top: 26px ">
+                    <button id="studentSearchButton" name="studentSearchButton" class="text-left btn btn-primary "
+                    style="" undefined="">Search</button>
+                </div>
+            </div>
+            <div id="quickInputsRow2077" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn217" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentName">Student Name</label>
+                        <input id="studentName" name="studentName" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 text-left hidden ">
+                        <label for="personGUID">personGUID</label>
+                        <input id="personGUID" name="personGUID" class="col-xs-12 col-sm-12 text-left hidden "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn237" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentEmail">Student Email</label>
+                        <input id="studentEmail" name="studentEmail" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col114" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left hidden ">
+                        <label for="username">Username (hidden)</label>
+                        <input id="username" name="username" class="text-left hidden "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow125588" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1358" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1458" name="quickHeadingSmall1458" class="text-center  "
+                    style=" font-weight: bold; ">Course Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow57" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn58" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="courseSection">Course Section</label>
+                        <input id="courseSection" name="courseSection" class="text-left  "
+                        type="text" data-bind="autocomplete: { localSource: 'studentCourseReg',  validate: true,  labelMask: ['registrationSection'],  selectedMask: ['registrationSection'],  formFields: {'courseTitle':'registrationCourseTitle','semester':'registrationTerm','deadlineDate':'registrationDeadlineDate'} } "
+                        />
+                    </div>
+                    <div class="text-left hidden ">
+                        <label for="semester">Semester (hidden)</label>
+                        <input id="semester" name="semester" class="text-left hidden "
+                        />
+                    </div>
+                    <div class="text-left hidden ">
+                        <label for="academicYear">Academic Year (hidden)</label>
+                        <input id="academicYear" name="academicYear"
+                        class="text-left hidden " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn60" name="quickInputsColumn2" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="courseTitle">Course Title</label>
+                        <input id="courseTitle" name="courseTitle" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn62" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deadlineDate">Deadline Date</label>
+                        <input id="deadlineDate" name="deadlineDate" class="text-left datepicker "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn64" name="quickInputsColumn4" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="reason">Reason</label>
+                    <textarea id="reason" name="reason" class="text-left  "
+                    required="required" placeholder="Please describe the reason for reversing the non-attendance reporting."></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow1255881010" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn135810" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall145810" name="quickHeadingSmall145810" class="text-center  "
+                    style=" font-weight: bold; ">Employee Signature</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow201111" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn2111" name="quickInputsColumn1" class="col-xs-10 col-sm-20 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSig">Employee Name</label>
+                        <input id="employeeSig" name="employeeSig" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn2311" name="quickInputsColumn2" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSigDate">Date</label>
+                        <input id="employeeSigDate" name="employeeSigDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow118" name="quickInputsRow" class="text-left row dean ">
+                <div id="quickInputsColumn119" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_120" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickInputsRow571313" name="quickInputsRow" class="text-left row dean ">
+                <div id="quickInputsColumn5813" name="quickInputsColumn1" class="col-xs-10 col-sm-10 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanSigName">Dean Name</label>
+                        <input id="deanSigName" name="deanSigName" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn6013" name="quickInputsColumn2" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanSigDate">Date</label>
+                        <input id="deanSigDate" name="deanSigDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col93" class="col-xs-12 col-sm-6 text-left hidden ">
+                    <div class="text-left  ">
+                        <label for="deanEmail">Dean Email (hidden)</label>
+                        <input id="deanEmail" name="deanEmail" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

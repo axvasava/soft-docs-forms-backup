@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row100" class="text-left row fd-form-masthead ">
+                <div id="col101" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn102" name="revisedOn" class="col-sm-12 text-right  ">Revised 04/25</span>
+                </div>
+                <div id="col103" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele104" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col105" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele106" name="ele21" class="text-left form-title ">Standardized First Aid Kits Order Form</h1>
+                </div>
+                <div id="col107" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele108" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row96" class="text-left row ">
+                <div id="col97" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote98" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow12" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn13" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="department">Department</label>
+                        <input id="department" name="department" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn15" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Employee Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col26" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="phone">Phone</label>
+                        <input id="phone" name="phone" class="text-left  " required="required"
+                        type="text" data-bind="mask: '999-999-9999' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow18" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn19" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="campus">Campus</label>
+                    <select id="campus" name="campus" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                        <option value="Southfield">Southfield</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn21" name="quickInputsColumn2" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="location">Location of Kit</label>
+                        <input id="location" name="location" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow30" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn31" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall32" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Items</h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow42" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn43" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-center  ">
+                    <h4 id="quickHeadingSmall44" name="quickHeadingSmall" class="text-center  "><strong>NOTE: ALL ITEMS ARE LATEX-FREE</strong></h4>
+                </div>
+            </div>
+            <div id="itemList" name="itemList" class="text-left row " data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addItem',  removeButtonID: 'removeItem' } ">
+                <div id="quickInputsColumn51" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="itemQuantity">Item Quantity</label>
+                        <input id="itemQuantity" name="itemQuantity" class="text-left  "
+                        required="required" type="Number" data-bind="numeric: { type: 'int',  allowNegative: false } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn53" name="quickInputsColumn2" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="itemDescription">Item Description</label>
+                        <input id="itemDescription" name="itemDescription"
+                        class="text-left  " data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_First_Aid_Items',  clearOnFocus: true,  validate: true,  labelMask: ['Quantity', ' ', 'Item'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow57" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn58" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="addItem" name="addItem" class="text-left btn btn-primary "
+                    style="" undefined="">Add Item</button>
+                </div>
+                <div id="quickInputsColumn60" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="removeItem" name="removeItem" class="text-left btn btn-danger "
+                    style="" undefined="">Remove Item</button>
+                </div>
+            </div>
+            <div id="quickParagraphRow75" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn76" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement77" name="quickParagraphElement" class="text-center  ">THE ABOVE CONTENTS ARE STANDARD FOR ALL FIRST AID KITS EXCEPTIONS WILL
+                        BE MADE ON AN INDIVIDUAL BASIS</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow65" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn66" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall67" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow69" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn70" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID</label>
+                        <input id="formID" name="formID" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn72" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="publicSafetyEmail">publicSafetyEmail</label>
+                        <input id="publicSafetyEmail" name="publicSafetyEmail"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow691111" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn7011" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="groupPrincipalID">groupPrincipalID</label>
+                        <input id="groupPrincipalID" name="groupPrincipalID"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn7211" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="publicSafetyEmail11">publicSafetyEmail</label>
+                        <input id="publicSafetyEmail11" name="publicSafetyEmail"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col88" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">originationDate (hidden)</label>
+                        <input id="originationDate" name="originationDate"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

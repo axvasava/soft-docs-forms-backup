@@ -1,0 +1,109 @@
+/* =========================================================
+   Forms Design System Color Variables
+   Purpose:
+   Centralized design tokens for consistent branding,
+   accessibility, and maintainability across all forms.
+========================================================= */
+
+:root {
+	/* =====================================================
+     Primary Brand Colors
+  ===================================================== */
+	--fd-occ-green: #046a38;
+	--fd-green-dark: #034f2a;
+	--fd-green-light: #eef7f1;
+
+	/* =====================================================
+     Office Variant
+  ===================================================== */
+	--fd-office: var(--fd-dark-teal);
+	--fd-office-dark: #145766;
+	--fd-office-light: #eef6f8;
+
+	/* =====================================================
+     Developer Variant
+  ===================================================== */
+	--fd-dev: var(--fd-gray-700);
+	--fd-dev-dark: var(--fd-gray-900);
+	--fd-dev-light: #f1f3f5;
+
+	/* =====================================================
+     Warning Variant
+  ===================================================== */
+	--fd-warning: var(--fd-bumblebee);
+	--fd-warning-dark: #c7a800;
+	--fd-warning-light: #fff8d6;
+
+	/* =====================================================
+     Error Variant
+  ===================================================== */
+	--fd-error: #b00020;
+	--fd-error-dark: #7a0016;
+	--fd-error-light: #fdecef;
+
+	/* =====================================================
+	 Info Variant
+  ===================================================== */
+	--fd-info: var(--fd-sky-blue);
+	--fd-info-dark: #3d8fa8;
+	--fd-info-light: #edf8fc;
+
+	/* =====================================================
+     Supporting Brand Palette
+  ===================================================== */
+	--fd-apple: #50b848;
+	--fd-seafoam: #7ac69b;
+	--fd-lime: #9dea01;
+
+	--fd-bumblebee: #fbd502;
+	--fd-habanero: #f49c4a;
+	--fd-strong-red: #d83968;
+
+	--fd-violet: #6c2a7c;
+
+	--fd-dark-teal: #186c7f;
+	--fd-space-blue: #213671;
+	--fd-lighter-blue: #3274b9;
+	--fd-sky-blue: #5ebace;
+
+	/* =====================================================
+     Neutral Colors
+  ===================================================== */
+	--fd-white: #ffffff;
+	--fd-black: #000000;
+
+	--fd-gray-100: #f8f9fa;
+	--fd-gray-200: #e9ecef;
+	--fd-gray-300: #dee2e6;
+	--fd-gray-500: #6c757d;
+	--fd-gray-700: #495057;
+	--fd-gray-900: #212529;
+
+	/* =====================================================
+     Semantic Status Colors
+  ===================================================== */
+	--fd-success: #28a745;
+
+	/* =====================================================
+     Accessibility / Focus
+  ===================================================== */
+	/* --fd-focus-outline: #ffbf47; */
+	--fd-focus-outline: var(--fd-habanero);
+	/* OCC Secondary Habenero */
+	--fd-required: #b00020;
+
+	/* =====================================================
+     Borders / Shadows
+  ===================================================== */
+	--fd-border-radius-sm: 4px;
+	--fd-border-radius-md: 8px;
+
+	--fd-shadow-md: 0 4px 10px rgba(0, 0, 0, 0.18);
+
+	/* =====================================================
+     Typography
+  ===================================================== */
+	--fd-text-primary: var(--fd-gray-900);
+	--fd-text-secondary: var(--fd-gray-700);
+	--fd-text-light: var(--fd-white);
+}

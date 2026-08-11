@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow150" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col151" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele152" name="ele37" class="text-right  "><i>Revised 07/24</i></h5>
+                </div>
+                <div id="HeaderLeft153" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo154" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    alt="Oakland Community College Logo" />
+                </div>
+                <div id="HeaderRight155" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_156" name="h2_27" class="text-center  "><b>Network Access Form</b></h2>
+                </div>
+                <div id="col157" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele158" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow8" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn9" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall10" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Overview</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow12" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn13" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement14" name="quickParagraphElement" class="text-left  ">The purpose of this form is to help you obtain network/computer access
+                        for a new person starting work at OCC. If the person does not need any
+                        type of computer access, this form is not necessary.
+                        <br />
+                        <br />If the person requires computer access, then <strong>ALL FIELDS, (except the gray areas) including date of birth and 
+address, <i>are required</i></strong> – so that Information Technologies
+                        (IT) can assign a network password. The personal information (date of birth
+                        and address) is required so that IT can validate the person’s identity
+                        if they should need their password reset.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow20" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn21" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall22" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Required Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow24" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn25" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorName">Supervisor Name</label>
+                        <input id="supervisorName" name="supervisorName"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn27" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorPhone">Supervisor Phone</label>
+                        <input id="supervisorPhone" name="supervisorPhone"
+                        class="text-left  " required="required" type="text" data-bind="mask: 'phone' "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickDropdownRow160" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn161" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="employeeType">Employee Type</label>
+                    <select id="employeeType" name="employeeType" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Agency Temp (AT)">Agency Temp (AT)</option>
+                        <option value="Independent Contractor/Vendors (NE)">Independent Contractor/Vendors (NE)</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow48" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn49" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="startDate">Start Date</label>
+                        <input id="startDate" name="startDate" class="text-left  "
+                        required="required" type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn51" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="birthDate">Birth Date</label>
+                        <input id="birthDate" name="birthDate" class="text-left  "
+                        required="required" type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow54" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn55" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="lastName">Last Name</label>
+                        <input id="lastName" name="lastName" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn57" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="firstName">First Name</label>
+                        <input id="firstName" name="firstName" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn59" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="middleInitial">Middle Initial (If none enter N/A)</label>
+                        <input id="middleInitial" name="middleInitial"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow62" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn63" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="address">Address</label>
+                        <input id="address" name="address" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn65" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="city">City</label>
+                        <input id="city" name="city" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn67" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="state">State</label>
+                        <input id="state" name="state" class="text-left  " required="required"
+                        type="text" data-bind="state: { format: 'name' } " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn69" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="zipCode">Zip</label>
+                        <input id="zipCode" name="zipCode" class="text-left  " required="required"
+                        type="text" data-bind="mask: 'zip' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow72" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn73" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="department">Department</label>
+                        <input id="department" name="department" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col163" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="applicantEmail">Applicant Email</label>
+                        <input id="applicantEmail" name="applicantEmail"
+                        class="text-left  " required="required" data-bind="email" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow196" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn197" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="replacing">Replacing</label>
+                        <input id="replacing" name="replacing" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn199" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="position">Position</label>
+                        <input id="position" name="position" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row86" class="text-left row ">
+                <div id="col87" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele88" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow82" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn83" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall84" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">What type(s) of computer access does this person need? </h4>
+                </div>
+            </div>
+            <div id="quickInputsRow96" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn97" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="outlookCheck" name="outlookCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn99" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="outlookCheckLabel" name="outlookCheckLabel" class="text-left  "
+                    for="outlookCheck">Outlook (e-mail) access?</label>
+                </div>
+            </div>
+            <div id="quickInputsRow102" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn103" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="colleagueCheck" name="colleagueCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn105" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="colleagueCheckLabel" name="colleagueCheckLabel" class="text-left  "
+                    for="colleagueCheck">Colleague access?</label>
+                </div>
+            </div>
+            <div id="quickInputsRow108" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn109" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="D2LCheck" name="D2LCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn111" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="D2LCheckLabel" name="D2LCheckLabel" class="text-left  " for="D2LCheck">D2L access?</label>
+                </div>
+            </div>
+            <div id="quickInputsRow114" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn115" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="techSmithCheck" name="techSmithCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn117" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="techSmithCheckLavbel" name="techSmithCheckLavbel" class="text-left  "
+                    for="techSmithCheck">TechSmith Knowmia (OCC’s multimedia streaming platform)?</label>
+                </div>
+            </div>
+            <div id="quickInputsRow120" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn121" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="zoomCheck" name="zoomCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn123" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="zoomCheckLabel" name="zoomCheckLabel" class="text-left  " for="zoomCheck">Zoom (OCC’s web collaboration platform)?</label>
+                </div>
+            </div>
+            <div id="quickInputsRow126" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn127" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="requisitionNumber">Requisition Number</label>
+                        <input id="requisitionNumber" name="requisitionNumber"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn129" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dateOfRequisition">Date of Requisition</label>
+                        <input id="dateOfRequisition" name="dateOfRequisition"
+                        class="text-left  " type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn131" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="amountOfRequisition">Amount of Requisition</label>
+                        <input id="amountOfRequisition" name="amountOfRequisition"
+                        class="text-left  " type="text" data-bind="money" />
+                    </div>
+                </div>
+            </div>
+            <div id="row134" class="text-left row ">
+                <div id="col135" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele136" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow138" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="show: { userParam: ['isNotOriginator'] } ">
+                <div id="quickHeadingColumn139" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall140" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">HR Office Use Only</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow76" name="quickInputsRow" class="text-left row "
+            data-bind="show: { userParam: ['isNotOriginator'] } ">
+                <div id="quickInputsColumn77" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeID">Please enter the employee's ID.</label>
+                        <input id="employeeID" name="employeeID"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col146" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="contactEmail">Please enter contact email for Agency notification</label>
+                        <input id="contactEmail"
+                        name="contactEmail" class="text-left  " data-bind="email" />
+                    </div>
+                </div>
+            </div>
+            <div id="row13429293030" name="" class="text-left row " data-bind="show: { userParam: ['isNotOriginator'] } ">
+                <div id="col1352930" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele1362930" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

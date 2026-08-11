@@ -1,0 +1,47 @@
+.loading-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.loading-animation .dot {
+    width: 16px;
+    height: 16px;
+    margin: 0 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: bounce 1s infinite;
+}
+
+.loading-animation .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loading-animation .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-10px); /* Reduced height of the bounce */
+        opacity: 0.7;
+    }
+}
+
+#errorIndicator {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    text-align: center;
+}

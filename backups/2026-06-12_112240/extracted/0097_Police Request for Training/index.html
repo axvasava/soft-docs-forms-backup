@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row154" class="text-left row fd-form-masthead ">
+                <div id="col155" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn156" name="revisedOn" class="col-sm-12 text-right  ">Revised 03/25</span>
+                </div>
+                <div id="col157" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele158" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col159" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele160" name="ele21" class="text-left form-title ">Police Request for Training</h1>
+                </div>
+                <div id="col161" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele162" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row164" class="text-left row ">
+                <div id="col165" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote166" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow64" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn65" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall66" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">User Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow19" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn20" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Requested by</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col40" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Employee Id</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " readonly="true" type="Number" />
+                    </div>
+                </div>
+            </div>
+            <div id="row44" class="text-left row ">
+                <div id="col45" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="rank">Rank</label>
+                        <input id="rank" name="rank" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col46" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="campus">Campus Assigned</label>
+                    <select id="campus" name="campus" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                        <option value="Southfield">Southfield</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickHeadingRow68" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn69" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall70" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Training Requested</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow73" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn74" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="courseTitle">Course Title</label>
+                        <input id="courseTitle" name="courseTitle" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn76" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="trainingLocation">Training Location</label>
+                        <input id="trainingLocation" name="trainingLocation"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow79" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn80" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dateTime">Date and Time</label>
+                        <input id="dateTime" name="dateTime" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn82" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="cost">Cost</label>
+                        <input id="cost" name="cost" class="text-left  " required="required"
+                        type="text" data-bind="money" />
+                    </div>
+                </div>
+                <div id="col84" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="funds">Is this training 302 funds eligible?</label>
+                    <select id="funds" name="funds"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="col142" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="cpeEligible">Is this training CPE funds eligible?</label>
+                    <select id="cpeEligible" name="cpeEligible"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow88" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn89" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="trainingBenefit">How will this training benefit you in the performance of your duties?</label>
+                    <textarea
+                    id="trainingBenefit" name="trainingBenefit" class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickParagraphRow146" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn147" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="attachmentsText" name="attachmentsText" class="text-center  "><strong> Please attach documentation for this training prior to submitting.</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickHeadingRow92" name="quickHeadingRow" class="text-left row approvals "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn93" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall94" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Approvals</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow122" name="quickParagraphRow" class="text-left row approvals "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn123" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_124" name="p_263" class="text-left  "><strong>NOTE:</strong> By entering my name below and submitting this Approval
+                        , I certify that I have read this Request for Training and approve its
+                        terms.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow96" name="quickInputsRow" class="text-left row campusLieutenantSign ">
+                <div id="quickInputsColumn99" name="quickInputsColumn2" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="campusLieutenantSign">Campus Lieutenant Signature</label>
+                        <input id="campusLieutenantSign" name="campusLieutenantSign"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn101" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="campusLieutenantSignDate">Date</label>
+                        <input id="campusLieutenantSignDate" name="campusLieutenantSignDate"
+                        class="text-left datepicker " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow961414" name="quickInputsRow" class="text-left row trainingLieutenantSign ">
+                <div id="quickInputsColumn9914" name="quickInputsColumn2" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="trainingLieutenantSign">Training Lieutenant Signature</label>
+                        <input id="trainingLieutenantSign"
+                        name="trainingLieutenantSign" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn10114" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="trainingLieutenantSignDate">Date</label>
+                        <input id="trainingLieutenantSignDate" name="trainingLieutenantSignDate"
+                        class="text-left datepicker " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow9613" name="quickInputsRow" class="text-left row chiefSafetySign ">
+                <div id="quickInputsColumn9913" name="quickInputsColumn2" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="chiefSafetySign">Chief of Public Safety Signature</label>
+                        <input id="chiefSafetySign" name="chiefSafetySign"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn10113" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="chiefSafetySignDate">Date</label>
+                        <input id="chiefSafetySignDate" name="chiefSafetySignDate"
+                        class="text-left datepicker " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow521717" name="quickHeadingRow" class="text-left row declineHide "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn5317" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall5417" name="quickHeadingSmall5417" class="text-center  "
+                    style=" font-weight: bold; ">Reason for Decline</h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow139" name="quickTextAreaRow" class="text-left row declineHide ">
+                <div id="quickTextAreaColumn140" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="reasonForDecline">Reason for Decline</label>
+                    <textarea id="reasonForDecline" name="reasonForDecline"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow52" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn53" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall54" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow56" name="quickInputsRow" class="text-left row developer ">
+                <div id="col59" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col118" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="groupPrincipalID">groupPrincipalID (hidden)</label>
+                        <input id="groupPrincipalID" name="groupPrincipalID"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

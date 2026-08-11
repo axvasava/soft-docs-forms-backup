@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row408" class="text-left row fd-form-masthead ">
+                <div id="col409" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn410" name="revisedOn" class="col-sm-12 text-right  ">Revised 03/26</span>
+                </div>
+                <div id="col411" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele412" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col413" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele414" name="ele21" class="text-left form-title ">New Vendor Application</h1>
+                </div>
+                <div id="col415" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele416" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row404" class="text-left row ">
+                <div id="col405" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote406" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="row433" name="" class="text-left section-header  info-section ">
+                <div id="col434" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele435" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele436" name="ele595" class="text-left  ">Information</h2>
+                </div>
+            </div>
+            <div id="row33" class="text-left row apManager  info-section ">
+                <div id="col34" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="ele36" name="ele36" class="col-xs-12 col-sm-12 text-left  "><strong>We have received a request to set your company up as a new vendor in our system. </strong></h4>
+                </div>
+                <div id="col35" class="col-xs-6 col-sm-6 text-left  ">
+                    <label for="ddTakePurchaseOrders">Does your Company take purchase orders?</label>
+                    <select id="ddTakePurchaseOrders"
+                    name="ddTakePurchaseOrders" class="col-xs-12 col-sm-12 text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Unsure">Unsure</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow50" name="quickInputsRow" class="text-left row apManager  info-section "
+            data-bind="visible: ( ( ddTakePurchaseOrders() == 'No' ) ) ">
+                <div id="quickInputsColumn51" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_52" name="hr_52" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="row4288" name="row42" class="text-left row apManager  info-section "
+            data-bind="visible: ( ( ddTakePurchaseOrders() == 'No' ) ) ">
+                <div id="col438" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele448" name="ele448" class="col-xs-12 col-sm-12 text-left  "><strong>The college's preferred method for ordering is through a Purchase Order. If your company does not accept purchase orders, please contact <u><a href="/cdn-cgi/l/email-protection#36464344555e57455f58517659575d5a575852555518535243">Purchasing</a></u> before completing this form.  
+ </strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow5077" name="quickInputsRow" class="text-left row apManager  info-section "
+            data-bind="visible: ( ( ddTakePurchaseOrders() == 'Yes' ) ) ">
+                <div id="quickInputsColumn517" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_527" class="text-left  " />
+                </div>
+            </div>
+            <div id="row42" name="row42" class="text-left row apManager  info-section "
+            data-bind="visible: ( ( ddTakePurchaseOrders() == 'Yes' ) ) ">
+                <div id="col43" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele44" name="ele44" class="col-xs-12 col-sm-12 text-left  "><strong>Please attach a copy of the following:
+</strong>
+                    </p>
+                    <ul><strong>
+<li>A completed W-9 form (<u><a href="https://www.irs.gov/pub/irs-pdf/fw9.pdf)">https://www.irs.gov/pub/irs-pdf/fw9.pdf)</a></u>)</li>
+</strong>
+                    </ul>
+                    <p></p>
+                </div>
+            </div>
+            <div id="quickInputsRow507722222828" name="quickInputsRow" class="text-left row apManager  info-section ">
+                <div id="quickInputsColumn5172228" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_5272228" name="hr_5272228" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="row3399" name="" class="text-left row  info-section ">
+                <div id="col359" class="col-xs-6 col-sm-4 text-left  ">
+                    <label for="ddVendorType">Please Select Vendor Type</label>
+                    <select id="ddVendorType" name="ddVendorType"
+                    class="col-xs-12 col-sm-12 text-left  ">
+                        <option value=""></option>
+                        <option value="Business">Business</option>
+                        <option value="Individual">Individual</option>
+                        <option value="Individual (DBA or LLC)">Individual (DBA or LLC)</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickHeadingRow3055" name="quickHeadingRow" class="text-left row  info-section "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( ddVendorType() == 'Business' ) ) ">
+                <div id="quickHeadingColumn315" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall325" name="quickHeadingSmall325" class="text-center  "
+                    style=" font-weight: bold; ">Business</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow65" name="quickInputsRow" class="text-left row  info-section "
+            data-bind="visible: ( ( ddVendorType() == 'Business' ) ) ">
+                <div id="col110" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="legalBusinessName">Legal Business Name</label>
+                        <input id="legalBusinessName" name="legalBusinessName"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col111" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dbaName">DBA Business Name or Disregarded Entity Name (if applicable)</label>
+                        <input
+                        id="dbaName" name="dbaName" class="text-left  " />
+                    </div>
+                </div>
+                <div id="col133" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="purchaseOrderEmail">Purchase Order Email</label>
+                        <input id="purchaseOrderEmail" name="purchaseOrderEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col76" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele77" name="ele153" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+                <div id="quickInputsColumn66" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="businessAddress">Legal Business Address</label>
+                        <input id="businessAddress" name="businessAddress"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn68" name="quickInputsColumn2" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="businessCity">City</label>
+                        <input id="businessCity" name="businessCity" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn70" name="quickInputsColumn3" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="businessState">State</label>
+                        <input id="businessState" name="businessState" class="text-left  "
+                        type="text" data-bind="state" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn72" name="quickInputsColumn4" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left maskzip ">
+                        <label for="businessZip">Zip Code</label>
+                        <input id="businessZip" name="businessZip" class="text-left maskzip "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col74" class="col-xs-12 col-sm-12 text-center  " style=" margin-top: 10px; ">
+                    <input id="differentAddress" name="differentAddress" class="text-left  "
+                    style=" transform: scale(1.5) " type="checkbox" />
+                    <label for="differentAddress">   Do you have a different payment or mailing address other than the one
+                        listed above?</label>
+                </div>
+            </div>
+            <div id="quickInputsRow79" name="quickInputsRow" class="text-left row differentAddress  info-section ">
+                <div id="col349" class="col-xs-3 col-sm-3 text-left  ">
+                    <label for="addressType">Address Type</label>
+                    <select id="addressType" name="addressType" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Payment">Payment</option>
+                        <option value="Mailing">Mailing</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn80" name="quickInputsColumn1" class="col-xs-9 col-sm-9 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentAddressField">Address</label>
+                        <input id="differentAddressField" name="differentAddressField"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn82" name="quickInputsColumn2" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentCity">City</label>
+                        <input id="differentCity" name="differentCity" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn84" name="quickInputsColumn3" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentState">State</label>
+                        <input id="differentState" name="differentState" class="text-left  "
+                        type="text" data-bind="state" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn86" name="quickInputsColumn4" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left maskzip ">
+                        <label for="differentZip">Zip Code</label>
+                        <input id="differentZip" name="differentZip" class="text-left maskzip "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col136" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele137" name="ele137" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow30551313" name="quickHeadingRow" class="text-left row  info-section "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( ddVendorType() == 'Individual' ) || (ddVendorType() == 'Individual (DBA or LLC)') ) ">
+                <div id="quickHeadingColumn31513" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall32513" name="quickHeadingSmall32513" class="text-center  "
+                    style=" font-weight: bold; ">Individual</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow651414" name="quickInputsRow" class="text-left row  info-section "
+            data-bind="visible: ( ( ddVendorType() == 'Individual' ) || (ddVendorType() == 'Individual (DBA or LLC)') ) ">
+                <div id="col172" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="individualFirstName">First Name</label>
+                        <input id="individualFirstName" name="individualFirstName"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col11014" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="individualLastName">Last name</label>
+                        <input id="individualLastName" name="individualLastName"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col11114" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="individualDbaName">DBA Business Name or Disregarded Entity Name (if applicable)</label>
+                        <input
+                        id="individualDbaName" name="individualDbaName" class="text-left  " />
+                    </div>
+                </div>
+                <div id="col13314" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="individualEmail">Email Address</label>
+                        <input id="individualEmail" name="individualEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col7614" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele7714" name="ele7714" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+                <div id="col352" class="col-xs-12 col-sm-12 text-center  ">
+                    <p id="ele353" name="ele353" class="col-xs-12 col-sm-12 text-center  "><strong><i>Please enter the address that is listed on your W9
+</i></strong>
+                    </p>
+                </div>
+                <div id="quickInputsColumn6614" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="individualAddress">Address</label>
+                        <input id="individualAddress" name="individualAddress"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn6814" name="quickInputsColumn2" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="individualCity">City</label>
+                        <input id="individualCity" name="individualCity" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn7014" name="quickInputsColumn3" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="individualState">State</label>
+                        <input id="individualState" name="individualState" class="text-left  "
+                        type="text" data-bind="state" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn7214" name="quickInputsColumn4" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left maskzip ">
+                        <label for="individualZip">Zip Code</label>
+                        <input id="individualZip" name="individualZip" class="text-left maskzip "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col7414" class="col-xs-12 col-sm-12 text-center  " style=" margin-top: 10px; ">
+                    <input id="differentAddress2" name="differentAddress2" class="text-left  "
+                    style=" transform: scale(1.5) " type="checkbox" />
+                    <label for="differentAddress2">   Do you have a different payment or mailing address other than the one
+                        listed above?</label>
+                </div>
+            </div>
+            <div id="quickInputsRow791515" name="quickInputsRow" class="text-left row differentAddress2  info-section ">
+                <div id="col356" class="col-xs-3 col-sm-3 text-left  ">
+                    <label for="addressType1">Address Type</label>
+                    <select id="addressType1" name="addressType1" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Payment">Payment</option>
+                        <option value="Mailing">Mailing</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn8015" name="quickInputsColumn1" class="col-xs-9 col-sm-9 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentAddressField1">Address</label>
+                        <input id="differentAddressField1" name="differentAddressField1"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn8215" name="quickInputsColumn2" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentCity1">City</label>
+                        <input id="differentCity1" name="differentCity1" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn8415" name="quickInputsColumn3" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentState1">State</label>
+                        <input id="differentState1" name="differentState1" class="text-left  "
+                        type="text" data-bind="state" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn8615" name="quickInputsColumn4" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left maskzip ">
+                        <label for="differentZip1">Zip Code</label>
+                        <input id="differentZip1" name="differentZip1" class="text-left maskzip "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col13615" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele13715" name="ele13715" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow651212" name="quickInputsRow" class="text-left row  info-section "
+            zdata-bind="visible: ( ( ddVendorType() == 'Business' ) ) ">
+                <div id="col11012" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="businessContactName">Company Contact Name</label>
+                        <input id="businessContactName" name="businessContactName"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col11112" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="companyContactTitle">Contact Title</label>
+                        <input id="companyContactTitle" name="companyContactTitle"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn6612" name="quickInputsColumn1" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="companyContactEmail">Contact Email</label>
+                        <input id="companyContactEmail" name="companyContactEmail"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn6812" name="quickInputsColumn2" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left maskphone ">
+                        <label for="companyContactPhone">Contact Telephone #</label>
+                        <input id="companyContactPhone" name="companyContactPhone"
+                        class="text-left maskphone " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn7012" name="quickInputsColumn3" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left maskphone ">
+                        <label for="companyContactFax">Contact Fax #</label>
+                        <input id="companyContactFax" name="companyContactFax"
+                        class="text-left maskphone " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row438" name="" class="text-left section-header tax-section ">
+                <div id="col439" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele440" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele441" name="ele595" class="text-left  ">Tax ID as shown on your Federal Tax Return</h2>
+                </div>
+            </div>
+            <div id="row178" class="text-left row tax-section ">
+                <div id="col179" class="col-xs-4 col-sm-4 text-left  ">
+                    <label for="ddIDType">ID Type</label>
+                    <select id="ddIDType" name="ddIDType" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Employer Tax Identification #">Employer Tax Identification #</option>
+                        <option value="Social Security #">Social Security #</option>
+                    </select>
+                </div>
+                <div id="col182" name="col182" class="col-xs-4 col-sm-4 text-left  " data-bind="visible: ( ( ddIDType() == 'Employer Tax Identification #' ) ) ">
+                    <div class="text-left  ">
+                        <label for="EIN">Employer Tax Identification #</label>
+                        <input id="EIN" name="EIN" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col183" name="col183" class="col-xs-4 col-sm-4 text-left  " data-bind="visible: ( ( ddIDType() == 'Social Security #' ) ) ">
+                    <div class="text-left maskssn ">
+                        <label for="SSN">Social Security #</label>
+                        <input id="SSN" name="SSN" class="text-left maskssn "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row428" name="" class="text-left section-header ">
+                <div id="col429" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele430" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele431" name="ele595" class="text-left  ">Payment Information</h2>
+                </div>
+            </div>
+            <div id="quickParagraphRow343" name="quickParagraphRow" class="text-left row payment-section "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn344" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_345" name="p_12139" class="text-left  "><strong>Note: OCC preferred method of payment is ACH, if selecting Check, ACH options are not available, discounts do not apply and you are agreeing to a longer net payment term.  </strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row287" class="text-left row payment-section ">
+                <div id="col288" class="col-xs-4 col-sm-4 text-left  ">
+                    <label for="paymentTerms">Please select a payment term</label>
+                    <select id="paymentTerms" name="paymentTerms"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="ACH Terms: Net 30">ACH Terms: Net 30</option>
+                        <option value="Check Terms: Net 45">Check Terms: Net 45</option>
+                    </select>
+                </div>
+                <div id="col346" class="col-xs-8 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="discount">Do you offer an additional discount for payments earlier than 30 days</label>
+                        <input
+                        id="discount" name="discount" class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="row192" name="row192" class="text-left row " data-bind="visible: ( ( paymentTerms() == 'ACH Terms: Net 30' ) ) ">
+                <div id="col284" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele285" name="ele285" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+                <div id="col226" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="achAcctNum">ACH Account Number</label>
+                        <input id="achAcctNum" name="achAcctNum" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col227" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="achRoutingNum">ACH Routing Number</label>
+                        <input id="achRoutingNum" name="achRoutingNum"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col234" class="col-xs-4 col-sm-4 text-left  ">
+                    <label for="ddAchAcctType">Account Type</label>
+                    <select id="ddAchAcctType" name="ddAchAcctType" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Checking">Checking</option>
+                        <option value="Savings">Savings</option>
+                    </select>
+                </div>
+                <div id="col237" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="achBankName">ACH Bank Name</label>
+                        <input id="achBankName" name="achBankName" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col238" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="achEmailAddress">ACH Email Notification Email Address</label>
+                        <input id="achEmailAddress"
+                        name="achEmailAddress" class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow50772222" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn51722" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_52722" name="hr_52722" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="row243" class="text-left row payment-section ">
+                <div id="col248" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" name="notes" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row42882323" name="row42" class="text-left row payment-section ">
+                <div id="col43823" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele44823" name="ele44823" class="col-xs-12 col-sm-12 text-left  "><strong>If any of the provided information changes, it is the company's responsibility to notify the purchasing department via email at <u><a href="/cdn-cgi/l/email-protection#e090959283888193898e87a08f818b8c818e848383ce858495"><span class="__cf_email__" data-cfemail="76060304151e17051f18113619171d1a171812151558131203">[email&#160;protected]</span></a></u> as soon as possible to update the vendor file on record. </strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row418" name="" class="text-left section-header signature-section ">
+                <div id="col419" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele420" name="ele585" class="text-left icon "><i class="fa-solid fa-pen" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele421" name="ele595" class="text-left  ">Signature</h2>
+                </div>
+            </div>
+            <div id="row257" name="row257" class="text-left row apManager signature-section ">
+                <div id="col258" class="col-xs-12 col-sm-12 text-left  " style="   background: #f8f9fb;&#10;  border: 1px solid #c7ced8;&#10;  border-left: 4px solid #6b7280;&#10;  border-radius: 10px;&#10;  padding: 14px 16px;&#10;line-height: 1.55;&#10; "><span id="ele388" name="ele388" class="text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 10px 0px;  font-weight: 600; ">Certification (Under Penalty of Perjury)</span>
+                    <span
+                    id="ele259" name="ele259" class="text-left  ">
+                        <ol style="padding-left: 18px;" "=" ">
+    <li style=" margin-bottom: 10px; ">The number shown on this form is my correct taxpayer identification number (or I
+    am waiting for a number to
+    be issued to me), and </li>
+    <li style="margin-bottom: 10px; ">I am not subject to backup withholding because: (a) I am exempt from backup
+        withholding, or (b) I have not
+        been notified by the Internal Revenue Service (IRS) that I am subject to backup withholding as a result of a
+        failure to report all interest or dividends, or (c) the IRS has notified me that I am no longer subject to
+        backup withholding, and </li>
+    <li style="margin-bottom: 10px; ">I am a U.S. person (including a U.S. resident alien). </li>
+    <li style="margin-bottom: 10px; ">I hereby authorize OCC to deposit my payments to the ACH account identified.
+    </li>
+</ol></span></div></div><div id="quickInputsRow265 " name="quickInputsRow
+                        " class="text-left row signature-section " style="overflow: auto; margin-top: 12px;&#10;
+                        border-top: 1px solid #e5e7eb;&#10; padding-top: 10px; "><div id="quickInputsColumn266
+                        " name="quickInputsColumn1 " class="col-xs-12 col-sm-8 text-left
+                        "> <div class="text-left "> <label for="vendorSignature
+                        ">Signature: Please Enter Your Name</label><input id="vendorSignature " name="vendorSignature " class="text-left " type="text
+                        " /></div></div><div id="quickInputsColumn268 " name="quickInputsColumn2 " class="col-xs-12 col-sm-4
+                        text-left "> <div class="text-left "> <label for="vendorSignDate
+                        ">Date</label><input id="vendorSignDate " name="vendorSignDate " class="text-left " readonly="true
+                        " type="text " /></div></div></div><div id="row423 " name=" " class="text-left
+                        section-header OfficialUseOnly "><div id="col424 " class="col-xs-12 col-sm-12
+                        text-left fd-section-header title-only office-variant "><span id="ele425
+                        " name="ele5855 " class="text-left icon "><i class="fa-regular fa-building
+                        " aria-hidden="true "></i></span><h2 id="ele426 " name="ele5955 " class="text-left
+                        ">Office Use Only</h2></div></div><div id="row291 " class="text-left row OfficialUseOnly apManager "><div id="col366
+                        " class="col-xs-12 col-sm-12 text-left "><p id="ele367 " name="ele367 " class="col-xs-12
+                        col-sm-12 text-center "><strong> Please Note: The vendor's name and additional information will be included in the ESign email.
+</strong></p></div><div id="col298 " class="col-xs-6 col-sm-6 text-left
+                        "> <div class="text-left "> <label for="vendorEsignEmail
+                        ">Please enter the vendor's email address <span style="color:red; ">*</span></label><input id="vendorEsignEmail " name="vendorEsignEmail
+                        " class="text-left " required="required " /></div></div><div id="col363
+                        " class="col-xs-6 col-sm-6 text-left "> <div class="text-left "> <label for="vendorName
+                        ">Please enter the vendor's name <span style="color:red; ">*</span></label><input id="vendorName " name="vendorName
+                        " class="text-left " required="required " /></div></div><div id="col359
+                        " class="col-xs-12 col-sm-12 text-left "><label for="additionalInformation
+                        ">Is there additional information that you would like to include in the vendor email?</label><textarea id="additionalInformation " name="additionalInformation " class="text-left
+                        "></textarea></div></div><div id="quickInputsRow385 " name="quickInputsRow " class="text-left row venSearch
+                        "><div id="quickInputsColumn386 " name="quickInputsColumn1 " class="col-xs-12 col-sm-12
+                        text-left "><hr id="hr_387 " class="text-left " /></div></div><div id="row373
+                        " class="text-left row venSearch apManager "><div id="col374 " class="col-xs-3
+                        col-sm-3 text-left "> <div class="text-left "> <label for="vendorSearch
+                        ">Vendor Search <span style="color:red; ">*</span></label><input id="vendorSearch " name="vendorSearch
+                        " class="text-left " required="required " /></div></div><div id="col376
+                        " class="col-xs-12 col-sm-2 text-left " style=" padding:0px 0px 0px 0px; margin:20px
+                        0px 0px 0px; "><button id="vendorSearchButton " name="vendorSearchButton
+                        " class="col-sm-12 text-left btn btn-primary " style=" " undefined="
+                        ">Search</button></div><div id="col380 " class="col-xs-6 col-sm-6 text-left "> <div class="text-left
+                        "> <label for="vendorPayeeName ">Vendor Name</label><input id="vendorPayeeName
+                        " name="vendorPayeeName " class="text-left " readonly="true " type="text
+                        " /></div></div></div><div id="quickInputsRow507722223131 " name="quickInputsRow " class="text-left row
+                        developer "><div id="quickInputsColumn5172231 " name="quickInputsColumn1
+                        " class="col-xs-12 col-sm-12 text-left "><hr id="hr_5272231 " name="hr_52722
+                        " class="text-left " style=" border-width:2px; " /></div></div><div id="row304
+                        " class="text-left row developer "><div id="col305 " class="col-xs-4 col-sm-4 text-left
+                        "> <div class="text-left "> <label for="selectedPaymentTerm
+                        ">selectedPaymentTerm (hidden)</label><input id="selectedPaymentTerm " name="selectedPaymentTerm " class="text-left
+                        " /></div></div><div id="col369 " class="col-xs-4 col-sm-4 text-left "> <div class="text-left
+                        "> <label for="formName ">formName (hidden)</label><input id="formName " name="formName
+                        " class="text-left " /></div></div></div></div><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body></html>

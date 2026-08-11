@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <style>
+            body .container {
+            width: 98%;
+            }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="quickHeadingRow5002626" name="quickHeadingRow" class="text-left row dev "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn50126" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall50226" name="quickHeadingSmall50226" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow510" name="quickInputsRow" class="text-left row dev ">
+                <div id="quickInputsColumn511" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="endDate">PPE (hidden)</label>
+                        <input id="endDate" name="endDate" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn513" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="otherOTCalculation">otherOTCalculation</label>
+                        <input id="otherOTCalculation" name="otherOTCalculation"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col580" class="col-xs-12 col-sm-6 text-left  ">
+                    <input id="needOptions" name="needOptions" class="text-left  " type="checkbox"
+                    />
+                    <label for="needOptions">needOptions (devHide)</label>
+                </div>
+                <div id="col602" class="col-xs-12 col-sm-6 text-left  ">
+                    <input id="publicSafety" name="publicSafety" class="text-left  " type="checkbox"
+                    />
+                    <label for="publicSafety">publicSafety (devHide)</label>
+                </div>
+                <div id="col603" class="col-xs-12 col-sm-6 text-left  ">
+                    <input id="notPublicSafety" name="notPublicSafety" class="text-left  "
+                    type="checkbox" />
+                    <label for="notPublicSafety">notPublicSafety (devHide)</label>
+                </div>
+                <div id="col636" class="col-xs-12 col-sm-6 text-left  ">
+                    <input id="showOnlySickTime" name="showOnlySickTime" class="text-left  "
+                    type="checkbox" />
+                    <label for="showOnlySickTime">showOnlySickTime (devHide)</label>
+                </div>
+                <div id="col672" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeEmail">employeeEmail</label>
+                        <input id="employeeEmail" name="employeeEmail" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row693" class="text-left row fd-form-masthead ">
+                <div id="col694" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn695" name="revisedOn" class="col-sm-12 text-right  ">Revised 06/25</span>
+                </div>
+                <div id="col696" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele697" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col698" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele699" name="ele21" class="text-left form-title ">Payroll Report</h1>
+                </div>
+                <div id="col700" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele701" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row689" class="text-left row ">
+                <div id="col690" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote691" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow647" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn648" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  "
+                style=" padding:0em 2em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <label for="selfOrElse">Will you be submitting this form on behalf of another employee?</label>
+                    <select
+                    id="selfOrElse" name="selfOrElse" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+                <div id="col675" class="col-xs-12 col-sm-6 text-left  "><span id="isThisARevisedPayroll" name="isThisARevisedPayroll" class="text-left  "><strong>Is this a revised Payroll Report?</strong></span>
+                </div>
+                <div id="col676" class="col-xs-12 col-sm-6 text-left  ">
+                    <input id="isRevisedYes" name="isRevisedRadioGroup" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform:scale(1.2); "
+                    type="radio" value="Yes" />
+                    <label for="isRevisedYes">Yes</label>
+                </div>
+                <div id="col677" class="col-xs-12 col-sm-6 text-left  ">
+                    <input id="isRevisedNo" name="isRevisedRadioGroup" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform:scale(1.2); "
+                    required="required" type="radio" value="No" />
+                    <label for="isRevisedNo">No</label>
+                </div>
+            </div>
+            <div id="quickInputsRow651" name="quickInputsRow" class="text-left row onBehalf ">
+                <div id="quickInputsColumn652" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSearch">Employee ID Search</label>
+                        <input id="employeeSearch" name="employeeSearch"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col654" class="col-xs-12 col-sm-2 text-left  " style=" margin-top:27px; ">
+                    <button id="employeeSearchButton" name="employeeSearchButton" class="text-left btn btn-primary btn-block "
+                    style="" undefined="">Search</button>
+                </div>
+            </div>
+            <div id="quickParagraphRow643" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn644" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_645" name="p_12139" class="text-left  "><strong>Note: </strong>If the Supervisor shown is incorrect, please start
+                        typing to search for and select the correct Supervisor.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow12" name="quickInputsRow" class="text-left row "
+            style="overflow: auto;  padding:1em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="quickInputsColumn13" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeName">Employee Name</label>
+                        <input id="employeeName" name="employeeName" class="text-left  "
+                        required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn15" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeID">Employee ID</label>
+                        <input id="employeeID" name="employeeID" class="text-left  "
+                        required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col17" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="primaryStatus">Primary Status</label>
+                    <select id="primaryStatus" name="primaryStatus"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="FT Classified">FT Classified</option>
+                        <option value="PT Classified">PT Classified</option>
+                        <option value="PT Teamster">PT Teamster</option>
+                        <option value="PT Exempt">PT Exempt</option>
+                        <option value="PT Hourly">PT Hourly</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Public Safety">Public Safety</option>
+                        <option value="Student">Student</option>
+                    </select>
+                </div>
+            </div>
+            <div id="row31" class="text-left row ">
+                <div id="col38" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorName">Supervisor Name</label>
+                        <input id="supervisorName" name="supervisorName"
+                        class="text-left  " required="required" readonly="true" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: true, labelMask: ['UserName', ' | ', 'Email'], selectedMask: ['UserName'],  formFields: {'supervisorEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col41" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorEmail">Supervisor Email</label>
+                        <input id="supervisorEmail" name="supervisorEmail"
+                        class="text-left  " required="required" readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="timesheet" name="timesheet" class="text-left row ">
+                <div id="col33" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="datepicker">Pay Period Begin Date</label>
+                        <input id="datepicker" name="datepicker"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="col321" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="position">Position</label>
+                        <input id="position" name="position" class="text-left  "
+                        type="text" data-bind="autocomplete: { localSource: 'personsPositionsList',  clearOnFocus: true,  labelMask: ['positionTitle', ' | ', 'positionCode']} "
+                        />
+                    </div>
+                </div>
+                <div id="col551" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele552" name="ele552" class="text-left  ">*Date selection for pay period should correlate to a Sunday that begins
+                        the pay period. All hours in the pay period must be included even if this
+                        is a revised sheet</p>
+                </div>
+            </div>
+            <div id="row1201010" name="" class="text-left row ">
+                <div id="col12110" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele12210" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="quickParagraphRow625" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px " data-bind="visible: ( ( ( primaryStatus() == 'Classified' )  ||  ( primaryStatus() == 'Classified (PT)' ) ) &amp;&amp;  ( datepicker() ) ) ">
+                <div id="col628" class="col-xs-12 col-sm-3 text-left  "><span id="ele629" name="ele629" class="text-left  "> </span>
+                </div>
+                <div id="quickParagraphColumn626" name="quickParagraphColumn" class="col-xs-12 col-sm-6 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_627" name="p_263" class="text-left  ">Since your Primary Status is <strong><span data-bind="html: primaryStatus"></span></strong>,
+                        you are required to include a half-hour break in your time entries. To
+                        enter your time, first input your Time In and Time Out for the shift before
+                        your break. Then, check the 'Add Time' box at the end of the row to enter
+                        the time for the shift after your break. If this is a revised payroll report,
+                        hours for the entire pay period have to be entered.</p>
+                </div>
+            </div>
+            <div id="weekList" name="weekList" class="text-left row " data-bind="dynamicList:true">
+                <div id="col556" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px;  border: none; text-shadow: none; ">
+                    <div class="text-center  ">
+                        <input id="weekHeaderText" name="weekHeaderText" class="text-center  "
+                        style=" padding:0% 0% 0% 0%;  margin:0% 0% 0% 0%;  font-size: 18px;&#10;font-weight: bold;&#10;color: #046A38;&#10;background-color: white;&#10;padding: 10px 15px;&#10;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);&#10;border: none;  "
+                        font-size:="" 18px;="" />
+                    </div>
+                </div>
+                <div id="col558" class="col-xs-12 col-sm-1 text-left grid-row " style=" text-shadow: none; ">
+                    <div class="text-right  ">
+                        <input id="day" name="day" class="text-right  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px;  border: none; font-size: 14px; text-shadow: none; "
+                        />
+                    </div>
+                </div>
+                <div id="col560" class="col-xs-12 col-sm-1 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px;  border: none; text-shadow: none; ">
+                    <div class="text-left  ">
+                        <input id="date" name="date" class="text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px;  border: none; font-size: 14px; text-shadow: none; "
+                        />
+                    </div>
+                </div>
+                <div id="col562" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="timeIn">Time In</label>
+                        <input id="timeIn" name="timeIn" class="text-left  " type="text"
+                        data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col564" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="timeOut">Time Out</label>
+                        <input id="timeOut" name="timeOut" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="col566" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="regHours">Reg Hrs</label>
+                        <input id="regHours" name="regHours" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="OTHRrsCol" name="OTHRrsCol" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="OThours">OT HRs</label>
+                        <input id="OThours" name="OThours" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col570" name="col38727" class="col-xs-12 col-sm-2 text-left codeOption  "
+                data-bind="visible: $root.needOptions()"><span id="exceptionCode571" name="exceptionCode" class="text-left  "><label for="exceptionCode571" data-bind="visible: $root.notPublicSafety() &amp;&amp; !$root.showOnlySickTime()">Exception Code</label>
+<select id="exceptionCode571" name="exceptionCode" class="text-left" data-bind="visible: $root.notPublicSafety() &amp;&amp; !$root.showOnlySickTime()">
+	<option value=""></option>
+	<option value="F - First Day Worked">F - First Day Worked</option>
+	<option value="L - Last Day Worked">L - Last Day Worked</option>
+	<option value="1 - Sick">1 - Sick</option>
+	<option value="2 - Vacation">2 - Vacation</option>
+	<option value="3 - College Business">3 - College Business</option>
+	<option value="4 - Jury Duty">4 - Jury Duty</option>
+	<option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+	<option value="6 - Holiday">6 - Holiday</option>
+	<option value="7 - Personal Business">7 - Personal Business</option>
+	<option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+	<option value="9 - Union Business">9 - Union Business</option>
+	<option value="10 - Emergency Closing">10 - Emergency Closing</option>
+</select>
+
+<label for="exceptionCodePublicSafety" data-bind="visible: $root.publicSafety()">Exception Code</label>
+<select id="exceptionCodePublicSafety" name="exceptionCodePublicSafety" class="text-left" data-bind="visible: $root.publicSafety()">
+	<option value=""></option>
+	<option value="F - First Day Worked">F - First Day Worked</option>
+	<option value="L - Last Day Worked">L - Last Day Worked</option>
+	<option value="1 - Sick">1 - Sick</option>
+	<option value="2 - Vacation">2 - Vacation</option>
+	<option value="3 - College Business">3 - College Business</option>
+	<option value="4 - Jury Duty">4 - Jury Duty</option>
+	<option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+	<option value="6 - Holiday">6 - Holiday</option>
+	<option value="7 - Personal Business">7 - Personal Business</option>
+	<option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+	<option value="9 - Union Business">9 - Union Business</option>
+	<option value="10 - Emergency Closing">10 - Emergency Closing</option>
+	<option value="11 - Emergency Closing">11 - Comp Time Earned</option>
+	<option value="10 - Emergency Closing">12 - Comp Time Taken</option>
+</select>
+
+<label for="exceptionCodeAdjunctTeaching" data-bind="visible: $root.showOnlySickTime()">Exception Code</label>
+<select id="exceptionCodeAdjunctTeaching" name="exceptionCodeAdjunctTeaching" class="text-left" data-bind="visible: $root.showOnlySickTime()">
+	<option value=""></option>
+	<option value="1 - Sick">1 - Sick</option>
+</select></span>
+                </div>
+                <div id="col572" name="col38827" class="col-xs-12 col-sm-1 text-left codeOption "
+                data-bind="visible: $root.needOptions()"><span id="classCode573" name="classCode" class="text-left  "><label for="classCode573" data-bind="visible: $root.notPublicSafety()">Classification</label>
+<select id="classCode573" name="classCode" class="text-left " data-bind="visible: $root.notPublicSafety()">
+	<option value=""></option>
+	<option value="* = 10% Diff">* = 10% Diff</option>
+	<option value="** = 2nd shift">** = 2nd shift</option>
+	<option value="*** = 3rd shift">*** = 3rd shift</option>
+	<option value="A = Level 2">A = Level 2</option>
+	<option value="B = Level 3">B = Level 3</option>
+	<option value="C = Level 4">C = Level 4</option>
+	<option value="D = Level 5">D = Level 5</option>
+</select>
+
+<label for="classCodePubSafety" data-bind="visible: $root.publicSafety()">Classification</label>
+<select id="classCodePubSafety" name="classCodePubSafety" class="text-left  " data-bind="visible: $root.publicSafety()">
+	<option value=""></option>
+	<option value="* = 10% Diff">* = 10% Diff</option>
+	<option value="** = 2nd shift">** = 2nd shift</option>
+	<option value="*** = 3rd shift">*** = 3rd shift</option>
+	<option value="A = Level 2">A = Level 2</option>
+	<option value="B = Level 3">B = Level 3</option>
+	<option value="C = Level 4">C = Level 4</option>
+	<option value="D = Level 5">D = Level 5</option>
+        <option value="Defense Tactical 1.5">Defense Tactical 1.5</option>
+        <option value="Field Training 1.5">Field Training 1.5</option>
+        <option value="Range Officer 1.5">Range Officer 1.5</option>
+</select></span>
+                </div>
+                <div id="col574" class="col-xs-12 col-sm-1 text-left  "><span id="extraEntry" name="extraEntry" class="text-left  "><div class="col-md-1 d-flex flex-column align-items-start">
+    <input id="hasRemarks" name="hasRemarks" class="d-none" type="checkbox" />
+    
+<a href="#" class="primary-link mt-1 text-decoration-none" data-bind="click: function() { $data.hasRemarks(!$data.hasRemarks()); Extenders.autosize($('textarea')); }">
+        <small>Add Time</small>
+    </a>
+</div>
+</span>
+                </div>
+                <div id="col576" name="col60" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: $data.hasRemarks()"><span id="timeEntryRowTwo5" name="timeEntryRowTwo" class="text-left  "><hr style="border: none; margin-top: 5px; margin-bottom: 0;" />
+<div id="col102-section" class="col-xs-12 col-sm-2 text-left">
+    <div class="text-right">
+        <h4>**</h4>
+    </div>
+</div>
+<div id="timeIn-section" class="col-xs-12 col-sm-2 text-left">
+    <label for="timeIn2" class="text-left">Time In</label>
+    <div class="text-left">
+        <input id="timeIn2" name="timeIn" class="text-left" type="text" data-bind="timepicker" />
+    </div>
+</div>
+<div id="timeOut-section" class="col-xs-12 col-sm-2 text-left">
+    <label for="timeOut2" class="text-left">Time Out</label>
+    <div class="text-left">
+        <input id="timeOut2" name="timeOut" class="text-left" type="text" data-bind="timepicker" />
+    </div>
+</div>
+<div id="exceptionCode-section" class="col-xs-12 col-sm-2 text-left codeOption" data-bind="visible: $root.needOptions()">
+	<label for="exceptionCode2" data-bind="visible: $root.notPublicSafety()">Exception Code</label>
+	<select id="exceptionCode2" name="exceptionCode2" class="text-left" data-bind="visible: $root.notPublicSafety() &amp;&amp; !$root.showOnlySickTime()">
+		<option value=""></option>
+		<option value="F - First Day Worked">F - First Day Worked</option>
+		<option value="L - Last Day Worked">L - Last Day Worked</option>
+		<option value="1 - Sick">1 - Sick</option>
+		<option value="2 - Vacation">2 - Vacation</option>
+		<option value="3 - College Business">3 - College Business</option>
+		<option value="4 - Jury Duty">4 - Jury Duty</option>
+		<option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+		<option value="6 - Holiday">6 - Holiday</option>
+		<option value="7 - Personal Business">7 - Personal Business</option>
+		<option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+		<option value="9 - Union Business">9 - Union Business</option>
+		<option value="10 - Emergency Closing">10 - Emergency Closing</option>
+	</select>
+
+	<label for="exceptionCode2PublicSafety" data-bind="visible: $root.publicSafety()">Exception Code</label>
+	<select id="exceptionCode2PublicSafety" name="exceptionCode2PublicSafety" class="text-left" data-bind="visible: $root.publicSafety()">
+		<option value=""></option>
+		<option value="F - First Day Worked">F - First Day Worked</option>
+		<option value="L - Last Day Worked">L - Last Day Worked</option>
+		<option value="1 - Sick">1 - Sick</option>
+		<option value="2 - Vacation">2 - Vacation</option>
+		<option value="3 - College Business">3 - College Business</option>
+		<option value="4 - Jury Duty">4 - Jury Duty</option>
+		<option value="5 - Bereavement Leave">5 - Bereavement Leave</option>
+		<option value="6 - Holiday">6 - Holiday</option>
+		<option value="7 - Personal Business">7 - Personal Business</option>
+		<option value="8 - Other Absence (No Pay)">8 - Other Absence (No Pay)</option>
+		<option value="9 - Union Business">9 - Union Business</option>
+		<option value="10 - Emergency Closing">10 - Emergency Closing</option>
+		<option value="11 - Emergency Closing">11 - Comp Time Earned</option>
+		<option value="12 - Emergency Closing">12 - Comp Time Taken</option>
+	</select>
+	<label for="exceptionCode2AdjunctTeaching" data-bind="visible: $root.showOnlySickTime()">Exception Code</label>
+	<select id="exceptionCode2AdjunctTeaching" name="exceptionCode2AdjunctTeaching" class="text-left" data-bind="visible: $root.showOnlySickTime()">
+		<option value=""></option>
+		<option value="1 - Sick">1 - Sick</option>
+	</select>
+</div>
+<div id="classCode-section" class="col-xs-12 col-sm-2 text-left codeOption" data-bind="visible: $root.needOptions()">
+	<label for="classCode2" data-bind="visible: $root.notPublicSafety()">Classification</label>
+	<select id="classCode2" name="classCode2" class="text-left " data-bind="visible: $root.notPublicSafety()">
+		<option value=""></option>
+		<option value="* = 10% Diff">* = 10% Diff</option>
+		<option value="** = 2nd shift">** = 2nd shift</option>
+		<option value="*** = 3rd shift">*** = 3rd shift</option>
+		<option value="A = Level 2">A = Level 2</option>
+		<option value="B = Level 3">B = Level 3</option>
+		<option value="C = Level 4">C = Level 4</option>
+		<option value="D = Level 5">D = Level 5</option>
+	</select>
+
+	<label for="classCode2PubSafety" data-bind="visible: $root.publicSafety()">Classification</label>
+	<select id="classCode2PubSafety" name="classCode2PubSafety" class="text-left  " data-bind="visible: $root.publicSafety()">
+		<option value=""></option>
+		<option value="* = 10% Diff">* = 10% Diff</option>
+		<option value="** = 2nd shift">** = 2nd shift</option>
+		<option value="*** = 3rd shift">*** = 3rd shift</option>
+		<option value="A = Level 2">A = Level 2</option>
+		<option value="B = Level 3">B = Level 3</option>
+		<option value="C = Level 4">C = Level 4</option>
+		<option value="D = Level 5">D = Level 5</option>
+		<option value="Defense Tactical 1.5">Defense Tactical 1.5</option>
+		<option value="Field Training 1.5">Field Training 1.5</option>
+		<option value="Range Officer 1.5">Range Officer 1.5</option>
+	</select>
+</div></span>
+                </div>
+                <div id="col578" class="col-xs-12 col-sm-12 text-left  "><span id="spa579" name="spa81" class="col-sm-12 text-left  "><hr style="margin: 0; height: 1px; background-color: #046A38; border: none; width: 100%;" />
+</span>
+                </div>
+            </div>
+            <div id="quickTextAreaRow632" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( datepicker() ) ) ">
+                <div id="quickTextAreaColumn633" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="employeeComments">Employee Comments</label>
+                    <textarea id="employeeComments" name="employeeComments"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow500" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn501" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall502" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Totals</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow504" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( otherOTCalculation() == 'No' ) ) ">
+                <div id="quickInputsColumn505" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="totalRegHours">Total Regular Hours</label>
+                        <input id="totalRegHours" name="totalRegHours"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn507" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="totalHoursOT">Total Overtime Hours</label>
+                        <input id="totalHoursOT" name="totalHoursOT"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow50411" name="quickInputsRow50411" class="text-left row "
+            data-bind="visible: ( ( otherOTCalculation() == 'Yes' ) ) ">
+                <div id="col588" class="col-xs-12 col-sm-12 text-left dev ">
+                    <h5 id="ele589" name="ele589" class="text-left  ">Other</h5>
+                </div>
+                <div id="quickInputsColumn50511" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="totalRegHoursOther">Total Regular Hours</label>
+                        <input id="totalRegHoursOther" name="totalRegHoursOther"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn50711" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="overTimeHoursOther">Total Overtime Hours</label>
+                        <input id="overTimeHoursOther" name="overTimeHoursOther"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col595" class="col-xs-12 col-sm-6 text-left dev ">
+                    <div class="text-left  ">
+                        <label for="determineOT">determineOT (dev hide)</label>
+                        <input id="determineOT" name="determineOT"
+                        class="text-left  " data-bind="calculate: 'weekList:regHours ' " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

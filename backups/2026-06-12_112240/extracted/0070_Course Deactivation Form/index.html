@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="loadingSpinner.css" />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row190" class="text-left row fd-form-masthead ">
+                <div id="col191" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn192" name="revisedOn" class="col-sm-12 text-right  ">Revised 12/24</span>
+                </div>
+                <div id="col193" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele194" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col195" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele196" name="ele21" class="text-left form-title with-subtitle ">Course Deactivation</h1><span id="ele197" name="ele23" class="text-left form-subtitle ">Office of Institutional Effectiveness</span>
+                </div>
+                <div id="col198" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele199" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row201" class="text-left row ">
+                <div id="col202" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote203" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow17" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn18" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall19" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Originator Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow21" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn22" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Originator Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn24" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Employee ID</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col30" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">Email</label>
+                        <input id="originatorEmail" name="originatorEmail" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn26" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="position">Position</label>
+                        <input id="position" name="position" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col28" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="department">Department</label>
+                        <input id="department" name="department" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col40" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele41" name="ele41" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow1755" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn185" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall195" name="quickHeadingSmall195" class="text-center  "
+                    style=" font-weight: bold; ">Proposal for Deactivation</h4>
+                </div>
+            </div>
+            <div id="quickDropdownRow173" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn174" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="academicYear">Current Academic Year</label>
+                    <select id="academicYear" name="academicYear"
+                    class="text-left  " required="required" data-bind="dynamicYear: { format: 'YYYY-YY[-1,  1]' } ">
+                        <option value=""></option>
+                        <option value="Option1">Option1</option>
+                        <option value="Option2">Option2</option>
+                        <option value="Option3">Option3</option>
+                        <option value="Option4">Option4</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow139" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn140" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="courseSearch">Course Search</label>
+                        <input id="courseSearch" name="courseSearch" class="text-left  "
+                        required="required" placeholder="Start typing to initiate search by prefix number or title."
+                        type="text" data-bind="autocomplete: { integrationSource: 'OIE_Get_Courses',  minSearchLength: 1,  labelLength: 100,  clearOnFocus: true,  validate: true,  labelMask: ['CoursePrefixNumber', ' - ', 'Title'],  formFields: {'coursePrefixNumber':'CoursePrefixNumber', 'courseTitle':'Title'} } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow44" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn45" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="coursePrefixNumber">Course Prefix Number</label>
+                        <input id="coursePrefixNumber" name="coursePrefixNumber"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn47" name="quickInputsColumn2" class="col-xs-12 col-sm-9 text-left  ">
+                    <div class="text-left  ">
+                        <label for="courseTitle">Course Title</label>
+                        <input id="courseTitle" name="courseTitle" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow50" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn51" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_53" name="h4_53" class="text-left  "><strong>What is the rationale for deactivating this course?</strong></h4>
+                </div>
+            </div>
+            <div id="quickInputsRow56" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn57" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="noAcfiveSectionsCheck" name="noAcfiveSectionsCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn59" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="noAcfiveSectionsCheckLabel" name="noAcfiveSectionsCheckLabel"
+                    class="text-left  " for="noAcfiveSectionsCheck">There have been no active sections for three consecutive years</label>
+                </div>
+            </div>
+            <div id="quickInputsRow62" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn63" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="deactivatedWithProgramCheck" name="deactivatedWithProgramCheck"
+                    class="text-left  " style=" transform: scale(1.5); " type="checkbox" transform:=""
+                    scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn65" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="deactivatedWithProgramCheckLabel66" name="deactivatedWithProgramCheckLabel"
+                    class="text-left  " for="deactivatedWithProgramCheck">Courses are being deactivated alongside a program deactivation</label>
+                </div>
+            </div>
+            <div id="quickInputsRow68" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn69" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="otherDeactivationCheck" name="otherDeactivationCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn71" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="otherDeactivationCheckLabel72" name="otherDeactivationCheckLabel"
+                    class="text-left  " for="otherDeactivationCheck">Other (please specify below once selected)</label>
+                </div>
+            </div>
+            <div id="quickTextAreaRow74" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( otherDeactivationCheck() ) ) ">
+                <div id="quickTextAreaColumn75" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <textarea id="otherDeactivationSpecify" name="otherDeactivationSpecify"
+                    class="text-left  " required="required" placeholder="Please enter your other rationale here."></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow82" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn83" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_84" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickInputsRow502323" name="quickInputsRow" class="text-left row deanRoutingSection ">
+                <div id="quickInputsColumn5123" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="h4_5323" name="h4_5323" class="text-left  "><strong>Please select the dean associated with this course.</strong></h4>
+                </div>
+            </div>
+            <div id="quickInputsRow146" name="quickInputsRow" class="text-left row deanRoutingSection ">
+                <div id="quickInputsColumn147" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dean">Dean</label>
+                        <input id="dean" name="dean" class="text-left  " required="required"
+                        type="text" data-bind="autocomplete: { localSource: 'uniqueDeanList',  clearOnFocus: true,  validate: true,  labelMask: ['Dean'],  formFields: {'deanEmail':'Dean_Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn149" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanEmail">Dean Email</label>
+                        <input id="deanEmail" name="deanEmail" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow822424" name="quickInputsRow" class="text-left row deanRoutingSection ">
+                <div id="quickInputsColumn8324" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_8424" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow17551414" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn18514" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall19514" name="quickHeadingSmall19514" class="text-center  "
+                    style=" font-weight: bold; ">Deactivation Checklist</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow134" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn135" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  "><span id="quickInputsText136" name="quickInputsText1" class="text-left  "><table class="table table-bordered table-striped table-hover deactivation-table">
+  <thead class="thead-light">
+    <tr>
+      <th class="text-left">TASK</th>
+      <th class="text-left">PERSON RESPONSIBLE</th>
+      <th class="text-left">TIMELINE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Notify Director of Academic Partnerships and Director of K-12, Secondary Partnerships</td>
+      <td>Director of Assessment, Accreditation &amp; Quality OR Curriculum Analyst</td>
+      <td>
+        <input id="directorNotifyTimeline" name="directorNotifyTimeline" class="text-left" required="required" type="text" data-bind="datepicker" />
+      </td>
+    </tr>
+    <tr>
+      <td>Notify Curriculum and Instruction Committee (CIC)</td>
+      <td>Director of Assessment, Accreditation &amp; Quality OR Curriculum Analyst</td>
+      <td>
+        <input id="cicNotifyTimeline" name="cicNotifyTimeline" class="text-left" required="required" type="text" data-bind="datepicker" />
+      </td>
+    </tr>
+    <tr>
+      <td>Remove course from OCC websites</td>
+      <td>Marketing and Communications</td>
+      <td>
+        <input id="timelineOccWebsites" name="timelineOccWebsites" class="text-left" required="required" type="text" data-bind="datepicker" />
+      </td>
+    </tr>
+    <tr>
+      <td>Deactivate course in computer system</td>
+      <td>Registrar</td>
+
+    </tr>
+    <tr>
+      <td>Add to catalog change summary</td>
+      <td>Registrar</td>
+
+    </tr>
+    <tr>
+      <td>Remove from next catalog</td>
+      <td>Registrar</td>
+    </tr>
+  </tbody>
+</table></span>
+                </div>
+            </div>
+            <div id="quickInputsRow8215152525" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn831525" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_841525" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickInputsRow86" name="quickInputsRow" class="text-left row deanSignatureSection ">
+                <div id="col87" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="ele88" name="ele33" class="text-left  "><b>Academic Dean Signature </b></h4>
+                </div>
+                <div id="col89" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele90" name="ele36" class="text-left  "><i>By signing and approving below, I recommend the deactivation of this course. I confirm that the reasons for its deactivation are sound, that the faculty involved with the program have been duly consulted, and that a thorough plan for the course's deactivation is in place and ready to be executed.</i>
+                    </p>
+                </div>
+                <div id="quickInputsColumn91" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicDeanSignature">Academic Dean Signature</label>
+                        <input id="academicDeanSignature" name="academicDeanSignature"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn93" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicDeanSignatureDate">Signature Date</label>
+                        <input id="academicDeanSignatureDate" name="academicDeanSignatureDate"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow821515" name="quickInputsRow" class="text-left row deanSignatureSection ">
+                <div id="quickInputsColumn8315" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_8415" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickInputsRow121" name="quickInputsRow" class="text-left row ieDirectorSignatureSection ">
+                <div id="col122" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="ele123" name="ele33567" class="text-left  "><b>Director of Assessment, Accreditation &amp; Quality </b></h4>
+                </div>
+                <div id="col124" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele125" name="ele36567" class="text-left  "><i>By signing below, I am recommending this course for deactivation, based on the rationale provided.</i>
+                    </p>
+                </div>
+                <div id="quickInputsColumn126" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dirCSLESignature">Director of Assessment, Accreditation &amp; Quality</label>
+                        <input id="dirCSLESignature"
+                        name="dirCSLESignature" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn128" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dirCSLESignatureDate">Signature Date</label>
+                        <input id="dirCSLESignatureDate" name="dirCSLESignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow8215152020" name="quickInputsRow" class="text-left row ieDirectorSignatureSection ">
+                <div id="quickInputsColumn831520" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_841520" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow161" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn162" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall163" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow165" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn166" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="skipDean">skipDean (hidden)</label>
+                        <input id="skipDean" name="skipDean" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col176" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ieDirectorEmail">ieDirectorEmail (hidden)</label>
+                        <input id="ieDirectorEmail" name="ieDirectorEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col179" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="routingDeanEmail">routingDeanEmail (hidden)</label>
+                        <input id="routingDeanEmail" name="routingDeanEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col182" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow169" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn170" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left loading ">
+                        <input id="quickInputsText171" name="quickInputsText1" class="text-left loading "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

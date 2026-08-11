@@ -1,0 +1,92 @@
+[
+  {
+    "form_id": 18,
+    "form_name": "W-4 Detroit - No OCC User ID",
+    "department": "Human Resources",
+    "form_group": "Public use forms",
+    "anonymous": true,
+    "published": true,
+    "new_forms_builder": false,
+    "is_pdf": true
+  },
+  {
+    "form_id": 19,
+    "form_name": "W-4 State of Michigan",
+    "department": "Human Resources",
+    "form_group": "Tax Forms",
+    "anonymous": false,
+    "published": true,
+    "new_forms_builder": false,
+    "is_pdf": true
+  },
+  {
+    "form_id": 20,
+    "form_name": "W-4 Pontiac - No OCC User ID",
+    "department": "Human Resources",
+    "form_group": "Public use forms",
+    "anonymous": true,
+    "published": true,
+    "new_forms_builder": false,
+    "is_pdf": true
+  },
+  {
+    "form_id": 27,
+    "form_name": "W-4 Detroit",
+    "department": "Human Resources",
+    "form_group": "Tax Forms",
+    "anonymous": false,
+    "published": true,
+    "new_forms_builder": false,
+    "is_pdf": true
+  },
+  {
+    "form_id": 28,
+    "form_name": "W-4 State of Michigan - No OCC User ID",
+    "department": "Human Resources",
+    "form_group": "Public use forms",
+    "anonymous": true,
+    "published": true,
+    "new_forms_builder": false,
+    "is_pdf": true
+  },
+  {
+    "form_id": 29,
+    "form_name": "W-4 Pontiac",
+    "department": "Human Resources",
+    "form_group": "Tax Forms",
+    "anonymous": false,
+    "published": true,
+    "new_forms_builder": false,
+    "is_pdf": true
+  },
+  {
+    "form_id": 50,
+    "form_name": "Athletic Department Break and Delay of Enrollment",
+    "department": "Athletics",
+    "form_group": "Athletics",
+    "anonymous": false,
+    "published": true,
+    "new_forms_builder": false,
+    "is_pdf": true
+  },
+  {
+    "form_id": 58,
+    "form_name": "1st Agency Parent Information Form",
+    "department": "Athletics",
+    "form_group": "Athletics",
+    "anonymous": false,
+    "published": true,
+    "new_forms_builder": false,
+    "is_pdf": true
+  },
+  {
+    "form_id": 82,
+    "form_name": "NJCAA Eligibility Affidavit",
+    "department": "Unassigned",
+    "form_group": "Athletics",
+    "anonymous": false,
+    "published": true,
+    "new_forms_builder": false,
+    "is_pdf": true
+  }
+]

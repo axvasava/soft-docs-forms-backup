@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row397" class="text-left row fd-form-masthead ">
+                <div id="col398" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn399" name="revisedOn" class="col-sm-12 text-right  ">Revised 01/25</span>
+                </div>
+                <div id="col400" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele401" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col402" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele403" name="ele21" class="text-left form-title with-subtitle ">Out-of-State Remote Work Agreement</h1><span id="ele404" name="ele23" class="text-left form-subtitle ">Prospective Employee</span>
+                </div>
+                <div id="col405" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele406" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row383" class="text-left row ">
+                <div id="col384" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote385" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Section I: Remote Worker Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow16" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn17" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeName">Employee Name</label>
+                        <input id="employeeName" name="employeeName" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col25" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="phoneNumber">Employee Phone Number</label>
+                        <input id="phoneNumber" name="phoneNumber"
+                        class="text-left  " data-bind="mask: 'phone' " />
+                    </div>
+                </div>
+                <div id="col353" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeEmail">Employee Email</label>
+                        <input id="employeeEmail" name="employeeEmail" class="text-left  "
+                        required="required" data-bind="email" />
+                    </div>
+                </div>
+                <div id="col346" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_348" class="text-left  " />
+                </div>
+                <div id="quickInputsColumn21" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeePosition">Position</label>
+                        <input id="employeePosition" name="employeePosition" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn23" name="quickInputsColumn4" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeDepartment">Department</label>
+                        <input id="employeeDepartment" name="employeeDepartment"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col339" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorName">Supervisor Name</label>
+                        <input id="supervisorName" name="supervisorName"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col340" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorEmail">Supervisor Email</label>
+                        <input id="supervisorEmail" name="supervisorEmail"
+                        class="text-left  " data-bind="email" />
+                    </div>
+                </div>
+                <div id="col28" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele29" name="ele29" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow103" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn104" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmall105" name="quickHeadingSmall" class="text-left  "><strong>Proposed Remote Worksite:</strong></h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow323" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn324" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_325" name="p_263" class="text-left  ">Remote work outside Michigan requires written approval of Human Resources
+                        and Financial Services.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow107" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn108" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmallest109" name="quickHeadingSmallest" class="text-left  "><strong>Proposed Effective Dates:</strong></h4>
+                </div>
+            </div>
+            <div id="quickInputsRow111" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn112" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="effectiveDateFrom">From</label>
+                        <input id="effectiveDateFrom" name="effectiveDateFrom" class="text-left  "
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn114" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="effectiveDateTo">To</label>
+                        <input id="effectiveDateTo" name="effectiveDateTo" class="text-left  "
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col116" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="locations">Locations</label>
+                    <select id="locations" name="locations" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Home">Home</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow120" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn121" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="address">Street Address (PO Box <u>not</u> Acceptable)</label>
+                        <input id="address"
+                        name="address" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn123" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="city">City</label>
+                        <input id="city" name="city" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn125" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="state">State</label>
+                        <input id="state" name="state" class="text-left  " type="text"
+                        data-bind="state" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn127" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="zipCode">Zip</label>
+                        <input id="zipCode" name="zipCode" class="text-left  " type="text"
+                        data-bind="mask: 'zip' " />
+                    </div>
+                </div>
+                <div id="col129" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele130" name="ele130" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow1244" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn134" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall144" name="quickHeadingSmall144" class="text-center  "
+                    style=" font-weight: bold; ">Section II: Certifications, Work Rules &amp; Schedule and Acknowledgement</h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow1031818" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn10418" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmall10518" name="quickHeadingSmall10518" class="text-left  "><strong>Remote Work Schedule:</strong></h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow328" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn329" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_330" name="p_263" class="text-left  ">Please select days that you will be working, then enter start and end
+                        times when you are available for the selected day(s).</p>
+                </div>
+            </div>
+            <div id="quickInputsRow136202021212222232324242525" name="quickInputsRow"
+            class="text-left row ">
+                <div id="quickInputsColumn137202122232425" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="sundayCheck" name="sundayCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn139202122232425" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="none202122232425" name="none202122232425" class="text-left  "
+                    for="sundayCheck">Sunday</label>
+                </div>
+            </div>
+            <div id="quickInputsRow172" name="quickInputsRow" class="text-left row "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addTimeRangeSun' }, visible: ( ( sundayCheck() ) )  ">
+                <div id="col180" class="col-xs-12 col-sm-1 text-left  "><span id="ele181" name="ele181" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn173" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="startSunday">Start Time</label>
+                        <input id="startSunday" name="startSunday" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn175" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="endSunday">End Time</label>
+                        <input id="endSunday" name="endSunday" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn177" name="quickInputsColumn3" class="col-xs-12 col-sm-1 text-left  "
+                style=" margin-top: 30px; ">
+                    <button id="quickInputsText178" name="quickInputsText3" class="text-left  "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col253" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele254" name="ele254" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow243" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( sundayCheck() ) ) ">
+                <div id="col247" class="col-xs-12 col-sm-1 text-left  "><span id="ele248" name="ele248" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn244" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="addTimeRangeSun" name="addTimeRangeSun" class="text-left btn btn-primary "
+                    style="" undefined="">Add Time Range</button>
+                </div>
+                <div id="col250" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele251" name="ele251" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow136" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn137" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="mondayCheck" name="mondayCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn139" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="none" name="none" class="text-left  " for="mondayCheck">Monday</label>
+                </div>
+            </div>
+            <div id="quickInputsRow17227" name="quickInputsRow17227" class="text-left row "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addTimeRangeMon' }, visible: ( ( mondayCheck() ) )  ">
+                <div id="col18027" class="col-xs-12 col-sm-1 text-left  "><span id="ele18127" name="ele181" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsRow1722727" name="quickInputsRow" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="startMonday">Start Time</label>
+                        <input id="startMonday" name="startMonday" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn17527" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="endMonday">End Time</label>
+                        <input id="endMonday" name="endMonday" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn17727" name="quickInputsColumn3" class="col-xs-12 col-sm-1 text-left  "
+                style=" margin-top: 30px; ">
+                    <button id="quickInputsText17827" name="quickInputsText17827" class="text-left  "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col298" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele299" name="ele299" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow2433535" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( mondayCheck() ) ) ">
+                <div id="col24735" class="col-xs-12 col-sm-1 text-left  "><span id="ele24835" name="ele248" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn24435" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="addTimeRangeMon" name="addTimeRangeMon" class="text-left btn btn-primary "
+                    style="" undefined="">Add Time Range</button>
+                </div>
+                <div id="col25035" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele25135" name="ele251" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow1362020" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn13720" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="tuesdayCheck" name="tuesdayCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn13920" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="none20" name="none20" class="text-left  " for="tuesdayCheck">Tuesday</label>
+                </div>
+            </div>
+            <div id="quickInputsRow1722728" name="quickInputsRow1722728" class="text-left row "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addTimeRangeTues' }, visible: ( ( tuesdayCheck() ) )  ">
+                <div id="col1802728" class="col-xs-12 col-sm-1 text-left  "><span id="ele1812728" name="ele181" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsRow172272828" name="quickInputsRow" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="startTuesday">Start Time</label>
+                        <input id="startTuesday" name="startTuesday" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn1752728" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="endTuesday">End Time</label>
+                        <input id="endTuesday" name="endTuesday" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn1772728" name="quickInputsColumn3" class="col-xs-12 col-sm-1 text-left  "
+                style=" margin-top: 30px; ">
+                    <button id="quickInputsText1782728" name="quickInputsText1782728" class="text-left  "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col301" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele302" name="ele302" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow24335353636" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( tuesdayCheck() ) ) ">
+                <div id="col2473536" class="col-xs-12 col-sm-1 text-left  "><span id="ele2483536" name="ele248" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn2443536" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="addTimeRangeTues" name="addTimeRangeTues" class="text-left btn btn-primary "
+                    style="" undefined="">Add Time Range</button>
+                </div>
+                <div id="col2503536" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele2513536" name="ele251" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow13620202121" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn1372021" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="wednesdayCheck" name="wednesdayCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn1392021" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="none2021" name="none2021" class="text-left  " for="wednesdayCheck">Wednesday</label>
+                </div>
+            </div>
+            <div id="quickInputsRow172272829" name="quickInputsRow172272829" class="text-left row "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addTimeRangeWed' }, visible: ( ( wednesdayCheck() ) )  ">
+                <div id="col180272829" class="col-xs-12 col-sm-1 text-left  "><span id="ele181272829" name="ele181" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsRow17227282929" name="quickInputsRow" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="startWednesday">Start Time</label>
+                        <input id="startWednesday" name="startWednesday" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn175272829" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="endWedneday">End Time</label>
+                        <input id="endWedneday" name="endWedneday" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn177272829" name="quickInputsColumn3" class="col-xs-12 col-sm-1 text-left  "
+                style=" margin-top: 30px; ">
+                    <button id="quickInputsText178272829" name="quickInputsText178272829"
+                    class="text-left  " style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col304" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele305" name="ele305" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow243353536363737" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( wednesdayCheck() ) ) ">
+                <div id="col247353637" class="col-xs-12 col-sm-1 text-left  "><span id="ele248353637" name="ele248" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn244353637" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="addTimeRangeWed" name="addTimeRangeWed" class="text-left btn btn-primary "
+                    style="" undefined="">Add Time Range</button>
+                </div>
+                <div id="col250353637" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele251353637" name="ele251" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow136202021212222" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn137202122" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="thrusdayCheck" name="thrusdayCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn139202122" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="none202122" name="none202122" class="text-left  " for="thrusdayCheck">Thursday</label>
+                </div>
+            </div>
+            <div id="quickInputsRow17227282930" name="quickInputsRow17227282930" class="text-left row "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addTimeRangeThur' }, visible: ( ( thrusdayCheck() ) )  ">
+                <div id="col18027282930" class="col-xs-12 col-sm-1 text-left  "><span id="ele18127282930" name="ele181" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsRow1722728293030" name="quickInputsRow" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="startThursday">Start Time</label>
+                        <input id="startThursday" name="startThursday" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn17527282930" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="endThursday">End Time</label>
+                        <input id="endThursday" name="endThursday" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn17727282930" name="quickInputsColumn3" class="col-xs-12 col-sm-1 text-left  "
+                style=" margin-top: 30px; ">
+                    <button id="quickInputsText17827282930" name="quickInputsText17827282930"
+                    class="text-left  " style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col307" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_309" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickInputsRow2433535363637373838" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( thrusdayCheck() ) ) ">
+                <div id="col24735363738" class="col-xs-12 col-sm-1 text-left  "><span id="ele24835363738" name="ele248" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn24435363738" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="addTimeRangeThur" name="addTimeRangeThur" class="text-left btn btn-primary "
+                    style="" undefined="">Add Time Range</button>
+                </div>
+                <div id="col25035363738" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele25135363738" name="ele251" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow1362020212122222323" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn13720212223" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="fridayCheck" name="fridayCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn13920212223" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="none20212223" name="none20212223" class="text-left  " for="fridayCheck">Friday</label>
+                </div>
+            </div>
+            <div id="quickInputsRow1722728293031" name="quickInputsRow1722728293031"
+            class="text-left row " data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addTimeRangeFri' }, visible: ( ( fridayCheck() ) )  ">
+                <div id="col1802728293031" class="col-xs-12 col-sm-1 text-left  "><span id="ele1812728293031" name="ele181" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsRow172272829303131" name="quickInputsRow" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="startFriday">Start Time</label>
+                        <input id="startFriday" name="startFriday" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn1752728293031" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="endFriday">End Time</label>
+                        <input id="endFriday" name="endFriday" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn1772728293031" name="quickInputsColumn3" class="col-xs-12 col-sm-1 text-left  "
+                style=" margin-top: 30px; ">
+                    <button id="quickInputsText1782728293031" name="quickInputsText1782728293031"
+                    class="text-left  " style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col310" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_312" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickInputsRow24335353636373738383939" name="quickInputsRow"
+            class="text-left row " data-bind="visible: ( ( fridayCheck() ) ) ">
+                <div id="col2473536373839" class="col-xs-12 col-sm-1 text-left  "><span id="ele2483536373839" name="ele248" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn2443536373839" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="addTimeRangeFri" name="addTimeRangeFri" class="text-left btn btn-primary "
+                    style="" undefined="">Add Time Range</button>
+                </div>
+                <div id="col2503536373839" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele2513536373839" name="ele251" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow13620202121222223232424" name="quickInputsRow"
+            class="text-left row ">
+                <div id="quickInputsColumn1372021222324" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="saturdayCheck" name="saturdayCheck" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn1392021222324" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="none2021222324" name="none2021222324" class="text-left  " for="saturdayCheck">Saturday</label>
+                </div>
+            </div>
+            <div id="quickInputsRow172272829303132" name="quickInputsRow172272829303132"
+            class="text-left row " data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addTimeRangeSat' }, visible: ( ( saturdayCheck() ) )  ">
+                <div id="col180272829303132" class="col-xs-12 col-sm-1 text-left  "><span id="ele181272829303132" name="ele181" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsRow17227282930313232" name="quickInputsRow" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="startSaturday">Start Time</label>
+                        <input id="startSaturday" name="startSaturday" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn175272829303132" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="endSaturday">End Time</label>
+                        <input id="endSaturday" name="endSaturday" class="text-left  "
+                        type="text" data-bind="timepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn177272829303132" name="quickInputsColumn3" class="col-xs-12 col-sm-1 text-left  "
+                style=" margin-top: 30px; ">
+                    <button id="quickInputsText178272829303132" name="quickInputsText178272829303132"
+                    class="text-left  " style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col313" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele314" name="ele314" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow243353536363737383839394040" name="quickInputsRow"
+            class="text-left row " data-bind="visible: ( ( saturdayCheck() ) ) ">
+                <div id="col247353637383940" class="col-xs-12 col-sm-1 text-left  "><span id="ele248353637383940" name="ele248" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn244353637383940" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="addTimeRangeSat" name="addTimeRangeSat" class="text-left btn btn-primary "
+                    style="" undefined="">Add Time Range</button>
+                </div>
+                <div id="col250353637383940" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele251353637383940" name="ele251" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow238" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn239" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText240" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickParagraphRow45" name="quickParagraphRow" class="text-left row employeeSignature "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn46" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_47" name="p_263" class="text-left  "><strong>By entering my name below and submitting this form</strong>
+                        <br
+                        />
+<strong>I certify that:</strong>
+                        <br />
+                    </p>
+                    <ol>
+                        <li>I have read <a href="https://www.oaklandcc.edu/policies/human-resources-policies/remote-workers"
+                            target="blank">OCC’s Remote Work Policy and Procedures</a> and work rules,
+                            and agree to abide by all their provisions.</li>
+                        <li>I have reviewed expectations and communication requirements in my remote-
+                            work plan and security requirements for remote work with my supervisor.</li>
+                        <li>I have agreed to establish a remote workspace at the location identified
+                            above and certify that my remote work site is safe and secure.</li>
+                    </ol>
+<strong>I understand that:</strong>
+                    <br />
+                    <ol>
+                        <li>I must follow all College policies and work rules. Failure to follow policies
+                            and work rules may result in disciplinary action and termination of remote
+                            work.</li>
+                        <li>I will promptly notify my supervisor if I need to change any term of this
+                            agreement so that a revised agreement can be entered.</li>
+                        <li>Reimbursement for travel and meals will not be available to me for work
+                            at an authorized remote work location.</li>
+                        <li>If approved to use a privately-owned phone or device during remote work,
+                            my device may be subject to discovery under court rules, court orders or
+                            litigation holds, acceptable-use or cyber-security incident investigations
+                            by OCC, and Freedom of Information Act (FOIA) requests.</li>
+                    </ol>
+<strong>I further understand that: </strong>
+                    <br />
+                    <ol>
+                        <li>This Remote Work Agreement can be ended by the appointing authority any
+                            time for any reason and that I can end this agreement. If feasible, when
+                            ending a Remote Work Agreement, two weeks' notice will be given.</li>
+                    </ol>
+                    <p></p>
+                </div>
+            </div>
+            <div id="quickInputsRow49" name="quickInputsRow" class="text-left row employeeSignature ">
+                <div id="quickInputsColumn50" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText51" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickHeadingRow1277" name="quickHeadingRow" class="text-left row signatures "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn137" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall147" name="quickHeadingSmall147" class="text-center  "
+                    style=" font-weight: bold; ">Signatures</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow5799" name="quickInputsRow" class="text-left row supervisorSignature ">
+                <div id="quickInputsColumn589" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSignature">Supervisor: Enter Name</label>
+                        <input id="supervisorSignature" name="supervisorSignature"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn609" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSignatureDate">Signature Date</label>
+                        <input id="supervisorSignatureDate" name="supervisorSignatureDate"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow57" name="quickInputsRow" class="text-left row employeeSignature ">
+                <div id="quickInputsColumn58" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSignature">Employee: Enter Name</label>
+                        <input id="employeeSignature" name="employeeSignature"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn60" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSignatureDate">Signature Date</label>
+                        <input id="employeeSignatureDate" name="employeeSignatureDate"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow83" name="quickInputsRow" class="text-left row signatures ">
+                <div id="quickInputsColumn84" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText85" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickHeadingRow357" name="quickHeadingRow" class="text-left row lookupCheck "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn358" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall359" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Employee Lookup Check</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow361" name="quickParagraphRow" class="text-left row lookupCheck "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn362" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_363" name="p_263" class="text-left  "><strong>The Softdocs Etrieve system requires an Employee Lookup to be created so that this form can file in Etrieve Content. This requires a synch to take place with the ERP after the Student ID has been created in Colleague. Please enter a Student ID and click the 'Lookup Check' button below to ensure that the Lookup exists in Etrieve before submitting this form.<span style="color: red"> *</span></strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow365" name="quickInputsRow" class="text-left row lookupCheck ">
+                <div id="quickInputsColumn366" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <input id="employeeIDLookupCheck" name="employeeIDLookupCheck" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn368" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="lookupCheckButton" name="lookupCheckButton" class="text-left btn btn-primary "
+                    style="" undefined="">Lookup Check</button>
+                </div>
+            </div>
+            <div id="quickInputsRow375" name="quickInputsRow" class="text-left row lookupCheck ">
+                <div id="quickInputsColumn376" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_377" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow332" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn333" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall334" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow336" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn337" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col350" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hrDocType">hrDocType (hidden)</label>
+                        <input id="hrDocType" name="hrDocType" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

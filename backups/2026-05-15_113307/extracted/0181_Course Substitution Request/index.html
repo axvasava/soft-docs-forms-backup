@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="loadingSpinner.css" />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row329" class="text-left row fd-form-masthead ">
+                <div id="col330" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn331" name="revisedOn" class="col-sm-12 text-right  ">Revised 02/26</span>
+                </div>
+                <div id="col332" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele333" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col334" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele335" name="ele21" class="text-left form-title ">Course Substitution Request</h1>
+                </div>
+                <div id="col336" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele337" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row325" class="text-left row ">
+                <div id="col326" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote327" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow122020" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1320" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1420" name="quickHeadingSmall1420" class="text-center  "
+                    style=" font-weight: bold; ">Course Substitutions Guidlines</h4>
+                </div>
+            </div>
+            <div id="slideCourseGuidelines1" name="slideHideCourseGuidelines1" class="text-left row showHideCourseGuidelines "
+            style="overflow: auto;  font-weight: bold ">
+                <div id="col177" class="col-xs-12 col-sm-12 text-left  "><span id="toggleSection" name="toggleSection" class="col-xs-12 col-sm-12 text-left  "><button type="button" id="slideCourseGuidelines" class="btn" style="padding: 10px 20px;&#10;                font-size: 16px;&#10;                border: none;&#10;                border-radius: 5px;&#10;                cursor: pointer;&#10;                 margin: 5px;">
+  Show/Hide Course Substitution Guidelines
+</button>
+
+<p id="slideCourseGuidelinesPara">
+  1. This form is submitted by Counselors/Advisors on behalf of the students. <br />
+  2. The Counselor/Advisor will explain the form, process and discuss the feasibility of the form with the student. Counselors/Advisors do not approve substitution requests. <br />
+  3. The Counselor/Advisor must confirm that the student’s Program of Study for which the Course Substitution is being requested is on the student’s record. If not, student must complete a Data Change Form. <br />
+  4. If a course is being used by a student to meet degree/certificate requirements, that course cannot be used in a course substitution to meet another degree/certificate requirement for that same credential. <br />
+  5. A separate form must be used for each substitution. Approved substitutions are valid only for the program(s) indicated. <br />
+  6. The student must provide the required attachments as noted on the front of the form. If the material is not attached, the form will not be processed and returned to student. <br />
+  7. The approving Dean is the Dean of the discipline / program. <br />
+  8. The Dean's decision on a substitution request is final the decision will be entered in the student system. </p>
+<p>
+  CAUTION: YOUR PROPOSED SUBSTITUTION MAY NOT MEET THE MTA (MICHIGAN TRANSFER AGREEMENT) GUIDELINES.
+</p>
+</span>
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Student Information</h4>
+                </div>
+            </div>
+            <div id="row16" class="text-left row ">
+                <div id="col17" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSearch">Student Search (Enter ID)</label>
+                        <input id="studentSearch" name="studentSearch"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="col19" class="col-xs-12 col-sm-6 text-left  " style=" padding:0px 0px 0px 0px;  margin:20px 0px 0px 0px;  margin-top: 26px ">
+                    <button id="searchButton" name="searchButton" class="col-xs- col-sm- text-left btn btn-primary "
+                    style="" onclick="">Search</button>
+                </div>
+            </div>
+            <div id="row27" class="text-left row ">
+                <div id="col28" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentName">Student Name</label>
+                        <input id="studentName" name="studentName" class="text-left  "
+                        readonly="true" />
+                    </div>
+                    <div class="text-left hidden ">
+                        <label for="personGUID">PersonGUID (Hidden)</label>
+                        <input id="personGUID" name="personGUID" class="text-left hidden "
+                        />
+                    </div>
+                </div>
+                <div id="col29" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentEmail">Student Email</label>
+                        <input id="studentEmail" name="studentEmail" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col39" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="StudentsPrograms">All Applicable Curriculum(s) / Program(s)</label>
+                        <input id="StudentsPrograms"
+                        name="StudentsPrograms" class="text-left  " required="required" type="text"
+                        data-bind="autocomplete: { localSource: 'studentActivePrograms',  clearOnFocus: true,  validate: true,  labelMask: ['programName'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col40" class="col-xs-6 col-sm-6 text-left  ">
+                    <label for="catalogYear">Catalog Year</label>
+                    <select id="catalogYear" name="catalogYear" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickHeadingRow1255" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn135" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall145" name="quickHeadingSmall145" class="text-center  "
+                    style=" font-weight: bold; ">Course Information</h4>
+                </div>
+            </div>
+            <div id="row61" class="text-left row ">
+                <div id="col62" class="col-xs-12 col-sm-12 text-left  "><span id="ele63" name="ele63" class="col-xs-12 col-sm-12 text-left  "><i>(Note that the approved substitution request can only be used for the above program(s).)</i>
+<br />IT IS THE STUDENTS RESPONSIBILITY TO GATHER AND SUBMIT THE FOLLOWING: <br />
+ATTACH:  <strong><ol><li>Transfer Credit (if appropriate) </li>
+<li>Catalog Course Description for Transfer Credit / Syllabus if Available</li>
+<li>All Other Substitutions Already Approved or Denied</li></ol></strong></span>
+                </div>
+            </div>
+            <div id="row67" class="text-left row ">
+                <div id="col68" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele69" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="row65" class="text-left row ">
+                <div id="col70" class="col-xs-12 col-sm-12 text-left  "><span id="ele71" name="ele71" class="col-xs-12 col-sm-12 text-center  "><strong>I WISH TO REQUEST THE SUBSTITUTION OF:</strong></span>
+                </div>
+                <div id="col225" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="subject">Course Subject</label>
+                        <input id="subject" name="subject" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_Distinct_Subjects', validate: true,  labelMask: ['Subject']} "
+                        />
+                    </div>
+                </div>
+                <div id="col226" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="courseNumber">Course Number</label>
+                        <input id="courseNumber" name="courseNumber" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col227" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="courseTitle">Course Title</label>
+                        <input id="courseTitle" name="courseTitle" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col257" class="col-xs-5 col-sm-5 text-left  "><span id="ele260" name="ele260" class="col-xs-12 col-sm-12 text-left  "
+                    style=" font-weight: bold ">Is this a transfer course?</span>
+                </div>
+                <div id="col258" class="col-xs-1 col-sm-2 text-left  ">
+                    <input id="transferCourseY" name="transferCourse" class="text-left  "
+                    required="required" type="radio" value="Yes" />
+                    <label for="transferCourseY">  Yes</label>
+                </div>
+                <div id="col284" class="col-xs-1 col-sm-2 text-left  ">
+                    <input id="transferCourseN" name="transferCourse" class="text-left  "
+                    type="radio" value="No" />
+                    <label for="transferCourseN">  No</label>
+                </div>
+            </div>
+            <div id="row287" name="row287" class="text-left row " data-bind="visible: ((transferCourse() == 'Yes'))">
+                <div id="col288" class="col-xs-8 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="InstitutionTitle">Please list the transferring institution</label>
+                        <input id="InstitutionTitle"
+                        name="InstitutionTitle" class="text-left  " type="text" data-bind="autocomplete: { localSource: 'studentInstitutionsAttended',  clearOnFocus: true,  labelMask: ['title'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row73" class="text-left row ">
+                <div id="col77" class="col-xs-12 col-sm-12 text-center  "><span id="ele87" name="ele87" class="col-xs-12 col-sm-12 text-center  "><strong>IN PLACE OF: </strong></span>
+                </div>
+                <div id="col218" class="col-xs-12 col-sm-12 text-left  "><span id="ele219" name="ele219" class="col-xs-12 col-sm-12 text-left  "></span>
+                </div>
+                <div id="col212" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="subject2">Course Subject</label>
+                        <input id="subject2" name="subject2" class="text-left  "
+                        data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_Distinct_Subjects', validate: true,  labelMask: ['Subject']} "
+                        />
+                    </div>
+                </div>
+                <div id="col78" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="courseNumber2">Course Number</label>
+                        <input id="courseNumber2" name="courseNumber2" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col79" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="courseTitle2">Course Title</label>
+                        <input id="courseTitle2" name="courseTitle2" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col80" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left hidden ">
+                        <label for="creditsSub">Credits</label>
+                        <input id="creditsSub" name="creditsSub" class="text-left hidden "
+                        required="required" type="Number" />
+                    </div>
+                </div>
+                <div id="col96" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="reasonForRequest">Reason Request is Made</label>
+                    <textarea id="reasonForRequest" name="reasonForRequest"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow12551010" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13510" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14510" name="quickHeadingSmall14510" class="text-center  "
+                    style=" font-weight: bold; ">Routing Information</h4>
+                </div>
+            </div>
+            <div id="row102" class="text-left row ">
+                <div id="col103" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="chairProgramCoordinator">Chair / Program Coordinator</label>
+                        <input id="chairProgramCoordinator"
+                        name="chairProgramCoordinator" class="text-left  " required="required"
+                        data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees', validate: true,  labelMask: ['UserName', ' | ', 'Email'], formFields: {'departmentChairEmail':'Email'}} "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row1021212" name="" class="text-left row ">
+                <div id="col10412" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dean">Dean</label>
+                        <input id="dean" name="dean" class="text-left  " required="required"
+                        type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_Distinct_Deans',  clearOnFocus: true, validate: true,  labelMask: ['Dean'], formFields: {'deanEmail':'Dean_Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col10512" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="admin">Administrative Assistant</label>
+                        <input id="admin" name="admin" class="text-left  "
+                        type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_Administrative_Assistant_By_Dean', validate: true,  labelMask: ['Administrative_Specialist'], formFields: {'administrativeSpecialistEmail':'Administrative_Specialist_Email'},integrationParams: {'Dean':'dean'} } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow125510101313" name="quickHeadingRow" class="text-left row signatureHeader "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1351013" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1451013" name="quickHeadingSmall1451013" class="text-center  "
+                    style=" font-weight: bold; ">Signatures</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow123" name="quickInputsRow" class="text-left row counselor ">
+                <div id="quickInputsColumn124" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="counselorSignature">Counselor / Advisor Signature</label>
+                        <input id="counselorSignature" name="counselorSignature"
+                        class="text-left  " type="text" />
+                    </div>
+                    <div class="text-left hidden ">
+                        <label for="originatorEmail">Counselor Email (hidden)</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="text-left hidden " readonly="true" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn126" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="counselorSignatureDate">Date</label>
+                        <input id="counselorSignatureDate" name="counselorSignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow129" name="quickInputsRow" class="text-left row student ">
+                <div id="quickInputsColumn130" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSignature">Student Signature</label>
+                        <input id="studentSignature" name="studentSignature"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn132" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSignatureDate">Date</label>
+                        <input id="studentSignatureDate" name="studentSignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow135" name="quickInputsRow" class="text-left row chair ">
+                <div id="quickInputsColumn136" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="chairProgramCoordSignature">Chair / Program Coordinator Signature</label>
+                        <input id="chairProgramCoordSignature"
+                        name="chairProgramCoordSignature" class="text-left  " type="text" />
+                    </div>
+                    <div class="text-left hidden ">
+                        <label for="departmentChairEmail">Chair / Program Coordinator Email (hidden)</label>
+                        <input id="departmentChairEmail"
+                        name="departmentChairEmail" class="text-left hidden " readonly="true" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn138" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="chairProgramCoordSignatureDate">Date</label>
+                        <input id="chairProgramCoordSignatureDate" name="chairProgramCoordSignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow141" name="quickInputsRow" class="text-left row dean ">
+                <div id="quickInputsColumn142" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanSignature">Dean Signature</label>
+                        <input id="deanSignature" name="deanSignature" class="text-left  "
+                        type="text" />
+                    </div>
+                    <div class="text-left hidden ">
+                        <label for="deanEmail">Dean Email (hidden)</label>
+                        <input id="deanEmail" name="deanEmail" class="text-left hidden "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn144" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanSignDate">Date</label>
+                        <input id="deanSignDate" name="deanSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow147" name="quickInputsRow" class="text-left row adminAssistant ">
+                <div id="quickInputsColumn148" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanAdminSignature">Dean's Admin Signature</label>
+                        <input id="deanAdminSignature" name="deanAdminSignature"
+                        class="text-left  " type="text" />
+                    </div>
+                    <div class="text-left hidden ">
+                        <label for="administrativeSpecialistEmail">Dean's Admin Email (hidden)</label>
+                        <input id="administrativeSpecialistEmail"
+                        name="administrativeSpecialistEmail" class="text-left hidden " readonly="true"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn150" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanAdminSignDate">Date</label>
+                        <input id="deanAdminSignDate" name="deanAdminSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow1255101013132727" name="quickHeadingRow" class="text-left row OfficialUseOnly "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn135101327" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall145101327" name="quickHeadingSmall145101327"
+                    class="text-center  " style=" font-weight: bold; ">Official Use Only</h4>
+                </div>
+            </div>
+            <div id="row2942828" name="" class="text-left row OfficialUseOnly ">
+                <div id="col29528" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="registrarComments">Comments</label>
+                    <textarea id="registrarComments" name="registrarComments"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row312" class="text-left row loading ">
+                <div id="col313" class="col-xs-12 col-sm-12 text-left  "><span id="ele314" name="ele314" class="text-left  "></span>
+                </div>
+            </div>
+            <div id="row316" class="text-left row developer ">
+                <div id="col317" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentAcademicYear">currentAcademicYear (hidden)</label>
+                        <input id="currentAcademicYear" name="currentAcademicYear"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

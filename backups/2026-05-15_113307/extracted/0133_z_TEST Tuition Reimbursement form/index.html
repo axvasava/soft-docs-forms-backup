@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col3" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele4" name="ele37" class="text-right  "><i>Revised 1/25</i></h5>
+                </div>
+                <div id="HeaderLeft5" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo6" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    />
+                </div>
+                <div id="HeaderRight7" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_8" name="h2_27" class="text-center  "><b>OCC Tuition Reimbursement</b><br /><sm>Faculty/Faculty Spouse, Retired Faculty and Adjunct Faculty, Spouse and Dependent</sm></h2>
+                </div>
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele10" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Faculty Information</h4>
+                </div>
+            </div>
+            <div id="quickDropdownRow16" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn17" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="facultyType">Please select one:</label>
+                    <select id="facultyType" name="facultyType"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Faculty">Faculty</option>
+                        <option value="Faculty Retired">Faculty Retired</option>
+                        <option value="Faculty Spouse">Faculty Spouse</option>
+                        <option value="Adjunct">Adjunct</option>
+                        <option value="Adjunct Spouse/Dependent">Adjunct Spouse/Dependent</option>
+                    </select>
+                </div>
+                <div id="col265" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="jobTitle">Job Title</label>
+                        <input id="jobTitle" name="jobTitle" class="text-left  "
+                        data-bind="autocomplete: { localSource: 'personsPositionsList',  clearOnFocus: true,  validate: true,  labelMask: ['positionTitle'],  formFields: {'supervisorGUID':'supervisorGUID'} } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow20" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn21" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Name - Faculty/Retired - Faculty/Adjunct Faculty</label>
+                        <input id="originatorDisplayName"
+                        name="originatorDisplayName" class="text-left  " readonly="true" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn23" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">ID</label>
+                        <input id="originatorErpId" name="originatorErpId" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow95" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn96" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_97" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickParagraphRow254" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn255" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_256" name="p_12139" class="text-left  "><strong>Note: </strong>If the Supervisor shown after selecting your Job
+                        Title is incorrect, please start typing to search for and select the correct
+                        Supervisor.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow258" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn259" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorName">Supervisor</label>
+                        <input id="supervisorName" name="supervisorName" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: true,  labelMask: ['UserName'],  formFields: {'supervisorEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col261" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorEmail">Supervisor Email</label>
+                        <input id="supervisorEmail" name="supervisorEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col263" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele264" name="ele37" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow26" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn27" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall28" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Spouse/Dependent Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow2066" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn216" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="spouseDependentName">Spouse/Dependent (where applicable)</label>
+                        <input id="spouseDependentName"
+                        name="spouseDependentName" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn236" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="spouseDependentID">Student ID</label>
+                        <input id="spouseDependentID" name="spouseDependentID"
+                        class="text-left  " type="text" data-bind="mask: '9999999' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow87" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn88" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_89" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow39" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn40" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall41" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Term</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow35" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn36" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="term">Please enter a term:</label>
+                        <input id="term" name="term" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { localSource: 'recentPastTerms',  clearOnFocus: true,  validate: true,  labelMask: ['code', ' | ', 'title'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow91" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn92" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_93" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow43" name="quickHeadingRow" class="text-left row humanResources "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn44" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall45" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">To Be Completed by Human Resources</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow47" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn48" name="quickInputsColumn1" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="amountToReimburse">Amount to Reimburse</label>
+                        <input id="amountToReimburse" name="amountToReimburse"
+                        class="text-left  " required="required" type="text" data-bind="money" />
+                    </div>
+                </div>
+                <div id="col227" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="gradeReportSatisfactoryGrade">Grade Report/Satisfactory Grade?</label>
+                        <input id="gradeReportSatisfactoryGrade"
+                        name="gradeReportSatisfactoryGrade" class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow68" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn69" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="creditHours">If adjunct, number of credit hours touch/time-frame eligible</label>
+                        <input
+                        id="creditHours" name="creditHours" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn71" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="creditHoursTerm">Term</label>
+                        <input id="creditHoursTerm" name="creditHoursTerm" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { localSource: 'AcademicPeriodsAutocomplete',  clearOnFocus: true,  validate: true,  labelMask: ['termCode', ' | ', 'termTitle'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow77" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn78" name="quickInputsColumn1" class="col-xs-12 col-sm-5 text-left  ">
+                    <label for="dependentEligibleOnTaxReturn">If dependent, eligible on tax return?</label>
+                    <select id="dependentEligibleOnTaxReturn"
+                    name="dependentEligibleOnTaxReturn" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow83" name="quickTextAreaRow" class="text-left row humanResources ">
+                <div id="quickTextAreaColumn84" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="commentsNotesHR">Comments/Notes</label>
+                    <textarea id="commentsNotesHR" name="commentsNotesHR"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow99" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn100" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_101" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickParagraphRow231" name="quickParagraphRow" class="text-left row humanResources "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn232" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_233" name="p_263" class="text-left  ">By entering my name below and approving this form I acknowledge that I
+                        have verified the above information to be true.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow235" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn236" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hrStaffSign">HR Staff: Please Enter Your Name</label>
+                        <input id="hrStaffSign" name="hrStaffSign"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn238" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hrStaffSignDate">Date</label>
+                        <input id="hrStaffSignDate" name="hrStaffSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col240" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_242" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow431919" name="quickHeadingRow" class="text-left row financialServices "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn4419" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall4519" name="quickHeadingSmall4519" class="text-center  "
+                    style=" font-weight: bold; ">To Be Completed by Financial Services</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow106" name="quickInputsRow" class="text-left row financialServices ">
+                <div id="quickInputsColumn107" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="arCode">AR Code</label>
+                        <input id="arCode" name="arCode" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn109" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="amountOfReimbursement">Amount of Reimbursement</label>
+                        <input id="amountOfReimbursement" name="amountOfReimbursement"
+                        class="text-left  " required="required" type="text" data-bind="money" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow112" name="quickInputsRow" class="text-left row financialServices ">
+                <div id="quickInputsColumn113" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="invoice">Invoice</label>
+                        <input id="invoice" name="invoice" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn115" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="refundVoucher">Refund Voucher</label>
+                        <input id="refundVoucher" name="refundVoucher" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow992323" name="quickInputsRow" class="text-left row financialServices ">
+                <div id="quickInputsColumn10023" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_10123" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickParagraphRow2313939" name="quickParagraphRow" class="text-left row financialServices "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn23239" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_23339" name="p_23339" class="text-left  ">By entering my name below and approving this form I acknowledge that I
+                        have verified the above information to be true and accurate.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow2354040" name="quickInputsRow" class="text-left row financialServices ">
+                <div id="quickInputsColumn23640" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="finSerStaffSign">Financial Services Staff: Please Enter Your Name</label>
+                        <input id="finSerStaffSign"
+                        name="finSerStaffSign" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn23840" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="finSerStaffSignDate">Date</label>
+                        <input id="finSerStaffSignDate" name="finSerStaffSignDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col24040" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_24240" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow4319192424" name="quickHeadingRow" class="text-left row humanResources "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn441924" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall451924" name="quickHeadingSmall451924" class="text-center  "
+                    style=" font-weight: bold; ">Tuition Reimbursement Policy/Process:</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow147" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn148" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickInputsText149" name="quickInputsText1" class="text-left  "><strong>Faculty Members and Spouses</strong></h4>
+                </div>
+                <div id="quickInputsColumn150" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <ul id="quickInputsText151" name="quickInputsText2" class="text-left  ">
+                        <li>Faculty members and spouses and also retired faculty members and spouses
+                            shall be granted tuition reimbursement upon successful completion of an
+                            OCC course.</li>
+                        <li>See Tuition Authorization for Faculty member’s dependents. Dependent children
+                            to age twenty-five shall be extended these benefits. The authorization
+                            waives tuition rather than reimbursing tuition.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quickInputsRow155" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn156" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickInputsText157" name="quickInputsText1" class="text-left  "><strong>Adjunct Faculty</strong></h4>
+                </div>
+                <div id="quickInputsColumn158" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <ul id="quickInputsText159" name="quickInputsText2" class="text-left  ">
+                        <li>Adjunct faculty are entitled to receive tuition reimbursement for classes
+                            taken at OCC equal to the number of credits taught by the adjunct.</li>
+                        <li>The individual’s spouse and/or dependent children are also entitled to
+                            tuition reimbursement.</li>
+                        <li>Tuition reimbursement will not exceed a family total of 8 credit hours
+                            in the fall, winter, or summer,or 24 credit hours per academic year.</li>
+                        <li>Class/es must be taken within one year of the semester hours earned.</li>
+                        <li>Tuition reimbursement may be requested after successful completion of
+                            the course(s) taught and successful completion of the course(s) taken.</li>
+                        <li>The adjunct faculty, spouse, or dependent children will pay for the class
+                            and are reimbursed upon successful completion of class (A, B, C, D, AU,
+                            credit by exam).</li>
+                        <li>Reimbursement is for tuition only and does not include any fees.</li>
+                        <li>If an “I” (incomplete) grade is assigned, the tuition reimbursement may
+                            be requested when the “I”grade is made up.</li>
+                        <li>After successful completion of the class, adjunct faculty have 60 days
+                            to submit the tuition reimbursement request.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quickInputsRow161" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn162" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickInputsText163" name="quickInputsText1" class="text-left  "><strong>Librarians, Counselors or Academic Support Center (ASC) Adjunct Faculty</strong></h4>
+                </div>
+                <div id="quickInputsColumn164" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <ul id="quickInputsText165" name="quickInputsText2" class="text-left  ">
+                        <li>One credit hour of tuition reimbursement will be granted for every 30
+                            hours worked.</li>
+                        <li>Tuition reimbursement will not exceed a family total of eight credit hours
+                            in the fall, winter, or summer, or 24 credit hours per academic year.</li>
+                        <li>Reimbursement for classes must be requested within one year of the semester
+                            hours worked.</li>
+                        <li>After successful completion of the class, adjunct faculty have 60 days
+                            to request tuition reimbursement.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quickInputsRow167" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn168" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickInputsText169" name="quickInputsText1" class="text-left  "><strong>Adjunct Clinical Faculty Who are Paid by the College</strong></h4>
+                </div>
+                <div id="quickInputsColumn170" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <ul id="quickInputsText171" name="quickInputsText2" class="text-left  ">
+                        <li>One credit hour of tuition will be granted for every 30 hours worked.</li>
+                        <li>Tuition reimbursement will not exceed a family total of eight credit hours
+                            in the fall, winter, or summer, or 24 credit hours per academic year.</li>
+                        <li>Reimbursement for classes must be requested within one year of the semester
+                            hours worked.</li>
+                        <li>After successful completion of the class, adjunct faculty have 60 days
+                            to request tuition reimbursement.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quickParagraphRow193" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn194" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_195" name="p_263" class="text-left  "><strong>NOTE:</strong>To be eligible for this Tuition Reimbursement benefit
+                        you must be a current faculty member, current adjunct employee or a retired
+                        full-time faculty member.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow177" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn178" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickInputsText179" name="quickInputsText1" class="text-left  "><strong>Current Adjunct - OCC classes:</strong></h4>
+                </div>
+                <div id="quickInputsColumn180" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <ul id="quickInputsText181" name="quickInputsText2" class="text-left  ">
+                        <li>Provide OCC classes load documents supporting credit hours taught for
+                            eligibility. The employee, the department administrative specialist or
+                            the academic dean can provide this documentation.</li>
+                        <li>Receipt of payment for class(s) taken – this can be screenshot from Colleague.</li>
+                        <li>Grade report to verify successful completion of the course.</li>
+                        <li>If reimbursement is for dependent - provide the last tax return to verify
+                            the status of dependents using this benefit.</li>
+                        <li>Submit all documentation to the Human Resources, Benefit Department -
+                            Vanessa Belcher, <a href="/cdn-cgi/l/email-protection#7b0d1a191e1718131e3b141a10171a151f1818551e1f0e"><span class="__cf_email__" data-cfemail="4e382f2c2b222d262b0e212f25222f202a2d2d602b2a3b">[email&#160;protected]</span></a> or
+                            Cheryl Blake, <a href="/cdn-cgi/l/email-protection#8babe8efe9e7eae0eecbe4eae0e7eae5efe8e8a5eeeffe"><span class="__cf_email__" data-cfemail="335057515f525856735c52585f525d5750501d565746">[email&#160;protected]</span></a>.</li>
+                        <li>Note: all refunds for OCC classes are processed on the student’s record</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quickInputsRow183" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn184" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickInputsText185" name="quickInputsText1" class="text-left  "><strong>Current Faculty - Non-OCC classes:</strong></h4>
+                </div>
+                <div id="quickInputsColumn186" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <ul id="quickInputsText187" name="quickInputsText2" class="text-left  ">
+                        <li>Signed Tuition Reimbursement Application HR-22.</li>
+                        <li>Receipt of payment for class(s) taken.</li>
+                        <li>Grade report to verify successful completion of the course.</li>
+                        <li>Submit all documentation to Administrative Specialist II</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="row189" class="text-left row ">
+                <div id="quickListUnorderedColumn190" name="quickListUnorderedColumn"
+                class="col-xs-12 col-sm-12 text-left  ">
+                    <ul id="quickListUnorderedElement191" name="quickListUnorderedElement"
+                    class="text-left  ">
+                        <li>Administrative Specialist II will complete Request for Check, have the
+                            Dean sign appropriate paperwork and submit all documents to the Human Resources,
+                            Benefit Department - Vanessa Belcher, <a href="/cdn-cgi/l/email-protection#1636607774737a757e735679777d7a777872757538737263"><span class="__cf_email__" data-cfemail="96e0f7f4f3faf5fef3d6f9f7fdfaf7f8f2f5f5b8f3f2e3">[email&#160;protected]</span></a> or
+                            Cheryl Blake, <a href="/cdn-cgi/l/email-protection#59793a3d3b3538323c193638323538373d3a3a773c3d2c"><span class="__cf_email__" data-cfemail="93f0f7f1fff2f8f6d3fcf2f8fff2fdf7f0f0bdf6f7e6">[email&#160;protected]</span></a>.</li>
+                        <li>HR monitors annual reimbursements, verifies paperwork and eligibility
+                            and reviews dependent information.</li>
+                        <li>HR submits verified/approved paperwork to Financial Services/AR for credit
+                            of tuition and refund processing.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quickInputsRow197" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn198" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickInputsText199" name="quickInputsText1" class="text-left  "><strong>Current Faculty &amp; Retired Faculty - OCC classes:</strong></h4>
+                </div>
+                <div id="quickInputsColumn200" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <ul id="quickInputsText201" name="quickInputsText2" class="text-left  ">
+                        <li>Receipt of payment for class(s) taken – this can be screenshot from Colleague.</li>
+                        <li>Grade report to verify successful completion of the course.</li>
+                        <li>Submit all documents to the Human Resources, Benefit Department - Vanessa
+                            Belcher, <a href="/cdn-cgi/l/email-protection#8eaef8efecebe2ede6ebcee1efe5e2efe0eaededa0ebeafb"><span class="__cf_email__" data-cfemail="fb8d9a999e9798939ebb949a90979a959f9898d59e9f8e">[email&#160;protected]</span></a> or
+                            Cheryl Blake, <a href="/cdn-cgi/l/email-protection#a484c7c0c6c8c5cfc1e4cbc5cfc8c5cac0c7c78ac1c0d1"><span class="__cf_email__" data-cfemail="e487808688858f81a48b858f88858a808787ca818091">[email&#160;protected]</span></a>.</li>
+                        <li>Note: all refunds for OCC classes are processed on the student’s record</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quickInputsRow203" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn204" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickInputsText205" name="quickInputsText1" class="text-left  "><strong>Additional Information:</strong></h4>
+                </div>
+                <div id="quickInputsColumn206" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <ul id="quickInputsText207" name="quickInputsText2" class="text-left  ">
+                        <li>HR monitors annual reimbursements, verifies paperwork and eligibility
+                            and reviews dependent information.</li>
+                        <li>HR submits verified/approved paperwork to Financial Services/AR for credit
+                            of tuition and refund processing.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quickParagraphRow209" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn210" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement211" name="quickParagraphElement" class="text-left  ">For additional information regarding tuition reimbursement, please contact
+                        Human Resources at <a href="hr@oaklandcc.edu"><span class="__cf_email__" data-cfemail="87eff5c7e8e6ecebe6e9e3e4e4a9e2e3f2">[email&#160;protected]</span></a>.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow213" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn214" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_215" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow217" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn218" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall219" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+                <div id="col220" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hrDocType">hrDocType (hidden)</label>
+                        <input id="hrDocType" name="hrDocType" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col221" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow273" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn274" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeName275">employeeName (hidden)</label>
+                        <input id="employeeName275" name="employeeName"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col276" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="departmentGUID">departmentGUID (hidden)</label>
+                        <input id="departmentGUID" name="departmentGUID"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col278" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorGUID">supervisorGUID (hidden)</label>
+                        <input id="supervisorGUID" name="supervisorGUID"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col280" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formCode">formCode (hidden)</label>
+                        <input id="formCode" name="formCode" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+</html>

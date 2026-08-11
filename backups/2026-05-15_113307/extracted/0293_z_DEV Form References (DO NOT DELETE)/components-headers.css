@@ -1,0 +1,369 @@
+/* =========================================================
+   Forms Design System Headers
+   File: headers.css
+   Purpose:
+   Standardized masthead, section header, and subsection
+   styling for enterprise forms with ADA/WCAG alignment.
+   Uses centralized design tokens from variables.css
+========================================================= */
+
+/* =========================================================
+   Masthead Component
+   Namespace: fd-form-masthead
+
+   Structure:
+   - revised date
+   - institutional logo
+   - form title
+   - optional subtitle
+
+   Purpose:
+   Establishes top-level form identity and hierarchy
+========================================================= */
+
+.fd-form-masthead .revised-on {
+	font-size: 8px;
+	font-style: italic;
+}
+
+.fd-form-masthead .logo {
+	background-color: var(--fd-occ-green);
+	padding-top: 16px;
+	padding-bottom: 16px;
+	text-align: center;
+}
+
+.fd-form-masthead .logo img {
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.fd-form-masthead .form-title {
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+	margin: 24px 0 0;
+	line-height: 1.2;
+}
+
+/* Applied when subtitle is present */
+.fd-form-masthead .form-title.with-subtitle {
+	margin-bottom: 12px;
+}
+
+.fd-form-masthead .form-subtitle {
+	display: block;
+	font-size: 18px;
+	text-align: center;
+	margin: 0;
+	line-height: 1.5;
+}
+
+/* =========================================================
+   Section Header Component
+   Namespace: fd-section-header
+
+   Variants:
+   - Standard
+   - Office Use
+   - Developer Use
+
+   Layout Modes:
+   - title-only
+   - with-subtitle
+
+   Features:
+   - Font Awesome icon support
+   - Branded gradients
+   - Strong visual hierarchy
+========================================================= */
+
+.fd-section-header {
+	padding: 6px 8px;
+	margin: 8px 0 5px;
+
+	color: var(--fd-white);
+
+	background: linear-gradient(
+		65deg,
+		var(--fd-green-dark) 0%,
+		var(--fd-green-dark) 11%,
+		var(--fd-occ-green) 12%,
+		var(--fd-occ-green) 100%
+	);
+
+	border: 1px solid var(--fd-green-dark);
+	border-radius: var(--fd-border-radius-md);
+	box-shadow: var(--fd-shadow-md);
+	line-height: 1;
+}
+
+/* =========================================================
+   Office Use Variant
+   Administrative/internal workflow sections
+========================================================= */
+.fd-section-header.office-variant {
+	background: linear-gradient(
+		65deg,
+		var(--fd-office-dark) 0%,
+		var(--fd-office-dark) 11%,
+		var(--fd-office) 12%,
+		var(--fd-office) 100%
+	);
+
+	border: 1px solid var(--fd-office-dark);
+}
+
+/* =========================================================
+   Developer Use Variant
+   Technical/system-facing sections
+========================================================= */
+.fd-section-header.developer-variant {
+	background: linear-gradient(
+		65deg,
+		var(--fd-dev-dark) 0%,
+		var(--fd-dev-dark) 11%,
+		var(--fd-dev) 12%,
+		var(--fd-dev) 100%
+	);
+
+	border: 1px solid var(--fd-dev-dark);
+}
+
+/* =========================================================
+   Developer Use Variant
+   Technical/system-facing sections
+========================================================= */
+.fd-section-header.developer-variant {
+	background: linear-gradient(
+		65deg,
+		var(--fd-dev-dark) 0%,
+		var(--fd-dev-dark) 11%,
+		var(--fd-dev) 12%,
+		var(--fd-dev) 100%
+	);
+
+	border: 1px solid var(--fd-dev-dark);
+}
+
+/* =========================================================
+   Warning Use Variant
+   Attention-required sections, cautions, or important
+   user-facing notices requiring elevated visibility
+========================================================= */
+.fd-section-header.warning-variant {
+	background: linear-gradient(
+		65deg,
+		var(--fd-warning-dark) 0%,
+		var(--fd-warning-dark) 11%,
+		var(--fd-warning) 12%,
+		var(--fd-warning) 100%
+	);
+
+	border: 1px solid var(--fd-warning-dark);
+}
+
+.fd-section-header.warning-variant .icon,
+.fd-section-header.warning-variant h2 {
+	color: var(--fd-gray-900);
+}
+
+/* =========================================================
+   Error Use Variant
+   Validation failures, blocking issues, or critical
+   problem states requiring immediate correction
+========================================================= */
+.fd-section-header.error-variant {
+	background: linear-gradient(
+		65deg,
+		var(--fd-error-dark) 0%,
+		var(--fd-error-dark) 11%,
+		var(--fd-error) 12%,
+		var(--fd-error) 100%
+	);
+
+	border: 1px solid var(--fd-error-dark);
+}
+
+/* =========================================================
+   Info Use Variant
+   Informational sections, guidance, or contextual
+   messaging supporting user understanding
+========================================================= */
+.fd-section-header.info-variant {
+	background: linear-gradient(
+		65deg,
+		var(--fd-info-dark) 0%,
+		var(--fd-info-dark) 11%,
+		var(--fd-info) 12%,
+		var(--fd-info) 100%
+	);
+
+	border: 1px solid var(--fd-info-dark);
+}
+
+.fd-section-header.info-variant h2 {
+	color: var(--fd-space-blue);
+}
+
+/* =========================================================
+   Layout Mode: Title Only
+   Used when no supporting subtitle is needed
+========================================================= */
+.fd-section-header.title-only {
+	display: flex;
+	align-items: center;
+	column-gap: 30px;
+}
+
+/* =========================================================
+   Layout Mode: With Subtitle
+   Supports icon + title + supporting subtitle
+========================================================= */
+.fd-section-header.with-subtitle {
+	display: grid;
+	grid-template-columns: 56px 1fr;
+	grid-template-areas:
+		"icon title"
+		"icon subtitle";
+	align-items: center;
+	column-gap: 10px;
+}
+
+/* =========================================================
+   Icon Container
+   Font Awesome compatible
+========================================================= */
+.fd-section-header .icon {
+	grid-area: icon;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 36px;
+	height: 36px;
+
+	color: var(--fd-white);
+	opacity: 0.95;
+	font-size: 2.5rem;
+}
+
+/* Normalize icon vertical alignment */
+.fd-section-header .icon i {
+	line-height: 1;
+}
+
+/* =========================================================
+   Primary Section Title (H2)
+========================================================= */
+.fd-section-header h2 {
+	grid-area: title;
+
+	margin: 0;
+
+	font-size: 1.75rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 1.2;
+
+	color: var(--fd-white);
+}
+
+/* =========================================================
+   Supporting Section Subtitle
+========================================================= */
+.fd-section-header p {
+	grid-area: subtitle;
+
+	margin: 0;
+
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: 0.07em;
+	line-height: 1.5;
+
+	color: var(--fd-white);
+}
+
+/* =========================================================
+   Subsection Header Component
+   Namespace: fd-subsection-header
+
+   Purpose:
+   Defines lower-level sectional hierarchy beneath H2 headers
+   while preserving strong semantic structure.
+========================================================= */
+
+.fd-subsection-header {
+	margin: 16px 0 8px;
+	padding: 10px 14px;
+
+	background-color: var(--fd-green-light);
+	border-left: 5px solid var(--fd-occ-green);
+	border-radius: var(--fd-border-radius-sm);
+
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+/* =========================================================
+   Subsection Title (H3)
+========================================================= */
+.fd-subsection-header h3 {
+	margin: 0;
+
+	color: var(--fd-green-dark);
+	font-size: 1.35rem;
+	font-weight: 700;
+	line-height: 1.3;
+	letter-spacing: 0.05em;
+}
+
+.fd-subsection-header.info-variant {
+	background-color: var(--fd-info-light);
+	border-left-color: var(--fd-info);
+}
+
+.fd-subsection-header.info-variant h3 {
+	color: var(--fd-space-blue);
+}
+
+.fd-subsection-header.error-variant {
+	background-color: var(--fd-error-light);
+	border-left-color: var(--fd-error);
+}
+
+.fd-subsection-header.error-variant h3 {
+	color: var(--fd-error-dark);
+}
+
+.fd-subsection-header.warning-variant {
+	background-color: var(--fd-warning-light);
+	border-left-color: var(--fd-warning-dark);
+}
+
+.fd-subsection-header.warning-variant h3 {
+	color: var(--fd-gray-900);
+}
+
+.fd-subsection-header.developer-variant {
+	background-color: var(--fd-dev-light);
+	border-left-color: var(--fd-dev);
+}
+
+.fd-subsection-header.developer-variant h3 {
+	color: var(--fd-dev-dark);
+}
+
+.fd-subsection-header.office-variant {
+	background-color: var(--fd-office-light);
+	border-left-color: var(--fd-office);
+}
+
+.fd-subsection-header.office-variant h3 {
+	color: var(--fd-office-dark);
+}

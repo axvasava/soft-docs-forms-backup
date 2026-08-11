@@ -29,7 +29,7 @@ def write_markdown(root_path, filename_counts, folder_count):
     """
     Write results to a markdown file in the root directory.
     """
-    output_path = os.path.join(root_path, "file_report.md")
+    output_path = os.path.join(root_path, "unique_file_name_count.md")
 
     with open(output_path, "w", encoding="utf-8") as f:
         # Header
@@ -52,7 +52,7 @@ def write_markdown(root_path, filename_counts, folder_count):
 
 
 if __name__ == "__main__":
-    root_folder = r"C:\Users\axvasava\Desktop\repos\soft-docs-forms-backup\utility-forms-2026-04-26_124426"
+    root_folder = r"C:\Users\axvasava\Desktop\repos\soft-docs-forms-backup\backups\2026-05-08_105836\extracted"
 
     filename_counts = count_filenames(root_folder)
     folder_count = count_top_level_folders(root_folder)

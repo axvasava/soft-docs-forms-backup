@@ -23,7 +23,7 @@ DRY_RUN = False
 def delete_exact_filenames(
     root_folder: str,
     target_filenames: list[str],
-    dry_run: bool = True,
+    dry_run: bool = False,
 ):
     """
     Find and optionally delete files with exact filename matches

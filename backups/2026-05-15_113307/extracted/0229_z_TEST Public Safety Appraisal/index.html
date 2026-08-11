@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow3" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000;  border-bottom:3px solid #046A38; ">
+                <div id="HeaderLeft4" name="HeaderLeft" class="col-xs-12 col-sm-4 text-center  ">
+                    <img id="HeaderLogo5" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    alt="Oakland Community College Logo" />
+                </div>
+                <div id="HeaderRight6" name="HeaderRight" class="col-xs-12 col-sm-6 text-center  ">
+                    <h3 id="h2_7" name="h2_27" class="col-sm-12 text-center  "><b>Public Safety Appraisal Form</b></h3>
+                </div>
+                <div id="col8" class="col-xs-12 col-sm-2 text-right  ">
+                    <p id="ele9" name="ele37" class="text-right  " style=" font-size:8px "><i>Revised 03/24/26</i>
+                    </p>
+                </div>
+            </div>
+            <div id="row10" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                <div id="col11" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="col-sm-12 text-left  ">
+                        <label for="evalDate">Evaluation Date</label>
+                        <input id="evalDate" name="evalDate" class="col-sm-12 text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row98" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                <div id="quickHeader1" name="quickHeader1" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px;  background-color:#046A38;  border: 2px solid #7AC69B; border-radius:5px; ">
+                    <h4 id="quickHeadingContent" name="quickHeadingContent" class="text-center  "
+                    style=" color:#FFF;  font-weight: bold; ">Evaluator Information</h4>
+                </div>
+                <div id="col100" class="col-xs-12 col-sm-6 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <div class="col-sm-12 text-left  ">
+                        <label for="originatorDisplayName">Evaluator Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="col-sm-12 text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col446" class="col-xs-12 col-sm-6 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <div class="text-left  ">
+                        <label for="evaluatorTitle">Evaluator Title<span style="color:#ba1a1a"> *</span>
+                        </label>
+                        <input id="evaluatorTitle" name="evaluatorTitle" class="text-left  " required="required"
+                        data-bind="autocomplete: { localSource: 'evaluatorPositionsList',  clearOnFocus: true,  validate: true,  labelMask: ['positionTitle'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col121" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                    <hr id="ele122" name="ele122" class="col-sm-12 text-left  " style=" border-color:#046A38; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow33" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn34" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:2px solid #7AC69B; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall35" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Employee Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow54" name="quickInputsRow" class="text-left row "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                <div id="quickInputsColumn55" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSearch56">Employee Search (Enter ID)<span style="color:#ba1a1a;"> *</span>
+                        </label>
+                        <input id="employeeSearch56" name="employeeSearch" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col57" class="col-xs-12 col-sm-6 text-left  " style=" margin-top: 26px ">
+                    <button id="employeeSearchButton58" name="employeeSearchButton" class="text-left btn btn-primary "
+                    style="" undefined="">Search</button>
+                </div>
+                <div id="col78" class="col-xs-12 col-sm-12 text-left  " style=" background-color:#ffffff; ">
+                    <hr id="ele79" name="ele79" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="row81" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                <div id="col82" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="nameInput">Employee Name</label>
+                        <input id="nameInput" name="nameInput" class="col-sm-6 text-left  "
+                        required="required" readonly="true" />
+                    </div>
+                    <div class="col-sm-6 text-left  ">
+                        <label for="emailInput">Employee Email<span style="color:#ba1a1a;"> *</span>
+                        </label>
+                        <input id="emailInput" name="emailInput" class="col-sm-6 text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col83" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="col-sm-12 text-left  ">
+                        <label for="postionInput">Job Title<span style="color:#ba1a1a;"> *</span>
+                        </label>
+                        <input id="postionInput" name="postionInput" class="col-sm-12 text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col455" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="ele456">Campus<span style="color:#ba1a1a;"> *</span>
+                    </label>
+                    <select id="ele456" name="ele456" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                        <option value="Southfield">Southfield</option>
+                    </select>
+                </div>
+                <div id="col84" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="ratingPeriod">Rating Period<span style="color:#ba1a1a;"> *</span>
+                        </label>
+                        <input id="ratingPeriod" name="ratingPeriod" class="col-sm-6 text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickParagraphRow126" name="quickParagraphRow" class="text-left row  "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="col129" class="col-xs-12 col-sm-12 text-center  " style=" background-color:#046A38;  border: 2px solid #7AC69B; border-radius:5px; ">
+                    <h4 id="quickHeadingContent1" name="quickHeadingContent1" class="col-xs-12 col-sm-12 text-center font-weight:bold; "
+                    style=" color:#fff;  font-weight:bold; ">Definitions of Degrees of Performance</h4>
+                </div>
+                <div id="quickParagraphColumn127" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:1em 1em .5em 0em;  margin:0em 0em 0em 0em;  background-color:#d7e3ff;  color:#00458f;  border:1px solid #005cbb; border-radius:12px; margin-top:.5em ">
+                    <p id="p_128" name="p_12139" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "></p>
+                    <ol>
+                        <li><strong>Unsatisfactory</strong> performance does not meet the requirements
+                            of the position.</li>
+                        <li><strong>Needs Improvement</strong> performance is marginal. Employee requires
+                            constant supervision. Barely meets minimum standards.</li>
+                        <li><strong>Satisfactory</strong> performance is that which meets the requirements
+                            of the position. The position is being covered in an adequate manner and
+                            the responsibilities are being handled adequately.</li>
+                        <li><strong>Good </strong> performance is marked by initiative and high quality
+                            and quantity of work. Employee regularly makes valuable contributions to
+                            the organization. Judgments are sound and employee demonstrates knowledge
+                            and mastery of his/her position.</li>
+                        <li><strong>Outstanding</strong> performance is consistently characterized
+                            by exceptionally high quality work that leaves little or nothing to be
+                            desired. Employee repeatedly makes contributions to the organization which
+                            are far above the requirements of his/her position.</li>
+                    </ol>
+                    <p></p>
+                </div>
+            </div>
+            <div id="row450" class="text-left row " style="overflow: auto;  background-color:#005cbb;  color:#FFF;  border-radius:4px ">
+                <div id="col451" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="ele452" name="ele452" class="text-center  " style=" font-weight:bold ">If a rating of 1 or 5 is selected, a written explanation is required in the provided text field.</h5>
+                </div>
+            </div>
+            <div id="row145" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                <div id="col149" class="col-xs-12 col-sm-4 text-left  "><i style="color:#777777; padding-left:2%"> EmptyColumn</i>
+                </div>
+                <div id="col146" class="col-xs-12 col-sm-4 text-left  " style=" background-color:#046A38;  color:#fff;  border: 2px solid #7AC69B; border-radius:5px; ">
+                    <h5 id="ele147" name="ele147" class="text-center  " style=" font-weight:bold ">General Factors</h5>
+                </div>
+                <div id="col150" class="col-xs-12 col-sm-4 text-left  "><i style="color:#777777; padding-left:2%"> EmptyColumn</i>
+                </div>
+            </div>
+            <div id="row151" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col153" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <h4 id="appraisalQuestion" name="appraisalQuestion" class="text-left  "
+                    style=" padding:.5em 0em 0em 0em;  margin:0em 0em 0em 0em;  font-style:italic; ">Appropriate dress and grooming as prescribed by department policy</h4>
+                </div>
+                <div id="scoreColumn" name="scoreColumn" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="rating1">Performance Rating<span style="color:#ba1a1a;"> *</span>
+                    </label>
+                    <select id="rating1" name="rating1" class="col-sm-4 text-left  " required="required">
+                        <option value=""></option>
+                        <option value="N/A">N/A</option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="col461" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ratingScore1">Score</label>
+                        <input id="ratingScore1" name="ratingScore1" class="text-left  "
+                        readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col458" class="col-xs-12 col-sm-4 text-left  " style=" padding:3.25em 0em 0em 0em;  margin:0em 0em 0em .5em; ">
+                    <input id="addComments1" name="addComments1" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                    type="checkbox" />
+                    <label for="addComments1">Add Additional Comments</label>
+                </div>
+                <div id="comments1" name="comments1" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <textarea id="explanationTextArea" name="explanationTextArea" class="text-left  "
+                    placeholder="If a rating of 1 or 5 is selected, a written explanation is required"></textarea>
+                </div>
+                <div id="col171" name="col171" class="col-xs-12 col-sm-12 text-center  "
+                style=" padding:0em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                    <hr id="smallDivider" name="smallDivider" class="col-sm-12 text-center  "
+                    style=" border-color:#046A38; " />
+                </div>
+            </div>
+            <div id="row465" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col466" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <h4 id="appraisalQuestion467" name="appraisalQuestion" class="text-left  "
+                    style=" padding:.5em 0em 0em 0em;  margin:0em 0em 0em 0em;  font-style:italic; ">Being prompt for prescribed schedule of working hours</h4>
+                </div>
+                <div id="scoreColumn468" name="scoreColumn" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="rating2">Performance Rating<span style="color:#ba1a1a;"> *</span>
+                    </label>
+                    <select id="rating2" name="rating2" class="col-sm-4 text-left  " required="required">
+                        <option value=""></option>
+                        <option value="N/A">N/A</option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="col470" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ratingScore2">Score</label>
+                        <input id="ratingScore2" name="ratingScore2" class="text-left  "
+                        readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col472" class="col-xs-12 col-sm-4 text-left  " style=" padding:3.25em 0em 0em 0em;  margin:0em 0em 0em .5em; ">
+                    <input id="addComments2" name="addComments2" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                    type="checkbox" />
+                    <label for="addComments2">Add Additional Comments</label>
+                </div>
+                <div id="comments2" name="comments2" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <textarea id="explanationTextArea475" name="explanationTextArea" class="text-left  "
+                    placeholder="If a rating of 1 or 5 is selected, a written explanation is required"></textarea>
+                </div>
+                <div id="col476" name="col171" class="col-xs-12 col-sm-12 text-center  "
+                style=" padding:0em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                    <hr id="smallDivider477" name="smallDivider" class="col-sm-12 text-center  "
+                    style=" border-color:#046A38; " />
+                </div>
+            </div>
+            <div id="row480" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col481" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <h4 id="appraisalQuestion482" name="appraisalQuestion" class="text-left  "
+                    style=" padding:.5em 0em 0em 0em;  margin:0em 0em 0em 0em;  font-style:italic; ">Familiarity and following of the department’s rules and regulations</h4>
+                </div>
+                <div id="scoreColumn483" name="scoreColumn" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="rating3">Performance Rating<span style="color:#ba1a1a;"> *</span>
+                    </label>
+                    <select id="rating3" name="rating3" class="col-sm-4 text-left  " required="required">
+                        <option value=""></option>
+                        <option value="N/A">N/A</option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="col485" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ratingScore3">Score</label>
+                        <input id="ratingScore3" name="ratingScore3" class="text-left  "
+                        readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col487" class="col-xs-12 col-sm-4 text-left  " style=" padding:3.25em 0em 0em 0em;  margin:0em 0em 0em .5em; ">
+                    <input id="addComments3" name="addComments3" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                    type="checkbox" />
+                    <label for="addComments3">Add Additional Comments</label>
+                </div>
+                <div id="comments3" name="comments3" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <textarea id="explanationTextArea490" name="explanationTextArea" class="text-left  "
+                    placeholder="If a rating of 1 or 5 is selected, a written explanation is required"></textarea>
+                </div>
+                <div id="col491" name="col171" class="col-xs-12 col-sm-12 text-center  "
+                style=" padding:0em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                    <hr id="smallDivider492" name="smallDivider" class="col-sm-12 text-center  "
+                    style=" border-color:#046A38; " />
+                </div>
+            </div>
+            <div id="row578" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col579" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <h4 id="appraisalQuestion580" name="appraisalQuestion" class="text-left  "
+                    style=" padding:.5em 0em 0em 0em;  margin:0em 0em 0em 0em;  font-style:italic; ">Effectiveness in working with other officers</h4>
+                </div>
+                <div id="scoreColumn581" name="scoreColumn" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="rating4">Performance Rating<span style="color:#ba1a1a;"> *</span>
+                    </label>
+                    <select id="rating4" name="rating4" class="col-sm-4 text-left  " required="required">
+                        <option value=""></option>
+                        <option value="N/A">N/A</option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="col583" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ratingScore4">Score</label>
+                        <input id="ratingScore4" name="ratingScore4" class="text-left  "
+                        readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col585" class="col-xs-12 col-sm-4 text-left  " style=" padding:3.25em 0em 0em 0em;  margin:0em 0em 0em .5em; ">
+                    <input id="addComments4" name="addComments4" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                    type="checkbox" />
+                    <label for="addComments4">Add Additional Comments</label>
+                </div>
+                <div id="comments4" name="comments4" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <textarea id="explanationTextArea588" name="explanationTextArea" class="text-left  "
+                    placeholder="If a rating of 1 or 5 is selected, a written explanation is required"></textarea>
+                </div>
+                <div id="col589" name="col171" class="col-xs-12 col-sm-12 text-center  "
+                style=" padding:0em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                    <hr id="smallDivider590" name="smallDivider" class="col-sm-12 text-center  "
+                    style=" border-color:#046A38; " />
+                </div>
+            </div>
+            <div id="row494" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col495" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <h4 id="appraisalQuestion496" name="appraisalQuestion" class="text-left  "
+                    style=" padding:.5em 0em 0em 0em;  margin:0em 0em 0em 0em;  font-style:italic; ">Reliability with regard to an assigned task</h4>
+                </div>
+                <div id="scoreColumn497" name="scoreColumn" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="rating5">Performance Rating<span style="color:#ba1a1a;"> *</span>
+                    </label>
+                    <select id="rating5" name="rating5" class="col-sm-4 text-left  " required="required">
+                        <option value=""></option>
+                        <option value="N/A">N/A</option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="col499" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ratingScore5">Score</label>
+                        <input id="ratingScore5" name="ratingScore5" class="text-left  "
+                        readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col501" class="col-xs-12 col-sm-4 text-left  " style=" padding:3.25em 0em 0em 0em;  margin:0em 0em 0em .5em; ">
+                    <input id="addComments5" name="addComments5" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                    type="checkbox" />
+                    <label for="addComments5">Add Additional Comments</label>
+                </div>
+                <div id="comments5" name="comments5" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <textarea id="explanationTextArea504" name="explanationTextArea" class="text-left  "
+                    placeholder="If a rating of 1 or 5 is selected, a written explanation is required"></textarea>
+                </div>
+                <div id="col505" name="col171" class="col-xs-12 col-sm-12 text-center  "
+                style=" padding:0em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                    <hr id="smallDivider506" name="smallDivider" class="col-sm-12 text-center  "
+                    style=" border-color:#046A38; " />
+                </div>
+            </div>
+            <div id="row508" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col509" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <h4 id="appraisalQuestion510" name="appraisalQuestion" class="text-left  "
+                    style=" padding:.5em 0em 0em 0em;  margin:0em 0em 0em 0em;  font-style:italic; ">Self-starting ability; Resourcefulness</h4>
+                </div>
+                <div id="scoreColumn511" name="scoreColumn" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="rating6">Performance Rating<span style="color:#ba1a1a;"> *</span>
+                    </label>
+                    <select id="rating6" name="rating6" class="col-sm-4 text-left  " required="required">
+                        <option value=""></option>
+                        <option value="N/A">N/A</option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="col513" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ratingScore6">Score</label>
+                        <input id="ratingScore6" name="ratingScore6" class="text-left  "
+                        readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col515" class="col-xs-12 col-sm-4 text-left  " style=" padding:3.25em 0em 0em 0em;  margin:0em 0em 0em .5em; ">
+                    <input id="addComments6" name="addComments6" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                    type="checkbox" />
+                    <label for="addComments6">Add Additional Comments</label>
+                </div>
+                <div id="comments6" name="comments6" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <textarea id="explanationTextArea518" name="explanationTextArea" class="text-left  "
+                    placeholder="If a rating of 1 or 5 is selected, a written explanation is required"></textarea>
+                </div>
+                <div id="col519" name="col171" class="col-xs-12 col-sm-12 text-center  "
+                style=" padding:0em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                    <hr id="smallDivider520" name="smallDivider" class="col-sm-12 text-center  "
+                    style=" border-color:#046A38; " />
+                </div>
+            </div>
+            <div id="row522" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col523" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <h4 id="appraisalQuestion524" name="appraisalQuestion" class="text-left  "
+                    style=" padding:.5em 0em 0em 0em;  margin:0em 0em 0em 0em;  font-style:italic; ">Communication skills</h4>
+                </div>
+                <div id="scoreColumn525" name="scoreColumn" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="rating7">Performance Rating<span style="color:#ba1a1a;"> *</span>
+                    </label>
+                    <select id="rating7" name="rating7" class="col-sm-4 text-left  " required="required">
+                        <option value=""></option>
+                        <option value="N/A">N/A</option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="col527" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ratingScore7">Score</label>
+                        <input id="ratingScore7" name="ratingScore7" class="text-left  "
+                        readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col529" class="col-xs-12 col-sm-4 text-left  " style=" padding:3.25em 0em 0em 0em;  margin:0em 0em 0em .5em; ">
+                    <input id="addComments7" name="addComments7" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                    type="checkbox" />
+                    <label for="addComments7">Add Additional Comments</label>
+                </div>
+                <div id="comments7" name="comments7" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <textarea id="explanationTextArea532" name="explanationTextArea" class="text-left  "
+                    placeholder="If a rating of 1 or 5 is selected, a written explanation is required"></textarea>
+                </div>
+                <div id="col533" name="col171" class="col-xs-12 col-sm-12 text-center  "
+                style=" padding:0em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                    <hr id="smallDivider534" name="smallDivider" class="col-sm-12 text-center  "
+                    style=" border-color:#046A38; " />
+                </div>
+            </div>
+            <div id="row280" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col281" class="col-xs-12 col-sm-4 text-left  "><i style="color:#777777; padding-left:2%"> EmptyColumn</i>
+                </div>
+                <div id="col282" class="col-xs-12 col-sm-4 text-left  " style=" background-color:#046A38;  color:#fff;  border: 2px solid #7AC69B; border-radius:5px; ">
+                    <h5 id="ele283" name="ele147" class="text-center  " style=" font-weight:bold ">Law Enforcement Factors</h5>
+                </div>
+                <div id="col284" class="col-xs-12 col-sm-4 text-left  "><i style="color:#777777; padding-left:2%"> EmptyColumn</i>
+                </div>
+            </div>
+            <div id="row536" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col537" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <h4 id="appraisalQuestion538" name="appraisalQuestion" class="text-left  "
+                    style=" padding:.5em 0em 0em 0em;  margin:0em 0em 0em 0em;  font-style:italic; ">Knowledge of the law at state and local levels</h4>
+                </div>
+                <div id="scoreColumn539" name="scoreColumn" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="rating8">Performance Rating<span style="color:#ba1a1a;"> *</span>
+                    </label>
+                    <select id="rating8" name="rating8" class="col-sm-4 text-left  " required="required">
+                        <option value=""></option>
+                        <option value="N/A">N/A</option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="col541" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ratingScore8">Score</label>
+                        <input id="ratingScore8" name="ratingScore8" class="text-left  "
+                        readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col543" class="col-xs-12 col-sm-4 text-left  " style=" padding:3.25em 0em 0em 0em;  margin:0em 0em 0em .5em; ">
+                    <input id="addComments8" name="addComments8" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                    type="checkbox" />
+                    <label for="addComments8">Add Additional Comments</label>
+                </div>
+                <div id="comments8" name="comments8" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <textarea id="explanationTextArea546" name="explanationTextArea" class="text-left  "
+                    placeholder="If a rating of 1 or 5 is selected, a written explanation is required"></textarea>
+                </div>
+                <div id="col547" name="col171" class="col-xs-12 col-sm-12 text-center  "
+                style=" padding:0em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                    <hr id="smallDivider548" name="smallDivider" class="col-sm-12 text-center  "
+                    style=" border-color:#046A38; " />
+                </div>
+            </div>
+            <div id="row550" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col551" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <h4 id="appraisalQuestion552" name="appraisalQuestion" class="text-left  "
+                    style=" padding:.5em 0em 0em 0em;  margin:0em 0em 0em 0em;  font-style:italic; ">Actions and capabilities taken in preliminary and follow-up investigations</h4>
+                </div>
+                <div id="scoreColumn553" name="scoreColumn" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="rating9">Performance Rating<span style="color:#ba1a1a;"> *</span>
+                    </label>
+                    <select id="rating9" name="rating9" class="col-sm-4 text-left  " required="required">
+                        <option value=""></option>
+                        <option value="N/A">N/A</option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="col555" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ratingScore9">Score</label>
+                        <input id="ratingScore9" name="ratingScore9" class="text-left  "
+                        readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col557" class="col-xs-12 col-sm-4 text-left  " style=" padding:3.25em 0em 0em 0em;  margin:0em 0em 0em .5em; ">
+                    <input id="addComments9" name="addComments9" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                    type="checkbox" />
+                    <label for="addComments9">Add Additional Comments</label>
+                </div>
+                <div id="comments9" name="comments9" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <textarea id="explanationTextArea560" name="explanationTextArea" class="text-left  "
+                    placeholder="If a rating of 1 or 5 is selected, a written explanation is required"></textarea>
+                </div>
+                <div id="col561" name="col171" class="col-xs-12 col-sm-12 text-center  "
+                style=" padding:0em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                    <hr id="smallDivider562" name="smallDivider" class="col-sm-12 text-center  "
+                    style=" border-color:#046A38; " />
+                </div>
+            </div>
+            <div id="row564" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col565" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <h4 id="appraisalQuestion566" name="appraisalQuestion" class="text-left  "
+                    style=" padding:.5em 0em 0em 0em;  margin:0em 0em 0em 0em;  font-style:italic; ">Maintain firearms proficiency and safety skills according to the Department Policy</h4>
+                </div>
+                <div id="scoreColumn567" name="scoreColumn" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="rating10">Performance Rating<span style="color:#ba1a1a;"> *</span>
+                    </label>
+                    <select id="rating10" name="rating10" class="col-sm-4 text-left  " required="required">
+                        <option value=""></option>
+                        <option value="N/A">N/A</option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="col569" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ratingScore10">Score</label>
+                        <input id="ratingScore10" name="ratingScore10" class="text-left  "
+                        readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col571" class="col-xs-12 col-sm-4 text-left  " style=" padding:3.25em 0em 0em 0em;  margin:0em 0em 0em .5em; ">
+                    <input id="addComments10" name="addComments10" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                    type="checkbox" />
+                    <label for="addComments10">Add Additional Comments</label>
+                </div>
+                <div id="comments10" name="comments10" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <textarea id="explanationTextArea574" name="explanationTextArea" class="text-left  "
+                    placeholder="If a rating of 1 or 5 is selected, a written explanation is required"></textarea>
+                </div>
+                <div id="col575" name="col171" class="col-xs-12 col-sm-12 text-center  "
+                style=" padding:0em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                    <hr id="smallDivider576" name="smallDivider" class="col-sm-12 text-center  "
+                    style=" border-color:#046A38; " />
+                </div>
+            </div>
+            <div id="row334" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col335" class="col-xs-12 col-sm-4 text-left  "><i style="color:#777777; padding-left:2%"> EmptyColumn</i>
+                </div>
+                <div id="col336" class="col-xs-12 col-sm-4 text-left  " style=" background-color:#046A38;  color:#fff;  border: 2px solid #7AC69B; border-radius:5px; ">
+                    <h5 id="ele337" name="ele147" class="text-center  " style=" font-weight:bold ">Non-Enforcement Factors</h5>
+                </div>
+                <div id="col338" class="col-xs-12 col-sm-4 text-left  "><i style="color:#777777; padding-left:2%"> EmptyColumn</i>
+                </div>
+            </div>
+            <div id="row592" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col593" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <h4 id="appraisalQuestion594" name="appraisalQuestion" class="text-left  "
+                    style=" padding:.5em 0em 0em 0em;  margin:0em 0em 0em 0em;  font-style:italic; ">Proficiency in emergency first-aid, CPR and AED as measured by training</h4>
+                </div>
+                <div id="scoreColumn595" name="scoreColumn" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="rating11">Performance Rating<span style="color:#ba1a1a;"> *</span>
+                    </label>
+                    <select id="rating11" name="rating11" class="col-sm-4 text-left  " required="required">
+                        <option value=""></option>
+                        <option value="N/A">N/A</option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="col597" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ratingScore11">Score</label>
+                        <input id="ratingScore11" name="ratingScore11" class="text-left  "
+                        readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col599" class="col-xs-12 col-sm-4 text-left  " style=" padding:3.25em 0em 0em 0em;  margin:0em 0em 0em .5em; ">
+                    <input id="addComments11" name="addComments11" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                    type="checkbox" />
+                    <label for="addComments11">Add Additional Comments</label>
+                </div>
+                <div id="comments11" name="comments11" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <textarea id="explanationTextArea602" name="explanationTextArea" class="text-left  "
+                    placeholder="If a rating of 1 or 5 is selected, a written explanation is required"></textarea>
+                </div>
+                <div id="col603" name="col171" class="col-xs-12 col-sm-12 text-center  "
+                style=" padding:0em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                    <hr id="smallDivider604" name="smallDivider" class="col-sm-12 text-center  "
+                    style=" border-color:#046A38; " />
+                </div>
+            </div>
+            <div id="row606" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col607" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <h4 id="appraisalQuestion608" name="appraisalQuestion" class="text-left  "
+                    style=" padding:.5em 0em 0em 0em;  margin:0em 0em 0em 0em;  font-style:italic; ">Knowledge, care and proper use of department equipment</h4>
+                </div>
+                <div id="scoreColumn609" name="scoreColumn" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="rating12">Performance Rating<span style="color:#ba1a1a;"> *</span>
+                    </label>
+                    <select id="rating12" name="rating12" class="col-sm-4 text-left  " required="required">
+                        <option value=""></option>
+                        <option value="N/A">N/A</option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="col611" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ratingScore12">Score</label>
+                        <input id="ratingScore12" name="ratingScore12" class="text-left  "
+                        readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col613" class="col-xs-12 col-sm-4 text-left  " style=" padding:3.25em 0em 0em 0em;  margin:0em 0em 0em .5em; ">
+                    <input id="addComments12" name="addComments12" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                    type="checkbox" />
+                    <label for="addComments12">Add Additional Comments</label>
+                </div>
+                <div id="comments12" name="comments12" class="col-xs-12 col-sm-12 text-left  "
+                style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <textarea id="explanationTextArea616" name="explanationTextArea" class="text-left  "
+                    placeholder="If a rating of 1 or 5 is selected, a written explanation is required"></textarea>
+                </div>
+                <div id="col617" name="col171" class="col-xs-12 col-sm-12 text-center  "
+                style=" padding:0em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                    <hr id="smallDivider618" name="smallDivider" class="col-sm-12 text-center  "
+                    style=" border-color:#046A38; " />
+                </div>
+            </div>
+            <div id="quickHeadingRow631" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn632" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:2px solid #7AC69B; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall633" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Totals and Explanations</h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow365" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em .5em .5em .5em;  border:1px solid #046A38; border-radius:12px 12px 12px 12px; padding:20px ">
+                <div id="col375" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em; ">
+                    <div id="ele376" class="col-sm-5 text-left  "><i style="color:#777777; padding-left:2%"> EmptyElement</i>
+                    </div>
+                    <div class="col-xs-12 col-sm-2 text-left  ">
+                        <input id="totalPoints" name="totalPoints" class="col-xs-12 col-sm-2 text-left  "
+                        readonly="true" type="Number" />
+                        <label for="totalPoints">Total Points</label>
+                    </div>
+                    <div id="ele378" class="col-xs-12 col-sm-5 text-left  " style=" padding:0em em 0em 0em;  margin:0em 0em 0em 0em; "><i style="color:#777777; padding-left:2%"> EmptyElement</i>
+                    </div>
+                </div>
+                <div id="col380" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="ele381" name="ele381" class="text-center  " style=" color:#046A38;  font-weight:bold ">Overall Performance</h4>
+                </div>
+                <div id="col383" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="ele384">Explanation/Comments</label>
+                    <textarea id="ele384" name="ele384" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0em 1em 0em; "></textarea>
+                    <label for="ele386">Describe areas of improvement since last review.</label>
+                    <textarea id="ele386"
+                    name="ele386" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 1em 0em; "></textarea>
+                    <label for="ele388">Areas for Professional Development</label>
+                    <textarea id="ele388" name="ele388"
+                    class="text-left  " placeholder="Identify areas in which professional development activities are necessary to further enhance the employee’s professional competence and success."></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow391" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn392" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:2px solid #7AC69B; border-radius:4px; ">
+                    <h4 id="quickHeadingSmall393" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Evaluator's Signature and Comments</h4>
+                </div>
+            </div>
+            <div id="row394" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em .5em .5em .5em;  border:1px solid #046A38; border-radius:12px 12px 12px 12px; padding:20px ">
+                <div id="col395" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 1em 0em; ">
+                    <label for="ele398">Additional Comments</label>
+                    <textarea id="ele398" name="ele398" class="text-left  "></textarea>
+                </div>
+                <div id="col396" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-8 text-left  ">
+                        <label for="ele400">Evaluator: Please Enter Your Name<span style="color:#ba1a1a;"> *</span>
+                        </label>
+                        <input id="ele400" name="ele400" class="col-sm-8 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                        required="required" type="text" />
+                    </div>
+                    <div id="ele404" class="col-xs-12 col-sm-1 text-left  "><i style="color:#777777; padding-left:2%"> EmptyElement</i>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-left  ">
+                        <label for="ele401">Date</label>
+                        <input id="ele401" name="ele401" class="col-xs-12 col-sm-3 text-left datepicker "
+                        readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow407" name="quickHeadingRow" class="text-left row employeeAcknowledgement "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em 0em 0em 0em;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn408" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:2px solid #7AC69B; border-radius:4px; ">
+                    <h4 id="quickHeadingSmall409" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Employee Signature and Acknowledgement</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow411" name="quickParagraphRow" class="text-left row employeeAcknowledgement "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn412" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#ffdad6;  color:#93000a;  border:1px solid #ba1a1a; border-radius:12px 12px 12px 12px; padding: 20px ">
+                    <p id="p_413" name="p_12139" class="text-left  ">This evaluation has been discussed with me and entering my name below
+                        and submitting this document acknowledges receipt of a copy of this evaluation
+                        and in no way signifies agreement with the aforementioned comments.</p>
+                </div>
+            </div>
+            <div id="row622" class="text-left row " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:.5em .5em .5em .5em;  border:1px solid #046A38; border-radius:15px 15px 15px 15px; padding: 15px ">
+                <div id="col623" class="col-xs-12 col-sm-12 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 1em 0em; ">
+                    <label for="ele624">Additional Comments</label>
+                    <textarea id="ele624" name="ele398" class="text-left  "></textarea>
+                </div>
+                <div id="col625" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-8 text-left  ">
+                        <label for="ele626">Employee: Please Enter Your Name<span style="color:#ba1a1a;"> *</span>
+                        </label>
+                        <input id="ele626" name="ele400" class="col-sm-8 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                        required="required" type="text" />
+                    </div>
+                    <div id="ele627" class="col-xs-12 col-sm-1 text-left  "><i style="color:#777777; padding-left:2%"> EmptyElement</i>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-left  ">
+                        <label for="ele628">Date</label>
+                        <input id="ele628" name="ele401" class="col-xs-12 col-sm-3 text-left datepicker "
+                        readonly="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

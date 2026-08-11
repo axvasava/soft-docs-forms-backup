@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="loadingSpinner.css" />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row1021" class="text-left row fd-form-masthead ">
+                <div id="col1022" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn1023" name="revisedOn" class="col-sm-12 text-right  ">Revised 03/26</span>
+                </div>
+                <div id="col1024" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele1025" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col1026" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele1027" name="ele21" class="text-left form-title with-subtitle ">Schedule of Classes</h1><span id="ele1028" name="ele23" class="text-left form-subtitle ">Add / Cancel / Change Section</span>
+                </div>
+                <div id="col1029" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele1030" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row1017" class="text-left row ">
+                <div id="col1018" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote1019" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickDropdownRow870" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn871" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="selfOrElse">Will you be submitting this form for yourself or on behalf of someone
+                        else?</label>
+                    <select id="selfOrElse" name="selfOrElse" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Myself">Myself</option>
+                        <option value="On Behalf of Someone Else">On Behalf of Someone Else</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow874" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( selfOrElse() == 'On Behalf of Someone Else' ) ) ">
+                <div id="quickInputsColumn875" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="eimployeeSearch">Employee Search</label>
+                        <input id="eimployeeSearch" name="employeeSearch"
+                        class="text-left  " required="required" placeholder="Please start typing to search for an employee."
+                        type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: true,  validate: true, labelMask: ['UserName', ' | ', 'Email'], selectedMask: ['UserName'],  formFields: {'employeeEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn877" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeEmail">Employee Email</label>
+                        <input id="employeeEmail" name="employeeEmail" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow161" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn162" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">Date</label>
+                        <input id="originationDate" name="originationDate" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn164" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="campus">Campus</label>
+                    <select id="campus" name="campus" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak/Southfield">Royal Oak/Southfield</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow169" name="quickInputsRow" class="text-left row ">
+                <div id="col426" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="semester">Semester</label>
+                        <input id="semester" name="semester" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { localSource: 'AcademicPeriodsAutocomplete',  clearOnFocus: true,  validate: true,  labelMask: ['termCode', ' | ', 'termTitle'],  formFields: {'academicPeriodGuid':'termGUID', 'selectedTerm':'termCode'} } "
+                        />
+                    </div>
+                    <div class="text-left hide ">
+                        <label for="academicPeriodGuid">academicPeriodGuid</label>
+                        <input id="academicPeriodGuid" name="academicPeriodGuid"
+                        class="text-left hide " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn170" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="action">Action</label>
+                    <select id="action" name="action" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Add a Section">Add a Section</option>
+                        <option value="Cancel a Section">Cancel a Section</option>
+                        <option value="Change a Section">Change a Section</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickHeadingRow430" name="quickHeadingRow" class="text-left row addSectionRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn431" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall432" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Add a Section</h4>
+                </div>
+                <div id="col926" class="col-xs-12 col-sm-12 text-center  " style=" padding:0.8em 0em 0.5em 0em;  margin:0em 0em 0em 0em; "><span id="ele927" name="ele927" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em;  font-size: 13px; "><strong>Start typing to refine the subject search.</strong></span>
+                </div>
+            </div>
+            <div id="quickInputsRow192" name="quickInputsRow" class="text-left row addSectionRow ">
+                <div id="col441" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addSubject">Subject</label>
+                        <input id="addSubject" name="addSubject" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { localSource: 'SubjectsAutocomplete',  clearOnFocus: true,  validate: true,  labelMask: ['subjectAbbreviation', ' | ', 'subjectTitle'],  selectedMask: ['subjectAbbreviation'],  formFields: {'addSubjectID':'subjectGUID'} } "
+                        />
+                    </div>
+                    <div class="text-left hide ">
+                        <label for="addSubjectID">subjectID</label>
+                        <input id="addSubjectID" name="addSubjectID" class="text-left hide "
+                        placeholder="subjectID" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn193" name="quickInputsColumn1" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addCourse">Course</label>
+                        <input id="addCourse" name="addCourse" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { localSource: 'CourseSubjectAutocomplete',  labelLength: 50,  validate: true,  labelMask: ['courseSubjectAndNumber', ' | ', 'courseTitle'],  selectedMask: ['courseNumber'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn197" name="quickInputsColumn3" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addStartDate">Start Date</label>
+                        <input id="addStartDate" name="addStartDate" class="text-left  "
+                        required="required" type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn199" name="quickInputsColumn4" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addEndDate">End Date</label>
+                        <input id="addEndDate" name="addEndDate" class="text-left  "
+                        required="required" type="text" data-bind="datepicker: { minDate: 'addStartDate' } "
+                        />
+                    </div>
+                </div>
+                <div id="col202" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addStartTime">Start Time</label>
+                        <input id="addStartTime" name="addStartTime" class="text-left  "
+                        type="text" data-bind="timepicker: { minTime: '07:30 AM',  maxTime: '8:00 PM' } "
+                        />
+                    </div>
+                </div>
+                <div id="col203" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addEndTime">End Time</label>
+                        <input id="addEndTime" name="addEndTime" class="text-left  "
+                        data-bind="mask: '99:99 *M' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow477" name="quickInputsRow" class="text-left row addSectionRow ">
+                <div id="quickInputsColumn478" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="addInstructionalMethod">Instructional Method</label>
+                    <select id="addInstructionalMethod" name="addInstructionalMethod"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Flexible Live">Flexible Live</option>
+                        <option value="Flexible Online">Flexible Online</option>
+                        <option value="Hybrid">Hybrid</option>
+                        <option value="In-Person">In-Person</option>
+                        <option value="Independent Study">Independent Study</option>
+                        <option value="Lab">Lab</option>
+                        <option value="Online">Online</option>
+                        <option value="Online Course with in-person Testing">Online Course with in-person Testing</option>
+                        <option value="Online Live Course">Online Live Course</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn480" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="numberWeeks">Number Weeks</label>
+                        <input id="numberWeeks" name="numberWeeks" class="text-left  "
+                        required="required" type="text" data-bind="numeric: { type: 'decimal',  allowNegative: false,  max: 15,  precision: 1 } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn482" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="addPending">Pending Section</label>
+                    <select id="addPending" name="addPending" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div id="row230" name="row230" class="text-left row addSectionRow " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 1em 0em; ">
+                <div id="col902" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_904" class="text-left  " />
+                </div>
+                <div id="col231" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; "><span id="ele255" name="ele255" class="text-left  "><strong>Meeting Day(s)</strong></span>
+                </div>
+                <div id="col232" class="col-xs-3 col-sm-3 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px;  &#10; ">
+                    <input id="addMonday" name="addMonday" class="text-left  " style=" margin-right: 5px; "
+                    type="checkbox" value="Mon" />
+                    <label for="addMonday">Mon</label>
+                </div>
+                <div id="col236" class="col-xs-9 col-sm-9 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <input id="addFriday" name="addFriday" class="text-left  " style=" margin-right: 5px;&#10; "
+                    type="checkbox" value="Fri" />
+                    <label for="addFriday">Fri</label>
+                </div>
+                <div id="col233" class="col-xs-3 col-sm-3 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <input id="addTuesday" name="addTuesday" class="text-left  " style=" margin-right: 5px; "
+                    type="checkbox" value="Tuesday" />
+                    <label for="addTuesday">Tue</label>
+                </div>
+                <div id="col237" class="col-xs-9 col-sm-9 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <input id="addSaturday" name="addSaturday" class="text-left  " style=" margin-right: 5px;&#10; "
+                    placeholder="Sat" type="checkbox" value="Sat" />
+                    <label for="addSaturday">Sat</label>
+                </div>
+                <div id="col234" class="col-xs-3 col-sm-3 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <input id="addWednesday" name="addWednesday" class="text-left  " style=" margin-right: 5px;&#10; "
+                    type="checkbox" value="Wed" />
+                    <label for="addWednesday">Wed</label>
+                </div>
+                <div id="col238" class="col-xs-9 col-sm-9 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <input id="addSunday" name="addSunday" class="text-left  " style=" margin-right: 5px;&#10; "
+                    type="checkbox" value="Sun" />
+                    <label for="addSunday">Sun</label>
+                </div>
+                <div id="col235" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <input id="addThursday" name="addThursday" class="text-left  " style=" margin-right: 5px;&#10; "
+                    type="checkbox" value="Thur" />
+                    <label for="addThursday">Thu</label>
+                </div>
+                <div id="col899" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele900" name="ele900" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow269" name="quickInputsRow" class="text-left row addSectionRow ">
+                <div id="col619" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addBuilding">Building</label>
+                        <input id="addBuilding" name="addBuilding" class="text-left  "
+                        type="text" data-bind="autocomplete: { integrationSource: 'Web_Ethos_Get_Buildings',  validate: true,  labelMask: ['code', ' - ', 'title'],  selectedMask: ['code'],  formFields: {'addBuildingGUID':'id'} } "
+                        />
+                    </div>
+                    <div class="text-left hide ">
+                        <label for="addBuildingGUID">addBuildingGUID</label>
+                        <input id="addBuildingGUID" name="addBuildingGUID"
+                        class="text-left hide " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn270" name="quickInputsColumn1" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addRoom">Room</label>
+                        <input id="addRoom" name="addRoom" class="text-left  " type="text"
+                        data-bind="autocomplete: { localSource: 'RoomList',  clearOnFocus: true,  labelMask: ['RoomNumber', ' (', 'RoomDescription', ')'],  selectedMask: ['RoomNumber'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn272" name="quickInputsColumn2" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addSeats">Seats</label>
+                        <input id="addSeats" name="addSeats" class="text-left  "
+                        required="required" type="text" data-bind="numeric: { type: 'int',  allowNegative: false } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn276" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addCrossLlist">X-listed Number</label>
+                        <input id="addCrossLlist" name="addCrossLlist"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col488" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="piggyBackedSection">Piggy Backed Section</label>
+                        <input id="piggyBackedSection" name="piggyBackedSection"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow501" name="quickInputsRow" class="text-left row addSectionRow "
+            style="overflow: auto;  padding:0px 0px 0px 0px;  margin:10px 0px 0px 0px; ">
+                <div id="quickInputsColumn502" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:5px 0px 0px 0px; ">
+                    <label id="addInclusiveAccessLbl" name="addInclusiveAccessLbl" class="text-left  "
+                    for="addInclusiveAccess">Will this section use Inclusive Access materials?</label>
+                </div>
+                <div id="quickInputsColumn504" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <select id="addInclusiveAccess" name="addInclusiveAccess" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="inclusiveAccessRow" name="inclusiveAccessRow" class="text-left  "
+            data-bind="visible: ( ( addInclusiveAccess() == 'Yes' ) ) ">
+                <div id="quickInputsColumn510" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addBookCost">Book Cost</label>
+                        <input id="addBookCost" name="addBookCost" class="text-left  "
+                        required="required" type="text" data-bind="money" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn512" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addTaxes">Taxes</label>
+                        <input id="addTaxes" name="addTaxes" class="text-left  "
+                        type="text" data-bind="money" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn514" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="grandTotal">Grand Total</label>
+                        <input id="grandTotal" name="grandTotal" class="text-left  "
+                        required="required" readonly="true" type="text" data-bind="calculate: 'addBookCost + addTaxes',money "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow332" name="quickInputsRow" class="text-left row addSectionRow ">
+                <div id="quickInputsColumn333" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="addRationale">Rationale for Action:</label>
+                    <textarea id="addRationale" name="addRationale"
+                    class="text-left  " required="required"></textarea>
+                </div>
+                <div id="quickInputsColumn335" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="addCourseNote">Course Note:</label>
+                    <textarea id="addCourseNote" name="addCourseNote"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow434" name="quickHeadingRow" class="text-left row cancelSectionRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn435" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall436" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Cancel a Section</h4>
+                </div>
+                <div id="col929" class="col-xs-12 col-sm-12 text-center  " style=" padding:.8em 0em 0.5em 0em;  margin:0em 0em 0em 0em; "><span id="ele930" name="ele930" class="text-center  " style=" font-size:13px; "><strong>Start typing to refine the section search.<strong></strong></strong></span>
+                </div>
+            </div>
+            <div id="quickInputsRow19299" name="quickInputsRow" class="text-left row cancelSectionRow ">
+                <div id="col462" class="col-xs-12 col-sm-6 text-left  "><strong><strong> <div class="text-left  "> <label for="cancelSecName">Section Name</label><input id="cancelSecName" name="cancelSecName" class="text-left  " type="text" data-bind="autocomplete: { localSource: 'SectionsAutocomplete',  clearOnFocus: true, validate: true,  labelMask: ['secName'],  formFields: {'cancelSynonym':'secSynonym'} } " /></div></strong></strong>
+                </div>
+                <div id="col696" class="col-xs-12 col-sm-6 text-left  "><strong><strong> <div class="text-left  "> <label for="cancelSynonym">Synonym</label><input id="cancelSynonym" name="cancelSynonym" class="text-left  " type="text" /></div></strong></strong>
+                </div>
+            </div>
+            <div id="quickInputsRow3321313" name="quickInputsRow" class="text-left row cancelSectionRow ">
+                <div id="quickInputsColumn33313" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  "><strong><strong><label for="cancelRationale">Rationale for Action:</label><textarea id="cancelRationale" name="cancelRationale" class="text-left  " required="required"></textarea></strong></strong>
+                </div>
+            </div>
+            <div id="quickHeadingRow438" name="quickHeadingRow" class="text-left row changeSectionRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn439" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall440" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; "><strong><strong>Change a Section</strong></strong></h4>
+                </div>
+                <div id="col932" class="col-xs-12 col-sm-12 text-center  " style=" padding:00.8em 0em 0.5em 0em;  margin:0em 0em 0em 0em; "><strong><strong><span id="ele933" name="ele933" class="text-left  " style=" font-size: 13px; "><strong>Start typing to refine the section search.<strong></strong></strong>
+                    </span>
+                    </strong>
+                    </strong>
+                </div>
+            </div>
+            <div id="quickInputsRow638" name="quickInputsRow" class="text-left row changeSectionRow "
+            style="overflow: auto;  padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                <div id="quickInputsColumn639" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  "><strong><strong><strong> <div class="text-left  "> <label for="changeSecName">Section Name</label><input id="changeSecName" name="changeSecName" class="text-left  " required="required" type="text" data-bind="autocomplete: { localSource: 'SectionsAutocomplete',  validate: true, clearOnFocus: true, &#10;labelMask: ['secName'],  formFields: {'currentStatus':'secStatus', 'currentWeeks':'secWeeks', &#10;'currentSeats':'secCapacity', 'currentXList':'secCrossListed', 'currentStartDate':'secStartDate', &#10;'currentEndDate':'secEndDate', 'meetingInfoHidden':'secMeetingTimes', 'currentSynonym':'secSynonym'} } " /></div></strong></strong>
+                    </strong>
+                </div>
+                <div id="col645" class="col-xs-12 col-sm-6 text-left  "><strong><strong><strong> <div class="text-left  "> <label for="currentSynonym">Synonym</label><input id="currentSynonym" name="currentSynonym" class="text-left  " type="text" /></div></strong></strong>
+                    </strong>
+                </div>
+            </div>
+            <div id="quickInputsRow648" name="quickInputsRow" class="text-left row hide ">
+                <div id="quickInputsColumn649" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  "><strong><strong><strong> <div class="text-left  "> <label for="currentStartDate">Start Date</label><input id="currentStartDate" name="currentStartDate" class="text-left  " type="text" data-bind="datepicker" /></div></strong></strong>
+                    </strong>
+                </div>
+                <div id="col653" class="col-xs-12 col-sm-3 text-left  "><strong><strong><strong> <div class="text-left  "> <label for="currentEndDate">End Date</label><input id="currentEndDate" name="currentEndDate" class="text-left  " type="text" /></div></strong></strong>
+                    </strong>
+                </div>
+                <div id="col655" class="col-xs-12 col-sm-3 text-left  "><strong><strong><strong> <div class="text-left  "> <label for="currentXList">currentXList</label><input id="currentXList" name="currentXList" class="text-left  " /></div></strong></strong>
+                    </strong>
+                </div>
+            </div>
+            <div id="quickInputsRow658" name="quickInputsRow" class="text-left row row hide ">
+                <div id="quickInputsColumn659" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  "><strong><strong><strong> <div class="text-left  "> <label for="currentStatus">Status</label><input id="currentStatus" name="currentStatus" class="text-left  " type="text" /></div></strong></strong>
+                    </strong>
+                </div>
+                <div id="quickInputsColumn661" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  "><strong><strong><strong> <div class="text-left  "> <label for="currentWeeks">Weeks</label><input id="currentWeeks" name="currentWeeks" class="text-left  " type="text" /></div></strong></strong>
+                    </strong>
+                </div>
+                <div id="col663" class="col-xs-12 col-sm-3 text-left  "><strong><strong><strong> <div class="text-left  "> <label for="currentMeetingTimes">Meeting Times</label><input id="currentMeetingTimes" name="currentMeetingTimes" class="text-left  " /></div></strong></strong>
+                    </strong>
+                </div>
+                <div id="col665" class="col-xs-12 col-sm-3 text-left  "><strong><strong><strong> <div class="text-left  "> <label for="currentSeats">Seats</label><input id="currentSeats" name="currentSeats" class="text-left  " type="text" /></div></strong></strong>
+                    </strong>
+                </div>
+            </div>
+            <div id="quickInputsRow721" name="quickInputsRow" class="text-left row changeSectionRow ">
+                <div id="quickInputsColumn722" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  "><strong><strong><strong><span id="quickInputsText723" name="quickInputsText1" class="text-left  "><strong>Start Date: </strong> 
+                    <span
+                    data-bind="html: currentStartDate"></span>
+                        </span>
+                        </strong>
+                        </strong>
+                        </strong>
+                </div>
+                <div id="quickInputsColumn724" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  "><strong><strong><span id="quickInputsText725" name="quickInputsText2" class="text-left  "><strong>End Date: </strong> 
+                    <span
+                    data-bind="html: currentEndDate"></span>
+                        </span>
+                        </strong>
+                        </strong>
+                </div>
+            </div>
+            <div id="quickInputsRow7212121" name="quickInputsRow" class="text-left row changeSectionRow ">
+                <div id="quickInputsColumn72221" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  "><strong><strong><span id="quickInputsText72321" name="quickInputsText72321" class="text-left  "><strong>Status: </strong>
+                    <span
+                    data-bind="html: currentStatus"></span>
+                        </span>
+                        </strong>
+                        </strong>
+                </div>
+                <div id="quickInputsColumn72421" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  "><strong><strong><span id="quickInputsText72521" name="quickInputsText72521" class="text-left  "><strong>Length: </strong>
+                    <span
+                    data-bind="html: currentWeeks"></span>
+                        </span>
+                        </strong>
+                        </strong>
+                </div>
+            </div>
+            <div id="quickInputsRow72121212222" name="quickInputsRow" class="text-left row changeSectionRow ">
+                <div id="quickInputsColumn7222122" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  "><strong><strong><span id="quickInputsText7232122" name="quickInputsText7232122" class="text-left  "><strong>Seats: </strong>
+                    <span
+                    data-bind="html: currentSeats"></span>
+                        </span>
+                        </strong>
+                        </strong>
+                </div>
+                <div id="quickInputsColumn7242122" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  "><strong><strong><span id="quickInputsText7252122" name="quickInputsText7252122" class="text-left  "><strong>Cross Listed: </strong>
+                    <span
+                    data-bind="html: currentXList"></span>
+                        </span>
+                        </strong>
+                        </strong>
+                </div>
+            </div>
+            <div id="quickInputsRow721212122222323" name="quickInputsRow" class="text-left row changeSectionRow ">
+                <div id="quickInputsColumn722212223" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  "><strong><strong><span id="quickInputsText723212223" name="quickInputsText723212223" class="text-left  "><strong>Meeting Information: </strong>
+                    <span
+                    data-bind="html: currentMeetingTimes"></span>
+                        </span>
+                        </strong>
+                        </strong>
+                </div>
+            </div>
+            <div id="row751" class="text-left row changeSectionRow " style="overflow: auto;  background-color:black; ">
+                <div id="col752" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <h4 id="h4_754" name="h4_754" class="text-left  " style=" padding:0px 0px 0px 0px;  margin:5px 0px 5px 0px;  background-color:black;  color:white; "><strong><strong>Section Information to Change</strong></strong></h4>
+                </div>
+            </div>
+            <div id="quickInputsRow767" name="quickInputsRow" class="text-left row changeSectionRow ">
+                <div id="quickInputsColumn768" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  "><strong><strong> <div class="text-left  "> <label for="newStartDate">Start Date</label><input id="newStartDate" name="newStartDate" class="text-left  " type="text" data-bind="datepicker" /></div></strong></strong>
+                </div>
+                <div id="col772" class="col-xs-12 col-sm-3 text-left  "><strong><strong> <div class="text-left  "> <label for="newEndDate">End Date</label><input id="newEndDate" name="newEndDate" class="text-left  " type="text" data-bind="datepicker: { minDate: 'newStartDate' } " /></div></strong></strong>
+                </div>
+                <div id="quickInputsColumn770" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  "><strong><strong> <div class="text-left  "> <label for="newStartTime">Start Time</label><input id="newStartTime" name="newStartTime" class="text-left  " type="text" data-bind="timepicker: { minTime: '07:30 AM',  maxTime: '8:00 PM' } " /></div></strong></strong>
+                </div>
+                <div id="col774" class="col-xs-12 col-sm-3 text-left  "><strong><strong> <div class="text-left  "> <label for="newEndTime">End Time</label><input id="newEndTime" name="newEndTime" class="text-left  " data-bind="mask: '99:99 *M' " /></div></strong></strong>
+                </div>
+            </div>
+            <div id="quickInputsRow777" name="quickInputsRow" class="text-left row changeSectionRow ">
+                <div id="quickInputsColumn778" name="quickInputsColumn4" class="col-xs-12 col-sm-2 text-left  "><strong><strong> <div class="text-left  "> <label for="newStatus">Status</label><input id="newStatus" name="newStatus" class="text-left  " type="text" /></div></strong></strong>
+                </div>
+                <div id="quickInputsColumn780" name="quickInputsColumn2" class="col-xs-12 col-sm-2 text-left  "><strong><strong> <div class="text-left  "> <label for="newLength">Weeks</label><input id="newLength" name="newLength" class="text-left  " type="text" data-bind="numeric: { type: 'int',  allowNegative: false } " /></div></strong></strong>
+                </div>
+                <div id="col782" class="col-xs-12 col-sm-6 text-left  "><strong><strong><label for="newInstructionalMethod">Instructional Method</label><select id="newInstructionalMethod" name="newInstructionalMethod" class="text-left  "><option value=""> </option><option value="Flexible Live"> Flexible Live</option><option value="Flexible Online"> Flexible Online</option><option value="Hybrid"> Hybrid</option><option value="In-Person"> In-Person</option><option value="Independent Study"> Independent Study</option><option value="Lab"> Lab</option><option value="Online"> Online</option><option value="Online Course with in-person Testing"> Online Course with in-person Testing</option><option value="Online Live Course"> Online Live Course</option></select></strong></strong>
+                </div>
+                <div id="col784" class="col-xs-12 col-sm-2 text-left  "><strong><strong> <div class="text-left  "> <label for="newSeats">Seats</label><input id="newSeats" name="newSeats" class="text-left  " type="text" /></div></strong></strong>
+                </div>
+            </div>
+            <div id="row787" name="" class="text-left row changeSectionRow " style="overflow: auto;  padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                <div id="col788" class="col-xs-6 col-sm-6 text-left  "><strong><strong> <div class="text-left  "> <label for="newBuilding">Building</label><input id="newBuilding" name="newBuilding" class="text-left  " type="text" data-bind="autocomplete: { integrationSource: 'Web_Ethos_Get_Buildings',  validate: true,  labelMask: ['code', ' - ', 'title'],  selectedMask: ['code'],  formFields: {'newBuildingGUID':'id'} } " /></div> <div class="text-left hide "> <label for="newBuildingGUID">newBuildingGUID</label><input id="newBuildingGUID" name="newBuildingGUID" class="text-left hide " type="text" /></div></strong></strong>
+                </div>
+                <div id="col791" class="col-xs-6 col-sm-6 text-left  "><strong><strong> <div class="text-left  "> <label for="newRoom">Room</label><input id="newRoom" name="newRoom" class="text-left  " type="text" data-bind="autocomplete: { localSource: 'ChangeRoomList',  clearOnFocus: true,  labelMask: ['RoomNumber', ' (', 'RoomDescription', ')'],  selectedMask: ['RoomNumber'] } " /></div></strong></strong>
+                </div>
+            </div>
+            <div id="row2303737" name="row230" class="text-left row changeSectionRow hidden "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 1em 0em; ">
+                <div id="col90237" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_90437" class="text-left  " />
+                </div>
+                <div id="col23137" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; "><strong><strong><span id="ele25537" name="ele255" class="text-left  "><strong>Meeting Day(s)</strong>
+                    </span>
+                    </strong>
+                    </strong>
+                </div>
+                <div id="col23237" class="col-xs-3 col-sm-3 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px;  &#10; "><strong><strong><input id="newMonday1" name="newMonday" class="text-left  " style=" margin-right: 5px; " type="checkbox" value="Mon" /><label for="newMonday1">Mon</label></strong></strong>
+                </div>
+                <div id="col23637" class="col-xs-9 col-sm-9 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; "><strong><strong><input id="newFriday1" name="newFriday" class="text-left  " style=" margin-right: 5px;&#10; " type="checkbox" value="Fri" /><label for="newFriday1">Fri</label></strong></strong>
+                </div>
+                <div id="col23337" class="col-xs-3 col-sm-3 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; "><strong><strong><input id="newTuesday1" name="newTuesday" class="text-left  " style=" margin-right: 5px; " type="checkbox" value="Tuesday" /><label for="newTuesday1">Tue</label></strong></strong>
+                </div>
+                <div id="col23737" class="col-xs-9 col-sm-9 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; "><strong><strong><input id="newSaturday1" name="newSaturday" class="text-left  " style=" margin-right: 5px;&#10; " placeholder="Sat" type="checkbox" value="Sat" /><label for="newSaturday1">Sat</label></strong></strong>
+                </div>
+                <div id="col23437" class="col-xs-3 col-sm-3 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; "><strong><strong><input id="newWednesday1" name="newWednesday" class="text-left  " style=" margin-right: 5px;&#10; " type="checkbox" value="Wed" /><label for="newWednesday1">Wed</label></strong></strong>
+                </div>
+                <div id="col23837" class="col-xs-9 col-sm-9 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; "><strong><strong><input id="newSunday1" name="newSunday" class="text-left  " style=" margin-right: 5px;&#10; " type="checkbox" value="Sun" /><label for="newSunday1">Sun</label></strong></strong>
+                </div>
+                <div id="col23537" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; "><strong><strong><input id="newThursday1" name="newThursday" class="text-left  " style=" margin-right: 5px;&#10; " type="checkbox" value="Thur" /><label for="newThursday1">Thu</label></strong></strong>
+                </div>
+                <div id="col89937" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele90037" name="ele900" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row949" class="text-left row changeSectionRow ">
+                <div id="col969" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele970" name="ele970" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+                <div id="col956" class="col-xs-12 col-sm-12 text-left  " style=" padding:1em 0em 1em 0em;  margin:0em 0em 0em 0em; "><strong><strong><span id="ele957" name="ele957" class="text-left  ">Meeting Day(s)</span></strong></strong>
+                </div>
+                <div id="col959" class="col-xs-3 col-sm-3 text-left  "><strong><strong><span id="ele962" name="ele962" class="text-left  "> <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="newMonday" name="meetingDays[]" value="Mon" />
+          <label class="form-check-label" for="newMonday">Mon</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="newTuesday" name="meetingDays[]" value="Tuesday" />
+          <label class="form-check-label" for="newTuesday">Tue</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="newWednesday" name="meetingDays[]" value="Wed" />
+          <label class="form-check-label" for="newWednesday">Wed</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="newThursday" name="meetingDays[]" value="Thur" />
+          <label class="form-check-label" for="newThursday">Thu</label>
+        </div></span></strong></strong>
+                </div>
+                <div id="col960" class="col-xs-3 col-sm-3 text-left  "><strong><strong><span id="ele964" name="ele964" class="text-left  "><div class="form-check">
+          <input class="form-check-input" type="checkbox" id="newFriday" name="meetingDays[]" value="Fri" />
+          <label class="form-check-label" for="newFriday">Fri</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="newSaturday" name="meetingDays[]" value="Sat" />
+          <label class="form-check-label" for="newSaturday">Sat</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="newSunday" name="meetingDays[]" value="Sun" />
+          <label class="form-check-label" for="newSunday">Sun</label>
+        </div></span></strong></strong>
+                </div>
+                <div id="col950" class="col-xs-12 col-sm-6 text-left  "><strong><strong><span id="ele954" name="ele954" class="text-left  "></span></strong></strong>
+                </div>
+                <div id="col951" class="col-xs-12 col-sm-6 text-left  "><strong><strong><label for="reasonForChange">Reason For Change</label><textarea id="reasonForChange" name="reasonForChange" class="text-left  " required="required"></textarea></strong></strong>
+                </div>
+                <div id="col966" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele967" name="ele967" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow808" name="quickInputsRow" class="text-left row changeSectionRow ">
+                <div id="quickInputsColumn809" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  "><strong><strong> <div class="text-left  "> <label for="newXlist">X-Listed Number</label><input id="newXlist" name="newXlist" class="text-left  " type="text" data-bind="numeric: { type: 'int',  allowNegative: false } " /></div></strong></strong>
+                </div>
+                <div id="quickInputsColumn811" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  "><strong><strong> <div class="text-left  "> <label for="newCurrentPiggyBack">Piggy Backed Section</label><input id="newCurrentPiggyBack" name="newCurrentPiggyBack" class="text-left  " type="text" /></div></strong></strong>
+                </div>
+                <div id="col813" class="col-xs-12 col-sm-6 text-left  "><strong><strong><label for="newCourseNote">Course Note</label><textarea id="newCourseNote" name="newCourseNote" class="text-left  "></textarea></strong></strong>
+                </div>
+            </div>
+            <div id="row972" class="text-left row ">
+                <div id="col976" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele978" name="ele978" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+                <div id="col973" class="col-xs-12 col-sm-12 text-left  "><strong><strong><label for="generalComments">Comments</label><textarea id="generalComments" name="generalComments" class="text-left  " data-bind="fillable: { packageParam: ['ConditionalActorEmployee', 'Start'] } "></textarea></strong></strong>
+                </div>
+                <div id="col977" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele980" name="ele980" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow860" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn861" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left appComments "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall862" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; "><strong><strong>Approval Comments</strong></strong></h4>
+                </div>
+                <div id="col940" class="col-xs-12 col-sm-6 text-left addSectionCol "><strong><strong> <div class="text-left  "> <label for="sectionNumber">Section Number</label><input id="sectionNumber" name="sectionNumber" class="text-left  " /></div></strong></strong>
+                </div>
+                <div id="col941" class="col-xs-12 col-sm-6 text-left addSectionCol "><strong><strong> <div class="text-left  "> <label for="addSynonym">Synonym</label><input id="addSynonym" name="addSynonym" class="text-left  " /></div></strong></strong>
+                </div>
+                <div id="col863" class="col-xs-12 col-sm-12 text-left appComments " style=" padding:1em 0em 0em 0em;  margin:0em 0em 0em 0em; "><strong><strong><label for="approvalComments">Please enter any comments you have before final approval. </label><textarea id="approvalComments" name="approvalComments" class="text-left  "></textarea></strong></strong>
+                </div>
+                <div id="col866" class="col-xs-12 col-sm-12 text-left appComments ">
+                    <hr id="hr_868" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickInputsRow823" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn824" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  "><strong><strong> <div class="text-left  "> <label for="originatorEmail">originatorEmail</label><input id="originatorEmail" name="originatorEmail" class="text-left  " type="text" /></div></strong></strong>
+                </div>
+            </div>
+            <div id="quickInputsRow451" name="quickInputsRow" class="text-left row developer "
+            style="overflow: auto;    ">
+                <div id="col469" class="col-xs-12 col-sm-4 text-left  "><strong><strong> <div class="text-left  "> <label for="selectedSubject">selectedSubject</label><input id="selectedSubject" name="selectedSubject" class="text-left  " type="text" /></div></strong></strong>
+                </div>
+                <div id="col815" class="col-xs-12 col-sm-4 text-left  "><strong><strong> <div class="text-left  "> <label for="selectedCourseNumber">selectedCourseNumber</label><input id="selectedCourseNumber" name="selectedCourseNumber" class="text-left  " type="text" /></div></strong></strong>
+                </div>
+                <div id="col818" class="col-xs-12 col-sm-4 text-left  "><strong><strong> <div class="text-left  "> <label for="selectedSection">selectedSection</label><input id="selectedSection" name="selectedSection" class="text-left  " /></div></strong></strong>
+                </div>
+                <div id="quickInputsColumn452" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  "><strong><strong> <div class="text-left  "> <label for="deanEmail">deanEmail</label><input id="deanEmail" name="deanEmail" class="text-left  " type="text" /></div></strong></strong>
+                </div>
+                <div id="quickInputsColumn454" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  "><strong><strong> <div class="text-left  "> <label for="departmentChairEmail">departmentChairEmail</label><input id="departmentChairEmail" name="departmentChairEmail" class="text-left  " type="text" /></div></strong></strong>
+                </div>
+                <div id="quickInputsColumn456" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  "><strong><strong> <div class="text-left  "> <label for="administrativeSpecialistEmail">administrativeSpecialistEmail</label><input id="administrativeSpecialistEmail" name="administrativeSpecialistEmail" class="text-left  " type="text" /></div></strong></strong>
+                </div>
+                <div id="col853" class="col-xs-12 col-sm-4 text-left  "><strong><strong> <div class="text-left  "> <label for="selectedTerm">selectedTerm</label><input id="selectedTerm" name="selectedTerm" class="text-left  " /></div></strong></strong>
+                </div>
+                <div id="col854" class="col-xs-12 col-sm-4 text-left  "><strong><strong> <div class="text-left  "> <label for="academicYear">academicYear</label><input id="academicYear" name="academicYear" class="text-left  " /></div></strong></strong>
+                </div>
+                <div id="col879" class="col-xs-12 col-sm-4 text-left  "><strong><strong> <div class="text-left  "> <label for="allowSectionChange">allowSectionChange (hidden)</label><input id="allowSectionChange" name="allowSectionChange" class="text-left  " /></div></strong></strong>
+                </div>
+                <div id="col946" class="col-xs-3 col-sm-3 text-left  "><strong><strong> <div class="text-left  "> <label for="synonymHidden">Synonym (hidden)</label><input id="synonymHidden" name="synonymHidden" class="text-left  " /></div></strong></strong>
+                </div>
+                <div id="col982" class="col-xs-12 col-sm-12 text-left  "><strong><strong><label for="meetingInfoHidden">Meeting Info (hidden)</label><textarea id="meetingInfoHidden" name="meetingInfoHidden" class="text-left  "></textarea></strong></strong>
+                </div>
+            </div>
+            <div id="quickInputsRow8233030" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn82430" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  "><strong><strong> <div class="text-left  "> <label for="skipDepartmentChair">skipDepartmentChair</label><input id="skipDepartmentChair" name="skipDepartmentChair" class="text-left  " type="text" /></div></strong></strong>
+                </div>
+                <div id="col829" class="col-xs-12 col-sm-6 text-left  "><strong><strong> <div class="text-left  "> <label for="skipDean">skipDean</label><input id="skipDean" name="skipDean" class="text-left  " type="text" /></div></strong></strong>
+                </div>
+            </div>
+            <div id="quickHeadingRow843" name="quickHeadingRow" class="text-left row declineHide "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn844" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall845" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; "><strong><strong>Reason for Decline</strong></strong></h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow847" name="quickTextAreaRow" class="text-left row declineHide ">
+                <div id="quickTextAreaColumn848" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  "><strong><strong><label for="reasonForDecline">Reason For Decline</label><textarea id="reasonForDecline" name="reasonForDecline" class="text-left  "></textarea></strong></strong>
+                </div>
+                <div id="col850" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele851" name="ele851" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

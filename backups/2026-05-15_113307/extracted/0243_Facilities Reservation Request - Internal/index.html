@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row545" class="text-left row fd-form-masthead ">
+                <div id="col546" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn547" name="revisedOn" class="col-sm-12 text-right  ">Revised 03/26</span>
+                </div>
+                <div id="col548" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele549" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col550" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele551" name="ele21" class="text-left form-title with-subtitle ">Facility Reservation Request</h1><span id="ele552" name="ele23" class="text-left form-subtitle ">Internal Use Only</span>
+                </div>
+                <div id="col553" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele554" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row531" class="text-left row ">
+                <div id="col532" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote533" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow34" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn35" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall36" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Originator Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow12" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn13" name="quickInputsColumn1" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Employee Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn15" name="quickInputsColumn2" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">Employee Email</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col21" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="department">Department</label>
+                        <input id="department" name="department" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col520" class="col-xs-6 col-sm-6 text-left  ">
+                    <label for="employeeCampus">Campus</label>
+                    <select id="employeeCampus" name="employeeCampus" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                        <option value="Southfield">Southfield</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickHeadingRow34446688" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn35468" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall36468" name="quickHeadingSmall36468" class="text-center  "
+                    style=" font-weight: bold; ">Reservation Information</h4>
+                </div>
+            </div>
+            <div id="addReservationRow" name="addReservationRow" class="text-left row "
+            style="overflow: auto;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px "
+            data-bind="dynamicList: true, dynamicListProperties: {addButtonID: 'addReservationBtn',  removeButtonID: 'removeReservationBtn'}">
+                <div id="col447" class="col-xs-6 col-sm-6 text-left  ">
+                    <label for="campus">Facility request for</label>
+                    <select id="campus" name="campus" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                        <option value="Southfield">Southfield</option>
+                    </select>
+                </div>
+                <div id="col106" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="eventDate">Date</label>
+                        <input id="eventDate" name="eventDate" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col77" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="startTime">Start Time</label>
+                        <input id="startTime" name="startTime" class="text-left  "
+                        required="required" type="Number" data-bind="timepicker: { minTime: '8:00 AM',  maxTime: '10:00 PM' } "
+                        />
+                    </div>
+                </div>
+                <div id="col109" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="endTime">End Time</label>
+                        <input id="endTime" name="endTime" class="text-left  "
+                        required="required" data-bind="timepicker: { minTime: '8:00 AM',  maxTime: '10:00 PM' } "
+                        />
+                    </div>
+                </div>
+                <div id="col112" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="arrivalTime">Arrival Time</label>
+                        <input id="arrivalTime" name="arrivalTime" class="text-left  "
+                        required="required" data-bind="timepicker: { interval: 30,  minTime: '7:00 AM',  maxTime: '10:30 PM' } "
+                        />
+                    </div>
+                </div>
+                <div id="col113" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="nameOfEvent">Name of Event</label>
+                        <input id="nameOfEvent" name="nameOfEvent" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col450" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="roomPreferred">Room Preferred</label>
+                        <input id="roomPreferred" name="roomPreferred" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col453" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="expectedAttendance">Expected Attendance</label>
+                        <input id="expectedAttendance" name="expectedAttendance"
+                        class="text-left  " required="required" type="Number" />
+                    </div>
+                </div>
+                <div id="col118" class="col-xs-6 col-sm-6 text-left  " style=" padding:3px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <label for="foodPlanned"><strong>Food / Beverage Served </strong>
+                    </label>
+                    <select id="foodPlanned" name="foodPlanned" class="col-xs-12 col-sm-12 text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="col147" name="col147" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ( ( foodPlanned() == 'Yes' ) ) ">
+                    <label for="partyDescription">Please Describe</label>
+                    <textarea id="partyDescription" name="partyDescription"
+                    class="text-left  "></textarea>
+                </div>
+                <div id="col466" class="col-xs-12 col-sm-12 text-center  " style=" padding:0px 0px 0px 0px;  margin:20px 0px 0px 0px; ">
+                    <button id="ele470" name="ele470" class="text-left btn btn-danger btn-delete-item "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">Delete</button>
+                </div>
+                <div id="col467" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele468" name="ele468" class="text-left  " style=" border-color:#046A38;  border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow457" name="quickInputsRow" class="text-left row addVehicle ">
+                <div id="col458" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="quickInputsRow459" name="quickInputsRow" class="text-left  "></p>
+                </div>
+                <div id="quickInputsColumn460" name="quickInputsColumn1" class="col-xs-4 col-sm-4 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <button id="addReservationBtn" name="addReservationBtn" class="col-xs-12 col-sm-12 text-center btn btn-primary addReservationBtn "
+                    style="" undefined="" data-bind="click: addReservationRowAdd, disable: addReservationRow().length==5">Add Another Reservation</button>
+                </div>
+                <div id="col462" class="col-xs-4 col-sm-4 text-left  ">
+                    <button id="removeReservationBtn" name="removeReservationBtn" class="col-xs-12 col-sm-12 text-left btn btn-danger removeReservationBtn "
+                    style="" undefined="" data-bind="click: addReservationRowDeleteLast, disable: addReservationRow().length&lt;2">Delete Last Reservation</button>
+                </div>
+                <div id="col464" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="ele465" name="ele423" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="quickHeadingRow344466881010" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn3546810" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall3646810" name="quickHeadingSmall3646810" class="text-center  "
+                    style=" font-weight: bold; ">Custodial / Maintenance Requests - Room Layout</h4>
+                </div>
+            </div>
+            <div id="row472" class="text-left row ">
+                <div id="col473" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="roomLayout">Indicate desired room layout below (number of tables, number of chairs,
+                        number of tables needed for caterer). Large set-ups may require a diagram.</label>
+                    <textarea
+                    id="roomLayout" name="roomLayout" class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow3444668810102323" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn354681023" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall364681023" name="quickHeadingSmall364681023"
+                    class="text-center  " style=" font-weight: bold; ">Audio Visual Needs</h4>
+                </div>
+            </div>
+            <div id="row2952525" name="" class="text-left row ">
+                <div id="col29725" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="chkPodium" name="chkPodium" class="text-left  " type="checkbox"
+                    />
+                </div>
+                <div id="col29625" class="col-xs-5 col-sm-2 text-left  ">
+                    <label id="lblPodium" name="lblPodium" class="col-xs-12 col-sm-12 text-left  "
+                    for="chkPodium">Podium</label>
+                </div>
+                <div id="col485" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="chkMicrophone" name="chkMicrophone" class="text-left  " type="checkbox"
+                    />
+                </div>
+                <div id="col486" class="col-xs-2 col-sm-2 text-left  ">
+                    <label id="lblMicrophone" name="lblMicrophone" class="col-xs-12 col-sm-12 text-left  "
+                    for="chkMicrophone">Microphone</label>
+                </div>
+                <div id="col487" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="chkOther" name="chkOther" class="text-left  " type="checkbox"
+                    />
+                </div>
+                <div id="col488" class="col-xs-2 col-sm-2 text-left  ">
+                    <label id="lblOther" name="lblOther" class="col-xs-12 col-sm-12 text-left  "
+                    for="chkOther">Other</label>
+                </div>
+            </div>
+            <div id="row2952525262828" name="" class="text-left row " data-bind="visible: ( ( chkOther() ) ) ">
+                <div id="col296252628" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="describeOther">Other equipment requests</label>
+                    <textarea id="describeOther" name="describeOther"
+                    class="col-xs-12 col-sm-12 text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow34446688101023233030" name="quickHeadingRow" class="text-left row  "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn35468102330" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall36" name="quickHeadingSmall36" class="text-center  "
+                    style=" font-weight: bold; ">Signatures</h4>
+                </div>
+            </div>
+            <div id="row350" class="text-left row ">
+                <div id="col352" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele353" name="ele353" class="col-xs-12 col-sm-12 text-left  "><strong>In order to effectively promote your event consistent with College standards, the Facilities Office will assist you in obtaining signage for the event. Your event will also be placed on the “Events Calendar” available on Outlook, public folders. Please contact the Facilities Office at the campus site requested for additional information. </strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row3513535" name="" class="text-left row ">
+                <div id="col35535" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele35635" name="ele35635" class="col-xs-12 col-sm-12 text-left  "><strong>Proper use of Oakland Community College (OCC) facilities will be the responsibility of the sponsoring organization/renter to comply with state and federal laws, and local laws governing the use of public property and OCC’s Policy Guidelines for Freedom of Speech and Expression. Total fees due (less deposit) must be paid no later than one (1) week prior to the event. To accommodate equal and fair access to college facilities, OCC requires rental organization to comply with the Americans with Disabilities Act (ADA) and all other applicable federal, state, and local regulations. Rental organization shall notify OCC of any specific accommodations that are requested of it by its participants, spectators, or any other individual relating to accessibility. </strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row351353525" name="" class="text-left row ">
+                <div id="col3553525" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="row35135352525" name="" class="col-xs-12 col-sm-12 text-left  "><strong>Rental organization agrees to indemnify and hold harmless OCC, its employees, officers, agents, Trustees and volunteers, from and against any and all claims, costs, causes of action, losses or expenses (including reasonable attorney fees) caused by or arising out of the acts and/or omissions and/or conduct of any 
+individual, officer, employee, agent, student, or Trustee of the rental organization in connection with or related to the rental organization’s program or event. </strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row3513535252121" name="" class="text-left row ">
+                <div id="col355352521" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="row3513535252521" name="row3513535252521" class="col-xs-12 col-sm-12 text-center  "><strong>I HAVE READ, FULLY UNDERSTAND AND AGREE TO THE FACILITIES GUIDELINES FOR INTERNAL REQUESTORS </strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow23637373939" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn2373739" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_2383739" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickInputsRow368" name="quickInputsRow" class="text-left row occ ">
+                <div id="quickInputsColumn369" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="requestorSignature">Requestor: Please Enter Your Name</label>
+                        <input id="requestorSignature"
+                        name="requestorSignature" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn371" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="requestorSignDate">Date</label>
+                        <input id="requestorSignDate" name="requestorSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col510" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left maskphone ">
+                        <label for="requesterPhone">Phone Number</label>
+                        <input id="requesterPhone" name="requesterPhone" class="text-left maskphone "
+                        required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow344466881010232330302222" name="quickHeadingRow"
+            class="text-left row facilities " style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn3546810233022" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall3622" name="quickHeadingSmall3622" class="text-center  "
+                    style=" font-weight: bold; ">Facilities Use Only</h4>
+                </div>
+            </div>
+            <div id="row434" class="text-left row facilities ">
+                <div id="col435" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" name="notes" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow236373739392222" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn237373922" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_238373922" class="text-left  " />
+                </div>
+            </div>
+            <div id="row513" class="text-left row developer ">
+                <div id="col517" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">originatorErpId (hidden)</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col523" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="selectedCampus">selectedCampus (hidden)</label>
+                        <input id="selectedCampus" name="selectedCampus"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

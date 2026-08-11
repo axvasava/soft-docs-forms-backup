@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row421" class="text-left row fd-form-masthead ">
+                <div id="col422" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn423" name="revisedOn" class="col-sm-12 text-right  ">Revised 01/25</span>
+                </div>
+                <div id="col424" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele425" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col426" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele427" name="ele21" class="text-left form-title ">OCC Exploration Summer Camp</h1>
+                </div>
+                <div id="col428" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele429" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row417" class="text-left row ">
+                <div id="col418" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote419" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Child Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow16" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn17" name="quickInputsColumn1" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="childsName">Child's Name</label>
+                        <input id="childsName" name="childsName" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col104" class="col-xs-12 col-sm-2 text-left  ">
+                    <label for="childsSex">Child's Sex</label>
+                    <select id="childsSex" name="childsSex" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div id="col107" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="childDateOfBirth">Child's Date of Birth</label>
+                        <input id="childDateOfBirth" name="childDateOfBirth"
+                        class="text-left  " required="required" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow20" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn21" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText22" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickHeadingRow35" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn36" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall37" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Parent/Guardian Information</h4>
+                </div>
+            </div>
+            <div id="parentInfo" name="parentInfo" class="text-left row " data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addParentGuardian',  removeButtonID: 'removeParentGuardian',  maxLength: 2 } ">
+                <div id="quickInputsColumn44" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="parentGuardianName">Parent/Guardian Name</label>
+                        <input id="parentGuardianName" name="parentGuardianName"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn46" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="parentGuardianPhone">Parent/Guardian Phone</label>
+                        <input id="parentGuardianPhone" name="parentGuardianPhone"
+                        class="text-left  " required="required" type="text" data-bind="mask: 'phone' "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn48" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="parentGuardianEmail">Parent/Guardian Email</label>
+                        <input id="parentGuardianEmail" name="parentGuardianEmail"
+                        class="text-left  " required="required" type="text" data-bind="email" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn50" name="quickInputsColumn4" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="parentGaurdianEmailValidate">Re-Enter Parent/Guardian Email</label>
+                        <input id="parentGaurdianEmailValidate"
+                        name="parentGaurdianEmailValidate" class="text-left  " required="required"
+                        type="text" data-bind="email" />
+                    </div>
+                </div>
+                <div id="col52" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele53" name="ele53" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow56" name="quickInputsRow" class="text-left row button ">
+                <div id="quickInputsColumn57" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <button id="addParentGuardian" name="addParentGuardian" class="text-left btn btn-primary "
+                    style="" undefined="">Add a Second Parent/Guardian</button>
+                </div>
+                <div id="quickInputsColumn59" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <button id="removeParentGuardian" name="removeParentGuardian" class="text-left btn btn-danger "
+                    style="" undefined="">Remove Second Parent/Guardian</button>
+                </div>
+            </div>
+            <div id="quickInputsRow68" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn69" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText70" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickHeadingRow79" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn80" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall81" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Emergency Contact &amp; Pick-up Authorization</h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow83" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn84" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmall85" name="quickHeadingSmall" class="text-left  "><strong>The following people are authorized to pick up this child from camp:</strong></h5>
+                </div>
+            </div>
+            <div id="authorizedPickups" name="authorizedPickups" class="text-left row "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addAuthorizedPickupPerson',  removeButtonID: 'removeAuthorizedPickupPerson',  maxLength: 3 } ">
+                <div id="quickInputsColumn89" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="authorizedPickupName">Name of Person Authorized to Pick Up</label>
+                        <input id="authorizedPickupName"
+                        name="authorizedPickupName" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn91" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="authorizedPickupPhone">Phone Number of Authorized Person</label>
+                        <input id="authorizedPickupPhone"
+                        name="authorizedPickupPhone" class="text-left  " required="required" type="text"
+                        data-bind="mask: 'phone' " />
+                    </div>
+                </div>
+                <div id="col93" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele94" name="ele94" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow561414" name="quickInputsRow" class="text-left row button ">
+                <div id="quickInputsColumn5714" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <button id="addAuthorizedPickupPerson" name="addAuthorizedPickupPerson"
+                    class="text-left btn btn-primary " style="" undefined="">Add Another Authorized Person</button>
+                </div>
+                <div id="quickInputsColumn5914" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <button id="removeAuthorizedPickupPerson" name="removeAuthorizedPickupPerson"
+                    class="text-left btn btn-danger " style="" undefined="">Remove Remove Last Authorized Person</button>
+                </div>
+            </div>
+            <div id="quickInputsRow681515" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn6915" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText7015" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickHeadingRow112" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn113" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall114" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Family Health History</h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow116" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn117" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest118" name="quickHeadingSmallest" class="text-left  "><strong>Please list allergies, heart problems, diabetes, cancer or other serious health conditions.</strong></h5>
+                </div>
+            </div>
+            <div id="quickTextAreaRow120" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn121" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="fatherHealthHistory">Father's Health History</label>
+                    <textarea id="fatherHealthHistory" name="fatherHealthHistory"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickTextAreaRow124" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn125" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="motherHealthHistory">Mother's Health History</label>
+                    <textarea id="motherHealthHistory" name="motherHealthHistory"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickTextAreaRow128" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn129" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="brotherSisterHealthHistory">Brother and Sister's Health History</label>
+                    <textarea id="brotherSisterHealthHistory"
+                    name="brotherSisterHealthHistory" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow6815152121" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn691521" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText701521" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickHeadingRow135" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn136" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall137" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Student Health Conditions</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow139" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn140" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="childHasHealthCondition" name="childHealthCondition" class="text-left  "
+                    style=" transform: scale(1.5); " type="radio" value="Child Has Health Condition"
+                    />
+                </div>
+                <div id="quickInputsColumn142" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="quickInputsText143" name="quickInputsText2" class="text-left  "
+                    for="childHasHealthCondition">YES, my child receives regular medical/health care for health conditions.</label>
+                </div>
+                <div id="quickInputsColumn144" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="childDoesNotHaveHealthConditions" name="childHealthCondition"
+                    class="text-left  " style=" transform: scale(1.5); " type="radio" value="Child Does Not Have Heath Conditions"
+                    />
+                </div>
+                <div id="quickInputsColumn146" name="quickInputsColumn4" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="lbl151" name="lbl151" class="text-left  " for="childDoesNotHaveHealthConditions">NO medical conditions</label>
+                </div>
+            </div>
+            <div id="quickInputsRow68151521212525" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn69152125" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText70152125" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickHeadingRow177" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( childHealthCondition() == 'Child Has Health Condition' ) ) ">
+                <div id="quickHeadingColumn178" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest179" name="quickHeadingSmallest" class="text-left  "><strong>Please select all the apply.</strong></h5>
+                </div>
+            </div>
+            <div id="quickInputsRow154" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( childHealthCondition() == 'Child Has Health Condition' ) ) ">
+                <div id="quickInputsColumn155" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="allergies" name="allergies" class="text-left  " style=" transform: scale(1.5);&#10; "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn157" name="quickInputsColumn2" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText158" name="quickInputsText2" class="text-left  "
+                    for="allergies">Allergies</label>
+                </div>
+                <div id="quickInputsColumn159" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="asthma" name="asthma" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn161" name="quickInputsColumn4" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText162" name="quickInputsText4" class="text-left  "
+                    for="asthma">Asthma</label>
+                </div>
+                <div id="col163" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="addADHD" name="addADHD" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="col164" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="ele171" name="ele171" class="text-left  " for="addADHD">ADD/ADHD</label>
+                </div>
+            </div>
+            <div id="quickInputsRow1542727" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( childHealthCondition() == 'Child Has Health Condition' ) ) ">
+                <div id="quickInputsColumn15527" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="autism" name="autism" class="text-left  " style=" transform: scale(1.5);&#10; "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn15727" name="quickInputsColumn2" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText15827" name="quickInputsText15827" class="text-left  "
+                    for="autism">Autism</label>
+                </div>
+                <div id="quickInputsColumn15927" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="behaviorConcerns" name="behaviorConcerns" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="quickInputsColumn16127" name="quickInputsColumn4" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText16227" name="quickInputsText16227" class="text-left  "
+                    for="behaviorConcerns">Behavior Concerns</label>
+                </div>
+                <div id="col16327" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="birthCongenitalMal" name="birthCongenitalMal" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="col16427" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="ele17127" name="ele17127" class="text-left  " for="birthCongenitalMal">Birth/Congenital Malformations</label>
+                </div>
+            </div>
+            <div id="quickInputsRow15427272828" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( childHealthCondition() == 'Child Has Health Condition' ) ) ">
+                <div id="quickInputsColumn1552728" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="boneMuscleJointProblems" name="boneMuscleJointProblems" class="text-left  "
+                    style=" transform: scale(1.5);&#10; " type="checkbox" />
+                </div>
+                <div id="quickInputsColumn1572728" name="quickInputsColumn2" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText1582728" name="quickInputsText1582728" class="text-left  "
+                    for="boneMuscleJointProblems">Bone/Muscle/Joint Problems</label>
+                </div>
+                <div id="quickInputsColumn1592728" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="bloodProblems" name="bloodProblems" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn1612728" name="quickInputsColumn4" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText1622728" name="quickInputsText1622728" class="text-left  "
+                    for="bloodProblems">Blood Problems</label>
+                </div>
+                <div id="col1632728" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="bowelBladderProblems" name="bowelBladderProblems" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="col1642728" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="ele1712728" name="ele1712728" class="text-left  " for="bowelBladderProblems">Bowel/Bladder Problems</label>
+                </div>
+            </div>
+            <div id="quickInputsRow154272728282929" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( childHealthCondition() == 'Child Has Health Condition' ) ) ">
+                <div id="quickInputsColumn155272829" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="cancer" name="cancer" class="text-left  " style=" transform: scale(1.5);&#10; "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn157272829" name="quickInputsColumn2" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText158272829" name="quickInputsText158272829" class="text-left  "
+                    for="cancer">Cancer</label>
+                </div>
+                <div id="quickInputsColumn159272829" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="cysticFybrosis" name="cysticFybrosis" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn161272829" name="quickInputsColumn4" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText162272829" name="quickInputsText162272829" class="text-left  "
+                    for="cysticFybrosis">Cystic Fybrosis</label>
+                </div>
+                <div id="col163272829" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="diabetes" name="diabetes" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="col164272829" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="ele171272829" name="ele171272829" class="text-left  " for="diabetes">Diabetes</label>
+                </div>
+            </div>
+            <div id="quickInputsRow1542727282829293030" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( childHealthCondition() == 'Child Has Health Condition' ) ) ">
+                <div id="quickInputsColumn15527282930" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="depression" name="depression" class="text-left  " style=" transform: scale(1.5);&#10; "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn15727282930" name="quickInputsColumn2" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText15827282930" name="quickInputsText15827282930"
+                    class="text-left  " for="depression">Depression</label>
+                </div>
+                <div id="quickInputsColumn15927282930" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="earProblemHearingDifficulty" name="earProblemHearingDifficulty"
+                    class="text-left  " style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="quickInputsColumn16127282930" name="quickInputsColumn4" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText16227282930" name="quickInputsText16227282930"
+                    class="text-left  " for="earProblemHearingDifficulty">Ear Problems/Hearing Difficulty</label>
+                </div>
+                <div id="col16327282930" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="emotionalConcerns" name="emotionalConcerns" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="col16427282930" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="ele17127282930" name="ele17127282930" class="text-left  " for="emotionalConcerns">Emotional Concerns</label>
+                </div>
+            </div>
+            <div id="quickInputsRow15427272828292930303131" name="quickInputsRow"
+            class="text-left row " data-bind="visible: ( ( childHealthCondition() == 'Child Has Health Condition' ) ) ">
+                <div id="quickInputsColumn1552728293031" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="headaches" name="headaches" class="text-left  " style=" transform: scale(1.5);&#10; "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn1572728293031" name="quickInputsColumn2" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText1582728293031" name="quickInputsText1582728293031"
+                    class="text-left  " for="headaches">Headaches</label>
+                </div>
+                <div id="quickInputsColumn1592728293031" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="heartProblems" name="heartProblems" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn1612728293031" name="quickInputsColumn4" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText1622728293031" name="quickInputsText1622728293031"
+                    class="text-left  " for="heartProblems">Heart Problems</label>
+                </div>
+                <div id="col1632728293031" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="hemophilia" name="hemophilia" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="col1642728293031" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="ele1712728293031" name="ele1712728293031" class="text-left  "
+                    for="hemophilia">Hemophilia</label>
+                </div>
+            </div>
+            <div id="quickInputsRow1543232" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( childHealthCondition() == 'Child Has Health Condition' ) ) ">
+                <div id="quickInputsColumn15532" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="juvenileArthritis" name="juvenileArthritis" class="text-left  "
+                    style=" transform: scale(1.5);&#10; " type="checkbox" />
+                </div>
+                <div id="quickInputsColumn15732" name="quickInputsColumn2" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText15832" name="quickInputsText15832" class="text-left  "
+                    for="juvenileArthritis">Juvenile Arthritis</label>
+                </div>
+                <div id="quickInputsColumn15932" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="leadPoisoning" name="leadPoisoning" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn16132" name="quickInputsColumn4" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText16232" name="quickInputsText16232" class="text-left  "
+                    for="leadPoisoning">Lead Poisoning</label>
+                </div>
+                <div id="col16332" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="migraines" name="migraines" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="col16432" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="ele17132" name="ele17132" class="text-left  " for="migraines">Migraines</label>
+                </div>
+            </div>
+            <div id="quickInputsRow15432323333" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( childHealthCondition() == 'Child Has Health Condition' ) ) ">
+                <div id="quickInputsColumn1553233" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="neuromuscularDisorder" name="neuromuscularDisorder" class="text-left  "
+                    style=" transform: scale(1.5);&#10; " type="checkbox" />
+                </div>
+                <div id="quickInputsColumn1573233" name="quickInputsColumn2" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText1583233" name="quickInputsText1583233" class="text-left  "
+                    for="neuromuscularDisorder">Neuromuscular Disorder</label>
+                </div>
+                <div id="quickInputsColumn1593233" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="other" name="other" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn1613233" name="quickInputsColumn4" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText1623233" name="quickInputsText1623233" class="text-left  "
+                    for="other">Other</label>
+                </div>
+            </div>
+            <div id="quickTextAreaRow285" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( childHealthCondition() == 'Child Has Health Condition' ) ) ">
+                <div id="quickTextAreaColumn286" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="conditionExplanation">Please explain any conditions above that we should know about.</label>
+                    <textarea
+                    id="conditionExplanation" name="conditionExplanation" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow681515212125253535" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( childHealthCondition() == 'Child Has Health Condition' ) ) ">
+                <div id="quickInputsColumn6915212535" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText7015212535" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickHeadingRow292" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn293" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest294" name="quickHeadingSmallest" class="text-left  "><strong>Please indicate any allergies your child may have.</strong></h5>
+                </div>
+            </div>
+            <div id="quickInputsRow154272728282929303031313737" name="quickInputsRow"
+            class="text-left row ">
+                <div id="quickInputsColumn155272829303137" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="beeInsect" name="beeInsect" class="text-left  " style=" transform: scale(1.5);&#10; "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn157272829303137" name="quickInputsColumn2" class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText158272829303137" name="quickInputsText158272829303137"
+                    class="text-left  " for="beeInsect">Bee/Insect</label>
+                </div>
+            </div>
+            <div id="quickInputsRow328" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( beeInsect() ) ) ">
+                <div id="quickInputsColumn329" name="quickInputsColumn1" class="col-xs-12 col-sm-1 text-left  "><span id="quickInputsText330" name="quickInputsText1" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn331" name="quickInputsColumn2" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="beeInsectReaction">Reaction</label>
+                        <input id="beeInsectReaction" name="beeInsectReaction"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn333" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="beeInsectRestrictions">Restrictions or Recommended Actions</label>
+                        <input id="beeInsectRestrictions"
+                        name="beeInsectRestrictions" class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow1542727282829293030313137373838" name="quickInputsRow"
+            class="text-left row ">
+                <div id="quickInputsColumn15527282930313738" name="quickInputsColumn1"
+                class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="food" name="food" class="text-left  " style=" transform: scale(1.5);&#10; "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn15727282930313738" name="quickInputsColumn2"
+                class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText15827282930313738" name="quickInputsText15827282930313738"
+                    class="text-left  " for="food">Food</label>
+                </div>
+            </div>
+            <div id="quickInputsRow3284242" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( food() ) ) ">
+                <div id="quickInputsColumn32942" name="quickInputsColumn1" class="col-xs-12 col-sm-1 text-left  "><span id="quickInputsText33042" name="quickInputsText1" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn33142" name="quickInputsColumn2" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="foodReaction">Reaction</label>
+                        <input id="foodReaction" name="foodReaction" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn33342" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="foodRestrictions">Restrictions or Recommended Actions</label>
+                        <input id="foodRestrictions"
+                        name="foodRestrictions" class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow15427272828292930303131373738383939" name="quickInputsRow"
+            class="text-left row ">
+                <div id="quickInputsColumn1552728293031373839" name="quickInputsColumn1"
+                class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="medication" name="medication" class="text-left  " style=" transform: scale(1.5);&#10; "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn1572728293031373839" name="quickInputsColumn2"
+                class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText1582728293031373839" name="quickInputsText1582728293031373839"
+                    class="text-left  " for="medication">Medication</label>
+                </div>
+            </div>
+            <div id="quickInputsRow32842424343" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( medication() ) ) ">
+                <div id="quickInputsColumn3294243" name="quickInputsColumn1" class="col-xs-12 col-sm-1 text-left  "><span id="quickInputsText3304243" name="quickInputsText1" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn3314243" name="quickInputsColumn2" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="medicationReaction">Reaction</label>
+                        <input id="medicationReaction" name="medicationReaction"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn3334243" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="medicationRestrictions">Restrictions or Recommended Actions</label>
+                        <input id="medicationRestrictions"
+                        name="medicationRestrictions" class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow154272728282929303031313737383839394040" name="quickInputsRow"
+            class="text-left row ">
+                <div id="quickInputsColumn155272829303137383940" name="quickInputsColumn1"
+                class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="otherAllergy" name="otherAllergy" class="text-left  " style=" transform: scale(1.5);&#10; "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn157272829303137383940" name="quickInputsColumn2"
+                class="col-xs-11 col-sm-3 text-left  ">
+                    <label id="quickInputsText158272829303137383940" name="quickInputsText158272829303137383940"
+                    class="text-left  " for="otherAllergy">Other</label>
+                </div>
+            </div>
+            <div id="quickInputsRow328424243434444" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( otherAllergy() ) ) ">
+                <div id="quickInputsColumn329424344" name="quickInputsColumn1" class="col-xs-12 col-sm-1 text-left  "><span id="quickInputsText330424344" name="quickInputsText1" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn331424344" name="quickInputsColumn2" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="otherReaction">Reaction</label>
+                        <input id="otherReaction" name="otherReaction" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn333424344" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="otherRestrictions">Restrictions or Recommended Actions</label>
+                        <input id="otherRestrictions"
+                        name="otherRestrictions" class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow681515212125254545" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn6915212545" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText7015212545" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickDropdownRow361" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn362" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="requireRestrictionsModificationsInverventions">Do any health and/or medical conditions require restrictions, modifications,
+                        and/or intervention?</label>
+                    <select id="requireRestrictionsModificationsInverventions"
+                    name="requireRestrictionsModificationsInverventions" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow365" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( requireRestrictionsModificationsInverventions() == 'Yes' ) ) ">
+                <div id="quickTextAreaColumn366" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="restrictionsModificationsInterventions">Please explain.</label>
+                    <textarea id="restrictionsModificationsInterventions"
+                    name="restrictionsModificationsInterventions" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickDropdownRow369" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn370" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="requiresProceduresTreatments">Does the student require any special procedures and/or treatments for
+                        their health condition(s)?</label>
+                    <select id="requiresProceduresTreatments"
+                    name="requiresProceduresTreatments" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow3654949" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( requiresProceduresTreatments() == 'Yes' ) ) ">
+                <div id="quickTextAreaColumn36649" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="restrictionsModificationsInterventions49">Please explain.</label>
+                    <textarea id="restrictionsModificationsInterventions49"
+                    name="restrictionsModificationsInterventions49" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickTextAreaRow376" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn377" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="otherHelpfulInformation">Please indicate any other information about your child’s health or development
+                        that you think would be helpful for OCC to know.</label>
+                    <textarea id="otherHelpfulInformation"
+                    name="otherHelpfulInformation" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow6815152121252545455151" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn691521254551" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText701521254551" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickHeadingRow64" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn65" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall66" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow73" name="quickInputsRow" class="text-left row developer ">
+                <div id="col392" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="parentGuardianName1">parentGuardianName1 (hidden)</label>
+                        <input id="parentGuardianName1" name="parentGuardianName1"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn74" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="parentGuardianEmail1">parentGuardianEmail1 (hidden)</label>
+                        <input id="parentGuardianEmail1"
+                        name="parentGuardianEmail1" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col393" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="parentGuardianName2">parentGuardianName2 (hidden)</label>
+                        <input id="parentGuardianName2" name="parentGuardianName2"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn76" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="parentGuardianEmail2">parentGuardianEmail2 (hidden)</label>
+                        <input id="parentGuardianEmail2"
+                        name="parentGuardianEmail2" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col398" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="authPickupName1">authPickupName1 (hidden)</label>
+                        <input id="authPickupName1" name="authPickupName1"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col399" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="authPickupPhone1">authPickupPhone1 (hidden)</label>
+                        <input id="authPickupPhone1" name="authPickupPhone1"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col400" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="authPickupName2">authPickupName2 (hidden)</label>
+                        <input id="authPickupName2" name="authPickupName2"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col401" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="authPickupPhone2">authPickupPhone2 (hidden)</label>
+                        <input id="authPickupPhone2" name="authPickupPhone2"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col402" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="authPickupName3">authPickupName3 (hidden)</label>
+                        <input id="authPickupName3" name="authPickupName3"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col403" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="authPickupPhone3">authPickupPhone3 (hidden)</label>
+                        <input id="authPickupPhone3" name="authPickupPhone3"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

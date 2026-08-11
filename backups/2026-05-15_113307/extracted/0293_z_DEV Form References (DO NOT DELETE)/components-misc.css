@@ -1,0 +1,61 @@
+/* =========================================================
+   Catchall file for styles that do not have homes yet
+========================================================= */
+
+.required-note {
+    font-size: 10px;
+    letter-spacing: .05rem;
+    font-style: italic;
+}
+
+.required-indicator {
+    color: var(--fd-error);
+    font-weight: 600;
+}
+
+.is-autocomplete-readonly {
+    background-color: var(--fd-gray-200);
+    color: var(--fd-gray-700);
+}
+
+.autocomplete-helper-text {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    color: var(--fd-gray-700);
+}
+
+.is-export-mode .required-indicator,
+.is-export-mode .required-note,
+.is-export-mode .autocomplete-helper-text {
+    display: none !important;
+}
+
+/* Export mode: force white backgrounds everywhere */
+.is-export-mode input,
+.is-export-mode textarea,
+.is-export-mode select,
+.is-export-mode .is-autocomplete-readonly {
+    background-color: var(--fd-white) !important;
+    color: var(--fd-black);
+}
+
+.is-field-readonly {
+    background-color: var(--fd-gray-100);
+    color: var(--fd-text-primary);
+    cursor: default;
+}
+
+.is-field-disabled {
+    color: var(--fd-gray-500);
+}
+
+.field-helper-text {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--fd-gray-500);
+    margin-top: 0.25rem;
+}
+
+.is-field-hidden {
+    display: none !important;
+}

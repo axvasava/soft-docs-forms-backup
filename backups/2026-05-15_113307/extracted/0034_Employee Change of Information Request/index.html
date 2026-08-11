@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row212" class="text-left row fd-form-masthead ">
+                <div id="col213" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn214" name="revisedOn" class="col-sm-12 text-right  ">Revised 07/24</span>
+                </div>
+                <div id="col215" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele216" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col217" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele218" name="ele21" class="text-left form-title ">Employee Change of Information Request</h1>
+                </div>
+                <div id="col219" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele220" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row208" class="text-left row ">
+                <div id="col209" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote210" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow8" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn9" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="jobTitle">Job Title</label>
+                        <input id="jobTitle" name="jobTitle" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn11" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">ID Number</label>
+                        <input id="originatorErpId" name="originatorErpId" class="text-left  "
+                        required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn13" name="quickInputsColumn3" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeLastName">Last Name</label>
+                        <input id="employeeLastName" name="employeeLastName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn15" name="quickInputsColumn4" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeFirstName">First Name</label>
+                        <input id="employeeFirstName" name="employeeFirstName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col17" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeMiddleInitial">Middle Initial</label>
+                        <input id="employeeMiddleInitial" name="employeeMiddleInitial"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col18" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="campus">Campus</label>
+                        <input id="campus" name="campus" class="text-left  " readonly="true"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row98" class="text-left row ">
+                <div id="col99" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele100" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickDropdownRow147" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn148" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="updateInformation">Will you be using this form to update contact information or a legal name?</label>
+                    <select
+                    id="updateInformation" name="updateInformation" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Contact Information">Contact Information</option>
+                        <option value="Legal Name Change">Legal Name Change</option>
+                        </select>
+                </div>
+            </div>
+            <div id="row982929" name="" class="text-left row ">
+                <div id="col9929" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele10029" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow24" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( updateInformation() == 'Contact Information' ) ) ">
+                <div id="quickHeadingColumn25" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall26" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Contact Information</h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow323030" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Contact Information' ) ) ">
+                <div id="quickHeadingColumn3330" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmallest3430" name="quickHeadingSmallest3430" class="text-left  "><strong>Please select the type of contact information that you wish to update. Choose all that apply.</strong></h4>
+                </div>
+            </div>
+            <div id="quickInputsRow157" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Contact Information' ) ) ">
+                <div id="quickInputsColumn158" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="homeAddressUpdateCheck" name="homeAddressUpdateCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="quickInputsColumn160" name="quickInputsColumn2" class="col-xs-11 col-sm-2 text-left  ">
+                    <label id="homeAddressUpdateCheckLabel" name="homeAddressUpdateCheckLabel"
+                    class="text-left  " for="homeAddressUpdateCheck">Home Address</label>
+                </div>
+                <div id="quickInputsColumn162" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="emailAddressCheck" name="emailAddressCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="quickInputsColumn164" name="quickInputsColumn4" class="col-xs-11 col-sm-2 text-left  ">
+                    <label id="emailAddressCheckLabel" name="emailAddressCheckLabel" class="text-left  "
+                    for="emailAddressCheck">Email Address</label>
+                </div>
+                <div id="col166" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="personalPhoneNumberCheck" name="personalPhoneNumberCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="col167" class="col-xs-11 col-sm-5 text-left  ">
+                    <label id="personalPhoneNumberCheckLabel" name="personalPhoneNumberCheckLabel"
+                    class="text-left  " for="personalPhoneNumberCheck">Personal Phone Number(s)</label>
+                </div>
+                <div id="col168" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="emergencyContactCheck" name="emergencyContactCheck" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="col169" class="col-xs-11 col-sm-6 text-left  ">
+                    <label id="emergencyContactCheckLavbel" name="emergencyContactCheckLavbel"
+                    class="text-left  " for="emergencyContactCheck">Emergency Contact Information</label>
+                </div>
+            </div>
+            <div id="row9829293232" name="" class="text-left row " data-bind="visible: ( ( updateInformation() == 'Contact Information' ) ) ">
+                <div id="col992932" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele1002932" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow32" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( homeAddressUpdateCheck() ) ) ">
+                <div id="quickHeadingColumn33" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmallest34" name="quickHeadingSmallest" class="text-left  "><strong>Home Address</strong></h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow37" name="quickParagraphRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( homeAddressUpdateCheck() ) ) ">
+                <div id="quickParagraphColumn38" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement39" name="quickParagraphElement" class="text-left  ">If updating Home Address, please attach proof of residency before submitting
+                        this form. The following documents can be used: driver's license, voter
+                        registration card, property tax or lease agreement. Detroit and Pontiac
+                        residents must provide appropriate tax forms.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow41" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( homeAddressUpdateCheck() ) ) ">
+                <div id="quickInputsColumn42" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="streetAddress">Street Address</label>
+                        <input id="streetAddress" name="streetAddress" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn44" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="city">City</label>
+                        <input id="city" name="city" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn46" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="state">State</label>
+                        <input id="state" name="state" class="text-left  " required="required"
+                        type="text" data-bind="state: { format: 'name' } " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn48" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="zip">Zip</label>
+                        <input id="zip" name="zip" class="text-left  " required="required"
+                        type="text" data-bind="mask: 'zip' " />
+                    </div>
+                </div>
+            </div>
+            <div id="row941717" name="" class="text-left row " data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( homeAddressUpdateCheck() ) ) ">
+                <div id="col9517" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele9617" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow3277" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( emailAddressCheck() ) ) ">
+                <div id="quickHeadingColumn337" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmallest347" name="quickHeadingSmallest347" class="text-left  "><strong>Email Address</strong></h4>
+                </div>
+            </div>
+            <div id="quickInputsRow54" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( emailAddressCheck() ) ) ">
+                <div id="quickInputsColumn55" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="emailAddress">Email Address</label>
+                        <input id="emailAddress" name="emailAddress" class="text-left  "
+                        required="required" type="text" data-bind="email" />
+                    </div>
+                </div>
+            </div>
+            <div id="row9417171818" name="" class="text-left row " data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( emailAddressCheck() ) ) ">
+                <div id="col951718" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele961718" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow327799" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( personalPhoneNumberCheck() ) ) ">
+                <div id="quickHeadingColumn3379" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmallest3479" name="quickHeadingSmallest3479" class="text-left  "><strong>Phone Numbers</strong></h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow81" name="quickParagraphRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( personalPhoneNumberCheck() ) ) ">
+                <div id="quickParagraphColumn82" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement83" name="quickParagraphElement" class="text-left  ">Please complete those you wish to be on file.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow61" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( personalPhoneNumberCheck() ) ), dynamicList: true, dynamicListProperties: { addButtonID: 'addPhone',  maxLength: 3 }  ">
+                <div id="quickInputsColumn62" name="quickInputsColumn1" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPhoneNumber">Phone Number</label>
+                        <input id="newPhoneNumber" name="newPhoneNumber" class="text-left  "
+                        type="text" data-bind="mask: 'phone' " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn64" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="extension">Ext.</label>
+                        <input id="extension" name="extension" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn66" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="phoneType">Phone Type</label>
+                    <select id="phoneType" name="phoneType" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Home">Home</option>
+                        <option value="Business">Business</option>
+                        <option value="Cell">Cell</option>
+                    </select>
+                </div>
+                <div id="col68" class="col-xs-12 col-sm-1 text-left  " style=" margin-top: 28px; ">
+                    <button id="ele69" name="ele69" class="text-left  " style="" undefined=""
+                    data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col77" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele78" name="ele78" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow72" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( personalPhoneNumberCheck() ) ) ">
+                <div id="quickInputsColumn73" name="quickInputsColumn1" class="col-xs-12 col-sm-5 text-left  ">
+                    <button id="addPhone" name="addPhone" class="text-left btn btn-primary "
+                    style="" undefined="">Add Another Phone Number</button>
+                </div>
+            </div>
+            <div id="row94" name="row38" class="text-left row " data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( personalPhoneNumberCheck() ) ) ">
+                <div id="col95" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele96" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow321919" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( emergencyContactCheck() ) ) ">
+                <div id="quickHeadingColumn3319" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmallest3419" name="quickHeadingSmallest3419" class="text-left  "><strong>Emergency Contact Information</strong></h4>
+                </div>
+            </div>
+            <div id="quickInputsRow86" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( emergencyContactCheck() ) ) ">
+                <div id="quickInputsColumn87" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="emergencyPhoneNumber">Emergency Phone Number</label>
+                        <input id="emergencyPhoneNumber" name="emergencyPhoneNumber"
+                        class="text-left  " required="required" type="text" data-bind="mask: 'phone' "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn89" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="emergencyExtension">Ext.</label>
+                        <input id="emergencyExtension" name="emergencyExtension" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn91" name="quickInputsColumn3" class="col-xs-12 col-sm-9 text-left  ">
+                    <div class="text-left  ">
+                        <label for="emergencyContactPerson">Emergency Contact Person</label>
+                        <input id="emergencyContactPerson" name="emergencyContactPerson"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row94171718182020" name="" class="text-left row " data-bind="visible: ( ( updateInformation() == 'Contact Information' )  &amp;&amp;  ( emergencyContactCheck() ) ) ">
+                <div id="col95171820" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele96171820" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow102" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( updateInformation() == 'Legal Name Change' ) ) ">
+                <div id="quickHeadingColumn103" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall104" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Legal Name Change Information</h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow322121" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Legal Name Change' ) ) ">
+                <div id="quickHeadingColumn3321" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmallest3421" name="quickHeadingSmallest3421" class="text-left  "><strong>Name Change</strong></h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow812222" name="quickParagraphRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Legal Name Change' ) ) ">
+                <div id="quickParagraphColumn8222" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement8322" name="quickParagraphElement8322" class="text-left  ">If making a name change, please attach a copy of your Social Security
+                        card before submitting this form.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow124" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Legal Name Change' ) ) ">
+                <div id="quickInputsColumn125" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newName">New Name</label>
+                        <input id="newName" name="newName" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn127" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formerName">Former Name</label>
+                        <input id="formerName" name="formerName" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row941717181820202424" name="" class="text-left row " data-bind="visible: ( ( updateInformation() == 'Legal Name Change' ) ) ">
+                <div id="col9517182024" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele9617182024" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow3221212525" name="quickHeadingRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Legal Name Change' ) ) ">
+                <div id="quickHeadingColumn332125" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmallest342125" name="quickHeadingSmallest342125"
+                    class="text-left  "><strong>Chosen Personal Pronoun</strong></h4>
+                </div>
+            </div>
+            <div id="quickDropdownRow140" name="quickDropdownRow" class="text-left row "
+            data-bind="visible: ( ( updateInformation() == 'Legal Name Change' ) ) ">
+                <div id="quickDropdownColumn141" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="quickDropdownElement142">Chose Personal Pronoun (Select One)</label>
+                    <select id="quickDropdownElement142"
+                    name="quickDropdownElement" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="SHE (She/Her/Hers)">SHE (She/Her/Hers)</option>
+                        <option value="HE (He/Him/His)">HE (He/Him/His)</option>
+                        <option value="ZE (Ze/Hir/Hirs)">ZE (Ze/Hir/Hirs)</option>
+                        <option value="THEY (They/Them/Their)">THEY (They/Them/Their)</option>
+                        <option value="NAME (Use my name as my pronoun)">NAME (Use my name as my pronoun)</option>
+                        <option value="N/A (Not Applicable)">N/A (Not Applicable)</option>
+                    </select>
+                </div>
+            </div>
+            <div id="row9417171818202024242727" name="" class="text-left row " data-bind="visible: ( ( updateInformation() == 'Legal Name Change' ) ) ">
+                <div id="col951718202427" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele961718202427" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow196" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn197" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall198" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow200" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn201" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="payClassCode">payClassCode (hidden)</label>
+                        <input id="payClassCode" name="payClassCode"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

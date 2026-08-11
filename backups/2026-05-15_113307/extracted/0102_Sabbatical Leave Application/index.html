@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row396" class="text-left row fd-form-masthead ">
+                <div id="col397" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn398" name="revisedOn" class="col-sm-12 text-right  ">Revised 05/26</span>
+                </div>
+                <div id="col399" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele400" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col401" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele402" name="ele21" class="text-left form-title ">Sabbatical Leave Application</h1>
+                </div>
+                <div id="col403" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele404" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row392" class="text-left row ">
+                <div id="col393" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote394" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall14" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Applicant Information</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow911313" name="quickParagraphRow" class="text-left row committeeOnly "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="col9513" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_9813" class="text-left  " />
+                </div>
+                <div id="quickParagraphColumn9213" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <h4 id="p_9313" name="p_9313" class="text-center  "><strong>Please review the information below along with the applicant's attached sabbatical leave proposal.</strong></h4>
+                </div>
+                <div id="col9613" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_10013" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickParagraphRow9113131414" name="quickParagraphRow" class="text-left row applicantOnly "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn921314" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <h4 id="p_931314" name="p_931314" class="text-center  "><strong>To be completed by the applicant: Please fill out, sign, and date this form before submitting it to your supervisor for approval.</strong></h4>
+                </div>
+            </div>
+            <div id="quickInputsRow16" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn17" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">OCC Employee ID Number</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn19" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="lastName">Last Name(Legal)</label>
+                        <input id="lastName" name="lastName" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn21" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="firstName">First Name (Legal)</label>
+                        <input id="firstName" name="firstName" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn23" name="quickInputsColumn4" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="chosenFIrstName">Chosen Name</label>
+                        <input id="chosenFIrstName" name="chosenFIrstName"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col280" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="applicantPosition">Applicant's Position at OCC</label>
+                        <input id="applicantPosition" name="applicantPosition"
+                        class="text-left  " data-bind="autocomplete: { localSource: 'personsPositionsList',  clearOnFocus: true,  validate: true,  labelMask: ['positionTitle'],  formFields: {'applicantCampus':'campusTitle', 'departmentGUID':'positionDepartmentGUID', 'supervisorGUID':'supervisorGUID'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col281" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="applicantPositionStatus">Applicant's Position Status</label>
+                    <select id="applicantPositionStatus"
+                    name="applicantPositionStatus" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Faculty">Faculty</option>
+                        <option value="Staff">Staff</option>
+                    </select>
+                </div>
+                <div id="col25" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="applicantDepartment">Applicant's Department</label>
+                        <input id="applicantDepartment" name="applicantDepartment"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col26" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="applicantCampus">Applicant's Campus</label>
+                        <input id="applicantCampus" name="applicantCampus"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow69" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn72" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSearch">Select Your Supervisor</label>
+                        <input id="supervisorSearch" name="supervisorSearch"
+                        class="text-left  " required="required" type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: true, labelMask: ['UserName', ' | ', 'Email'], selectedMask: ['UserName'],  formFields: {'supervisorEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col282" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorEmail">Supervisor Email</label>
+                        <input id="supervisorEmail" name="supervisorEmail"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow693838" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn7238" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deptChairSearch">Select Your Department Chair</label>
+                        <input id="deptChairSearch" name="deptChairSearch"
+                        class="text-left  " type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_Distinct_Department_Chairs',  clearOnFocus: true,  validate: true,  labelMask: ['Department_Chair'],  formFields: {'departmentChairEmail':'Department_Chair_Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col28238" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="departmentChairEmail">Department Chair Email</label>
+                        <input id="departmentChairEmail" name="departmentChairEmail"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow43" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn44" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="applicantLengthOfService">Applicant's Length of Service with OCC</label>
+                        <input id="applicantLengthOfService"
+                        name="applicantLengthOfService" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col54" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="semestersRequestedLeave">Semester(s) of Requested Leave</label>
+                        <input id="semestersRequestedLeave"
+                        name="semestersRequestedLeave" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow47" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn48" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="priorSabLeave">Prior Sabbatical Leaves from OCC</label>
+                    <textarea id="priorSabLeave" name="priorSabLeave"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow51" name="quickInputsRow" class="text-left row ">
+                <div id="col61" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele62" name="ele62" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow65" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn66" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall67" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Sabbatical Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow76" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn77" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="durationOfLeave">Duration of Leave</label>
+                    <select id="durationOfLeave" name="durationOfLeave"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="One Semester">One Semester</option>
+                        <option value="Full Academic Year">Full Academic Year</option>
+                    </select>
+                </div>
+                <div id="col79" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="amountOfPay">Amount of Pay Requested</label>
+                    <select id="amountOfPay" name="amountOfPay"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Full Pay">Full Pay</option>
+                        <option value="Half Pay">Half Pay</option>
+                    </select>
+                </div>
+                <div id="col82" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="grantFellowComp">Will the applicant receive any grants, fellowships or other compensation?</label>
+                    <select
+                    id="grantFellowComp" name="grantFellowComp" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+                <div id="col311" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele312" name="ele312" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickParagraphRow1193939" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn12039" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_12139" name="p_12139" class="text-left  "><strong>Note to Applicant: </strong>By entering your name below and submitting
+                        this form you are officially acknowledging your request for sabbatical
+                        leave.
+                        <br /><strong>Note:</strong> If you are a MSPRS participant, you may wish to
+                        check with the Office of Retirement Services (ORS) to learn how this will
+                        affect your retirement.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow32" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn33" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSign">Employee: Please Enter Your Name</label>
+                        <input id="employeeSign" name="employeeSign"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn35" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSignDate">Date</label>
+                        <input id="employeeSignDate" name="employeeSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col314" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_316" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickParagraphRow91" name="quickParagraphRow" class="text-left row applicantOnly "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn92" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <h4 id="p_93" name="p_263" class="text-center  "><strong>Applicant must attach sabbatical leave proposal describing project/plan of study, noting areas specified in rubric.</strong></h4>
+                </div>
+                <div id="col96" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_100" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow145" name="quickHeadingRow" class="text-left row humanResources "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn146" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall147" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">For Completion by HR Department</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow149" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn150" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="receivedHRDate">Date Application Was Received by HR Dept</label>
+                        <input id="receivedHRDate"
+                        name="receivedHRDate" class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn152" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="eligibilityReq">Eligibility requirements for sabbatical leave for which applicant has
+                        applied are met?</label>
+                    <select id="eligibilityReq" name="eligibilityReq"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickParagraphRow1192323" name="quickParagraphRow" class="text-left row humanResources "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn12023" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_12123" name="p_12123" class="text-left  "><strong>Note: </strong>By entering your name below and approving this
+                        form you are acknowledging your review of the applicant's request for sabbatical
+                        leave.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow1352424" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn13624" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="humRecSign">Human Resources Dept Representative: Please Enter Your Name</label>
+                        <input
+                        id="humRecSign" name="humRecSign" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn13824" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="humRecSignDate">Date</label>
+                        <input id="humRecSignDate" name="humRecSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col163" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele164" name="ele164" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow651515" name="quickHeadingRow" class="text-left row signatures "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn6615" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall6715" name="quickHeadingSmall6715" class="text-center  "
+                    style=" font-weight: bold; ">Required Signature</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow119" name="quickParagraphRow" class="text-left row signatures "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn120" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_121" name="p_263" class="text-left  "><strong>Note: </strong>By entering your name below and approving this
+                        form you are acknowledging your support of the applicant's request for
+                        sabbatical leave.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow129" name="quickInputsRow" class="text-left row supervisor ">
+                <div id="quickInputsColumn130" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supDeanSign">Supervisor/Dean: Please Enter Your Name</label>
+                        <input id="supDeanSign"
+                        name="supDeanSign" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn132" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supDeanSignDate">Date</label>
+                        <input id="supDeanSignDate" name="supDeanSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow123" name="quickInputsRow" class="text-left row departmentChair ">
+                <div id="quickInputsColumn124" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deptChairSign">Department Chair: Please Enter Your Name</label>
+                        <input id="deptChairSign"
+                        name="deptChairSign" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn126" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deptChairSignDate">Date</label>
+                        <input id="deptChairSignDate" name="deptChairSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow141" name="quickInputsRow" class="text-left row signatures ">
+                <div id="quickInputsColumn142" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_143" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow203" name="quickHeadingRow" class="text-left row provost "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn204" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall205" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">For Completion by Provost Office</h4>
+                </div>
+                <div id="col206" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="committeeDate">Date Application Was Considered by Committee</label>
+                        <input id="committeeDate"
+                        name="committeeDate" class="text-left  " data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col207" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="applicantRanking">Applicant's Ranking</label>
+                        <input id="applicantRanking" name="applicantRanking"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col226" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="leaveComRec">Based on the applicant’s ranking, the Sabbatical Leave Committee recommends
+                        approval of this application for sabbatical leave:</label>
+                    <select id="leaveComRec"
+                    name="leaveComRec" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="col230" class="col-xs-12 col-sm-6 text-left developer ">
+                    <div class="text-left  ">
+                        <label for="commRecForNote">commRecForNote (hidden)</label>
+                        <input id="commRecForNote" name="commRecForNote"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickParagraphRow119232330" name="quickParagraphRow" class="text-left row provost "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphRow11923233030" name="quickParagraphRow" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_1212330" name="p_1212330" class="text-left  "><strong>Note to the Provost: </strong>By entering your name below and
+                        approving this form you are acknowledging that based on the applicant's
+                        ranking, the Sabbatical Leave Committee <strong><span data-bind="html: commRecForNote"></span></strong> approval
+                        of the is application for sabbatical leave.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow217" name="quickInputsRow" class="text-left row provost ">
+                <div id="quickInputsColumn218" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="provostSign">Provost: Please Enter Your Name</label>
+                        <input id="provostSign" name="provostSign"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn220" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="provostSignDate">Date</label>
+                        <input id="provostSignDate" name="provostSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col249" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="ele250" name="ele250" class="text-left  ">Jolene Chapman, Provost
+                        <br />Representative, Sabbatical Leave Committee</p>
+                </div>
+            </div>
+            <div id="quickInputsRow223" name="quickInputsRow" class="text-left row provost ">
+                <div id="quickInputsColumn224" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_225" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow234" name="quickHeadingRow" class="text-left row chancellor "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn235" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall236" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">For Completion by Chancellor</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow256" name="quickInputsRow" class="text-left row chancellor ">
+                <div id="col265" class="col-xs-12 col-sm-1 text-left  "><span id="ele266" name="ele266" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn257" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="approveSabbatical" name="approveSabbatical" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn259" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <label id="quickInputsText260" name="quickInputsText2" class="text-left  "
+                    for="approveSabbatical">Approve Sabbatical Leave</label>
+                </div>
+                <div id="quickInputsColumn261" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="denySabbatical" name="denySabbatical" class="text-left  " style=" transform: scale(1.5) "
+                    type="checkbox" />
+                </div>
+                <div id="quickInputsColumn263" name="quickInputsColumn4" class="col-xs-12 col-sm-4 text-left  ">
+                    <label id="quickInputsText264" name="quickInputsText4" class="text-left  "
+                    for="denySabbatical">Deny Sabbatical Leave</label>
+                </div>
+            </div>
+            <div id="quickParagraphRow1192323303434" name="quickParagraphRow" class="text-left row chancellor "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphRow1192323303034" name="quickParagraphRow" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_121233034" name="p_121233034" class="text-left  "><strong>Note to the Chancelor: </strong>By entering your name below and
+                        approving or declining this form you are acknowledging your decision regarding
+                        this application for sabbatical leave.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow241" name="quickInputsRow" class="text-left row chancellor ">
+                <div id="quickInputsColumn242" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="chancellorSign">Chancellor: Please Enter Your Name</label>
+                        <input id="chancellorSign" name="chancellorSign"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn244" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="chancellorSignDate">Date</label>
+                        <input id="chancellorSignDate" name="chancellorSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col252" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="ele253" name="ele253" class="text-left  ">Peter M. Provenzano, Chancellor</p>
+                </div>
+                <div id="col246" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_248" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow273" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn274" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall275" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow277" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn278" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="departmentGUID">departmentGUID (hidden)</label>
+                        <input id="departmentGUID" name="departmentGUID"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col290" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formCode">formCode (hidden)</label>
+                        <input id="formCode" name="formCode" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col298" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="chancellorAdminEmails">chancellorAdminEmails (hidden)</label>
+                    <textarea id="chancellorAdminEmails"
+                    name="chancellorAdminEmails" class="text-left  "></textarea>
+                </div>
+                <div id="col353" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sabbaticalApprovalStatus">sabbaticalApprovalStatus (hidden)</label>
+                        <input id="sabbaticalApprovalStatus"
+                        name="sabbaticalApprovalStatus" class="text-left  " />
+                    </div>
+                </div>
+                <div id="col360" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hrActorEmail">hrActorEmail (hidden)</label>
+                        <input id="hrActorEmail" name="hrActorEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col361" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="provActorEmail">provActorEmail (hidden)</label>
+                        <input id="provActorEmail" name="provActorEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col362" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="chancActorEmail">chancActorEmail (hidden)</label>
+                        <input id="chancActorEmail" name="chancActorEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col302" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele303" name="ele303" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow378" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn379" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeName">employeeName (hidden)</label>
+                        <input id="employeeName" name="employeeName"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col383" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorGUID">supervisorGUID (hidden)</label>
+                        <input id="supervisorGUID" name="supervisorGUID"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

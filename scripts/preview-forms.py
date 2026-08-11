@@ -25,13 +25,13 @@ USAGE
 ---------------------------------------
 
 # 1. Default (uses built-in markdown file)
-python preview-forms.py
+python scripts/preview-forms.py
 
 # 2. Specify a markdown file
-python preview-forms.py --markdown-file "required.md"
+python scripts/preview-forms.py --markdown-file "required.md"
 
 # 3. Use a form ID range instead of a file
-python preview-forms.py --min-form-id 1 --max-form-id 5
+python scripts/preview-forms.py --min-form-id 1 --max-form-id 290
 
 ---------------------------------------
 NOTES
@@ -67,11 +67,11 @@ python scripts/preview-forms.py --min-form-id 1 --max-form-id 283
 BASE_URL = "https://oaklandcccentral.etrieve.cloud"
 
 # URL pattern for opening a specific form's settings page.
-FORM_SETTINGS_URL_TEMPLATE = BASE_URL + "/Index#/settings/forms/{form_id}"
+FORM_SETTINGS_URL_TEMPLATE = BASE_URL + "/Index#/settings/forms/{form_id}/preview"
 # FORM_SETTINGS_URL_TEMPLATE = BASE_URL + "/Index#/settings/forms/{form_id}/preview"
 
 # Default markdown file that contains the form IDs.
-DEFAULT_MARKDOWN_FILE = "scripts/required.md"
+DEFAULT_MARKDOWN_FILE = ""
 
 # Local Chrome debugging URL used by Playwright to attach to Chrome.
 DEFAULT_CDP_URL = "http://127.0.0.1:9222"

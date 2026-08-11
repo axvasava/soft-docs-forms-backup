@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row75" class="text-left row fd-form-masthead ">
+                <div id="col76" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn77" name="revisedOn" class="col-sm-12 text-right  ">Revised </span>
+                </div>
+                <div id="col78" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele79" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col80" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele81" name="ele21" class="text-left form-title ">Athletics Release of Liability, Indemnification, and Assumption of Risk</h1>
+                </div>
+                <div id="col82" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele83" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row71" class="text-left row ">
+                <div id="col72" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote73" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow12" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn13" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Student Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn15" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Student ID</label>
+                        <input id="originatorErpId" name="originatorErpId" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn17" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <label for="studentSport">Student Sport</label>
+                    <select id="studentSport" name="studentSport" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Women's Volleyball">Women's Volleyball</option>
+                        <option value="Men's Golf">Men's Golf</option>
+                        <option value="Men's Cross Country">Men's Cross Country</option>
+                        <option value="Women's Cross Country">Women's Cross Country</option>
+                        <option value="Women's Basketball">Women's Basketball</option>
+                        <option value="Men's Basketball">Men's Basketball</option>
+                        <option value="Softball">Softball</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn19" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">Date</label>
+                        <input id="originationDate" name="originationDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow34" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn35" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dateOfBirth">Date of Birth</label>
+                        <input id="dateOfBirth" name="dateOfBirth" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn37" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="overEighteen">Over 18?</label>
+                        <input id="overEighteen" name="overEighteen" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow51" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( overEighteen() == 'No' ) ) ">
+                <div id="quickInputsColumn52" name="quickInputsColumn1" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="parentEmail">Parent Email</label>
+                        <input id="parentEmail" name="parentEmail" class="text-left  "
+                        type="text" data-bind="email" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickParagraphRow22" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn23" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "><span id="quickParagraphElement24" name="quickParagraphElement" class="text-left  "><p>As consideration for permitting me to participate in <strong><u><span data-bind="html:studentSport"></span>
+                    </u>
+                    </strong>(hereafter the “Program”) offered by Oakland Community College (“College”),
+                    I agree as follows:</p>
+                    <p>To comply with and follow all protocols, guidelines, or other safety procedures;
+                        follow all safety rules of the program, instructor and College; and inform
+                        the instructor or College of conduct or condition with might endanger myself
+                        or others.</p>
+                    <p><strong>RISK FACTORS.</strong> I understand that “Program” activities can
+                        involve severe cardiovascular stress and violent physical contact. I understand
+                        that participation in program activities can involve certain risks, including,
+                        but not limited to: death; serious neck and spinal injuries resulting in
+                        complete or partial paralysis; concussion or brain damage; serious injury
+                        to virtually all bones, joints, muscles, and internal organs; and that
+                        equipment provided for my protection may be inadequate to prevent serious
+                        injury. In addition, I understand that participation in Program activities
+                        involves risks incidental thereto, including, but not limited to: travel
+                        to and from the site of the activity; participation at sites that may be
+                        remote from available medical assistance; the possible reckless conduct
+                        of other participants; exposure to communicable and infectious diseases,
+                        including, for example, HIV, hepatitis, and COVID-19, which can lead to
+                        illness or death; and risk of theft, loss, or damage to my personal property,
+                        which may occur at any time arising out of my participation in this activity.</p>
+                    <p><strong>HEALTH AND SAFETY.</strong> I have been advised to consult with
+                        a medical doctor with regard to my personal medical needs. I state that
+                        there are no health-related reasons or problems that preclude or restrict
+                        my participation in this program. I have obtained the required immunizations,
+                        if any.</p>
+                    <p>I recognize that College is not obligated to attend to any of my medical
+                        or medication needs, and I assume all risk and responsibility therefore.
+                        In case of a medical emergency occurring during my participation in this
+                        program, I authorize in advance the representative of the College to secure
+                        whatever treatment is necessary, including the administration of an anesthetic
+                        and surgery. College may (but is not obligated to) take any actions it
+                        considers to be warranted under the circumstances regarding my health and
+                        safety. Such actions do not create a special relationship between the OCC
+                        and me. I release the OCC, its trustees, it officers, officials, employees,
+                        volunteers, students, agents and assigns form all liability for any bodily
+                        injury or damage I sustain as a result of any medical care that I receive
+                        resulting from my participation in program, as well as any medical treatment
+                        decision or recommendation made by an employee or agent of the OCC. I agree
+                        to pay all expenses relating thereto and release College form any liability
+                        for any actions.</p>
+                    <p><strong>ASSUMPTION OF THE RISK.</strong> I understand by participating
+                        in this Program, which I do voluntarily for my own personal benefit, and
+                        with knowledge for the risks and dangers, I expressly and voluntarily consent
+                        and agree to assume all risks of participation in the Program and accept
+                        full responsibility for all damages or injury that may arise out of or
+                        result from my participation in the Program. RELEASE OF LIABILITY AND INDEMNIFICATION.
+                        I, on behalf of myself, my heirs, executors, agents, administrators, assigns
+                        and all other persons claiming through me, voluntarily agree to and hereby
+                        knowingly, fully and completely waive and release College, its elected
+                        and appointed officials, officers, directors, employees, students, affiliates,
+                        subsidiaries, agents or volunteers from any and all claims, demands, causes
+                        of action that might hereafter be asserted, arising out of, or in any way
+                        connected with, my participation in the Program. This waiver and release
+                        includes, but shall not be limited to, waiver of the right to initiate,
+                        proceed with, or participate in any state or federal lawsuit, any administrative
+                        complaints, statutory or common law claims, or civil rights charges, that
+                        may arise against the College, its trustees, its officers, directors, employees,
+                        parents, affiliates, subsidiaries or agents out of or in connection with
+                        my participation. I also agree to defend, protect, indemnify and hold harmless
+                        College, its trustees, its officers, directors, employees, parents, affiliates,
+                        subsidiaries or agents from any and all claims, demands, causes of action
+                        that might hereafter be asserted, arising out of, or in any way connected
+                        with, my participation. I agree and acknowledge that I am under no pressure
+                        or duress to sign this release, and that I have been given reasonable opportunity
+                        to review this form.</p>
+                    <p><strong>INSURANCE.</strong> I understand College does not provide personal/private
+                        insurance, but does provide third party participant insurance up to $1,000.
+                        Medical/Health expenses exceeding $1,000 and/or not covered by personal/private
+                        insurance are my sole responsibility.</p>
+                    <p><strong>INDEPENDENT ACTIVITY.</strong> I understand that College is not
+                        responsible for any loss or damage I may suffer when I am traveling independently
+                        or I am otherwise separated or absent from any College activity. In addition,
+                        I understand that any travel that I do independently on my own before or
+                        after the College-sponsored program in entirely at my own expense and risk.</p>
+                    <p><strong>SEVERABILITY.</strong> This Release represents the complete understanding
+                        between the parties regarding these issues addressed herein and no oral
+                        representations, statements, or inducements have been made apart from this
+                        Release with respect to the issues herein. If any provision of this Release
+                        is held to be unlawful, void, voidable, or for any reason unenforceable,
+                        then that provision shall be deemed severable from this Release and shall
+                        not affect the validity and enforceability of any remaining provisions.</p>
+                    <p><strong>SIGNATURE.</strong> I indicate that by my signature below that
+                        I have read the terms and conditions of participation and agree to abide
+                        by them. I have carefully read this Release Form and acknowledge that I
+                        understand it. No representations, statements, or inducements, oral or
+                        written, apart from the foregoing written statement, have been made. This
+                        Release Form shall be governed by the laws of the State of Michigan which
+                        shall be the forum for any lawsuits filed under or incident to this Release
+                        Form of to the program</p>
+                    </span>
+                </div>
+            </div>
+            <div id="quickInputsRow27" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn28" name="quickInputsColumn1" class="col-xs-12 col-sm-9 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSignature">Signature of Student</label>
+                        <input id="studentSignature" name="studentSignature"
+                        class="text-left  " required="required" type="text" data-bind="readonly: { packageParam: ['ESign'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn30" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="signatureDate">Signature Date</label>
+                        <input id="signatureDate" name="signatureDate" class="text-left  "
+                        type="text" data-bind="originationDate" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow2766" name="quickInputsRow" class="text-left row "
+            data-bind="show: { packageParam: ['ESign'] } ">
+                <div id="quickInputsColumn286" name="quickInputsColumn1" class="col-xs-12 col-sm-9 text-left  ">
+                    <div class="text-left  ">
+                        <label for="parentSignature">Signature of Parent/Guardian (Under 18)</label>
+                        <input id="parentSignature"
+                        name="parentSignature" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn306" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="signatureDateParent">Signature Date</label>
+                        <input id="signatureDateParent" name="signatureDateParent"
+                        class="text-left  " type="text" data-bind="originationDate" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow63" name="quickInputsRow" class="text-left row "
+            hidden="">
+                <div id="quickInputsColumn64" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="AcademicYear">Academic Year</label>
+                        <input id="AcademicYear" name="AcademicYear" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

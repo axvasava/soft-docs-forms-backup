@@ -31,13 +31,15 @@ DEFAULT_MARKDOWN_FILE = ""
 CURRENT_DATE = datetime.now().strftime("%Y-%m-%d")
 
 # Output files
-OUTPUT_JSON_FILE = Path(f"./form-details/output/form-details-{CURRENT_DATE}.json")
+OUTPUT_JSON_FILE = Path(f"./form-details/output/{CURRENT_DATE}-form-details.json")
 ERROR_LOG_FILE = Path("./logs/form-details-errors.log")
 
 # Chrome / Playwright setup
 DEFAULT_CDP_URL = "http://127.0.0.1:9222"
 CHROME_PATH = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 CHROME_USER_DATA_DIR = Path.home() / "AppData/Local/ChromePlaywrightSoftdocs"
+
+VERSION_SUFFIX_PATTERN = re.compile(r"\bV\d+$", re.IGNORECASE)
 
 # Timing values (ms unless noted)
 PAGE_LOAD_TIMEOUT_MS = 5000
@@ -208,24 +210,15 @@ def get_form_details(page: Page, form_id: int) -> dict:
 
 # ---------- FILE WRITING ----------
 
-def append_to_json_file(file_path: Path, data: dict) -> None:
+def write_json_file(file_path: Path, data) -> None:
     """
-    Append a record to a JSON array file.
-    Creates file if missing.
+    Write the final JSON output file.
     """
-    if file_path.exists():
-        try:
-            existing_data = json.loads(file_path.read_text(encoding="utf-8"))
-            if not isinstance(existing_data, list):
-                existing_data = []
-        except json.JSONDecodeError:
-            existing_data = []
-    else:
-        existing_data = []
 
-    existing_data.append(data)
+    file_path.parent.mkdir(parents=True, exist_ok=True)
 
-    file_path.write_text(json.dumps(existing_data, indent=2), encoding="utf-8")
+    with file_path.open("w", encoding="utf-8") as file:
+        json.dump(data, file, indent=2)
 
 
 def write_error_log(file_path: Path, form_id: int, error_message: str) -> None:
@@ -242,12 +235,14 @@ def write_error_log(file_path: Path, form_id: int, error_message: str) -> None:
 
 # ---------- MAIN LOOP ----------
 
-def scan_forms(page: Page, form_ids: list[int]) -> None:
+def scan_forms(page: Page, form_ids: list[int]) -> list[dict]:
     """
     Loop through forms:
-    open → extract → save → continue
+    open → extract → collect → continue
     """
+
     total_forms = len(form_ids)
+    forms = []
 
     for index, form_id in enumerate(form_ids, start=1):
         print(f"\n[{index}/{total_forms}] Processing form ID {form_id}...")
@@ -259,9 +254,8 @@ def scan_forms(page: Page, form_ids: list[int]) -> None:
 
             print(f"  - form_name: {form_details['form_name']}")
 
-            append_to_json_file(OUTPUT_JSON_FILE, form_details)
+            forms.append(form_details)
 
-            # Small delay to avoid SPA timing issues
             page.wait_for_timeout(300)
 
         except Exception as exc:
@@ -272,6 +266,8 @@ def scan_forms(page: Page, form_ids: list[int]) -> None:
             write_error_log(ERROR_LOG_FILE, form_id, error_message)
 
             page.wait_for_timeout(300)
+
+    return forms
 
 
 # ---------- INPUT HANDLING ----------
@@ -295,6 +291,47 @@ def get_form_ids(args: argparse.Namespace) -> list[int]:
 
     return read_form_ids_from_file(file)
 
+def dedupe_forms_by_form_name(forms: list[dict]) -> list[dict]:
+    """
+    Remove consecutive duplicate form names.
+
+    Keeps the first/lower form_id.
+    Removes later/higher form_ids with the same consecutive form_name.
+    """
+
+    sorted_forms = sorted(forms, key=lambda form: int(form["form_id"]))
+
+    unique_forms = []
+    previous_form_name = None
+
+    for form in sorted_forms:
+        current_form_name = form.get("form_name")
+
+        if current_form_name == previous_form_name:
+            continue
+
+        unique_forms.append(form)
+        previous_form_name = current_form_name
+
+    return unique_forms
+
+def has_version_suffix(form_name: str) -> bool:
+    """Return true when the form name ends with a version like V1, V2, or V10."""
+
+    if not form_name:
+        return False
+
+    return bool(VERSION_SUFFIX_PATTERN.search(form_name.strip()))
+
+
+def add_new_forms_builder_field(forms: list[dict]) -> list[dict]:
+    """Add new_forms_builder based on whether form_name ends with a version number."""
+
+    for form in forms:
+        form_name = form.get("form_name", "")
+        form["new_forms_builder"] = has_version_suffix(form_name)
+
+    return forms
 
 # ---------- ENTRY POINT ----------
 
@@ -322,9 +359,17 @@ def main() -> None:
 
             fail_fast_auth_check(page, form_ids[0])
 
-            scan_forms(page, form_ids)
+            forms = scan_forms(page, form_ids)
+            unique_forms = dedupe_forms_by_form_name(forms)
+            unique_forms = add_new_forms_builder_field(unique_forms)
+
+            write_json_file(OUTPUT_JSON_FILE, unique_forms)
 
             print("\nDone.")
+            print(f"Original count: {len(forms)}")
+            print(f"Unique count: {len(unique_forms)}")
+            print(f"Removed count: {len(forms) - len(unique_forms)}")
+            print(f"Output written to: {OUTPUT_JSON_FILE}")
 
     except Exception as exc:
         print(f"ERROR: {str(exc).strip()}")

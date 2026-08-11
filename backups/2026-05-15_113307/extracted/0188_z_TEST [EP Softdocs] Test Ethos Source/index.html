@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col3" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele4" name="ele37" class="text-right  "><i>Revised 01/26</i></h5>
+                </div>
+                <div id="HeaderLeft5" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo6" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    alt="Oakland Community College Logo" />
+                </div>
+                <div id="HeaderRight7" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_8" name="h2_27" class="text-center  "><b>Test Ethos Source</b></h2>
+                </div>
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele10" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row16" class="text-left row ">
+                <div id="col17" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSearch">Student Search (Enter ID)</label>
+                        <input id="studentSearch" name="studentSearch"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="col19" class="col-xs-12 col-sm-6 text-left  " style=" padding:0px 0px 0px 0px;  margin:20px 0px 0px 0px;  margin-top: 26px ">
+                    <button id="studentSearchButton" name="studentSearchButton" class="col-xs- col-sm- text-left btn btn-primary "
+                    style="" undefined="">Search</button>
+                </div>
+            </div>
+            <div id="row27" class="text-left row ">
+                <div id="col28" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentName">Student Name</label>
+                        <input id="studentName" name="studentName" class="text-left  "
+                        readonly="true" />
+                    </div>
+                    <div class="text-left hidden ">
+                        <label for="personGUID2">PersonGUID (Hidden)</label>
+                        <input id="personGUID2" name="personGUID2"
+                        class="text-left hidden " />
+                    </div>
+                </div>
+                <div id="col29" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentEmail">Student Email</label>
+                        <input id="studentEmail" name="studentEmail" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row291" class="text-left row ">
+                <div id="col292" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Student ID</label>
+                        <input id="originatorErpId" name="originatorErpId" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col295" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="personGUID">personGUID</label>
+                        <input id="personGUID" name="personGUID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col298" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ethosCatalogID">ethosCatalogID</label>
+                        <input id="ethosCatalogID" name="ethosCatalogID"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col301" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="programGUID">programGUID</label>
+                        <input id="programGUID" name="programGUID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col304" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentGUID">studentGUID</label>
+                        <input id="studentGUID" name="studentGUID" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

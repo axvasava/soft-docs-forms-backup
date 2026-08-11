@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="loadingSpinner.css" />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row121" class="text-left row fd-form-masthead ">
+                <div id="col122" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn123" name="revisedOn" class="col-sm-12 text-right  ">Revised 04/25</span>
+                </div>
+                <div id="col124" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele125" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col126" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele127" name="ele21" class="text-left form-title ">Vacation Request</h1>
+                </div>
+                <div id="col128" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele129" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row117" class="text-left row ">
+                <div id="col118" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote119" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow8" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn9" name="quickInputsColumn1" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Employee Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col53" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">ID</label>
+                        <input id="originatorErpId" name="originatorErpId" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col11" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">Request Date</label>
+                        <input id="originationDate" name="originationDate"
+                        class="text-left  " required="required" data-bind="originationDate" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow57" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn58" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorName">Supervisor Name</label>
+                        <input id="supervisorName" name="supervisorName"
+                        class="text-left  " required="required" type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: true, labelMask: ['UserName', ' | ', 'Email'], selectedMask: ['UserName'],  formFields: {'routeSupervisorEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn60" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="routeSupervisorEmail">Supervisor Email</label>
+                        <input id="routeSupervisorEmail" name="routeSupervisorEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow15" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn16" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="title">Title</label>
+                        <input id="title" name="title" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn18" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="department">Department</label>
+                        <input id="department" name="department" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickParagraphRow109" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn110" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_111" name="p_12139" class="text-left  "><strong>Note to Employee: </strong>By the entering the same Request Start
+                        Date and Request End Date, you will have the option to enter hours for
+                        a Partial Day.</p>
+                </div>
+            </div>
+            <div id="vacationDatesList" name="vacationDatesList" class="text-left row "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addDaysBtn',  minLength: 1,  maxLength: 10 } ">
+                <div id="quickInputsColumn22" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vacatationStart">Request Start Date</label>
+                        <input id="vacatationStart" name="vacatationStart"
+                        class="text-left  " type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn24" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vacationEnd">Request End Date</label>
+                        <input id="vacationEnd" name="vacationEnd" class="text-left  "
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col30" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vacationReturn">Return Date</label>
+                        <input id="vacationReturn" name="vacationReturn" class="text-left  "
+                        required="required" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col62" class="col-xs-12 col-sm-1 text-center  " style=" margin-top:30px; ">
+                    <button id="removeRowBtn" name="removeRowBtn" class="text-left  " style=""
+                    undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col81" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele82" name="ele82" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+                <div id="checkboxColumn" name="col96" class="col-xs-12 col-sm-3 text-center partialDay "
+                style=" margin-top: 0px; " xdata-bind="visible: ( ( vacationEnd() == vacatationStart()  )  &amp;&amp;  ( vacationEnd() != '' )  &amp;&amp;  ( vacatationStart() () != '') ) ">
+                    <input id="partialDay" name="partialDay" class="text-left  " style=" transform: scale(1.5);&#10;display: inline-flex;&#10;align-items: flex-start;&#10;margin-left: 10px;&#10;margin-right: 10px; "
+                    type="checkbox" />
+                    <label for="partialDay">Partial Day</label>
+                </div>
+                <div id="numberOfHoursColumn" name="col98" class="col-xs-12 col-sm-6 text-left partialDay "
+                style=" margin-top: -20px; " data-bind="visible: ( ( partialDay() ) ) ">
+                    <div class="text-left  ">
+                        <label for="numberOfHours">Please Enter Number of Hours for this Day</label>
+                        <input id="numberOfHours"
+                        name="numberOfHours" class="text-left  " data-bind="numeric: { allowNegative: false } "
+                        />
+                    </div>
+                </div>
+                <div id="col105" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele106" name="ele106" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow66" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn67" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <button id="addDaysBtn" name="addDaysBtn" class="text-left btn btn-primary "
+                    style="" undefined="">Add additional Day(s)</button>
+                </div>
+            </div>
+            <div id="row34" class="text-left row ">
+                <div id="col35" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele36" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow38" name="quickHeadingRow" class="text-left row declineHide "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn39" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall40" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Reason for Decline</h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow46" name="quickTextAreaRow" class="text-left row declineHide ">
+                <div id="quickTextAreaColumn47" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="declineReason">Reason for Decline</label>
+                    <textarea id="declineReason" name="declineReason"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="row50" class="text-left row declineHide ">
+                <div id="col51" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele52" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow85" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn86" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left loading ">
+                        <input id="quickInputsText87" name="quickInputsText1" class="text-left loading "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow89" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn90" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall91" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow93" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn94" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="requestDate">requestDate (hidden)</label>
+                        <input id="requestDate" name="requestDate"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

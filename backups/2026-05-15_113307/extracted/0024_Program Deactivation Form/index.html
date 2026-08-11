@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row234" class="text-left row fd-form-masthead ">
+                <div id="col235" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn236" name="revisedOn" class="col-sm-12 text-right  ">Revised 08/24</span>
+                </div>
+                <div id="col237" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele238" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col239" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele240" name="ele21" class="text-left form-title with-subtitle ">Program Deactivation</h1><span id="ele241" name="ele23" class="text-left form-subtitle ">Office of Institutional Effectiveness
+</span>
+                </div>
+                <div id="col242" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele243" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row245" class="text-left row ">
+                <div id="col246" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote247" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="row183" class="text-left row ">
+                <div id="quickListUnorderedColumn184" name="quickListUnorderedColumn"
+                class="col-xs-12 col-sm-12 text-left  ">
+                    <ul id="quickListUnorderedElement185" name="quickListUnorderedElement"
+                    class="text-left  ">
+                        <li>OCC retains only curriculum relevant to community need and student interest </li>
+                        <li>Programs may be recommended for deactivation if there is no longer evidence
+                            of community need, student interest, or if students are not successfully
+                            completing the degree or certificate over time. </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quickHeadingRow69151519192222" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn70151922" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingLargest71151922" name="quickHeadingLargest71151922"
+                    class="text-left  "><b>***Note there are times when program deactivation decisions will occur outside of the catalog cycle and associated deadlines.  </b></h4>
+                </div>
+            </div>
+            <div id="quickHeadingRow1482020" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn14920" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall15020" name="quickHeadingSmall15020" class="text-center  "
+                    style=" font-weight: bold; ">Originator Details</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow167" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn168" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Originator Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn170" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left hidden ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Employee ID</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn172" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="position">Position</label>
+                        <input id="position" name="position" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col194" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="department">Department</label>
+                        <input id="department" name="department" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col176" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">Email</label>
+                        <input id="originatorEmail" name="originatorEmail" class="text-left  "
+                        readonly="true" data-bind="email" />
+                    </div>
+                </div>
+                <div id="col177" class="col-xs-12 col-sm-6 text-left hidden ">
+                    <div class="text-left  ">
+                        <label for="personalPhone">Phone Number</label>
+                        <input id="personalPhone" name="personalPhone" class="text-left  "
+                        readonly="true" data-bind="mask: 'phone' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow148" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn149" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall150" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Proposal For Deactivation</h4>
+                </div>
+            </div>
+            <div id="quickDropdownRow212" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn213" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="academicYear">Current Academic Year</label>
+                    <select id="academicYear" name="academicYear"
+                    class="text-left  " required="required" data-bind="dynamicYear: { format: 'YYYY-YY[-1,  1]' } ">
+                        <option value=""></option>
+                        <option value="Option1">Option1</option>
+                        <option value="Option2">Option2</option>
+                        <option value="Option3">Option3</option>
+                        <option value="Option4">Option4</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow92" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn93" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="programTitle">Program Title</label>
+                        <input id="programTitle" name="programTitle" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { integrationSource: 'OIE_Program_List',  clearOnFocus: true,  labelMask: ['Title', ' - ', 'Code'],  selectedMask: ['Title'],  formFields: {'programCode':'Code'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn95" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="programCode">Program Code</label>
+                        <input id="programCode" name="programCode" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow6915151919" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn701519" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingLargest711519" name="quickHeadingLargest711519" class="text-left  "><b>Select the dean of the program</b></h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow130" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn131" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement132" name="quickParagraphElement" class="text-left  "><i>Search by the dean's name, program type, code, or ReviewID to select the correct dean. The form will be routed to them for approval before finalization.</i>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow9218182020" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn931820" name="quickInputsColumn931820" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dean">Dean Name</label>
+                        <input id="dean" name="dean" class="text-left  " required="required"
+                        type="text" data-bind="autocomplete: { localSource: 'uniqueDeanList',  clearOnFocus: true,  validate: true,  labelMask: ['Dean'],  formFields: {'deanEmail':'Dean_Email', 'deanDepartment':'ReviewName', 'ReviewID':'ReviewID'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn951820" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanEmail">Dean Email</label>
+                        <input id="deanEmail" name="deanEmail" class="text-left  "
+                        required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col11520" class="col-xs-12 col-sm-6 text-left hidden ">
+                    <div class="text-left  ">
+                        <label for="deanDepartment">Dean Department</label>
+                        <input id="deanDepartment" name="deanDepartment"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="col133" class="col-xs-12 col-sm-6 text-left hidden ">
+                    <div class="text-left  ">
+                        <label for="ReviewID">Review ID / Program Title</label>
+                        <input id="ReviewID" name="ReviewID"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow1482121" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn14921" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall15021" name="quickHeadingSmall15021" class="text-center  "
+                    style=" font-weight: bold; ">Rationale</h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow80" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn81" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="rationale">What is the rationale for deactivating this program?</label>
+                    <textarea
+                    id="rationale" name="rationale" class="text-left autosizeareas " required="required"
+                    placeholder="Type in the rationale for deactivating the program. This text area will auto expand as you type. "></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow14821212020" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1492120" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1502120" name="quickHeadingSmall1502120" class="text-center  "
+                    style=" font-weight: bold; ">Deactivation Plan</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow121414" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn1314" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  "><span id="quickInputsText1414" name="quickInputsText1414" class="text-left deactivation-form "><div class="form-group"> 
+    <label for="legalIssuesInput">1. Based on the discussion with Human Resources, and in consideration of the FMA, what potential contractual &amp; legal issues are associated with deactivation of this program?</label>
+    <textarea class="form-control autosizeareas" id="legalIssuesInput" rows="3" required=""></textarea>
+</div>
+
+<div class="form-group">
+    <label for="currentStudentsInput">2. How many students are currently in the program? (attach degree audit)</label>
+    <div class="row">
+        <div class="col-md-4">
+            <input type="number" class="form-control" id="currentStudentsInput" required="" />
+        </div>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="studentsToCompleteInput">3. Approximately how many students will be given the opportunity to complete this program?</label>
+    <div class="row">
+        <div class="col-md-4">
+            <input type="number" class="form-control" id="studentsToCompleteInput" required="" />
+        </div>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="completionOptionsInput">4. What options will be offered to students for completing this program? (e.g. course substitutions)</label>
+    <textarea class="form-control autosizeareas" id="completionOptionsInput" rows="3" required=""></textarea>
+</div>
+
+<div class="form-group">
+    <label for="lastTermNewStudentsInput">5. Which term and year will be the very last term accepting new students into this program?</label>
+    <div class="form-row">
+        <div class="col-md-6">
+            <input type="text" class="form-control" id="lastTermNewStudentsTerm" placeholder="Term (e.g., FA)" maxlength="2" required="" />
+        </div>
+        <div class="col-md-6">
+    <select class="form-control" id="lastTermNewStudentsYear" data-bind="dynamicYear: { format: 'YYYY-YY[0,  3]' } " required="">
+        <option value=""></option>
+    </select>
+        </div>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="lastTermCompletionInput">6. Which term and year will be the very last term for students to complete this program?</label>
+    <div class="form-row">
+        <div class="col-md-6">
+            <input type="text" class="form-control" id="lastTermCompletionTerm" placeholder="Term (e.g., FA)" maxlength="2" required="" />
+        </div>
+        <div class="col-md-6">
+    <select class="form-control" id="lastTermCompletionYear" data-bind="dynamicYear: { format: 'YYYY-YY[0,  3]' } " required="">
+        <option value=""></option>
+    </select>
+        </div>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="deactivatedCoursesInput">7. Which courses will be deactivated along with this program?</label>
+    <textarea class="form-control autosizeareas" id="deactivatedCoursesInput" rows="3" required=""></textarea>
+</div>
+
+<div class="form-group">
+    <label for="retainedCoursesRationaleInput">8. If any program-specific courses are retained, what is the rationale for retaining these courses?</label>
+    <textarea class="form-control autosizeareas" id="retainedCoursesRationaleInput" rows="3" required=""></textarea>
+</div>
+
+<div class="form-group">
+    <label for="fundingSourcesInput">9. Were federal, state or private grant funds used in whole or in part to support this program? If yes, please detail.</label>
+    <textarea class="form-control autosizeareas" id="fundingSourcesInput" rows="3" required=""></textarea>
+</div>
+
+<div class="form-group">
+    <label for="equipmentDispositionInput">10. Will any equipment need to be sold or moved?</label>
+    <div class="form-check form-check-inline">
+        <input type="radio" id="equipmentDispositionYes" name="equipmentDisposition" value="yes" class="form-check-input" />
+        <label for="equipmentDispositionYes" class="form-check-label">Yes</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input type="radio" id="equipmentDispositionNo" name="equipmentDisposition" value="no" class="form-check-input" checked="" />
+        <label for="equipmentDispositionNo" class="form-check-label">No</label>
+    </div>
+    <textarea class="form-control autosizeareas" id="equipmentDispositionDescription" rows="3" placeholder="Describe if Yes"></textarea>
+</div>
+
+<div class="form-group">
+    <label for="resourceReallocationInput">11. Will any resources need to be reallocated?</label>
+    <div class="form-check form-check-inline">
+        <input type="radio" id="resourceReallocationYes" name="resourceReallocation" value="yes" class="form-check-input" />
+        <label for="resourceReallocationYes" class="form-check-label">Yes</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input type="radio" id="resourceReallocationNo" name="resourceReallocation" value="no" class="form-check-input" checked="" />
+        <label for="resourceReallocationNo" class="form-check-label">No</label>
+    </div>
+    <textarea class="form-control autosizeareas" id="resourceReallocationDescription" rows="3" placeholder="Describe if Yes"></textarea>
+</div>
+</span>
+                </div>
+            </div>
+            <div id="quickInputsRow119" name="quickInputsRow" class="text-left row "
+            style="overflow: auto;  padding:0px 0px 0px 0px;  margin:10px 0px 10px 0px; ">
+                <div id="quickInputsColumn120" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  "><span id="quickInputsText121" name="quickInputsText1" class="text-left deactivation-form ">
+<table class="table table-bordered deactivation-table w-100">
+  <thead class="thead-light"> 
+    <tr>
+      <th class="text-left p-2">GROUP</th>
+      <th class="text-left p-2">TASK</th>
+      <th class="text-left p-2">PERSON RESPONSIBLE</th>
+      <th class="text-left p-2">TIMELINE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="p-2" rowspan="11">NOTIFICATIONS</td>
+      <td class="p-2">Notify the Higher Learning Commission (HLC)</td>
+      <td class="p-2">IE - Director of Assessment, Accreditation &amp; Quality</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-hlc" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2">Notify executive cabinet</td>
+      <td class="p-2">Provost/Associate Provost</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-exec-cabinet" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2">Notify dean's cabinet</td>
+      <td class="p-2">Provost/Associate Provost</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-dean-cabinet" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2">Notify program faculty</td>
+      <td class="p-2">Dean</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-program-faculty" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2">Notify counseling</td>
+      <td class="p-2">Dean</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-counseling" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2">Notify admissions</td>
+      <td class="p-2">Dean</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-admissions" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2">Notify student support specialists and student service specialists college-wide</td>
+      <td class="p-2">Dean</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-student-services" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2">Notify Associate Dean(s) of Students Services and Associate Registrar</td>
+      <td class="p-2">Dean</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-associate-dean-registrar" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2">Notify Curriculum &amp; Instruction Committee (CIC)*</td>
+      <td class="p-2">IE - Director of Assessment, Accreditation &amp; Quality</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-cic" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2">Notify state if program is state Perkins approved</td>
+      <td class="p-2">IE - Director of Analytical Studies</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-state-perkins" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2">If articulation agreements are active, notify secondary partners</td>
+      <td class="p-2">Associate Academic Dean, Dual Enrollment and K-12 Partnerships</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-articulation" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2" rowspan="5">CLEANUP</td>
+      <td class="p-2">Locate and destroy hardcopy promotional material</td>
+      <td class="p-2">Dean/Registrar/Marketing</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-promotional-material" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2">Remove program from online application</td>
+      <td class="p-2">Registrar</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-online-application" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2">Remove program from OCC websites</td>
+      <td class="p-2">Registrar / Marketing</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-occ-websites" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2">Remove from review and assessment cycle</td>
+      <td class="p-2">IE - Curriculum / Assessment Analyst</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-review-assessment" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+    <tr>
+      <td class="p-2">Follow matriculating students through teach-out and notify HLC</td>
+      <td class="p-2">Dean &amp; IE - Director of Assessment, Accreditation &amp; Quality</td>
+      <td class="p-2"><input type="date" class="form-control timeline-input" id="timeline-teach-out" data-bind="required: { packageParam: ['WFIEDirector'] }" /></td>
+    </tr>
+  </tbody> 
+</table>
+
+<footer style="margin-top: 20px; font-size: 12px;">
+  *Note: There are times when program deactivation decisions will occur outside of the catalog cycle and associated deadlines.
+</footer>
+</span>
+                </div>
+            </div>
+            <div id="row888" name="" class="text-left row ">
+                <div id="col98" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele108" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow1482121202020" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn149212020" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall150212020" name="quickHeadingSmall150212020"
+                    class="text-center  " style=" font-weight: bold; ">Proposal For Deactivation</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow17" name="quickInputsRow" class="text-left row ">
+                <div id="col32" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="ele33" name="ele33" class="text-left  "><b>Academic Dean Signature </b></h5>
+                </div>
+                <div id="col35" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele36" name="ele36" class="text-left  "><i>By signing and approving below, I recommend the deactivation of this program. I confirm that the reasons for its deactivation are sound, that the faculty involved with the program have been duly consulted, and that a thorough plan for the program’s deactivation is in place and ready to be executed.</i>
+                    </p>
+                </div>
+                <div id="quickInputsColumn18" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicDeanSignature">Academic Dean Signature</label>
+                        <input id="academicDeanSignature" name="academicDeanSignature"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn20" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicDeanSignatureDate">Signature Date</label>
+                        <input id="academicDeanSignatureDate" name="academicDeanSignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row8" class="text-left row ">
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele10" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow148212120" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1492120" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1502120" name="quickHeadingSmall1502120" class="text-center  "
+                    style=" font-weight: bold; ">Approval For Deactivation</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow175566" name="quickInputsRow" class="text-left row ">
+                <div id="col3256" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="ele3356" name="ele3356" class="text-left  "><b>Provost/Associate Provost</b></h5>
+                </div>
+                <div id="col3556" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele3656" name="ele3656" class="text-left  "><i>By signing below, I approve the deactivation of this program.</i>
+                    </p>
+                </div>
+                <div id="quickInputsColumn1856" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="provostAssociateProvostSignature">Provost Associate Provost Signature</label>
+                        <input id="provostAssociateProvostSignature"
+                        name="provostAssociateProvostSignature" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn2056" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="provostAssociateProvostSignatureDate">Signature Date</label>
+                        <input id="provostAssociateProvostSignatureDate"
+                        name="provostAssociateProvostSignatureDate" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow17556677" name="quickInputsRow" class="text-left row ">
+                <div id="col32567" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="ele33567" name="ele33567" class="text-left  "><b>Accreditation Liaison Officer  </b></h5>
+                </div>
+                <div id="col35567" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele36567" name="ele36567" class="text-left  "><i>By signing below, I am in receipt of information regarding this program deactivation.</i>
+                    </p>
+                </div>
+                <div id="quickInputsColumn18567" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="accreditationLiaisonOfficerSignature">Accreditation Liaison Officer Signature</label>
+                        <input id="accreditationLiaisonOfficerSignature"
+                        name="accreditationLiaisonOfficerSignature" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn20567" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="accreditationLiaisonOfficerSignatureDate">Signature Date</label>
+                        <input id="accreditationLiaisonOfficerSignatureDate"
+                        name="accreditationLiaisonOfficerSignatureDate" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow6915151919222223" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn7015192223" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingRow691515191922222323" name="quickHeadingRow" class="text-left  "><b>***Note there are times when program deactivation decisions will occur outside of the catalog cycle and associated deadlines.  </b></h4>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

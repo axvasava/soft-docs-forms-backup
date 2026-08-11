@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <style>
+            .mileageRow {
+                border: 2px solid #365563;
+                border-radius: 15px;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+              .modal {
+                display: none;
+                position: fixed;
+                z-index: 1000;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.5);
+              }
+              .modal-content {
+                background-color: white;
+                margin: 15% auto;
+                padding: 20px;
+                border-radius: 5px;
+                width: 50%;
+                text-align: center;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+              }
+              .modal-content p {
+                font-size: 14px;
+                font-weight: bold;
+              }
+              .modal-button {
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+              }
+              .modal-button:hover {
+                background-color: #0056b3;
+              }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row449" class="text-left row fd-form-masthead ">
+                <div id="col450" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn451" name="revisedOn" class="col-sm-12 text-right  ">Revised 11/25</span>
+                </div>
+                <div id="col452" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele453" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col454" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele455" name="ele21" class="text-left form-title ">Mileage &amp; Expense Report</h1>
+                </div>
+                <div id="col456" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele457" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row445" class="text-left row ">
+                <div id="col446" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote447" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow19" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn20" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall21" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Employee Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow15" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn16" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="selfOrElse">Will you be submitting this form on behalf of another employee?</label>
+                    <select
+                    id="selfOrElse" name="selfOrElse" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+                <div id="col418" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="mileageQuestion">Are you filling in expenses for mileage, non-mileage, or both?</label>
+                    <select
+                    id="mileageQuestion" name="mileageQuestion" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Mileage">Mileage</option>
+                        <option value="Non-mileage">Non-mileage</option>
+                        <option value="Both">Both</option>
+                        </select>
+                </div>
+            </div>
+            <div id="quickParagraphRow31" name="quickParagraphRow" class="text-left row onBehalf "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn32" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_33" name="p_12139" class="text-left  "><strong>Note to Originator: </strong>Enter the employee ID of the person
+                        for whom you’re submitting this form. Then, press the search button to
+                        populate the information below.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow26" name="quickInputsRow" class="text-left row onBehalf ">
+                <div id="quickInputsColumn27" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSearch">Employee ID Search</label>
+                        <input id="employeeSearch" name="employeeSearch"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col29" class="col-xs-12 col-sm-2 text-left  " style=" margin-top:27px; ">
+                    <button id="employeeSearchButton" name="employeeSearchButton" class="text-left btn btn-primary btn-block "
+                    style="" undefined="">Search</button>
+                </div>
+            </div>
+            <div id="quickInputsRow43" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn44" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeName">Employee Name</label>
+                        <input id="employeeName" name="employeeName" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn46" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeID">Employee ID</label>
+                        <input id="employeeID" name="employeeID" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col396" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="jobTitle">Job Title</label>
+                        <input id="jobTitle" name="jobTitle" class="text-left  "
+                        data-bind="autocomplete: { localSource: 'personsPositionsList',  clearOnFocus: true,  labelMask: ['positionTitle', '|', 'campusTitle'],  selectedMask: ['positionTitle'],  formFields: {'campus':'campusTitle', 'departmentGUID':'positionDepartmentGUID', 'supervisorGUID':'supervisorGUID', 'department':'department'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn48" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="campus">Campus</label>
+                        <input id="campus" name="campus" class="text-left  " readonly="true"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn50" name="quickInputsColumn4" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="department">Department</label>
+                        <input id="department" name="department" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col52" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="repPeriodFrom">Reporting Period From Date</label>
+                        <input id="repPeriodFrom" name="repPeriodFrom"
+                        class="text-left  " required="required" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col273" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="repPeriodTo">Reporting Period To Date</label>
+                        <input id="repPeriodTo" name="repPeriodTo"
+                        class="text-left  " required="required" data-bind="datepicker: { minDate: 'repPeriodFrom' } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow1977" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn207" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall217" name="quickHeadingSmall217" class="text-center  "
+                    style=" font-weight: bold; ">Supervisor Information</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow407" name="quickParagraphRow" class="text-left row  "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn408" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_409" name="p_12139" class="text-left  "><strong>Note: </strong>If the Supervisor shown after selecting your Job
+                        Title is incorrect, please start typing to search for and select the correct
+                        Supervisor.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow76" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn77" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSelect">Please select a supervisor</label>
+                        <input id="supervisorSelect" name="supervisorSelect"
+                        class="text-left  " type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: true, labelMask: ['UserName', ' | ', 'Email'], selectedMask: ['UserName'],  formFields: {'supervisorEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col90" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorEmail">Supervisor Email</label>
+                        <input id="supervisorEmail" name="supervisorEmail"
+                        class="text-left  " required="required" readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow763232" name="quickInputsRow" class="text-left row ">
+                <div id="col426" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="secondApproverQ">Does there need to be a second approver for this form?</label>
+                    <select
+                    id="secondApproverQ" name="secondApproverQ" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+                <div id="quickInputsColumn7732" name="quickInputsColumn7732" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( secondApproverQ() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="secondApproverSearch">Please select a second approver</label>
+                        <input id="secondApproverSearch"
+                        name="secondApproverSearch" class="text-left  " type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: true, labelMask: ['UserName', ' | ', 'Email'], selectedMask: ['UserName'],  formFields: {'secondApproverEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col9032" name="col9032" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( secondApproverQ() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="secondApproverEmail">Second Approver Email</label>
+                        <input id="secondApproverEmail" name="secondApproverEmail"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow197710" name="quickHeadingRow" class="text-left row nonMileageExp "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn20710" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingRow19771010" name="quickHeadingRow" class="text-center  "
+                    style=" font-weight: bold; ">Expenses Other than Mileage</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow3126262828" name="quickParagraphRow" class="text-left row nonMileageExp "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn322628" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_332628" name="p_332628" class="text-left  "><strong>More than One GL Number:</strong> If any payment below needs to
+                        be charged to more than one GL Number, please first select 'No' from the
+                        'Will all entries below be under the same GL Account Number?' dropdown.
+                        Then click the 'Add Account Number' checkbox after each row to add up to
+                        3 GL Numbers per entry.
+                        <br />
+                        <br />
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow3132727" name="quickInputsRow" class="text-left row nonMileageExp ">
+                <div id="quickInputsColumn31427" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="sameAccountNonMileage">Will all entries below be under the same GL Account Number?</label>
+                    <select
+                    id="sameAccountNonMileage" name="sameAccountNonMileage" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+                <div id="quickInputsColumn31627" name="quickInputsColumn31627" class="col-xs-12 col-sm-3 text-left  "
+                data-bind="visible: ( ( sameAccountNonMileage() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="sameAccountNonMileageGL">Enter GL Account #</label>
+                        <input id="sameAccountNonMileageGL" name="sameAccountNonMileageGL"
+                        class="text-left  " required="required" type="text" data-bind="mask: '999-99-999999-99999' "
+                        />
+                    </div>
+                </div>
+                <div id="col31827" name="col31827" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( sameAccountNonMileage() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="sameAccountNonMileageGLDesc">Description</label>
+                        <input id="sameAccountNonMileageGLDesc" name="sameAccountNonMileageGLDesc"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col32127" name="col32127" class="col-xs-12 col-sm-3 text-left  "
+                data-bind="visible: ( ( sameAccountNonMileage() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="sameAccountNonMileageGLProjNum">Project Number</label>
+                        <input id="sameAccountNonMileageGLProjNum" name="sameAccountNonMileageGLProjNum"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col32527" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele32627" name="ele326" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="nonMileageExpenseRow" name="nonMileageExpenseRow" class="text-left row nonMileageExp "
+            style="overflow: auto;  border: 0px; " data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addNonMileageExpense',  removeButtonID: 'removeNonMileageExpense', maxLength: 15 } ">
+                <div id="col365" class="col-xs-12 col-sm-12 text-left  " style=" border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px "><span id="ele366" name="ele366" class="text-left  "><div class="col-xs-12 col-sm-2 text-left">
+    <div class="text-left">
+        <label for="nonMileageDate">Date</label>
+        <input id="nonMileageDate" class="text-left" type="text" required="required" data-bind="datepicker" />
+    </div>
+</div>
+<div class="col-xs-12 col-sm-10 text-left">
+    <div class="text-left">
+        <label for="nonMileagePaymentTo">Payment Made To</label>
+        <input id="nonMileagePaymentTo" class="text-left" type="text" required="required" />
+    </div>
+</div>
+<div class="col-xs-12 col-sm-12 text-left">
+    <div class="text-left">
+        <label for="nonMileagePurpose">Business Purpose / Attendees / Other Info</label>
+        <input id="nonMileagePurpose" class="text-left" required="required" />
+    </div>
+</div>
+<div class="col-xs-12 col-sm-3 text-left">
+    <div class="text-left">
+        <label for="nonMileageGLNum">GL Account Number</label>
+        <input id="nonMileageGLNum" class="text-left" type="text" data-bind="mask: '999-99-999999-99999'" required="required" />
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 text-left">
+    <div class="text-left">
+        <label for="nonMileageGLNumDesc">Description</label>
+        <input id="nonMileageGLNumDesc" class="text-left" readonly="" />
+    </div>
+</div>
+<div class="col-xs-12 col-sm-3 text-left">
+    <div class="text-left">
+        <label for="nonMileageProjNum">Project Number</label>
+        <input id="nonMileageProjNum" class="text-left" />
+    </div>
+</div>
+<div class="col-xs-12 col-sm-3 text-left" data-bind="visible: $root.sameAccountNonMileage() == 'Yes'">
+    <div class="text-left">
+        <label for="totalExpense">Total Expense</label>
+        <input id="totalExpense" class="text-left" type="text" required="required" data-bind="addOn: { type: 'prepend',  snippet: '$' } " />
+    </div>
+</div>
+<div class="col-xs-12 col-sm-3 text-left" data-bind="visible: $root.sameAccountNonMileage() == 'No'">
+    <div class="text-left">
+        <label for="nonMileageAmount">Amount</label>
+        <input id="nonMileageAmount" class="text-left" required="required data-bind=" addon:="" {="" type:="" 'prepend',="" snippet:="" '$'="" }="" "="" />
+    </div>
+</div>
+<div class="col-xs-12 col-sm-2 text-center  " style=" margin-top: 15px;" data-bind="visible: $root.sameAccountNonMileage() == 'No'">
+  <input id="addNonMileageAcctNumber1" name="addNonMileageAcctNumber1" class="text-left  " style=" transform: scale(1.5); " type="checkbox" />
+  <label for="addNonMileageAcctNumber1">Add Account Number</label>
+</div>
+<div id="col11414" class="col-xs-12 col-sm-12 text-left  ">
+  <hr id="ele11514" name="ele115" class="text-left  " style="border-color:; border-width:;" />
+</div>
+
+<div id="col292" name="col292" class="col-xs-12 col-sm-12 text-left  " data-bind="visible: ( ( addNonMileageAcctNumber1() ) ) ">
+  <span id="ele293" name="ele293" class="text-left  ">
+	<div class="col-xs-12 col-sm-3 text-left">
+	  <div class="text-left">
+		<label for="nonMileageGLNum2">GL Account Number</label>
+		<input id="nonMileageGLNum2" name="nonMileageGLNum2" class="text-left" type="text" data-bind="mask: '999-99-999999-99999'" required="required" />
+	  </div>
+	</div>
+	<div class="col-xs-12 col-sm-6 text-left">
+	  <div class="text-left">
+		<label for="nonMileageGLNumDesc2">Description</label>
+		<input id="nonMileageGLNumDesc2" name="nonMileageGLNumDesc2" class="text-left" readonly="true" />
+	  </div>
+	</div>
+	<div class="col-xs-12 col-sm-3 text-left">
+	  <div class="text-left">
+		<label for="nonMileageProjNum2">Project Number</label>
+		<input id="nonMileageProjNum2" name="nonMileageProjNum2" class="text-left" />
+	  </div>
+	</div>
+	<div class="col-xs-12 col-sm-3 text-left">
+	  <div class="text-left">
+		<label for="nonMileageAmount2">Amount</label>
+		<input id="nonMileageAmount2" name="nonMileageAmount2" class="text-left" required="required" data-bind="addOn: { type: 'prepend',  snippet: '$' } " />
+	  </div>
+	</div>
+	<div class="col-xs-12 col-sm-2 text-center" style="margin-top: 15px;">
+	  <input id="addNonMileageAccountNumber2" name="addNonMileageAccountNumber2" class="text-left" style="transform: scale(1.5);" type="checkbox" />
+	  <label for="addNonMileageAccountNumber2">Add Account Number</label>
+	</div>
+  </span>
+
+                </div>
+                <div id="col295" name="col295" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ( ( addNonMileageAcctNumber1() ) ) ">
+                    <hr id="ele296" name="ele296" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+                <div id="col298" name="col298" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ( ( addNonMileageAccountNumber2() ) ) "> <span id="ele299" name="ele299" class="text-left  ">
+	<div class="col-xs-12 col-sm-3 text-left">
+	  <div class="text-left">
+		<label for="nonMileageGLNum3">GL Account Number</label>
+		<input id="nonMileageGLNum3" name="nonMileageGLNum3" class="text-left" type="text" data-bind="mask: '999-99-999999-99999'" />
+	  </div>
+	</div>
+	<div class="col-xs-12 col-sm-6 text-left">
+	  <div class="text-left">
+		<label for="nonMileageGLNumDesc3">Description</label>
+		<input id="nonMileageGLNumDesc3" name="nonMileageGLNumDesc3" class="text-left" readonly="true" />
+	  </div>
+	</div>
+	<div class="col-xs-12 col-sm-3 text-left">
+	  <div class="text-left">
+		<label for="nonMileageProjNum3">Project Number</label>
+		<input id="nonMileageProjNum3" name="nonMileageProjNum3" class="text-left" />
+	  </div>
+	</div>
+	<div class="col-xs-12 col-sm-3 text-left">
+	  <div class="text-left">
+		<label for="nonMileageAmount3">Amount</label>
+		<input id="nonMileageAmount3" name="nonMileageAmount3" class="text-left" data-bind="addOn: { type: 'prepend',  snippet: '$' } " />
+	  </div>
+	</div>
+  </span>
+
+                </div>
+                <div class="col-xs-12 col-sm-12 text-left  " data-bind="visible: ( ( addNonMileageAccountNumber2() ) ) ">
+                    <hr id="hr_303" class="text-left  " />
+                </div>
+                <div class="col-xs-12 col-sm-3 text-left" data-bind="visible: $root.sameAccountNonMileage() == 'No'">
+                    <div class="text-left" data-bind="visible: $root.sameAccountNonMileage() == 'No'">
+                        <label for="sumOfNonMileageAccounts">Sum of Accounts</label>
+                        <input id="sumOfNonMileageAccounts" name="sumOfNonMileageAccounts"
+                        class="text-left" type="text" data-bind="addOn: { type: 'prepend',  snippet: '$' } "
+                        readonly="true" />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <hr id="hr_303" class="text-left  " />
+                    </div>
+                </div>
+                </span>
+            </div>
+            <div id="col368" class="col-xs-12 col-sm-12 text-left  ">
+                <hr id="ele369" name="ele369" class="text-left  " style="border-color:; border-width:;"
+                />
+            </div>
+        </div>
+        <div id="quickInputsRow141" name="quickInputsRow" class="text-left row nonMileageExp ">
+            <div id="quickInputsColumn142" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                <button id="addNonMileageExpense" name="addNonMileageExpense" class="text-left btn btn-primary btn-block "
+                style="" undefined="">Add Expense</button>
+            </div>
+            <div id="quickInputsColumn144" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                <button id="removeNonMileageExpense" name="removeNonMileageExpense" class="text-left btn btn-danger btn-block "
+                style="" undefined="">Remove Last Expense</button>
+            </div>
+            <div id="col152" class="col-xs-12 col-sm-4 text-left  ">
+                <div class="text-left  ">
+                    <label for="nonMileageTotal">Non-mileage Total</label>
+                    <input id="nonMileageTotal" name="nonMileageTotal"
+                    class="text-left  " readonly="true" data-bind="addOn: { type: 'prepend', snippet: '$' }"
+                    />
+                </div>
+            </div>
+            <div id="col149" class="col-xs-12 col-sm-12 text-left  ">
+                <hr id="ele150" name="ele150" class="text-left  " style="border-color:; border-width:;"
+                />
+            </div>
+        </div>
+        <div id="quickInputsRow118" name="quickInputsRow" class="text-left row nonMileageExp ">
+            <div id="col131" class="col-xs-12 col-sm-12 text-left  " style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                <p id="ele132" name="ele132" class="text-left  "><strong>Note: </strong>Receipts must be provided for all expenses in this
+                    section.
+                    <br /><strong>Note: </strong>Do not include expenses that have been paid by
+                    a college credit card.</p>
+            </div>
+            <div id="col123" class="col-xs-12 col-sm-12 text-left  ">
+                <hr id="ele124" name="ele124" class="text-left  " style="border-color:; border-width:;"
+                />
+            </div>
+        </div>
+        <div id="quickHeadingRow1977101313" name="quickHeadingRow" class="text-left row mileageExp "
+        style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+            <div id="quickHeadingColumn2071013" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+            style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                <h4 id="quickHeadingRow1977101013" name="quickHeadingRow1977101013" class="text-center  "
+                style=" font-weight: bold; ">Mileage</h4>
+            </div>
+        </div>
+        <div id="quickParagraphRow312626" name="quickParagraphRow" class="text-left row mileageExp "
+        style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+            <div id="quickParagraphColumn3226" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+            style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                <p id="p_3326" name="p_3326" class="text-left  "><strong>Note to Originator: </strong>If available, please select the ‘From’
+                    and ‘To’ locations using the dropdown menus below. If your desired location
+                    does not appear in either dropdown, you may enter it manually. In some
+                    cases, standard mileage will be automatically calculated based on your
+                    entries. If no mileage is returned, please enter the appropriate mileage
+                    yourself. Selecting 'Round Trip' doubles the dollar amount for that row. <strong>No calculation will be attempted until 'Date,' 'From,' and 'To' inputs are filled.</strong>
+                    <br
+                    />
+                    <br />
+<strong>Reimbursable Mileage:</strong>
+Business mileage traveled on normal
+                    workdays will be reimbursed in excess of the traveler’s normal work commute.
+                    <br
+                    />
+<strong>Reimbursable Mileage per day</strong> = Total actual mileage driven
+                    (<strong>minus</strong>) normal work commute mileage (Home ↔ Office)
+                    <br
+                    />
+                </p>
+            </div>
+        </div>
+        <div id="quickInputsRow313" name="quickInputsRow" class="text-left row mileageExp ">
+            <div id="quickInputsColumn314" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                <label for="sameAccount">Will all entries below be under the same GL Account Number?</label>
+                <select
+                id="sameAccount" name="sameAccount" class="text-left  ">
+                    <option value=""></option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    </select>
+            </div>
+            <div id="quickInputsColumn316" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  "
+            data-bind="visible: ( ( sameAccount() == 'Yes' ) ) ">
+                <div class="text-left  ">
+                    <label for="sameAccountGL">Enter GL Account #</label>
+                    <input id="sameAccountGL" name="sameAccountGL"
+                    class="text-left  " required="required" type="text" data-bind="mask: '999-99-999999-99999' "
+                    />
+                </div>
+            </div>
+            <div id="col318" name="col318" class="col-xs-12 col-sm-6 text-left  "
+            data-bind="visible: ( ( sameAccount() == 'Yes' ) ) ">
+                <div class="text-left  ">
+                    <label for="sameAccountGLDesc">Description</label>
+                    <input id="sameAccountGLDesc" name="sameAccountGLDesc"
+                    class="text-left  " readonly="true" />
+                </div>
+            </div>
+            <div id="col321" name="col321" class="col-xs-12 col-sm-3 text-left  "
+            data-bind="visible: ( ( sameAccount() == 'Yes' ) ) ">
+                <div class="text-left  ">
+                    <label for="sameAccountGLProjNum">Project Number</label>
+                    <input id="sameAccountGLProjNum" name="sameAccountGLProjNum"
+                    class="text-left  " />
+                </div>
+            </div>
+            <div id="col325" class="col-xs-12 col-sm-12 text-left  ">
+                <hr id="ele326" name="ele326" class="text-left  " style="border-color:; border-width:;"
+                />
+            </div>
+        </div>
+        <div id="mileageExpenseRow" name="mileageExpenseRow" class="text-left row mileageExp "
+        data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addMileageExpense',  removeButtonID: 'removeMileageExpense', maxLength: 20 } ">
+            <div id="quickInputsColumn308" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  "
+            style=" border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px "><span id="quickInputsText309" name="quickInputsText1" class="text-left  "><div id="col276" class="col-xs-12 col-sm-12 text-left  ">
+  <span id="ele277" name="ele277" class="text-left  "> 
+	<div id="quickInputsColumn9914" name="quickInputsColumn1" class="col-xs-12 col-sm-2 text-left  ">
+	  <div class="text-left  ">
+		<label for="mileageDate">Date</label>
+		<input id="mileageDate" name="mileageDate" class="text-left  " type="text" data-bind="datepicker" required="required" />
+	  </div>
+	</div>
+	<div id="quickInputsColumn10114" name="quickInputsColumn2" class="col-xs-12 col-sm-5 text-left  ">
+	  <div class="text-left  ">
+		<label for="mileageFrom">From</label>
+		<input id="mileageFrom" name="mileageFrom" class="text-left  " type="text" data-bind="autocomplete: { integrationSource: 'FS_Get_Mileage_Locations',  clearOnFocus: true,  validate: false,  labelMask: ['Location'] } " required="required" />
+	  </div>
+	</div>
+	<div id="col173" class="col-xs-12 col-sm-5 text-left  ">
+	  <div class="text-left  ">
+		<label for="mileageTo">To</label>
+		<input id="mileageTo" name="mileageTo" class="text-left  " data-bind="autocomplete: { integrationSource: 'FS_Get_Mileage_Locations',  clearOnFocus: true,  validate: false,  labelMask: ['Location'] } " required="required" />
+	  </div>
+	</div>
+  </span>
+
+            </div>
+            <div id="col176" name="col176" class="col-xs-12 col-sm-2 text-left  "
+            data-bind="visible: ( ( mileageDate() )  &amp;&amp;  ( mileageFrom() )  &amp;&amp;  ( mileageTo() )  &amp;&amp;  ( miles() ) ) ">
+                <div class="text-left  ">
+                    <label for="miles">Miles</label>
+                    <input id="miles" name="miles" class="text-left " />
+                </div>
+            </div>
+            <div id="col253" name="col253" class="col-xs-12 col-sm-2 text-left  "
+            data-bind="visible: ( ( mileageDate() )  &amp;&amp;  ( mileageFrom() )  &amp;&amp;  ( mileageTo() )  &amp;&amp;  ( !miles()) ) ">
+                <div class="text-left  ">
+                    <label for="enterMiles">Enter Miles</label>
+                    <input id="enterMiles" name="enterMiles" class="text-left  "
+                    data-bind="numeric: { type: 'int',  allowNegative: false } " />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-left  ">
+                <div class="text-left  ">
+                    <label for="mileageAmount">Total Trip Amount</label>
+                    <input id="mileageAmount" name="mileageAmount"
+                    class="text-left  " data-bind="money" readonly="true" />
+                </div>
+            </div>
+            <div id="col179" name="col179" class="col-xs-12 col-sm-1 text-center  "
+            style=" margin-top: 15px; " data-bind="visible: ( ( mileageDate() )  &amp;&amp;  ( mileageFrom() )  &amp;&amp;  ( mileageTo() )  &amp;&amp;  ( miles() ) ) ">
+                <input id="mileageRoundTrip" name="mileageRoundTrip" class="text-left  "
+                style=" transform: scale(1.5) " type="checkbox" transform:="" scale(1.5)=""
+                />
+                <label for="mileageRoundTrip">Round Trip</label>
+            </div>
+            <div id="col258" name="col258" class="col-xs-12 col-sm-1 text-center  "
+            style=" margin-top: 15px; " data-bind="visible: ( ( mileageDate() )  &amp;&amp;  ( mileageFrom() )  &amp;&amp;  ( mileageTo() )  &amp;&amp;  ( !miles()) ) ">
+                <input id="roundTripManual" name="roundTripManual" class="text-left  "
+                style=" transform: scale(1.5); " type="checkbox" />
+                <label for="roundTripManual">Round Trip</label>
+            </div>
+            <div id="col10000" name="col10000" class="col-xs-12 col-sm-2 text-center"
+            style="margin-top: 15px;" data-bind="visible: ( ( mileageRoundTrip() )  ||  ( roundTripManual() ) ) ">
+                	<h4 style="color: red;"><strong><i>Total Trip Amount Doubled</i></strong></h4>
+
+            </div>
+            <div id="quickInputsColumn10314" name="quickInputsColumn3" class="col-xs-12 col-sm-12 text-left  ">
+                <div class="text-left  ">
+                    <label for="mileagePurpose">Business Purpose</label>
+                    <input id="mileagePurpose" name="mileagePurpose"
+                    class="text-left " required="required" />
+                </div>
+            </div>
+            <div id="col289" class="col-xs-12 col-sm-12 text-left  "> <span id="ele290" name="ele290" class="text-left  ">
+	<div class="col-xs-12 col-sm-3 text-left  ">
+	  <div class="text-left  ">
+		<label for="mileageGLNum">GL Account Number</label>
+		<input id="mileageGLNum" name="mileageGLNum" class="text-left  " type="text" data-bind="mask: '999-99-999999-99999' " required="required" />
+	  </div>
+	</div>
+	<div class="col-xs-12 col-sm-6 text-left  ">
+	  <div class="text-left  ">
+		<label for="mileageGLNumDesc">Description</label>
+		<input id="mileageGLNumDesc" name="mileageGLNumDesc" class="text-left  " readonly="true" />
+	  </div>
+	</div>
+	<div class="col-xs-12 col-sm-3 text-left  ">
+	  <div class="text-left  ">
+		<label for="projNum">Project Number</label>
+		<input id="projNum" name="projNum" class="text-left  " />
+	  </div>
+	</div>
+  </span>
+
+            </div>
+            <div id="col11414" class="col-xs-12 col-sm-12 text-left  ">
+                <hr id="ele11514" name="ele115" class="text-left  " style="border-color:; border-width:;"
+                />
+            </div>
+            </span>
+        </div>
+        <div id="col310" class="col-xs-12 col-sm-12 text-left  ">
+            <hr id="ele311" name="ele25" class="text-left  " style="border-color:; border-width:;"
+            />
+        </div>
+        </div>
+        <div id="quickInputsRow1411515" name="quickInputsRow" class="text-left row mileageExp ">
+            <div id="quickInputsColumn14215" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                <button id="addMileageExpense" name="addMileageExpense" class="text-left btn btn-primary btn-block "
+                style="" undefined="">Add Expense</button>
+            </div>
+            <div id="quickInputsColumn14415" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                <button id="removeMileageExpense" name="removeMileageExpense" class="text-left btn btn-danger btn-block "
+                style="" undefined="">Remove Last Expense</button>
+            </div>
+            <div id="col15215" class="col-xs-12 col-sm-4 text-left  ">
+                <div class="text-left  ">
+                    <label for="mileageTotal">Mileage Total</label>
+                    <input id="mileageTotal" name="mileageTotal" class="text-left  "
+                    readonly="true" data-bind="addOn: { type: 'prepend',  snippet: '$' } "
+                    />
+                </div>
+            </div>
+            <div id="col14915" class="col-xs-12 col-sm-12 text-left  ">
+                <hr id="ele15015" name="ele150" class="text-left  " style="border-color:; border-width:;"
+                />
+            </div>
+        </div>
+        <div id="quickInputsRow1181616" name="quickInputsRow" class="text-left row mileageExp ">
+            <div id="col13116" class="col-xs-12 col-sm-12 text-left  " style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                <p id="ele13216" name="ele13216" class="text-left  "><strong>Note: </strong>A one-page Mapquest is required for mileage per
+                    day that exceeds 50 miles unless the Standard Mileage Chart is being used</p>
+            </div>
+            <div id="col12316" class="col-xs-12 col-sm-12 text-left  ">
+                <hr id="ele12416" name="ele124" class="text-left  " style="border-color:; border-width:;"
+                />
+            </div>
+        </div>
+        <div id="quickInputsRow430" name="quickInputsRow" class="text-left row ">
+            <div id="quickInputsColumn431" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                <label for="notes">Notes</label>
+                <textarea id="notes" name="notes" class="text-left  "></textarea>
+            </div>
+        </div>
+        <div id="quickHeadingRow197710131317" name="quickHeadingRow" class="text-left row self "
+        style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+            <div id="quickHeadingRow19771013131717" name="quickHeadingRow" class="col-xs-12 col-sm-12 text-left  "
+            style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                <h4 id="quickHeadingRow197710101317" name="quickHeadingRow197710101317"
+                class="text-center  " style=" font-weight: bold; ">Approvals</h4>
+            </div>
+        </div>
+        <div id="quickParagraphRow218" name="quickParagraphRow" class="text-left row self "
+        style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+            <div id="quickParagraphColumn219" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+            style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                <p id="p_220" name="p_12139" class="text-left  "><strong>Note to Employee: </strong>By entering your name below and submitting
+                    this form you are officially acknowledging that all reported expenses were
+                    incurred in the performance of approved College activities, and I have
+                    not received reimbursement from any other source for any portion of the
+                    requested reimbursement.</p>
+            </div>
+        </div>
+        <div id="quickInputsRow206" name="quickInputsRow" class="text-left row self ">
+            <div id="quickInputsColumn207" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                <div class="text-left  ">
+                    <label for="employeeSign">Employee: Please Enter Your Name</label>
+                    <input id="employeeSign" name="employeeSign"
+                    class="text-left  " required="required" type="text" />
+                </div>
+            </div>
+            <div id="quickInputsColumn209" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                <div class="text-left  ">
+                    <label for="employeeSignDate">Date</label>
+                    <input id="employeeSignDate" name="employeeSignDate" class="text-left  "
+                    readonly="true" type="text" />
+                </div>
+            </div>
+        </div>
+        <div id="quickInputsRow212" name="quickInputsRow" class="text-left row supervisor ">
+            <div id="quickInputsColumn213" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                <div class="text-left  ">
+                    <label for="supervisorSign">Supervisor: Please Enter Your Name</label>
+                    <input id="supervisorSign" name="supervisorSign"
+                    class="text-left  " type="text" />
+                </div>
+            </div>
+            <div id="quickInputsColumn215" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                <div class="text-left  ">
+                    <label for="supervisorSignDate">Date</label>
+                    <input id="supervisorSignDate" name="supervisorSignDate" class="text-left  "
+                    readonly="true" type="text" />
+                </div>
+            </div>
+        </div>
+        <div id="quickInputsRow222" name="quickInputsRow" class="text-left row supervisor self ">
+            <div id="quickInputsColumn223" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                <hr id="hr_224" class="text-left  " />
+            </div>
+        </div>
+        <div id="quickInputsRow242" name="quickInputsRow" class="text-left row ">
+            <div id="col329" class="col-xs-12 col-sm-4 text-left  ">
+                <div class="text-left  ">
+                    <label for="mileageGrandTotal">Mileage Grand Total</label>
+                    <input id="mileageGrandTotal" name="mileageGrandTotal"
+                    class="text-left  " readonly="true" type="text" data-bind="addOn: { type: 'prepend',  snippet: '$' } "
+                    />
+                </div>
+            </div>
+            <div id="col435" class="col-xs-12 col-sm-4 text-left  ">
+                <div class="text-left  ">
+                    <label for="nonMileageGrandTotal">Non-Mileage Grand Total</label>
+                    <input id="nonMileageGrandTotal" name="nonMileageGrandTotal"
+                    class="text-left  " readonly="true" type="text" data-bind="addOn: { type: 'prepend',  snippet: '$' } "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsColumn245" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                <div class="text-left  ">
+                    <label for="grandTotal">Form Grand Total</label>
+                    <input id="grandTotal" name="grandTotal" class="text-left  "
+                    readonly="true" type="text" data-bind="addOn: { type: 'prepend',  snippet: '$' } "
+                    />
+                </div>
+            </div>
+            <div id="col332" class="col-xs-12 col-sm-12 text-left  ">
+                <hr id="ele333" name="ele333" class="text-left  " style="border-color:; border-width:;"
+                />
+            </div>
+        </div>
+        <div id="quickHeadingRow375" name="quickHeadingRow" class="text-left row attachments "
+        style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+            <div id="quickHeadingColumn376" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+            style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                <h4 id="quickHeadingSmall377" name="quickHeadingSmall" class="text-center  "
+                style=" font-weight: bold; ">Attachments Required!</h4>
+            </div>
+        </div>
+        <div id="quickParagraphRow2183030" name="quickParagraphRow" class="text-left row  "
+        style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+            <div id="quickParagraphColumn21930" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left attachments "
+            style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                <p id="p_22030" name="p_22030" class="text-left  "><strong>Note to Employee: </strong> Because of entries that you've made
+                    on the form there are attachments required before it can be submitted.
+                    Please check the boxes(s) below to acknowledge that the proper attachments
+                    have been added before submitting the form.</p>
+            </div>
+            <div id="col393" class="col-xs-12 col-sm-12 text-left attachments ">
+                <hr id="hr_395" class="text-left  " />
+            </div>
+            <div id="col381" class="col-xs-1 col-sm-1 text-center nonMileageAttachments ">
+                <input id="nonMileageAttachments" name="nonMileageAttachments" class="text-left  "
+                style=" transform: scale(1.5); " required="required" type="checkbox" />
+            </div>
+            <div id="col382" class="col-xs-11 col-sm-11 text-left nonMileageAttachments ">
+                <label id="ele387" name="ele387" class="text-left  " for="nonMileageAttachments">Receipts for all non-mileage expenses</label>
+            </div>
+            <div id="col383" class="col-xs-11 col-sm-1 text-center overFiftyAttachments ">
+                <input id="mapForOver50Miles" name="mapForOver50Miles" class="text-left  "
+                style=" transform: scale(1.5); " required="required" type="checkbox" />
+            </div>
+            <div id="col384" class="col-xs-11 col-sm-11 text-left overFiftyAttachments ">
+                <label id="ele391" name="ele391" class="text-left  " for="mapForOver50Miles">One page MapQuest for each entry with mileage over 50 miles (not from
+                    standard mileage chart)</label>
+            </div>
+        </div>
+        <div id="quickHeadingRow262" name="quickHeadingRow" class="text-left row developer "
+        style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+            <div id="quickHeadingColumn263" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+            style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                <h4 id="quickHeadingSmall264" name="quickHeadingSmall" class="text-center  "
+                style=" font-weight: bold; ">Developer Section (hidden)</h4>
+            </div>
+            <div id="col270" class="col-xs-12 col-sm-6 text-left  ">
+                <div class="text-left  ">
+                    <label for="employeeEmail">employeeEmail (hidden)</label>
+                    <input id="employeeEmail" name="employeeEmail"
+                    class="text-left  " />
+                </div>
+            </div>
+            <div id="col335" class="col-xs-12 col-sm-6 text-left  ">
+                <div class="text-left  ">
+                    <label for="has14GL">has14GL (hidden)</label>
+                    <input id="has14GL" name="has14GL" class="text-left  "
+                    />
+                </div>
+            </div>
+            <div id="col400" class="col-xs-12 col-sm-6 text-left  ">
+                <div class="text-left  ">
+                    <label for="departmentGUID">departmentGUID (hidden)</label>
+                    <input id="departmentGUID" name="departmentGUID"
+                    class="text-left  " />
+                </div>
+            </div>
+            <div id="col401" class="col-xs-12 col-sm-6 text-left  ">
+                <div class="text-left  ">
+                    <label for="supervisorGUID">supervisorGUID (hidden)</label>
+                    <input id="supervisorGUID" name="supervisorGUID"
+                    class="text-left  " />
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+
+</html>

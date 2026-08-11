@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row303" class="text-left row fd-form-masthead ">
+                <div id="col304" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn305" name="revisedOn" class="col-sm-12 text-right  ">Revised 07/24</span>
+                </div>
+                <div id="col306" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele307" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col308" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele309" name="ele21" class="text-left form-title ">Review Final Signature</h1>
+                </div>
+                <div id="col310" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele311" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row289" class="text-left row ">
+                <div id="col290" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote291" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow265" name="quickInputsRow" class="text-left row hide ">
+                <div id="quickInputsColumn266" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID</label>
+                        <input id="formID" name="formID" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="radioRow157" name="radioRow" class="text-left row ">
+                <div id="col164" class="col-xs-12 col-sm-3 text-left  ">
+                    <h5 id="ele165" name="ele165" class="text-left  "><strong>Review Type</strong></h5>
+                </div>
+                <div id="radioCol158" name="radioCol1" class="col-xs-12 col-sm-3 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:5px 0px 0px 0px; ">
+                    <input id="reviewTypeProgram" name="reviewType" class="text-left  " style=" margin-right: 5px; "
+                    required="required" type="radio" value="Program" />
+                    <label for="reviewTypeProgram">Program</label>
+                </div>
+                <div id="radioCol160" name="radioCol2" class="col-xs-12 col-sm-3 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:5px 0px 0px 0px; ">
+                    <input id="reviewTypeDiscipline" name="reviewType" class="text-left  "
+                    style=" margin-right: 5px; " required="required" type="radio" value="Discipline"
+                    />
+                    <label for="reviewTypeDiscipline">Discipline</label>
+                </div>
+                <div id="radioCol162" name="radioCol3" class="col-xs-12 col-sm-3 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:5px 0px 0px 0px; ">
+                    <input id="reviewTypeGenEd" name="reviewType" class="text-left  " style=" margin-right: 5px; "
+                    required="required" type="radio" value="General Education" />
+                    <label for="reviewTypeGenEd">General Education</label>
+                </div>
+            </div>
+            <div id="programRow" name="programRow" class="text-left row programRow ">
+                <div id="quickInputsColumn24" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="program">Program</label>
+                        <input id="program" name="program" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { integrationSource: 'OIE_Get_Distinct_Programs',  clearOnFocus: true,  validate: true,  labelMask: ['Discipline_Name'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow233232" name="quickInputsRow" class="text-left row disciplineRow ">
+                <div id="col17232" name="col17232" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="discipline">Discipline</label>
+                        <input id="discipline" name="discipline" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { integrationSource: 'OIE_Get_Disciplines',  clearOnFocus: true,  validate: true,  labelMask: ['Discipline_Name'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow2332323333" name="quickInputsRow" class="text-left row genEdRow ">
+                <div id="col1733233" name="col1733233" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="generalEducation">General Education</label>
+                        <input id="generalEducation" name="generalEducation"
+                        class="text-left  " required="required" data-bind="autocomplete: { integrationSource: 'OIE_Get_Distinct_General_Education_Outcomes',  clearOnFocus: true,  validate: true,  labelMask: ['Discipline_Name'] } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow23323233333434" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn26323334" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="reviewYear">Review Year</label>
+                    <select id="reviewYear" name="reviewYear" class="text-left  "
+                    required="required" data-bind="dynamicYear: { format: 'YYYY-YY[-1,  0]' } ">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow248" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn249" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="leadReviewer">Lead Reviewer</label>
+                        <input id="leadReviewer" name="leadReviewer" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { integrationSource: 'OIE_Get_Employee_Email',  clearOnFocus: true,  validate: true,  labelMask: ['FirstName', ' ', 'MiddleName', ' ', 'LastName'],  formFields: {'leadReviewerEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn251" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="leadReviewerEmail">Lead Reviewer Email</label>
+                        <input id="leadReviewerEmail" name="leadReviewerEmail"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow269" name="quickInputsRow" class="text-left row hidden ">
+                <div id="quickInputsColumn270" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="skipLeadReviewer">skipLeadReviewer</label>
+                        <input id="skipLeadReviewer" name="skipLeadReviewer"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow254" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn255" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanName">Dean Name</label>
+                        <input id="deanName" name="deanName" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_Dean_Information',  clearOnFocus: true,  validate: true,  labelMask: ['Dean'],  formFields: {'deanEmail':'Dean_Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn257" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanEmail">Dean Email</label>
+                        <input id="deanEmail" name="deanEmail" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow106" name="quickHeadingRow" class="text-left row leadReviewerRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn107" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall108" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Lead Reviewer</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow302222" name="quickParagraphRow" class="text-left row leadReviewerRow ">
+                <div id="quickParagraphColumn3122" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "><span id="quickParagraphElement3222" name="quickParagraphElement3222"
+                    class="text-left  ">By electronically signing this form, I am recommending this action strategy and I agree to the following statements:
+<ul>
+<li>The need for this action strategy is directly supported by the evidence cited in the review report.</li>
+<li>This action strategy sufficiently addresses the issue and is feasible to execute.</li>
+<li>This action strategy is reflective of the beliefs of the <strong>majority</strong> of faculty in the discipline</li> 
+</ul></span>
+                </div>
+            </div>
+            <div id="quickInputsRow113" name="quickInputsRow" class="text-left row leadReviewerRow ">
+                <div id="quickInputsColumn116" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-center  ">
+                        <label for="numberApproved">Number Approved</label>
+                        <input id="numberApproved" name="numberApproved"
+                        class="text-center  " required="required" type="text" data-bind="numeric: { type: 'int',  allowNegative: false } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn118" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-center  ">
+                        <label for="numberNotApproved">Number of Not Approved</label>
+                        <input id="numberNotApproved" name="numberNotApproved"
+                        class="text-center  " required="required" type="text" data-bind="numeric: { type: 'int',  allowNegative: false } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn120" name="quickInputsColumn4" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-center  ">
+                        <label for="numberNoResponse">Number of No Responses</label>
+                        <input id="numberNoResponse" name="numberNoResponse"
+                        class="text-center  " required="required" type="text" data-bind="numeric: { type: 'int',  allowNegative: false } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickParagraphRow3022222424" name="quickParagraphRow" class="text-left row leadReviewerRow ">
+                <div id="quickParagraphColumn312224" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "><span id="quickParagraphElement322224" name="quickParagraphElement322224"
+                    class="text-left  "><ul>
+<li>Additional administrative approval may be required.
+</li>
+</ul></span>
+                </div>
+            </div>
+            <div id="quickHeadingRow228" name="quickHeadingRow" class="text-left row academicDeanRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn229" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall230" name="quickHeadingSmall10825" class="text-center  "
+                    style=" font-weight: bold; ">Academic Dean</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow232" name="quickParagraphRow" class="text-left row academicDeanRow ">
+                <div id="quickParagraphColumn233" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "><span id="quickParagraphElement234" name="quickParagraphElement3212" class="text-left  ">By approving this form, I am certifying that I have reviewed this program/discipline review and verify that the work has been completed as articulated in the supplemental contract.</span>
+                </div>
+            </div>
+            <div id="quickInputsRow236" name="quickInputsRow" class="text-left row academicDeanRow ">
+                <div id="quickInputsColumn237" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="deanComments238">Comments</label>
+                    <textarea id="deanComments238" name="deanComments" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow240" name="quickHeadingRow" class="text-left row committeeChairRow "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn241" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall242" name="quickHeadingSmall1082528" class="text-center  "
+                    style=" font-weight: bold; ">Committee Chair </h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow244" name="quickParagraphRow" class="text-left row committeeChairRow "
+            'wfcurriculumreviewcommitteechair',="" 'end']="" }="" "=" "><div id="quickParagraphColumn245 " name="quickParagraphColumn
+            " class="col-xs-12 col-sm-12 text-left "><span id="quickParagraphElement246
+            " name="quickParagraphElement321213 " class="text-left
+            ">By approving this form, I am confirming that this report has been completed according to the standards set by the appropriate Review Committee.</span></div></div></div></body></html>
