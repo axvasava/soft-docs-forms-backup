@@ -25,7 +25,7 @@ BASE_URL = "https://oaklandcccentral.etrieve.cloud"
 FORM_SETTINGS_URL_TEMPLATE = BASE_URL + "/Index#/settings/forms/{form_id}"
 
 # Default input file (only used if not using min/max)
-DEFAULT_MARKDOWN_FILE = "./misc/required.md"
+DEFAULT_MARKDOWN_FILE = ""
 
 # Current date for file naming
 CURRENT_DATE = datetime.now().strftime("%Y-%m-%d")
