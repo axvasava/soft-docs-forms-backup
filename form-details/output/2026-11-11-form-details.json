@@ -5,495 +5,35 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 2,
-    "form_name": "Schedule of Classes (Add / Cancel / Change Section)",
-    "department": "Academics",
-    "form_group": "Academics",
-    "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 3,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 4,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 5,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 6,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 7,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 8,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 9,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 10,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 11,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 12,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 13,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 14,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 15,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 16,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 17,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 18,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 19,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 20,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 21,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 22,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 23,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 24,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 25,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 26,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 27,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 28,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 29,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 30,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 31,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 32,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 33,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 34,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 35,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 36,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 37,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 38,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 39,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 40,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 41,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 42,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 43,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 44,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 45,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 46,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 47,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 48,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 49,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 50,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 51,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 52,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 53,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 54,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 55,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 56,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 57,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 1,
-    "form_name": "z_TEST Softdocs",
+    "form_name": "Schedule of Classes (Add / Cancel / Change Section)",
     "department": "Unassigned",
-    "form_group": "Test",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 2,
-    "form_name": "Schedule of Classes (Add / Cancel / Change Section)",
-    "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 3,
-    "form_name": "Employee Action Form (EAF)",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 4,
     "form_name": "Prerequisite/Assessment Exemption",
-    "department": "Academics",
+    "department": "Unassigned",
     "form_group": "Academics",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 5,
     "form_name": "Employee/Dependent Tuition Authorization Affidavit",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 6,
@@ -501,31 +41,26 @@
     "department": "Unassigned",
     "form_group": "Developer",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 7,
     "form_name": "Action Strategy Review Form",
-    "department": "IE-AAQ",
+    "department": "Unassigned",
     "form_group": "Curriculum Review",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 8,
     "form_name": "Review Final Signature Page",
-    "department": "IE-AAQ",
+    "department": "Unassigned",
     "form_group": "Curriculum Review",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 9,
-    "form_name": "Review Final Signature Page",
-    "department": "IE-AAQ",
-    "form_group": "Curriculum Review",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 10,
@@ -533,39 +68,26 @@
     "department": "Unassigned",
     "form_group": "Admissions",
     "anonymous": true,
-    "published": true
-  },
-  {
-    "form_id": 11,
-    "form_name": "Dual Enrollment Authorization and FERPA Release Form",
-    "department": "Unassigned",
-    "form_group": "Admissions",
-    "anonymous": true,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 12,
     "form_name": "Student Academic Grade Appeal Form",
-    "department": "Academics",
+    "department": "Unassigned",
     "form_group": "Academics",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 13,
     "form_name": "Change of Grade Request",
-    "department": "Academics",
+    "department": "Unassigned",
     "form_group": "Academics",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 14,
-    "form_name": "Change of Grade Request",
-    "department": "Academics",
-    "form_group": "Academics",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 15,
@@ -573,7 +95,8 @@
     "department": "Unassigned",
     "form_group": "Utility Forms",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 16,
@@ -581,55 +104,44 @@
     "department": "Unassigned",
     "form_group": "Public use forms",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 17,
-    "form_name": "W-4 Federal 2024 - No OCC User ID",
-    "department": "Unassigned",
-    "form_group": "Public use forms",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 18,
-    "form_name": "W-4 Federal 2024 - No OCC User ID",
+    "form_name": "W-4 Detroit - No OCC User ID",
     "department": "Unassigned",
     "form_group": "Public use forms",
     "anonymous": true,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 19,
     "form_name": "W-4 State of Michigan",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Tax Forms",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 20,
     "form_name": "W-4 Pontiac - No OCC User ID",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Public use forms",
     "anonymous": true,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 21,
     "form_name": "HR Background Check Authorization Form",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Tax Forms",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 22,
-    "form_name": "HR Background Check Authorization Form",
-    "department": "Human Resources",
-    "form_group": "Tax Forms",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 23,
@@ -637,15 +149,17 @@
     "department": "Unassigned",
     "form_group": "Developer",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 24,
     "form_name": "Program Deactivation Form",
-    "department": "IE-AAQ",
+    "department": "Unassigned",
     "form_group": "Curriculum Review",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 25,
@@ -653,47 +167,35 @@
     "department": "Unassigned",
     "form_group": "Utility Forms",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 26,
-    "form_name": "Dual Enrollment Utility Form",
-    "department": "Unassigned",
-    "form_group": "Utility Forms",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 27,
     "form_name": "W-4 Detroit",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Tax Forms",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 28,
     "form_name": "W-4 State of Michigan - No OCC User ID",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Public use forms",
     "anonymous": true,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 29,
     "form_name": "W-4 Pontiac",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Tax Forms",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 30,
-    "form_name": "W-4 Pontiac",
-    "department": "Human Resources",
-    "form_group": "Tax Forms",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 31,
@@ -701,159 +203,152 @@
     "department": "Unassigned",
     "form_group": "Tax Forms",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 32,
     "form_name": "HR Background Check Authorization Form - No OCC User ID",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Public use forms",
     "anonymous": true,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 33,
-    "form_name": "Chosen Name and Personal Pronoun Request",
-    "department": "Human Resources",
+    "form_name": "Chosen Name and Personal Pronoun Request v1",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 34,
-    "form_name": "Employee Change of Information Request",
-    "department": "Human Resources",
+    "form_name": "Employee Change of Information Request v1",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 35,
     "form_name": "Employee Exit Checklist",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 36,
     "form_name": "z_DEPRECATED Network Access Form",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Deprecated",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 37,
     "form_name": "z_Canceled Student Employment Application",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 38,
     "form_name": "Course Proposal Form",
-    "department": "Curriculum Instruction Committee",
+    "department": "Unassigned",
     "form_group": "Curriculum & Instruction Committee",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 39,
     "form_name": "Vacation Request",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 40,
     "form_name": "General Education Distribution Form",
-    "department": "Curriculum Instruction Committee",
+    "department": "Unassigned",
     "form_group": "Curriculum & Instruction Committee",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 41,
     "form_name": "Michigan Transfer Agreement Inclusion Application",
-    "department": "Curriculum Instruction Committee",
+    "department": "Unassigned",
     "form_group": "Curriculum & Instruction Committee",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 42,
     "form_name": "Program/Degree Proposal Form",
-    "department": "Curriculum Instruction Committee",
+    "department": "Unassigned",
     "form_group": "Curriculum & Instruction Committee",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 43,
-    "form_name": "Program/Degree Proposal Form",
-    "department": "Curriculum Instruction Committee",
-    "form_group": "Curriculum & Instruction Committee",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 44,
-    "form_name": "Program/Degree Proposal Form",
-    "department": "Curriculum Instruction Committee",
-    "form_group": "Curriculum & Instruction Committee",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 45,
     "form_name": "Payroll Gift Deduction Form",
-    "department": "Advancement",
+    "department": "Unassigned",
     "form_group": "Foundation",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 46,
     "form_name": "Athletic Department Eligibility Packet",
-    "department": "Athletics",
+    "department": "Unassigned",
     "form_group": "Athletics",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 47,
     "form_name": "Student Athlete Responsibility Sign Off Sheet",
-    "department": "Athletics",
+    "department": "Unassigned",
     "form_group": "Athletics",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 48,
     "form_name": "Athletics Release of Liability, Indemnification, and Assumption of Risk",
-    "department": "Athletics",
+    "department": "Unassigned",
     "form_group": "Athletics",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 49,
-    "form_name": "Athletics Release of Liability, Indemnification, and Assumption of Risk",
-    "department": "Athletics",
-    "form_group": "Athletics",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 50,
     "form_name": "Athletic Department Break and Delay of Enrollment",
-    "department": "Athletics",
+    "department": "Unassigned",
     "form_group": "Athletics",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 51,
@@ -861,7 +356,8 @@
     "department": "Unassigned",
     "form_group": "Utility Forms",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 52,
@@ -869,15 +365,8 @@
     "department": "Unassigned",
     "form_group": "Deprecated",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 53,
-    "form_name": "z_DEPRECATED Payroll Report",
-    "department": "Unassigned",
-    "form_group": "Deprecated",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 54,
@@ -885,7 +374,8 @@
     "department": "Institutional Standards & Practices",
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 55,
@@ -893,31 +383,26 @@
     "department": "Unassigned",
     "form_group": "Deprecated",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 56,
-    "form_name": "z_DEPRECATED - Application for Employment",
-    "department": "Unassigned",
-    "form_group": "Deprecated",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 57,
-    "form_name": "Internship Institutional Agreement",
-    "department": "Career Serrvices",
-    "form_group": "Career Services",
+    "form_name": "Internship - Institutional Agreement",
+    "department": "Unassigned",
+    "form_group": "Academics",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 58,
     "form_name": "1st Agency Parent Information Form",
-    "department": "Athletics",
+    "department": "Unassigned",
     "form_group": "Athletics",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 59,
@@ -925,7 +410,8 @@
     "department": "Unassigned",
     "form_group": "Developer",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 60,
@@ -933,7 +419,8 @@
     "department": "Institutional Standards & Practices",
     "form_group": "Deprecated",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 61,
@@ -941,7 +428,8 @@
     "department": "Institutional Standards & Practices",
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 62,
@@ -949,7 +437,8 @@
     "department": "Institutional Standards & Practices",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 63,
@@ -957,23 +446,17 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 64,
-    "form_name": "z_TEST EXAMPLE",
-    "department": "Unassigned",
-    "form_group": "Test",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 65,
     "form_name": "Statement of Intent",
-    "department": "Veterans Affairs",
+    "department": "Unassigned",
     "form_group": "Veterans Affairs",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 66,
@@ -981,23 +464,26 @@
     "department": "Unassigned",
     "form_group": "Utility Forms",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 67,
     "form_name": "Statement of Responsibilities",
-    "department": "Veterans Affairs",
+    "department": "Unassigned",
     "form_group": "Veterans Affairs",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 68,
     "form_name": "Veterans Plan of Study",
-    "department": "Veterans Affairs",
+    "department": "Unassigned",
     "form_group": "Veterans Affairs",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 69,
@@ -1005,23 +491,26 @@
     "department": "Unassigned",
     "form_group": "Deprecated",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 70,
     "form_name": "Course Deactivation Form",
-    "department": "IE-AAQ",
+    "department": "Unassigned",
     "form_group": "Curriculum Review",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 71,
     "form_name": "Equipment Request Form",
-    "department": "Information Technologies",
+    "department": "Unassigned",
     "form_group": "Information Technologies",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 72,
@@ -1029,31 +518,35 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 73,
     "form_name": "Change of Program",
-    "department": "Student Services",
+    "department": "Unassigned",
     "form_group": "Student Services",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 74,
     "form_name": "Change Student SSN",
-    "department": "Student Services",
+    "department": "Unassigned",
     "form_group": "Student Services",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 75,
     "form_name": "Residency Change Form",
-    "department": "Student Services",
+    "department": "Unassigned",
     "form_group": "Student Services",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 76,
@@ -1061,31 +554,17 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 77,
-    "form_name": "z_TEST Out-of-State Remote Work Agreement - Current Employee",
-    "department": "Unassigned",
-    "form_group": "Test",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 78,
     "form_name": "Payroll Report",
-    "department": "Financial Services - Payroll",
+    "department": "Unassigned",
     "form_group": "Payroll",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 79,
-    "form_name": "Payroll Report",
-    "department": "Financial Services - Payroll",
-    "form_group": "Payroll",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 80,
@@ -1093,15 +572,17 @@
     "department": "Unassigned",
     "form_group": "Developer",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 81,
     "form_name": "Out-of-State Remote Work Agreement - Current Employee",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 82,
@@ -1109,79 +590,89 @@
     "department": "Unassigned",
     "form_group": "Athletics",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 83,
     "form_name": "Recognized Student Organizations Utility Form",
-    "department": "Office of Student Engagement",
+    "department": "Unassigned",
     "form_group": "Utility Forms",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 84,
     "form_name": "Office of Student Engagement Application for New OWL Network Student Org, Club, or Association",
-    "department": "Office of Student Engagement",
+    "department": "Unassigned",
     "form_group": "Office of Student Engagement",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 85,
     "form_name": "OWL Network Activity & Meeting Request Form",
-    "department": "Office of Student Engagement",
+    "department": "Unassigned",
     "form_group": "Office of Student Engagement",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 86,
     "form_name": "Out-of-State Remote Work Agreement - Prospective Employee",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": true,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 87,
     "form_name": "OCC Tuition Reimbursement",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 88,
     "form_name": "FMLA Leave Request Form",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 89,
     "form_name": "Application to Become an Authorized Driver",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 90,
     "form_name": "Jeopardy of Failure",
-    "department": "Health Sciences",
+    "department": "Unassigned",
     "form_group": "Health Sciences and Nursing",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 91,
     "form_name": "Performance Appraisal",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 92,
@@ -1189,71 +680,80 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 93,
     "form_name": "W-4 Federal 2025 - No OCC User ID",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Public use forms",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 94,
     "form_name": "W-4 Federal 2025",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Tax Forms",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 95,
     "form_name": "z_CANCELED Personal Care Assistant (PCA) Agreement",
-    "department": "ACCESS",
+    "department": "Unassigned",
     "form_group": "Deprecated",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 96,
     "form_name": "Approved SS Forms Dashboard",
-    "department": "Student Services",
+    "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 97,
     "form_name": "Police Request for Training",
-    "department": "Public Safety",
+    "department": "Unassigned",
     "form_group": "Public Safety",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 98,
-    "form_name": "Career Progress Check-In",
-    "department": "Human Resources",
+    "form_name": "Z_DEPRECATED Career Progress Check-In",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 99,
     "form_name": "Accidental Drop/Re-Enrollment Form",
-    "department": "Student Services",
+    "department": "Unassigned",
     "form_group": "Student Services",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 100,
-    "form_name": "Career Progress Check-In Utility",
-    "department": "Human Resources",
+    "form_name": "Z_DEPRECATED Career Progress Check-In Utility",
+    "department": "Unassigned",
     "form_group": "Utility Forms",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 101,
@@ -1261,39 +761,44 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 102,
     "form_name": "Sabbatical Leave Application",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 103,
     "form_name": "z_DEPRECATED Sabbatical Committee Notification",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Deprecated",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 104,
-    "form_name": "Career Progress Check-In Report - Utility",
-    "department": "Human Resources",
+    "form_name": "Z_DEPRECATED Career Progress Check-In Report - Utility",
+    "department": "Unassigned",
     "form_group": "Utility Forms",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 105,
     "form_name": "ACCESS Presentation Request",
-    "department": "ACCESS",
+    "department": "Unassigned",
     "form_group": "ACCESS",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 106,
@@ -1301,15 +806,17 @@
     "department": "Unassigned",
     "form_group": "Accounts Payable & Travel/Mileage Forms",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 107,
     "form_name": "Universal Demo Form V1",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Developer",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 108,
@@ -1317,15 +824,17 @@
     "department": "Unassigned",
     "form_group": "Utility Forms",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 109,
     "form_name": "Standardized First Aid Kits Order Form",
-    "department": "Public Safety",
+    "department": "Unassigned",
     "form_group": "Public Safety",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 110,
@@ -1333,15 +842,17 @@
     "department": "Unassigned",
     "form_group": "Developer",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 111,
     "form_name": "First Aid Items Utility Form",
-    "department": "Public Safety",
+    "department": "Unassigned",
     "form_group": "Utility Forms",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 112,
@@ -1349,7 +860,8 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 113,
@@ -1357,15 +869,17 @@
     "department": "Unassigned",
     "form_group": "Deprecated",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 114,
     "form_name": "FA Advisors Dashboard",
-    "department": "Financial Aid",
+    "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 115,
@@ -1373,7 +887,8 @@
     "department": "Unassigned",
     "form_group": "Accounts Payable & Travel/Mileage Forms",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 116,
@@ -1381,31 +896,8 @@
     "department": "Unassigned",
     "form_group": "Accounts Payable & Travel/Mileage Forms",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 117,
-    "form_name": "AP Check Request and Prepaid Travel",
-    "department": "Unassigned",
-    "form_group": "Accounts Payable & Travel/Mileage Forms",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 118,
-    "form_name": "AP Check Request and Prepaid Travel",
-    "department": "Unassigned",
-    "form_group": "Accounts Payable & Travel/Mileage Forms",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 119,
-    "form_name": "AP Check Request and Prepaid Travel",
-    "department": "Unassigned",
-    "form_group": "Accounts Payable & Travel/Mileage Forms",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 120,
@@ -1413,71 +905,71 @@
     "department": "Placement",
     "form_group": "Placement",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 121,
     "form_name": "FA Managers Dashboard",
-    "department": "Financial Aid",
+    "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 122,
     "form_name": "FA PWD Response Dashboard",
-    "department": "Financial Aid",
+    "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 123,
     "form_name": "FA LOA F4F MREC Dashboard",
-    "department": "Financial Aid",
+    "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 124,
     "form_name": "VA Military Dashboard",
-    "department": "Veterans Affairs",
+    "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 125,
-    "form_name": "VA Military Dashboard",
-    "department": "Veterans Affairs",
-    "form_group": "Dashboards",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 126,
     "form_name": "REG Transcripts Dashboard",
-    "department": "Registrars Office",
+    "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 127,
     "form_name": "REG International Students Dashboard",
-    "department": "Registrars Office",
+    "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 128,
     "form_name": "HR Payroll Dashboard",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 129,
@@ -1485,7 +977,8 @@
     "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 130,
@@ -1493,7 +986,8 @@
     "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 131,
@@ -1501,7 +995,8 @@
     "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 132,
@@ -1509,7 +1004,8 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 133,
@@ -1517,15 +1013,17 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 134,
     "form_name": "Nursing Program Application",
-    "department": "Health Sciences",
+    "department": "Unassigned",
     "form_group": "Health Sciences and Nursing",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 135,
@@ -1533,7 +1031,8 @@
     "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 136,
@@ -1541,31 +1040,8 @@
     "department": "Human Resources",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 137,
-    "form_name": "Testing123 V1",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 138,
-    "form_name": "Testing123 V1",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 139,
-    "form_name": "Testing123 V1",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 140,
@@ -1573,7 +1049,8 @@
     "department": "Veterans Affairs",
     "form_group": "Veterans Affairs",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 141,
@@ -1581,7 +1058,8 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 142,
@@ -1589,7 +1067,8 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 143,
@@ -1597,7 +1076,8 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 144,
@@ -1605,7 +1085,8 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 145,
@@ -1613,15 +1094,8 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 146,
-    "form_name": "TEST V1",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 147,
@@ -1629,7 +1103,8 @@
     "department": "Unassigned",
     "form_group": "* Instructions and Help",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 148,
@@ -1637,7 +1112,8 @@
     "department": "Student Services",
     "form_group": "Student Services",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 149,
@@ -1645,7 +1121,8 @@
     "department": "Institutional Standards & Practices",
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 150,
@@ -1653,7 +1130,8 @@
     "department": "Unassigned",
     "form_group": "Accounts Payable & Travel/Mileage Forms",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 151,
@@ -1661,7 +1139,8 @@
     "department": "Unassigned",
     "form_group": "* Instructions and Help",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 152,
@@ -1669,7 +1148,8 @@
     "department": "Institutional Standards & Practices",
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 153,
@@ -1677,7 +1157,8 @@
     "department": "Unassigned",
     "form_group": "Financial Services",
     "anonymous": true,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 154,
@@ -1685,23 +1166,26 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 155,
     "form_name": "Temporary Worker Access Form",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": true,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 156,
     "form_name": "Vendor/Volunteer Access Form",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 157,
@@ -1709,15 +1193,8 @@
     "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 158,
-    "form_name": "CW Employees Dashboard",
-    "department": "Unassigned",
-    "form_group": "Dashboards",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 159,
@@ -1725,7 +1202,8 @@
     "department": "Human Resources",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 160,
@@ -1733,15 +1211,8 @@
     "department": "Financial Aid",
     "form_group": "Financial Aid",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 161,
-    "form_name": "Travel Reimbursement",
-    "department": "Unassigned",
-    "form_group": "Accounts Payable & Travel/Mileage Forms",
-    "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 162,
@@ -1749,15 +1220,17 @@
     "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 163,
     "form_name": "FA TIP/MAS Diploma Dashboard",
-    "department": "Financial Aid",
+    "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 164,
@@ -1765,7 +1238,8 @@
     "department": "Financial Aid",
     "form_group": "Financial Aid",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 165,
@@ -1773,31 +1247,17 @@
     "department": "Unassigned",
     "form_group": "Dashboards",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 166,
-    "form_name": "Dual Enrollment Dashboard",
-    "department": "Unassigned",
-    "form_group": "Dashboards",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 167,
     "form_name": "Catalog Year Adjustment",
-    "department": "Student Services",
+    "department": "Unassigned",
     "form_group": "Student Services",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 168,
-    "form_name": "Catalog Year Adjustment",
-    "department": "Student Services",
-    "form_group": "Student Services",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 169,
@@ -1805,7 +1265,8 @@
     "department": "Financial Aid",
     "form_group": "Financial Aid",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 170,
@@ -1813,7 +1274,8 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 171,
@@ -1821,7 +1283,8 @@
     "department": "Institutional Standards & Practices",
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 172,
@@ -1829,7 +1292,8 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 173,
@@ -1837,47 +1301,26 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 174,
-    "form_name": "z_TEST [JL Softdocs] Test Source",
-    "department": "Unassigned",
-    "form_group": "Test",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 175,
-    "form_name": "z_TEST [JL Softdocs] Test Source",
-    "department": "Unassigned",
-    "form_group": "Test",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 176,
-    "form_name": "z_TEST [JL Softdocs] Test Source",
-    "department": "Unassigned",
-    "form_group": "Test",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 177,
     "form_name": "SaaS - Action Strategy Review",
-    "department": "IE-AAQ",
+    "department": "Unassigned",
     "form_group": "Developer",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 178,
     "form_name": "Non-Attendance Reporting Error",
-    "department": "Registrars Office",
+    "department": "Unassigned",
     "form_group": "Academics",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 179,
@@ -1885,7 +1328,8 @@
     "department": "Institutional Standards & Practices",
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 180,
@@ -1893,15 +1337,17 @@
     "department": "Institutional Standards & Practices",
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 181,
     "form_name": "Course Substitution Request",
-    "department": "Registrars Office",
+    "department": "Unassigned",
     "form_group": "Registrar",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 182,
@@ -1909,7 +1355,8 @@
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 183,
@@ -1917,15 +1364,17 @@
     "department": "Purchasing",
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 184,
     "form_name": "Legal Name Change",
-    "department": "Student Services",
+    "department": "Unassigned",
     "form_group": "Student Services",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 185,
@@ -1933,7 +1382,8 @@
     "department": "Purchasing",
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 186,
@@ -1941,7 +1391,8 @@
     "department": "Institutional Standards & Practices",
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 187,
@@ -1949,7 +1400,8 @@
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 188,
@@ -1957,15 +1409,17 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 189,
     "form_name": "W-4 Federal 2026",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Tax Forms",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 190,
@@ -1973,15 +1427,17 @@
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 191,
     "form_name": "W-4 Federal 2026 - No OCC User ID",
-    "department": "Human Resources",
+    "department": "Unassigned",
     "form_group": "Public use forms",
     "anonymous": true,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 192,
@@ -1989,7 +1445,8 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 193,
@@ -1997,7 +1454,8 @@
     "department": "Dual Enrollment",
     "form_group": "Admissions",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 194,
@@ -2005,15 +1463,17 @@
     "department": "Unassigned",
     "form_group": "Developer",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 195,
     "form_name": "Authorization to Release Student Information (Verification Request)",
-    "department": "Registrars Office",
+    "department": "Unassigned",
     "form_group": "Registrar",
     "anonymous": true,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 196,
@@ -2021,23 +1481,17 @@
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 197,
-    "form_name": "Limited Personal Counseling for Academic Success Services Agreement V1",
-    "department": "Academics",
-    "form_group": "Academics",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 198,
     "form_name": "MTA Endorsement Request",
-    "department": "Registrars Office",
+    "department": "Unassigned",
     "form_group": "Registrar",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 199,
@@ -2045,15 +1499,17 @@
     "department": "Institutional Standards & Practices",
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 200,
     "form_name": "Shaw College at Detroit Transcript Request",
-    "department": "Registrars Office",
+    "department": "Unassigned",
     "form_group": "Registrar",
     "anonymous": true,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 201,
@@ -2061,23 +1517,8 @@
     "department": "Institutional Standards & Practices",
     "form_group": "Institutional Standards and Practices",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 202,
-    "form_name": "OCC Basic Needs & Student Financial Award Application V4",
-    "department": "Institutional Standards & Practices",
-    "form_group": "Institutional Standards and Practices",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 203,
-    "form_name": "OCC Basic Needs & Student Financial Award Application V4",
-    "department": "Institutional Standards & Practices",
-    "form_group": "Institutional Standards and Practices",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 204,
@@ -2085,15 +1526,8 @@
     "department": "Human Resources",
     "form_group": "Public use forms",
     "anonymous": true,
-    "published": true
-  },
-  {
-    "form_id": 205,
-    "form_name": "Drivers License Verification V1",
-    "department": "Human Resources",
-    "form_group": "Public use forms",
-    "anonymous": true,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 206,
@@ -2101,7 +1535,8 @@
     "department": "Human Resources",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 207,
@@ -2109,7 +1544,8 @@
     "department": "Purchasing",
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 208,
@@ -2117,7 +1553,8 @@
     "department": "Unassigned",
     "form_group": "Financial Services",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 209,
@@ -2125,7 +1562,8 @@
     "department": "Environmental Health",
     "form_group": "Environmental Health & Safety",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 210,
@@ -2133,7 +1571,8 @@
     "department": "Financial Services",
     "form_group": "Financial Services",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 211,
@@ -2141,15 +1580,17 @@
     "department": "Dual Enrollment",
     "form_group": "Admissions",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 212,
     "form_name": "Request for Student Employment - Work Study V1",
-    "department": "Financial Aid",
-    "form_group": "Financial Aid",
+    "department": "Unassigned",
+    "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 213,
@@ -2157,7 +1598,8 @@
     "department": "Unassigned",
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 214,
@@ -2165,39 +1607,8 @@
     "department": "Financial Services - Payroll",
     "form_group": "Payroll",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 215,
-    "form_name": "Cell Phone Stipend Request V1",
-    "department": "Financial Services - Payroll",
-    "form_group": "Payroll",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 216,
-    "form_name": "Cell Phone Stipend Request V1",
-    "department": "Financial Services - Payroll",
-    "form_group": "Payroll",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 217,
-    "form_name": "Cell Phone Stipend Request V1",
-    "department": "Financial Services - Payroll",
-    "form_group": "Payroll",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 218,
-    "form_name": "Cell Phone Stipend Request V1",
-    "department": "Financial Services - Payroll",
-    "form_group": "Payroll",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 219,
@@ -2205,23 +1616,8 @@
     "department": "Purchasing",
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 220,
-    "form_name": "Equipment Purchase V2",
-    "department": "Purchasing",
-    "form_group": "Purchasing/Auxiliary Services",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 221,
-    "form_name": "Equipment Purchase V2",
-    "department": "Purchasing",
-    "form_group": "Purchasing/Auxiliary Services",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 222,
@@ -2229,31 +1625,26 @@
     "department": "Unassigned",
     "form_group": "Deprecated",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 223,
-    "form_name": "RSI Documentation for Online Faculty V1",
-    "department": "Unassigned",
-    "form_group": "Deprecated",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 224,
     "form_name": "Authorization to Release Student Information - Existing Student",
-    "department": "Registrars Office",
+    "department": "Unassigned",
     "form_group": "Registrar",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 225,
     "form_name": "Field Trip Request V1",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Academics",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 226,
@@ -2261,7 +1652,8 @@
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 227,
@@ -2269,15 +1661,17 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 228,
     "form_name": "Registration/Adjustment Request",
-    "department": "Student Services",
+    "department": "Unassigned",
     "form_group": "Student Services",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 229,
@@ -2285,55 +1679,35 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 230,
-    "form_name": "z_TEST Public Safety Appraisal",
-    "department": "Unassigned",
-    "form_group": "Test",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 231,
     "form_name": "Facility Reservation Request (Building M)",
-    "department": "Economic & Workforce Development",
+    "department": "Unassigned",
     "form_group": "Economic & Workforce Development",
     "anonymous": true,
-    "published": true
-  },
-  {
-    "form_id": 232,
-    "form_name": "Facility Reservation Request (Building M)",
-    "department": "Economic & Workforce Development",
-    "form_group": "Economic & Workforce Development",
-    "anonymous": true,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 233,
     "form_name": "Room Change Request",
-    "department": "Facilities",
+    "department": "Unassigned",
     "form_group": "Facilities",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 234,
     "form_name": "New Vendor Application (Anonymous)",
-    "department": "Purchasing",
+    "department": "Unassigned",
     "form_group": "Purchasing/Auxiliary Services",
-    "anonymous": true,
-    "published": true
-  },
-  {
-    "form_id": 235,
-    "form_name": "New Vendor Application (Anonymous)",
-    "department": "Purchasing",
-    "form_group": "Purchasing/Auxiliary Services",
-    "anonymous": true,
-    "published": true
+    "anonymous": false,
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 236,
@@ -2341,7 +1715,8 @@
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 237,
@@ -2349,7 +1724,8 @@
     "department": "Financial Aid",
     "form_group": "Financial Aid",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 238,
@@ -2357,7 +1733,8 @@
     "department": "Unassigned",
     "form_group": "Deprecated",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 239,
@@ -2365,63 +1742,35 @@
     "department": "Human Resources",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 240,
-    "form_name": "Student Employment Form V2",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 241,
-    "form_name": "Student Employment Form V2",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 242,
     "form_name": "Registration/Adjustment Request - Staff Use",
-    "department": "Student Services",
+    "department": "Unassigned",
     "form_group": "Student Services",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 243,
     "form_name": "z_DEPRECATED Facilities Reservation Request - Internal",
-    "department": "Facilities",
+    "department": "Unassigned",
     "form_group": "Facilities",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
-    "form_id": 244,
-    "form_name": "z_DEPRECATED Facilities Reservation Request - Internal",
-    "department": "Facilities",
-    "form_group": "Facilities",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 245,
+    "form_id": 246,
     "form_name": "Adjunct Instructor Observation Report V3",
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 246,
-    "form_name": "Adjunct Instructor Observation Report V4",
-    "department": "Academics",
-    "form_group": "Academics",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 247,
@@ -2429,7 +1778,8 @@
     "department": "Financial Services",
     "form_group": "Financial Services",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 248,
@@ -2437,7 +1787,8 @@
     "department": "Financial Aid",
     "form_group": "Financial Aid",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 249,
@@ -2445,7 +1796,8 @@
     "department": "Student Services",
     "form_group": "Student Services",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 250,
@@ -2453,31 +1805,26 @@
     "department": "Unassigned",
     "form_group": "Economic & Workforce Development",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 251,
-    "form_name": "Internship and Co-op Learning Objectives",
-    "department": "Academics",
+    "form_name": "Internship - Learning Objectives",
+    "department": "Unassigned",
     "form_group": "Academics",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 252,
-    "form_name": "Statement of Work V1",
-    "department": "Unassigned",
-    "form_group": "Economic & Workforce Development",
-    "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 253,
-    "form_name": "Internship and Co-op Student Application & Agreement",
-    "department": "Academics",
+    "form_name": "Internship - Application & Agreement",
+    "department": "Unassigned",
     "form_group": "Academics",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 254,
@@ -2485,7 +1832,8 @@
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 255,
@@ -2493,15 +1841,8 @@
     "department": "Purchasing",
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 256,
-    "form_name": "Equipment Purchase V3",
-    "department": "Purchasing",
-    "form_group": "Purchasing/Auxiliary Services",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 257,
@@ -2509,7 +1850,8 @@
     "department": "Human Resources",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 258,
@@ -2517,15 +1859,8 @@
     "department": "Economic & Workforce Development",
     "form_group": "Economic & Workforce Development",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 259,
-    "form_name": "Pre-Apprenticeship Application V1",
-    "department": "Economic & Workforce Development",
-    "form_group": "Economic & Workforce Development",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 260,
@@ -2533,7 +1868,8 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 261,
@@ -2541,31 +1877,8 @@
     "department": "Financial Services",
     "form_group": "Financial Services",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 262,
-    "form_name": "Gift Card/Award/Prize Reporting Form V3",
-    "department": "Financial Services",
-    "form_group": "Financial Services",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 263,
-    "form_name": "Gift Card/Award/Prize Reporting Form V3",
-    "department": "Financial Services",
-    "form_group": "Financial Services",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 264,
-    "form_name": "Gift Card/Award/Prize Reporting Form V3",
-    "department": "Financial Services",
-    "form_group": "Financial Services",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 265,
@@ -2573,15 +1886,17 @@
     "department": "Unassigned",
     "form_group": "Developer",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 266,
     "form_name": "Request for Student Employment - Work Study V2",
-    "department": "Financial Aid",
-    "form_group": "Financial Aid",
+    "department": "Unassigned",
+    "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 267,
@@ -2589,7 +1904,8 @@
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 268,
@@ -2597,7 +1913,8 @@
     "department": "Human Resources",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 269,
@@ -2605,7 +1922,8 @@
     "department": "Purchasing",
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 270,
@@ -2613,7 +1931,8 @@
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 271,
@@ -2621,7 +1940,8 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 272,
@@ -2629,7 +1949,8 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 273,
@@ -2637,7 +1958,8 @@
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 274,
@@ -2645,15 +1967,8 @@
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 275,
-    "form_name": "Guest/Non-Degree Student Prerequisite Waiver Request V5",
-    "department": "Academics",
-    "form_group": "Academics",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 276,
@@ -2661,7 +1976,8 @@
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 277,
@@ -2669,23 +1985,8 @@
     "department": "Unassigned",
     "form_group": "Deprecated",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 278,
-    "form_name": "RSI Documentation for Online Faculty V3",
-    "department": "Unassigned",
-    "form_group": "Deprecated",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 279,
-    "form_name": "RSI Documentation for Online Faculty V3",
-    "department": "Unassigned",
-    "form_group": "Deprecated",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 280,
@@ -2693,31 +1994,8 @@
     "department": "Human Resources",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 281,
-    "form_name": "Non-Traditional Information Worksheet - Section and Section Based Billing",
-    "department": "Academics",
-    "form_group": "Academics",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 282,
-    "form_name": "Non-Traditional Information Worksheet - Course Information",
-    "department": "Academics",
-    "form_group": "Academics",
-    "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 283,
-    "form_name": "Application for Credit by Exam or Portfolio",
-    "department": "Career Serrvices",
-    "form_group": "Career Services",
-    "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 284,
@@ -2725,7 +2003,8 @@
     "department": "Purchasing",
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 285,
@@ -2733,15 +2012,8 @@
     "department": "Human Resources",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 286,
-    "form_name": "Student Employment Form V5",
-    "department": "Human Resources",
-    "form_group": "Human Resources",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 287,
@@ -2749,39 +2021,17 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
-    "form_id": 288,
+    "form_id": 290,
     "form_name": "Z_Party Form BDL",
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 289,
-    "form_name": "Z_DEV HTML Template",
-    "department": "Unassigned",
-    "form_group": "Developer",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 290,
-    "form_name": "Z_DEV HTML Template",
-    "department": "Unassigned",
-    "form_group": "Developer",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 291,
-    "form_name": "Clear User's Security External ID",
-    "department": "IT Support Center",
-    "form_group": "Admin",
-    "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 292,
@@ -2789,7 +2039,8 @@
     "department": "Unassigned",
     "form_group": "Developer",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 293,
@@ -2797,15 +2048,8 @@
     "department": "Unassigned",
     "form_group": "Developer",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 294,
-    "form_name": "z_DEV Form References (DO NOT DELETE)",
-    "department": "Unassigned",
-    "form_group": "Developer",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 295,
@@ -2813,23 +2057,8 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 296,
-    "form_name": "z_TEST Internship and Co-op Learning Objectives",
-    "department": "Unassigned",
-    "form_group": "Test",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 297,
-    "form_name": "z_TEST Internship and Co-op Learning Objectives",
-    "department": "Unassigned",
-    "form_group": "Test",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 298,
@@ -2837,15 +2066,8 @@
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 299,
-    "form_name": "Adjunct Instructor Observation Report V5",
-    "department": "Academics",
-    "form_group": "Academics",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 300,
@@ -2853,7 +2075,8 @@
     "department": "Economic & Workforce Development",
     "form_group": "Economic & Workforce Development",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 301,
@@ -2861,7 +2084,8 @@
     "department": "Unassigned",
     "form_group": "Economic & Workforce Development",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 302,
@@ -2869,7 +2093,8 @@
     "department": "Unassigned",
     "form_group": "Economic & Workforce Development",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 303,
@@ -2877,23 +2102,17 @@
     "department": "Unassigned",
     "form_group": "Test",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 304,
-    "form_name": "z_Test ESign Integration V1",
-    "department": "Unassigned",
-    "form_group": "Test",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 305,
     "form_name": "Purchase Requisition Request Form",
-    "department": "Economic & Workforce Development",
+    "department": "Unassigned",
     "form_group": "Economic & Workforce Development",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 306,
@@ -2901,7 +2120,8 @@
     "department": "Unassigned",
     "form_group": "Economic & Workforce Development",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 307,
@@ -2909,7 +2129,8 @@
     "department": "Student Services",
     "form_group": "Student Services",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 308,
@@ -2917,7 +2138,8 @@
     "department": "Economic & Workforce Development",
     "form_group": "Economic & Workforce Development",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 309,
@@ -2925,7 +2147,8 @@
     "department": "Financial Services - Payroll",
     "form_group": "Payroll",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 310,
@@ -2933,7 +2156,8 @@
     "department": "Human Resources",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 311,
@@ -2941,23 +2165,17 @@
     "department": "Information Technologies",
     "form_group": "Information Technologies",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 312,
-    "form_name": "VPN Phone User Aggreement V1",
-    "department": "Information Technologies",
-    "form_group": "Information Technologies",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 313,
-    "form_name": "CREST External Facilities Reservation Request",
+    "form_name": "OCC Emergency Services Academy External Facilities Reservation Request",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Public Services",
     "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 314,
@@ -2965,7 +2183,8 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 315,
@@ -2973,7 +2192,8 @@
     "department": "Financial Services - Payroll",
     "form_group": "Payroll",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 316,
@@ -2981,7 +2201,8 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 317,
@@ -2989,7 +2210,8 @@
     "department": "Financial Services - Payroll",
     "form_group": "Payroll",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 318,
@@ -2997,7 +2219,8 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 319,
@@ -3005,7 +2228,8 @@
     "department": "Student Services",
     "form_group": "Student Services",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 320,
@@ -3013,7 +2237,8 @@
     "department": "Human Resources",
     "form_group": "Human Resources",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 321,
@@ -3021,31 +2246,26 @@
     "department": "Information Technologies",
     "form_group": "Information Technologies",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 322,
     "form_name": "Firearms Reservation Request",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Public Services",
     "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 323,
     "form_name": "Debt Reset Form",
-    "department": "Student Services",
+    "department": "Unassigned",
     "form_group": "Student Services",
     "anonymous": true,
-    "published": true
-  },
-  {
-    "form_id": 324,
-    "form_name": "Debt Reset Form",
-    "department": "Student Services",
-    "form_group": "Student Services",
-    "anonymous": true,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 325,
@@ -3053,23 +2273,17 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 326,
     "form_name": "CSA Training Acknowledgment",
-    "department": "Public Safety",
+    "department": "Unassigned",
     "form_group": "Public Safety",
     "anonymous": true,
-    "published": false
-  },
-  {
-    "form_id": 327,
-    "form_name": "z_TEST Schedule of Classes",
-    "department": "Academics",
-    "form_group": "Academics",
-    "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 328,
@@ -3077,7 +2291,8 @@
     "department": "Academics",
     "form_group": "Academics",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 329,
@@ -3085,39 +2300,35 @@
     "department": "Unassigned",
     "form_group": "Counseling",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 330,
     "form_name": "RSI Documentation for Online Faculty",
-    "department": "Academics",
+    "department": "Unassigned",
     "form_group": "Academics",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 331,
     "form_name": "TEST - Debt Reset",
-    "department": "Student Services",
+    "department": "Unassigned",
     "form_group": "Developer",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 332,
     "form_name": "RSI Documentation Course Sections Utility Form",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Utility Forms",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 333,
-    "form_name": "Dashboard Wizard",
-    "department": "Unassigned",
-    "form_group": "Developer",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 334,
@@ -3125,15 +2336,8 @@
     "department": "Unassigned",
     "form_group": "Developer",
     "anonymous": false,
-    "published": true
-  },
-  {
-    "form_id": 335,
-    "form_name": "Dashboard Wizard",
-    "department": "Unassigned",
-    "form_group": "Developer",
-    "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 336,
@@ -3141,7 +2345,8 @@
     "department": "Unassigned",
     "form_group": "Developer",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 337,
@@ -3149,7 +2354,8 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 338,
@@ -3157,7 +2363,8 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 339,
@@ -3165,7 +2372,8 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": true
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 340,
@@ -3173,7 +2381,8 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 341,
@@ -3181,7 +2390,8 @@
     "department": "Unassigned",
     "form_group": "Deprecated",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 342,
@@ -3189,7 +2399,8 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 343,
@@ -3197,7 +2408,8 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 344,
@@ -3205,7 +2417,8 @@
     "department": "Purchasing",
     "form_group": "Purchasing/Auxiliary Services",
     "anonymous": false,
-    "published": true
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 345,
@@ -3213,286 +2426,241 @@
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 346,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "Health Sciences Utility Form",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Utility Forms",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 347,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 348,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
-    "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 349,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "Request for Time Off",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Health Sciences and Nursing",
     "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 350,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_name": "Chosen Name and Personal Pronoun Request",
+    "department": "Human Resources",
+    "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 351,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "z_TEST Repeating Groups",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Test",
     "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 352,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "Request for Student Employment - Work Study V3",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 353,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "Request for Student Worker - Authorization V4",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 354,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_name": "Employee Change of Information Request",
+    "department": "Human Resources",
+    "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 355,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "Softdocs New Form Development Request",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Developer",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 356,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "Softdocs Bugs and Issues Ticket",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Developer",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 357,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "Softdocs New Features and Improvements Request",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Developer",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 358,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_name": "Employee Staffing Request",
+    "department": "Human Resources",
+    "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 359,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_name": "Dental Hygiene Application Checklist",
+    "department": "Health Sciences",
+    "form_group": "Health Sciences and Nursing",
     "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 360,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "Common Course Outcome Reduction",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Student Outcomes Assessment Committee",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 361,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
-    "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 362,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_name": "Student Employment Form V8",
+    "department": "Human Resources",
+    "form_group": "Human Resources",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 363,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "Petition for Academic Amnesty",
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 364,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "Online Program - Modality Change",
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 365,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_name": "Adjunct Observation Report V7",
+    "department": "Academics",
+    "form_group": "Academics",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 366,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_name": "Leave of Absence Request V4",
+    "department": "Financial Aid",
+    "form_group": "Financial Aid",
     "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 367,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_name": "Adjunct Observation Report V8",
+    "department": "Academics",
+    "form_group": "Academics",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 368,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "Legal Name Change v2",
     "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_group": "Student Services",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 369,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_name": "Submit FA Forms V3",
+    "department": "Financial Aid",
+    "form_group": "Financial Aid",
     "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": true
   },
   {
     "form_id": 370,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_name": "Adjunct Observation Report V9",
+    "department": "Academics",
+    "form_group": "Academics",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 371,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 372,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   },
   {
     "form_id": 373,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "Credit For Prior Learning",
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 374,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "Submit Student Form",
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": false
   },
   {
     "form_id": 375,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
+    "form_name": "Adjunct Observation Report",
+    "department": "Academics",
+    "form_group": "Academics",
     "anonymous": false,
-    "published": false
+    "published": true,
+    "new_forms_builder": false
   },
   {
     "form_id": 376,
-    "form_name": "NIS Agency Information Data Utility Form",
+    "form_name": "Submit Student Form v2",
     "department": "Unassigned",
     "form_group": "Unassigned",
     "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 377,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 378,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 379,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
-    "anonymous": false,
-    "published": false
-  },
-  {
-    "form_id": 380,
-    "form_name": "NIS Agency Information Data Utility Form",
-    "department": "Unassigned",
-    "form_group": "Unassigned",
-    "anonymous": false,
-    "published": false
+    "published": false,
+    "new_forms_builder": true
   }
 ]
