@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row326" class="text-left row fd-form-masthead ">
+                <div id="col327" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn328" name="revisedOn" class="col-sm-12 text-right  ">Revised 06/26</span>
+                </div>
+                <div id="col329" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele330" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col331" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele332" name="ele21" class="text-left form-title ">Check Request and Prepaid Travel</h1>
+                </div>
+                <div id="col333" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele334" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row322" class="text-left row ">
+                <div id="col323" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote324" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="row344" name="" class="text-left section-header ">
+                <div id="col345" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele346" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele347" name="ele595" class="text-left  ">Employee Information</h2>
+                </div>
+            </div>
+            <div id="quickDropdownRow16" name="quickDropdownRow" class="text-left row employeeInfo ">
+                <div id="quickDropdownColumn17" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="selfOrElse">Will you be submitting this form for yourself or on behalf of another
+                        employee?</label>
+                    <select id="selfOrElse" name="selfOrElse" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Myself">Myself</option>
+                        <option value="On Behalf of Another Employee">On Behalf of Another Employee</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow67" name="quickInputsRow" class="text-left row employeeInfo ">
+                <div id="quickInputsColumn68" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="travelRelated">Is this travel related?</label>
+                    <select id="travelRelated" name="travelRelated"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn70" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( travelRelated() == 'Yes' ) ) ">
+                    <label for="employeeReimbursement">Is this reimbursement to employee?</label>
+                    <select id="employeeReimbursement"
+                    name="employeeReimbursement" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow44" name="quickInputsRow" class="text-left row employeeInfo ">
+                <div id="quickInputsColumn45" name="quickInputsColumn1" class="col-xs-12 col-sm-5 text-left someoneElse "
+                data-bind="visible: ( ( selfOrElse() == 'On Behalf of Another Employee' ) ) ">
+                    <div class="text-left  ">
+                        <label for="employeeSearch">Enter Employee's ID</label>
+                        <input id="employeeSearch" name="employeeSearch"
+                        class="text-left  " required="required" type="text" data-bind="visible: ( ( selfOrElse() == 'On Behalf of Another Employee' ) ) "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn47" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left someoneElse "
+                style=" margin-top: 25px; " data-bind="visible: ( ( selfOrElse() == 'On Behalf of Another Employee' ) ) ">
+                    <button id="employeeSearchButton" name="employeeSearchButton" class="text-left btn btn-primary btn-block "
+                    style="" undefined="">Search</button>
+                </div>
+                <div id="col50" class="col-xs-12 col-sm-3 text-left developer ">
+                    <div class="text-left  ">
+                        <label for="employeeID">employeeID (hidden)</label>
+                        <input id="employeeID" name="employeeID" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow27" name="quickInputsRow" class="text-left row employeeInfo ">
+                <div id="quickInputsColumn28" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeName">Employee Name</label>
+                        <input id="employeeName" name="employeeName" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn30" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeEmail">Employee Email</label>
+                        <input id="employeeEmail" name="employeeEmail" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col201" name="col201" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ( ( travelRelated() == 'Yes' ) )  ">
+                    <div class="text-left  ">
+                        <label for="jobTitle">Job Title (Please Select)</label>
+                        <input id="jobTitle" name="jobTitle"
+                        class="text-left  " required="required" data-bind="autocomplete: { localSource: 'personsPositionsList',  validate: true,  labelMask: ['positionTitle'],  formFields: {'campus':'campusTitle', 'departmentGUID':'positionDepartmentGUID', 'supervisorGUID':'supervisorGUID'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col32" name="col32" class="col-xs-12 col-sm-6 text-left  " data-bind="visible: ( ( travelRelated() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="department">Department</label>
+                        <input id="department" name="department" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col33" name="col33" class="col-xs-12 col-sm-6 text-left  " data-bind="visible: ( ( travelRelated() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="campus">Campus</label>
+                        <input id="campus" name="campus" class="text-left  " />
+                    </div>
+                </div>
+                <div id="col40" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele41" name="ele41" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow54" name="quickInputsRow" class="text-left row approverSection ">
+                <div id="quickInputsColumn55" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="approver">Approver</label>
+                        <input id="approver" name="approver" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: false,   labelMask: ['UserName', ' | ', 'Email'], selectedMask: ['UserName'],  formFields: {'approverEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn57" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="approverEmail">Approver Email</label>
+                        <input id="approverEmail" name="approverEmail" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow543131" name="quickInputsRow" class="text-left row secondApproverSection ">
+                <div id="col310" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="secondApproverQuestion">Does there need to be a second approver for this form?</label>
+                    <select
+                    id="secondApproverQuestion" name="secondApproverQuestion" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+                <div id="quickInputsColumn5531" name="quickInputsColumn5531" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( secondApproverQuestion() == 'Yes' ) )  ">
+                    <div class="text-left  ">
+                        <label for="secondApprover">Second Approver</label>
+                        <input id="secondApprover" name="secondApprover"
+                        class="text-left  " required="required" type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: false,   labelMask: ['UserName', ' | ', 'Email'], selectedMask: ['UserName'],  formFields: {'secondApproverEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn5731" name="quickInputsColumn5731" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( secondApproverQuestion() == 'Yes' ) )  ">
+                    <div class="text-left  ">
+                        <label for="secondApproverEmail">Second Approver Email</label>
+                        <input id="secondApproverEmail" name="secondApproverEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row434" name="" class="text-left section-header " data-bind="visible: ( ( travelRelated() == 'Yes' ) ) ">
+                <div id="col435" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele436" name="ele585" class="text-left icon "><i class="fa-solid fa-suitcase" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele437" name="ele595" class="text-left  ">Trip Information</h2>
+                </div>
+            </div>
+            <div id="quickInputsRow80" name="quickInputsRow" class="text-left row travelInfo "
+            data-bind="visible: ( ( travelRelated() == 'Yes' ) ) ">
+                <div id="quickInputsColumn81" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="conferenceTitle">Conference Title</label>
+                        <input id="conferenceTitle" name="conferenceTitle"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow84" name="quickInputsRow" class="text-left row travelInfo "
+            data-bind="visible: ( ( travelRelated() == 'Yes' ) ) ">
+                <div id="quickInputsColumn85" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="location">Location</label>
+                        <input id="location" name="location" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn87" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fromDate">From Date</label>
+                        <input id="fromDate" name="fromDate" class="text-left  "
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn89" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="toDate">To Date</label>
+                        <input id="toDate" name="toDate" class="text-left  " type="text"
+                        data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow92" name="quickInputsRow" class="text-left row travelInfo "
+            data-bind="visible: ( ( travelRelated() == 'Yes' ) ) ">
+                <div id="quickInputsColumn93" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="purpose">Purpose</label>
+                        <input id="purpose" name="purpose" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col95" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_97" class="text-left  " />
+                </div>
+            </div>
+            <div id="row439" name="" class="col-sm-12 text-left fd-callout fd-callout--info travelInfo "
+            data-bind="visible: ( ( travelRelated() == 'Yes' ) ) ">
+                <div id="col440" class="col-xs-12 col-sm-12 text-left fd-callout-header "><span id="ele441" name="ele293" class="text-left  "><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
+                    <h4
+                    id="ele442" name="ele2943435363738" class="text-left  ">Required Documentation</h4>
+                </div>
+                <div id="col443" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele444" name="ele2973435363738" class="text-left  ">Please attach registration form or other documentation as required before
+                        submitting this form.</p>
+                </div>
+            </div>
+            <div id="row349" name="" class="text-left section-header ">
+                <div id="col350" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele351" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele352" name="ele595" class="text-left  ">Vendor/Payee Information</h2>
+                </div>
+            </div>
+            <div id="row354" name="" class="col-sm-12 text-left fd-callout fd-callout--info requestDaysHours ">
+                <div id="col355" class="col-xs-12 col-sm-12 text-left fd-callout-header "><span id="ele356" name="ele293" class="text-left  "><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
+                    <h4
+                    id="ele357" name="ele2943435363738" class="text-left  ">Vendor ID Lookup</h4>
+                </div>
+                <div id="col358" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele359" name="ele2973435363738" class="text-left  ">Search by Vendor Name using Colleague command <strong>VENI</strong> to get
+                        the 7-digit Vendor ID.</p>
+                    <hr id="hr_361" class="col-xs-12 col-sm-12 text-left fd-callout-divider "
+                    />
+                    <p id="ele362" name="ele362" class="text-left  "> <strong>New Vendor Information:</strong>
+If a vendor does not exist, request
+                        a W-9 from the vendor and forward it to Purchasing. Purchasing will create
+                        the new vendor and provide the Vendor ID number.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow106" name="quickInputsRow" class="text-left row vendorInfo ">
+                <div id="quickInputsColumn107" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vendorSearch">Enter Vendor/Payee ID</label>
+                        <input id="vendorSearch" name="vendorSearch"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn109" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  "
+                style=" margin-top: 25px; ">
+                    <button id="vendorSearchButton" name="vendorSearchButton" class="text-left btn btn-primary btn-block "
+                    style="" undefined="">Search</button>
+                </div>
+            </div>
+            <div id="row454" name="" class="col-sm-12 text-left fd-callout fd-callout--warning vendor-address-missing ">
+                <div id="col455" class="col-xs-12 col-sm-12 text-left fd-callout-header "><span id="ele456" name="ele29334353637" class="text-left  "><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i></span>
+                    <h4
+                    id="ele457" name="ele29434353637" class="text-left  ">No Address Found</h4>
+                </div>
+                <div id="col458" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele459" name="ele29734353637" class="text-left  ">No address was found for this vendor/payee. Please contact Accounts Payable
+                        before submitting this request.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow221" name="quickInputsRow" class="text-left row vendorInfo ">
+                <div id="quickInputsColumn222" name="quickInputsColumn1" class="col-xs-12 col-sm-10 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vendorPayeeName">Vendor/Payee Name</label>
+                        <input id="vendorPayeeName" name="vendorPayeeName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col224" name="col224" class="col-xs-12 col-sm-2 text-center  ">
+                    <input id="differentPayee" name="differentPayee" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                    <label for="differentPayee">Enter Different Payee</label>
+                </div>
+            </div>
+            <div id="quickInputsRow113" name="quickInputsRow" class="text-left row vendorInfo "
+            data-bind="visible: ( ( differentPayee() ) ) ">
+                <div id="quickInputsColumn114" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentVendorPayeeName">Enter Different Vendor/Payee Name</label>
+                        <input id="differentVendorPayeeName"
+                        name="differentVendorPayeeName" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row382" class="text-left row ">
+                <div id="col383" class="col-xs-12 col-sm-12 text-left fd-subsection-header info-variant ">
+                    <h3 id="ele384" name="ele83" class="text-left  ">Vendor Record Address</h3>
+                </div>
+            </div>
+            <div id="quickInputsRow121" name="quickInputsRow" class="text-left row vendorInfo ">
+                <div id="quickInputsColumn122" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="address">Address</label>
+                        <input id="address" name="address" class="text-left  "
+                        required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn124" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="city">City</label>
+                        <input id="city" name="city" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn126" name="quickInputsColumn3" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="state">State</label>
+                        <input id="state" name="state" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn128" name="quickInputsColumn4" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="zip">Zip Code</label>
+                        <input id="zip" name="zip" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col227" name="col227" class="col-xs-12 col-sm-2 text-center  "
+                style=" margin-top: 10px; ">
+                    <input id="differentAddress" name="differentAddress" class="text-left  "
+                    style=" transform: scale(1.5) " type="checkbox" />
+                    <label for="differentAddress">Use an Alternate Payment Address</label>
+                </div>
+            </div>
+            <div id="row390" name="row81" class="text-left row " data-bind="visible: ( ( differentAddress() ) ) ">
+                <div id="col391" class="col-xs-12 col-sm-12 text-left fd-subsection-header info-variant with-helper ">
+                    <h3 id="ele392" name="ele83" class="col-sm-12 text-left  ">Alternate Payee Address</h3>
+                    <p id="ele393" name="ele447" class="col-sm-12 text-left  ">Enter an alternate address only if payment should be mailed somewhere
+                        other than the vendor's default address.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow1212727" name="quickInputsRow" class="text-left row vendorInfo "
+            data-bind="visible: ( ( differentAddress() ) ) ">
+                <div id="quickInputsColumn12227" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentAddressField">Address</label>
+                        <input id="differentAddressField" name="differentAddressField"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn12427" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentCity">City</label>
+                        <input id="differentCity" name="differentCity" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn12627" name="quickInputsColumn3" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentState">State</label>
+                        <input id="differentState" name="differentState" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn12827" name="quickInputsColumn4" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentZip">Zip Code</label>
+                        <input id="differentZip" name="differentZip" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col15227" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele15327" name="ele153" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="accountRow" name="accountRow" class="text-left row " data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addAccount',  removeButtonID: 'removeAccount' } ">
+                <div id="quickInputsColumn132" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="glNumber">General Ledger Number</label>
+                        <input id="glNumber" name="glNumber" class="text-left  "
+                        required="required" type="text" data-bind="mask: '999-99-999999-99999' "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn134" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="glNumDesc">GL Description</label>
+                        <input id="glNumDesc" name="glNumDesc" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col285" name="col285" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="projectNumber">Project Number (If Applicable)</label>
+                        <input id="projectNumber" name="projectNumber"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col144" name="col144" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="amount">Amount</label>
+                        <input id="amount" name="amount" class="text-left  " data-bind="addOn: { type: 'prepend',  snippet: '$' } "
+                        />
+                    </div>
+                </div>
+                <div id="col167" class="col-xs-12 col-sm-1 text-left  " style=" margin-top: 30px; ">
+                    <button id="ele168" name="ele168" class="text-left btn btn-danger " style=""
+                    undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="quickInputsColumn136" name="quickInputsColumn3" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" class="text-left  "
+                    placeholder="Description of services, merchandise, or other expense for which payment is requested."></textarea>
+                </div>
+                <div id="col207" name="col207" class="col-xs-12 col-sm-8 text-left long1099Span "
+                data-bind="visible: $root.travelRelated() !== 'No'"><span id="ele208" name="ele208" class="text-left  "> </span>
+                </div>
+                <div id="col476" name="col476" class="col-xs-12 col-sm-12 text-left fd-callout fd-callout--info "
+                data-bind="visible: $root.travelRelated() == 'No'">
+                    <p id="ele477" name="ele477" class="col-xs-12 col-sm-12 text-left  "><strong>1099 Definitions </strong>
+                    </p>
+                    <p id="ele479" name="ele479" class="col-xs-12 col-sm-12 text-left  "><b>Check Request should be marked “1099-NEC” (Non-Employee Compensation) if: </b>
+
+                        <br
+                        />Payment that is for Income for services to independent workers, freelancers,
+                        and gig workers who are not on the college payroll. Other examples of 1099-NEC
+                        payments: legal work, guest speakers/lecturers, facilitators, scorekeepers
+                        in athletics.</p>
+                    <p id="ele481" name="ele481" class="col-xs-12 col-sm-12 text-left  "><b>Check Request should be marked “1099-MISC” if: </b>
+
+                        <br />Payment is for Miscellaneous Income: prizes, awards, aid.</p>
+                    <p id="ele482"
+                    name="ele482" class="col-xs-12 col-sm-12 text-left  "><b>Payment that is for reimbursements for expenses do not apply and should not be marked as a “1099-NEC” or “1099-MISC”. </b>
+                    </p>
+                </div>
+                <div id="callout1099" name="callout1099" class="col-xs-12 col-sm-12 text-left fd-callout fd-callout--info "><span id="ele398" name="ele398" class="text-left  "><strong>1099 Documentation Required</strong>
+Attach all required 1099 documentation before submitting this request.</span>
+                </div>
+                <div id="quickInputsColumn138" name="quickInputsColumn4" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: $root.travelRelated() == 'No'">
+                    <label for="1099">1099</label>
+                    <select id="1099" name="1099" class="text-left  ">
+                        <option value=""></option>
+                        <option value="1099-MISC (Awards or Aid)">1099-MISC (Awards or Aid)</option>
+                        <option value="1099-NEC (Compensation)">1099-NEC (Compensation)</option>
+                        <option value="Not Applicable">Not Applicable</option>
+                    </select>
+                </div>
+                <div id="col149" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele150" name="ele150" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow156" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn157" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="addAccount" name="addAccount" class="text-left btn btn-primary btn-block "
+                    style="" undefined="">Add Another Account</button>
+                </div>
+                <div id="quickInputsColumn159" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="removeAccount" name="removeAccount" class="text-left btn btn-danger btn-block "
+                    style="" undefined="">Remove Last Account</button>
+                </div>
+                <div id="quickInputsColumn161" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <input id="accountTotal" name="accountTotal" class="text-left  " readonly="true"
+                        type="text" data-bind="addOn: { type: 'append',  snippet: 'Account Total' } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row406" class="text-left section-header requestDaysHours ">
+                <div id="col407" class="col-xs-12 col-sm-12 text-left fd-section-header with-subtitle "><span id="ele408" name="ele58" class="text-left icon "><i class="fa-solid fa-receipt" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele409" name="ele59" class="text-left  ">Invoice Information</h2>
+                        <p id="ele410" name="ele60" class="text-left  ">Provide invoice details for all invoices associated with this payment
+                            request.</p>
+                </div>
+            </div>
+            <div id="row412" name="" class="col-sm-12 text-left fd-callout fd-callout--info requestDaysHours ">
+                <div id="col413" class="col-xs-12 col-sm-12 text-left fd-callout-header "><span id="ele414" name="ele293" class="text-left  "><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
+                    <h4
+                    id="ele415" name="ele2943435363738" class="text-left  ">Required Documentation</h4>
+                </div>
+                <div id="col416" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele417" name="ele2973435363738" class="text-left  ">Attach all invoices and supporting documentation before submitting this
+                        request.</p>
+                    <p id="ele420" name="ele420" class="text-left  ">Use the Attachments icon at the bottom of the form to upload files.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow282" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn283" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="invoiceDate">Invoice Date</label>
+                        <input id="invoiceDate" name="invoiceDate" class="text-left  "
+                        required="required" type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="invoiceRow" name="invoiceRow" class="text-left row " data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addInvoice',  removeButtonID: 'removeInvoice' } ">
+                <div id="quickInputsColumn257" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="invoiceNumber">Invoice Number</label>
+                        <input id="invoiceNumber" name="invoiceNumber" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col288" name="col288" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="invoiceAmount">Invoice Amount</label>
+                        <input id="invoiceAmount" name="invoiceAmount" class="text-left  "
+                        required="required" data-bind="addOn: { type: 'prepend',  snippet: '$' } "
+                        />
+                    </div>
+                </div>
+                <div id="col264" class="col-xs-12 col-sm-1 text-left  " style=" margin-top: 28px; ">
+                    <button id="ele265" name="ele265" class="text-left btn btn-danger " style=""
+                    undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col460" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <input id="invoiceRowExists" name="invoiceRowExists" class="text-left  "
+                        type="hidden" value="Yes" />
+                    </div>
+                </div>
+                <div id="col261" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele262" name="ele262" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow268" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn269" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="addInvoice" name="addInvoice" class="text-left btn btn-primary btn-block "
+                    style="" undefined="">Add Another Invoice</button>
+                </div>
+                <div id="quickInputsColumn271" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="removeInvoice" name="removeInvoice" class="text-left btn btn-danger btn-block "
+                    style="" undefined="">Remove Last Invoice</button>
+                </div>
+                <div id="col302" name="col302" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <input id="invoicesTotal" name="invoicesTotal" class="text-left  " readonly="true"
+                        type="text" data-bind="addOn: { type: 'append',  snippet: 'Invoice Total' } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row423" name="" class="text-left section-header ">
+                <div id="col424" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele425" name="ele585" class="text-left icon "><i class="fa-regular fa-note-sticky" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele426" name="ele595" class="text-left  ">Notes</h2>
+                </div>
+            </div>
+            <div id="quickTextAreaRow180" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn181" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" name="notes" class="text-left  "></textarea>
+                </div>
+                <div id="col291" name="col291" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="show: { packageParam: ['ConditionalActorApprover', 'ConditionalActorSecondApprover', 'End', 'WFFSBudgetManager'] } ">
+                    <label for="approverNotes">Approver Notes</label>
+                    <textarea id="approverNotes" name="approverNotes"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row428" class="text-left section-header developer ">
+                <div id="col429" class="col-xs-12 col-sm-12 text-left fd-section-header with-subtitle developer-variant "><span id="ele430" name="ele58" class="text-left icon "><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele431" name="ele59" class="text-left  ">Developer Section</h2>
+                        <p id="ele432" name="ele60" class="text-left  ">This section is intended for developer use only. If it is visible, please
+                            notify support staff.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow187" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="col190" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationAddressID">organizationAddressID</label>
+                        <input id="organizationAddressID" name="organizationAddressID"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col194" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="departmentGUID">departmentGUID</label>
+                        <input id="departmentGUID" name="departmentGUID"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col195" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorGUID">supervisorGUID</label>
+                        <input id="supervisorGUID" name="supervisorGUID"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col204" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationAddressId">oganizationAddressId</label>
+                        <input id="organizationAddressId" name="organizationAddressId"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col278" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="invoiceNumbers">invoiceNumbers</label>
+                    <textarea id="invoiceNumbers" name="invoiceNumbers"
+                    class="text-left  "></textarea>
+                </div>
+                <div id="col314" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="has14GL">has14GL</label>
+                        <input id="has14GL" name="has14GL" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

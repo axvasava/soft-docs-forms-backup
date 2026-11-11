@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Petition for Academic Amnesty</title>
+	<link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css" />
+	<link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css" />
+	<link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/occ-framework/occForms.css" />
+	<style>
+		/* Form-local table presentation: the framework has no table primitive. */
+		.amnesty-table-scroll { max-inline-size: 100%; overflow-x: auto; }
+		.amnesty-table { inline-size: 100%; border-collapse: collapse; }
+		.amnesty-table caption { text-align: start; font-weight: var(--occ-font-weight-demi); padding-block: var(--occ-space-3); }
+		.amnesty-table :is(th, td) { padding: var(--occ-space-3); text-align: start; border-block-end: 1px solid var(--occ-color-border); }
+		.amnesty-table thead { background: var(--occ-color-primary-bg); }
+		.amnesty-table th[scope="row"] { white-space: nowrap; }
+		.amnesty-table tr:has(input:checked) { background: var(--occ-color-primary-bg); }
+		.amnesty-selection { display: inline-flex; align-items: center; justify-content: center; min-inline-size: 2.75rem; min-block-size: 2.75rem; cursor: pointer; }
+		.amnesty-selection input { inline-size: 1.25rem; block-size: 1.25rem; accent-color: var(--occ-color-primary); }
+		#creditLimitMessage { color: var(--occ-color-error-strong); min-block-size: 1.5em; }
+	</style>
+</head>
+<body>
+	<main class="occ-form" id="academicAmnesty">
+		<div class="occ-theme-toggle-row">
+			<div class="occ-theme-toggle">
+				<label class="occ-theme-switch" for="occThemeToggle">
+					<input id="occThemeToggle" class="occ-theme-switch__input" type="checkbox" data-occ-theme-toggle aria-label="Use dark mode" />
+					<span class="occ-theme-switch__track" aria-hidden="true"><span class="occ-theme-switch__text occ-theme-switch__text--on">Dark</span><span class="occ-theme-switch__text occ-theme-switch__text--off">Light</span><span class="occ-theme-switch__thumb"></span></span>
+				</label>
+			</div>
+		</div>
+		<header class="occ-masthead">
+			<div class="occ-masthead__inner">
+				<div class="occ-masthead__identity"><img class="occ-masthead__logo" src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png" alt="Oakland Community College" /></div>
+				<div class="occ-masthead__content"><h1>Petition for Academic Amnesty</h1><p class="occ-heading-description">Counselor review for student signature</p></div>
+			</div>
+		</header>
+		<!-- DEVELOPMENT ONLY: remove this review panel and the marked table fixtures together. -->
+		<aside class="occ-reading-panel" aria-labelledby="preview-heading">
+			<h2 id="preview-heading">Preliminary UI review</h2>
+			<p>Example data is for review only and is unrelated to the Student ID entered below. Nothing can be submitted. Changing Student ID clears the example.</p>
+			<div class="occ-actions">
+				<button id="exampleEligible" class="occ-button occ-button--secondary" type="button">Load eligible example (17 credits)</button>
+				<button id="exampleIneligible" class="occ-button occ-button--secondary" type="button">Load not-eligible example (14 credits)</button>
+				<button id="exampleClear" class="occ-button occ-button--secondary" type="button">Clear example</button>
+			</div>
+		</aside>
+
+		<section class="occ-section" aria-labelledby="student-heading">
+			<header class="occ-section-heading">
+				<span class="occ-section-heading__icon" aria-hidden="true"><i class="fa-solid fa-user"></i></span>
+				<div class="occ-section-heading__content">
+					<h2 id="student-heading"><button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="student-content">Student Information<span class="occ-section-heading__toggle-icon" aria-hidden="true"><i class="fa-solid fa-chevron-up"></i></span></button></h2>
+					<p class="occ-heading-description">Identify the student and review attendance and filing eligibility.</p>
+				</div>
+			</header>
+			<div id="student-content" class="occ-section__content">
+				<div class="occ-field">
+					<label class="occ-label" for="studentId">Student ID</label>
+					<input id="studentId" name="studentId" class="occ-input" type="text" inputmode="numeric" aria-describedby="studentLookupHelp studentLookupStatus" />
+					<p id="studentLookupHelp" class="occ-help">Enter a 7-digit Student ID, then select Search.</p>
+					<button id="studentSearchButton" class="occ-button occ-button--secondary" type="button" aria-describedby="studentLookupStatus">Search</button>
+					<p id="studentLookupStatus" class="occ-help" role="status"></p>
+				</div>
+				<dl class="occ-summary__list">
+				<div class="occ-summary__item"><dt>Student name</dt><dd id="studentName">Not yet resolved</dd></div>
+				<div class="occ-summary__item"><dt>Last semester of attendance</dt><dd id="lastAttendance">Not yet available</dd></div>
+				<div class="occ-summary__item"><dt>Filing-window eligibility</dt><dd id="filingResult">Not yet determined</dd></div>
+				</dl>
+			</div>
+		</section>
+
+		<section class="occ-section" aria-labelledby="courses-heading">
+			<header class="occ-section-heading">
+				<span class="occ-section-heading__icon" aria-hidden="true"><i class="fa-solid fa-list-check"></i></span>
+				<div class="occ-section-heading__content">
+					<h2 id="courses-heading"><button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="courses-content">Courses for Academic Amnesty<span class="occ-section-heading__toggle-icon" aria-hidden="true"><i class="fa-solid fa-chevron-up"></i></span></button></h2>
+					<p class="occ-heading-description">Choose the historical courses to include in this petition.</p>
+				</div>
+			</header>
+			<div id="courses-content" class="occ-section__content">
+				<p id="selectionInstructions">Select the courses to include in this petition. You may select up to 24 total credit hours.</p>
+				<p class="occ-help">Eligible grades: C-, D+, D, D- and F.</p>
+				<p role="status">Selected credits: <strong id="selectedCredits">0</strong> of 24</p>
+				<p id="creditLimitMessage" role="status"></p>
+				<div class="amnesty-table-scroll" role="region" aria-labelledby="amnesty-caption" tabindex="0">
+					<table class="amnesty-table">
+						<caption id="amnesty-caption">Courses available for selection</caption>
+						<thead><tr><th scope="col">Select</th><th scope="col">Course</th><th scope="col">Credits</th><th scope="col">Grade</th><th scope="col">Semester</th><th scope="col">Year</th></tr></thead>
+						<tbody id="amnestyEmpty"><tr><td colspan="6">Course history is not yet available.</td></tr></tbody>
+						<!-- DEVELOPMENT ONLY: example rows; not student records. -->
+						<tbody id="amnestyRows" hidden>
+							<tr><td><label class="amnesty-selection" for="amnestyCourse1"><input id="amnestyCourse1" type="checkbox" data-credits="3" aria-label="Select CIS-1500, Fall 2020, 3 credits" aria-describedby="selectionInstructions creditLimitMessage" disabled /></label></td><th scope="row">CIS-1500</th><td>3</td><td>C-</td><td>Fall</td><td>2020</td></tr>
+							<tr><td><label class="amnesty-selection" for="amnestyCourse2"><input id="amnestyCourse2" type="checkbox" data-credits="4" aria-label="Select MAT-1150, Winter 2020, 4 credits" aria-describedby="selectionInstructions creditLimitMessage" disabled /></label></td><th scope="row">MAT-1150</th><td>4</td><td>D+</td><td>Winter</td><td>2020</td></tr>
+							<tr><td><label class="amnesty-selection" for="amnestyCourse3"><input id="amnestyCourse3" type="checkbox" data-credits="3" aria-label="Select ENG-1510, Fall 2019, 3 credits" aria-describedby="selectionInstructions creditLimitMessage" disabled /></label></td><th scope="row">ENG-1510</th><td>3</td><td>D-</td><td>Fall</td><td>2019</td></tr>
+							<tr><td><label class="amnesty-selection" for="amnestyCourse4"><input id="amnestyCourse4" type="checkbox" data-credits="4" aria-label="Select BIO-1511, Fall 2019, 4 credits" aria-describedby="selectionInstructions creditLimitMessage" disabled /></label></td><th scope="row">BIO-1511</th><td>4</td><td>F</td><td>Fall</td><td>2019</td></tr>
+							<tr><td><label class="amnesty-selection" for="amnestyCourse5"><input id="amnestyCourse5" type="checkbox" data-credits="3" aria-label="Select HIS-1510, Winter 2019, 3 credits" aria-describedby="selectionInstructions creditLimitMessage" disabled /></label></td><th scope="row">HIS-1510</th><td>3</td><td>D</td><td>Winter</td><td>2019</td></tr>
+							<tr><td><label class="amnesty-selection" for="amnestyCourse6"><input id="amnestyCourse6" type="checkbox" data-credits="4" aria-label="Select CHE-1510, Fall 2018, 4 credits" aria-describedby="selectionInstructions creditLimitMessage" disabled /></label></td><th scope="row">CHE-1510</th><td>4</td><td>D+</td><td>Fall</td><td>2018</td></tr>
+							<tr><td><label class="amnesty-selection" for="amnestyCourse7"><input id="amnestyCourse7" type="checkbox" data-credits="3" aria-label="Select PSY-2510, Winter 2018, 3 credits" aria-describedby="selectionInstructions creditLimitMessage" disabled /></label></td><th scope="row">PSY-2510</th><td>3</td><td>C-</td><td>Winter</td><td>2018</td></tr>
+							<tr><td><label class="amnesty-selection" for="amnestyCourse8"><input id="amnestyCourse8" type="checkbox" data-credits="3" aria-label="Select SOC-2510, Fall 2017, 3 credits" aria-describedby="selectionInstructions creditLimitMessage" disabled /></label></td><th scope="row">SOC-2510</th><td>3</td><td>F</td><td>Fall</td><td>2017</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		<!-- Intentionally non-collapsible: recent qualifying coursework must stay visible in this milestone. -->
+
+		<section class="occ-section" aria-labelledby="academic-heading">
+			<header class="occ-section-heading">
+				<span class="occ-section-heading__icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+				<div class="occ-section-heading__content">
+					<h2 id="academic-heading">Academic Eligibility</h2>
+					<p class="occ-heading-description">Review the recent OCC coursework used to determine eligibility.</p>
+				</div>
+			</header>
+			<div id="academic-content" class="occ-section__content">
+				<div class="amnesty-table-scroll" role="region" aria-labelledby="qualifying-caption" tabindex="0">
+					<table class="amnesty-table">
+						<caption id="qualifying-caption">Recent qualifying OCC coursework</caption>
+						<thead><tr><th scope="col">Course</th><th scope="col">Credits</th><th scope="col">Grade</th><th scope="col">Semester</th><th scope="col">Year</th></tr></thead>
+						<tbody id="qualifyingEmpty"><tr><td colspan="5">Course history is not yet available.</td></tr></tbody>
+						<!-- DEVELOPMENT ONLY: example rows; not student records. -->
+						<tbody id="qualifyingRows" hidden>
+							<tr><th scope="row">ENG-1520</th><td>3</td><td>B</td><td>Winter</td><td>2026</td></tr>
+							<tr><th scope="row">BIO-1530</th><td>4</td><td>B+</td><td>Winter</td><td>2026</td></tr>
+							<tr><th scope="row">COM-1600</th><td>3</td><td>A</td><td>Fall</td><td>2025</td></tr>
+							<tr><th scope="row">MAT-1540</th><td>4</td><td>B</td><td>Fall</td><td>2025</td></tr>
+							<tr id="qualifyingFinalCourse"><th scope="row">HIS-1520</th><td>3</td><td>A-</td><td>Fall</td><td>2025</td></tr>
+						</tbody>
+					</table>
+				</div>
+				<p>Qualifying credits: <strong id="qualifyingCredits">Not yet available</strong></p>
+				<p id="academicResult" class="occ-callout occ-callout--info" role="status">Academic eligibility has not yet been determined.</p>
+			</div>
+		</section>
+
+		<section class="occ-section" aria-labelledby="terms-heading">
+			<header class="occ-section-heading">
+				<span class="occ-section-heading__icon" aria-hidden="true"><i class="fa-solid fa-file-lines"></i></span>
+				<div class="occ-section-heading__content">
+					<h2 id="terms-heading"><button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="terms-content">Academic Amnesty Terms<span class="occ-section-heading__toggle-icon" aria-hidden="true"><i class="fa-solid fa-chevron-up"></i></span></button></h2>
+					<p class="occ-heading-description">Review the effects of Academic Amnesty before preparing the petition.</p>
+				</div>
+			</header>
+			<div id="terms-content" class="occ-section__content">
+				<div class="occ-reading-panel">
+					<p class="occ-help">Preliminary policy wording; subject to review.</p>
+					<ul>
+						<li>Academic Amnesty can be granted only once and cannot be reversed.</li>
+						<li>Courses and their original grades remain on the transcript.</li>
+						<li>Amnestied courses no longer count toward GPA, and credit is not earned for those courses.</li>
+						<li>Courses before the effective date of an OCC degree or certificate are not eligible.</li>
+						<li>Financial-aid GPA treatment may differ.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="occ-section" aria-labelledby="review-heading">
+			<header class="occ-section-heading">
+				<span class="occ-section-heading__icon" aria-hidden="true"><i class="fa-solid fa-clipboard-check"></i></span>
+				<div class="occ-section-heading__content">
+					<h2 id="review-heading"><button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="review-content">Counselor Review<span class="occ-section-heading__toggle-icon" aria-hidden="true"><i class="fa-solid fa-chevron-up"></i></span></button></h2>
+					<p class="occ-heading-description">Review the petition details before requesting the student's signature.</p>
+				</div>
+			</header>
+			<div id="review-content" class="occ-section__content">
+				<div class="occ-field">
+					<label class="occ-label" for="dean">Dean</label>
+					<select id="dean" name="dean" class="occ-select" aria-describedby="deanHelp deanStatus" disabled><option value="">Select a dean</option></select>
+					<p id="deanHelp" class="occ-help">Dean selection requires academic eligibility and an available dean list.</p>
+					<p id="deanStatus" class="occ-help" role="status">Dean options have not loaded yet.</p>
+				</div>
+				<div class="occ-summary">
+					<h3 class="occ-summary__title">Petition summary</h3>
+					<dl class="occ-summary__list">
+				<div class="occ-summary__item"><dt>Student</dt><dd id="summaryStudent">Not yet resolved</dd></div>
+				<div class="occ-summary__item"><dt>Selected courses</dt><dd id="summaryCount">0</dd></div>
+				<div class="occ-summary__item"><dt>Selected credits</dt><dd id="summaryCredits">0</dd></div>
+				<div class="occ-summary__item"><dt>Academic eligibility</dt><dd id="summaryAcademic">Not yet determined</dd></div>
+				<div class="occ-summary__item"><dt>Filing eligibility</dt><dd id="summaryFiling">Not yet determined</dd></div>
+					</dl>
+				</div>
+				<p id="submissionHelp" class="occ-help">Submission is unavailable in this preliminary UI. Filing eligibility, dean options and workflow are pending.</p>
+				<button id="submitForSignature" class="occ-button occ-button--primary" type="button" aria-describedby="submissionHelp" disabled>Submit for student signature</button>
+			</div>
+		</section>
+		<section class="occ-section developer" aria-labelledby="developer-heading">
+			<header class="occ-section-heading">
+				<span class="occ-section-heading__icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
+				<div class="occ-section-heading__content">
+					<h2 id="developer-heading"><button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="developer-content">Developer Information<span class="occ-section-heading__toggle-icon" aria-hidden="true"><i class="fa-solid fa-chevron-up"></i></span></button></h2>
+					<p class="occ-heading-description">If you can see this section, please contact support.</p>
+				</div>
+			</header>
+			<div id="developer-content" class="occ-section__content">
+				<div class="occ-field">
+					<label class="occ-label" for="deanEmail">Dean email</label>
+					<input id="deanEmail" name="deanEmail" class="occ-input" type="text" />
+				</div>
+		</section>
+	</main>
+</body>
+</html>

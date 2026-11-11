@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row111" class="text-left row fd-form-masthead ">
+                <div id="col112" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn" name="revisedOn" class="col-sm-12 text-right  ">Revised 07/26</span>
+                </div>
+                <div id="col114" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele115" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col116" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele117" name="ele21" class="text-left form-title ">General Education Distribution Form</h1>
+                </div>
+                <div id="col118" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele119" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row107" class="text-left row ">
+                <div id="col108" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote109" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow70" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn71" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="catalogYear">In what catalog year should this begin?</label>
+                    <select id="catalogYear"
+                    name="catalogYear" class="text-left  " required="required" data-bind="dynamicYear: { format: 'YYYY-YY[1, 2]' } ">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div id="col73" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="location">Which CIC Campus Chair are you working with?</label>
+                    <select id="location"
+                    name="location" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak/Southfield">Royal Oak/Southfield</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow83" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn84" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dean">Dean</label>
+                        <input id="dean" name="dean" class="text-left  " type="text"
+                        data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_Dean_Information',  minSearchLength: 0,  clearOnFocus: true,  validate: true,  labelMask: ['Dean'],  formFields: {'deanEmail':'Dean_Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn86" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="deanEmail">Deans's Email</label>
+                        <input id="deanEmail" name="deanEmail" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row129" class="text-left row ">
+                <div id="col130" class="col-xs-12 col-sm-12 text-left fd-callout fd-callout--primary "><span id="ele131" name="ele230" class="col-sm-12 text-left  ">Distribution list category where the course is to appear.</span>
+                    <span
+                    id="ele132" name="ele132" class="text-left  ">Please select up to <strong>two (2)</strong> options</span>
+                </div>
+            </div>
+            <div id="quickInputsRow36" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn37" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="englishOrCommunications" name="englishOrCommunications" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn39" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="englishOrCommunicationsLbl" name="englishOrCommunicationsLbl"
+                    class="text-left  " for="englishOrCommunications">Communication/English</label>
+                </div>
+            </div>
+            <div id="quickInputsRow54" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn55" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="fineArtsOrHumanities" name="fineArtsOrHumanities" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn57" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="fineArtsOrHumanitiesLbl" name="fineArtsOrHumanitiesLbl" class="text-left  "
+                    for="fineArtsOrHumanities">Fine Arts/Humanities</label>
+                </div>
+            </div>
+            <div id="quickInputsRow42" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn43" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="mathOrScience" name="mathOrScience" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn45" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="mathOrScienceLbl" name="mathOrScienceLbl" class="text-left  "
+                    for="mathOrScience">Mathematics/Science</label>
+                </div>
+            </div>
+            <div id="quickInputsRow48" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn49" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="socialScience" name="socialScience" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn51" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="socialScienceLbl" name="socialScienceLbl" class="text-left  "
+                    for="socialScience">Social Science</label>
+                </div>
+            </div>
+            <div id="quickInputsRow60" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn61" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="writtenCommunication" name="writtenCommunication" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn63" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="writtenCommunicationLbl" name="writtenCommunicationLbl" class="text-left  "
+                    for="writtenCommunication">Written Communication</label>
+                </div>
+            </div>
+            <div id="row66" class="text-left row ">
+                <div id="col67" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele68" name="ele40" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickTextAreaRow32" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn33" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="reasonsTextArea">List the reasons that make this course eligible for inclusion on the General
+                        Education Distribution List</label>
+                    <textarea id="reasonsTextArea" name="reasonsTextArea"
+                    class="text-left  " required="required" placeholder="Please be as descriptive as possible"></textarea>
+                </div>
+            </div>
+            <div id="row135" name="" class="text-left section-header ">
+                <div id="col136" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele137" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele138" name="ele595" class="text-left  ">Ballot Results</h2>
+                </div>
+            </div>
+            <div id="row140" name="row228" class="text-left row ">
+                <div id="col141" class="col-xs-12 col-sm-12 text-left fd-callout fd-callout--primary "><span id="ele142" name="ele230" class="text-left  ">Must allow a minimum of 5 semester days (Fall &amp; Winter) to respond and more than 50% of the total ballot responses are required for it to be a valid ballot. Voting Options are: <br /><ul><li>Aye (Yes)</li><li>Nay (No)</li><li>Abstain (non-vote that counts as a response in determining if it's a valid ballot)</li><li>No Response (ballot was sent but ignored, this does not count as a response in determining if it's a valid ballot)</li></ul>
+If the originator is submitting a curriculum proposal for a course(s) to be added to the General Education Distribution lists, the following is the required balloting process: <br />
+<strong>General Education Distribution List Additions</strong><br />
+Balloting - All faculty college-wide<br /><br />
+Please provide the results of the College-wide balloting - attach printed ballots to original</span>
+                </div>
+            </div>
+            <div id="quickInputsRow144" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn145" name="quickInputsColumn1" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="votedYes146">Yes</label>
+                        <input id="votedYes146" name="votedYes" class="text-left  "
+                        type="text" data-bind="numeric: { type: 'int',  allowNegative: false } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn147" name="quickInputsColumn2" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="votedNo148">No</label>
+                        <input id="votedNo148" name="votedNo" class="text-left  " type="text"
+                        data-bind="numeric: { type: 'int',  allowNegative: false } " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn149" name="quickInputsColumn3" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="votedAbstain150">Abstain</label>
+                        <input id="votedAbstain150" name="votedAbstain" class="text-left  "
+                        type="text" data-bind="numeric: { type: 'int',  allowNegative: false } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn151" name="quickInputsColumn4" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="votedNoResponse152">No Response</label>
+                        <input id="votedNoResponse152" name="votedNoResponse"
+                        class="text-left  " type="text" data-bind="numeric: { type: 'int',  allowNegative: false } "
+                        />
+                    </div>
+                </div>
+                <div id="col153" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="votedTotalMailed154">Total Mailed</label>
+                        <input id="votedTotalMailed154" name="votedTotalMailed"
+                        class="text-left  " data-bind="numeric: { type: 'int',  allowNegative: false } "
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

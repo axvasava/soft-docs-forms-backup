@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Chosen Name and Personal Pronoun Request</title>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/occ-framework/occForms.css"
+		/>
+	</head>
+	<body>
+		<main class="occ-form">
+			<div class="occ-theme-toggle-row">
+				<div class="occ-theme-toggle">
+					<label class="occ-theme-switch">
+						<input
+							id="occThemeToggle"
+							class="occ-theme-switch__input"
+							type="checkbox"
+							data-occ-theme-toggle
+							aria-label="Use dark mode"
+						/>
+						<span
+							class="occ-theme-switch__track"
+							aria-hidden="true"
+						>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--on"
+								>Dark</span
+							>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--off"
+								>Light</span
+							>
+							<span class="occ-theme-switch__thumb"></span>
+						</span>
+					</label>
+				</div>
+			</div>
+
+			<header class="occ-masthead">
+				<div class="occ-masthead__inner">
+					<div class="occ-masthead__identity">
+						<img
+							class="occ-masthead__logo"
+							src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+							alt="Oakland Community College"
+						/>
+					</div>
+					<div class="occ-masthead__content">
+						<h1>Chosen Name and Personal Pronoun Request</h1>
+						<p class="occ-heading-description">
+							Use this form to request a chosen name
+							and personal pronoun.
+						</p>
+						<dl class="occ-masthead__meta">
+							<div class="occ-masthead__meta-item">
+								<dt>Department</dt>
+								<dd>Human Resources</dd>
+							</div>
+							<div class="occ-masthead__meta-item">
+								<dt>Revised</dt>
+								<dd>09/25</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+			</header>
+
+			<p class="occ-help">
+				<em
+					>Fields marked with an asterisk (<span
+						class="occ-required"
+						aria-hidden="true"
+						>*</span
+					>) are required.</em
+				>
+			</p>
+
+			<form>
+				<section
+					id="yourInformationSection"
+					class="occ-section"
+					aria-labelledby="your-information-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-circle-user"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="your-information-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="your-information-content"
+								>
+									Your Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Provide your OCC affiliation, identifying
+								information, and current contact details.
+							</p>
+						</div>
+					</header>
+
+					<div
+						id="your-information-content"
+						class="occ-section__content"
+					>
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="employeeStudent">
+									Are you a student or an employee?
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									>
+								</label>
+								<select
+									id="employeeStudent"
+									class="occ-select"
+									name="employeeStudent"
+									aria-describedby="employeeStudentError"
+									required
+								>
+									<option value="">Select one</option>
+									<option value="Student">Student</option>
+									<option value="Employee">Employee</option>
+									<option value="Both (Employee and Student)">
+										Both (Employee and Student)
+									</option>
+								</select>
+								<p
+									id="employeeStudentError"
+									class="occ-error"
+									hidden
+								>
+									Select whether you are a student, employee,
+									or both.
+								</p>
+							</div>
+
+							<div class="occ-field">
+								<label class="occ-label" for="originatorErpId">
+									OCC ID Number
+								</label>
+								<input
+									id="originatorErpId"
+									class="occ-input"
+									name="originatorErpId"
+									type="text"
+									readonly
+								/>
+							</div>
+
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="employeeDateOfBirth"
+								>
+									Date of Birth
+								</label>
+								<input
+									id="employeeDateOfBirth"
+									class="occ-input"
+									name="employeeDateOfBirth"
+									type="text"
+									readonly
+								/>
+							</div>
+
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="employeeLastNameLegal"
+								>
+									Last Name (Legal)
+								</label>
+								<input
+									id="employeeLastNameLegal"
+									class="occ-input"
+									name="employeeLastNameLegal"
+									type="text"
+									autocomplete="family-name"
+									readonly
+								/>
+							</div>
+
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="employeeFirstNameLegal"
+								>
+									First Name (Legal)
+								</label>
+								<input
+									id="employeeFirstNameLegal"
+									class="occ-input"
+									name="employeeFirstNameLegal"
+									type="text"
+									autocomplete="given-name"
+									readonly
+								/>
+							</div>
+
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="employeeMiddleInitial"
+									>Middle Initial</label
+								>
+								<input
+									id="employeeMiddleInitial"
+									class="occ-input"
+									name="employeeMiddleInitial"
+									type="text"
+									autocomplete="additional-name"
+									readonly
+								/>
+							</div>
+
+							<div class="occ-field">
+								<label class="occ-label" for="phoneNumber">
+									Phone Number
+								</label>
+								<input
+									id="phoneNumber"
+									class="occ-input"
+									name="phoneNumber"
+									type="tel"
+									autocomplete="tel"
+									readonly
+								/>
+							</div>
+
+							<div class="occ-field">
+								<label class="occ-label" for="alternateEmail"
+									>Alternate (Non-OCC) Email</label
+								>
+								<input
+									id="alternateEmail"
+									class="occ-input"
+									name="alternateEmail"
+									type="email"
+									autocomplete="email"
+									aria-describedby="alternateEmailError"
+								/>
+								<p
+									id="alternateEmailError"
+									class="occ-error"
+									hidden
+								>
+									Enter a valid email address.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="yourRequestSection"
+					class="occ-section"
+					aria-labelledby="your-request-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-file-pen"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="your-request-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="your-request-content"
+								>
+									Your Request
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Tell us the chosen name, personal pronoun, and
+								account changes you are requesting.
+							</p>
+						</div>
+					</header>
+
+					<div id="your-request-content" class="occ-section__content">
+						<aside class="occ-callout occ-callout--info">
+							<div class="occ-callout__icon" aria-hidden="true">
+								<i class="fa-solid fa-circle-info"></i>
+							</div>
+							<div class="occ-callout__content">
+								<h3 class="occ-callout__title">
+									Please Read and Complete the Following
+									Information
+								</h3>
+								<div class="occ-callout__body">
+									<ul>
+										<li>
+											OCC recognizes that
+											<span
+												class="audience-text audience-text--student"
+												hidden
+												>students</span
+											>
+											<span
+												class="audience-text audience-text--employee"
+												hidden
+												>employees</span
+											>
+											<span
+												class="audience-text audience-text--both"
+												hidden
+												>students and employees</span
+											>
+											may use a first name other than
+											their legal first name to identify
+											themselves. As long as the use of
+											this chosen name is not for the
+											purpose of misrepresentation, OCC
+											acknowledges that a chosen first
+											name can be used where possible in
+											the course of OCC business and
+											education. OCC reserves the right to
+											deny or remove, with or without
+											notice, any chosen name for misuse,
+											including but not limited to fraud,
+											misrepresentation, attempting to
+											avoid legal obligation, or the use
+											of highly offensive or derogatory
+											names. Students' last names
+											(surnames) will remain unchanged.
+											Employees, including
+											student-employees, may request a
+											chosen last name below.
+										</li>
+										<li>
+											Please be advised that requesting a
+											chosen first name is not the same as
+											legally changing your name through
+											the court system. Selecting a chosen
+											name does not change your legal name
+											on OCC's records. If you have a
+											legal name change, please provide
+											supporting legal documentation and
+											complete the Student or Employee
+											Update Information Request form.
+										</li>
+										<li>
+											Use of a chosen personal pronoun
+											also provides one way for
+											expression, and requestors have the
+											option to choose a pronoun below.
+										</li>
+										<li>
+											Chosen first name and chosen
+											personal pronoun will be used on
+											class rosters, grade rosters, and
+											<span
+												class="audience-text audience-text--student"
+												hidden
+												>student schedules</span
+											>
+											<span
+												class="audience-text audience-text--employee"
+												hidden
+												>employee schedules</span
+											>
+											<span
+												class="audience-text audience-text--both"
+												hidden
+												>student and employee
+												schedules</span
+											>.
+										</li>
+										<li>
+											Legal name will be used on certain
+											records, including but not limited
+											to official transcripts, diplomas,
+											employment forms, payroll records,
+											tax documents, financial aid
+											documents and records, verification
+											requests, third-party reports such
+											as to the National Student
+											Clearinghouse, and other records
+											that require use of a legal name on
+											record.
+										</li>
+										<li>
+											To verify identity of the requestor,
+											a valid OCC ID or government ID is
+											required with this form for changes
+											to be processed unless it is sent
+											from your
+											<span
+												class="audience-text audience-text--student"
+												hidden
+												>OCC student email account</span
+											>
+											<span
+												class="audience-text audience-text--employee"
+												hidden
+												>OCC employee email
+												account</span
+											>
+											<span
+												class="audience-text audience-text--both"
+												hidden
+												>OCC student or employee email
+												account</span
+											>.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</aside>
+
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="chosenFirstName">
+									Chosen First Name
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									>
+								</label>
+								<input
+									id="chosenFirstName"
+									class="occ-input"
+									name="chosenFirstName"
+									type="text"
+									aria-describedby="chosenFirstNameError"
+									required
+								/>
+								<p
+									id="chosenFirstNameError"
+									class="occ-error"
+									hidden
+								>
+									Enter your chosen first name.
+								</p>
+							</div>
+
+							<div
+								id="chosenMiddleNameField"
+								class="occ-field"
+								hidden
+							>
+								<label class="occ-label" for="chosenMiddleName"
+									>Chosen Middle Name</label
+								>
+								<input
+									id="chosenMiddleName"
+									class="occ-input"
+									name="chosenMiddleName"
+									type="text"
+								/>
+							</div>
+
+							<div
+								id="chosenLastNameField"
+								class="occ-field"
+								hidden
+							>
+								<label class="occ-label" for="chosenLastName"
+									>Chosen Last Name</label
+								>
+								<input
+									id="chosenLastName"
+									class="occ-input"
+									name="chosenLastName"
+									type="text"
+								/>
+							</div>
+
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="chosenPersonalPronoun"
+									>Chosen Personal Pronoun (Select One)</label
+								>
+								<select
+									id="chosenPersonalPronoun"
+									class="occ-select"
+									name="chosenPersonalPronoun"
+								>
+									<option value="">
+										Select one (optional)
+									</option>
+									<option value="SHE (She/Her/Hers)">
+										SHE (She/Her/Hers)
+									</option>
+									<option value="HE (He/Him/His)">
+										HE (He/Him/His)
+									</option>
+									<option value="ZE (Ze/Hir/Hirs)">
+										ZE (Ze/Hir/Hirs)
+									</option>
+									<option value="THEY (They/Them/Their)">
+										THEY (They/Them/Their)
+									</option>
+									<option
+										value="NAME (Use my name as my pronoun)"
+									>
+										NAME (Use my name as my pronoun)
+									</option>
+									<option value="N/A (Not Applicable)">
+										N/A (Not Applicable)
+									</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="acknowledgementSection"
+					class="occ-section"
+					aria-labelledby="acknowledgement-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-circle-check"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="acknowledgement-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="acknowledgement-content"
+								>
+									Acknowledgement
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Confirm that the information in this request is
+								complete and correct.
+							</p>
+						</div>
+					</header>
+
+					<div
+						id="acknowledgement-content"
+						class="occ-section__content"
+					>
+						<aside class="occ-callout occ-callout--info">
+							<span class="occ-callout__icon" aria-hidden="true">
+								<i class="fa-solid fa-circle-info"></i>
+							</span>
+							<div class="occ-callout__content">
+								<p>
+									By checking this box and submitting this
+									form, you certify that all of the
+									information reported on this form is
+									complete and correct.
+								</p>
+
+								<div class="occ-field">
+									<label
+										class="occ-choice"
+										for="acknowledgement"
+									>
+										<input
+											id="acknowledgement"
+											name="acknowledgement"
+											type="checkbox"
+											value="Yes"
+											aria-describedby="acknowledgementError"
+											required
+										/>
+										<span>
+											I certify that all of the
+											information reported on this form is
+											complete and correct.
+											<span
+												class="occ-required"
+												aria-hidden="true"
+												>*</span
+											>
+										</span>
+									</label>
+									<p
+										id="acknowledgementError"
+										class="occ-error"
+										hidden
+									>
+										Confirm that the information on this
+										form is complete and correct.
+									</p>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</section>
+
+				<section
+					id="officeUseSection"
+					class="occ-section office-use"
+					aria-labelledby="office-use-heading"
+					hidden
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-building"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="office-use-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="office-use-content"
+								>
+									Office Use
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Review the request, record any comments, and
+								complete the required updates.
+							</p>
+						</div>
+					</header>
+
+					<div id="office-use-content" class="occ-section__content">
+						<div class="occ-field">
+							<label class="occ-label" for="officeComments"
+								>Comments</label
+							>
+							<textarea
+								id="officeComments"
+								class="occ-textarea"
+								name="officeComments"
+								maxlength="500"
+							></textarea>
+						</div>
+
+						<section
+							id="requestSummary"
+							class="occ-summary"
+							aria-labelledby="request-summary-title"
+						>
+							<h3
+								id="request-summary-title"
+								class="occ-summary__title"
+							>
+								Request summary
+							</h3>
+							<div id="chosenNameInstructions" hidden>
+								<h4>Chosen Name Instructions</h4>
+								<ul class="occ-summary__instructions">
+									<li>Remember for Chosen Name go to “BIO”.</li>
+									<li>Navigate to the Chosen LFM (L=Last, F=First, M=Middle).</li>
+									<li>If adding a Chosen First Name, select the 2nd box.</li>
+									<li>To add a personal pronoun, go to “<strong>addnl info</strong>” at the bottom of the BIO screen.</li>
+									<li><strong>Nothing else should be changed!</strong></li>
+									<li>Chosen name will show on class and grade rosters and schedules.</li>
+								</ul>
+							</div>
+							<ul class="occ-summary__instructions">
+								<li>
+									Make the required updates in the NAE (BIO)
+									screen in Colleague.
+								</li>
+								<li>
+									When you approve this form, a TeamDynamix
+									ticket will automatically be created using
+									the information from the request. No
+									separate ticket submission is needed.
+								</li>
+								<li>
+									The TeamDynamix ticket number will be
+									emailed to the appropriate recipient and
+									saved with the form in Content for future
+									reference.
+								</li>
+							</ul>
+							<dl class="occ-summary__list">
+								<div class="occ-summary__item">
+									<dt>Requestor type</dt>
+									<dd id="requestSummaryRequestorType">
+										Not provided
+									</dd>
+								</div>
+								<div class="occ-summary__item">
+									<dt>Legal name</dt>
+									<dd id="requestSummaryLegalName">
+										Not provided
+									</dd>
+								</div>
+								<div class="occ-summary__item">
+									<dt>Requested name</dt>
+									<dd id="requestSummaryRequestedName">
+										Not provided
+									</dd>
+								</div>
+								<div class="occ-summary__item">
+									<dt>Personal pronoun</dt>
+									<dd id="requestSummaryPronoun">
+										Not provided
+									</dd>
+								</div>
+							</dl>
+						</section>
+					</div>
+				</section>
+
+				<section
+					class="occ-section developer"
+					aria-labelledby="developer-information-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-code"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="developer-information-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="developer-information-content"
+								>
+									Developer Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								If you can see this section, please contact
+								support.
+							</p>
+						</div>
+					</header>
+
+					<div
+						id="developer-information-content"
+						class="occ-section__content"
+					>
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="username"
+									>username</label
+								>
+								<input
+									id="username"
+									class="occ-input"
+									name="username"
+									type="text"
+								/>
+							</div>
+
+							<div class="occ-field">
+								<label class="occ-label" for="effectiveDate"
+									>effectiveDate</label
+								>
+								<input
+									id="effectiveDate"
+									class="occ-input"
+									name="effectiveDate"
+									type="text"
+								/>
+							</div>
+
+							<div class="occ-field">
+								<label class="occ-label" for="ticketNumber"
+									>ticketNumber</label
+								>
+								<input
+									id="ticketNumber"
+									class="occ-input"
+									name="ticketNumber"
+									type="text"
+								/>
+							</div>
+
+							<div class="occ-field">
+								<label class="occ-label" for="payClassCode"
+									>payClassCode</label
+								>
+								<input
+									id="payClassCode"
+									class="occ-input"
+									name="payClassCode"
+									type="text"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+			</form>
+		</main>
+	</body>
+</html>

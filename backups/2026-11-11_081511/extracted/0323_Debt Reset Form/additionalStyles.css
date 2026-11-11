@@ -1,0 +1,8 @@
+.colleagueSearchRow {
+    display: flex;
+    align-items: end;
+}
+
+#lookupStudentButton {
+    margin-bottom: 12px;
+}

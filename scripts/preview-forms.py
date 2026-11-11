@@ -57,10 +57,10 @@ EXAMPLES
 ---------------------------------------
 
 # Scan specific forms from a file
-python script.py --markdown-file "scripts/my-forms.md"
+python scripts/preview-forms.py --markdown-file "scripts/my-forms.md" 
 
 # Scan a continuous range
-python script.py --min-form-id 200 --max-form-id 300
+python scripts/preview-forms.py --min-form-id 1 --max-form-id 283
 """
 
 # Main Softdocs site URL.

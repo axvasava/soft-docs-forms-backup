@@ -1,0 +1,33 @@
+form_id,error
+15,"Timeout 3500ms exceeded while waiting for event ""download"""
+16,"Timeout 3500ms exceeded while waiting for event ""download"""
+293,"Timeout 3500ms exceeded while waiting for event ""download"""
+314,File is not a zip file
+331,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    - waiting for element to be visible, enabled and stable"
+364,"Locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator(""button.pendo-classic-fb-files-edit"").last
+    - locator resolved to <button disabled au-target-id=""376"" show.bind=""!_toggleFiles"" disabled.bind=""emptyFileList"" i18n=""settings:Forms_List.Edit"" click.trigger=""toggleEditFiles()"" class=""e-btn e-btn-micro pendo-classic-fb-files-edit au-target"">Edit</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    - waiting for element to be visible, enabled and stable"

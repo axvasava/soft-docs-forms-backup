@@ -1,0 +1,1225 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>0358 Employee Staffing Request</title>
+		<link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css" />
+		<link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css" />
+		<link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/occ-framework/occForms.css" />
+	</head>
+	<body>
+		<main class="occ-form">
+			<div class="occ-theme-toggle-row">
+				<div class="occ-theme-toggle">
+					<label class="occ-theme-switch">
+						<input id="occThemeToggle" class="occ-theme-switch__input" type="checkbox" data-notsaved data-occ-theme-toggle aria-label="Use dark mode" />
+						<span class="occ-theme-switch__track" aria-hidden="true">
+							<span class="occ-theme-switch__text occ-theme-switch__text--on">Dark</span>
+							<span class="occ-theme-switch__text occ-theme-switch__text--off">Light</span>
+							<span class="occ-theme-switch__thumb">
+							</span>
+						</span>
+					</label>
+				</div>
+			</div>
+			<header class="occ-masthead">
+				<div class="occ-masthead__inner">
+					<div class="occ-masthead__identity">
+						<img class="occ-masthead__logo" src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png" alt="Oakland Community College" />
+					</div>
+					<div class="occ-masthead__content">
+						<h1>Employee Staffing Request</h1>
+						<p class="occ-heading-description">Request a new position, position upgrade, faculty appointment, or temporary employee.</p>
+						<dl class="occ-masthead__meta">
+							<div class="occ-masthead__meta-item">
+								<dt>Form</dt>
+								<dd>0358</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+			</header>
+			<p class="occ-help">Preliminary review: all request sections are available. Academic program, funding, employee group, and reviewer lists are sample or provisional options.</p>
+			<form id="employeeStaffingRequest">
+				<section class="occ-section" aria-labelledby="yourInformationHeading">
+					<header class="occ-section-heading">
+						<span class="occ-section-heading__icon" aria-hidden="true">
+							<i class="fa-solid fa-circle-user">
+							</i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="yourInformationHeading">
+								<button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="yourInformationContent">
+									Your information
+									<span class="occ-section-heading__toggle-icon" aria-hidden="true">
+										<i class="fa-solid fa-chevron-up">
+										</i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">Find the contact person for this staffing request and choose their applicable position and department.</p>
+						</div>
+					</header>
+					<div id="yourInformationContent" class="occ-section__content">
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="contactEmployeeId">Employee ID</label>
+								<input id="contactEmployeeId" name="contactEmployeeId" class="occ-input" type="text" inputmode="numeric" aria-describedby="contactLookupStatus" />
+								<button id="contactEmployeeSearch" class="occ-button" type="button">Find employee</button>
+								<p id="contactLookupStatus" class="occ-help" role="status" aria-live="polite"></p>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="contactDisplayName">Display name</label>
+								<input id="contactDisplayName" name="contactDisplayName" class="occ-input" type="text" readonly />
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="contactEmail">Email</label>
+								<input id="contactEmail" name="contactEmail" class="occ-input" type="email" readonly />
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="contactPhone">Phone</label>
+								<input id="contactPhone" name="contactPhone" class="occ-input" type="tel" readonly />
+							</div>
+							<div class="occ-field">
+								<label id="contactPositionLabel" class="occ-label" for="contactPosition">Applicable position/job</label>
+								<select id="contactPositionChoice" class="occ-select" data-notsaved hidden disabled aria-describedby="contactLookupStatus"></select>
+								<input id="contactPosition" name="contactPosition" class="occ-input" type="text" readonly />
+							</div>
+							<div id="contactDepartmentChoiceField" class="occ-field" hidden>
+								<label class="occ-label" for="contactDepartmentChoice">Position department</label>
+								<select id="contactDepartmentChoice" class="occ-select" data-notsaved disabled aria-describedby="contactDepartmentStatus"></select>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="contactDepartment">Department</label>
+								<div id="contactDepartmentAutocomplete" class="occ-autocomplete">
+									<input id="contactDepartment" name="contactDepartment" class="occ-input occ-autocomplete__input" type="text" autocomplete="off" aria-describedby="contactDepartmentStatus hrDepartmentStatus" />
+									<input id="contactDepartmentCode" name="contactDepartmentCode" class="occ-autocomplete__value" type="hidden" />
+									<button class="occ-autocomplete__clear" type="button" aria-label="Clear department" hidden>&times;</button>
+									<div class="occ-autocomplete__panel" hidden>
+										<div class="occ-autocomplete__state" hidden>
+										</div>
+										<ul class="occ-autocomplete__list">
+										</ul>
+									</div>
+									<p class="occ-autocomplete__status">
+									</p>
+								</div>
+								<p id="contactDepartmentStatus" class="occ-help" role="status" aria-live="polite"></p>
+								<p id="hrDepartmentStatus" class="occ-help" role="status" aria-live="polite"></p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="occ-section" aria-labelledby="requestDetailsHeading">
+					<header class="occ-section-heading">
+						<span class="occ-section-heading__icon" aria-hidden="true">
+							<i class="fa-solid fa-clipboard-list">
+							</i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="requestDetailsHeading">
+								<button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="requestDetailsContent">
+									Request details
+									<span class="occ-section-heading__toggle-icon" aria-hidden="true">
+										<i class="fa-solid fa-chevron-up">
+										</i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">Identify the timing, hiring manager, funding, and type of staffing change.</p>
+						</div>
+					</header>
+					<div id="requestDetailsContent" class="occ-section__content">
+						<fieldset class="occ-fieldset occ-choice-field">
+							<legend class="occ-legend">How is this staffing change being requested?</legend>
+							<div class="occ-choice-group occ-choice-group--compact">
+								<label class="occ-choice-card" for="requestTiming-0">
+									<input id="requestTiming-0" name="requestTiming" type="radio" value="Staffing Change as part of Annual Budget Process" />
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title">Staffing Change as part of Annual Budget Process</span>
+									</span>
+								</label>
+								<label class="occ-choice-card" for="requestTiming-1">
+									<input id="requestTiming-1" name="requestTiming" type="radio" value="Unplanned Staffing Change for the Current Fiscal Year" />
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title">Unplanned Staffing Change for the Current Fiscal Year</span>
+									</span>
+								</label>
+							</div>
+						</fieldset>
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="budgetYear">Budget year</label>
+								<select id="budgetYear" name="budgetYear" class="occ-select">
+									<option value="">Choose an option</option>
+								</select>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="proposedEffectiveDate">Proposed effective date</label>
+								<input id="proposedEffectiveDate" name="proposedEffectiveDate" class="occ-input" type="date" />
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="hiringManagerName">Hiring manager name</label>
+								<div id="hiringManagerNameAutocomplete" class="occ-autocomplete">
+									<input id="hiringManagerName" name="hiringManagerName" class="occ-input occ-autocomplete__input" type="text" autocomplete="off" aria-describedby="hiringManagerStatus" />
+									<input id="hiringManagerSelection" class="occ-autocomplete__value" type="hidden" data-notsaved />
+									<button class="occ-autocomplete__clear" type="button" aria-label="Clear hiring manager" hidden>&times;</button>
+									<div class="occ-autocomplete__panel" hidden>
+										<div class="occ-autocomplete__state" hidden></div>
+										<ul class="occ-autocomplete__list"></ul>
+									</div>
+									<p class="occ-autocomplete__status"></p>
+								</div>
+								<p id="hiringManagerStatus" class="occ-help" role="status" aria-live="polite"></p>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="hiringManagerEmail">Hiring manager email</label>
+								<input id="hiringManagerEmail" name="hiringManagerEmail" class="occ-input" type="email" readonly />
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="hiringManagerTitle">Hiring manager title</label>
+								<input id="hiringManagerTitle" name="hiringManagerTitle" class="occ-input" type="text" />
+								<p class="occ-help">Enter the hiring manager's title.</p>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="hiringManagerDepartment">Hiring manager department</label>
+								<input id="hiringManagerDepartment" name="hiringManagerDepartment" class="occ-input" type="text" />
+								<p class="occ-help">Enter the hiring manager's department.</p>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="fundLocationOrganization">Fund / Location / Organization</label>
+								<select id="fundLocationOrganization" name="fundLocationOrganization" class="occ-select">
+									<option value="">Choose an option</option>
+									<option value="Fund 1 / Location 1 / Org 1">Fund 1 / Location 1 / Org 1</option>
+									<option value="Fund 2 / Location 2 / Org 2">Fund 2 / Location 2 / Org 2</option>
+									<option value="Fund 3 / Location 3 / Org 3">Fund 3 / Location 3 / Org 3</option>
+								</select>
+							</div>
+						</div>
+						<div class="occ-field">
+							<label class="occ-label" for="staffingChangeType">What type of staffing change are you requesting?</label>
+							<select id="staffingChangeType" name="staffingChangeType" class="occ-select">
+								<option value="">Choose an option</option>
+								<option value="Request for New Position(s)">Request for New Position(s)</option>
+								<option value="Request Upgrade of an Existing Position(s)">Request Upgrade of an Existing Position(s)</option>
+								<option value="Request to fill Vacant Faculty Position or Hire Temporary Full-Time Faculty">Request to fill Vacant Faculty Position or Hire Temporary Full-Time Faculty</option>
+								<option value="Request for Temporary Employee(s)">Request for Temporary Employee(s)</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+					</div>
+				</section>
+				<section class="occ-section" aria-labelledby="newPositionsHeading">
+					<header class="occ-section-heading">
+						<span class="occ-section-heading__icon" aria-hidden="true">
+							<i class="fa-solid fa-user-plus">
+							</i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="newPositionsHeading">
+								<button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="newPositionsContent">
+									New positions
+									<span class="occ-section-heading__toggle-icon" aria-hidden="true">
+										<i class="fa-solid fa-chevron-up">
+										</i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">Describe each new position and the reason it is needed.</p>
+						</div>
+					</header>
+					<div id="newPositionsContent" class="occ-section__content">
+						<p class="occ-help">Each entry represents one position.</p>
+						<div id="newPositionsGroup" class="occ-repeating-group" data-occ-repeating-group>
+							<div class="occ-repeating-group__list" data-occ-repeating-group-list>
+								<fieldset class="occ-fieldset occ-repeating-group__row" data-occ-repeating-group-row>
+									<legend class="occ-legend">New position <span data-occ-repeating-group-position>1</span>
+									</legend>
+									<div class="occ-field-grid">
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-initial-positionTitle">Position title</label>
+											<input id="newPositions-initial-positionTitle" name="newPositions-initial-positionTitle" class="occ-input" type="text" data-notsaved data-position-field="positionTitle" />
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Is this a new position title?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="newPositions-initial-isNewPositionTitle-0">
+													<input id="newPositions-initial-isNewPositionTitle-0" name="newPositions-initial-isNewPositionTitle" type="radio" value="Yes" data-notsaved data-position-field="isNewPositionTitle" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Yes</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="newPositions-initial-isNewPositionTitle-1">
+													<input id="newPositions-initial-isNewPositionTitle-1" name="newPositions-initial-isNewPositionTitle" type="radio" value="No" data-notsaved data-position-field="isNewPositionTitle" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">No</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-initial-campus">Campus</label>
+											<select id="newPositions-initial-campus" name="newPositions-initial-campus" class="occ-select" data-notsaved data-position-field="campus" data-campus-options>
+												<option value="">Choose an option</option>
+											</select>
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Is this position grant funded?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="newPositions-initial-isGrantFunded-0">
+													<input id="newPositions-initial-isGrantFunded-0" name="newPositions-initial-isGrantFunded" type="radio" value="Yes" data-notsaved data-position-field="isGrantFunded" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Yes</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="newPositions-initial-isGrantFunded-1">
+													<input id="newPositions-initial-isGrantFunded-1" name="newPositions-initial-isGrantFunded" type="radio" value="No" data-notsaved data-position-field="isGrantFunded" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">No</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-initial-grantName">Grant name</label>
+											<input id="newPositions-initial-grantName" name="newPositions-initial-grantName" class="occ-input" type="text" data-notsaved data-position-field="grantName" />
+										</div>
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-initial-grantStartDate">Grant funding start date</label>
+											<input id="newPositions-initial-grantStartDate" name="newPositions-initial-grantStartDate" class="occ-input" type="date" data-notsaved data-position-field="grantStartDate" />
+										</div>
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-initial-grantEndDate">Grant funding end date</label>
+											<input id="newPositions-initial-grantEndDate" name="newPositions-initial-grantEndDate" class="occ-input" type="date" data-notsaved data-position-field="grantEndDate" />
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Employment type</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="newPositions-initial-employmentType-0">
+													<input id="newPositions-initial-employmentType-0" name="newPositions-initial-employmentType" type="radio" value="Full-Time" data-notsaved data-position-field="employmentType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Full-Time</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="newPositions-initial-employmentType-1">
+													<input id="newPositions-initial-employmentType-1" name="newPositions-initial-employmentType" type="radio" value="Part-Time" data-notsaved data-position-field="employmentType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Part-Time</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-initial-hoursPerWeek">Hours per week</label>
+											<input id="newPositions-initial-hoursPerWeek" name="newPositions-initial-hoursPerWeek" class="occ-input" type="number" step="any" data-notsaved data-position-field="hoursPerWeek" />
+										</div>
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-initial-employeeGroup">Employee group</label>
+											<select id="newPositions-initial-employeeGroup" name="newPositions-initial-employeeGroup" class="occ-select" data-notsaved data-position-field="employeeGroup" data-employee-group-options>
+												<option value="">Choose an option</option>
+												<option value="Classified">Classified</option>
+												<option value="Non-Union Admin &amp; Management">Non-Union Admin &amp; Management</option>
+												<option value="Faculty">Faculty</option>
+												<option value="Maintenance">Maintenance</option>
+												<option value="Operating Engineers">Operating Engineers</option>
+												<option value="Public Safety">Public Safety</option>
+												<option value="Other Hourly">Other Hourly</option>
+												<option value="Teamsters">Teamsters</option>
+												<option value="Unknown at this time">Unknown at this time</option>
+												<option value="Various">Various</option>
+											</select>
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Is this a manager or administrator position?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="newPositions-initial-managerAdministratorType-0">
+													<input id="newPositions-initial-managerAdministratorType-0" name="newPositions-initial-managerAdministratorType" type="radio" value="Not applicable" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Not applicable</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="newPositions-initial-managerAdministratorType-1">
+													<input id="newPositions-initial-managerAdministratorType-1" name="newPositions-initial-managerAdministratorType" type="radio" value="Manager" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Manager</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="newPositions-initial-managerAdministratorType-2">
+													<input id="newPositions-initial-managerAdministratorType-2" name="newPositions-initial-managerAdministratorType" type="radio" value="Administrator" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Administrator</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-initial-reasonNeeded">Why is this position needed?</label>
+											<textarea id="newPositions-initial-reasonNeeded" name="newPositions-initial-reasonNeeded" class="occ-textarea" rows="4" data-notsaved data-position-field="reasonNeeded"></textarea>
+										</div>
+									</div>
+									<p class="occ-help">Attach a proposed job description when requesting a new position title.</p>
+									<button type="button" class="occ-button occ-button--destructive" data-occ-repeating-group-remove>Remove new position</button>
+								</fieldset>
+							</div>
+							<template data-occ-repeating-group-template>
+								<fieldset class="occ-fieldset occ-repeating-group__row" data-occ-repeating-group-row>
+									<legend class="occ-legend">New position <span data-occ-repeating-group-position>
+										</span>
+									</legend>
+									<div class="occ-field-grid">
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-template-positionTitle">Position title</label>
+											<input id="newPositions-template-positionTitle" name="newPositions-template-positionTitle" class="occ-input" type="text" data-notsaved data-position-field="positionTitle" />
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Is this a new position title?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="newPositions-template-isNewPositionTitle-0">
+													<input id="newPositions-template-isNewPositionTitle-0" name="newPositions-template-isNewPositionTitle" type="radio" value="Yes" data-notsaved data-position-field="isNewPositionTitle" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Yes</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="newPositions-template-isNewPositionTitle-1">
+													<input id="newPositions-template-isNewPositionTitle-1" name="newPositions-template-isNewPositionTitle" type="radio" value="No" data-notsaved data-position-field="isNewPositionTitle" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">No</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-template-campus">Campus</label>
+											<select id="newPositions-template-campus" name="newPositions-template-campus" class="occ-select" data-notsaved data-position-field="campus" data-campus-options>
+												<option value="">Choose an option</option>
+											</select>
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Is this position grant funded?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="newPositions-template-isGrantFunded-0">
+													<input id="newPositions-template-isGrantFunded-0" name="newPositions-template-isGrantFunded" type="radio" value="Yes" data-notsaved data-position-field="isGrantFunded" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Yes</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="newPositions-template-isGrantFunded-1">
+													<input id="newPositions-template-isGrantFunded-1" name="newPositions-template-isGrantFunded" type="radio" value="No" data-notsaved data-position-field="isGrantFunded" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">No</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-template-grantName">Grant name</label>
+											<input id="newPositions-template-grantName" name="newPositions-template-grantName" class="occ-input" type="text" data-notsaved data-position-field="grantName" />
+										</div>
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-template-grantStartDate">Grant funding start date</label>
+											<input id="newPositions-template-grantStartDate" name="newPositions-template-grantStartDate" class="occ-input" type="date" data-notsaved data-position-field="grantStartDate" />
+										</div>
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-template-grantEndDate">Grant funding end date</label>
+											<input id="newPositions-template-grantEndDate" name="newPositions-template-grantEndDate" class="occ-input" type="date" data-notsaved data-position-field="grantEndDate" />
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Employment type</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="newPositions-template-employmentType-0">
+													<input id="newPositions-template-employmentType-0" name="newPositions-template-employmentType" type="radio" value="Full-Time" data-notsaved data-position-field="employmentType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Full-Time</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="newPositions-template-employmentType-1">
+													<input id="newPositions-template-employmentType-1" name="newPositions-template-employmentType" type="radio" value="Part-Time" data-notsaved data-position-field="employmentType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Part-Time</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-template-hoursPerWeek">Hours per week</label>
+											<input id="newPositions-template-hoursPerWeek" name="newPositions-template-hoursPerWeek" class="occ-input" type="number" step="any" data-notsaved data-position-field="hoursPerWeek" />
+										</div>
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-template-employeeGroup">Employee group</label>
+											<select id="newPositions-template-employeeGroup" name="newPositions-template-employeeGroup" class="occ-select" data-notsaved data-position-field="employeeGroup" data-employee-group-options>
+												<option value="">Choose an option</option>
+												<option value="Classified">Classified</option>
+												<option value="Non-Union Admin &amp; Management">Non-Union Admin &amp; Management</option>
+												<option value="Faculty">Faculty</option>
+												<option value="Maintenance">Maintenance</option>
+												<option value="Operating Engineers">Operating Engineers</option>
+												<option value="Public Safety">Public Safety</option>
+												<option value="Other Hourly">Other Hourly</option>
+												<option value="Teamsters">Teamsters</option>
+												<option value="Unknown at this time">Unknown at this time</option>
+												<option value="Various">Various</option>
+											</select>
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Is this a manager or administrator position?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="newPositions-template-managerAdministratorType-0">
+													<input id="newPositions-template-managerAdministratorType-0" name="newPositions-template-managerAdministratorType" type="radio" value="Not applicable" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Not applicable</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="newPositions-template-managerAdministratorType-1">
+													<input id="newPositions-template-managerAdministratorType-1" name="newPositions-template-managerAdministratorType" type="radio" value="Manager" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Manager</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="newPositions-template-managerAdministratorType-2">
+													<input id="newPositions-template-managerAdministratorType-2" name="newPositions-template-managerAdministratorType" type="radio" value="Administrator" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Administrator</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="newPositions-template-reasonNeeded">Why is this position needed?</label>
+											<textarea id="newPositions-template-reasonNeeded" name="newPositions-template-reasonNeeded" class="occ-textarea" rows="4" data-notsaved data-position-field="reasonNeeded"></textarea>
+										</div>
+									</div>
+									<p class="occ-help">Attach a proposed job description when requesting a new position title.</p>
+									<button type="button" class="occ-button occ-button--destructive" data-occ-repeating-group-remove>Remove new position</button>
+								</fieldset>
+							</template>
+							<button type="button" class="occ-button occ-button--primary" data-occ-repeating-group-add>Add another position</button>
+						</div>
+						<input id="newPositionsJson" name="newPositionsJson" type="hidden" />
+					</div>
+				</section>
+				<section class="occ-section" aria-labelledby="positionUpgradesHeading">
+					<header class="occ-section-heading">
+						<span class="occ-section-heading__icon" aria-hidden="true">
+							<i class="fa-solid fa-arrow-up">
+							</i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="positionUpgradesHeading">
+								<button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="positionUpgradesContent">
+									Position upgrades
+									<span class="occ-section-heading__toggle-icon" aria-hidden="true">
+										<i class="fa-solid fa-chevron-up">
+										</i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">Describe each existing position and the proposed upgrade.</p>
+						</div>
+					</header>
+					<div id="positionUpgradesContent" class="occ-section__content">
+						<p class="occ-help">Each entry represents one position.</p>
+						<div id="positionUpgradesGroup" class="occ-repeating-group" data-occ-repeating-group>
+							<div class="occ-repeating-group__list" data-occ-repeating-group-list>
+								<fieldset class="occ-fieldset occ-repeating-group__row" data-occ-repeating-group-row>
+									<legend class="occ-legend">Position upgrade <span data-occ-repeating-group-position>1</span>
+									</legend>
+									<div class="occ-field-grid">
+										<div class="occ-field">
+											<label class="occ-label" for="positionUpgrades-initial-currentPositionTitle">Current position title</label>
+											<input id="positionUpgrades-initial-currentPositionTitle" name="positionUpgrades-initial-currentPositionTitle" class="occ-input" type="text" data-notsaved data-position-field="currentPositionTitle" />
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Will the position title change?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="positionUpgrades-initial-willTitleChange-0">
+													<input id="positionUpgrades-initial-willTitleChange-0" name="positionUpgrades-initial-willTitleChange" type="radio" value="Yes" data-notsaved data-position-field="willTitleChange" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Yes</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="positionUpgrades-initial-willTitleChange-1">
+													<input id="positionUpgrades-initial-willTitleChange-1" name="positionUpgrades-initial-willTitleChange" type="radio" value="No" data-notsaved data-position-field="willTitleChange" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">No</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="positionUpgrades-initial-proposedPositionTitle">Proposed position title</label>
+											<input id="positionUpgrades-initial-proposedPositionTitle" name="positionUpgrades-initial-proposedPositionTitle" class="occ-input" type="text" data-notsaved data-position-field="proposedPositionTitle" />
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Employment type</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="positionUpgrades-initial-employmentType-0">
+													<input id="positionUpgrades-initial-employmentType-0" name="positionUpgrades-initial-employmentType" type="radio" value="Full-Time" data-notsaved data-position-field="employmentType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Full-Time</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="positionUpgrades-initial-employmentType-1">
+													<input id="positionUpgrades-initial-employmentType-1" name="positionUpgrades-initial-employmentType" type="radio" value="Part-Time" data-notsaved data-position-field="employmentType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Part-Time</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="positionUpgrades-initial-employeeGroup">Employee group</label>
+											<select id="positionUpgrades-initial-employeeGroup" name="positionUpgrades-initial-employeeGroup" class="occ-select" data-notsaved data-position-field="employeeGroup" data-employee-group-options>
+												<option value="">Choose an option</option>
+												<option value="Classified">Classified</option>
+												<option value="Non-Union Admin &amp; Management">Non-Union Admin &amp; Management</option>
+												<option value="Faculty">Faculty</option>
+												<option value="Maintenance">Maintenance</option>
+												<option value="Operating Engineers">Operating Engineers</option>
+												<option value="Public Safety">Public Safety</option>
+												<option value="Other Hourly">Other Hourly</option>
+												<option value="Teamsters">Teamsters</option>
+												<option value="Unknown at this time">Unknown at this time</option>
+												<option value="Various">Various</option>
+											</select>
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Is this a manager or administrator position?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="positionUpgrades-initial-managerAdministratorType-0">
+													<input id="positionUpgrades-initial-managerAdministratorType-0" name="positionUpgrades-initial-managerAdministratorType" type="radio" value="Not applicable" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Not applicable</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="positionUpgrades-initial-managerAdministratorType-1">
+													<input id="positionUpgrades-initial-managerAdministratorType-1" name="positionUpgrades-initial-managerAdministratorType" type="radio" value="Manager" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Manager</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="positionUpgrades-initial-managerAdministratorType-2">
+													<input id="positionUpgrades-initial-managerAdministratorType-2" name="positionUpgrades-initial-managerAdministratorType" type="radio" value="Administrator" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Administrator</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="positionUpgrades-initial-reasonNeeded">Why is this upgrade needed?</label>
+											<textarea id="positionUpgrades-initial-reasonNeeded" name="positionUpgrades-initial-reasonNeeded" class="occ-textarea" rows="4" data-notsaved data-position-field="reasonNeeded"></textarea>
+										</div>
+									</div>
+									<p class="occ-help">Attach a revised job description with the proposed changes highlighted.</p>
+									<button type="button" class="occ-button occ-button--destructive" data-occ-repeating-group-remove>Remove position upgrade</button>
+								</fieldset>
+							</div>
+							<template data-occ-repeating-group-template>
+								<fieldset class="occ-fieldset occ-repeating-group__row" data-occ-repeating-group-row>
+									<legend class="occ-legend">Position upgrade <span data-occ-repeating-group-position>
+										</span>
+									</legend>
+									<div class="occ-field-grid">
+										<div class="occ-field">
+											<label class="occ-label" for="positionUpgrades-template-currentPositionTitle">Current position title</label>
+											<input id="positionUpgrades-template-currentPositionTitle" name="positionUpgrades-template-currentPositionTitle" class="occ-input" type="text" data-notsaved data-position-field="currentPositionTitle" />
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Will the position title change?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="positionUpgrades-template-willTitleChange-0">
+													<input id="positionUpgrades-template-willTitleChange-0" name="positionUpgrades-template-willTitleChange" type="radio" value="Yes" data-notsaved data-position-field="willTitleChange" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Yes</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="positionUpgrades-template-willTitleChange-1">
+													<input id="positionUpgrades-template-willTitleChange-1" name="positionUpgrades-template-willTitleChange" type="radio" value="No" data-notsaved data-position-field="willTitleChange" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">No</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="positionUpgrades-template-proposedPositionTitle">Proposed position title</label>
+											<input id="positionUpgrades-template-proposedPositionTitle" name="positionUpgrades-template-proposedPositionTitle" class="occ-input" type="text" data-notsaved data-position-field="proposedPositionTitle" />
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Employment type</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="positionUpgrades-template-employmentType-0">
+													<input id="positionUpgrades-template-employmentType-0" name="positionUpgrades-template-employmentType" type="radio" value="Full-Time" data-notsaved data-position-field="employmentType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Full-Time</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="positionUpgrades-template-employmentType-1">
+													<input id="positionUpgrades-template-employmentType-1" name="positionUpgrades-template-employmentType" type="radio" value="Part-Time" data-notsaved data-position-field="employmentType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Part-Time</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="positionUpgrades-template-employeeGroup">Employee group</label>
+											<select id="positionUpgrades-template-employeeGroup" name="positionUpgrades-template-employeeGroup" class="occ-select" data-notsaved data-position-field="employeeGroup" data-employee-group-options>
+												<option value="">Choose an option</option>
+												<option value="Classified">Classified</option>
+												<option value="Non-Union Admin &amp; Management">Non-Union Admin &amp; Management</option>
+												<option value="Faculty">Faculty</option>
+												<option value="Maintenance">Maintenance</option>
+												<option value="Operating Engineers">Operating Engineers</option>
+												<option value="Public Safety">Public Safety</option>
+												<option value="Other Hourly">Other Hourly</option>
+												<option value="Teamsters">Teamsters</option>
+												<option value="Unknown at this time">Unknown at this time</option>
+												<option value="Various">Various</option>
+											</select>
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Is this a manager or administrator position?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="positionUpgrades-template-managerAdministratorType-0">
+													<input id="positionUpgrades-template-managerAdministratorType-0" name="positionUpgrades-template-managerAdministratorType" type="radio" value="Not applicable" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Not applicable</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="positionUpgrades-template-managerAdministratorType-1">
+													<input id="positionUpgrades-template-managerAdministratorType-1" name="positionUpgrades-template-managerAdministratorType" type="radio" value="Manager" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Manager</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="positionUpgrades-template-managerAdministratorType-2">
+													<input id="positionUpgrades-template-managerAdministratorType-2" name="positionUpgrades-template-managerAdministratorType" type="radio" value="Administrator" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Administrator</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="positionUpgrades-template-reasonNeeded">Why is this upgrade needed?</label>
+											<textarea id="positionUpgrades-template-reasonNeeded" name="positionUpgrades-template-reasonNeeded" class="occ-textarea" rows="4" data-notsaved data-position-field="reasonNeeded"></textarea>
+										</div>
+									</div>
+									<p class="occ-help">Attach a revised job description with the proposed changes highlighted.</p>
+									<button type="button" class="occ-button occ-button--destructive" data-occ-repeating-group-remove>Remove position upgrade</button>
+								</fieldset>
+							</template>
+							<button type="button" class="occ-button occ-button--primary" data-occ-repeating-group-add>Add another upgrade</button>
+						</div>
+						<input id="positionUpgradesJson" name="positionUpgradesJson" type="hidden" />
+					</div>
+				</section>
+				<section class="occ-section" aria-labelledby="facultyPositionHeading">
+					<header class="occ-section-heading">
+						<span class="occ-section-heading__icon" aria-hidden="true">
+							<i class="fa-solid fa-chalkboard-user">
+							</i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="facultyPositionHeading">
+								<button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="facultyPositionContent">
+									Faculty position
+									<span class="occ-section-heading__toggle-icon" aria-hidden="true">
+										<i class="fa-solid fa-chevron-up">
+										</i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">Identify the faculty vacancy, academic program, and staffing need.</p>
+						</div>
+					</header>
+					<div id="facultyPositionContent" class="occ-section__content">
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="facultySlotNumber">Vacant slot number</label>
+								<input id="facultySlotNumber" name="facultySlotNumber" class="occ-input" type="text" />
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="academicProgram">Academic program</label>
+								<div id="academicProgramAutocomplete" class="occ-autocomplete">
+									<input id="academicProgram" name="academicProgram" class="occ-input occ-autocomplete__input" type="text" autocomplete="off" />
+									<input id="academicProgramCode" name="academicProgramCode" class="occ-autocomplete__value" type="hidden" />
+									<button class="occ-autocomplete__clear" type="button" aria-label="Clear academic program" hidden>&times;</button>
+									<div class="occ-autocomplete__panel" hidden>
+										<div class="occ-autocomplete__state" hidden>
+										</div>
+										<ul class="occ-autocomplete__list">
+										</ul>
+									</div>
+									<p class="occ-autocomplete__status">
+									</p>
+								</div>
+							</div>
+						</div>
+						<fieldset class="occ-fieldset occ-choice-field">
+							<legend class="occ-legend">Were adjuncts considered?</legend>
+							<div class="occ-choice-group occ-choice-group--compact">
+								<label class="occ-choice-card" for="adjunctsConsidered-0">
+									<input id="adjunctsConsidered-0" name="adjunctsConsidered" type="radio" value="Yes" />
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title">Yes</span>
+									</span>
+								</label>
+								<label class="occ-choice-card" for="adjunctsConsidered-1">
+									<input id="adjunctsConsidered-1" name="adjunctsConsidered" type="radio" value="No" />
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title">No</span>
+									</span>
+								</label>
+							</div>
+						</fieldset>
+						<div class="occ-field">
+							<label class="occ-label" for="facultyReasonNeeded">Why is this faculty position needed?</label>
+							<textarea id="facultyReasonNeeded" name="facultyReasonNeeded" class="occ-textarea" rows="4"></textarea>
+						</div>
+					</div>
+				</section>
+				<section class="occ-section" aria-labelledby="temporaryEmployeesHeading">
+					<header class="occ-section-heading">
+						<span class="occ-section-heading__icon" aria-hidden="true">
+							<i class="fa-solid fa-user-clock">
+							</i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="temporaryEmployeesHeading">
+								<button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="temporaryEmployeesContent">
+									Temporary employees
+									<span class="occ-section-heading__toggle-icon" aria-hidden="true">
+										<i class="fa-solid fa-chevron-up">
+										</i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">Describe each temporary position, its dates, and the reason it is needed.</p>
+						</div>
+					</header>
+					<div id="temporaryEmployeesContent" class="occ-section__content">
+						<p class="occ-help">Each entry represents one position.</p>
+						<div id="temporaryEmployeesGroup" class="occ-repeating-group" data-occ-repeating-group>
+							<div class="occ-repeating-group__list" data-occ-repeating-group-list>
+								<fieldset class="occ-fieldset occ-repeating-group__row" data-occ-repeating-group-row>
+									<legend class="occ-legend">Temporary position <span data-occ-repeating-group-position>1</span>
+									</legend>
+									<div class="occ-field-grid">
+										<div class="occ-field">
+											<label class="occ-label" for="temporaryEmployees-initial-positionTitle">Position title</label>
+											<input id="temporaryEmployees-initial-positionTitle" name="temporaryEmployees-initial-positionTitle" class="occ-input" type="text" data-notsaved data-position-field="positionTitle" />
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Is this a new position title?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="temporaryEmployees-initial-isNewPositionTitle-0">
+													<input id="temporaryEmployees-initial-isNewPositionTitle-0" name="temporaryEmployees-initial-isNewPositionTitle" type="radio" value="Yes" data-notsaved data-position-field="isNewPositionTitle" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Yes</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="temporaryEmployees-initial-isNewPositionTitle-1">
+													<input id="temporaryEmployees-initial-isNewPositionTitle-1" name="temporaryEmployees-initial-isNewPositionTitle" type="radio" value="No" data-notsaved data-position-field="isNewPositionTitle" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">No</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Is this position grant funded?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="temporaryEmployees-initial-isGrantFunded-0">
+													<input id="temporaryEmployees-initial-isGrantFunded-0" name="temporaryEmployees-initial-isGrantFunded" type="radio" value="Yes" data-notsaved data-position-field="isGrantFunded" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Yes</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="temporaryEmployees-initial-isGrantFunded-1">
+													<input id="temporaryEmployees-initial-isGrantFunded-1" name="temporaryEmployees-initial-isGrantFunded" type="radio" value="No" data-notsaved data-position-field="isGrantFunded" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">No</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="temporaryEmployees-initial-grantName">Grant name</label>
+											<input id="temporaryEmployees-initial-grantName" name="temporaryEmployees-initial-grantName" class="occ-input" type="text" data-notsaved data-position-field="grantName" />
+										</div>
+										<div class="occ-field">
+											<label class="occ-label" for="temporaryEmployees-initial-startDate">Start date</label>
+											<input id="temporaryEmployees-initial-startDate" name="temporaryEmployees-initial-startDate" class="occ-input" type="date" data-notsaved data-position-field="startDate" />
+										</div>
+										<div class="occ-field">
+											<label class="occ-label" for="temporaryEmployees-initial-endDate">End date</label>
+											<input id="temporaryEmployees-initial-endDate" name="temporaryEmployees-initial-endDate" class="occ-input" type="date" data-notsaved data-position-field="endDate" />
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Employment type</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="temporaryEmployees-initial-employmentType-0">
+													<input id="temporaryEmployees-initial-employmentType-0" name="temporaryEmployees-initial-employmentType" type="radio" value="Full-Time" data-notsaved data-position-field="employmentType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Full-Time</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="temporaryEmployees-initial-employmentType-1">
+													<input id="temporaryEmployees-initial-employmentType-1" name="temporaryEmployees-initial-employmentType" type="radio" value="Part-Time" data-notsaved data-position-field="employmentType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Part-Time</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="temporaryEmployees-initial-hoursPerWeek">Hours per week</label>
+											<input id="temporaryEmployees-initial-hoursPerWeek" name="temporaryEmployees-initial-hoursPerWeek" class="occ-input" type="number" step="any" data-notsaved data-position-field="hoursPerWeek" />
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Is this a manager or administrator position?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="temporaryEmployees-initial-managerAdministratorType-0">
+													<input id="temporaryEmployees-initial-managerAdministratorType-0" name="temporaryEmployees-initial-managerAdministratorType" type="radio" value="Not applicable" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Not applicable</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="temporaryEmployees-initial-managerAdministratorType-1">
+													<input id="temporaryEmployees-initial-managerAdministratorType-1" name="temporaryEmployees-initial-managerAdministratorType" type="radio" value="Manager" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Manager</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="temporaryEmployees-initial-managerAdministratorType-2">
+													<input id="temporaryEmployees-initial-managerAdministratorType-2" name="temporaryEmployees-initial-managerAdministratorType" type="radio" value="Administrator" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Administrator</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="temporaryEmployees-initial-reasonNeeded">Why is this temporary position needed?</label>
+											<textarea id="temporaryEmployees-initial-reasonNeeded" name="temporaryEmployees-initial-reasonNeeded" class="occ-textarea" rows="4" data-notsaved data-position-field="reasonNeeded"></textarea>
+										</div>
+									</div>
+									<p class="occ-help">Attach a proposed job description when requesting a new position title.</p>
+									<button type="button" class="occ-button occ-button--destructive" data-occ-repeating-group-remove>Remove temporary position</button>
+								</fieldset>
+							</div>
+							<template data-occ-repeating-group-template>
+								<fieldset class="occ-fieldset occ-repeating-group__row" data-occ-repeating-group-row>
+									<legend class="occ-legend">Temporary position <span data-occ-repeating-group-position>
+										</span>
+									</legend>
+									<div class="occ-field-grid">
+										<div class="occ-field">
+											<label class="occ-label" for="temporaryEmployees-template-positionTitle">Position title</label>
+											<input id="temporaryEmployees-template-positionTitle" name="temporaryEmployees-template-positionTitle" class="occ-input" type="text" data-notsaved data-position-field="positionTitle" />
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Is this a new position title?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="temporaryEmployees-template-isNewPositionTitle-0">
+													<input id="temporaryEmployees-template-isNewPositionTitle-0" name="temporaryEmployees-template-isNewPositionTitle" type="radio" value="Yes" data-notsaved data-position-field="isNewPositionTitle" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Yes</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="temporaryEmployees-template-isNewPositionTitle-1">
+													<input id="temporaryEmployees-template-isNewPositionTitle-1" name="temporaryEmployees-template-isNewPositionTitle" type="radio" value="No" data-notsaved data-position-field="isNewPositionTitle" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">No</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Is this position grant funded?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="temporaryEmployees-template-isGrantFunded-0">
+													<input id="temporaryEmployees-template-isGrantFunded-0" name="temporaryEmployees-template-isGrantFunded" type="radio" value="Yes" data-notsaved data-position-field="isGrantFunded" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Yes</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="temporaryEmployees-template-isGrantFunded-1">
+													<input id="temporaryEmployees-template-isGrantFunded-1" name="temporaryEmployees-template-isGrantFunded" type="radio" value="No" data-notsaved data-position-field="isGrantFunded" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">No</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="temporaryEmployees-template-grantName">Grant name</label>
+											<input id="temporaryEmployees-template-grantName" name="temporaryEmployees-template-grantName" class="occ-input" type="text" data-notsaved data-position-field="grantName" />
+										</div>
+										<div class="occ-field">
+											<label class="occ-label" for="temporaryEmployees-template-startDate">Start date</label>
+											<input id="temporaryEmployees-template-startDate" name="temporaryEmployees-template-startDate" class="occ-input" type="date" data-notsaved data-position-field="startDate" />
+										</div>
+										<div class="occ-field">
+											<label class="occ-label" for="temporaryEmployees-template-endDate">End date</label>
+											<input id="temporaryEmployees-template-endDate" name="temporaryEmployees-template-endDate" class="occ-input" type="date" data-notsaved data-position-field="endDate" />
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Employment type</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="temporaryEmployees-template-employmentType-0">
+													<input id="temporaryEmployees-template-employmentType-0" name="temporaryEmployees-template-employmentType" type="radio" value="Full-Time" data-notsaved data-position-field="employmentType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Full-Time</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="temporaryEmployees-template-employmentType-1">
+													<input id="temporaryEmployees-template-employmentType-1" name="temporaryEmployees-template-employmentType" type="radio" value="Part-Time" data-notsaved data-position-field="employmentType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Part-Time</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="temporaryEmployees-template-hoursPerWeek">Hours per week</label>
+											<input id="temporaryEmployees-template-hoursPerWeek" name="temporaryEmployees-template-hoursPerWeek" class="occ-input" type="number" step="any" data-notsaved data-position-field="hoursPerWeek" />
+										</div>
+										<fieldset class="occ-fieldset occ-choice-field">
+											<legend class="occ-legend">Is this a manager or administrator position?</legend>
+											<div class="occ-choice-group occ-choice-group--compact">
+												<label class="occ-choice-card" for="temporaryEmployees-template-managerAdministratorType-0">
+													<input id="temporaryEmployees-template-managerAdministratorType-0" name="temporaryEmployees-template-managerAdministratorType" type="radio" value="Not applicable" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Not applicable</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="temporaryEmployees-template-managerAdministratorType-1">
+													<input id="temporaryEmployees-template-managerAdministratorType-1" name="temporaryEmployees-template-managerAdministratorType" type="radio" value="Manager" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Manager</span>
+													</span>
+												</label>
+												<label class="occ-choice-card" for="temporaryEmployees-template-managerAdministratorType-2">
+													<input id="temporaryEmployees-template-managerAdministratorType-2" name="temporaryEmployees-template-managerAdministratorType" type="radio" value="Administrator" data-notsaved data-position-field="managerAdministratorType" />
+													<span class="occ-choice-card__body">
+														<span class="occ-choice-card__title">Administrator</span>
+													</span>
+												</label>
+											</div>
+										</fieldset>
+										<div class="occ-field">
+											<label class="occ-label" for="temporaryEmployees-template-reasonNeeded">Why is this temporary position needed?</label>
+											<textarea id="temporaryEmployees-template-reasonNeeded" name="temporaryEmployees-template-reasonNeeded" class="occ-textarea" rows="4" data-notsaved data-position-field="reasonNeeded"></textarea>
+										</div>
+									</div>
+									<p class="occ-help">Attach a proposed job description when requesting a new position title.</p>
+									<button type="button" class="occ-button occ-button--destructive" data-occ-repeating-group-remove>Remove temporary position</button>
+								</fieldset>
+							</template>
+							<button type="button" class="occ-button occ-button--primary" data-occ-repeating-group-add>Add another temporary position</button>
+						</div>
+						<input id="temporaryEmployeesJson" name="temporaryEmployeesJson" type="hidden" />
+					</div>
+				</section>
+				<section class="occ-section" aria-labelledby="otherStaffingRequestHeading">
+					<header class="occ-section-heading">
+						<span class="occ-section-heading__icon" aria-hidden="true">
+							<i class="fa-solid fa-pen-to-square">
+							</i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="otherStaffingRequestHeading">
+								<button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="otherStaffingRequestContent">
+									Other staffing request
+									<span class="occ-section-heading__toggle-icon" aria-hidden="true">
+										<i class="fa-solid fa-chevron-up">
+										</i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">Describe a staffing change that does not fit the request types above.</p>
+						</div>
+					</header>
+					<div id="otherStaffingRequestContent" class="occ-section__content">
+						<div class="occ-field">
+							<label class="occ-label" for="otherRequestDescription">Describe your request</label>
+							<textarea id="otherRequestDescription" name="otherRequestDescription" class="occ-textarea" rows="4" aria-describedby="otherRequestHelp"></textarea>
+						</div>
+						<p id="otherRequestHelp" class="occ-help">For example, an hourly rate adjustment or another staffing change not listed above.</p>
+					</div>
+				</section>
+				<section class="occ-section" aria-labelledby="supportingDocumentsHeading">
+					<header class="occ-section-heading">
+						<span class="occ-section-heading__icon" aria-hidden="true">
+							<i class="fa-solid fa-paperclip">
+							</i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="supportingDocumentsHeading">
+								<button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="supportingDocumentsContent">
+									Supporting documents
+									<span class="occ-section-heading__toggle-icon" aria-hidden="true">
+										<i class="fa-solid fa-chevron-up">
+										</i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">Include documents that help explain and support your request.</p>
+						</div>
+					</header>
+					<div id="supportingDocumentsContent" class="occ-section__content">
+						<p>Use Softdocs Attachments to include supporting documentation, such as proposed or revised job descriptions, organizational charts, market data, or other information supporting your staffing request.</p>
+					</div>
+				</section>
+				<section class="occ-section" aria-labelledby="budgetReviewHeading">
+					<header class="occ-section-heading">
+						<span class="occ-section-heading__icon" aria-hidden="true">
+							<i class="fa-solid fa-coins">
+							</i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="budgetReviewHeading">
+								<button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="budgetReviewContent">
+									Budget review
+									<span class="occ-section-heading__toggle-icon" aria-hidden="true">
+										<i class="fa-solid fa-chevron-up">
+										</i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">Record the budget recommendation, estimated costs, and designated reviewers.</p>
+						</div>
+					</header>
+					<div id="budgetReviewContent" class="occ-section__content">
+						<div class="occ-field">
+							<label class="occ-label" for="budgetTeamNotes">Budget team notes</label>
+							<textarea id="budgetTeamNotes" name="budgetTeamNotes" class="occ-textarea" rows="4"></textarea>
+						</div>
+						<div class="occ-field">
+							<label class="occ-label" for="budgetTeamRecommendation">Budget team recommendation</label>
+							<select id="budgetTeamRecommendation" name="budgetTeamRecommendation" class="occ-select">
+								<option value="">Choose an option</option>
+								<option value="Exception to Current Staffing Plan-Budget Approved-See Budget Team Notes/Comments">Exception to Current Staffing Plan-Budget Approved-See Budget Team Notes/Comments</option>
+								<option value="Exception to Current Staffing Plan-Budget Denied at this Time-See Budget Team Notes/Comments">Exception to Current Staffing Plan-Budget Denied at this Time-See Budget Team Notes/Comments</option>
+								<option value="Budget Team Does Not Support Annual Staffing Request-See Budget Team Notes-Final Decision Pending HR Input &amp; Chancellor Input">Budget Team Does Not Support Annual Staffing Request-See Budget Team Notes-Final Decision Pending HR Input &amp; Chancellor Input</option>
+								<option value="Budget Team Supports Annual Staffing Request-See Budget Team Notes-Final Decision Pending HR Input &amp; Chancellor Input">Budget Team Supports Annual Staffing Request-See Budget Team Notes-Final Decision Pending HR Input &amp; Chancellor Input</option>
+								<option value="Budget Team requests additional information from HR Team">Budget Team requests additional information from HR Team</option>
+								<option value="Budget Team requests meeting with HR Team for further discussions">Budget Team requests meeting with HR Team for further discussions</option>
+								<option value="Budget Team requests meeting with initiator and/or Member of Executive Council for additional information">Budget Team requests meeting with initiator and/or Member of Executive Council for additional information</option>
+								<option value="Exception to Current Staffing Plan-Budget Team on Hold">Exception to Current Staffing Plan-Budget Team on Hold</option>
+							</select>
+						</div>
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="estimatedSalaryWage">Estimated salary/wage</label>
+								<input id="estimatedSalaryWage" name="estimatedSalaryWage" class="occ-input" type="number" step="any" />
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="estimatedBenefits">Estimated benefits</label>
+								<input id="estimatedBenefits" name="estimatedBenefits" class="occ-input" type="number" step="any" />
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="totalEstimatedBudgetImpact">Total estimated budget impact</label>
+								<input id="totalEstimatedBudgetImpact" name="totalEstimatedBudgetImpact" class="occ-input" type="number" step="any" />
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="budgetSlotNumbers">Slot number(s)</label>
+								<input id="budgetSlotNumbers" name="budgetSlotNumbers" class="occ-input" type="text" />
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="budgetDeanDirectorManager">Dean / Director / Manager</label>
+								<select id="budgetDeanDirectorManager" name="budgetDeanDirectorManager" class="occ-select">
+									<option value="">Choose an option</option>
+									<option value="Mock Dean — Alex Example">Mock Dean — Alex Example</option>
+									<option value="Mock Director — Jordan Example">Mock Director — Jordan Example</option>
+									<option value="Mock Manager — Taylor Example">Mock Manager — Taylor Example</option>
+								</select>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="executiveCouncilMember">Executive Council member</label>
+								<select id="executiveCouncilMember" name="executiveCouncilMember" class="occ-select">
+									<option value="">Choose an option</option>
+									<option value="Mock Executive Council Member — Casey Example">Mock Executive Council Member — Casey Example</option>
+									<option value="Mock Executive Council Member — Morgan Example">Mock Executive Council Member — Morgan Example</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="occ-section" aria-labelledby="humanResourcesReviewHeading">
+					<header class="occ-section-heading">
+						<span class="occ-section-heading__icon" aria-hidden="true">
+							<i class="fa-solid fa-users">
+							</i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="humanResourcesReviewHeading">
+								<button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="humanResourcesReviewContent">
+									Human Resources review
+									<span class="occ-section-heading__toggle-icon" aria-hidden="true">
+										<i class="fa-solid fa-chevron-up">
+										</i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">Record Human Resources notes and the staffing recommendation.</p>
+						</div>
+					</header>
+					<div id="humanResourcesReviewContent" class="occ-section__content">
+						<div class="occ-field">
+							<label class="occ-label" for="hrTeamNotes">HR team notes</label>
+							<textarea id="hrTeamNotes" name="hrTeamNotes" class="occ-textarea" rows="4"></textarea>
+						</div>
+						<div class="occ-field">
+							<label class="occ-label" for="hrTeamRecommendation">HR team recommendation</label>
+							<select id="hrTeamRecommendation" name="hrTeamRecommendation" class="occ-select">
+								<option value="">Choose an option</option>
+								<option value="Exception to Current Staffing Plan-Initial approval (Discussions to be scheduled with applicable union group to finalize approval)">Exception to Current Staffing Plan-Initial approval (Discussions to be scheduled with applicable union group to finalize approval)</option>
+								<option value="Exception to Current Staffing Plan-Denied at this time-See Notes/Comments">Exception to Current Staffing Plan-Denied at this time-See Notes/Comments</option>
+								<option value="Exception to Current Staffing Plan-Final approval (Approval has been secured from union group if applicable)">Exception to Current Staffing Plan-Final approval (Approval has been secured from union group if applicable)</option>
+								<option value="HR Team Supports Annual Staffing Request-See HR Team Notes-Final Decision Pending Chancellor Input">HR Team Supports Annual Staffing Request-See HR Team Notes-Final Decision Pending Chancellor Input</option>
+								<option value="HR Team Does Not Support Annual Staffing Request-See HR Team Notes-Final Decision Pending Chancellor Input">HR Team Does Not Support Annual Staffing Request-See HR Team Notes-Final Decision Pending Chancellor Input</option>
+								<option value="Request meeting with initiator and/or Member of EC for additional information">Request meeting with initiator and/or Member of EC for additional information</option>
+								<option value="Request meeting with Budget Team for further discussions">Request meeting with Budget Team for further discussions</option>
+							</select>
+						</div>
+					</div>
+				</section>
+				<section class="occ-section developer" aria-labelledby="developerHeading">
+					<header class="occ-section-heading">
+						<span class="occ-section-heading__icon" aria-hidden="true"><i class="fa-solid fa-code"></i></span>
+						<div class="occ-section-heading__content">
+							<h2 id="developerHeading">
+								<button type="button" class="occ-section-heading__toggle" aria-expanded="true" aria-controls="developerContent">
+									Developer information
+									<span class="occ-section-heading__toggle-icon" aria-hidden="true"><i class="fa-solid fa-chevron-up"></i></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">Softdocs originator values and saved contact position identity.</p>
+						</div>
+					</header>
+					<div id="developerContent" class="occ-section__content">
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="originatorDisplayName">Originator name</label>
+								<input id="originatorDisplayName" name="originatorDisplayName" class="occ-input" type="text" readonly />
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="originatorEmail">Originator email</label>
+								<input id="originatorEmail" name="originatorEmail" class="occ-input" type="email" readonly />
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="contactPositionGuid">Contact Position GUID</label>
+								<input id="contactPositionGuid" name="contactPositionGuid" class="occ-input" type="text" readonly />
+							</div>
+						</div>
+					</div>
+				</section>
+			</form>
+		</main>
+	</body>
+</html>

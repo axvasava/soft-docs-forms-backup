@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col3" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele4" name="ele37" class="text-right  "><i>Revised 10/26</i></h5>
+                </div>
+                <div id="HeaderLeft5" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo6" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    alt="this is an alt tag for screen readers" />
+                </div>
+                <div id="HeaderRight7" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_8" name="h2_27" class="text-center  "><b>Firearms Reservation Request</b></h2>
+                </div>
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele10" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow394" name="quickInputsRow" class="text-left row  pdServices ">
+                <div id="quickInputsColumn395" name="quickInputsColumn1" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vendorSearch">Vendor Search</label>
+                        <input id="vendorSearch" name="vendorSearch" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col397" class="col-xs-2 col-sm-2 text-left  " style=" margin-top:28px; ">
+                    <button id="vendorSearchButton" name="vendorSearchButton" class="text-left btn btn-block btn-primary venSearchBtn "
+                    style="" undefined="">Search</button>
+                </div>
+                <div id="col490" class="col-xs-4 col-sm-4 text-left  " style=" padding:0px 0px 0px 25px;  margin:25px 0px 0px 0px; ">
+                    <input id="noVendorFound" name="noVendorFound" class="text-left  " type="checkbox"
+                    />
+                    <label for="noVendorFound">  No user could be found</label>
+                </div>
+            </div>
+            <div id="quickInputsRow432" name="quickInputsRow" class="text-left row pdServices ">
+                <div id="quickInputsColumn433" name="quickInputsColumn1" class="col-xs-12 col-sm-10 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vendorPayeeName">Vendor Name</label>
+                        <input id="vendorPayeeName" name="vendorPayeeName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col435" class="col-xs-12 col-sm-2 text-center  ">
+                    <input id="differentPayee" name="differentPayee" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                    <label for="differentPayee">Enter Different Name</label>
+                </div>
+            </div>
+            <div id="quickInputsRow478" name="quickInputsRow" class="text-left row pdServices "
+            data-bind="visible: ( ( differentPayee() ) ) ">
+                <div id="quickInputsColumn479" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentVendorPayeeName">Enter Different Vendor Name</label>
+                        <input id="differentVendorPayeeName"
+                        name="differentVendorPayeeName" class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow406" name="quickInputsRow" class="text-left row pdServices ">
+                <div id="quickInputsColumn407" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="address">Address</label>
+                        <input id="address" name="address" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn409" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="city">City</label>
+                        <input id="city" name="city" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn411" name="quickInputsColumn3" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="state">State</label>
+                        <input id="state" name="state" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn413" name="quickInputsColumn4" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="zip">Zip Code</label>
+                        <input id="zip" name="zip" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col415" class="col-xs-12 col-sm-2 text-center  " style=" margin-top: 10px; ">
+                    <input id="differentAddress" name="differentAddress" class="text-left  "
+                    style=" transform: scale(1.5) " type="checkbox" />
+                    <label for="differentAddress">Enter Different Address</label>
+                </div>
+                <div id="col417" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele418" name="ele153" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow420" name="quickInputsRow" class="text-left row pdServices "
+            data-bind="visible: ( ( differentAddress() ) ) ">
+                <div id="quickInputsColumn421" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentAddressField">Address</label>
+                        <input id="differentAddressField" name="differentAddressField"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn423" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentCity">City</label>
+                        <input id="differentCity" name="differentCity" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn425" name="quickInputsColumn3" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentState">State</label>
+                        <input id="differentState" name="differentState" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn427" name="quickInputsColumn4" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentZip">Zip Code</label>
+                        <input id="differentZip" name="differentZip" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col429" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele430" name="ele153" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row28" name="" class="text-left section-header ">
+                <div id="col29" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele30" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele31" name="ele595" class="text-left  ">Organization Contact Information</h2>
+                </div>
+            </div>
+            <div id="row40" class="text-left row organizationInfo ">
+                <div id="col44" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="contactPerson">Contact Name</label>
+                        <input id="contactPerson" name="contactPerson" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col45" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left maskphone ">
+                        <label for="contactPhoneNumber">Phone #</label>
+                        <input id="contactPhoneNumber" name="contactPhoneNumber"
+                        class="text-left maskphone " required="required" />
+                    </div>
+                </div>
+                <div id="col50" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left maskphone ">
+                        <label for="contactFaxNumber">Fax #</label>
+                        <input id="contactFaxNumber" name="contactFaxNumber" class="text-left maskphone "
+                        />
+                    </div>
+                </div>
+                <div id="col353" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="contactEmail">Email</label>
+                        <input id="contactEmail" name="contactEmail" class="text-left  "
+                        required="required" data-bind="email" />
+                    </div>
+                </div>
+                <div id="col170" class="col-xs-12 col-sm-12 text-left  "><span id="ele171" name="ele171" class="text-left  "> </span>
+                </div>
+            </div>
+            <div id="row361" class="text-left row ">
+                <div id="col580" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele581" name="ele581" class="text-left  "></p>
+                </div>
+                <div id="col574" class="col-xs-6 col-sm-6 text-left  ">
+                    <p id="ele575" name="ele575" class="col-xs-12 col-sm-12 text-left  "><strong>Is Certificate of Insurance required? </strong>
+                    </p>
+                </div>
+                <div id="col568" class="col-xs-1 col-sm-1 text-left  ">
+                    <input id="nonRequiredYes" name="nonRequired" class="text-left  " type="radio"
+                    value="yes" />
+                    <label for="nonRequiredYes">  Yes</label>
+                </div>
+                <div id="col569" class="col-xs-1 col-sm-1 text-left  ">
+                    <input id="nonRequiredNo" name="nonRequired" class="text-left  " type="radio"
+                    value="no" />
+                    <label for="nonRequiredNo">  No</label>
+                </div>
+                <div id="col583" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele584" name="ele584" class="text-left  "></p>
+                </div>
+                <div id="col577" name="col577" class="col-xs-6 col-sm-6 text-left  " data-bind="visible: ( ( nonRequired() == 'no' ) ) ">
+                    <label for="nonRequiredReason"><strong>Non-Required/Reason </strong>  <span style="color: red;">*</span>
+                    </label>
+                    <textarea id="nonRequiredReason" name="nonRequiredReason" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row2855" name="" class="text-left section-header ">
+                <div id="col295" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele305" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele315" name="ele315" class="text-left  ">Fees for Faculty and Staff</h2>
+                </div>
+            </div>
+            <div id="row267" class="text-left row ">
+                <div id="col268" class="col-xs-5 col-sm-5 text-left  "><span id="ele274" name="ele274" class="col-xs-12 col-sm-12 text-left  "><strong>Range Master - $45 per hour</strong></span>
+                </div>
+                <div id="col269" class="col-xs-7 col-sm-7 text-left  "><span id="ele276" name="ele276" class="col-xs-12 col-sm-12 text-left  "><strong>One person from our staff must be present to operate the controls in the control booth. This fee may be eliminated if your staff member in charge is on the Oakland Police Academy Firearms Staff. </strong></span>
+                </div>
+                <div id="col270" class="col-xs-5 col-sm-5 text-left  "><span id="ele278" name="ele278" class="col-xs-12 col-sm-12 text-left  "><strong>Firearms Instructor - $45 per hour</strong></span>
+                </div>
+                <div id="col271" class="col-xs-7 col-sm-7 text-left  "><span id="ele280" name="ele280" class="col-xs-12 col-sm-12 text-left  "><strong>The instructor to student ratio is 1 instructor for every 5 students. Please indicate if you have a need for additional for instructors. </strong></span>
+                </div>
+                <div id="col272" class="col-xs-5 col-sm-5 text-left  "><span id="ele282" name="ele282" class="col-xs-12 col-sm-12 text-left  "><strong>Firearms Range Rental - $70 per day </strong></span>
+                </div>
+                <div id="col273" class="col-xs-7 col-sm-7 text-left  "><span id="ele284" name="ele284" class="col-xs-12 col-sm-12 text-left  "><strong>Indicate how many hours your rental will be.</strong></span>
+                </div>
+            </div>
+            <div id="row290" class="text-left row pdServices ">
+                <div id="col546" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele547" name="ele547" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+                <div id="col291" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="rentalFee">Rental Fee</label>
+                        <input id="rentalFee" name="rentalFee" class="col-xs-12 col-sm-12 text-left  "
+                        required="required" data-bind="money" />
+                    </div>
+                </div>
+                <div id="col292" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="rangeMasterFee">Range Master Fee</label>
+                        <input id="rangeMasterFee" name="rangeMasterFee"
+                        class="col-xs-12 col-sm-12 text-left  " required="required" data-bind="money"
+                        />
+                    </div>
+                </div>
+                <div id="col293" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="instructorsFee">Instructors Fee</label>
+                        <input id="instructorsFee" name="instructorsFee"
+                        class="col-xs-12 col-sm-12 text-left  " required="required" data-bind="money"
+                        />
+                    </div>
+                </div>
+                <div id="col294" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="ammo">Ammo</label>
+                        <input id="ammo" name="ammo" class="col-xs-12 col-sm-12 text-left  "
+                        required="required" data-bind="money" />
+                    </div>
+                </div>
+                <div id="col470" class="col-xs-3 col-sm-3 text-left  ">
+                    <p id="ele471" name="ele471" class="text-left  "></p>
+                </div>
+                <div id="col469" class="col-xs-3 col-sm-3 text-left  ">
+                    <p id="ele473" name="ele473" class="text-left  "></p>
+                </div>
+                <div id="col468" class="col-xs-3 col-sm-3 text-left  ">
+                    <p id="ele475" name="ele475" class="text-left  "></p>
+                </div>
+                <div id="col465" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="totalCharge">Total Charge</label>
+                        <input id="totalCharge" name="totalCharge" class="text-left  "
+                        readonly="true" data-bind="calculate: 'rentalFee + rangeMasterFee + instructorsFee + ammo', money "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row29030" class="text-left row pdServices occRentalFeeNotes ">
+                <div id="col35030" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele35130" name="ele351" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+                <div id="row2903030" name="" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="rangeFeeNotes">Notes</label>
+                    <textarea id="rangeFeeNotes" name="rangeFeeNotes" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row28551717" name="" class="text-left section-header ">
+                <div id="col29517" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele30517" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele31517" name="ele31517" class="text-left  ">Organization Activities</h2>
+                </div>
+            </div>
+            <div id="row386" class="text-left row pdServices ">
+                <div id="col387" class="col-xs-8 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="purposeOfRequest">Purpose of Request</label>
+                        <input id="purposeOfRequest" name="purposeOfRequest"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="col388" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="expectedAttendance">Expected Attendance</label>
+                        <input id="expectedAttendance" name="expectedAttendance"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="datesTimesRow" name="datesTimesRow" class="text-left row activity "
+            style="overflow: auto;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px "
+            data-bind="dynamicList: true, dynamicListProperties: {addButtonID: 'addDatesTimes',  removeButtonID: 'removeDatesTimes'}">
+                <div id="col556" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="activityDate">Date</label>
+                        <input id="activityDate" name="activityDate" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col17510" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="arrivalTime">Arrival Time</label>
+                        <input id="arrivalTime" name="arrivalTime" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col188" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="departTime">Departure Time</label>
+                        <input id="departTime" name="departTime" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col559" class="col-xs-3 col-sm-3 text-center  " style=" margin-top: 30px; ">
+                    <button id="ele560" name="ele560" class="text-left btn btn-danger btn-disable "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">Delete</button>
+                </div>
+                <div id="col586" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele587" name="ele587" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="row549" class="text-left row activity ">
+                <div id="col550" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="ele562" name="ele562" class="text-left  "></p>
+                </div>
+                <div id="col551" class="col-xs-4 col-sm-4 text-left  ">
+                    <button id="addDatesTimes" name="addDatesTimes" class="col-xs-12 col-sm-12 text-left btn btn-primary btn-disable "
+                    style="" undefined="">Add Date/Time</button>
+                </div>
+                <div id="col552" class="col-xs-4 col-sm-4 text-left  ">
+                    <button id="removeDatesTimes" name="removeDatesTimes" class="col-xs-12 col-sm-12 text-left btn btn-danger btn-disable "
+                    style="" undefined="">Remove Date/Time</button>
+                </div>
+                <div id="col553" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="ele566" name="ele566" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="quickInputsRow51328283131" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn5142831" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_5152831" class="text-left  " />
+                </div>
+            </div>
+            <div id="row17310101111" name="" class="text-left row activity ">
+                <div id="col1741011" class="col-xs-10 col-sm-10 text-left  ">
+                    <p id="ele196" name="ele196" class="text-left  "><b>Will a Range Master be needed for this event? <br /> <i>Range Master hours will equal the number of hours range is rented. </i> </b>
+                    </p>
+                </div>
+                <div id="col500" class="col-xs-1 col-sm-1 text-left  ">
+                    <input id="rangeMasterNeededYes" name="rangeMasterNeeded" class="text-left  "
+                    type="radio" value="yes" />
+                    <label for="rangeMasterNeededYes">  Yes</label>
+                </div>
+                <div id="col501" class="col-xs-1 col-sm-1 text-left  ">
+                    <input id="rangeMasterNeededNo" name="rangeMasterNeeded" class="text-left  "
+                    type="radio" value="no" />
+                    <label for="rangeMasterNeededNo">  No</label>
+                </div>
+                <div id="col506" name="col506" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ( ( rangeMasterNeeded() == 'no' ) ) ">
+                    <div class="text-left  ">
+                        <label for="staffInCharge">Please list the OPA staff in charge</label>
+                        <input id="staffInCharge" name="staffInCharge"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow51328282929" name="quickInputsRow" class="text-left row activity ">
+                <div id="quickInputsColumn5142829" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_5152829" class="text-left  " />
+                </div>
+            </div>
+            <div id="row198" class="text-left row pdServices ">
+                <div id="col199" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ele200">How many firearms instructors are needed</label>
+                        <input id="ele200" name="ele200"
+                        class="text-left  " required="required" type="Number" />
+                    </div>
+                </div>
+                <div id="col202" class="col-xs-6 col-sm-6 text-left  ">
+                    <label for="classroomsNeeded">Classrooms Needed</label>
+                    <select id="classroomsNeeded" name="classroomsNeeded"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="col205" name="col205" class="col-xs-6 col-sm-6 text-left  " data-bind="visible: ( ( classroomsNeeded() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="studentsToAccommodate">How many students to accommodate</label>
+                        <input id="studentsToAccommodate"
+                        name="studentsToAccommodate" class="text-left  " type="Number" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow513" name="quickInputsRow" class="text-left row activity ">
+                <div id="quickInputsColumn514" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_515" class="text-left  " />
+                </div>
+            </div>
+            <div id="row208" class="text-left row activity ">
+                <div id="col209" class="col-xs-12 col-sm-12 text-left  "><span id="ele210" name="ele210" class="col-xs-12 col-sm-12 text-left  "><strong>Please indicate if you will need any of the following:</strong></span>
+                </div>
+                <div id="col215" class="col-xs-12 col-sm-12 text-left  "><span id="ele216" name="ele216" class="col-xs-12 col-sm-12 text-left  "></span>
+                </div>
+                <div id="col212" class="col-xs-12 col-sm-12 text-left  "><span id="ele213" name="ele213" class="col-xs-12 col-sm-12 text-left  "><label style="margin-right:25px;"><input type="checkbox" name="Targets" id="Targets" /> Targets</label>
+<label style="margin-right:25px;"><input type="checkbox" name="Backers" id="Backers" /> Backers</label>
+<label style="margin-right:25px;"><input type="checkbox" name="EarMuffs" id="EarMuffs" /> Ear Muffs</label>
+<label style="margin-right:25px;"><input type="checkbox" name="Staples" id="Staples" /> Staples and Staple Guns</label>
+<label style="margin-right:25px;"><input type="checkbox" name="SafetyGlasses" id="SafetyGlasses" /> Safety Glasses</label>
+<label style="margin-right:25px;"><input type="checkbox" name="FoamEarPlugs" id="FoamEarPlugs" /> Foam Ear Plugs</label></span>
+                </div>
+            </div>
+            <div id="row3802727" name="" class="text-left row ">
+                <div id="col38127" class="col-xs-12 col-sm-12 text-left fd-callout fd-callout--info "><span id="ele38227" name="ele38227" class="col-xs-12 col-sm-12 text-left  ">Food is not allowed in firearms range or control booth.</span>
+                </div>
+            </div>
+            <div id="row2855991717" name="" class="text-left section-header ">
+                <div id="col295917" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele305917" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele315917" name="ele315917" class="text-left  ">Signature</h2>
+                </div>
+            </div>
+            <div id="row380" name="" class="text-left row ">
+                <div id="col381" class="col-xs-12 col-sm-12 text-left fd-callout fd-callout--info "><span id="ele382" name="ele23024" class="text-left  "><strong>Rental organization agrees to:</strong>
+Indemnify and hold harmless OCC, its employees, officers, agents, Trustees and volunteers, from and against any and all claims, costs, causes of action, losses or expenses (including reasonable attorney fees) caused by or arising out of the acts and/or omissions and/or conduct of any individual, officer, employee, agent, student, or Trustee of the rental organization in connection with or related to the rental organization’s program or event. </span>
+                </div>
+            </div>
+            <div id="quickInputsRow323" name="quickInputsRow" class="text-left row pdServices ">
+                <div id="quickInputsColumn324" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="opaSignature">Approved by: Please Enter Your Name</label>
+                        <input id="opaSignature" name="opaSignature"
+                        class="col-xs-12 col-sm-12 text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn326" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="opaSignDate">Date</label>
+                        <input id="opaSignDate" name="opaSignDate" class="col-xs-12 col-sm-12 text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow250" name="quickInputsRow" class="text-left row signature ">
+                <div id="quickInputsColumn251" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationSign">Signature: Please Enter Your Name</label>
+                        <input id="organizationSign"
+                        name="organizationSign" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn253" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationSignDate">Date</label>
+                        <input id="organizationSignDate" name="organizationSignDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row442" class="text-left section-header developer ">
+                <div id="col443" class="col-xs-12 col-sm-12 text-left fd-section-header with-subtitle developer-variant "><span id="ele444" name="ele58" class="text-left icon "><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele445" name="ele59" class="text-left  ">Developer Section</h2>
+                        <p id="ele446" name="ele60" class="text-left  ">This section is intended for developer use only. If it is visible, please
+                            notify support staff.</p>
+                </div>
+            </div>
+            <div id="row447" class="text-left row developer ">
+                <div id="col448" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationAddressId">organizationAddressId</label>
+                        <input id="organizationAddressId" name="organizationAddressId"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col449" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="nisVendorName">nisVendorName</label>
+                        <input id="nisVendorName" name="nisVendorName" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col452" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="nisID">nisID</label>
+                        <input id="nisID" name="nisID" class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col3" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele4" name="ele37" class="text-right  "><i>Revised 06/26</i></h5>
+                </div>
+                <div id="HeaderLeft5" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo6" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    alt="this is an alt tag for screen readers" />
+                </div>
+                <div id="HeaderRight7" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_8" name="h2_27" class="text-center  "><b>Cashiers Receipt</b></h2>
+                </div>
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele10" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row1681818" name="" class="text-left section-header ">
+                <div id="col16918" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele17018" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele17118" name="ele17118" class="text-left  ">Employee Information</h2>
+                </div>
+            </div>
+            <div id="quickInputsRow12" name="quickInputsRow" class="text-left row empInfo ">
+                <div id="quickInputsColumn17" name="quickInputsColumn2" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Employee ID</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn13" name="quickInputsColumn1" class="col-xs-8 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Employee Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn15" name="quickInputsColumn3" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">Employee Email</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col31" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="department">Employee Department</label>
+                        <input id="department" name="department" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="row16819192020" name="" class="text-left section-header ">
+                <div id="col1691920" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele1701920" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele1711920" name="ele1711920" class="text-left  ">Funds Received</h2>
+                </div>
+            </div>
+            <div id="row38" class="text-left row funds ">
+                <div id="col39" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="receivedOf">Received Of</label>
+                    <textarea id="receivedOf" name="receivedOf" class="text-left  "
+                    required="required"></textarea>
+                </div>
+            </div>
+            <div id="row1681919" name="" class="text-left section-header ">
+                <div id="col16919" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele17019" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele17119" name="ele17119" class="text-left  ">Funds</h2>
+                </div>
+            </div>
+            <div id="row51" class="text-left row ">
+                <div id="col52" class="col-xs-12 col-sm-12 text-left fd-callout fd-callout--primary "><span id="ele53" name="ele230" class="text-left  ">Add lines <strong>one at a time</strong> with these fields</span>
+                </div>
+            </div>
+            <div id="addCheckRow" name="addCheckRow" class="text-left row funds "
+            style="overflow: auto;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px "
+            data-bind="dynamicList: true, dynamicListProperties: {addButtonID: 'addCheck',  removeButtonID: 'removeCheck'}">
+                <div id="col55" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="checkNumber">Check Number</label>
+                        <input id="checkNumber" name="checkNumber" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col56" class="col-xs-9 col-sm-9 text-left  ">
+                    <div class="text-left  ">
+                        <label for="projectNumber">Project Number / Description</label>
+                        <input id="projectNumber" name="projectNumber"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col57" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="glNumber">General Ledger Number</label>
+                        <input id="glNumber" name="glNumber" class="text-left  "
+                        required="required" data-bind="mask: '999-99-999999-99999' " />
+                    </div>
+                </div>
+                <div id="col73" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="glNumDesc">GL Description</label>
+                        <input id="glNumDesc" name="glNumDesc" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col76" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="amount">Amount</label>
+                        <input id="amount" name="amount" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col96" class="col-xs-1 col-sm-1 text-center  " style=" padding:0px 0px 0px 0px;  margin:25px 0px 0px 0px; ">
+                    <button id="ele97" name="ele97" class="text-center  " style=" background: #cf5851; color: #ffffff "
+                    undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col99" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele100" name="ele100" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="row86" class="text-left row funds ">
+                <div id="col106" class="col-xs-2 col-sm-3 text-left  "><span id="ele108" name="ele108" class="text-left  "></span>
+                </div>
+                <div id="col94" class="col-xs-3 col-sm-3 text-left  ">
+                    <button id="addCheck" name="addCheck" class="col-xs-12 col-sm-12 text-left btn btn-primary "
+                    style="" undefined="">Add Check</button>
+                </div>
+                <div id="col95" class="col-xs-3 col-sm-3 text-left  ">
+                    <button id="removeCheck" name="removeCheck" class="col-xs-12 col-sm-12 text-left btn btn-danger "
+                    style="" undefined="">Remove Check</button>
+                </div>
+                <div id="col107" class="col-xs-2 col-sm-3 text-left  "><span id="ele110" name="ele110" class="text-left  "></span>
+                </div>
+            </div>
+            <div id="row87" class="text-left row ">
+                <div id="col88" class="col-xs-9 col-sm-9 text-left  "><span id="ele90" name="ele90" class="text-left  "></span>
+                </div>
+                <div id="col89" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fundsTotal">Total</label>
+                        <input id="fundsTotal" name="fundsTotal" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="row168" name="" class="text-left section-header ap ">
+                <div id="col169" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele170" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele171" name="ele595" class="text-left  ">Signatures</h2>
+                </div>
+            </div>
+            <div id="quickInputsRow117" name="quickInputsRow" class="text-left row ap ">
+                <div id="quickInputsColumn118" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSignature">Received by: Please Enter Your Name</label>
+                        <input id="employeeSignature"
+                        name="employeeSignature" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn120" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSignDate">Date</label>
+                        <input id="employeeSignDate" name="employeeSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row122" class="text-left row ap ">
+                <div id="col123" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="receiptNumber">Receipt #</label>
+                        <input id="receiptNumber" name="receiptNumber" class="text-left  "
+                        required="required" data-bind="mask: '999999999' " />
+                    </div>
+                </div>
+                <div id="col124" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="sessionNumber">Session #</label>
+                        <input id="sessionNumber" name="sessionNumber" class="text-left  "
+                        required="required" data-bind="mask: '999999' " />
+                    </div>
+                </div>
+            </div>
+            <div id="row154" class="text-left section-header developer ">
+                <div id="col155" class="col-xs-12 col-sm-12 text-left fd-section-header with-subtitle developer-variant "><span id="ele156" name="ele58" class="text-left icon "><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele157" name="ele59" class="text-left  ">Developer Section</h2>
+                        <p id="ele158" name="ele60" class="text-left  ">This section is intended for developer use only. If it is visible, please
+                            notify support staff.</p>
+                </div>
+            </div>
+            <div id="row159" class="text-left row developer ">
+                <div id="col160" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fiscalYear">fiscalYear (hidden)</label>
+                        <input id="fiscalYear" name="fiscalYear" class="text-left  "
+                        data-bind="dynamicYear: { format: 'YYYY',  yearStart: '07/01' } " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

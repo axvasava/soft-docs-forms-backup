@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Softdocs New Form Development Request</title>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/occ-framework/occForms.css"
+		/>
+	</head>
+	<body>
+		<main class="occ-form">
+			<div class="occ-theme-toggle-row">
+				<div class="occ-theme-toggle">
+					<label class="occ-theme-switch">
+						<input
+							id="occThemeToggle"
+							class="occ-theme-switch__input"
+							type="checkbox"
+							data-occ-theme-toggle
+							aria-label="Use dark mode"
+						/>
+						<span
+							class="occ-theme-switch__track"
+							aria-hidden="true"
+						>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--on"
+								>Dark</span
+							>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--off"
+								>Light</span
+							>
+							<span class="occ-theme-switch__thumb"></span>
+						</span>
+					</label>
+				</div>
+			</div>
+
+			<header class="occ-masthead">
+				<div class="occ-masthead__inner">
+					<div class="occ-masthead__identity">
+						<img
+							class="occ-masthead__logo"
+							src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+							alt="Oakland Community College"
+						/>
+					</div>
+					<div class="occ-masthead__content">
+						<h1>Softdocs New Form Development Request</h1>
+						<p class="occ-heading-description">
+							Tell us about the process you would like to make
+							easier.
+						</p>
+					</div>
+				</div>
+			</header>
+
+			<p class="occ-help">
+				<em
+					>Fields marked with an asterisk (<span
+						class="occ-required"
+						aria-hidden="true"
+						>*</span
+					>) are required.</em
+				>
+			</p>
+
+			<form id="softdocsNewFormDevelopmentRequest">
+				<section
+					class="occ-section"
+					aria-labelledby="your-information-heading"
+				>
+<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-circle-user"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="your-information-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="your-information-content"
+								>
+									Your Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Review the name and email associated with your
+								account.
+							</p>
+						</div>
+					</header>
+					<div id="your-information-content" class="occ-section__content">
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="originatorDisplayName"
+									>Name</label
+								>
+								<input
+									id="originatorDisplayName"
+									class="occ-input"
+									name="originatorDisplayName"
+									type="text"
+									autocomplete="name"
+									readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="originatorEmail"
+									>Email</label
+								>
+								<input
+									id="originatorEmail"
+									class="occ-input"
+									name="originatorEmail"
+									type="email"
+									autocomplete="email"
+									readonly
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class="occ-section"
+					aria-labelledby="request-details-heading"
+				>
+<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-file-lines"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="request-details-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="request-details-content"
+								>
+									Request Details
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Briefly describe what someone would request,
+								submit, or accomplish.
+							</p>
+						</div>
+					</header>
+					<div id="request-details-content" class="occ-section__content">
+						<div class="occ-field">
+							<label class="occ-label" for="requestName">
+								Form or Request Name
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</label>
+							<input
+								id="requestName"
+								class="occ-input"
+								name="requestName"
+								type="text"
+								aria-describedby="requestNameError"
+								required
+							/>
+							<p id="requestNameError" class="occ-error" hidden>
+								Enter a form or request name.
+							</p>
+						</div>
+
+						<div class="occ-field">
+							<label class="occ-label" for="processDescription">
+								What does this process do?
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</label>
+							<textarea
+								id="processDescription"
+								class="occ-textarea"
+								name="processDescription"
+								aria-describedby="processDescriptionError"
+								required
+							></textarea>
+							<p
+								id="processDescriptionError"
+								class="occ-error"
+								hidden
+							>
+								Describe what this process does.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class="occ-section"
+					aria-labelledby="people-process-heading"
+				>
+<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-people-group"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="people-process-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="people-process-content"
+								>
+									People and Process
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Identify who will complete the form and what
+								should happen after submission.
+							</p>
+						</div>
+					</header>
+					<div id="people-process-content" class="occ-section__content">
+						<div class="occ-field">
+							<label class="occ-label" for="formAudience">
+								Who completes the form?
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</label>
+							<textarea
+								id="formAudience"
+								class="occ-textarea"
+								name="formAudience"
+								aria-describedby="formAudienceHelp formAudienceError"
+								required
+							></textarea>
+							<p id="formAudienceHelp" class="occ-help">
+								For example, employees, students, supervisors,
+								departments, or members of the public.
+							</p>
+							<p id="formAudienceError" class="occ-error" hidden>
+								Describe who completes the form.
+							</p>
+						</div>
+
+						<div class="occ-field">
+							<label
+								class="occ-label"
+								for="postSubmissionProcess"
+							>
+								What happens after submission?
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</label>
+							<textarea
+								id="postSubmissionProcess"
+								class="occ-textarea"
+								name="postSubmissionProcess"
+								aria-describedby="postSubmissionProcessHelp postSubmissionProcessError"
+								required
+							></textarea>
+							<p id="postSubmissionProcessHelp" class="occ-help">
+								Describe who receives, reviews, approves, or
+								otherwise acts on the submission.
+							</p>
+							<p
+								id="postSubmissionProcessError"
+								class="occ-error"
+								hidden
+							>
+								Describe what happens after submission.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class="occ-section"
+					aria-labelledby="current-process-heading"
+				>
+<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-arrows-rotate"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="current-process-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="current-process-content"
+								>
+									Current Process
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Explain how the work is handled today, including
+								any tools or workarounds.
+							</p>
+						</div>
+					</header>
+					<div id="current-process-content" class="occ-section__content">
+						<fieldset
+							id="currentProcessGroup"
+							class="occ-fieldset occ-choice-field"
+							aria-describedby="currentProcessHelp currentProcessError"
+							aria-required="true"
+						>
+							<legend class="occ-legend">
+								How is this handled today?
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</legend>
+							<p id="currentProcessHelp" class="occ-help">
+								Select all that apply.
+							</p>
+							<div
+								class="occ-choice-group occ-choice-group--grid occ-choice-group--compact"
+							>
+								<label
+									class="occ-choice-card"
+									for="currentProcessEmail"
+								>
+									<input
+										id="currentProcessEmail"
+										name="currentProcessEmail"
+										type="checkbox"
+										value="Email"
+										data-current-process-option
+									/>
+									<span class="occ-choice-card__body"
+										><span class="occ-choice-card__title"
+											>Email</span
+										></span
+									>
+								</label>
+								<label
+									class="occ-choice-card"
+									for="currentProcessTeams"
+								>
+									<input
+										id="currentProcessTeams"
+										name="currentProcessTeams"
+										type="checkbox"
+										value="Microsoft Teams"
+										data-current-process-option
+									/>
+									<span class="occ-choice-card__body"
+										><span class="occ-choice-card__title"
+											>Microsoft Teams</span
+										></span
+									>
+								</label>
+								<label
+									class="occ-choice-card"
+									for="currentProcessPaper"
+								>
+									<input
+										id="currentProcessPaper"
+										name="currentProcessPaper"
+										type="checkbox"
+										value="Paper"
+										data-current-process-option
+									/>
+									<span class="occ-choice-card__body"
+										><span class="occ-choice-card__title"
+											>Paper</span
+										></span
+									>
+								</label>
+								<label
+									class="occ-choice-card"
+									for="currentProcessOnlineForm"
+								>
+									<input
+										id="currentProcessOnlineForm"
+										name="currentProcessOnlineForm"
+										type="checkbox"
+										value="Existing online form"
+										data-current-process-option
+									/>
+									<span class="occ-choice-card__body"
+										><span class="occ-choice-card__title"
+											>Existing online form</span
+										></span
+									>
+								</label>
+								<label
+									class="occ-choice-card"
+									for="currentProcessOther"
+								>
+									<input
+										id="currentProcessOther"
+										name="currentProcessOther"
+										type="checkbox"
+										value="Other"
+										data-current-process-option
+									/>
+									<span class="occ-choice-card__body"
+										><span class="occ-choice-card__title"
+											>Other</span
+										></span
+									>
+								</label>
+							</div>
+							<p
+								id="currentProcessError"
+								class="occ-error"
+								hidden
+							>
+								Select how this is handled today.
+							</p>
+						</fieldset>
+						<input
+							id="currentProcess"
+							name="currentProcess"
+							type="hidden"
+						/>
+
+						<div class="occ-field">
+							<label
+								class="occ-label"
+								for="currentProcessDescription"
+							>
+								Describe the Current Process
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</label>
+							<textarea
+								id="currentProcessDescription"
+								class="occ-textarea"
+								name="currentProcessDescription"
+								aria-describedby="currentProcessDescriptionHelp currentProcessDescriptionError"
+								required
+							></textarea>
+							<p
+								id="currentProcessDescriptionHelp"
+								class="occ-help"
+							>
+								Briefly explain the current process from start
+								to finish, including any other selection.
+							</p>
+							<p
+								id="currentProcessDescriptionError"
+								class="occ-error"
+								hidden
+							>
+								Describe how the current process works.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class="occ-section"
+					aria-labelledby="timeline-supporting-heading"
+				>
+<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-calendar-days"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="timeline-supporting-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="timeline-supporting-content"
+								>
+									Timeline and Supporting Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Share timing expectations, examples, and other
+								context that will help us plan the form.
+							</p>
+						</div>
+					</header>
+					<div id="timeline-supporting-content" class="occ-section__content">
+						<div class="occ-field">
+							<label class="occ-label" for="desiredTimeline"
+								>Desired Timeline</label
+							>
+							<textarea
+								id="desiredTimeline"
+								class="occ-textarea"
+								name="desiredTimeline"
+								aria-describedby="desiredTimelineHelp"
+							></textarea>
+							<p id="desiredTimelineHelp" class="occ-help">
+								Include relevant deadlines, semester timing,
+								events, or general expectations.
+							</p>
+						</div>
+
+						<section aria-labelledby="supporting-files-heading">
+							<header class="occ-subsection-heading">
+								<h3 id="supporting-files-heading">
+									Supporting Files or Examples
+								</h3>
+								<p class="occ-heading-description">
+									Use attachments to include helpful forms,
+									screenshots, instructions, emails, or
+									process documents.
+								</p>
+							</header>
+						</section>
+
+						<div class="occ-field">
+							<label class="occ-label" for="additionalContext"
+								>Additional Context</label
+							>
+							<textarea
+								id="additionalContext"
+								class="occ-textarea"
+								name="additionalContext"
+							></textarea>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class="occ-section developer"
+					aria-labelledby="developer-information-heading"
+				>
+<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-code"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="developer-information-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="developer-information-content"
+								>
+									Developer Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								If you can see this section, please contact support.
+							</p>
+						</div>
+					</header>
+					<div id="developer-information-content" class="occ-section__content">
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="originatorErpId"
+									>Employee ID</label
+								>
+								<input
+									id="originatorErpId"
+									class="occ-input"
+									name="originatorErpId"
+									type="text"
+									readonly
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+			</form>
+		</main>
+	</body>
+</html>

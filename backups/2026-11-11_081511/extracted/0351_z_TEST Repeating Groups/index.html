@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Request for Time Off</title>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/occ-framework/occForms.css"
+		/>
+	</head>
+	<body>
+		<main class="occ-form">
+			<div class="occ-theme-toggle-row">
+				<div class="occ-theme-toggle">
+					<label class="occ-theme-switch">
+						<input
+							id="occThemeToggle"
+							class="occ-theme-switch__input"
+							type="checkbox"
+							data-occ-theme-toggle
+							aria-label="Use dark mode"
+						/>
+						<span
+							class="occ-theme-switch__track"
+							aria-hidden="true"
+						>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--on"
+								>Dark</span
+							>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--off"
+								>Light</span
+							>
+							<span class="occ-theme-switch__thumb"></span>
+						</span>
+					</label>
+				</div>
+			</div>
+
+			<header class="occ-masthead">
+				<div class="occ-masthead__inner">
+					<div class="occ-masthead__identity">
+						<img
+							class="occ-masthead__logo"
+							src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+							alt="Oakland Community College"
+						/>
+					</div>
+					<div class="occ-masthead__content">
+						<h1>Request for Time Off</h1>
+						<p class="occ-heading-description">
+							Request time off from a regularly scheduled lab or
+							clinical session and provide coverage details for
+							review.
+						</p>
+						<dl class="occ-masthead__meta">
+							<div class="occ-masthead__meta-item">
+								<dt>Department</dt>
+								<dd>Health Sciences & Nursing</dd>
+							</div>
+							<div class="occ-masthead__meta-item">
+								<dt>Revised</dt>
+								<dd>08/26</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+			</header>
+
+			<p class="occ-help">
+				<em
+					>Fields marked with an asterisk (<span
+						class="occ-required"
+						aria-hidden="true"
+						>*</span
+					>) are required.</em
+				>
+			</p>
+
+			<form>
+				<section
+					id="employeeInformationSection"
+					class="occ-section"
+					aria-labelledby="employee-information-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-user"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="employee-information-heading">
+								Your Time Off Request
+							</h2>
+						</div>
+					</header>
+
+					<div class="occ-section__content">
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="originatorDisplayName"
+									>Name</label
+								>
+								<input
+									id="originatorDisplayName"
+									class="occ-input"
+									name="originatorDisplayName"
+									type="text"
+									autocomplete="name"
+									readonly
+								/>
+							</div>
+
+							<div class="occ-field">
+								<label class="occ-label" for="originatorEmail"
+									>Email</label
+								>
+								<input
+									id="originatorEmail"
+									class="occ-input"
+									name="originatorEmail"
+									type="email"
+									autocomplete="email"
+									readonly
+								/>
+							</div>
+						</div>
+
+						<header class="occ-subsection-heading">
+							<h3>Lab or clinical details</h3>
+						</header>
+
+						<fieldset class="occ-fieldset occ-choice-field">
+							<legend class="occ-legend">
+								Session type
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</legend>
+							<div
+								class="occ-choice-group occ-choice-group--grid occ-choice-group--compact"
+							>
+								<label class="occ-choice-card">
+									<input
+										id="labClinicalLab"
+										type="radio"
+										name="labClinical"
+										value="lab"
+										required
+									/>
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title"
+											>Lab</span
+										>
+									</span>
+								</label>
+								<label class="occ-choice-card">
+									<input
+										id="labClinicalClinical"
+										type="radio"
+										name="labClinical"
+										value="clinical"
+										required
+									/>
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title"
+											>Clinical</span
+										>
+									</span>
+								</label>
+							</div>
+						</fieldset>
+
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="departmentSearch">
+									Department
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									>
+								</label>
+								<div
+									id="departmentAutocomplete"
+									class="occ-autocomplete"
+								>
+									<input
+										id="departmentSearch"
+										class="occ-input occ-autocomplete__input"
+										name="departmentSearch"
+										type="text"
+										autocomplete="off"
+										aria-describedby="departmentError"
+										required
+									/>
+									<input
+										id="department"
+										class="occ-autocomplete__value"
+										name="department"
+										type="hidden"
+									/>
+									<button
+										class="occ-autocomplete__clear"
+										type="button"
+										aria-label="Clear department"
+										hidden
+									>
+										&times;
+									</button>
+									<div class="occ-autocomplete__panel" hidden>
+										<div
+											class="occ-autocomplete__state"
+											hidden
+										></div>
+										<ul class="occ-autocomplete__list"></ul>
+									</div>
+									<p class="occ-autocomplete__status"></p>
+								</div>
+								<p
+									id="departmentError"
+									class="occ-error"
+									hidden
+								>
+									Select a department from the list.
+								</p>
+							</div>
+
+							<div id="facilitatorNameField" class="occ-field">
+								<label class="occ-label" for="facilitatorName">
+									Facilitator, coordinator, or director
+								</label>
+								<div
+									id="facilitatorAutocomplete"
+									class="occ-autocomplete"
+								>
+									<input
+										id="facilitatorName"
+										class="occ-input occ-autocomplete__input"
+										name="facilitatorName"
+										type="text"
+										autocomplete="off"
+										aria-describedby="facilitatorNameError"
+										readonly
+									/>
+									<input
+										id="nursingFacilitatorSelection"
+										class="occ-autocomplete__value"
+										type="hidden"
+										data-notsaved
+									/>
+									<button
+										class="occ-autocomplete__clear"
+										type="button"
+										aria-label="Clear facilitator"
+										hidden
+									>
+										&times;
+									</button>
+									<div class="occ-autocomplete__panel" hidden>
+										<div
+											class="occ-autocomplete__state"
+											hidden
+										></div>
+										<ul class="occ-autocomplete__list"></ul>
+									</div>
+									<p class="occ-autocomplete__status"></p>
+								</div>
+								<p
+									id="facilitatorNameError"
+									class="occ-error"
+									hidden
+								>
+									Select a facilitator, coordinator, or director from
+									the list.
+								</p>
+							</div>
+						</div>
+
+						<div class="occ-field-grid">
+							<div id="courseField" class="occ-field">
+								<label
+									id="courseLabel"
+									class="occ-label"
+									for="course"
+								>
+									Course
+								</label>
+								<input
+									id="course"
+									class="occ-input"
+									name="course"
+									type="text"
+									pattern="[A-Z]{3}-[0-9]{4}"
+									aria-describedby="courseHelp courseError"
+									title="Use the format AAA-9999"
+									readonly
+								/>
+								<select
+									id="courseSelection"
+									class="occ-select"
+									aria-labelledby="courseLabel"
+									aria-describedby="courseHelp courseError"
+									data-notsaved
+									hidden
+									disabled
+								>
+									<option value="" disabled selected>
+										Select a course
+									</option>
+								</select>
+								<p id="courseHelp" class="occ-help" hidden>
+									Use the format AAA-9999, such as NUR-1410.
+								</p>
+								<p id="courseError" class="occ-error" hidden>
+									Select a course from the list.
+								</p>
+							</div>
+
+							<div class="occ-field">
+								<label class="occ-label" for="facilitatorEmail">
+									Facilitator, coordinator, or director email
+								</label>
+								<input
+									id="facilitatorEmail"
+									class="occ-input"
+									name="facilitatorEmail"
+									type="email"
+									readonly
+								/>
+							</div>
+						</div>
+
+						<header class="occ-subsection-heading">
+							<h3>Time off and coverage</h3>
+						</header>
+
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="startDate">
+									First day off
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									>
+								</label>
+								<input
+									id="startDate"
+									class="occ-input"
+									name="startDate"
+									type="date"
+									aria-describedby="startDateError"
+									required
+								/>
+								<p id="startDateError" class="occ-error" hidden>
+									Enter your first day off.
+								</p>
+							</div>
+
+							<div class="occ-field">
+								<label class="occ-label" for="endDate">
+									Last day off
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									>
+								</label>
+								<input
+									id="endDate"
+									class="occ-input"
+									name="endDate"
+									type="date"
+									aria-describedby="endDateError"
+									required
+								/>
+								<p id="endDateError" class="occ-error" hidden>
+									Enter your last day off.
+								</p>
+							</div>
+						</div>
+
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="coveringEmployee">
+									Who will cover for you?
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									>
+								</label>
+								<div
+									id="coveringEmployeeAutocomplete"
+									class="occ-autocomplete"
+								>
+									<input
+										id="coveringEmployee"
+										class="occ-input occ-autocomplete__input"
+										name="coveringEmployee"
+										type="text"
+										autocomplete="off"
+										aria-describedby="coveringEmployeeError"
+										required
+									/>
+									<input
+										id="coveringEmployeeSelection"
+										class="occ-autocomplete__value"
+										type="hidden"
+										data-notsaved
+									/>
+									<button
+										class="occ-autocomplete__clear"
+										type="button"
+										aria-label="Clear covering employee"
+										hidden
+									>
+										&times;
+									</button>
+									<div class="occ-autocomplete__panel" hidden>
+										<div
+											class="occ-autocomplete__state"
+											hidden
+										></div>
+										<ul class="occ-autocomplete__list"></ul>
+									</div>
+									<p class="occ-autocomplete__status"></p>
+								</div>
+								<p
+									id="coveringEmployeeError"
+									class="occ-error"
+									hidden
+								>
+									Select the employee who will cover for you.
+								</p>
+							</div>
+
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="coveringEmployeeEmail"
+								>
+									Covering employee email
+								</label>
+								<input
+									id="coveringEmployeeEmail"
+									class="occ-input"
+									name="coveringEmployeeEmail"
+									type="email"
+									readonly
+								/>
+							</div>
+						</div>
+
+						<div class="occ-field">
+							<label class="occ-label" for="reasonForRequest">
+								Why are you requesting time off?
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</label>
+							<textarea
+								id="reasonForRequest"
+								class="occ-textarea"
+								name="reasonForRequest"
+								aria-describedby="reasonForRequestError"
+								required
+							></textarea>
+							<p
+								id="reasonForRequestError"
+								class="occ-error"
+								hidden
+							>
+								Tell us why you're requesting time off.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class="occ-section developer"
+					aria-labelledby="developer-information-heading"
+					hidden
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-code"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="developer-information-heading">
+								Developer Information
+							</h2>
+						</div>
+					</header>
+
+					<div class="occ-section__content">
+						<div class="occ-field">
+							<label class="occ-label" for="originatorErpId">
+								originatorErpId
+							</label>
+							<input
+								id="originatorErpId"
+								class="occ-input"
+								name="originatorErpId"
+								type="text"
+							/>
+						</div>
+					</div>
+				</section>
+			</form>
+		</main>
+	</body>
+</html>

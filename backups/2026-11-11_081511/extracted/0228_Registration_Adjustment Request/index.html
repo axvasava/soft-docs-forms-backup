@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row451" class="text-left row fd-form-masthead ">
+                <div id="col452" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn453" name="revisedOn" class="col-sm-12 text-right  ">Revised 11/26</span>
+                </div>
+                <div id="col454" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele455" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col456" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele457" name="ele21" class="text-left form-title ">Registration / Adjustment Request</h1>
+                </div>
+                <div id="col458" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele459" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row447" class="text-left row ">
+                <div id="col448" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote449" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow12" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn13" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Student Information</h4>
+                </div>
+            </div>
+            <div id="row33" class="text-left row ">
+                <div id="col34" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="originatorErpId">Student ID</label>
+                        <input id="originatorErpId" name="originatorErpId" class="col-xs-12 col-sm-12 text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col35" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="originatorDisplayName">Student Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="col-xs-12 col-sm-12 text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col36" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="originatorEmail">Student Email</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="col-xs-12 col-sm-12 text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col37" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left maskphone ">
+                        <label for="studentPhoneNumber">Phone Number</label>
+                        <input id="studentPhoneNumber" name="studentPhoneNumber"
+                        class="col-xs-12 col-sm-12 text-left maskphone " required="required" />
+                    </div>
+                </div>
+                <div id="col439" class="col-xs-6 col-sm-6 text-left  ">
+                    <label for="studentStatus">Student Status</label>
+                    <select id="studentStatus" name="studentStatus"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="ACE">ACE</option>
+                        <option value="OTEC">OTEC</option>
+                        <option value="Dual Enrollment">Dual Enrollment</option>
+                        <option value="Athlete">Athlete</option>
+                        <option value="None of the above">None of the above</option>
+                    </select>
+                </div>
+                <div id="col461" class="col-xs-8 col-sm-8 text-left  ">
+                    <label for="reasonForRequest"><strong> Why are you completing the Registration/Adjustment request form? </strong>
+                    </label>
+                    <select id="reasonForRequest" name="reasonForRequest" class="col-xs-12 col-sm-12 text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Adding">Adding</option>
+                        <option value="Dropping">Dropping</option>
+                        <option value="Both">Both</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickHeadingRow55" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( reasonForRequest() == 'Adding' )  ||  ( reasonForRequest() == 'Both' ) ) ">
+                <div id="quickHeadingColumn56" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall57" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Register / Add</h4>
+                </div>
+            </div>
+            <div id="row1" name="" class="text-left row " data-bind="visible: ( ( reasonForRequest() == 'Adding' )  ||  ( reasonForRequest() == 'Both' ) ) ">
+                <div id="col11224" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="ele1" name="ele1" class="text-center  "><strong>Students are responsible for meeting the course prerequisites as listed <br />in the current catalog.</strong></h4>
+                </div>
+            </div>
+            <div id="addCourseRow" name="addCourseRow" class="text-left row " style="overflow: auto;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px "
+            data-bind="dynamicList: true, dynamicListProperties: {addButtonID: 'addCourseBtn',  removeButtonID: 'removeCourseBtn'}, visible: ( ( reasonForRequest() == 'Adding' )  ||  ( reasonForRequest() == 'Both' ) ) ">
+                <div id="col387" class="col-xs-12 col-sm-12 text-left  "><span id="ele388" name="ele388" class="col-xs-12 col-sm-12 text-left  ">Students desiring to AUDIT a course (enroll without receiving a grade or credit), must select YES from the Audit Course dropdown. Select the course section(s) from the list below that you would like to add. </span>
+                </div>
+                <div id="col464" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addTerm">Term</label>
+                        <input id="addTerm" name="addTerm" class="text-left  " data-bind="autocomplete: { localSource: 'AcademicPeriodsAutocomplete',  clearOnFocus: true,  validate: true,  labelMask: ['termCode', ' | ', 'termTitle'],  formFields: {'academicPeriodGuid':'termGUID'} } "
+                        />
+                    </div>
+                    <div class="text-left hide ">
+                        <label for="academicPeriodGuid">academicPeriodGuid (hidden)</label>
+                        <input id="academicPeriodGuid" name="academicPeriodGuid"
+                        class="text-left hide " />
+                    </div>
+                </div>
+                <div id="col345" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="addSubject">Subject</label>
+                        <input id="addSubject" name="addSubject" class="col-xs-12 col-sm-12 text-left  "
+                        type="text" data-bind="autocomplete: { localSource: 'SubjectsAutocomplete',  clearOnFocus: true,  validate: true,  labelMask: ['subjectAbbreviation', ' | ', 'subjectTitle'],  selectedMask: ['subjectAbbreviation'],  formFields: {'addSubjectID':'subjectGUID'} } "
+                        />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 text-left hidden ">
+                        <label for="addSubjectID">addSubjectID (hidden)</label>
+                        <input id="addSubjectID" name="addSubjectID"
+                        class="col-xs-12 col-sm-12 text-left hidden " readonly="true" />
+                    </div>
+                </div>
+                <div id="col355" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="addCourse">Course</label>
+                        <input id="addCourse" name="addCourse" class="col-xs-12 col-sm-12 text-left  "
+                        data-bind="autocomplete: { localSource: 'CourseSubjectAutocomplete',  clearOnFocus: true,  validate: true,  labelMask: ['courseSubjectAndNumber', ' | ', 'courseTitle'],  formFields: {'courseName':'courseTitle', 'courseCredits':'courseCredits', 'courseSubjectAndNumber':'courseSubjectAndNumber'} } "
+                        />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 text-left hidden ">
+                        <label for="courseName">courseName (hidden)</label>
+                        <input id="courseName" name="courseName" class="col-xs-12 col-sm-12 text-left hidden "
+                        />
+                    </div>
+                    <div class="text-left hidden ">
+                        <label for="courseSubjectAndNumber">courseSubjectAndNumber (hidden)</label>
+                        <input id="courseSubjectAndNumber"
+                        name="courseSubjectAndNumber" class="text-left hidden " />
+                    </div>
+                </div>
+                <div id="col483" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele484" name="ele484" class="col-xs-12 col-sm-12 text-left  "></p>
+                </div>
+                <div id="col268" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="courseSection">Section</label>
+                        <input id="courseSection" name="courseSection" class="col-xs-12 col-sm-12 text-left  "
+                        data-bind="autocomplete: {localSource: 'SectionsAutocomplete', clearOnFocus: true, validate: true, labelMask: ['section']}"
+                        />
+                    </div>
+                </div>
+                <div id="col375" name="col375" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left maskphone ">
+                        <label for="courseCredits">Credits</label>
+                        <input id="courseCredits" name="courseCredits" class="col-xs-12 col-sm-12 text-left maskphone "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col281" class="col-xs-2 col-sm-2 text-center  " style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <label for="ddAudit">  Audit Course</label>
+                    <select id="ddAudit" name="ddAudit" class="text-left  ">
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                </div>
+                <div id="col317" class="col-xs-1 col-sm-1 text-center  " style=" padding:0px 0px 0px 0px;  margin:20px 0px 0px 0px; ">
+                    <button id="ele318" name="ele318" class="text-left btn btn-danger btn-delete-item "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col338" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele339" name="ele339" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow147" name="quickInputsRow2462020" class="text-left row "
+            data-bind="visible: ( ( reasonForRequest() == 'Adding' )  ||  ( reasonForRequest() == 'Both' ) ) ">
+                <div id="col148" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="quickInputsRow149" name="quickInputsRow" class="text-left  "></p>
+                </div>
+                <div id="quickInputsColumn150" name="quickInputsColumn1" class="col-xs-4 col-sm-4 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <button id="addCourseBtn" name="addCourseBtn" class="col-xs-12 col-sm-12 text-center btn btn-primary addCourseBtn "
+                    style="" undefined="">Add another Course</button>
+                </div>
+                <div id="col152" class="col-xs-4 col-sm-4 text-left  ">
+                    <button id="removeCourseBtn" name="removeCourseBtn" class="col-xs-12 col-sm-12 text-left btn btn-danger removeCourseBtn "
+                    style="" undefined="">Delete Last Course</button>
+                </div>
+                <div id="col154" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="ele155" name="ele423" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="quickHeadingRow5566" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; " data-bind="visible: ( ( reasonForRequest() == 'Dropping' )  ||  ( reasonForRequest() == 'Both' ) ) ">
+                <div id="quickHeadingColumn566" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall576" name="quickHeadingSmall576" class="text-center  "
+                    style=" font-weight: bold; ">Drop</h4>
+                </div>
+            </div>
+            <div id="dropCourseRow" name="dropCourseRow" class="text-left row " style="overflow: auto;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px "
+            data-bind="dynamicList: true, dynamicListProperties: {addButtonID: 'dropCourseBtn',  removeButtonID: 'removeCourseDropBtn'}, visible: ( ( reasonForRequest() == 'Dropping' )  ||  ( reasonForRequest() == 'Both' ) ) ">
+                <div id="col359" class="col-xs-12 col-sm-12 text-left  "><span id="ele360" name="ele360" class="col-xs-12 col-sm-12 text-left  "><strong>Select the course section(s) from the list below that you would like to drop.</strong></span>
+                </div>
+                <div id="col467" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dropTerm">Term</label>
+                        <input id="dropTerm" name="dropTerm" class="text-left  " data-bind="autocomplete: { localSource: 'AcademicPeriodsAutocomplete',  clearOnFocus: true,  validate: true,  labelMask: ['termCode', ' | ', 'termTitle'],  formFields: {'academicPeriodGuid':'termGUID'} } "
+                        />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="academicPeriodGuid">academicPeriodGuid</label>
+                        <input id="academicPeriodGuid" name="academicPeriodGuid"
+                        class="col-xs-12 col-sm-12 text-left  " />
+                    </div>
+                </div>
+                <div id="col36525" class="col-xs-5 col-sm-5 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="dropCourseName">Course</label>
+                        <input id="dropCourseName" name="dropCourseName" class="col-xs-12 col-sm-12 text-left  "
+                        type="text" data-bind="autocomplete: { localSource: 'RegisteredCoursesAutocomplete',  clearOnFocus: true,  validate: true,  labelMask: ['sectionCode'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col331" class="col-xs-1 col-sm-1 text-center margin-top:10px ">
+                    <button id="ele332" name="ele332" class="text-left btn btn-danger btn-delete-item "
+                    style=" margin-top:25px " undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col335" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele336" name="ele336" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow210" name="quickInputsRow2462020" class="text-left row addVehicle "
+            data-bind="visible: ( ( reasonForRequest() == 'Dropping' )  ||  ( reasonForRequest() == 'Both' ) ) ">
+                <div id="col211" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="quickInputsRow212" name="quickInputsRow" class="text-left  "></p>
+                </div>
+                <div id="quickInputsColumn213" name="quickInputsColumn1" class="col-xs-4 col-sm-4 text-left  "
+                style=" padding:0px 0px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <button id="dropCourseBtn" name="dropCourseBtn" class="col-xs-12 col-sm-12 text-center btn btn-primary dropCourseBtn "
+                    style="" undefined="">Select Another Course</button>
+                </div>
+                <div id="col215" class="col-xs-4 col-sm-4 text-left  ">
+                    <button id="removeCourseDropBtn" name="removeCourseDropBtn" class="col-xs-12 col-sm-12 text-left btn btn-danger removeCourseDropBtn "
+                    style="" undefined="">Delete Last Addition</button>
+                </div>
+                <div id="col217" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="ele218" name="ele423" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="row392" class="text-left row ">
+                <div id="col393" class="col-xs-12 col-sm-12 text-left  "><span id="ele394" name="ele394" class="col-xs-12 col-sm-12 text-left  "></span>
+                </div>
+            </div>
+            <div id="quickHeadingRow55668" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn5668" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingRow556688" name="quickHeadingRow" class="text-center  "
+                    style=" font-weight: bold; ">Student Signature</h4>
+                </div>
+            </div>
+            <div id="row1112424" name="" class="text-left row ">
+                <div id="col11224" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele11324" name="ele11324" class="col-xs-12 col-sm-12 text-left  "><strong><u>FINANCIAL AID RECIPIENTS:</u> <br />Dropping courses or completely withdrawing from the college may affect both your current financial aid award and your eligibility for future financial assistance. Withdrawals made after the 100% refund period may decrease your award amount and cause you to owe money back to OCC. Please contact the Office of Financial Assistance and Scholarships <u>BEFORE</u> dropping courses to discuss your plans and the potential consequences. </strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row111" class="text-left row ">
+                <div id="col112" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele113" name="ele113" class="col-xs-12 col-sm-12 text-left  "><strong>By registering for courses, I am entering into a financial obligation which includes nonrefundable fees. Payment is due at the time of registration. If I decide not to attend OCC, I must drop all registered courses. (See published <a href="https://www.oaklandcc.edu/academic-calendar/refund_info"> tuition refund dates </a>).</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="quickInputsRow1012323" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn10223" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_10323" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickInputsRow87" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn88" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSignature">Student: Please Enter Your Name</label>
+                        <input id="studentSignature" name="studentSignature"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn90" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentSignDate">Date</label>
+                        <input id="studentSignDate" name="studentSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow97" name="quickHeadingRow" class="text-left row registration athletics counseling "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn98" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall99" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">For Official Use Only</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow1222626" name="quickInputsRow" class="text-left row athletics ">
+                <div id="quickInputsColumn12326" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="athleticsSignature">Athletics: Please Enter Your Name</label>
+                        <input id="athleticsSignature"
+                        name="athleticsSignature" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn12526" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="athleticsSignDate">Date</label>
+                        <input id="athleticsSignDate" name="athleticsSignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow116" name="quickInputsRow" class="text-left row ss2 ">
+                <div id="quickInputsColumn117" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ss2Signature">SS2: Please Enter Your Name</label>
+                        <input id="ss2Signature" name="ss2Signature"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn119" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="ss2SignDate">Date</label>
+                        <input id="ss2SignDate" name="ss2SignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow122" name="quickInputsRow" class="text-left row registration ">
+                <div id="quickInputsColumn123" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="registrationSignature">Registration Staff: Please Enter Your Name</label>
+                        <input id="registrationSignature"
+                        name="registrationSignature" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn125" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="registrationSignDate">Date</label>
+                        <input id="registrationSignDate" name="registrationSignDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow1012525" name="quickInputsRow" class="text-left row registration athletics counseling ">
+                <div id="quickInputsColumn10225" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_10325" class="text-left  " />
+                </div>
+            </div>
+            <div id="row229" class="text-left row developer ">
+                <div id="col231" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="selectedSection">selectedSection (hidden)</label>
+                        <input id="selectedSection" name="selectedSection"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col233" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicYear">academicYear (hidden)</label>
+                        <input id="academicYear" name="academicYear"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col470" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="selectedStudentStatus">selectedStudentStatus</label>
+                        <input id="selectedStudentStatus" name="selectedStudentStatus"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col474" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addTermsList">addTermsList</label>
+                        <input id="addTermsList" name="addTermsList" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col477" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="dropTermsList">dropTermsList</label>
+                        <input id="dropTermsList" name="dropTermsList" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col488" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicPeriodGuid">academicPeriodGuid</label>
+                        <input id="academicPeriodGuid" name="academicPeriodGuid"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col493" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="personGUID">personGUID</label>
+                        <input id="personGUID" name="personGUID" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row473" class="text-left row loading "><i style="color:#777777; padding-left:2%"> EmptyRow</i>
+            </div>
+        </div>
+    </body>
+
+</html>

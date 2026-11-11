@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col3" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele4" name="ele37" class="text-right  "><i>Revised 11/26</i></h5>
+                </div>
+                <div id="HeaderLeft5" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo6" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    />
+                </div>
+                <div id="HeaderRight7" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_8" name="h2_27" class="text-center  "><b>Submit Student Form</b></h2>
+                </div>
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele10" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row69" name="" class="text-left section-header ">
+                <div id="col70" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele71" name="ele585" class="text-left icon "><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele72" name="ele595" class="text-left  ">Student Information</h2>
+                </div>
+            </div>
+            <div id="row12" class="text-left row ">
+                <div id="col15" class="col-xs-6 col-sm-8 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="originatorDisplayName">Student Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="col-xs-12 col-sm-12 text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col13" class="col-xs-6 col-sm-4 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="originatorErpId">Student ID</label>
+                        <input id="originatorErpId" name="originatorErpId" class="col-xs-12 col-sm-12 text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col17" class="col-xs-6 col-sm-8 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="originatorEmail">Student Email</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="col-xs-12 col-sm-12 text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col21" class="col-xs-6 col-sm-4 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="currentAcademicYear">Current Academic Year</label>
+                        <input id="currentAcademicYear" name="currentAcademicYear"
+                        class="col-xs-12 col-sm-12 text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickParagraphRow4366" name="quickParagraphRow" class="text-left row "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn446" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <h4 id="p_456" name="p_456" class="text-center  "><strong>To ensure faster processing, please attach only <strong>ONE</strong> document per form.</strong></h4>
+                </div>
+            </div>
+            <div id="row23" class="col-sm-12 text-left row ">
+                <div id="col24" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="dropdownDocType">Please select the document type you are submitting</label>
+                    <select id="dropdownDocType"
+                    name="dropdownDocType" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Bankruptcy">Bankruptcy</option>
+                        <option value="GED">GED</option>
+                        <option value="High School Diploma">High School Diploma</option>
+                        <option value="Student Loan Reaffirmations">Student Loan Reaffirmations</option>
+                        <option value="Veterans Certificate of Eligibility">Veterans Certificate of Eligibility</option>
+                        <option value="Veterans DD214">Veterans DD214</option>
+                        <option value="Veterans Mitigating Circumstances">Veterans Mitigating Circumstances</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickParagraphRow43" name="quickParagraphRow" class="text-left row "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn44" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <h4 id="p_45" name="p_931314" class="text-center  "><strong>Submitted forms will be routed to the appropriate department for review.</strong></h4>
+                </div>
+            </div>
+            <div id="row35" class="text-left row ">
+                <div id="col36" class="col-xs-12 col-sm-1 text-left  ">
+                    <input id="acknowledgement" name="acknowledgement" class="text-left  "
+                    required="required" type="checkbox" value="yes" />
+                </div>
+                <div id="col39" class="col-xs-12 col-sm-11 text-left  ">
+                    <p id="ele40" name="ele40" class="text-left  "><strong>By checking this box and submitting this form,<br /> I confirm that the information provided is true and accurate.</strong>
+                    </p>
+                </div>
+            </div>
+            <div id="row50" class="text-left section-header developer ">
+                <div id="col51" class="col-xs-12 col-sm-12 text-left fd-section-header with-subtitle developer-variant "><span id="ele52" name="ele58" class="text-left icon "><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele53" name="ele59" class="text-left  ">Developer Section</h2>
+                        <p id="ele54" name="ele60" class="text-left  ">This section is intended for developer use only. If it is visible, please
+                            notify support staff.</p>
+                </div>
+            </div>
+            <div id="row64" class="text-left row developer ">
+                <div id="col65" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="docType">docType</label>
+                        <input id="docType" name="docType" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
