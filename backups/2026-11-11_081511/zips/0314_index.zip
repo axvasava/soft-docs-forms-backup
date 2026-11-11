@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>OCC Masthead Component</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/occ-framework/occ.css"
+		/>
+	</head>
+	<body>
+		<main class="container occ-form py-5">
+			<h1>Masthead component</h1>
+			<p class="lead mb-5">
+				Responsive examples of the institutional header for OCC forms.
+			</p>
+			<p class="mb-5">
+				In a production form, <code>.occ-masthead__title</code> should
+				normally be the document&rsquo;s <code>&lt;h1&gt;</code>. These
+				fixture titles use <code>&lt;h3&gt;</code> because the fixture
+				already has a page-level heading and each example belongs to an
+				<code>&lt;h2&gt;</code> section.
+			</p>
+
+			<section class="mb-5" aria-labelledby="full-masthead-heading">
+				<h2 id="full-masthead-heading">Full masthead</h2>
+				<header class="occ-masthead">
+					<div class="occ-masthead__inner">
+						<div class="occ-masthead__identity">
+							<img
+								class="occ-masthead__logo"
+								src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+								alt="Oakland Community College"
+							/>
+						</div>
+						<div class="occ-masthead__content">
+							<h3 class="occ-masthead__title">
+								Student Travel Request
+							</h3>
+							<p class="occ-masthead__subtitle">
+								Office of Student Life
+							</p>
+							<p class="occ-masthead__description">
+								Request approval for college-sponsored student
+								travel and provide trip context for review.
+							</p>
+							<dl class="occ-masthead__meta">
+								<div class="occ-masthead__meta-item">
+									<dt>Department</dt>
+									<dd>Developer</dd>
+								</div>
+								<div class="occ-masthead__meta-item">
+									<dt>Revised</dt>
+									<dd>
+										<time datetime="2026-07-09"
+											>July 9, 2026</time
+										>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+				</header>
+			</section>
+
+			<section class="mb-5" aria-labelledby="title-only-heading">
+				<h2 id="title-only-heading">Title only</h2>
+				<header class="occ-masthead">
+					<div class="occ-masthead__inner">
+						<div class="occ-masthead__identity">
+							<img
+								class="occ-masthead__logo"
+								src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+								alt="Oakland Community College"
+							/>
+						</div>
+						<div class="occ-masthead__content">
+							<h3 class="occ-masthead__title">
+								Address Change Request
+							</h3>
+						</div>
+					</div>
+				</header>
+			</section>
+
+			<section class="mb-5" aria-labelledby="subtitle-heading">
+				<h2 id="subtitle-heading">Title and subtitle</h2>
+				<header class="occ-masthead">
+					<div class="occ-masthead__inner">
+						<div class="occ-masthead__identity">
+							<img
+								class="occ-masthead__logo"
+								src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+								alt="Oakland Community College"
+							/>
+						</div>
+						<div class="occ-masthead__content">
+							<h3 class="occ-masthead__title">
+								Graduation Application
+							</h3>
+							<p class="occ-masthead__subtitle">
+								Office of the Registrar
+							</p>
+						</div>
+					</div>
+				</header>
+			</section>
+
+			<section class="mb-5" aria-labelledby="description-heading">
+				<h2 id="description-heading">
+					Title, subtitle, and description
+				</h2>
+				<header class="occ-masthead">
+					<div class="occ-masthead__inner">
+						<div class="occ-masthead__identity">
+							<img
+								class="occ-masthead__logo"
+								src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+								alt="Oakland Community College"
+							/>
+						</div>
+						<div class="occ-masthead__content">
+							<h3 class="occ-masthead__title">
+								Emergency Assistance Request
+							</h3>
+							<p class="occ-masthead__subtitle">
+								Student Support Services
+							</p>
+							<p class="occ-masthead__description">
+								Tell us about your immediate need so the
+								appropriate college team can review available
+								support options.
+							</p>
+						</div>
+					</div>
+				</header>
+			</section>
+
+			<section class="mb-5" aria-labelledby="metadata-heading">
+				<h2 id="metadata-heading">Title and metadata</h2>
+				<header class="occ-masthead">
+					<div class="occ-masthead__inner">
+						<div class="occ-masthead__identity">
+							<img
+								class="occ-masthead__logo"
+								src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+								alt="Oakland Community College"
+							/>
+						</div>
+						<div class="occ-masthead__content">
+							<h3 class="occ-masthead__title">
+								Course Substitution Request
+							</h3>
+							<dl class="occ-masthead__meta">
+								<div class="occ-masthead__meta-item">
+									<dt>Academic year</dt>
+									<dd>2026-2027</dd>
+								</div>
+								<div class="occ-masthead__meta-item">
+									<dt>Responsible office</dt>
+									<dd>Academic Affairs</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+				</header>
+			</section>
+
+			<section class="mb-5" aria-labelledby="one-meta-heading">
+				<h2 id="one-meta-heading">One metadata item</h2>
+				<header class="occ-masthead">
+					<div class="occ-masthead__inner">
+						<div class="occ-masthead__identity">
+							<img
+								class="occ-masthead__logo"
+								src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+								alt="Oakland Community College"
+							/>
+						</div>
+						<div class="occ-masthead__content">
+							<h3 class="occ-masthead__title">
+								Residency Status Appeal
+							</h3>
+							<dl class="occ-masthead__meta">
+								<div class="occ-masthead__meta-item">
+									<dt>Submission deadline</dt>
+									<dd>
+										<time datetime="2026-09-15"
+											>September 15, 2026</time
+										>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+				</header>
+			</section>
+
+			<section class="mb-5" aria-labelledby="several-meta-heading">
+				<h2 id="several-meta-heading">Several metadata items</h2>
+				<header class="occ-masthead">
+					<div class="occ-masthead__inner">
+						<div class="occ-masthead__identity">
+							<img
+								class="occ-masthead__logo"
+								src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+								alt="Oakland Community College"
+							/>
+						</div>
+						<div class="occ-masthead__content">
+							<h3 class="occ-masthead__title">
+								Faculty Professional Development Request
+							</h3>
+							<dl class="occ-masthead__meta">
+								<div class="occ-masthead__meta-item">
+									<dt>Division</dt>
+									<dd>Arts and Sciences</dd>
+								</div>
+								<div class="occ-masthead__meta-item">
+									<dt>Campus</dt>
+									<dd>Orchard Ridge</dd>
+								</div>
+								<div class="occ-masthead__meta-item">
+									<dt>Term</dt>
+									<dd>Fall 2026</dd>
+								</div>
+								<div class="occ-masthead__meta-item">
+									<dt>Funding source</dt>
+									<dd>Faculty Development Fund</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+				</header>
+			</section>
+
+			<section class="mb-5" aria-labelledby="long-content-heading">
+				<h2 id="long-content-heading">Long-content stress test</h2>
+				<header class="occ-masthead">
+					<div class="occ-masthead__inner">
+						<div class="occ-masthead__identity">
+							<img
+								class="occ-masthead__logo"
+								src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+								alt="Oakland Community College"
+							/>
+						</div>
+						<div class="occ-masthead__content">
+							<h3 class="occ-masthead__title">
+								Request for Review of Prior Learning,
+								Professional Credentials, and Transfer
+								Coursework
+							</h3>
+							<p class="occ-masthead__subtitle">
+								Academic Records and College-Wide Credit
+								Evaluation Services
+							</p>
+							<p class="occ-masthead__description">
+								Use this form to request a comprehensive review
+								of previous college coursework, recognized
+								professional credentials, military education, or
+								other documented learning experiences. The
+								review team may contact you when additional
+								course descriptions, official records, or
+								supporting evidence are needed to complete the
+								evaluation.
+							</p>
+							<dl class="occ-masthead__meta">
+								<div class="occ-masthead__meta-item">
+									<dt>
+										College office responsible for final
+										determination
+									</dt>
+									<dd>
+										Office of the Registrar and College-Wide
+										Academic Records Evaluation
+									</dd>
+								</div>
+								<div class="occ-masthead__meta-item">
+									<dt>
+										Typical review period after all
+										documentation is received
+									</dt>
+									<dd>
+										Four to six weeks during regular
+										academic terms, with additional time
+										possible near registration deadlines
+									</dd>
+								</div>
+								<div class="occ-masthead__meta-item">
+									<dt>Applicable academic catalog</dt>
+									<dd>
+										Oakland Community College 2026–2027
+										Academic Catalog and Student Handbook
+									</dd>
+								</div>
+								<div class="occ-masthead__meta-item">
+									<dt>Last policy review</dt>
+									<dd>
+										<time datetime="2026-06-18"
+											>June 18, 2026</time
+										>
+									</dd>
+								</div>
+							</dl>
+						</div>
+					</div>
+				</header>
+			</section>
+		</main>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
