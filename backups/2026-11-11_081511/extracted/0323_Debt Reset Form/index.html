@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="./additionalStyles.css" />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row14" class="text-left row fd-form-masthead ">
+                <div id="col15" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn16" name="revisedOn" class="col-sm-12 text-right  ">Revised 07/26</span>
+                </div>
+                <div id="col17" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele18" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col19" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele20" name="ele21" class="text-left form-title ">Debt Reset</h1>
+                </div>
+                <div id="col21" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele22" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row31" class="text-left row ">
+                <div id="col32" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote33" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="row39" name="" class="text-left section-header studentInfoSection ">
+                <div id="col40" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele41" name="ele585" class="text-left icon "><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele42" name="ele595" class="text-left  ">Student Information</h2>
+                </div>
+            </div>
+            <div id="row79" class="text-left row studentInfoSection ">
+                <div id="col80" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-4 text-left  ">
+                        <label for="studentIdentifierLastFour">Last 4 of SSN or TIN</label>
+                        <input id="studentIdentifierLastFour" name="studentIdentifierLastFour"
+                        class="col-sm-4 text-left  " required="required" type="text" autocomplete="off"
+                        maxlength="4" pattern="[0-9]{4}" />
+                    </div>
+                </div>
+                <div id="col81" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="studentName">Name</label>
+                        <input id="studentName" name="studentName" class="col-sm-6 text-left  "
+                        required="required" />
+                    </div>
+                    <div class="col-xs-12 col-sm-6 text-left  ">
+                        <label for="studentEmail">Email</label>
+                        <input id="studentEmail" name="studentEmail" class="col-xs-12 col-sm-6 text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col82" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="dateofBirth">Date of Birth</label>
+                        <input id="dateofBirth" name="dateofBirth" class="col-sm-6 text-left  "
+                        required="required" data-bind="datepicker" />
+                    </div>
+                    <div class="col-xs-12 col-sm-6 text-left  ">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input id="phoneNumber" name="phoneNumber" class="col-xs-12 col-sm-6 text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row75" name="" class="text-left section-header applicationDetailsSection ">
+                <div id="col76" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele77" name="ele585" class="text-left icon "><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele78" name="ele595" class="text-left  ">Application Details</h2>
+                </div>
+            </div>
+            <div id="row93" class="text-left row applicationDetailsSection ">
+                <div id="col94" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="intendedEnrollmentTerm">Term of Intended Enrollment</label>
+                    <select id="intendedEnrollmentTerm"
+                    name="intendedEnrollmentTerm" class="col-sm-6 text-left  " required="required">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div id="col96" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="fafsaCompletionStatus">Have you completed or will you complete the FAFSA?</label>
+                    <select id="fafsaCompletionStatus"
+                    name="fafsaCompletionStatus" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="In Progress">In Progress</option>
+                    </select>
+                </div>
+                <div id="col104" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="reasonForLeaving">Reason for Leaving</label>
+                    <textarea id="reasonForLeaving" name="reasonForLeaving"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="row44" name="" class="text-left section-header commitmentToParticipateSection ">
+                <div id="col45" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele46" name="ele585" class="text-left icon "><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele47" name="ele595" class="text-left  ">Commitment to Participate</h2>
+                </div>
+            </div>
+            <div id="row109" class="text-left row commitmentToParticipateSection ">
+                <div id="col110" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="commitEnrollEverySemester" name="commitEnrollEverySemester"
+                    class="col-sm-1 text-left  " required="required" type="checkbox" value="yes"
+                    />
+                    <label for="commitEnrollEverySemester">I agree to enroll in courses every semester until I complete my academic
+                        program of study</label>
+                </div>
+                <div id="col117" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="commitMeetAdvisor" name="commitMeetAdvisor" class="col-sm-1 text-left  "
+                    required="required" type="checkbox" value="yes" />
+                    <label id="commitMeetAdvisorLabel" name="commitMeetAdvisorLabel" class="col-sm-10 text-left  "
+                    for="commitMeetAdvisor">I agree to meet with a counselor/academic advisor each semester until
+                        I complete my academic program of study</label>
+                </div>
+                <div id="col118" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="commitMaintainProgress" name="commitMaintainProgress" class="col-sm-1 text-left  "
+                    required="required" type="checkbox" value="yes" />
+                    <label for="commitMaintainProgress">I agree to maintain satisfactory academic progress</label>
+                </div>
+                <div id="col119" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="commitOneTimeOpportunity" name="commitOneTimeOpportunity" class="col-sm-1 text-left  "
+                    required="required" type="checkbox" value="yes" />
+                    <label for="commitOneTimeOpportunity">I understand this is a one-time opportunity</label>
+                </div>
+            </div>
+            <div id="row49" name="" class="text-left section-header studentSignatureSection ">
+                <div id="col50" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele51" name="ele585" class="text-left icon "><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele52" name="ele595" class="text-left  ">Student Signature</h2>
+                </div>
+            </div>
+            <div id="row147" class="text-left row studentSignatureSection ">
+                <div id="col148" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="studentSignature">Student Signature</label>
+                        <input id="studentSignature" name="studentSignature"
+                        class="col-sm-6 text-left  " required="required" />
+                    </div>
+                    <div class="col-xs-12 col-sm-6 text-left  ">
+                        <label for="studentSignatureDate">Date</label>
+                        <input id="studentSignatureDate" name="studentSignatureDate"
+                        class="col-xs-12 col-sm-6 text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row54" name="" class="text-left section-header financialServicesSection ">
+                <div id="col55" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele56" name="ele585" class="text-left icon "><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele57" name="ele595" class="text-left  ">Financial Services</h2>
+                </div>
+            </div>
+            <div id="row154" class="text-left row financialServicesSection ">
+                <div id="col155" class="col-xs-12 col-sm-12 text-left fd-subsection-header with-helper ">
+                    <h3 id="ele156" name="ele156" class="text-left  ">Student Verification</h3>
+                    <p id="ele157" name="ele157" class="text-left  ">Enter the ID found in Colleague, run the search and confirm the returned
+                        student before continuing.</p>
+                </div>
+                <div id="col160" class="col-xs-12 col-sm-12 text-left colleagueSearchRow ">
+                    <div class="col-sm-3 text-left  ">
+                        <label for="lookupStudentIdSearch">Colleague ID</label>
+                        <input id="lookupStudentIdSearch" name="lookupStudentIdSearch"
+                        class="col-sm-3 text-left  " type="text" />
+                    </div>
+                    <button id="lookupStudentButton" name="lookupStudentButton" class="col-xs-12 col-sm-2 text-left btn btn-primary "
+                    style="" undefined="">Search</button>
+                </div>
+                <div id="col243" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="studentVerificationConfirmed" name="confirmOrNotFound" class="col-sm-1 text-left  "
+                    type="radio" value="confirmed" />
+                    <label id="studentVerificationConfirmedLabel" name="studentVerificationConfirmedLabel"
+                    class="col-xs-12 col-sm-11 text-left  " for="studentVerificationConfirmed">I confirm that the Colleague ID entered matches the correct student based
+                        on name and date of birth provided by the student.</label>
+                    <input id="noID"
+                    name="confirmOrNotFound" class="col-xs-12 col-sm-1 text-left  " type="radio"
+                    value="No_ID" />
+                    <label for="noID">Check only if ID is NOT found for student in Colleague</label>
+                </div>
+                <div id="col165" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="lookupStudentNameSearch">Returned Student Name</label>
+                        <input id="lookupStudentNameSearch" name="lookupStudentNameSearch"
+                        class="col-sm-6 text-left  " readonly="true" type="text" />
+                    </div>
+                    <div class="col-xs-12 col-sm-6 text-left  ">
+                        <label for="lookupStudentDateOfBirthSearch">Returned Date of Birth</label>
+                        <input id="lookupStudentDateOfBirthSearch"
+                        name="lookupStudentDateOfBirthSearch" class="col-xs-12 col-sm-6 text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col171" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_179" class="col-xs-12 col-sm-12 text-left  " />
+                </div>
+                <div id="col176" class="col-xs-12 col-sm-12 text-left fd-subsection-header ">
+                    <h3 id="ele177" name="ele177" class="text-left  ">Balance and Forgiveness Amounts</h3>
+                </div>
+                <div id="col182" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-6 text-left  ">
+                        <label for="outstandingBalance">Outstanding Balance</label>
+                        <input id="outstandingBalance" name="outstandingBalance"
+                        class="col-sm-6 text-left  " />
+                    </div>
+                    <div class="col-xs-12 col-sm-6 text-left  ">
+                        <label for="forgivenAmount">Amount to be forgiven</label>
+                        <input id="forgivenAmount" name="forgivenAmount"
+                        class="col-xs-12 col-sm-6 text-left  " />
+                    </div>
+                </div>
+                <div id="col183" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="financialServicesNotes">Financial Services Notes</label>
+                    <textarea id="financialServicesNotes"
+                    name="financialServicesNotes" class="col-sm-12 text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row59" name="" class="text-left section-header studentServicesSection ">
+                <div id="col60" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele61" name="ele585" class="text-left icon "><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele62" name="ele595" class="text-left  ">Student Services</h2>
+                </div>
+            </div>
+            <div id="row190" class="text-left row studentServicesSection ">
+                <div id="col191" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicProgramSearch">Academic Program Search</label>
+                        <input id="academicProgramSearch" name="academicProgramSearch"
+                        class="text-left  " placeholder="Begin typing to search for your program and populate the Program of Study Code below."
+                        type="text" data-bind="autocomplete: { localSource: 'programsDropdown',  minSearchLength: 2,  clearOnFocus: true,  validate: true,  labelMask: ['title', ' | ', 'code'],  selectedMask: ['title', ' | ', 'code'],  formFields: {'programCode':'code'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col192" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-4 text-left  ">
+                        <label for="creditsCompleted">Credits Completed</label>
+                        <input id="creditsCompleted" name="creditsCompleted"
+                        class="col-sm-4 text-left  " type="Number" />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-left  ">
+                        <label for="lastTerm">Last Term</label>
+                        <input id="lastTerm" name="lastTerm" class="col-xs-12 col-sm-4 text-left  "
+                        type="text" />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-left  ">
+                        <label for="sapStatus">SAP Status</label>
+                        <input id="sapStatus" name="sapStatus" class="col-xs-12 col-sm-4 text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col193" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="studentServicesNotes">Student Services Notes</label>
+                    <textarea id="studentServicesNotes" name="studentServicesNotes"
+                    class="text-left  "></textarea>
+                </div>
+                <div id="col264" class="col-xs-12 col-sm-12 text-left  fd-callout fd-callout--info "><span id="ele265" name="ele265" class="text-left  ">	<strong>Putting a Form on Hold</strong>
+	<br />
+	To place this form on hold, check the box below and click
+	<strong>Approve</strong>. The form will be placed on hold and will
+	<strong>not</strong> continue to the next approval step.
+	<br /><br />
+	When you are ready to continue processing the form, uncheck
+	<strong>Place form on Hold</strong> and click <strong>Approve</strong>
+	again.</span>
+                </div>
+                <div id="col261" class="col-xs-12 col-sm-6 text-left  ">
+                    <input id="holdCheckbox" name="holdCheckbox" class="col-sm-1 text-left  "
+                    type="checkbox" value="true" />
+                    <label for="holdCheckbox">Place form on Hold</label>
+                </div>
+            </div>
+            <div id="row64" name="" class="text-left section-header finalFinancialServicesSection ">
+                <div id="col65" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele66" name="ele585" class="text-left icon "><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele67" name="ele595" class="text-left  ">Final Financial Services</h2>
+                </div>
+            </div>
+            <div id="row205" class="text-left row finalFinancialServicesSection ">
+                <div id="col206" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="plannedEnrollmentTerm">Planned Term of Enrollment</label>
+                    <select id="plannedEnrollmentTerm" name="plannedEnrollmentTerm"
+                    class="col-sm-6 text-left  ">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div id="col207" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicYear">Academic Year</label>
+                        <input id="academicYear" name="academicYear" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col213" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="finalFinancialServicesNotes">Student's Plan Notes</label>
+                    <textarea id="finalFinancialServicesNotes"
+                    name="finalFinancialServicesNotes" class="text-left  " placeholder="Please include details regarding students plan and time to complete."></textarea>
+                </div>
+            </div>
+            <div id="row69" class="text-left section-header developer ">
+                <div id="col70" class="col-xs-12 col-sm-12 text-left fd-section-header with-subtitle developer-variant "><span id="ele71" name="ele58" class="text-left icon "><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele72" name="ele59" class="text-left  ">Developer Section</h2>
+                        <p id="ele73" name="ele60" class="text-left  ">This section is intended for developer use only. If it is visible, please
+                            notify support staff.</p>
+                </div>
+            </div>
+            <div id="row216" class="text-left row developer ">
+                <div id="col217" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-sm-4 text-left  ">
+                        <label for="originatorErpId">originatorErpId</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="col-sm-4 text-left  " />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-left  ">
+                        <label for="sequenceID">sequenceID</label>
+                        <input id="sequenceID" name="sequenceID" class="col-xs-12 col-sm-4 text-left  "
+                        />
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-left  ">
+                        <label for="studentId">studentId</label>
+                        <input id="studentId" name="studentId" class="col-xs-12 col-sm-4 text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col224" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="programCode">academicProgramCode</label>
+                        <input id="programCode" name="academicProgramCode"
+                        class="col-xs-12 col-sm-12 text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

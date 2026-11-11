@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow176" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col177" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele178" name="ele37" class="text-right  "><i>Revised 7/26</i></h5>
+                </div>
+                <div id="HeaderLeft179" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo180" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    alt="this is an alt tag for screen readers" />
+                </div>
+                <div id="HeaderRight181" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_182" name="h2_27" class="text-center  "><b>Standardized First Aid Kits Order Form</b></h2>
+                </div>
+                <div id="col183" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele184" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row96" class="text-left row ">
+                <div id="col97" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote98" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="row165" name="" class="text-left section-header ">
+                <div id="col166" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele167" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele168" name="ele595" class="text-left  ">Employee Information</h2>
+                </div>
+            </div>
+            <div id="quickInputsRow12" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn13" name="quickInputsColumn1" class="col-xs-4 col-sm-4 text-left department selectedDept ">
+                    <div class="text-left  ">
+                        <label for="department">Department</label>
+                        <input id="department" name="department" class="text-left  "
+                        required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col312" class="col-xs-4 col-sm-4 text-left noSelectedDept ">
+                    <div class="text-left  ">
+                        <label for="noSelectedDept">Department</label>
+                        <input id="noSelectedDept" name="noSelectedDept" class="text-left  "
+                        data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_HR_Departments',  validate: true,  labelMask: ['DepartmentName'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn15" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Employee Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col26" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="phone">Phone</label>
+                        <input id="phone" name="phone" class="text-left  " required="required"
+                        type="text" data-bind="mask: '999-999-9999' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow181212" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn1912" name="quickInputsColumn1" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="campus">Campus</label>
+                        <input id="campus" name="campus" class="text-left  " required="required"
+                        data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_First_Aid_Campuses',  validate: true,  labelMask: ['Campus'] } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn2112" name="quickInputsColumn2" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="location">Location</label>
+                        <input id="location" name="location" class="text-left  "
+                        required="required" type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_First_Aid_Locations_by_Campus',  validate: true,  labelMask: ['Building', ' - ', 'Room'],  selectedMask: ['Building', ' - ', 'Room'],  formFields: {'locationDetails':'Location', 'selectedBuilding':'Building', 'selectedRoom':'Room'} ,  integrationParams: {'Campus':'campus'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col315" class="col-xs-5 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="locationDetails">Location Details</label>
+                        <input id="locationDetails" name="locationDetails"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col318" name="col318" class="col-xs-4 col-sm-4 text-left  " data-bind="visible: ( ( location() == 'Other - ' ) ) ">
+                    <div class="text-left  ">
+                        <label for="otherBuilding">Building</label>
+                        <input id="otherBuilding" name="otherBuilding" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col319" name="col319" class="col-xs-4 col-sm-4 text-left  " data-bind="visible: ( ( location() == 'Other - ' ) ) ">
+                    <div class="text-left  ">
+                        <label for="otherRoom">Room</label>
+                        <input id="otherRoom" name="otherRoom" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col18512" name="col18512" class="col-xs-4 col-sm-4 text-left  "
+                data-bind="visible: ( ( location() == 'Other - ' ) ) ">
+                    <div class="text-left  ">
+                        <label for="otherLocation">Location Details</label>
+                        <input id="otherLocation" name="otherLocation"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="row160" name="" class="text-left section-header ">
+                <div id="col161" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele162" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele163" name="ele595" class="text-left  ">Items</h2>
+                </div>
+            </div>
+            <div id="row148" name="" class="text-left row ">
+                <div id="col149" class="col-xs-12 col-sm-12 text-left fd-callout fd-callout--info "><span id="ele150" name="ele23024" class="text-left  ">All first aid kits contain <strong>latex-free</strong> items. The contents listed below are the standard items included in each kit. Individual requests for modifications or accommodations will be considered on a case-by-case basis.</span>
+                </div>
+            </div>
+            <div id="itemList" name="itemList" class="text-left row items " data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addItem',  removeButtonID: 'removeItem' } ">
+                <div id="quickInputsColumn51" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="itemQuantity">Item Quantity</label>
+                        <input id="itemQuantity" name="itemQuantity" class="text-left  "
+                        type="Number" data-bind="numeric: { type: 'int',  allowNegative: false } "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn53" name="quickInputsColumn2" class="col-xs-7 col-sm-7 text-left items ">
+                    <div class="text-left  ">
+                        <label for="itemDescription">Item Description</label>
+                        <input id="itemDescription" name="itemDescription"
+                        class="text-left  " data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_First_Aid_Items',  validate: true,  labelMask: ['Item', ' - ', 'Quantity'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col137" class="col-xs-1 col-sm-1 text-left  ">
+                    <button id="ele138" name="ele138" class="text-left btn btn-danger btn-delete "
+                    style=" margin-top:25px " undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+            </div>
+            <div id="quickInputsRow57" name="quickInputsRow" class="text-left row items ">
+                <div id="col113" class="col-xs-3 col-sm-3 text-left  "><span id="ele114" name="ele114" class="text-left  "></span>
+                </div>
+                <div id="quickInputsColumn58" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <button id="addItem" name="addItem" class="text-left btn btn-primary btn-delete "
+                    style="" undefined="">Add Item</button>
+                </div>
+                <div id="quickInputsColumn60" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <button id="removeItem" name="removeItem" class="text-left btn btn-danger btn-delete "
+                    style="" undefined="">Remove Item</button>
+                </div>
+            </div>
+            <div id="row1601414" name="" class="text-left section-header updateItemTable ">
+                <div id="col16114" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele16214" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele16314" name="ele16314" class="text-left  ">Official Use Only</h2>
+                </div>
+            </div>
+            <div id="quickInputsRow18" name="quickInputsRow" class="text-left row otherLocationAdd ">
+                <div id="col222" class="col-xs-8 col-sm-8 text-left  "><span id="ele223" name="ele223" class="col-xs-12 col-sm-12 text-left  "><strong>Would you like to add the new location to the First Aid Kit table? </strong> </span>
+                </div>
+                <div id="col225" class="col-xs-2 col-sm-2 text-left  ">
+                    <input id="addLocationYes" name="addLocation" class="text-left  " type="radio"
+                    value="yes" />
+                    <label for="addLocationYes">Yes</label>
+                </div>
+                <div id="col226" class="col-xs-2 col-sm-2 text-left  ">
+                    <input id="addLocationNo" name="addLocation" class="col-xs- col-sm- text-left  "
+                    type="radio" value="no" />
+                    <label for="addLocationNo">No</label>
+                </div>
+            </div>
+            <div id="quickInputsRow181616" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( addLocation() == 'yes' ) ) ">
+                <div id="col22216" class="col-xs-8 col-sm-8 text-left  "><span id="ele22316" name="ele22316" class="col-xs-12 col-sm-12 text-left  "><strong>Would you like to update the new kit location before it is added? </strong> </span>
+                </div>
+                <div id="col22516" class="col-xs-2 col-sm-2 text-left  ">
+                    <input id="changeAddLocationYes" name="changeAddLocation" class="col-xs- col-sm- text-left  "
+                    type="radio" value="yes" />
+                    <label for="changeAddLocationYes">Yes</label>
+                </div>
+                <div id="col22616" class="col-xs-2 col-sm-2 text-left  ">
+                    <input id="changeAddLocationNo" name="changeAddLocation" class="text-left  "
+                    type="radio" value="no" />
+                    <label for="changeAddLocationNo">No</label>
+                </div>
+            </div>
+            <div id="quickInputsRow1812121515" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( changeAddLocation() == 'yes' ) ) ">
+                <div id="quickInputsColumn191215" name="quickInputsColumn1" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="updatedCampus">Updated Campus</label>
+                        <input id="updatedCampus" name="updatedCampus" class="col-xs-12 col-sm-12 text-left  "
+                        data-bind="autocomplete: { integrationSource: 'Etrieve_Integration_Get_First_Aid_Campuses',  validate: true,  labelMask: ['Campus'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col324" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="updatedBuilding">Updated Building</label>
+                        <input id="updatedBuilding" name="updatedBuilding"
+                        class="col-xs-12 col-sm-12 text-left  " />
+                    </div>
+                </div>
+                <div id="col325" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="updatedRoom">Updated Room</label>
+                        <input id="updatedRoom" name="updatedRoom" class="col-xs-12 col-sm-12 text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn211215" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="col-xs-12 col-sm-12 text-left  ">
+                        <label for="updatedLocation">Updated Location Details</label>
+                        <input id="updatedLocation" name="updatedLocation"
+                        class="col-xs-12 col-sm-12 text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow181313" name="quickInputsRow" class="text-left row updateItemTable ">
+                <div id="col22213" class="col-xs-8 col-sm-8 text-left  "><span id="ele22313" name="ele22313" class="col-xs-12 col-sm-12 text-left  "><strong>Would you like to update the items being requested? </strong> </span>
+                </div>
+                <div id="col22513" class="col-xs-2 col-sm-2 text-left  ">
+                    <input id="addItemsYes" name="addItems" class="text-left  " type="radio"
+                    value="yes" />
+                    <label for="addItemsYes">Yes</label>
+                </div>
+                <div id="col22613" class="col-xs-2 col-sm-2 text-left  ">
+                    <input id="addItemsNo" name="addItems" class="text-left  " type="radio"
+                    value="no" />
+                    <label for="addItemsNo">No</label>
+                </div>
+            </div>
+            <div id="row170" class="text-left section-header developer ">
+                <div id="col171" class="col-xs-12 col-sm-12 text-left fd-section-header with-subtitle developer-variant "><span id="ele172" name="ele58" class="text-left icon "><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele173" name="ele59" class="text-left  ">Developer Section</h2>
+                        <p id="ele174" name="ele60" class="text-left  ">This section is intended for developer use only. If it is visible, please
+                            notify support staff.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow69" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn70" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID</label>
+                        <input id="formID" name="formID" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="col134" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">originatorErpId</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col188" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="personGUID">personGUID</label>
+                        <input id="personGUID" name="personGUID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col129" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">originationDate</label>
+                        <input id="originationDate" name="originationDate"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn72" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="publicSafetyEmail">publicSafetyEmail</label>
+                        <input id="publicSafetyEmail" name="publicSafetyEmail"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col122" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="itemQuantityList">itemQuantityList</label>
+                        <input id="itemQuantityList" name="itemQuantityList"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col128" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="groupPrincipalID">groupPrincipalID</label>
+                        <input id="groupPrincipalID" name="groupPrincipalID"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col309" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originalCampus">originalCampus</label>
+                        <input id="originalCampus" name="originalCampus"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col303" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addNewLocation">addNewLocation?</label>
+                        <input id="addNewLocation" name="addNewLocation"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col300" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="addAdditionalItems">addAdditionalItems?</label>
+                        <input id="addAdditionalItems" name="addAdditionalItems"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col306" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="selectedLocation">selectedLocation</label>
+                        <input id="selectedLocation" name="selectedLocation"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col197" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="selectedCampus">selectedCampus</label>
+                        <input id="selectedCampus" name="selectedCampus"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="row331" class="text-left row developer ">
+                <div id="col332" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="selectedBuilding">selectedBuilding</label>
+                        <input id="selectedBuilding" name="selectedBuilding"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col333" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="selectedRoom">selectedRoom</label>
+                        <input id="selectedRoom" name="selectedRoom" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

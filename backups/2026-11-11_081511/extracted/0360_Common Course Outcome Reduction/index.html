@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Common Course Outcome Reduction</title>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/occ-framework/occForms.css"
+		/>
+		<style>
+			#currentCcoList,
+			#proposedCcoList {
+				display: grid;
+				align-content: start;
+				gap: var(--occ-space-4);
+			}
+
+			@media (min-width: 40.001rem) {
+				#common-course-outcomes-content > .occ-field-grid > div {
+					display: contents;
+				}
+
+				#common-course-outcomes-content .occ-subsection-heading {
+					grid-row: 1;
+					align-self: start;
+					margin-block-end: 0;
+				}
+
+				#currentCcoList,
+				#proposedCcoList {
+					grid-row: 2;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<main class="occ-form">
+			<div class="occ-theme-toggle-row">
+				<div class="occ-theme-toggle">
+					<label class="occ-theme-switch" for="occThemeToggle">
+						<input
+							id="occThemeToggle"
+							class="occ-theme-switch__input"
+							type="checkbox"
+							data-occ-theme-toggle
+							aria-label="Use dark mode"
+						/>
+						<span
+							class="occ-theme-switch__track"
+							aria-hidden="true"
+						>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--on"
+								>Dark</span
+							>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--off"
+								>Light</span
+							>
+							<span class="occ-theme-switch__thumb"></span>
+						</span>
+					</label>
+				</div>
+			</div>
+			<header class="occ-masthead">
+				<div class="occ-masthead__inner">
+					<div class="occ-masthead__identity">
+						<img
+							class="occ-masthead__logo"
+							src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+							alt="Oakland Community College"
+						/>
+					</div>
+					<div class="occ-masthead__content">
+						<h1>Common Course Outcome Reduction</h1>
+						<p class="occ-heading-description">
+							Request a reduction in the number of common course outcomes for an existing course.
+						</p>
+						<dl class="occ-masthead__meta">
+							<div class="occ-masthead__meta-item">
+								<dt>Department</dt><dd>IE</dd>
+							</div>
+							<div class="occ-masthead__meta-item">
+								<dt>Revised</dt><dd>09/26</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+			</header>
+			<section
+				class="occ-reading-panel"
+				aria-labelledby="review-request-heading"
+			>
+				<h2 id="review-request-heading">Review This Request</h2>
+				<p>
+					Review the information in this request. When you are
+					finished, use the available workflow action to continue
+					processing it.
+				</p>
+			</section>
+			<form id="commonCourseOutcomeReduction">
+				<section
+					class="occ-section"
+					aria-labelledby="your-information-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-user"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="your-information-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="your-information-content"
+								>
+									Your Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Review your name and email address.
+							</p>
+						</div>
+					</header>
+					<div
+						id="your-information-content"
+						class="occ-section__content"
+					>
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="originatorDisplayName"
+									>Name</label
+								>
+								<input
+									id="originatorDisplayName"
+									name="originatorDisplayName"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="originatorEmail"
+									>Email</label
+								>
+								<input
+									id="originatorEmail"
+									name="originatorEmail"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="occ-section" aria-labelledby="course-heading">
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-book"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="course-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="course-content"
+								>
+									Course
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Select the course and enter the proposed number
+								of common course outcomes.
+							</p>
+						</div>
+					</header>
+					<div id="course-content" class="occ-section__content">
+						<div class="occ-field">
+							<label class="occ-label" for="courseCodeSearch"
+								>Course Code</label
+							>
+							<div
+								id="courseAutocomplete"
+								class="occ-autocomplete"
+							>
+								<input
+									id="courseCodeSearch"
+									class="occ-input occ-autocomplete__input"
+									type="text"
+									autocomplete="off"
+									data-notsaved
+									aria-describedby="courseCodeSearchError"
+								/>
+								<p id="courseCodeSearchError" class="occ-error" hidden></p>
+								<input
+									id="courseCode"
+									name="courseCode"
+									class="occ-autocomplete__value"
+									type="hidden"
+								/>
+								<button
+									class="occ-autocomplete__clear"
+									type="button"
+									aria-label="Clear course"
+									hidden
+								>
+									&times;
+								</button>
+								<div class="occ-autocomplete__panel" hidden>
+									<div
+										class="occ-autocomplete__state"
+										hidden
+									></div>
+									<ul class="occ-autocomplete__list"></ul>
+								</div>
+								<p class="occ-autocomplete__status"></p>
+							</div>
+						</div>
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="courseTitle"
+									>Course Title</label
+								>
+								<input
+									id="courseTitle"
+									name="courseTitle"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="courseCredits"
+									>Credits</label
+								>
+								<input
+									id="courseCredits"
+									name="courseCredits"
+									class="occ-input"
+									type="number"
+									readonly
+								/>
+							</div>
+						</div>
+						<div class="occ-field">
+							<label class="occ-label" for="courseDescription"
+								>Course Description</label
+							>
+							<textarea
+								id="courseDescription"
+								name="courseDescription"
+								class="occ-textarea"
+								readonly
+							></textarea>
+						</div>
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="currentCcoCount"
+									>Estimated CCO Count</label
+								>
+								<input
+									id="currentCcoCount"
+									name="currentCcoCount"
+									class="occ-input"
+									type="number"
+									readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="proposedCcoCount"
+									>Proposed CCO Count</label
+								>
+								<input
+									id="proposedCcoCount"
+									aria-describedby="proposedCcoCountError"
+									name="proposedCcoCount"
+									min="1" step="1"
+									class="occ-input"
+									type="number"
+								/>
+								<p id="proposedCcoCountError" class="occ-error" hidden>
+									Proposed CCO count cannot be greater than the estimated CCO count.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section
+					class="occ-section"
+					aria-labelledby="common-course-outcomes-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-list-check"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="common-course-outcomes-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="common-course-outcomes-content"
+								>
+									Common Course Outcomes
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								List the current and proposed common course outcomes.
+							</p>
+						</div>
+					</header>
+					<div
+						id="common-course-outcomes-content"
+						class="occ-section__content"
+					>
+						<div class="occ-field-grid occ-field-grid--2">
+							<div>
+								<header class="occ-subsection-heading">
+									<h3>Current Outcomes</h3>
+									<p
+										id="currentCcoHelp"
+										class="occ-heading-description"
+									>
+										Enter the course's current common course
+										outcomes.
+									</p>
+								</header>
+								<div id="currentCcoList"></div>
+							</div>
+							<div>
+								<header class="occ-subsection-heading">
+									<h3>Proposed Outcomes</h3>
+									<p
+										id="proposedCcoHelp"
+										class="occ-heading-description"
+									>
+										Enter the proposed common course outcomes.
+									</p>
+								</header>
+								<div id="proposedCcoList"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section
+					class="occ-section"
+					aria-labelledby="reason-for-reduction-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-circle-question"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="reason-for-reduction-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="reason-for-reduction-content"
+								>
+									Reason for Reduction
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Select the reason for the reduction and provide
+								any applicable explanation.
+							</p>
+						</div>
+					</header>
+					<div
+						id="reason-for-reduction-content"
+						class="occ-section__content"
+					>
+						<fieldset
+							id="reductionReason"
+							aria-labelledby="reason-for-reduction-heading"
+							aria-describedby="reductionReasonError"
+							class="occ-fieldset occ-choice-field"
+						>
+							<p id="reductionReasonError" class="occ-error" hidden>
+								Select a reason for the reduction.
+							</p>
+							<div class="occ-choice-group occ-choice-group--grid">
+								<label
+									class="occ-choice"
+									for="reductionReason-externalAccreditation"
+								>
+									<input
+										id="reductionReason-externalAccreditation"
+										name="reductionReason"
+										type="radio"
+										value="externalAccreditation"
+									/>
+									<span
+										>External accreditation requirement
+										change</span
+									>
+								</label>
+								<label
+									class="occ-choice"
+									for="reductionReason-externalStandards"
+								>
+									<input
+										id="reductionReason-externalStandards"
+										name="reductionReason"
+										type="radio"
+										value="externalStandards"
+									/>
+									<span
+										>External standard-setting body
+										change</span
+									>
+								</label>
+								<label
+									class="occ-choice"
+									for="reductionReason-mtaRequirements"
+								>
+									<input
+										id="reductionReason-mtaRequirements"
+										name="reductionReason"
+										type="radio"
+										value="mtaRequirements"
+									/>
+									<span>MTA requirement changes</span>
+								</label>
+								<label
+									class="occ-choice"
+									for="reductionReason-advisoryCommittee"
+								>
+									<input
+										id="reductionReason-advisoryCommittee"
+										name="reductionReason"
+										type="radio"
+										value="advisoryCommittee"
+									/>
+									<span
+										>Advisory committee recommendation</span
+									>
+								</label>
+								<label
+									class="occ-choice"
+									for="reductionReason-transferInstitution"
+								>
+									<input
+										id="reductionReason-transferInstitution"
+										name="reductionReason"
+										type="radio"
+										value="transferInstitution"
+									/>
+									<span>Transfer institution change</span>
+								</label>
+								<label
+									class="occ-choice"
+									for="reductionReason-higherOrderThinking"
+								>
+									<input
+										id="reductionReason-higherOrderThinking"
+										name="reductionReason"
+										type="radio"
+										value="higherOrderThinking"
+									/>
+									<span
+										>Higher-order thinking outcomes
+										developed</span
+									>
+								</label>
+								<label
+									class="occ-choice"
+									for="reductionReason-other"
+								>
+									<input
+										id="reductionReason-other"
+										name="reductionReason"
+										type="radio"
+										value="other"
+									/>
+									<span>Other</span>
+								</label>
+							</div>
+						</fieldset>
+						<div id="taxonomyUsedField" hidden>
+							<div class="occ-field">
+								<label class="occ-label" for="taxonomyUsed"
+									>Taxonomy Used</label
+								>
+								<input
+									id="taxonomyUsed"
+									name="taxonomyUsed"
+									class="occ-input"
+									type="text"
+									aria-describedby="taxonomyUsedError"
+								/>
+								<p id="taxonomyUsedError" class="occ-error" hidden></p>
+							</div>
+						</div>
+						<div id="reductionReasonOtherField" hidden>
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="reductionReasonOther"
+									>Other Explanation</label
+								>
+								<textarea
+									id="reductionReasonOther"
+									name="reductionReasonOther"
+									class="occ-textarea"
+									aria-describedby="reductionReasonOtherError"
+								></textarea>
+								<p id="reductionReasonOtherError" class="occ-error" hidden></p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section
+					class="occ-section"
+					aria-labelledby="faculty-ballot-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-check-to-slot"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="faculty-ballot-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="faculty-ballot-content"
+								>
+									Faculty Ballot
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p id="ballotHelp" class="occ-heading-description">
+								Enter the results of the full-time faculty
+								ballot for this proposed change.
+							</p>
+						</div>
+					</header>
+					<div
+						id="faculty-ballot-content"
+						class="occ-section__content"
+					>
+						<div
+							class="occ-field-grid occ-field-grid--4"
+							role="group"
+							aria-describedby="ballotHelp"
+							aria-labelledby="faculty-ballot-heading"
+						>
+							<div class="occ-field">
+								<label class="occ-label" for="ballotYes"
+									>Yes</label
+								>
+								<input
+									id="ballotYes"
+									name="ballotYes"
+									class="occ-input"
+									type="number"
+								min="0" max="999" step="1" aria-describedby="ballotYesError"
+								/>
+								<p id="ballotYesError" class="occ-error" hidden>Enter a whole number from 0 to 999.</p>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="ballotNo"
+									>No</label
+								>
+								<input
+									id="ballotNo"
+									name="ballotNo"
+									class="occ-input"
+									type="number"
+								min="0" max="999" step="1" aria-describedby="ballotNoError"
+								/>
+								<p id="ballotNoError" class="occ-error" hidden>Enter a whole number from 0 to 999.</p>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="ballotNoResponse"
+									>No Response</label
+								>
+								<input
+									id="ballotNoResponse"
+									name="ballotNoResponse"
+									class="occ-input"
+									type="number"
+								min="0" max="999" step="1" aria-describedby="ballotNoResponseError"
+								/>
+								<p id="ballotNoResponseError" class="occ-error" hidden>Enter a whole number from 0 to 999.</p>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="ballotTotal"
+									>Total Faculty</label
+								>
+								<input
+									id="ballotTotal"
+									name="ballotTotal"
+									class="occ-input"
+									type="number"
+									readonly
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section
+					class="occ-section"
+					aria-labelledby="acknowledgement-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-square-check"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="acknowledgement-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="acknowledgement-content"
+								>
+									Originator acknowledgement
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Review the statement and confirm your
+								acknowledgement.
+							</p>
+						</div>
+					</header>
+					<div
+						id="acknowledgement-content"
+						class="occ-section__content"
+					>
+						<p id="acknowledgementStatement">
+							I recommend reducing the common course outcomes for
+							this course on behalf of my discipline/program. I
+							confirm that I have balloted as many full-time
+							faculty as possible.
+						</p>
+						<div class="occ-field">
+							<label
+								class="occ-choice"
+								for="initiatorAcknowledgement"
+							>
+								<input
+									id="initiatorAcknowledgement"
+									name="initiatorAcknowledgement"
+									type="checkbox"
+									aria-describedby="acknowledgementStatement initiatorAcknowledgementError"
+								/>
+								<span>I confirm the statement above.</span>
+							</label>
+							<p id="initiatorAcknowledgementError" class="occ-error" hidden>Confirm the acknowledgement before submitting.</p>
+						</div>
+					</div>
+				</section>
+				<section
+					class="occ-section developer"
+					aria-labelledby="developer-information-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-code"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="developer-information-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="developer-information-content"
+								>
+									Developer Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								If you can see this section, please contact
+								support.
+							</p>
+						</div>
+					</header>
+					<div
+						id="developer-information-content"
+						class="occ-section__content"
+					>
+						<div class="occ-field-grid occ-field-grid--3">
+							<div class="occ-field">
+								<label class="occ-label" for="originatorErpId"
+									>Originator ERP ID</label
+								>
+								<input
+									id="originatorErpId"
+									name="originatorErpId"
+									class="occ-input"
+									type="text"
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="academicYear"
+									>Academic Year</label
+								>
+								<input
+									id="academicYear"
+									name="academicYear"
+									class="occ-input"
+									type="text"
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="deanEmail"
+									>Academic Dean Email</label
+								>
+								<input
+									id="deanEmail"
+									name="deanEmail"
+									class="occ-input"
+									type="text"
+								/>
+							</div>
+						</div>
+						<div class="occ-field-grid occ-field-grid--2">
+							<div class="occ-field">
+								<label class="occ-label" for="currentCCO"
+									>Current CCO</label
+								>
+								<textarea
+									id="currentCCO"
+									name="currentCCO"
+									class="occ-textarea"
+								></textarea>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="proposedCCO"
+									>Proposed CCO</label
+								>
+								<textarea
+									id="proposedCCO"
+									name="proposedCCO"
+									class="occ-textarea"
+								></textarea>
+							</div>
+						</div>
+						<div class="occ-field-grid occ-field-grid--2">
+							<div class="occ-field">
+								<label class="occ-label" for="currentCcosData"
+									>Current CCO Serialized Data</label
+								>
+								<textarea
+									id="currentCcosData"
+									name="currentCcosData"
+									class="occ-textarea"
+								></textarea>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="proposedCcosData"
+									>Proposed CCO Serialized Data</label
+								>
+								<textarea
+									id="proposedCcosData"
+									name="proposedCcosData"
+									class="occ-textarea"
+								></textarea>
+							</div>
+						</div>
+					</div>
+				</section>
+			</form>
+		</main>
+	</body>
+</html>

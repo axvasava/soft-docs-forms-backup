@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Dental Hygiene Application Checklist</title>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/occ-framework/occForms.css"
+		/>
+	</head>
+	<body>
+		<main class="occ-form">
+			<div class="occ-theme-toggle-row">
+				<div class="occ-theme-toggle">
+					<label class="occ-theme-switch" for="occThemeToggle">
+						<input
+							id="occThemeToggle"
+							class="occ-theme-switch__input"
+							type="checkbox"
+							data-occ-theme-toggle
+							aria-label="Use dark mode"
+						/>
+						<span
+							class="occ-theme-switch__track"
+							aria-hidden="true"
+						>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--on"
+								>Dark</span
+							>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--off"
+								>Light</span
+							>
+							<span class="occ-theme-switch__thumb"></span>
+						</span>
+					</label>
+				</div>
+			</div>
+
+			<header class="occ-masthead">
+				<div class="occ-masthead__inner">
+					<div class="occ-masthead__identity">
+						<img
+							class="occ-masthead__logo"
+							src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+							alt="Oakland Community College"
+						/>
+					</div>
+					<div class="occ-masthead__content">
+						<h1>Dental Hygiene Application Checklist</h1>
+						<p class="occ-heading-description">
+							Review a student's academic records, program
+							requirements, and supporting documentation to
+							complete the Dental Hygiene application checklist.
+						</p>
+						<dl class="occ-masthead__meta">
+							<div class="occ-masthead__meta-item">
+								<dt>Department</dt>
+								<dd>Health Sciences</dd>
+							</div>
+							<div class="occ-masthead__meta-item">
+								<dt>Revised</dt>
+								<dd>October 2026</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+			</header>
+			<p class="occ-help">
+				<em
+					>Fields marked with an asterisk (<span
+						class="occ-required"
+						aria-hidden="true"
+						>*</span
+					>) are required.</em
+				>
+			</p>
+
+			<form id="dentalHygieneApplicationChecklist">
+				<section
+					class="occ-section"
+					aria-labelledby="student-information-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+							><i class="fa-solid fa-circle-user"></i
+						></span>
+						<div class="occ-section-heading__content">
+							<h2 id="student-information-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="student-information-content"
+								>
+									Student Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-chevron-up"></i
+									></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Search for a student by Student ID to retrieve
+								their name and contact information from
+								Colleague.
+							</p>
+						</div>
+					</header>
+					<div
+						id="student-information-content"
+						class="occ-section__content"
+					>
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="studentSearch"
+									>Student ID
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									></label
+								>
+								<div
+									id="studentAutocomplete"
+									class="occ-autocomplete"
+								>
+									<input
+										id="studentSearch"
+										aria-required="true"
+										class="occ-input occ-autocomplete__input"
+										type="text"
+										autocomplete="off"
+										data-notsaved
+										aria-describedby="studentSearchHelp studentSearchError"
+									/>
+									<input
+										id="studentID"
+										name="studentID"
+										class="occ-autocomplete__value"
+										type="hidden"
+									/>
+									<button
+										class="occ-autocomplete__clear"
+										type="button"
+										aria-label="Clear student"
+										hidden
+									>
+										&times;
+									</button>
+									<div class="occ-autocomplete__panel" hidden>
+										<div
+											class="occ-autocomplete__state"
+											hidden
+										></div>
+										<ul class="occ-autocomplete__list"></ul>
+									</div>
+									<p class="occ-autocomplete__status"></p>
+								</div>
+								<p id="studentSearchHelp" class="occ-help">
+									Enter the full Student ID, then select the
+									matching student.
+								</p>
+								<p
+									id="studentSearchError"
+									class="occ-error"
+									hidden
+								>
+									Select a student.
+								</p>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="name">Name</label>
+								<input
+									id="name"
+									name="name"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+						</div>
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="phone"
+									>Phone</label
+								>
+								<input
+									id="phone"
+									name="phone"
+									class="occ-input"
+									type="tel"
+									data-occ-mask="phone"
+									readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="email"
+									>Email</label
+								>
+								<input
+									id="email"
+									name="email"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class="occ-section"
+					aria-labelledby="hesi-scores-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+							><i class="fa-solid fa-circle-info"></i
+						></span>
+						<div class="occ-section-heading__content">
+							<h2 id="hesi-scores-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="hesi-scores-content"
+								>
+									HESI Scores
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-chevron-up"></i
+									></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								The student's Dental Hygiene HESI scores are
+								retrieved automatically from their record in
+								Colleague.
+							</p>
+						</div>
+					</header>
+					<div id="hesi-scores-content" class="occ-section__content">
+						<div class="occ-field-grid occ-field-grid--4">
+							<div class="occ-field">
+								<label class="occ-label" for="hesiAnatomyScore"
+									>A&amp;P</label
+								>
+								<input
+									id="hesiAnatomyScore"
+									name="hesiAnatomyScore"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="hesiReadingScore"
+									>Reading Comprehension</label
+								>
+								<input
+									id="hesiReadingScore"
+									name="hesiReadingScore"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="hesiMathScore"
+									>Math</label
+								>
+								<input
+									id="hesiMathScore"
+									name="hesiMathScore"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="hesiScore"
+									>Total</label
+								>
+								<input
+									id="hesiScore"
+									name="hesiScore"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+						</div>
+						<div role="status">
+							<div id="hesiScoreNotice" hidden>
+								<aside class="occ-callout occ-callout--warning">
+									<span
+										class="occ-callout__icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-circle-info"></i
+									></span>
+									<div class="occ-callout__content">
+										<p id="hesiScoreNoticeText"></p>
+									</div>
+								</aside>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class="occ-section"
+					aria-labelledby="supportive-courses-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+							><i class="fa-solid fa-book"></i
+						></span>
+						<div class="occ-section-heading__content">
+							<h2 id="supportive-courses-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="supportive-courses-content"
+								>
+									Required Supportive Courses
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-chevron-up"></i
+									></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Course results are retrieved automatically from
+								the student's OCC and transfer transcripts in
+								Colleague. Courses the student is currently
+								registered for are identified, including courses
+								being retaken.
+							</p>
+						</div>
+					</header>
+					<div
+						id="supportive-courses-content"
+						class="occ-section__content"
+					>
+						<div role="status">
+							<div id="supportiveCourseWarning" hidden>
+								<aside class="occ-callout occ-callout--warning">
+									<span
+										class="occ-callout__icon"
+										aria-hidden="true"
+										><i
+											class="fa-solid fa-triangle-exclamation"
+										></i
+									></span>
+									<div class="occ-callout__content">
+										<p>
+											One or more required supportive
+											courses have a grade of C- or below.
+										</p>
+									</div>
+								</aside>
+							</div>
+						</div>
+						<dl
+							class="occ-summary__list occ-field-grid occ-field-grid--2"
+						>
+							<div
+								class="occ-summary__item"
+								style="
+									border: 0;
+									padding-block: 0;
+									align-items: center;
+								"
+							>
+								<dt>
+									<label
+										id="bio1570ResultLabel"
+										for="bio1570Result"
+										>BIO 1570</label
+									>
+								</dt>
+								<dd class="occ-field">
+									<input
+										id="bio1570Result"
+										name="bio1570Result"
+										class="occ-input"
+										type="text"
+										readonly
+										style="max-inline-size: 6rem"
+									/>
+									<span
+										id="bio1570ResultRegistered"
+										class="occ-help"
+										style="
+											display: block;
+											color: var(--occ-color-info-strong);
+										"
+										hidden
+										>Currently Enrolled</span
+									>
+								</dd>
+							</div>
+							<div
+								class="occ-summary__item"
+								style="
+									border: 0;
+									padding-block: 0;
+									align-items: center;
+								"
+							>
+								<dt>
+									<label
+										id="bio2710ResultLabel"
+										for="bio2710Result"
+										>BIO 2710</label
+									>
+								</dt>
+								<dd class="occ-field">
+									<input
+										id="bio2710Result"
+										name="bio2710Result"
+										class="occ-input"
+										type="text"
+										readonly
+										style="max-inline-size: 6rem"
+									/>
+									<span
+										id="bio2710ResultRegistered"
+										class="occ-help"
+										style="
+											display: block;
+											color: var(--occ-color-info-strong);
+										"
+										hidden
+										>Currently Enrolled</span
+									>
+								</dd>
+							</div>
+							<div
+								class="occ-summary__item"
+								style="
+									border: 0;
+									padding-block: 0;
+									align-items: center;
+								"
+							>
+								<dt>
+									<label
+										id="bio2630ResultLabel"
+										for="bio2630Result"
+										>BIO 2630</label
+									>
+								</dt>
+								<dd class="occ-field">
+									<input
+										id="bio2630Result"
+										name="bio2630Result"
+										class="occ-input"
+										type="text"
+										readonly
+										style="max-inline-size: 6rem"
+									/>
+									<span
+										id="bio2630ResultRegistered"
+										class="occ-help"
+										style="
+											display: block;
+											color: var(--occ-color-info-strong);
+										"
+										hidden
+										>Currently Enrolled</span
+									>
+								</dd>
+							</div>
+							<div
+								class="occ-summary__item"
+								style="
+									border: 0;
+									padding-block: 0;
+									align-items: center;
+								"
+							>
+								<dt>
+									<label
+										id="bio2640ResultLabel"
+										for="bio2640Result"
+										>BIO 2640</label
+									>
+								</dt>
+								<dd class="occ-field">
+									<input
+										id="bio2640Result"
+										name="bio2640Result"
+										class="occ-input"
+										type="text"
+										readonly
+										style="max-inline-size: 6rem"
+									/>
+									<span
+										id="bio2640ResultRegistered"
+										class="occ-help"
+										style="
+											display: block;
+											color: var(--occ-color-info-strong);
+										"
+										hidden
+										>Currently Enrolled</span
+									>
+								</dd>
+							</div>
+							<div
+								class="occ-summary__item"
+								style="
+									border: 0;
+									padding-block: 0;
+									align-items: center;
+								"
+							>
+								<dt>
+									<label
+										id="che1320ResultLabel"
+										for="che1320Result"
+										>CHE 1320</label
+									>
+								</dt>
+								<dd class="occ-field">
+									<input
+										id="che1320Result"
+										name="che1320Result"
+										class="occ-input"
+										type="text"
+										readonly
+										style="max-inline-size: 6rem"
+									/>
+									<span
+										id="che1320ResultRegistered"
+										class="occ-help"
+										style="
+											display: block;
+											color: var(--occ-color-info-strong);
+										"
+										hidden
+										>Currently Enrolled</span
+									>
+								</dd>
+							</div>
+							<div
+								class="occ-summary__item"
+								style="
+									border: 0;
+									padding-block: 0;
+									align-items: center;
+								"
+							>
+								<dt>
+									<label
+										id="com1600ResultLabel"
+										for="com1600Result"
+										>COM 1600 / SPE 1610</label
+									>
+								</dt>
+								<dd class="occ-field">
+									<input
+										id="com1600Result"
+										name="com1600Result"
+										class="occ-input"
+										type="text"
+										readonly
+										style="max-inline-size: 6rem"
+									/>
+									<span
+										id="com1600ResultRegistered"
+										class="occ-help"
+										style="
+											display: block;
+											color: var(--occ-color-info-strong);
+										"
+										hidden
+										>Currently Enrolled</span
+									>
+								</dd>
+							</div>
+							<div
+								class="occ-summary__item"
+								style="
+									border: 0;
+									padding-block: 0;
+									align-items: center;
+								"
+							>
+								<dt>
+									<label
+										id="eng1510ResultLabel"
+										for="eng1510Result"
+										>ENG 1510</label
+									>
+								</dt>
+								<dd class="occ-field">
+									<input
+										id="eng1510Result"
+										name="eng1510Result"
+										class="occ-input"
+										type="text"
+										readonly
+										style="max-inline-size: 6rem"
+									/>
+									<span
+										id="eng1510ResultRegistered"
+										class="occ-help"
+										style="
+											display: block;
+											color: var(--occ-color-info-strong);
+										"
+										hidden
+										>Currently Enrolled</span
+									>
+								</dd>
+							</div>
+							<div
+								class="occ-summary__item"
+								style="
+									border: 0;
+									padding-block: 0;
+									align-items: center;
+								"
+							>
+								<dt>
+									<label
+										id="psy2510ResultLabel"
+										for="psy2510Result"
+										>PSY 2510</label
+									>
+								</dt>
+								<dd class="occ-field">
+									<input
+										id="psy2510Result"
+										name="psy2510Result"
+										class="occ-input"
+										type="text"
+										readonly
+										style="max-inline-size: 6rem"
+									/>
+									<span
+										id="psy2510ResultRegistered"
+										class="occ-help"
+										style="
+											display: block;
+											color: var(--occ-color-info-strong);
+										"
+										hidden
+										>Currently Enrolled</span
+									>
+								</dd>
+							</div>
+							<div
+								class="occ-summary__item"
+								style="
+									border: 0;
+									padding-block: 0;
+									align-items: center;
+								"
+							>
+								<dt>
+									<label
+										id="soc2510ResultLabel"
+										for="soc2510Result"
+										>SOC 2510</label
+									>
+								</dt>
+								<dd class="occ-field">
+									<input
+										id="soc2510Result"
+										name="soc2510Result"
+										class="occ-input"
+										type="text"
+										readonly
+										style="max-inline-size: 6rem"
+									/>
+									<span
+										id="soc2510ResultRegistered"
+										class="occ-help"
+										style="
+											display: block;
+											color: var(--occ-color-info-strong);
+										"
+										hidden
+										>Currently Enrolled</span
+									>
+								</dd>
+							</div>
+						</dl>
+						<div id="dhyGpaPanel" class="occ-summary" style="margin-block-start: var(--occ-space-5); margin-inline: auto; max-inline-size: 20rem; text-align: center" hidden>
+							<div id="dhyGpaField" class="occ-field">
+								<label class="occ-label occ-summary__title" for="dhyGpa" style="font-size: var(--occ-font-size-h3)">GPA</label>
+								<input
+									id="dhyGpa"
+									name="dhyGpa"
+									class="occ-input"
+									type="text"
+									readonly
+									style="max-inline-size: 12rem; margin-inline: auto; font-size: var(--occ-font-size-xl); text-align: center"
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class="occ-section"
+					aria-labelledby="application-requirements-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+							><i class="fa-solid fa-list-check"></i
+						></span>
+						<div class="occ-section-heading__content">
+							<h2 id="application-requirements-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="application-requirements-content"
+								>
+									Application Review Checklist
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-chevron-up"></i
+									></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Review the student's application requirements
+								and check off items as they are verified.
+								Information Session and OCC DHY Clinic
+								Observation are retrieved automatically from the
+								TSUM screen in Colleague.
+							</p>
+						</div>
+					</header>
+					<div
+						id="application-requirements-content"
+						class="occ-section__content"
+					>
+						<div class="occ-choice-list occ-fieldset">
+							<label
+								class="occ-choice"
+								for="diplomaOrGedDocumentationAttached"
+							>
+								<input
+									id="diplomaOrGedDocumentationAttached"
+									aria-required="true"
+									name="diplomaOrGedDocumentationAttached"
+									aria-describedby="diplomaOrGedDocumentationAttachedError"
+									type="checkbox"
+									value="Yes"
+								/>
+								<span
+									>High School Diploma or GED
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									></span
+								>
+							</label>
+							<p
+								id="diplomaOrGedDocumentationAttachedError"
+								class="occ-error"
+								hidden
+							>
+								Confirm High School Diploma or GED.
+							</p>
+							<label
+								class="occ-choice"
+								for="dhyCurriculumDesignation"
+							>
+								<input
+									id="dhyCurriculumDesignation"
+									aria-required="true"
+									name="dhyCurriculumDesignation"
+									aria-describedby="dhyCurriculumDesignationError"
+									type="checkbox"
+									value="Yes"
+								/>
+								<span
+									>DHY Curriculum Designation
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									></span
+								>
+							</label>
+							<p
+								id="dhyCurriculumDesignationError"
+								class="occ-error"
+								hidden
+							>
+								Confirm DHY Curriculum Designation.
+							</p>
+							<label
+								class="occ-choice"
+								for="courseSubstitutionApproval"
+							>
+								<input
+									id="courseSubstitutionApproval"
+									name="courseSubstitutionApproval"
+									type="checkbox"
+									value="Yes"
+								/>
+								<span>Course Substitution Approval</span>
+							</label>
+							<div
+								id="informationSessionAssessmentField"
+								class="occ-field"
+							>
+								<label
+									class="occ-choice"
+									style="
+										min-block-size: 0;
+										padding-block-end: 0;
+									"
+									for="informationSessionAttended"
+								>
+									<input
+										id="informationSessionAttended"
+										aria-required="true"
+										aria-describedby="informationSessionAttendedError"
+										name="informationSessionAttended"
+										type="checkbox"
+										value="Yes"
+									/>
+									<span
+										>Information Session Attended
+										<span
+											class="occ-required"
+											aria-hidden="true"
+											>*</span
+										></span
+									>
+								</label>
+								<p
+									id="informationSessionAttendedError"
+									class="occ-error"
+									hidden
+								>
+									Confirm Information Session Attended.
+								</p>
+								<label
+									class="occ-label"
+									for="informationSessionAssessmentDate"
+									style="
+										margin-inline-start: var(--occ-space-6);
+									"
+									>Information Session Date
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									></label
+								>
+								<input
+									id="informationSessionAssessmentDate"
+									aria-required="true"
+									aria-describedby="informationSessionAssessmentDateError"
+									name="informationSessionAssessmentDate"
+									class="occ-input"
+									type="date"
+									aria-label="Information Session Date"
+									style="
+										margin-inline-start: var(--occ-space-6);
+										margin-block-start: var(--occ-space-1);
+										inline-size: calc(
+											100% - var(--occ-space-6)
+										);
+										max-inline-size: 14rem;
+									"
+								/>
+								<p
+									id="informationSessionAssessmentDateError"
+									class="occ-error"
+									hidden
+								>
+									Enter a valid Information Session Date.
+								</p>
+							</div>
+							<div
+								id="observationAssessmentField"
+								class="occ-field"
+							>
+								<label
+									class="occ-choice"
+									style="
+										min-block-size: 0;
+										padding-block-end: 0;
+									"
+									for="observationDocumentationAttached"
+								>
+									<input
+										id="observationDocumentationAttached"
+										aria-required="true"
+										aria-describedby="observationDocumentationAttachedError"
+										name="observationDocumentationAttached"
+										type="checkbox"
+										value="Yes"
+									/>
+									<span
+										>OCC DHY Clinic Observation - 5 Hours
+										<span
+											class="occ-required"
+											aria-hidden="true"
+											>*</span
+										></span
+									>
+								</label>
+								<p
+									id="observationDocumentationAttachedError"
+									class="occ-error"
+									hidden
+								>
+									Confirm OCC DHY Clinic Observation - 5
+									Hours.
+								</p>
+								<input
+									id="observationAssessmentDate"
+									name="observationAssessmentDate"
+									class="occ-input"
+									type="date"
+									aria-label="Clinic Observation Date"
+									style="
+										margin-inline-start: var(--occ-space-6);
+										margin-block-start: var(--occ-space-1);
+										inline-size: calc(
+											100% - var(--occ-space-6)
+										);
+										max-inline-size: 14rem;
+									"
+								/>
+							</div>
+						</div>
+
+						<header class="occ-subsection-heading">
+							<div class="occ-subsection-heading__content">
+								<h3 id="graduation-requirements-heading">
+									Additional College Graduation Requirements
+								</h3>
+								<p class="occ-heading-description">
+									These courses are required for graduation,
+									not acceptance into the Dental Hygiene
+									program. HUM and HEA requirements are
+									checked automatically when qualifying
+									coursework appears on the student's
+									transcripts in Colleague.
+								</p>
+							</div>
+						</header>
+						<div
+							class="occ-choice-list occ-fieldset"
+							role="group"
+							aria-labelledby="graduation-requirements-heading"
+						>
+							<label class="occ-choice" for="humRequirementMet">
+								<input
+									id="humRequirementMet"
+									name="humRequirementMet"
+									type="checkbox"
+									value="Yes"
+								/>
+								<span>HUM - 3 Credits</span>
+							</label>
+							<label
+								class="occ-choice"
+								for="hea1510RequirementMet"
+							>
+								<input
+									id="hea1510RequirementMet"
+									name="hea1510RequirementMet"
+									type="checkbox"
+									value="Yes"
+								/>
+								<span>HEA 1510 - 3 Credits</span>
+							</label>
+						</div>
+
+						<header class="occ-subsection-heading">
+							<div class="occ-subsection-heading__content">
+								<h3 id="documentation-heading">
+									Documentation
+								</h3>
+								<p class="occ-heading-description">
+									Attach your supporting documents before
+									submitting this form, including
+									documentation of the student's job shadowing
+									and any unofficial transcripts from other
+									institutions.
+								</p>
+							</div>
+						</header>
+						<div
+							class="occ-choice-list occ-fieldset"
+							role="group"
+							aria-labelledby="documentation-heading"
+						>
+							<label
+								class="occ-choice"
+								for="jobShadowingDocumentationAttached"
+							>
+								<input
+									id="jobShadowingDocumentationAttached"
+									aria-required="true"
+									name="jobShadowingDocumentationAttached"
+									aria-describedby="jobShadowingDocumentationAttachedError"
+									type="checkbox"
+									value="Yes"
+								/>
+								<span
+									>10 Hours of Private Practice Job Shadowing
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									></span
+								>
+							</label>
+							<p
+								id="jobShadowingDocumentationAttachedError"
+								class="occ-error"
+								hidden
+							>
+								Confirm 10 Hours of Private Practice Job
+								Shadowing.
+							</p>
+							<label
+								class="occ-choice"
+								for="unofficialTranscriptsAttached"
+							>
+								<input
+									id="unofficialTranscriptsAttached"
+									name="unofficialTranscriptsAttached"
+									type="checkbox"
+									value="Yes"
+								/>
+								<span
+									>Unofficial Transcripts from Other
+									Institutions</span
+								>
+							</label>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class="occ-section"
+					aria-labelledby="counselor-notes-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+							><i class="fa-solid fa-pen"></i
+						></span>
+						<div class="occ-section-heading__content">
+							<h2 id="counselor-notes-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="counselor-notes-content"
+								>
+									Counselor Comments
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-chevron-up"></i
+									></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Record any additional information, outstanding
+								requirements, or recommendations relevant to the
+								student's Dental Hygiene application.
+							</p>
+						</div>
+					</header>
+					<div
+						id="counselor-notes-content"
+						class="occ-section__content"
+					>
+						<div class="occ-field">
+							<label class="occ-label" for="comments"
+								>Comments</label
+							>
+							<textarea
+								id="comments"
+								name="comments"
+								class="occ-textarea"
+								rows="4"
+							></textarea>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="followUpMeetingSection"
+					class="occ-section"
+					aria-labelledby="follow-up-meeting-heading"
+					hidden
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+							><i class="fa-solid fa-calendar"></i
+						></span>
+						<div class="occ-section-heading__content">
+							<h2 id="follow-up-meeting-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="follow-up-meeting-content"
+								>
+									Follow-up Meeting
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-chevron-up"></i
+									></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Enter the date, time, and Zoom link for the
+								student's follow-up meeting.
+							</p>
+						</div>
+					</header>
+					<div
+						id="follow-up-meeting-content"
+						class="occ-section__content"
+					>
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="followUpMeetingDate"
+									>Date</label
+								>
+								<input
+									id="followUpMeetingDate"
+									name="followUpMeetingDate"
+									class="occ-input"
+									type="date"
+								/>
+							</div>
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="followUpMeetingTime"
+									>Time</label
+								>
+								<input
+									id="followUpMeetingTime"
+									name="followUpMeetingTime"
+									class="occ-input"
+									type="time"
+								/>
+							</div>
+						</div>
+						<div class="occ-field">
+							<label
+								class="occ-label"
+								for="followUpMeetingZoomLink"
+								>Zoom Link</label
+							>
+							<input
+								id="followUpMeetingZoomLink"
+								name="followUpMeetingZoomLink"
+								class="occ-input"
+								type="url"
+							/>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class="occ-section developer"
+					aria-labelledby="developer-information-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+							><i class="fa-solid fa-code"></i
+						></span>
+						<div class="occ-section-heading__content">
+							<h2 id="developer-information-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="developer-information-content"
+								>
+									Developer Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-chevron-up"></i
+									></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								If you can see this section, please contact
+								support.
+							</p>
+						</div>
+					</header>
+					<div
+						id="developer-information-content"
+						class="occ-section__content"
+					>
+						<div class="occ-field">
+							<label class="occ-label" for="approvalStatus"
+								>Approval Status</label
+							>
+							<input
+								id="approvalStatus"
+								name="approvalStatus"
+								class="occ-input"
+								type="text"
+							/>
+						</div>
+						<div class="occ-field">
+							<label class="occ-label" for="originatorErpId"
+								>Originator ID</label
+							>
+							<input
+								id="originatorErpId"
+								name="originatorErpId"
+								class="occ-input"
+								type="text"
+								readonly
+							/>
+						</div>
+					</div>
+				</section>
+			</form>
+		</main>
+	</body>
+</html>

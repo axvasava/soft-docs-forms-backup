@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Credit for Prior Learning</title>
+		<link
+			rel="icon"
+			href="https://webapps.oaklandcc.edu/cdn/images/favicon.ico"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/occ-framework/occForms.css"
+		/>
+	</head>
+	<body>
+		<main class="occ-form">
+			<div class="occ-theme-toggle-row">
+				<div class="occ-theme-toggle">
+					<label class="occ-theme-switch">
+						<input
+							id="occThemeToggle"
+							class="occ-theme-switch__input"
+							type="checkbox"
+							data-occ-theme-toggle
+							data-notsaved="true"
+							aria-label="Use dark mode"
+						/>
+						<span
+							class="occ-theme-switch__track"
+							aria-hidden="true"
+						>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--on"
+								>Dark</span
+							>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--off"
+								>Light</span
+							>
+							<span class="occ-theme-switch__thumb"></span>
+						</span>
+					</label>
+				</div>
+			</div>
+
+			<header class="occ-masthead">
+				<div class="occ-masthead__inner">
+					<div class="occ-masthead__identity">
+						<img
+							class="occ-masthead__logo"
+							src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+							alt="Oakland Community College"
+						/>
+					</div>
+					<div class="occ-masthead__content">
+						<h1>Credit for Prior Learning</h1>
+						<p class="occ-heading-description">
+							Explore available credit for prior learning by credential or institution.
+						</p>
+					</div>
+				</div>
+			</header>
+
+			<form>
+				<section
+					class="occ-section"
+					aria-labelledby="credit-options-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-graduation-cap"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="credit-options-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="credit-options-content"
+								>
+									Explore credit options
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Select a credential or institution to explore available options.
+							</p>
+						</div>
+					</header>
+
+					<div id="credit-options-content" class="occ-section__content">
+						<section aria-labelledby="credential-heading">
+							<header class="occ-subsection-heading">
+								<h3 id="credential-heading">By Credential</h3>
+							</header>
+							<div class="occ-field">
+								<label class="occ-label" for="creditCredential">By Credential</label>
+								<select
+									id="creditCredential"
+									class="occ-select"
+									name="creditCredential"
+									aria-describedby="creditCredentialStatus"
+								>
+									<option value="">Select a credential</option>
+								</select>
+								<p id="creditCredentialStatus" class="occ-help" role="status"></p>
+								<pre
+									id="creditCredentialResponse"
+									aria-label="Credential response JSON"
+									style="white-space: pre-wrap; overflow-wrap: anywhere;"
+									hidden
+								></pre>
+							</div>
+						</section>
+
+						<section aria-labelledby="institution-heading">
+							<header class="occ-subsection-heading">
+								<h3 id="institution-heading">By Institution</h3>
+							</header>
+							<div class="occ-field">
+								<label class="occ-label" for="creditInstitution">By Institution</label>
+								<select
+									id="creditInstitution"
+									class="occ-select"
+									name="creditInstitution"
+									aria-describedby="creditInstitutionStatus"
+								>
+									<option value="">Select an institution</option>
+								</select>
+								<p id="creditInstitutionStatus" class="occ-help" role="status"></p>
+								<pre
+									id="creditInstitutionResponse"
+									aria-label="Institution response JSON"
+									style="white-space: pre-wrap; overflow-wrap: anywhere;"
+									hidden
+								></pre>
+							</div>
+						</section>
+					</div>
+				</section>
+			</form>
+		</main>
+	</body>
+</html>

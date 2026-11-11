@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow103" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col104" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="lastRevised" name="lastRevised" class="text-right  "><i>Revised 04/26</i></h5>
+                </div>
+                <div id="HeaderLeft106" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    alt="Oakland Community College logo" />
+                </div>
+                <div id="HeaderRight108" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h1 id="h1_formtTitle" name="h1_formtTitle" class="text-center  ">ADA Form Template</h1>
+                </div>
+                <div id="col139" class="col-xs-12 col-sm-12 text-left  ">
+                    <h2 id="h2_Subheading" name="h2_Subheading" class="col-sm-12 text-center  ">Template and Training Tool</h2>
+                </div>
+            </div>
+            <div id="row112" class="text-left row ">
+                <div id="col113" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="altTagInstruction" name="altTagInstruction" class="text-left  "><b>Adding an Alt Tag to an Image in Classic Form Builder</b>
+                        <br />To add an alt tag to an image in Classic Form Builder, locate the <b>Element</b> that
+                        contains the image and open its <b>Properties</b>. Within the properties,
+                        add an alt attribute with a descriptive value to support screen readers
+                        and improve accessibility.
+                        <br />Example: <b>alt = 'this is an alt tag for screen readers'</b> 
+                        <br />Ensure the alt text clearly describes the image’s purpose or content for
+                        users who rely on assistive technologies.</p>
+                </div>
+                <div id="col114" class="col-xs-12 col-sm-6 text-left  ">
+                    <img id="ele117" name="ele117" class="text-left  " src="/forms/api/TemplateVersion/265//alt tag classic fb.png"
+                    width="100%" alt="This is an example of an alt tap showing how to add an alt tag"
+                    />
+                </div>
+            </div>
+            <div id="row128" class="text-left row ">
+                <div id="col129" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele130" name="ele130" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickParagraphRow20191920" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn211920" name="quickParagraphColumn" class="col-xs-12 col-sm-8 text-left  ">
+                    <p id="headingHierarchy" name="headingHierarchy" class="text-left  "> <strong>Heading Hierarchy:</strong>
+Headings must follow a structured order
+                        (H1 for the form title, H2s for sections, H3s for subsections) to support
+                        screen reader navigation and content understanding. Font sizes should align
+                        with this hierarchy so that larger headings indicate higher-level sections
+                        and smaller headings indicate subsections. Using proper heading levels
+                        allows assistive technologies to identify sections correctly and enables
+                        users to navigate the form efficiently.</p>
+                </div>
+                <div id="col125" class="col-xs-12 col-sm-4 text-center  ">
+                    <p id="headingExamples" name="headingExamples" class="text-left  "></p>
+                    <h1>HEADING</h1>
+                    <h2>Subheading</h2>
+                    <h3>Section Heading</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div id="quickInputsRow8" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn9" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn11" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">ID</label>
+                        <input id="originatorErpId" name="originatorErpId" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn13" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">Date</label>
+                        <input id="originationDate" name="originationDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow16" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  background-color:#036a38;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn17" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#036a38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h3 id="h3_sectionHeader" name="h3_sectionHeader" class="text-center  ">Information</h3>
+                </div>
+            </div>
+            <div id="quickParagraphRow20" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn21" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ADA_List_1" name="ADA_List_1" class="text-left  "></p>
+                    <ul>
+                        <li>
+<strong>Screen Reader Compatibility:</strong>
+All content, including instructions,
+                            labels, errors, and button text, must be readable and understandable using
+                            screen readers such as NVDA (Windows) and VoiceOver (macOS). both of these
+                            tools are free to use and will validate many points listed on this form.</li>
+                        <li> <strong>Proper Labeling of Form Fields:</strong>
+All input fields must
+                            have programmatically associated labels so screen readers can announce
+                            the purpose of each field clearly and accurately.</li>
+                        <li> <strong>Required and Optional Field Identification:</strong>
+Required fields
+                            should be clearly indicated both visually and programmatically so assistive
+                            technologies can announce their status.</li>
+                    </ul>
+                    <p></p>
+                </div>
+            </div>
+            <div id="quickInputsRow89" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn90" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="Phone">Phone Number (required)</label>
+                        <input id="Phone" name="Phone" class="text-left  "
+                        required="required" type="text" data-bind="mask: '(999) 999-9999' " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn92" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="Email">Email Address <span style="color: red;">*</span>
+                        </label>
+                        <input id="Email" name="Email" class="text-left  " required="required"
+                        type="text" data-bind="email" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow24" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn25" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="standardFieldExample">Field on Form</label>
+                        <input id="standardFieldExample" name="standardFieldExample"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn27" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="Dropdown">Select from Dropdown</label>
+                    <select id="Dropdown" name="Dropdown" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Option 1">Option 1</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 3</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow78" name="quickInputsRow" class="text-left row "
+            data-bind="visible: Dropdown() === 'Option 2' ">
+                <div id="quickInputsColumn79" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="ExplainOptionTwo">Please Explain Option Two</label>
+                    <textarea id="ExplainOptionTwo" name="ExplainOptionTwo"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow82" name="quickInputsRow" class="text-left row "
+            data-bind="visible: Dropdown() === 'Option 3'">
+                <div id="quickInputsColumn83" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="ExplainOptionThree">Please Explain Option Three</label>
+                    <textarea id="ExplainOptionThree" name="ExplainOptionThree"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickParagraphRow201919" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn2119" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ADA_List_2" name="ADA_List_2" class="text-left  "></p>
+                    <ul>
+                        <li> <strong>Keyboard Navigation:</strong>
+Users must be able to navigate, complete,
+                            and submit the form using the keyboard alone, without requiring mouse interaction.</li>
+                        <li> <strong>Logical Tab Order:</strong>
+Keyboard focus should move through
+                            the form in a logical, predictable order that matches the visual and reading
+                            flow of the page.</li>
+                        <li> <strong>Keyboard Accessibility:</strong>
+All form elements must be fully
+                            usable using a keyboard alone, without requiring a mouse or causing keyboard
+                            traps.</li>
+                    </ul>
+                    <p></p>
+                </div>
+            </div>
+            <div id="quickInputsRow95" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn96" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="CostOne">Cost of Item One</label>
+                        <input id="CostOne" name="CostOne" class="text-left  "
+                        type="text" data-bind="money" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn98" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="CostTwo">Cost of Item Two</label>
+                        <input id="CostTwo" name="CostTwo" class="text-left  "
+                        type="text" data-bind="money" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn100" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="TotalCost">Total Cost</label>
+                        <input id="TotalCost" name="TotalCost" class="text-left  "
+                        readonly="true" type="text" data-bind="money, calculate: 'CostOne + CostTwo'  "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row1282323" name="" class="text-left row ">
+                <div id="col12923" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele13023" name="ele13023" class="text-left  " style=" border-color:#046A38;  border-width:1px; "
+                    />
+                </div>
+            </div>
+            <div id="quickParagraphRow2019192222" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn211922" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ADA_List_3" name="ADA_List_3" class="text-left  "></p>
+                    <ul>
+                        <li> <strong>Error Identification and Messaging:</strong>
+Validation errors
+                            must be clearly described, associated with the correct field, and conveyed
+                            without relying on color alone.</li>
+                        <li> <strong>Visible Focus Indicators:</strong>
+A clear visual indicator should
+                            show which field or element currently has keyboard focus as users tab through
+                            the form.</li>
+                        <li> <strong>Instructions and Help Text:</strong>
+Instructions should appear
+                            before the fields they relate to and be programmatically connected so screen
+                            readers announce them at the appropriate time.</li>
+                        <li> <strong>Color Contrast and Non-Color Cues:</strong>
+Text and interactive
+                            elements must meet minimum color contrast requirements, and color should
+                            not be the only method used to convey information.</li>
+                        <li> <strong>Logical Grouping of Related Fields:</strong>
+Related fields, such
+                            as radio buttons or checkbox groups, should be grouped together to provide
+                            clear context for assistive technology users.</li>
+                        <li> <strong>Clear Button Labels and Actions:</strong>
+Buttons and actions should
+                            have descriptive labels so their purpose is clearly announced by screen
+                            readers.</li>
+                        <li> <strong>Consistent Layout and Predictable Behavior:</strong>
+The form layout
+                            and interactions should behave consistently to reduce confusion and support
+                            accessibility for all users.</li>
+                    </ul>
+                    <p></p>
+                </div>
+            </div>
+            <div id="quickHeadingRow35" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn36" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#666666;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h3 id="h3_OfficeSection" name="h3_OfficeSection" class="text-center  ">For Office Use Only</h3>
+                </div>
+            </div>
+            <div id="quickTextAreaRow39" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn40" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="quickTextAreaElement41">Write an Explanation</label>
+                    <textarea id="quickTextAreaElement41" name="quickTextAreaElement"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow49" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn50" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="addClassesHeading" name="addClassesHeading" class="text-left  "><strong>Add Classes:</strong></h4>
+                </div>
+            </div>
+            <div id="quickInputsRow43" name="quickInputsRow" class="text-left row "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'AddButton',  removeButtonID: 'RemoveButton',  maxLength: 5 } ">
+                <div id="quickInputsColumn44" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="quickInputsText45">Course Name</label>
+                        <input id="quickInputsText45" name="quickInputsText1"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn46" name="quickInputsColumn2" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="quickInputsText47">Instructor</label>
+                        <input id="quickInputsText47" name="quickInputsText2"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="col52" class="col-xs-12 col-sm-1 text-left  ">
+                    <button id="ele53" name="ele53" class="text-left  " style=" margin-top: 31px; "
+                    undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+            </div>
+            <div id="AddButtonRow" name="AddButtonRow" class="text-left row " style="overflow: auto;  margin-top: 5px; ">
+                <div id="col56" class="col-xs-12 col-sm-4 text-left  " style=" background-color:#036a38; ">
+                    <button id="AddButton" name="AddButton" class="text-left btn btn-primary btn-lg col-xs-12 "
+                    style=" background-color:#036a38;  margin-top: 5px; " undefined="">Add Course</button>
+                </div>
+                <div id="col73" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="RemoveButton" name="RemoveButton" class="text-left btn btn-secondary btn-lg col-xs-12 "
+                    style=" margin-top: 5px; " onclick="">Remove Last Course</button>
+                </div>
+            </div>
+            <div id="quickHeadingRow60" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn61" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest62" name="quickHeadingSmallest" class="text-left  ">Do you need more information?</h5>
+                </div>
+            </div>
+            <div id="radioRow64" name="radioRow" class="text-left row ">
+                <div id="radioCol65" name="radioCol1" class="col-xs-12 col-sm-2 text-left  ">
+                    <input id="radioOne66" name="radioGroup" class="text-left  " type="radio"
+                    value="Yes" />
+                    <label for="radioOne66">Yes</label>
+                </div>
+                <div id="radioCol67" name="radioCol2" class="col-xs-12 col-sm-2 text-left  ">
+                    <input id="radioTwo68" name="radioGroup" class="text-left  " type="radio"
+                    value="No" />
+                    <label for="radioTwo68">No</label>
+                </div>
+                <div id="col144" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="radioGroup" name="radioGroup" class="text-left  ">Radio buttons or checkbox groups, should be grouped together to provide
+                        clear context for assistive technology.</p>
+                </div>
+            </div>
+            <div id="quickParagraphRow70" name="quickParagraphRow" class="text-left row "
+            data-bind="visible: radioGroup() == 'Yes'">
+                <div id="quickParagraphColumn71" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement72" name="quickParagraphElement" class="text-left  ">Here is more information.</p>
+                </div>
+            </div>
+            <div id="row151" class="text-left row ">
+                <div id="col152" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ADA_Checklist" name="ADA_Checklist" class="text-left  "></p>
+                    <h4>ADA From Summary Checklist</h4>
+
+                    <ul>
+                        <li>✅ A single <strong>H1</strong> is used for the form title, with <strong>H2</strong> and <strong>H3</strong> headings
+                            following a logical hierarchy.</li>
+                        <li>✅ All form fields have <strong>clearly associated labels</strong> so their
+                            purpose is announced by screen readers.</li>
+                        <li>✅ Required fields are <strong>clearly identified</strong> both visually
+                            and for assistive technologies.</li>
+                        <li>✅ Instructions and help text appear <strong>before</strong> the fields they
+                            relate to.</li>
+                        <li>✅ The form can be <strong>completed using the keyboard alone</strong>,
+                            without requiring a mouse.</li>
+                        <li>✅ <strong>Tab order</strong> follows a logical sequence that matches the
+                            visual layout of the form.</li>
+                        <li>✅ A <strong>visible focus indicator</strong> clearly shows which element
+                            currently has keyboard focus.</li>
+                        <li>✅ Validation <strong>error messages are text-based</strong>, descriptive,
+                            and associated with the correct field.</li>
+                        <li>✅ All content is readable using <strong>screen readers</strong> such as
+                            NVDA (Windows) and VoiceOver (macOS).</li>
+                        <li>✅ Text and interactive elements meet <strong>minimum color contrast</strong> requirements.</li>
+                        <li>✅ <strong>Color is not the only method</strong> used to convey meaning or
+                            status.</li>
+                        <li>✅ Related controls, such as radio buttons and checkboxes, are <strong>logically grouped</strong>.</li>
+                        <li>✅ Buttons and actions use <strong>clear, descriptive labels</strong> that
+                            communicate their purpose.</li>
+                        <li>✅ Images include appropriate <strong>alt text</strong>, or are marked as
+                            decorative when applicable.</li>
+                    </ul>
+                    <p></p>
+                </div>
+            </div>
+            <div id="row147" class="text-left row ">
+                <div id="col148" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="WCAG_Link" name="WCAG_Link" class="text-left  ">For detailed requirements, examples, and testing guidance, refer to the <b>WCAG 2.1 guidelines</b>,
+                        which are widely used to demonstrate ADA compliance:
+<u><a href="https://www.w3.org/WAI/WCAG21/Understanding/" target="_blank" rel="noopener">
+  WCAG 2.1 Understanding Accessibility Guidelines
+</a></u>
+This resource explains why each requirement exists, how assistive
+                        technologies interpret forms, and how to test accessibility effectively.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

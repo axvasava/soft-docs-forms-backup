@@ -1,0 +1,1246 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Employee Change of Information Request</title>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/occ-framework/occForms.css"
+		/>
+	</head>
+	<body>
+		<main class="occ-form">
+			<div class="occ-theme-toggle-row">
+				<div class="occ-theme-toggle">
+					<label class="occ-theme-switch">
+						<input
+							id="occThemeToggle"
+							class="occ-theme-switch__input"
+							type="checkbox"
+							data-occ-theme-toggle
+							aria-label="Use dark mode"
+						/>
+						<span
+							class="occ-theme-switch__track"
+							aria-hidden="true"
+						>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--on"
+								>Dark</span
+							>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--off"
+								>Light</span
+							>
+							<span class="occ-theme-switch__thumb"></span>
+						</span>
+					</label>
+				</div>
+			</div>
+
+			<header class="occ-masthead">
+				<div class="occ-masthead__inner">
+					<div class="occ-masthead__identity">
+						<img
+							class="occ-masthead__logo"
+							src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+							alt="Oakland Community College"
+						/>
+					</div>
+					<div class="occ-masthead__content">
+						<h1>Employee Change of Information Request</h1>
+					</div>
+				</div>
+			</header>
+
+			<p class="occ-help">
+				<em
+					>Fields marked with an asterisk (<span
+						class="occ-required"
+						aria-hidden="true"
+						>*</span
+					>) are required.</em
+				>
+			</p>
+
+			<form id="employeeChangeInformationRequest">
+				<section
+					id="yourInformationSection"
+					class="occ-section"
+					aria-labelledby="your-information-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-circle-user"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="your-information-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="your-information-content"
+								>
+									Your information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Review your name, job title, and campus
+								information.
+							</p>
+						</div>
+					</header>
+
+					<div
+						id="your-information-content"
+						class="occ-section__content"
+					>
+						<div class="occ-field-grid occ-field-grid--name">
+							<div class="occ-field">
+								<label class="occ-label" for="employeeFirstName"
+									>First name</label
+								>
+								<input
+									id="employeeFirstName"
+									class="occ-input"
+									name="employeeFirstName"
+									type="text"
+									autocomplete="given-name"
+									readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="employeeMiddleInitial"
+									>Middle initial</label
+								>
+								<input
+									id="employeeMiddleInitial"
+									class="occ-input"
+									name="employeeMiddleInitial"
+									type="text"
+									autocomplete="additional-name"
+									readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="employeeLastName"
+									>Last name</label
+								>
+								<input
+									id="employeeLastName"
+									class="occ-input"
+									name="employeeLastName"
+									type="text"
+									autocomplete="family-name"
+									readonly
+								/>
+							</div>
+						</div>
+
+						<div class="occ-field-grid occ-field-grid--2">
+							<div class="occ-field">
+								<label class="occ-label" for="jobTitle"
+									>Job title</label
+								>
+								<input
+									id="jobTitle"
+									class="occ-input"
+									name="jobTitle"
+									type="text"
+									aria-describedby="jobTitleError"
+									readonly
+								/>
+								<p id="jobTitleError" class="occ-error" hidden>
+									Enter your job title.
+								</p>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="campus"
+									>Campus</label
+								>
+								<select
+									id="campus"
+									class="occ-select"
+									name="campus"
+									aria-describedby="campusError"
+								>
+									<option value="">Choose a campus</option>
+								</select>
+								<p id="campusError" class="occ-error" hidden>
+									Select your campus.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="updateSelectionSection"
+					class="occ-section"
+					aria-labelledby="update-selection-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-pen-to-square"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="update-selection-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="update-selection-content"
+								>
+									What do you want to update?
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Choose whether you need to update contact
+								information or your legal name.
+							</p>
+						</div>
+					</header>
+
+					<div
+						id="update-selection-content"
+						class="occ-section__content"
+					>
+						<div class="occ-field">
+							<label class="occ-label" for="updateInformation">
+								Update type
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</label>
+							<select
+								id="updateInformation"
+								class="occ-select"
+								name="updateInformation"
+								aria-describedby="updateInformationError"
+								required
+							>
+								<option value="">Select one</option>
+								<option value="Contact Information">
+									Contact information
+								</option>
+								<option value="Legal Name Change">
+									Legal name
+								</option>
+							</select>
+							<p
+								id="updateInformationError"
+								class="occ-error"
+								hidden
+							>
+								Select what you want to update.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="contactInformationSection"
+					class="occ-section"
+					aria-labelledby="contact-information-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-address-book"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="contact-information-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="contact-information-content"
+								>
+									Contact information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Select and provide the contact details you want
+								to update.
+							</p>
+						</div>
+					</header>
+
+					<div
+						id="contact-information-content"
+						class="occ-section__content"
+					>
+						<fieldset
+							id="contactInformationChoices"
+							class="occ-fieldset occ-choice-field"
+							aria-describedby="contact-information-help"
+						>
+							<legend class="occ-legend">
+								Which contact information do you want to update?
+							</legend>
+							<p id="contact-information-help" class="occ-help">
+								Select all that apply.
+							</p>
+							<div
+								class="occ-choice-group occ-choice-group--grid"
+							>
+								<label class="occ-choice-card">
+									<input
+										id="homeAddressUpdateCheck"
+										name="homeAddressUpdateCheck"
+										type="checkbox"
+									/>
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title"
+											>Home address</span
+										>
+									</span>
+								</label>
+								<label class="occ-choice-card">
+									<input
+										id="emailAddressCheck"
+										name="emailAddressCheck"
+										type="checkbox"
+									/>
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title"
+											>Personal Email Address</span
+										>
+									</span>
+								</label>
+								<label class="occ-choice-card">
+									<input
+										id="personalPhoneNumberCheck"
+										name="personalPhoneNumberCheck"
+										type="checkbox"
+									/>
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title"
+											>Phone numbers</span
+										>
+									</span>
+								</label>
+								<label class="occ-choice-card">
+									<input
+										id="emergencyContactCheck"
+										name="emergencyContactCheck"
+										type="checkbox"
+									/>
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title"
+											>Emergency contact</span
+										>
+									</span>
+								</label>
+							</div>
+						</fieldset>
+
+						<section
+							id="homeAddressSubsection"
+							aria-labelledby="home-address-heading"
+						>
+							<header class="occ-subsection-heading">
+								<h3 id="home-address-heading">Home address</h3>
+							</header>
+							<aside
+								class="occ-callout occ-callout--warning"
+								data-reviewer-attachment-callout
+							>
+								<span
+									class="occ-callout__icon"
+									aria-hidden="true"
+								>
+									<i
+										class="fa-solid fa-triangle-exclamation"
+									></i>
+								</span>
+								<div class="occ-callout__content">
+									<h4 class="occ-callout__title">
+										Proof of residency required
+									</h4>
+									<p>
+										Attach one of the following before
+										submitting:
+									</p>
+									<ul>
+										<li>Driver's license</li>
+										<li>Voter registration card</li>
+										<li>Property tax document</li>
+										<li>Lease agreement</li>
+									</ul>
+									<p>
+										Detroit and Pontiac residents must
+										complete the appropriate tax form.
+										<a
+											href="https://oaklandcc.etrieve.cloud/central/forms/27"
+											target="_blank"
+											rel="noopener noreferrer"
+											aria-label="Detroit tax form (opens in a new tab)"
+											>Detroit tax form
+											<i
+												class="fa-solid fa-arrow-up-right-from-square"
+												aria-hidden="true"
+											></i></a
+										>
+										or
+										<a
+											href="https://oaklandcc.etrieve.cloud/central/forms/29"
+											target="_blank"
+											rel="noopener noreferrer"
+											aria-label="Pontiac tax form (opens in a new tab)"
+											>Pontiac tax form
+											<i
+												class="fa-solid fa-arrow-up-right-from-square"
+												aria-hidden="true"
+											></i></a
+										>.
+									</p>
+								</div>
+							</aside>
+							<div class="occ-field-grid occ-field-grid--75-25">
+								<div class="occ-field">
+									<label class="occ-label" for="streetAddress"
+										>Street address</label
+									>
+									<input
+										id="streetAddress"
+										class="occ-input"
+										name="streetAddress"
+										type="text"
+										autocomplete="address-line1"
+										aria-describedby="streetAddressError"
+									/>
+									<p
+										id="streetAddressError"
+										class="occ-error"
+										hidden
+									>
+										Enter your street address.
+									</p>
+								</div>
+								<div class="occ-field">
+									<label
+										class="occ-label"
+										for="apartmentSuite"
+										>Apt/Suite</label
+									>
+									<input
+										id="apartmentSuite"
+										class="occ-input"
+										name="apartmentSuite"
+										type="text"
+										autocomplete="address-line2"
+									/>
+								</div>
+							</div>
+							<div
+								class="occ-field-grid occ-field-grid--50-25-25"
+							>
+								<div class="occ-field">
+									<label class="occ-label" for="city"
+										>City</label
+									>
+									<input
+										id="city"
+										class="occ-input"
+										name="city"
+										type="text"
+										autocomplete="address-level2"
+										aria-describedby="cityError"
+									/>
+									<p id="cityError" class="occ-error" hidden>
+										Enter your city.
+									</p>
+								</div>
+								<div class="occ-field">
+									<label class="occ-label" for="state"
+										>State</label
+									>
+									<select
+										id="state"
+										class="occ-select"
+										name="state"
+										autocomplete="address-level1"
+										aria-describedby="stateError"
+									>
+										<option value="">Choose a state</option>
+									</select>
+									<p id="stateError" class="occ-error" hidden>
+										Select your state.
+									</p>
+								</div>
+								<div class="occ-field">
+									<label class="occ-label" for="zip"
+										>ZIP code</label
+									>
+									<input
+										id="zip"
+										class="occ-input"
+										name="zip"
+										type="text"
+										inputmode="numeric"
+										autocomplete="postal-code"
+										data-occ-mask="zip-code"
+										pattern="[0-9]{5}(-[0-9]{4})?"
+										title="Enter a 5-digit ZIP code or ZIP+4."
+										placeholder="#####-####"
+										aria-describedby="zipError"
+									/>
+									<p id="zipError" class="occ-error" hidden>
+										Enter a valid ZIP code.
+									</p>
+								</div>
+							</div>
+						</section>
+
+						<section
+							id="emailAddressSubsection"
+							aria-labelledby="email-address-heading"
+						>
+							<header class="occ-subsection-heading">
+								<h3 id="email-address-heading">
+									Personal Email Address
+								</h3>
+							</header>
+							<div class="occ-field">
+								<label class="occ-label" for="emailAddress"
+									>Personal Email Address</label
+								>
+								<input
+									id="emailAddress"
+									class="occ-input"
+									name="emailAddress"
+									type="email"
+									autocomplete="email"
+									aria-describedby="emailAddressError"
+								/>
+								<p
+									id="emailAddressError"
+									class="occ-error"
+									hidden
+								>
+									Enter a valid email address.
+								</p>
+							</div>
+						</section>
+
+						<section
+							id="phoneNumbersSubsection"
+							aria-labelledby="phone-numbers-heading"
+						>
+							<header class="occ-subsection-heading">
+								<h3 id="phone-numbers-heading">
+									Phone numbers
+								</h3>
+							</header>
+							<div
+								id="phoneNumberRows"
+								class="occ-repeating-group"
+								data-occ-repeating-group
+							>
+								<div
+									class="occ-repeating-group__list"
+									data-occ-repeating-group-list
+								>
+									<fieldset
+										class="occ-fieldset occ-repeating-group__row"
+										data-occ-repeating-group-row
+										aria-labelledby="phone-row-heading"
+									>
+										<legend
+											id="phone-row-heading"
+											class="occ-legend"
+											data-phone-row-heading
+										>
+											Phone
+											<span
+												data-occ-repeating-group-position
+											></span>
+										</legend>
+										<div
+											class="occ-field-grid occ-field-grid--50-25-25"
+										>
+											<div class="occ-field">
+												<label
+													class="occ-label"
+													for="newPhoneNumber"
+													data-phone-label="number"
+													>Phone number</label
+												>
+												<input
+													id="newPhoneNumber"
+													class="occ-input"
+													name="newPhoneNumber"
+													type="tel"
+													inputmode="tel"
+													autocomplete="tel"
+													data-occ-mask="phone"
+													data-phone-field="number"
+													placeholder="(###) ###-####"
+													aria-describedby="newPhoneNumberError"
+												/>
+												<p
+													id="newPhoneNumberError"
+													class="occ-error"
+													data-phone-error="number"
+													hidden
+												>
+													Enter a valid phone number.
+												</p>
+											</div>
+											<div class="occ-field">
+												<label
+													class="occ-label"
+													for="extension"
+													data-phone-label="extension"
+													>Extension</label
+												>
+												<input
+													id="extension"
+													class="occ-input"
+													name="extension"
+													type="text"
+													inputmode="numeric"
+													autocomplete="tel-extension"
+													data-phone-field="extension"
+												/>
+											</div>
+											<div class="occ-field">
+												<label
+													class="occ-label"
+													for="phoneType"
+													data-phone-label="type"
+													>Phone type</label
+												>
+												<select
+													id="phoneType"
+													class="occ-select"
+													name="phoneType"
+													data-phone-field="type"
+													aria-describedby="phoneTypeError"
+												>
+													<option value="">
+														Phone type
+													</option>
+													<option value="Home">
+														Home
+													</option>
+													<option value="Work">
+														Work
+													</option>
+													<option value="Cell">
+														Cell
+													</option>
+												</select>
+												<p
+													id="phoneTypeError"
+													class="occ-error"
+													data-phone-error="type"
+													hidden
+												>
+													Select a phone type.
+												</p>
+											</div>
+										</div>
+										<div
+											class="occ-actions"
+											data-phone-remove-action
+										>
+											<button
+												type="button"
+												class="occ-button occ-button--destructive"
+												data-occ-repeating-group-remove
+											>
+												Remove phone
+											</button>
+										</div>
+									</fieldset>
+								</div>
+								<template data-occ-repeating-group-template>
+									<fieldset
+										class="occ-fieldset occ-repeating-group__row"
+										data-occ-repeating-group-row
+									>
+										<legend
+											class="occ-legend"
+											data-phone-row-heading
+										>
+											Phone
+											<span
+												data-occ-repeating-group-position
+											></span>
+										</legend>
+										<div
+											class="occ-field-grid occ-field-grid--50-25-25"
+										>
+											<div class="occ-field">
+												<label
+													class="occ-label"
+													data-phone-label="number"
+													>Phone number</label
+												>
+												<input
+													class="occ-input"
+													name="newPhoneNumber"
+													data-notsaved
+													type="tel"
+													inputmode="tel"
+													autocomplete="tel"
+													data-occ-mask="phone"
+													data-phone-field="number"
+													placeholder="(###) ###-####"
+												/>
+												<p
+													class="occ-error"
+													data-phone-error="number"
+													hidden
+												>
+													Enter a valid phone number.
+												</p>
+											</div>
+											<div class="occ-field">
+												<label
+													class="occ-label"
+													data-phone-label="extension"
+													>Extension</label
+												>
+												<input
+													class="occ-input"
+													name="extension"
+													data-notsaved
+													type="text"
+													inputmode="numeric"
+													autocomplete="tel-extension"
+													data-phone-field="extension"
+												/>
+											</div>
+											<div class="occ-field">
+												<label
+													class="occ-label"
+													data-phone-label="type"
+													>Phone type</label
+												>
+												<select
+													class="occ-select"
+													name="phoneType"
+													data-notsaved
+													data-phone-field="type"
+												>
+													<option value="">
+														Phone type
+													</option>
+													<option value="Home">
+														Home
+													</option>
+													<option value="Work">
+														Work
+													</option>
+													<option value="Cell">
+														Cell
+													</option>
+												</select>
+												<p
+													class="occ-error"
+													data-phone-error="type"
+													hidden
+												>
+													Select a phone type.
+												</p>
+											</div>
+										</div>
+										<div
+											class="occ-actions"
+											data-phone-remove-action
+										>
+											<button
+												type="button"
+												class="occ-button occ-button--destructive"
+												data-occ-repeating-group-remove
+											>
+												Remove phone
+											</button>
+										</div>
+									</fieldset>
+								</template>
+								<div class="occ-actions" data-phone-add-action>
+									<button
+										type="button"
+										class="occ-button occ-button--primary"
+										data-occ-repeating-group-add
+									>
+										Add another phone number
+									</button>
+								</div>
+							</div>
+						</section>
+
+						<section
+							id="emergencyContactSubsection"
+							aria-labelledby="emergency-contact-heading"
+						>
+							<header class="occ-subsection-heading">
+								<h3 id="emergency-contact-heading">
+									Emergency contact
+								</h3>
+							</header>
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="emergencyContactPerson"
+									>Emergency contact name</label
+								>
+								<input
+									id="emergencyContactPerson"
+									class="occ-input"
+									name="emergencyContactPerson"
+									type="text"
+									autocomplete="name"
+									aria-describedby="emergencyContactPersonError"
+								/>
+								<p
+									id="emergencyContactPersonError"
+									class="occ-error"
+									hidden
+								>
+									Enter your emergency contact's name.
+								</p>
+							</div>
+							<div class="occ-field-grid">
+								<div class="occ-field">
+									<label
+										class="occ-label"
+										for="emergencyPhoneNumber"
+										>Phone number</label
+									>
+									<input
+										id="emergencyPhoneNumber"
+										class="occ-input"
+										name="emergencyPhoneNumber"
+										type="tel"
+										inputmode="tel"
+										autocomplete="tel"
+										data-occ-mask="phone"
+										placeholder="(###) ###-####"
+										aria-describedby="emergencyPhoneNumberError"
+									/>
+									<p
+										id="emergencyPhoneNumberError"
+										class="occ-error"
+										hidden
+									>
+										Enter a valid phone number.
+									</p>
+								</div>
+								<div class="occ-field">
+									<label
+										class="occ-label"
+										for="emergencyExtension"
+										>Extension</label
+									>
+									<input
+										id="emergencyExtension"
+										class="occ-input"
+										name="emergencyExtension"
+										type="text"
+										inputmode="numeric"
+										autocomplete="tel-extension"
+									/>
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
+
+				<section
+					id="legalNameChangeSection"
+					class="occ-section"
+					aria-labelledby="legal-name-change-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-id-card"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="legal-name-change-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="legal-name-change-content"
+								>
+									Legal name change
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Provide your new legal name and select your
+								pronoun.
+							</p>
+						</div>
+					</header>
+
+					<div
+						id="legal-name-change-content"
+						class="occ-section__content"
+					>
+						<aside
+							class="occ-callout occ-callout--warning"
+							data-reviewer-attachment-callout
+						>
+							<span class="occ-callout__icon" aria-hidden="true">
+								<i class="fa-solid fa-triangle-exclamation"></i>
+							</span>
+							<div class="occ-callout__content">
+								<h3 class="occ-callout__title">
+									Social Security card required
+								</h3>
+								<p>
+									Attach a copy of your Social Security card
+									before submitting this form.
+								</p>
+							</div>
+						</aside>
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="newName"
+									>New legal name</label
+								>
+								<input
+									id="newName"
+									class="occ-input"
+									name="newName"
+									type="text"
+									aria-describedby="newNameError"
+								/>
+								<p id="newNameError" class="occ-error" hidden>
+									Enter your new legal name.
+								</p>
+							</div>
+						</div>
+
+						<header class="occ-subsection-heading">
+							<h3>Personal pronoun</h3>
+						</header>
+						<div class="occ-field">
+							<label class="occ-label" for="quickDropdownElement"
+								>Pronoun</label
+							>
+							<select
+								id="quickDropdownElement"
+								class="occ-select"
+								name="quickDropdownElement"
+								aria-describedby="quickDropdownElementError"
+							>
+								<option value="">Select a pronoun</option>
+								<option value="She/Her/Hers">
+									She/Her/Hers
+								</option>
+								<option value="He/Him/His">He/Him/His</option>
+								<option value="Ze/Hir/Hirs">Ze/Hir/Hirs</option>
+								<option value="They/Them/Their">
+									They/Them/Their
+								</option>
+								<option value="Use my name">Use my name</option>
+								<option value="Not applicable">
+									Not applicable
+								</option>
+							</select>
+							<p
+								id="quickDropdownElementError"
+								class="occ-error"
+								hidden
+							>
+								Select a pronoun.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section
+					id="officeUseSection"
+					class="occ-section office-use"
+					aria-labelledby="office-use-heading"
+					hidden
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-building"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="office-use-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="office-use-content"
+								>
+									Office Use
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Review the requested changes and complete the
+								required administrative updates.
+							</p>
+						</div>
+					</header>
+
+					<div id="office-use-content" class="occ-section__content">
+						<section
+							id="requestSummary"
+							class="occ-summary"
+							aria-labelledby="request-summary-title"
+						>
+							<h3
+								id="request-summary-title"
+								class="occ-summary__title"
+							>
+								Request summary
+							</h3>
+							<ul
+								id="requestSummaryInstructions"
+								class="occ-summary__instructions"
+							>
+								<li>
+									Make the required updates in the NAE (BIO)
+									screen in Colleague.
+								</li>
+								<li>
+									When you approve this form, a TeamDynamix
+									ticket will automatically be created using
+									the information from the request. No
+									separate ticket submission is needed.
+								</li>
+								<li>
+									The TeamDynamix ticket number will be
+									emailed to the appropriate recipient and
+									saved with the form in Content for future
+									reference.
+								</li>
+							</ul>
+							<dl class="occ-summary__list">
+								<div class="occ-summary__item">
+									<dt>Update type</dt>
+									<dd id="requestSummaryUpdateType">
+										Not provided
+									</dd>
+								</div>
+								<div
+									id="requestSummaryChangesItem"
+									class="occ-summary__item"
+									hidden
+								>
+									<dt>Requested changes</dt>
+									<dd>
+										<ul>
+											<li
+												id="requestSummaryHomeAddress"
+												hidden
+											>
+												Home address
+											</li>
+											<li
+												id="requestSummaryEmailAddress"
+												hidden
+											>
+												Email address
+											</li>
+											<li
+												id="requestSummaryPhoneNumbers"
+												hidden
+											>
+												Phone numbers
+											</li>
+											<li
+												id="requestSummaryEmergencyContact"
+												hidden
+											>
+												Emergency contact
+											</li>
+										</ul>
+									</dd>
+								</div>
+								<div
+									id="requestSummaryNameItem"
+									class="occ-summary__item"
+									hidden
+								>
+									<dt>Name change</dt>
+									<dd id="requestSummaryNameChange">
+										Not provided
+									</dd>
+								</div>
+							</dl>
+						</section>
+					</div>
+				</section>
+
+				<section
+					class="occ-section developer"
+					aria-labelledby="developer-information-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-code"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="developer-information-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="developer-information-content"
+								>
+									Developer information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								If you can see this section, please contact
+								support.
+							</p>
+						</div>
+					</header>
+
+					<div
+						id="developer-information-content"
+						class="occ-section__content"
+					>
+						<div class="occ-field-grid occ-field-grid--4">
+							<div class="occ-field">
+								<label class="occ-label" for="originatorErpId"
+									>ID number</label
+								>
+								<input
+									id="originatorErpId"
+									class="occ-input"
+									name="originatorErpId"
+									type="text"
+									readonly
+								/>
+							</div>
+						</div>
+
+						<div class="occ-field">
+							<label class="occ-label" for="phoneNumbersData"
+								>phoneNumbersData</label
+							>
+							<input
+								id="phoneNumbersData"
+								class="occ-input"
+								name="phoneNumbersData"
+								type="text"
+							/>
+						</div>
+						<div class="occ-field">
+							<label class="occ-label" for="payClassCode"
+								>payClassCode</label
+							>
+							<input
+								id="payClassCode"
+								class="occ-input"
+								name="payClassCode"
+								type="text"
+							/>
+						</div>
+						<div class="occ-field">
+							<label class="occ-label" for="formerName"
+								>Current legal name</label
+							>
+							<input
+								id="formerName"
+								class="occ-input"
+								name="formerName"
+								type="text"
+								readonly
+							/>
+						</div>
+						<div class="occ-field">
+							<label class="occ-label" for="employeeDateOfBirth"
+								>employeeDateOfBirth</label
+							>
+							<input
+								id="employeeDateOfBirth"
+								class="occ-input"
+								name="employeeDateOfBirth"
+								type="text"
+							/>
+						</div>
+						<div class="occ-field">
+							<label class="occ-label" for="ticketNumber"
+								>ticketNumber</label
+							>
+							<input
+								id="ticketNumber"
+								class="occ-input"
+								name="ticketNumber"
+								type="text"
+							/>
+						</div>
+					</div>
+				</section>
+			</form>
+		</main>
+	</body>
+</html>

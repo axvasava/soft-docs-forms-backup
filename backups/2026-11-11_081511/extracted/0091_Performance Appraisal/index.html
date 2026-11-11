@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row567" class="text-left row fd-form-masthead ">
+                <div id="col568" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn569" name="revisedOn" class="col-sm-12 text-right  ">Revised 02/25</span>
+                </div>
+                <div id="col570" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele571" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col572" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele573" name="ele21" class="text-left form-title ">Performance Appraisal</h1>
+                </div>
+                <div id="col574" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele575" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row553" class="text-left row ">
+                <div id="col554" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote555" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow12" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn13" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originationDate">Evaluation Date</label>
+                        <input id="originationDate" name="originationDate"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow16" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn17" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall18" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Employee Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow20" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn21" name="quickInputsColumn1" class="col-xs-12 col-sm-2 text-left employeeSearch ">
+                    <div class="text-left  ">
+                        <label for="employeeIDSearch">Employee ID</label>
+                        <input id="employeeIDSearch" name="employeeIDSearch"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn23" name="quickInputsColumn2" class="col-xs-12 col-sm-2 text-left employeeSearch "
+                style=" margin-top: 20px; ">
+                    <button id="personIdSearchBtn" name="personIdSearchBtn" class="text-left btn btn-primary "
+                    style="" undefined="">Search</button>
+                </div>
+                <div id="col299" class="col-xs-12 col-sm-12 text-left employeeSearch ">
+                    <hr id="hr_301" class="text-left  " />
+                </div>
+                <div id="quickInputsColumn25" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeName">Employee Name</label>
+                        <input id="employeeName" name="employeeName" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn27" name="quickInputsColumn4" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeEmail">Employee Email</label>
+                        <input id="employeeEmail" name="employeeEmail" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col314" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="positionSelect">Select a Position for Appraisal</label>
+                        <input id="positionSelect" name="positionSelect"
+                        class="text-left  " required="required" data-bind="autocomplete: { localSource: 'personsPositionsList',  clearOnFocus: true,  validate: true,  labelMask: ['positionTitle'],  formFields: {'departmentGUID':'positionDepartmentGUID', 'payClassGUID':'payClassGUID'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col315" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="currentDepartment">Department</label>
+                        <input id="currentDepartment" name="currentDepartment"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col323" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="payClass">Pay Class</label>
+                        <input id="payClass" name="payClass" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col34" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele35" name="ele35" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow162626" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1726" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1826" name="quickHeadingSmall1826" class="text-center  "
+                    style=" font-weight: bold; ">Evaluator Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow349" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn350" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="evaluatorName">Evaluator Name</label>
+                        <input id="evaluatorName" name="evaluatorName" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn352" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="evaluatorTitle">Select Evaluator Title</label>
+                        <input id="evaluatorTitle" name="evaluatorTitle"
+                        class="text-left  " required="required" type="text" data-bind="autocomplete: { localSource: 'evaluatorPositionsList',  clearOnFocus: true,  validate: true,  labelMask: ['positionTitle'] } "
+                        />
+                    </div>
+                </div>
+                <div id="col354" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele355" name="ele355" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow327" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn328" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmall329" name="quickHeadingSmall" class="text-left  "><strong>Type of Appraisal: </strong></h4>
+                </div>
+                <div id="col330" class="col-xs-1 col-sm-1 text-right  " style=" margin-top: 10px; ">
+                    <input id="regularAppraisalType" name="regularAppraisalType" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="col331" class="col-xs-11 col-sm-2 text-left  " style=" margin-top: 10px; ">
+                    <label id="ele338" name="ele338" class="text-left  " for="regularAppraisalType">Regular</label>
+                </div>
+                <div id="col332" class="col-xs-1 col-sm-1 text-right  " style=" margin-top: 10px; ">
+                    <input id="probationaryAppraisalType" name="probationaryAppraisalType"
+                    class="text-left  " style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="col333" class="col-xs-11 col-sm-2 text-left  " style=" margin-top: 10px; ">
+                    <label id="ele342" name="ele342" class="text-left  " for="probationaryAppraisalType">Probationary</label>
+                </div>
+                <div id="col334" class="col-xs-1 col-sm-1 text-right  " style=" margin-top: 10px; ">
+                    <input id="otherAppraisalType" name="otherAppraisalType" class="text-left  "
+                    style=" transform: scale(1.5); " type="checkbox" />
+                </div>
+                <div id="col335" class="col-xs-11 col-sm-2 text-left  " style=" margin-top: 10px; ">
+                    <label id="ele346" name="ele346" class="text-left  " for="otherAppraisalType">Other</label>
+                </div>
+            </div>
+            <div id="quickParagraphRow361" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn362" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement363" name="quickParagraphElement" class="text-left  "></p>
+                    <h4><strong>Purpose of Appraisal: </strong></h4>To improve individual performance and to create an incentive to change
+                    their behavior if it is warranted.
+                    <p></p>
+                </div>
+                <div id="col370" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele371" name="ele371" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow161414" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1714" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1814" name="quickHeadingSmall1814" class="text-center  "
+                    style=" font-weight: bold; ">Definitions of Degrees of Performance</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow374" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn375" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement376" name="quickParagraphElement" class="text-left  "><strong>Outstanding performance</strong> is consistently characterized
+                        by exceptionally high quality work that leaves little or nothing to be
+                        desired. Employee repeatedly makes contributions to the organization which
+                        are far above the requirements of their position. (5 points)</p>
+                </div>
+            </div>
+            <div id="quickParagraphRow378" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn379" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement380" name="quickParagraphElement" class="text-left  "><strong>Very Good performance</strong> is marked by initiative and high
+                        quality and quantity of work. Employee regularly makes valuable contributions
+                        to the organization. Judgments are sound and employee demonstrates knowledge
+                        and mastery of their position. (4 points)</p>
+                </div>
+            </div>
+            <div id="quickParagraphRow382" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn383" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement384" name="quickParagraphElement" class="text-left  "><strong>Satisfactory performance</strong> is that which meets the requirements
+                        of the position. The position is being covered in an adequate manner and
+                        the responsibilities are being handled competently. (3 points)</p>
+                </div>
+            </div>
+            <div id="quickParagraphRow386" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn387" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement388" name="quickParagraphElement" class="text-left  "><strong>Needs Improvement performance</strong> is marginal. Employee requires
+                        frequent supervision. Does not meet minimum standards for performance;
+                        improvement is expected. (2 points)</p>
+                </div>
+            </div>
+            <div id="quickParagraphRow390" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn391" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement392" name="quickParagraphElement" class="text-left  "><strong>Unsatisfactory performance</strong> does not meet the requirements
+                        of the position. (1 point)</p>
+                </div>
+            </div>
+            <div id="quickInputsRow394" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn395" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_396" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow1614142121" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn171421" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall181421" name="quickHeadingSmall181421" class="text-center  "
+                    style=" font-weight: bold; ">Performance Factors</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow401" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn402" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="qualityOfWork">A. Quality of Work</label>
+                    <select id="qualityOfWork" name="qualityOfWork"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn404" name="quickInputsColumn2" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="qualityOfWorkScore">Score</label>
+                        <input id="qualityOfWorkScore" name="qualityOfWorkScore"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow408" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn409" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="qualityOfWorkComments">Considered were the accuracy, planning, follow-through and attention to
+                        detail of your work together with the necessity for close supervision of
+                        your efforts. Volume of work produced was not considered</label>
+                    <textarea
+                    id="qualityOfWorkComments" name="qualityOfWorkComments" class="text-left  "></textarea>
+                </div>
+                <div id="col411" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele412" name="ele412" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow40124" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn40224" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="quantityOfWork">B. Quantity of Work</label>
+                    <select id="quantityOfWork" name="quantityOfWork"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn40424" name="quickInputsColumn2" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="quantityOfWorkScore">Score</label>
+                        <input id="quantityOfWorkScore" name="quantityOfWorkScore"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow4082525" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn40925" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="quantityOfWorkComments">Considered was your ability to organize work load, amount of work completed,
+                        and extent to which work is kept on schedule.</label>
+                    <textarea id="quantityOfWorkComments"
+                    name="quantityOfWorkComments" class="text-left  "></textarea>
+                </div>
+                <div id="col41125" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele41225" name="ele412" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow401242727" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn4022427" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="workHabits">C. Work Habits</label>
+                    <select id="workHabits" name="workHabits" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn4042427" name="quickInputsColumn2" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="workHabitsScore">Score</label>
+                        <input id="workHabitsScore" name="workHabitsScore" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow40825252828" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn4092528" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="workHabitsComments">Considered was your adherence to established procedures and rules; your
+                        dependability, judgment, persistency and personal habits as they affect
+                        your work in general.</label>
+                    <textarea id="workHabitsComments" name="workHabitsComments"
+                    class="text-left  "></textarea>
+                </div>
+                <div id="col4112528" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele4122528" name="ele412" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow4012427272929" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn402242729" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="attitude">D. Attitude</label>
+                    <select id="attitude" name="attitude" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn404242729" name="quickInputsColumn2" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="attitudeScore">Score</label>
+                        <input id="attitudeScore" name="attitudeScore" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow408252528283030" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn409252830" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="attitudeComments">Considered was your attitude toward your work, your ability to make useful
+                        suggestions, your specialized knowledge of your job, your efforts to acquire
+                        new or broader knowledge of your job.</label>
+                    <textarea id="attitudeComments"
+                    name="attitudeComments" class="text-left  "></textarea>
+                </div>
+                <div id="col411252830" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele412252830" name="ele412" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow40124272729293131" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn40224272931" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="relationships">E. Relationships with People</label>
+                    <select id="relationships" name="relationships"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn40424272931" name="quickInputsColumn2" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="relationshipsScore">Score</label>
+                        <input id="relationshipsScore" name="relationshipsScore"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow4082525282830303232" name="quickTextAreaRow"
+            class="text-left row ">
+                <div id="quickTextAreaColumn40925283032" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="relationshipsComments">Considered were such traits as your tact, courtesy, self-control, patience,
+                        and discretion in dealing with your fellow employees, subordinates, superiors,
+                        and the public.</label>
+                    <textarea id="relationshipsComments" name="relationshipsComments"
+                    class="text-left  "></textarea>
+                </div>
+                <div id="col41125283032" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele41225283032" name="ele412" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow401242727292931313333" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn4022427293133" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="resourcefulness">F. Resourcefulness</label>
+                    <select id="resourcefulness" name="resourcefulness"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn4042427293133" name="quickInputsColumn2" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="resourcefulnessScore">Score</label>
+                        <input id="resourcefulnessScore" name="resourcefulnessScore"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow40825252828303032323434" name="quickTextAreaRow"
+            class="text-left row ">
+                <div id="quickTextAreaColumn4092528303234" name="quickTextAreaColumn"
+                class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="resourcefulnessComments">Considered were ability to handle difficult situations, ability to work
+                        independently and ability to be flexible in adapting to changes.</label>
+                    <textarea
+                    id="resourcefulnessComments" name="resourcefulnessComments" class="text-left  "></textarea>
+                </div>
+                <div id="col4112528303234" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele4122528303234" name="ele412" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow4012427272929313133333535" name="quickInputsRow"
+            class="text-left row ">
+                <div id="quickInputsColumn402242729313335" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="attendance">G. Attendance</label>
+                    <select id="attendance" name="attendance" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Satisfactory">Satisfactory</option>
+                        <option value="Needs Improvement">Needs Improvement</option>
+                        <option value="Unsatisfactory">Unsatisfactory</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn404242729313335" name="quickInputsColumn2" class="col-xs-12 col-sm-1 text-left  ">
+                    <div class="text-left  ">
+                        <label for="attendanceScore">Score</label>
+                        <input id="attendanceScore" name="attendanceScore" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow408252528283030323234343636" name="quickTextAreaRow"
+            class="text-left row ">
+                <div id="quickTextAreaColumn409252830323436" name="quickTextAreaColumn"
+                class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="attendanceComments">Considered was whether you came to work on time each day in conformance
+                        with work hours</label>
+                    <textarea id="attendanceComments" name="attendanceComments"
+                    class="text-left  "></textarea>
+                </div>
+                <div id="col411252830323436" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele412252830323436" name="ele412" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow161414212137" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingRow16141421213737" name="quickHeadingRow" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall18142137" name="quickHeadingSmall18142137" class="text-center  "
+                    style=" font-weight: bold; ">Totals and Explanations</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow481" name="quickInputsRow" class="text-left row ">
+                <div id="col491" class="col-xs-12 col-sm-5 text-left  "><span id="ele492" name="ele492" class="text-left  "> </span>
+                </div>
+                <div id="quickInputsColumn482" name="quickInputsColumn1" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="totalPoints">Total Points</label>
+                        <input id="totalPoints" name="totalPoints" class="text-left  "
+                        type="text" data-bind="calculate: 'qualityOfWorkScore + quantityOfWorkScore + workHabitsScore + attitudeScore + relationshipsScore + resourcefulnessScore + attendanceScore' "
+                        />
+                    </div>
+                </div>
+                <div id="col488" class="col-xs-12 col-sm-4 text-left hidden ">
+                    <div class="text-left  ">
+                        <label for="overallPerformance">overallPerformance (hidden)</label>
+                        <input id="overallPerformance" name="overallPerformance"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow485" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn486" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmall487" name="quickHeadingSmall" class="text-center  "><strong>Overall Performance</strong><br /> <span data-bind="html: overallPerformance"></span></h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow495" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn496" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="overallExplanationComments">Explanation/Comments</label>
+                    <textarea id="overallExplanationComments"
+                    name="overallExplanationComments" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickTextAreaRow499" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn500" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="areasOfImprovement">Describe areas of improvement since last review.</label>
+                    <textarea id="areasOfImprovement"
+                    name="areasOfImprovement" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickDropdownRow503" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn504" name="quickDropdownColumn" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="trialProbPeriod">Trial period/probationary period extension recommended: (if applicable)</label>
+                    <select
+                    id="trialProbPeriod" name="trialProbPeriod" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+                <div id="col506" name="col506" class="col-xs-12 col-sm-6 text-left  "
+                data-bind="visible: ( ( trialProbPeriod() == 'Yes' ) ) ">
+                    <div class="text-left  ">
+                        <label for="howLongTrialPeriod">
+                            <br />How Long?</label>
+                        <input id="howLongTrialPeriod" name="howLongTrialPeriod"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col509" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele510" name="ele510" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow1614142121374343" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingRow1614142121373743" name="quickHeadingRow" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1814213743" name="quickHeadingSmall1814213743"
+                    class="text-center  " style=" font-weight: bold; ">Areas for Professional Development</h4>
+                </div>
+            </div>
+            <div id="quickTextAreaRow526" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn527" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="professionalDevelopmentComments">Identify areas in which professional development activities are necessary
+                        to further enhance the employee’s professional competence and success.</label>
+                    <textarea
+                    id="professionalDevelopmentComments" name="professionalDevelopmentComments"
+                    class="text-left  "></textarea>
+                </div>
+                <div id="col529" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele530" name="ele530" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow277" name="quickInputsRow" class="text-left row "
+            style="overflow: auto;  border:1px solid #365563; border-radius:15px 15px 15px 15px; padding: 15px ">
+                <div id="col515" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="evaluatorComments">Evaluator's Comments</label>
+                    <textarea id="evaluatorComments" name="evaluatorComments"
+                    class="text-left  "></textarea>
+                </div>
+                <div id="quickInputsColumn278" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="facultySign">Evaluator: Please Enter Your Name</label>
+                        <input id="facultySign" name="facultySign"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn280" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="facultySignDate">Date</label>
+                        <input id="facultySignDate" name="facultySignDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow5224848" name="quickInputsRow" class="text-left row employeeSignature ">
+                <div id="quickInputsColumn52348" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_52448" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow169920203535" name="quickHeadingRow" class="text-left row employeeSignature "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1792035" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1892035" name="quickHeadingSmall1892035" class="text-center  "
+                    style=" font-weight: bold; ">Employee Signature and Acknowledgement</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow273" name="quickParagraphRow" class="text-left row employeeSignature "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn274" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_275" name="p_263" class="text-left  ">This evaluation has been discussed with me and entering my name below
+                        and submitting this document acknowledges receipt of a copy of this evaluation
+                        and in no way signifies agreement with the aforementioned comments.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow283" name="quickInputsRow" class="text-left row employeeSignature "
+            style="overflow: auto;  border:1px solid #365563; border-radius:15px 15px 15px 15px; padding: 15px ">
+                <div id="col518" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="employeeComments">Employee's Comments</label>
+                    <textarea id="employeeComments" name="employeeComments"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow533" name="quickInputsRow" class="text-left row employeeSignature ">
+                <div id="quickInputsColumn534" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeFinalSign">Employee: Please Enter Your Name</label>
+                        <input id="employeeFinalSign"
+                        name="employeeFinalSign" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn536" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeFinalSignDate">Date</label>
+                        <input id="employeeFinalSignDate" name="employeeFinalSignDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col538" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele539" name="ele539" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickHeadingRow292" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn293" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall294" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+                <div id="col295" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="personGUID">personGUID (hidden)</label>
+                        <input id="personGUID" name="personGUID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col302" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col305" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hrDocType">hrDocType (hidden)</label>
+                        <input id="hrDocType" name="hrDocType" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col311" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="departmentGUID">departmentGUID (hidden)</label>
+                        <input id="departmentGUID" name="departmentGUID"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col320" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="payClassGUID">payClassGUID (hidden)</label>
+                        <input id="payClassGUID" name="payClassGUID"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col357" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">originatorErpId (hidden)</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickParagraphRow542" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn543" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_544" name="p_263" class="text-left  "><strong>NOTE:</strong> If you would like to download a copy of this form
+                        for your personal records, click the download icon in the menu below the
+                        form before submitting/approving.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

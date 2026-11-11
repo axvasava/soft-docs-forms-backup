@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row1" class="text-left row "><i style="color:#777777; padding-left:2%"> EmptyRow</i>
+            </div>
+            <div id="quickInputsRow3" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn4" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <select id="Year" name="Year" class="text-left  " required="required">
+                        <option value=""></option>
+                    </select>
+                    <label for="Year">Year</label>
+                </div>
+                <div id="quickInputsColumn6" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="quickInputsText7">Label2</label>
+                        <input id="quickInputsText7" name="quickInputsText2" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

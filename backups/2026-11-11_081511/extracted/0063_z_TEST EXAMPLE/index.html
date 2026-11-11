@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow118" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col119" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele120" name="ele37" class="text-right  "><i>Revised MM/YY</i></h5>
+                </div>
+                <div id="HeaderLeft121" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo122" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://www.oaklandcc.edu/branding/images/logos/occ-horizontal-green.jpg"
+                    />
+                </div>
+                <div id="HeaderRight123" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_124" name="h2_27" class="text-center  "><b>Different Form</b></h2>
+                </div>
+                <div id="col125" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele126" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow2" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn3" name="quickInputsColumn1" class="col-xs-12 col-sm-7 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Employee Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col127" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="date">Date</label>
+                        <input id="date" name="date" class="text-left  " required="required"
+                        data-bind="originationDate" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow6" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn7" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Employee ID</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn9" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">Email</label>
+                        <input id="originatorEmail" name="originatorEmail" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow12" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn13" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="numberOfDays">Number of Days</label>
+                        <input id="numberOfDays" name="numberOfDays" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn15" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="amountMoney">amount</label>
+                        <input id="amountMoney" name="amountMoney" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn17" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="total">Total</label>
+                        <input id="total" name="total" class="text-left  " type="text"
+                        data-bind="calculate: 'numberOfDays * amount' " />
+                    </div>
+                </div>
+            </div>
+            <div id="radioRow30" name="radioRow" class="text-left row ">
+                <div id="radioCol31" name="radioCol1" class="col-xs-12 col-sm-3 text-left  ">
+                    <input id="radioOne32" name="radioGroup" class="text-left  " type="checkbox"
+                    value="one" />
+                    <label for="radioOne32">Label1</label>
+                </div>
+                <div id="radioCol33" name="radioCol2" class="col-xs-12 col-sm-3 text-left  ">
+                    <input id="radioTwo34" name="radioGroup1" class="text-left  " type="radio"
+                    value="two" />
+                    <label for="radioTwo34">Label2</label>
+                </div>
+                <div id="radioCol35" name="radioCol3" class="col-xs-12 col-sm-3 text-left  ">
+                    <input id="radioThree36" name="radioGroup1" class="text-left  " type="radio"
+                    value="three" />
+                    <label for="radioThree36">Label3</label>
+                </div>
+                <div id="radioCol37" name="radioCol4" class="col-xs-12 col-sm-3 text-left  ">
+                    <input id="radioFour38" name="radioGroup1" class="text-left  " type="radio"
+                    value="four" />
+                    <label for="radioFour38">Label4</label>
+                </div>
+            </div>
+            <div id="quickInputsRow40" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn41" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="radio42" name="radioGroup2" class="text-center  " type="radio"
+                    value="radio1" />
+                </div>
+                <div id="quickInputsColumn43" name="quickInputsColumn2" class="col-xs-11 col-sm-2 text-left  ">
+                    <label id="quickInputsText44" name="quickInputsText2" class="text-left  "
+                    for="radio42">Option 1</label>
+                </div>
+                <div id="quickInputsColumn45" name="quickInputsColumn3" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="radio46" name="radioGroup2" class="text-center  " type="radio"
+                    value="radio2" />
+                </div>
+                <div id="quickInputsColumn47" name="quickInputsColumn4" class="col-xs-11 col-sm-2 text-left  ">
+                    <label id="quickInputsText48" name="quickInputsText4" class="text-left  "
+                    for="radio46">Option 2</label>
+                </div>
+                <div id="quickInputsColumn49" name="quickInputsColumn5" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="radio50" name="radioGroup2" class="text-center  " type="radio"
+                    value="radio3" />
+                </div>
+                <div id="quickInputsColumn51" name="quickInputsColumn6" class="col-xs-11 col-sm-2 text-left  ">
+                    <label id="quickInputsText52" name="quickInputsText6" class="text-left  "
+                    for="radio50">Option 3</label>
+                </div>
+                <div id="quickInputsColumn53" name="quickInputsColumn7" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="radio54" name="radioGroup2" class="text-center  " type="radio"
+                    value="radio4" />
+                </div>
+                <div id="quickInputsColumn55" name="quickInputsColumn8" class="col-xs-11 col-sm-2 text-left  ">
+                    <label id="quickInputsText56" name="quickInputsText8" class="text-left  "
+                    for="radio54">Option 4</label>
+                </div>
+            </div>
+            <div id="radioRow58" name="radioRow" class="text-left row ">
+                <div id="radioCol59" name="radioCol1" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="radioOne60" name="radioGroup3" class="text-left  " type="radio"
+                    value="one" />
+                    <label for="radioOne60">Label1</label>
+                </div>
+                <div id="radioCol61" name="radioCol2" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="radioTwo62" name="radioGroup3" class="text-left  " type="radio"
+                    value="two" />
+                    <label for="radioTwo62">Label2</label>
+                </div>
+                <div id="radioCol63" name="radioCol3" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="radioThree64" name="radioGroup3" class="text-left  " type="radio"
+                    value="three" />
+                    <label for="radioThree64">Label3</label>
+                </div>
+                <div id="radioCol65" name="radioCol4" class="col-xs-12 col-sm-12 text-left  ">
+                    <input id="radioFour66" name="radioGroup3" class="text-left  " type="radio"
+                    value="four" />
+                    <label for="radioFour66">Label4</label>
+                </div>
+            </div>
+            <div id="quickDropdownRow68" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn69" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="quickDropdownElement70">Dropdown Label</label>
+                    <select id="quickDropdownElement70" name="quickDropdownElement"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Option1">Option1</option>
+                        <option value="Option2">Option2</option>
+                        <option value="Option Whatever">Option Whatever</option>
+                        <option value="Option4">Option4</option>
+                        <option value="Option5">Option5</option>
+                        <option value="Option6">Option6</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow72" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn73" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="quickTextAreaElement74">TextArea Label</label>
+                    <textarea id="quickTextAreaElement74" name="quickTextAreaElement"
+                    class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow76" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn77" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="quickHeadingLargest78" name="quickHeadingLargest" class="text-left  ">Largest Heading</h1>
+                </div>
+            </div>
+            <div id="quickHeadingRow80" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn81" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h5 id="quickHeadingSmallest82" name="quickHeadingSmallest" class="text-left  ">Smallest Heading</h5>
+                </div>
+            </div>
+            <div id="HeaderRow84" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="HeaderLeft85" name="HeaderLeft" class="col-xs-12 col-sm-6 text-left  ">
+                    <h4 id="HeaderLogo86" name="HeaderLogo" class="text-center  " style=" padding:10% 0% 0% 0%;  margin:0% 0% 0% 0%; ">[Change Element To Image]</h4>
+                </div>
+                <div id="HeaderRight87" name="HeaderRight" class="col-xs-12 col-sm-6 text-left  ">
+                    <h1 id="HeaderTitle88" name="HeaderTitle" class="text-center  ">Form Heading</h1>
+                </div>
+            </div>
+            <div id="quickParagraphRow90" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn91" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement92" name="quickParagraphElement" class="text-left  ">Cras tristique quis quam quis volutpat. Phasellus rhoncus feugiat egestas.
+                        Integer vel varius mi. Nulla facilisi. Sed posuere leo efficitur elit laoreet,
+                        at ultricies eros ornare. Aliquam dolor quam, aliquet ut nisi sit amet,
+                        lacinia tempus orci. Suspendisse gravida lectus a nibh accumsan, sed hendrerit
+                        ipsum feugiat. Vivamus nec ornare eros. Etiam varius, magna non pulvinar
+                        suscipit, turpis erat dignissim orci, laoreet tempus quam libero a leo.
+                        Aenean nulla lectus, rhoncus sed bibendum ac, suscipit vel velit.</p>
+                </div>
+            </div>
+            <div id="quickParagraphWithHeaderRow94" name="quickParagraphWithHeaderRow"
+            class="text-left row ">
+                <div id="col95" class="col-xs-12 col-sm-12 text-left  ">
+                    <h3 id="quickParagraphHeader96" name="quickParagraphHeader" class="text-left  ">Paragraph Header</h3>
+                </div>
+                <div id="quickParagraphWithHeaderColumn97" name="quickParagraphWithHeaderColumn"
+                class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphWithHeaderElement98" name="quickParagraphWithHeaderElement"
+                    class="text-left  ">Cras tristique quis quam quis volutpat. Phasellus rhoncus feugiat egestas.
+                        Integer vel varius mi. Nulla facilisi. Sed posuere leo efficitur elit laoreet,
+                        at ultricies eros ornare. Aliquam dolor quam, aliquet ut nisi sit amet,
+                        lacinia tempus orci. Suspendisse gravida lectus a nibh accumsan, sed hendrerit
+                        ipsum feugiat. Vivamus nec ornare eros. Etiam varius, magna non pulvinar
+                        suscipit, turpis erat dignissim orci, laoreet tempus quam libero a leo.
+                        Aenean nulla lectus, rhoncus sed bibendum ac, suscipit vel velit.</p>
+                </div>
+            </div>
+            <div id="row100" class="text-left row ">
+                <div id="quickListUnorderedColumn101" name="quickListUnorderedColumn"
+                class="col-xs-12 col-sm-12 text-left  ">
+                    <ul id="quickListUnorderedElement102" name="quickListUnorderedElement"
+                    class="text-left  ">
+                        <li>Quisque nisl sapien, dapibus vitae dui et, eleifend semper est. Nullam
+                            ultrices aliquam scelerisque.</li>
+                        <li>TEST Row</li>
+                        <li>Nunc mattis nisl id egestas.</li>
+                        <li>Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum
+                            ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</li>
+                        <li>Nam faucibus, velit eu sodales consectetur, ipsum sem mattis ante, a gravida
+                            orci mauris at orci. Mauris eu fermentum sapien.</li>
+                        <li>Integer in nisl nec justo porttitor pretium at volutpat purus.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quickListOrderedRow104" name="quickListOrderedRow" class="text-left row ">
+                <div id="quickListOrderedColumn105" name="quickListOrderedColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <ol id="quickListOrderedElement106" name="quickListOrderedElement" class="text-left  ">
+                        <li>Quisque nisl sapien, dapibus vitae dui et, eleifend semper est. Nullam
+                            ultrices aliquam scelerisque.</li>
+                        <li>Nunc pellentesque mattis nisl id egestas.</li>
+                        <li>Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum
+                            ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</li>
+                        <li>Nam faucibus, velit eu sodales consectetur, ipsum sem mattis ante, a gravida
+                            orci mauris at orci. Mauris eu fermentum sapien.</li>
+                        <li>Integer in nisl nec justo porttitor pretium at volutpat purus.</li>
+                    </ol>
+                </div>
+            </div>
+            <div id="quickHeadingRow134" name="quickHeadingRow" class="text-left row developer  "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn135" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall136" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

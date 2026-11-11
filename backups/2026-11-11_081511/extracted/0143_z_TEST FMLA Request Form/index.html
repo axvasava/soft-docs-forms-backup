@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="loadingSpinner.css" />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col3" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele4" name="ele37" class="text-right  "><i>Revised 02/25</i></h5>
+                </div>
+                <div id="HeaderLeft5" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo6" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    />
+                </div>
+                <div id="HeaderRight7" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_8" name="h2_27" class="text-center  "><b>FMLA Leave Request Form</b></h2>
+                </div>
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele10" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="quickParagraphRow12" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn13" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_14" name="p_263" class="text-left  ">Leave under the federal Family and Medical Leave Act (FMLA) of 1993 shall
+                        be granted to eligible employees for the birth or adoption of a child;
+                        for the care of a child, spouse, or parent who has a serious health condition;
+                        or when an employee is unable to perform the function of his or her position
+                        due to a serious health condition. Eligible employees are entitled to up
+                        to 12 work weeks of unpaid family and medical leave during each consecutive
+                        12-month period for which eligibility criteria have been met. Employees
+                        must substitute accrued sick, vacation, and personal leave time for unpaid
+                        FMLA. The initial 12-month period is measured forward from the date the
+                        employee first takes FMLA leave. The next 12-month period begins the first
+                        time FMLA leave is taken after completion of any previous 12-month period.
+                        Requests for Family and Medical Leave should be made at least 30 days in
+                        advance of the leave, if possible.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow16" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn17" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall18" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Employee Information</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow20" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn21" name="quickInputsColumn1" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeLastName">Last Name</label>
+                        <input id="employeeLastName" name="employeeLastName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn25" name="quickInputsColumn3" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeFirstName">First Name</label>
+                        <input id="employeeFirstName" name="employeeFirstName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn23" name="quickInputsColumn2" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeMiddleInitial">Middle Initial</label>
+                        <input id="employeeMiddleInitial" name="employeeMiddleInitial"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col27" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Employee ID</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " required="required" readonly="true" />
+                    </div>
+                </div>
+                <div id="col28" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeCampus">Campus</label>
+                        <input id="employeeCampus" name="employeeCampus" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col29" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="jobTitle">Job Title</label>
+                        <input id="jobTitle" name="jobTitle" class="text-left  "
+                        required="required" readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow37" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn38" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_39" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickParagraphRow187" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn188" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                    <p id="p_189" name="p_12139" class="text-left  "><strong>Note: </strong>If the Supervisor shown after selecting your Job
+                        Title is incorrect, please start typing to search for and select the correct
+                        Supervisor.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow161" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn162" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSearch">Supervisor Name</label>
+                        <input id="supervisorSearch" name="supervisorSearch"
+                        class="text-left  " required="required" type="text" data-bind="autocomplete: { integrationSource: 'Etrieve_Security_Get_Active_Employees',  clearOnFocus: true, labelMask: ['UserName'],  formFields: {'supervisorEmail':'Email'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col190" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorEmail">Supervisor Email</label>
+                        <input id="supervisorEmail" name="supervisorEmail"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow1666" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn176" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall186" name="quickHeadingSmall186" class="text-center  "
+                    style=" font-weight: bold; ">Employee Leave Information</h4>
+                </div>
+            </div>
+            <div id="quickDropdownRow44" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn45" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="reasonForLeave">Reason for Leave</label>
+                    <select id="reasonForLeave" name="reasonForLeave"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Serious illness of employee">Serious illness of employee</option>
+                        <option value="Serious illness of spouse child or parent">Serious illness of spouse child or parent</option>
+                        <option value="Birth of a child">Birth of a child</option>
+                        <option value="Placement of a child with employee for adoption or foster care - attach legal confirmation">Placement of a child with employee for adoption or foster care - attach
+                            legal confirmation</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow48" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( reasonForLeave() == 'Serious illness of spouse child or parent' ) ) ">
+                <div id="quickInputsColumn49" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="individualWithSeriousIllnessName">Name of Individual</label>
+                        <input id="individualWithSeriousIllnessName"
+                        name="individualWithSeriousIllnessName" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn51" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="relationship">Relationship</label>
+                        <input id="relationship" name="relationship" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow54" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( reasonForLeave() == 'Birth of a child' ) ) ">
+                <div id="quickInputsColumn55" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="anticipatedDeliveryDate">Anticipated Delivery Date</label>
+                        <input id="anticipatedDeliveryDate" name="anticipatedDeliveryDate"
+                        class="text-left  " required="required" type="text" data-bind="datepicker"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow58" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( reasonForLeave() == 'Placement of a child with employee for adoption or foster care - attach legal confirmation' ) ) ">
+                <div id="quickInputsColumn59" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="anticipatedPlacementDate">Anticipated Placement Date</label>
+                        <input id="anticipatedPlacementDate"
+                        name="anticipatedPlacementDate" class="text-left  " required="required"
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickDropdownRow62" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn63" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="leaveTakenAs">Leave will be taken as:</label>
+                    <select id="leaveTakenAs" name="leaveTakenAs"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="A block of time">A block of time</option>
+                        <option value="Intermittently (e.g. separate blocks of time due to a single illness)">Intermittently (e.g. separate blocks of time due to a single illness)</option>
+                        <option
+                        value="Temporarily reduced work schedule">Temporarily reduced work schedule</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickInputsRow66" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( leaveTakenAs() == 'A block of time' ) ) ">
+                <div id="quickInputsColumn67" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="leaveFromDate">From Date</label>
+                        <input id="leaveFromDate" name="leaveFromDate" class="text-left  "
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn69" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="leaveToDate">Leave to Date</label>
+                        <input id="leaveToDate" name="leaveToDate" class="text-left  "
+                        required="required" type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickTextAreaRow72" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( leaveTakenAs() == 'Intermittently (e.g. separate blocks of time due to a single illness)' ) ) ">
+                <div id="quickTextAreaColumn73" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="intermittentLeaveDescription">Please describe in detail:</label>
+                    <textarea id="intermittentLeaveDescription"
+                    name="intermittentLeaveDescription" class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickTextAreaRow76" name="quickTextAreaRow" class="text-left row "
+            data-bind="visible: ( ( leaveTakenAs() == 'Temporarily reduced work schedule' ) ) ">
+                <div id="quickTextAreaColumn77" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="tempReducedScheduleDescription">Please describe in detail:</label>
+                    <textarea id="tempReducedScheduleDescription"
+                    name="tempReducedScheduleDescription" class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow80" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn81" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_82" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow84" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn85" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall86" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Employee Signature and Acknowledgement</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow88" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn89" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_90" name="p_263" class="text-left  ">By entering my name below and submitting this form I understand that it
+                        is my responsibility to furnish medical certification of the serious health
+                        condition, if applicable, on the form provided by the College. I also understand
+                        that any leave taken as designated FMLA leave (paid and/or unpaid) counts
+                        toward my 12-week FMLA entitlement.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow92" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn93" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSignature">Employee: Enter Name</label>
+                        <input id="employeeSignature" name="employeeSignature"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn95" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeSignatureDate">Date</label>
+                        <input id="employeeSignatureDate" name="employeeSignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow801919" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn8119" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_8219" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow101" name="quickHeadingRow" class="text-left row humanResources "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn102" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall103" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">To be Completed by Human Resources</h4>
+                </div>
+            </div>
+            <div id="quickDropdownRow105" name="quickDropdownRow" class="text-left row humanResources ">
+                <div id="quickDropdownColumn106" name="quickDropdownColumn" class="col-xs-12 col-sm-8 text-left  ">
+                    <label for="worked12Months">Has the employee worked for the College for at least 12 months?</label>
+                    <select
+                    id="worked12Months" name="worked12Months" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+                <div id="col108" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hireDate">Hire Date</label>
+                        <input id="hireDate" name="hireDate" class="text-left  "
+                        data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickDropdownRow112" name="quickDropdownRow" class="text-left row humanResources ">
+                <div id="quickDropdownColumn113" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="twelveHundredFiftyHours">Has the employee worked 1250 hourse during the previous12 months? (does
+                        not include paid vacation, sick, or personal time)</label>
+                    <select id="twelveHundredFiftyHours"
+                    name="twelveHundredFiftyHours" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickDropdownRow116" name="quickDropdownRow" class="text-left row humanResources ">
+                <div id="quickDropdownColumn117" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="additionOfChildChildPlacement">Does the leave request result from the birth or addition of a child, or
+                        placement of a child in foster care with the employee?</label>
+                    <select id="additionOfChildChildPlacement"
+                    name="additionOfChildChildPlacement" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div id="quickTextAreaRow120" name="quickTextAreaRow" class="text-left row humanResources ">
+                <div id="quickTextAreaColumn121" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="medicalCertSupportLeave">Does the medical certification (required for employee’s own or family
+                        member’s serious health condition) support the request for leave?</label>
+                    <select
+                    id="medicalCertSupportLeave" name="medicalCertSupportLeave" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+            </div>
+            <div id="quickInputsRow125" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn126" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="numberFMLAEntitlement">How man weeks/hours of FMLA leave entitlement remainin at the time of
+                            this leave request?</label>
+                        <input id="numberFMLAEntitlement" name="numberFMLAEntitlement"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickDropdownRow129" name="quickDropdownRow" class="text-left row humanResources ">
+                <div id="quickDropdownColumn130" name="quickDropdownColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="eligibleFMLA">Based on the answers above, is the employee eligible for FMLA?</label>
+                    <select
+                    id="eligibleFMLA" name="eligibleFMLA" class="text-left  ">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        </select>
+                </div>
+            </div>
+            <div id="quickInputsRow133" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn134" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="employeeNotified">Has the employee been notified?</label>
+                    <select id="employeeNotified" name="employeeNotified"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn136" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="leaveNotificationFormSent">Date Leave Notification Form Sent</label>
+                        <input id="leaveNotificationFormSent"
+                        name="leaveNotificationFormSent" class="text-left  " required="required"
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow8019192828" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn811928" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_821928" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickHeadingRow842929" name="quickHeadingRow" class="text-left row humanResources "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn8529" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall8629" name="quickHeadingSmall8629" class="text-center  "
+                    style=" font-weight: bold; ">Human Resources Signature and Acknowledgement</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow145" name="quickParagraphRow" class="text-left row humanResources "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn146" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_147" name="p_263" class="text-left  ">Please enter you name below and submit this form to indicate review of
+                        this FMLA report.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow923131" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn9331" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hrSignature">HR Staff: Enter Name</label>
+                        <input id="hrSignature" name="hrSignature"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn9531" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hrSignatureDate">Date</label>
+                        <input id="hrSignatureDate" name="hrSignatureDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow9231313636" name="quickInputsRow" class="text-left row supervisor ">
+                <div id="quickInputsColumn933136" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supSignature">Supervisor: Enter Name</label>
+                        <input id="supSignature" name="supSignature"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn953136" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supSignatureDate">Date</label>
+                        <input id="supSignatureDate" name="supSignatureDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow80191928283232" name="quickInputsRow" class="text-left row humanResources ">
+                <div id="quickInputsColumn81192832" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_82192832" class="text-left  " />
+                </div>
+            </div>
+            <div id="quickInputsRow157" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn158" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left loading ">
+                        <label for="loadingSpinnerRow">Loading Spinner (do not remove)</label>
+                        <input id="loadingSpinnerRow" name="loadingSpinnerRow"
+                        class="text-left loading " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow165" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn166" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall167" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+                <div id="col168" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hrDocType">hrDocType</label>
+                        <input id="hrDocType" name="hrDocType" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col169" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col170" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="routeSupervisorEmail">routeSupervisorEmail (hidden)</label>
+                        <input id="routeSupervisorEmail"
+                        name="routeSupervisorEmail" class="text-left  " />
+                    </div>
+                </div>
+                <div id="col177" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="employeeName">employeeName (hidden)</label>
+                        <input id="employeeName" name="employeeName"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

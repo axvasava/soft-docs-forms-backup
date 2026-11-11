@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row540" class="text-left row fd-form-masthead ">
+                <div id="col541" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn542" name="revisedOn" class="col-sm-12 text-right  ">Revised 11/24</span>
+                </div>
+                <div id="col543" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele544" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col545" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele546" name="ele21" class="text-left form-title ">Internship Institutional Agreement</h1>
+                </div>
+                <div id="col547" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele548" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row536" class="text-left row ">
+                <div id="col537" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote538" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="row552" name="" class="text-left section-header contractInfo ">
+                <div id="col553" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele554" name="ele585" class="text-left icon "><i class="fa-solid fa-file-contract" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele555" name="ele595" class="text-left  ">Contract Information</h2>
+                </div>
+            </div>
+            <div id="row557" name="" class="text-left row contractInfo ">
+                <div id="col558" class="col-xs-12 col-sm-12 text-left fd-callout fd-callout--info "><span id="ele559" name="ele23024" class="text-left  ">The information below will be used to populate the 'About this Contract' section of the form and for filing the final document in Etrieve Content at the end of the workflow.</span>
+                </div>
+            </div>
+            <div id="quickInputsRow474" name="quickInputsRow" class="text-left row contractInfo ">
+                <div id="quickInputsColumn477" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="effectiveAcademicYear">Effective Academic Year of Contract</label>
+                    <select id="effectiveAcademicYear"
+                    name="effectiveAcademicYear" class="text-left  " required="required" data-bind="dynamicYear: { format: 'YYYY-YY[-1,  1]' } ">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn479" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <label for="effectiveTerm">Effective Term of Contract</label>
+                    <select id="effectiveTerm" name="effectiveTerm"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="SU">SU</option>
+                        <option value="WI">WI</option>
+                        <option value="FA">FA</option>
+                    </select>
+                </div>
+                <div id="quickInputsColumn475" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="effectiveDate">Effective Date of Contract</label>
+                        <input id="effectiveDate" name="effectiveDate"
+                        class="text-left  " required="required" type="text" data-bind="datepicker"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn481" name="quickInputsColumn4" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="companyName">Name of Placement Site/Company/Organization for Contract</label>
+                        <input
+                        id="companyName" name="companyName" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col484" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="companyAddress">Address</label>
+                        <input id="companyAddress" name="companyAddress" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col485" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="companyCity">City</label>
+                        <input id="companyCity" name="companyCity" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col486" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="companyState">State</label>
+                        <input id="companyState" name="companyState" class="text-left  "
+                        required="required" data-bind="state" />
+                    </div>
+                </div>
+                <div id="col487" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="companyZipCode">Zip</label>
+                        <input id="companyZipCode" name="companyZipCode" class="text-left  "
+                        required="required" data-bind="mask: 'zip' " />
+                    </div>
+                </div>
+                <div id="col522" class="col-xs-12 col-sm-9 text-left  ">
+                    <div class="text-left  ">
+                        <label for="programOfStudy">Program of Study for Contract</label>
+                        <input id="programOfStudy" name="programOfStudy"
+                        class="text-left  " required="required" placeholder="Start typing to search."
+                        data-bind="autocomplete: { localSource: 'programsDropdown',  minSearchLength: 2,  clearOnFocus: true,  validate: true,  labelMask: ['title', ' | ', 'code'],  selectedMask: ['title'],  formFields: {'programCode':'code'} } "
+                        />
+                    </div>
+                </div>
+                <div id="col523" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="programCode">Program Code</label>
+                        <input id="programCode" name="programCode" class="text-left  "
+                        required="required" readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow10787879090" name="quickInputsRow" class="text-left row contractInfo ">
+                <div id="quickInputsColumn1088790" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText1098790" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="row561" name="" class="text-left section-header ">
+                <div id="col562" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele563" name="ele585" class="text-left icon "><i class="fa-solid fa-file-signature" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele564" name="ele595" class="text-left  ">Agreement Terms</h2>
+                </div>
+            </div>
+            <div id="row566" name="" class="col-sm-12 text-left fd-callout fd-callout--info ">
+                <div id="col567" class="col-xs-12 col-sm-12 text-left fd-callout-header "><span id="ele568" name="ele293" class="text-left  "><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
+                    <h4
+                    id="ele569" name="ele2943435363738" class="text-left  ">Agreement Review</h4>
+                </div>
+                <div id="col570" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele571" name="ele2973435363738" class="text-left  ">Please review the agreement terms below carefully before signing.</p>
+                </div>
+            </div>
+            <div id="row589" class="text-left row ">
+                <div id="col590" class="col-xs-12 col-sm-12 text-left  ">
+                    <h3 id="ele591" name="ele591" class="text-left fd-subsection-header ">About This Agreement</h3>
+                    <p id="p_594" name="p_594" class="col-sm-12 text-left  ">This Agreement, entered into on the date of <span data-bind="html: effectiveDate"></span>,
+                        ("Effective Date"), establishes the terms between Oakland Community College
+                        ("OCC"), and <span data-bind="html: companyName"></span> (the "Placement
+                        Site") located at <span data-bind="html: companyAddress"> </span>,
+                        <span
+                        data-bind="html: companyCity"></span>, <span data-bind="html: companyState"></span>  <span data-bind="html: companyZipCode"></span>,
+                            will cooperate to provide internship opportunities for OCC Students ("Interns").</p>
+                    <h3
+                    id="ele611" name="ele611" class="col-xs-12 col-sm-12 text-left fd-subsection-header ">Purpose &amp; General Considerations</h3>
+                        <p id="ele612" name="ele612"
+                        class="text-left  ">The Placement Site will offer supervised learning experiences for Interns,
+                            including internships, clinical placements, cooperative education, practicum,
+                            service learning, capstone projects, work-study assignments, or other approved
+                            activities by OCC. It must be an established physical location, not be
+                            a home-based or cottage-industry work site unless written approval is obtained
+                            from OCC.</p>
+                        <p id="ele621" name="ele621" class="text-left  ">The <strong>OCC Contact</strong> and <strong>Placement Site Contact</strong> listed
+                            in the <strong>Contract Information</strong> section will be the primary
+                            representatives for this Agreement. Either party may replace a representative
+                            by written notice.</p>
+                        <p id="ele623" name="ele623" class="text-left  ">This Agreement starts on the Effective Date and remains in effect until
+                            terminated by either party with thirty (30) days' written notice. However,
+                            Interns actively in a learning experience at termination may complete their
+                            placement. The placement site and OCC will each designate a contact person
+                            (the “Internship Coordinator”) for this agreement. The names and addresses
+                            of the initial internship coordinators are as follows. Changes can be made
+                            in writing at any time by either party.</p>
+                        <p id="ele625" name="ele625"
+                        class="text-left  ">The placement site and OCC will each designate a contact person (the “Internship
+                            Coordinator”) for this agreement. The names and addresses of the initial
+                            internship coordinators are as follows. Changes can be made in writing
+                            at any time by either party.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow120" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn121" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">OCC Faculty/Program Coordinator Name</label>
+                        <input id="originatorDisplayName"
+                        name="originatorDisplayName" class="text-left  " readonly="true" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="col460" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="contactTitle">OCC Faculty/Program Coordinator Title</label>
+                        <input id="contactTitle"
+                        name="contactTitle" class="text-left  " required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow124" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn125" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="contactForPlacementSite">Placement Site Contact Name</label>
+                        <input id="contactForPlacementSite"
+                        name="contactForPlacementSite" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col528" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="placementSiteContactTitle">Placement Site Contact Title</label>
+                        <input id="placementSiteContactTitle"
+                        name="placementSiteContactTitle" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow392" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn393" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="placementSiteEmail">Email for Placement Site Contact</label>
+                        <input id="placementSiteEmail"
+                        name="placementSiteEmail" class="text-left  " required="required" type="text"
+                        data-bind="email" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn395" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="placementSiteEmailValidate">Please re-enter email to validate.</label>
+                        <input id="placementSiteEmailValidate"
+                        name="placementSiteEmailValidate" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickParagraphRow128" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn129" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphElement130" name="quickParagraphElement" class="text-left  ">The parties are independent entities. This Agreement does not create an
+                        employment, agency, partnership, joint venture, or other legal relationship
+                        between OCC and the Placement Site. Intern duties are for academic requirements,
+                        not employment, and are supervised by Placement Site personnel.</p>
+                    <p id="ele629"
+                    name="ele629" class="text-left  ">Neither party shall discriminate against Interns based on protected status.
+                        However, this agreement does not require placing an Intern who cannot meet
+                        essential learning requirements, with or without reasonable accommodation.</p>
+                    <p
+                    id="ele631" name="ele631" class="text-left  ">Interns must follow Placement Site policies and procedures, report serious
+                        safety or personnel concerns to OCC and the Placement Site, and maintain
+                        health insurance during the program.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow132" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn133" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="singleLocation" name="locationGroup" class="text-left  " style=" transform: scale(1.5); "
+                    required="required" type="radio" value="singleLocation" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn135" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="singleLocationLabel" name="singleLocationLabel" class="text-left  "
+                    for="singleLocation">Single location of placement site.</label>
+                </div>
+            </div>
+            <div id="quickInputsRow154" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( locationGroup() == 'singleLocation' ) ) ">
+                <div id="quickInputsColumn157" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="singleLocationAddress">Location Address</label>
+                        <input id="singleLocationAddress" name="singleLocationAddress"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col439" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="singleLocationCity">Location City</label>
+                        <input id="singleLocationCity" name="singleLocationCity"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="col440" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="singleLocationState">Location State</label>
+                        <input id="singleLocationState" name="singleLocationState"
+                        class="text-left  " required="required" data-bind="state" />
+                    </div>
+                </div>
+                <div id="col441" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="singleLocationZipCode">Location Zip Code</label>
+                        <input id="singleLocationZipCode" name="singleLocationZipCode"
+                        class="text-left  " required="required" data-bind="mask: 'zip' " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow138" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn139" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="multipleLocations" name="locationGroup" class="text-left  "
+                    style=" transform: scale(1.5); " required="required" type="radio" value="multipleLocations"
+                    transform:="" scale(1.5);="" />
+                </div>
+                <div id="quickInputsColumn141" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="multipleLocationsLabel" name="multipleLocationsLabel" class="text-left  "
+                    for="multipleLocations">Multiple locations of Placement Site</label>
+                </div>
+            </div>
+            <div id="quickInputsRow161" name="quickInputsRow" class="text-left row "
+            data-bind="visible: ( ( locationGroup() == 'multipleLocations' ) ) ">
+                <div id="quickInputsColumn164" name="quickInputsColumn2" class="col-xs-12 col-sm-11 text-left  ">
+                    <h5 id="p_167" name="p_167" class="text-left  "><strong>Only those locations listed below:</strong></h5>
+                </div>
+            </div>
+            <div id="quickInputsRow170" name="quickInputsRow" class="text-left row multipleLocationsRow "
+            data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addLocationBtn',  minLength: 1 }, visible: ( ( multipleLocations() ) ), visible: ( ( locationGroup() == 'multipleLocations' ) )   ">
+                <div id="quickInputsColumn173" name="quickInputsColumn2" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="multipleLocationsLocation">Enter a Location</label>
+                        <input id="multipleLocationsLocation" name="multipleLocationsLocation"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="col448" class="col-xs-12 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="multipleLocationsCity">Location City</label>
+                        <input id="multipleLocationsCity" name="multipleLocationsCity"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="col449" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="multipleLocationsState">Location State</label>
+                        <input id="multipleLocationsState" name="multipleLocationsState"
+                        class="text-left  " data-bind="state" />
+                    </div>
+                </div>
+                <div id="col450" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="multipleLocationsZip">Location Zip Code</label>
+                        <input id="multipleLocationsZip" name="multipleLocationsZip"
+                        class="text-left  " required="required" data-bind="mask: 'zip' " />
+                    </div>
+                </div>
+                <div id="col176" class="col-xs-12 col-sm-1 text-left button " style=" margin-top: 30px; ">
+                    <button id="ele177" name="ele177" class="text-left btn-delete-item " style=""
+                    undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col516" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele517" name="ele517" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow180" name="quickInputsRow" class="text-left row button "
+            data-bind="visible: ( ( locationGroup() == 'multipleLocations' ) ) ">
+                <div id="quickInputsColumn181" name="quickInputsColumn1" class="col-xs-12 col-sm-3 text-left  ">
+                    <button id="addLocationBtn" name="addLocationiBtn" class="text-left btn btn-primary "
+                    style="" undefined="">Add Location</button>
+                </div>
+                <div id="col519" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele520" name="ele520" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow144" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn145" name="quickInputsColumn1" class="col-xs-1 col-sm-1 text-center  ">
+                    <input id="allLocations" name="locationGroup" class="text-left  " style=" transform: scale(1.5); "
+                    required="required" type="radio" value="allLocations" transform:="" scale(1.5);=""
+                    />
+                </div>
+                <div id="quickInputsColumn147" name="quickInputsColumn2" class="col-xs-11 col-sm-11 text-left  ">
+                    <label id="allLocationsCheckLabel" name="allLocationsCheckLabel" class="text-left  "
+                    for="allLocations">All locations of Placement Site</label>
+                </div>
+            </div>
+            <div id="quickInputsRow188" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn189" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText190" name="quickInputsText1" class="text-left  "
+                    style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickHeadingRow193" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn194" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall195" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Responsibilities of OCC</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow197" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn198" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickInputsText199" name="quickInputsText1" class="text-left  ">OCC shall:</p>
+                </div>
+            </div>
+            <div id="quickParagraphRow229" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn230" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "><span id="quickParagraphElement231" name="quickParagraphElement" class="text-left  "><ol>
+  <li>Provide course information and objectives, and ensure Interns meet academic and program requirements consistent with OCC’s program.</li>
+  <li>Inform Interns of applicable Placement Site policies, professional conduct expectations, and responsibilities under this Agreement.</li>
+  <li>Retain responsibility for academic instruction, evaluation, grading, and the awarding of academic credit.</li>
+  <li>Provide oversight, maintain communication with the Placement Site and Interns, monitor Intern progress, and help resolve any issues during the placement.</li>
+  <li>Require interns to dress professionally following the standards set by the Placement Site.</li>
+  <li>Maintain the confidentiality of Placement Site information and comply with privacy laws.</li>
+  <li>Maintain required insurance coverage as outlined in the <strong>Insurance</strong> section.</li>
+</ol></span>
+                </div>
+            </div>
+            <div id="quickHeadingRow1933434" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn19434" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall19534" name="quickHeadingSmall19534" class="text-center  "
+                    style=" font-weight: bold; ">Responsibilities of Placement Site</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow1973535" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn19835" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickInputsText19935" name="quickInputsText19935" class="text-left  ">The Placement Site shall:</p>
+                </div>
+            </div>
+            <div id="quickParagraphRow2293636" name="quickParagraphRow" class="text-left row ">
+                <div id="quickParagraphColumn23036" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "><span id="quickParagraphElement23136" name="quickParagraphElement23136"
+                    class="text-left  "><ol>
+  <li>Provide supervised learning that aligns with OCC program goals, and orient Interns to Placement Site policies, procedures, and expectations.</li>
+  <li>Assign a supervisor to oversee Intern activities and communicate with OCC about Intern progress and any concerns.</li>
+  <li>Ensure a safe work environment with necessary equipment and resources, and inform about workplace risks.</li>
+  <li>Comply with applicable laws regarding nondiscrimination, harassment, labor standards, and internship requirements.</li>
+  <li>Unless otherwise agreed, Interns will be regarded as trainees without any expectation of receiving compensation.</li>
+  <li>For paid internships, compensate Interns in accordance with applicable laws and agreed terms.</li>
+  <li>Ensure confidentiality of student education records and personal information, comply with FERPA, and limit disclosure as required by law.</li>
+  <li>Cooperate with OCC on Intern investigations and resolve concerns informally when appropriate.</li>
+  <li>Maintain required insurance coverage as outlined in the <strong>Insurance</strong> section.</li>
+</ol></span>
+                </div>
+            </div>
+            <div id="quickHeadingRow193343456565858" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn194345658" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall195345658" name="quickHeadingSmall195345658"
+                    class="text-center  " style=" font-weight: bold; ">Insurance Requirements</h4>
+                </div>
+            </div>
+            <div id="row638" class="text-left row ">
+                <div id="col639" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele640" name="ele640" class="text-left  ">Each party shall maintain insurance coverage that is both legally required
+                        and suitable for its role under this Agreement. Upon reasonable request,
+                        each party must provide certificates of insurance or other acceptable evidence
+                        of coverage to demonstrate compliance with these requirements.</p>
+                    <span
+                    id="ele642" name="ele642" class="text-left  ">
+                        <ol>
+                            <li>Common Insurance Requirements (OCC and Placement Site):
+                                <p>Each party shall obtain and maintain:</p>
+                                <ul>
+                                    <li> <strong>Commercial General Liability (CGL) insurance</strong>, and if
+                                        necessary, <strong>Commercial Umbrella Liability insurance</strong>, with
+                                        limits of not less than <strong>$1,000,000 per occurrence</strong>. Such
+                                        coverage shall be written on an occurrence basis and shall include premises
+                                        and operations liability, products-completed operations liability, personal
+                                        and advertising injury, and contractual liability (including liability
+                                        assumed under an insured contract).</li>
+                                    <li> <strong>Workers’ Compensation and Employers’ Liability Insurance</strong>
+as
+                                        required by Michigan law.</li>
+                                </ul>
+                            </li>
+                            <li>Additional Requirements for Placement Site:
+                                <p>In addition to the coverage listed above, the Placement Site shall maintain:</p>
+                                <ul>
+                                    <li> <strong>Professional Liability Insurance</strong>
+
+                                        <p>Professional errors and omissions liability insurance appropriate to its
+                                            profession with limits of not less than <strong>$1,000,000 per loss</strong>,
+                                            covering professional errors, acts, or omissions arising from activities
+                                            and services performed under this Agreement.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                        </span>
+                </div>
+            </div>
+            <div id="quickHeadingRow19334345656" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn1943456" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall1953456" name="quickHeadingSmall1953456" class="text-center  "
+                    style=" font-weight: bold; ">Indemnification</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow22936363738394041424344454647515152535757" name="quickParagraphRow"
+            class="text-left row ">
+                <div id="quickParagraphColumn23036373839404142434445464751525357" name="quickParagraphColumn"
+                class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="quickParagraphRow22936363738394041424344454647515152535357" name="quickParagraphRow22936363738394041424344454647515152535357"
+                    class="text-left  ">To the extent permitted by law, claims, actions, causes of action, costs,
+                        expenses, and losses (including attorneys’ fees) arising out of or resulting
+                        from the acts or omissions of either party, or their respective employees,
+                        students, or agents shall be governed by applicable statutory and common
+                        law principles of indemnification, contribution, and equitable restitution.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow193343456565959" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn194345659" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall195345659" name="quickHeadingSmall195345659"
+                    class="text-center  " style=" font-weight: bold; ">General Agreement Terms</h4>
+                </div>
+                <div id="col644" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele645" name="ele645" class="text-left  "></p>
+                    <ol>
+                        <li>This Agreement shall be governed by the laws of the State of Michigan.</li>
+                        <li>This Agreement is the complete understanding between parties and can only
+                            be amended in writing by both.</li>
+                        <li>If any part of this Agreement is found invalid or unenforceable, the rest
+                            will remain effective. Not enforcing a provision does not waive that provision
+                            or any other rights.</li>
+                        <li>Neither is liable for delays or failures due to events beyond their control,
+                            such as natural disasters, war, labor disruptions, or similar force majeure
+                            events as long as they promptly notify the other party.</li>
+                        <li>Each party confirms that the signer has the authority to bind their respective
+                            party to this Agreement.</li>
+                    </ol>
+                    <p></p>
+                </div>
+            </div>
+            <div id="quickHeadingRow193343456565959626265656868717174747777" name="quickHeadingRow"
+            class="text-left row " style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn194345659626568717477" name="quickHeadingColumn"
+                class="col-xs-12 col-sm-12 text-left  " style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall195345659626568717477" name="quickHeadingSmall195345659626568717477"
+                    class="text-center  " style=" font-weight: bold; ">Signatures</h4>
+                </div>
+            </div>
+            <div id="quickParagraphRow411" name="quickParagraphRow" class="text-left row requestDaysHours "
+            style="overflow: auto;  background-color:#FFFFFF;  padding: 10px ">
+                <div id="quickParagraphColumn412" name="quickParagraphColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#c8dfea;  border:1px solid #365563; border-radius:0px 15px 15px 15px; padding: 10px ">
+                    <p id="p_413" name="p_263" class="text-left  ">By entering your name below and approving this form in the Workflow, you
+                        acknowledge that all of the information above is true and accurate.</p>
+                </div>
+            </div>
+            <div id="quickInputsRow401" name="quickInputsRow" class="text-left row ">
+                <div id="col457" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="coordinatorTitleForSignature">Faculty/Program Coordinator Title</label>
+                        <input id="coordinatorTitleForSignature"
+                        name="coordinatorTitleForSignature" class="text-left  " readonly="true"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn402" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="programCoordinatorSignature">Faculty/Program Coordinator Signature</label>
+                        <input id="programCoordinatorSignature"
+                        name="programCoordinatorSignature" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn404" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="programCoordinatorSignatureDate">Signature Date</label>
+                        <input id="programCoordinatorSignatureDate" name="programCoordinatorSignatureDate"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow1883333555558586161646467677070737380809191" name="quickInputsRow"
+            class="text-left row ">
+                <div id="quickInputsColumn18933555861646770738091" name="quickInputsColumn1"
+                class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText19033555861646770738091" name="quickInputsText1"
+                    class="text-left  " style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickInputsRow426" name="quickInputsRow" class="text-left row companySection ">
+                <div id="quickInputsColumn427" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="companyNameForSignature">Placement Site/Company/Organization Name</label>
+                        <input id="companyNameForSignature"
+                        name="companyNameForSignature" class="text-left  " readonly="true" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="col463" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="companyContactTitleForSignature">Placement Site/Company/Organization Contact Title</label>
+                        <input id="companyContactTitleForSignature"
+                        name="companyContactTitleForSignature" class="text-left  " readonly="true"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow4018181" name="quickInputsRow" class="text-left row companySection ">
+                <div id="quickInputsColumn40281" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="companyContactSignature">Placement Site/Company/Organization Signature</label>
+                        <input id="companyContactSignature"
+                        name="companyContactSignature" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn40481" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="companyContactSignatureDate">Signature Date</label>
+                        <input id="companyContactSignatureDate" name="companyContactSignatureDate"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow188333355555858616164646767707073738080" name="quickInputsRow"
+            class="text-left row companySection ">
+                <div id="quickInputsColumn189335558616467707380" name="quickInputsColumn1"
+                class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="quickInputsText190335558616467707380" name="quickInputsText1"
+                    class="text-left  " style="border-color:; border-width:;" />
+                </div>
+            </div>
+            <div id="quickHeadingRow430" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn431" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:black;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h4 id="quickHeadingSmall432" name="quickHeadingSmall" class="text-center  "
+                    style=" font-weight: bold; ">Developer Section (hidden)</h4>
+                </div>
+            </div>
+            <div id="quickInputsRow434" name="quickInputsRow" class="text-left row developer ">
+                <div id="quickInputsColumn435" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorEmail">originatorEmail (hidden)</label>
+                        <input id="originatorEmail" name="originatorEmail"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn437" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formCode">formCode (hidden)</label>
+                        <input id="formCode" name="formCode" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="HeaderRight5" name="HeaderRight" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="HeaderTitle6" name="HeaderTitle" class="text-center  "><strong> Party Registration </strong></h1>
+                </div>
+            </div>
+            <div id="quickInputsRow8" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn9" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn11" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">ID</label>
+                        <input id="originatorErpId" name="originatorErpId" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow14" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn15" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="Address">Address</label>
+                        <input id="Address" name="Address" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow18" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn19" name="quickInputsColumn1" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="userCity">City</label>
+                        <input id="userCity" name="userCity" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn21" name="quickInputsColumn2" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="userState">State</label>
+                        <input id="userState" name="userState" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col23" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="userZip">Zip</label>
+                        <input id="userZip" name="userZip" class="text-left  " type="text"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow27" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn28" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h2 id="quickHeadingLarge29" name="quickHeadingLarge" class="text-center  "><strong> Event Details </strong></h2>
+                </div>
+            </div>
+            <div id="quickInputsRow94" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn95" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="partyDate">Party Date</label>
+                        <input id="partyDate" name="partyDate" class="text-left  "
+                        type="text" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn97" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="contactPhone">Contact Phone</label>
+                        <input id="contactPhone" name="contactPhone" class="text-left  "
+                        type="text" data-bind="mask: '(999) 999-9999' " />
+                    </div>
+                </div>
+                <div id="quickInputsColumn99" name="quickInputsColumn3" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="numberGuests">Number of Guests (Limit 2)</label>
+                        <input id="numberGuests" name="numberGuests"
+                        class="text-left  " type="text" data-bind="numeric: { type: 'int',  allowNegative: false,  max: 2 } "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow35" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn36" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmall37" name="quickHeadingSmall" class="text-left  ">Choice of Meals</h4>
+                </div>
+            </div>
+            <div id="radioRow39" name="radioRow" class="text-left row ">
+                <div id="radioCol40" name="radioCol1" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="choicePizza" name="choicePizza" class="text-left  " type="checkbox"
+                    value="pizza" />
+                    <label for="choicePizza">Pizza</label>
+                </div>
+                <div id="radioCol42" name="radioCol2" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="choiceHotdog" name="choiceHotdog" class="text-left  " type="checkbox"
+                    value="hotdog" />
+                    <label for="choiceHotdog">Hotdogs</label>
+                </div>
+                <div id="radioCol44" name="radioCol3" class="col-xs-12 col-sm-4 text-left  ">
+                    <input id="choiceChicken" name="choiceChicken" class="text-left  " type="checkbox"
+                    value="chicken" />
+                    <label for="choiceChicken">Chicken Fingers</label>
+                </div>
+            </div>
+            <div id="quickDropdownRow61" name="quickDropdownRow" class="text-left row ">
+                <div id="quickDropdownColumn62" name="quickDropdownColumn" class="col-xs-12 col-sm-4 text-left  ">
+                    <label for="choiceIceCream">Choice of Ice Cream</label>
+                    <select id="choiceIceCream" name="choiceIceCream"
+                    class="text-left  ">
+                        <option value=""></option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Vanilla">Vanilla</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div id="col101" name="col101" class="col-xs-12 col-sm-4 text-left  "
+                data-bind="visible: ( ( choiceIceCream() == 'Other' ) ) ">
+                    <div class="text-left  ">
+                        <label for="otherIceCream">Other Ice Cream Choice</label>
+                        <input id="otherIceCream" name="otherIceCream"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow3599" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn369" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmall379" name="quickHeadingSmall379" class="text-left  ">Choice of Drink</h4>
+                </div>
+            </div>
+            <div id="radioRow68" name="radioRow" class="text-left row ">
+                <div id="radioCol69" name="radioCol1" class="col-xs-12 col-sm-3 text-left  ">
+                    <input id="choiceJuice" name="drinkGroup" class="text-left  " type="radio"
+                    value="juice" />
+                    <label for="choiceJuice">Juice</label>
+                </div>
+                <div id="radioCol71" name="radioCol2" class="col-xs-12 col-sm-9 text-left  ">
+                    <input id="choiceSoda" name="drinkGroup" class="text-left  " type="radio"
+                    value="soda" />
+                    <label for="choiceSoda">Soda</label>
+                </div>
+            </div>
+            <div id="quickTextAreaRow74" name="quickTextAreaRow" class="text-left row ">
+                <div id="quickTextAreaColumn75" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="specialRequests">Do you have any special requests?</label>
+                    <textarea id="specialRequests"
+                    name="specialRequests" class="text-left  " placeholder="Please limit to no more than 3 Special Requests"></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow35991212" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn36912" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h4 id="quickHeadingSmall37912" name="quickHeadingSmall37912" class="text-left  ">The birthday package includes:</h4>
+                </div>
+            </div>
+            <div id="row81" class="text-left row ">
+                <div id="quickListUnorderedColumn82" name="quickListUnorderedColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <ul id="quickListUnorderedElement83" name="quickListUnorderedElement"
+                    class="text-left  ">
+                        <li>Decorations</li>
+                        <li>Party Favors</li>
+                        <li>Meal, Drink, and Dessert</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quickHeadingRow105" name="quickHeadingRow" class="text-left row ">
+                <div id="quickHeadingColumn106" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <h3 id="quickHeadingMedium107" name="quickHeadingMedium" class="text-center  ">Office Use Only</h3>
+                </div>
+            </div>
+            <div id="itemList" name="itemList" class="text-left row " data-bind="dynamicList: true, dynamicListProperties: { addButtonID: 'addRow',  removeButtonID: 'removeRow' } ">
+                <div id="quickInputsColumn110" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="additionalItem">Additional Item</label>
+                        <input id="additionalItem" name="additionalItem"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn112" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="personEmail">Email</label>
+                        <input id="personEmail" name="personEmail" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn114" name="quickInputsColumn3" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="itemCost">Cost</label>
+                        <input id="itemCost" name="itemCost" class="text-left  " type="text"
+                        data-bind="money" />
+                    </div>
+                </div>
+                <div id="col127" class="col-xs-12 col-sm-1 text-left  ">
+                    <button id="removeRowButton" name="removeRowButton" class="text-left  "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col116" class="col-xs-12 col-sm-12 text-left  "><span id="ele117" name="ele117" class="text-left  "><hr style="border-top: 2px dashed black;" /></span>
+                </div>
+            </div>
+            <div id="quickInputsRow120" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn121" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="addRow" name="addRow" class="text-left  " style="" undefined="">Add Item</button>
+                </div>
+                <div id="quickInputsColumn123" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <button id="removeRow" name="removeRow" class="text-left  " style="" undefined="">Remove Item</button>
+                </div>
+            </div>
+            <div id="quickInputsRow131" name="quickInputsRow" class="text-left row ">
+                <div id="col134" class="col-xs-12 col-sm-8 text-left  "><span id="ele135" name="ele135" class="text-left  "><!-- Empty --></span>
+                </div>
+                <div id="quickInputsColumn132" name="quickInputsColumn1" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="totalCost">Total Cost</label>
+                        <input id="totalCost" name="totalCost" class="text-left  "
+                        type="text" data-bind="calculate: 'itemList:itemCost', money " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

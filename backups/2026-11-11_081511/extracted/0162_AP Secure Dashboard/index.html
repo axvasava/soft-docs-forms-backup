@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+  <title>Content Workflow</title>
+  <link href="jquery-ui.min.css" rel="stylesheet" />
+  <link href="bootstrap.min.css" rel="stylesheet"/>
+  <link href="theme.default.css" rel="stylesheet" />
+  <link href="css.css" rel="stylesheet" />
+  <link href="loading.css" rel="stylesheet" />
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">FVDPX2ED2USH-271559771-285524</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">9d85dc3c-62ca-418b-86a5-b3493502318c</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://softdocs.sharepoint.com/ProfessionalServices/_layouts/15/DocIdRedir.aspx?ID=FVDPX2ED2USH-271559771-285524, FVDPX2ED2USH-271559771-285524</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body class="container-fluid">
+  <div class="page">
+    <div id="loading" class="loading"></div>
+    <!--<div class="row">
+      <div class="col-xs-12">
+        <div class="text-center">
+          <img src="https://www.oaklandcc.edu/branding/images/logos/occ-stacked-green1.jpg" alt="Oakland CC Logo" style="width: 350px; height: auto;" class="logo">
+        </div>
+      </div>
+    </div>-->
+    <div class="row header">
+      <!--<div class="col-xs-4" id="fullStats"></div>-->
+      <h3 class="col-xs-4 col-xs-offset-4 text-center">
+        <b>Accounts Payable Secure Dashboard</b>
+        <br/>
+        <small>AP Status = Needs Review</small>
+      </h3>
+      <button type="button" id="refreshBtn" class="col-xs-2 col-xs-offset-2 btn btn-success btn-lg">
+        Refresh <strong>&#10227;</strong>
+      </button>
+    </div>
+    <div class="row">
+      <div id="tableCanvas"></div>
+    </div>
+    <div class="loading"></div>
+  </div>
+  <div class="footer">
+      <small>Documents in this dashboard:<br>
+      AP W9<br>
+      AP Vendor Direct Deposit</small>
+  </div>
+</body>
+</html>

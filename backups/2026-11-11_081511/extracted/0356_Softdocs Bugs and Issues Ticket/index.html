@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Softdocs Bugs and Issues Ticket</title>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/occ-framework/occForms.css"
+		/>
+	</head>
+	<body>
+		<main class="occ-form">
+			<div class="occ-theme-toggle-row">
+				<div class="occ-theme-toggle">
+					<label class="occ-theme-switch">
+						<input
+							id="occThemeToggle"
+							class="occ-theme-switch__input"
+							type="checkbox"
+							data-occ-theme-toggle
+							aria-label="Use dark mode"
+						/>
+						<span
+							class="occ-theme-switch__track"
+							aria-hidden="true"
+						>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--on"
+								>Dark</span
+							>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--off"
+								>Light</span
+							>
+							<span class="occ-theme-switch__thumb"></span>
+						</span>
+					</label>
+				</div>
+			</div>
+
+			<header class="occ-masthead">
+				<div class="occ-masthead__inner">
+					<div class="occ-masthead__identity">
+						<img
+							class="occ-masthead__logo"
+							src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+							alt="Oakland Community College"
+						/>
+					</div>
+					<div class="occ-masthead__content">
+						<h1>Softdocs Bugs and Issues Ticket</h1>
+						<p class="occ-heading-description">
+							Report a problem with an existing Softdocs form.
+						</p>
+					</div>
+				</div>
+			</header>
+
+			<p class="occ-help">
+				<em
+					>Fields marked with an asterisk (<span
+						class="occ-required"
+						aria-hidden="true"
+						>*</span
+					>) are required.</em
+				>
+			</p>
+
+			<form id="softdocsBugsAndIssuesTicket">
+				<section
+					class="occ-section"
+					aria-labelledby="your-information-heading"
+				>
+<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-circle-user"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="your-information-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="your-information-content"
+								>
+									Your Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Review the name and email associated with your
+								account.
+							</p>
+						</div>
+					</header>
+					<div id="your-information-content" class="occ-section__content">
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="originatorDisplayName"
+									>Name</label
+								>
+								<input
+									id="originatorDisplayName"
+									class="occ-input"
+									name="originatorDisplayName"
+									type="text"
+									autocomplete="name"
+									readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="originatorEmail"
+									>Email</label
+								>
+								<input
+									id="originatorEmail"
+									class="occ-input"
+									name="originatorEmail"
+									type="email"
+									autocomplete="email"
+									readonly
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class="occ-section"
+					aria-labelledby="problem-details-heading"
+				>
+<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-file-circle-exclamation"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="problem-details-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="problem-details-content"
+								>
+									Form and Problem Details
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Identify the affected form and describe what
+								happened.
+							</p>
+						</div>
+					</header>
+					<div id="problem-details-content" class="occ-section__content">
+						<div class="occ-field">
+							<label class="occ-label" for="formIdentifier">
+								Form Name or Number
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</label>
+							<input
+								id="formIdentifier"
+								class="occ-input"
+								name="formIdentifier"
+								type="text"
+								aria-describedby="formIdentifierHelp formIdentifierError"
+								required
+							/>
+							<p id="formIdentifierHelp" class="occ-help">
+								Enter the form's name or number.
+							</p>
+							<p
+								id="formIdentifierError"
+								class="occ-error"
+								hidden
+							>
+								Enter the form name or number.
+							</p>
+						</div>
+
+						<div class="occ-field">
+							<label class="occ-label" for="attemptedAction">
+								What were you trying to do?
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</label>
+							<textarea
+								id="attemptedAction"
+								class="occ-textarea"
+								name="attemptedAction"
+								aria-describedby="attemptedActionError"
+								required
+							></textarea>
+							<p
+								id="attemptedActionError"
+								class="occ-error"
+								hidden
+							>
+								Describe what you were trying to do.
+							</p>
+						</div>
+
+						<div class="occ-field">
+							<label class="occ-label" for="observedBehavior">
+								What happened?
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</label>
+							<textarea
+								id="observedBehavior"
+								class="occ-textarea"
+								name="observedBehavior"
+								aria-describedby="observedBehaviorError"
+								required
+							></textarea>
+							<p
+								id="observedBehaviorError"
+								class="occ-error"
+								hidden
+							>
+								Describe what happened.
+							</p>
+						</div>
+
+						<div class="occ-field">
+							<label class="occ-label" for="expectedBehavior">
+								What did you expect to happen?
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</label>
+							<textarea
+								id="expectedBehavior"
+								class="occ-textarea"
+								name="expectedBehavior"
+								aria-describedby="expectedBehaviorError"
+								required
+							></textarea>
+							<p
+								id="expectedBehaviorError"
+								class="occ-error"
+								hidden
+							>
+								Describe what you expected to happen.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class="occ-section"
+					aria-labelledby="issue-timing-heading"
+				>
+<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-clock"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="issue-timing-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="issue-timing-content"
+								>
+									When it Happened
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Tell us when you encountered the issue.
+							</p>
+						</div>
+					</header>
+					<div id="issue-timing-content" class="occ-section__content">
+						<div class="occ-field">
+							<label class="occ-label" for="issueTiming"
+								>When did this happen?</label
+							>
+							<textarea
+								id="issueTiming"
+								class="occ-textarea"
+								name="issueTiming"
+								aria-describedby="issueTimingHelp"
+							></textarea>
+							<p id="issueTimingHelp" class="occ-help">
+								Approximate timing and what was happening around
+								the issue are both helpful.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="occ-section" aria-labelledby="impact-heading">
+<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-people-group"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="impact-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="impact-content"
+								>
+									Impact
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Tell us whether the issue is blocking work and
+								who it affects.
+							</p>
+						</div>
+					</header>
+					<div id="impact-content" class="occ-section__content">
+						<fieldset
+							id="isBlockingGroup"
+							class="occ-fieldset occ-choice-field"
+							aria-describedby="isBlockingError"
+							aria-required="true"
+						>
+							<legend class="occ-legend">
+								Is this preventing you from completing the form?
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</legend>
+							<div
+								class="occ-choice-group occ-choice-group--compact"
+							>
+								<label
+									class="occ-choice-card"
+									for="isBlockingYes"
+								>
+									<input
+										id="isBlockingYes"
+										name="isBlocking"
+										type="radio"
+										value="Yes"
+										required
+									/>
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title"
+											>Yes</span
+										>
+									</span>
+								</label>
+								<label
+									class="occ-choice-card"
+									for="isBlockingNo"
+								>
+									<input
+										id="isBlockingNo"
+										name="isBlocking"
+										type="radio"
+										value="No"
+										required
+									/>
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title"
+											>No</span
+										>
+									</span>
+								</label>
+							</div>
+							<p id="isBlockingError" class="occ-error" hidden>
+								Select whether this is preventing you from
+								completing the form.
+							</p>
+						</fieldset>
+
+						<fieldset
+							id="affectedUsersGroup"
+							class="occ-fieldset occ-choice-field"
+							aria-describedby="affectedUsersError"
+							aria-required="true"
+						>
+							<legend class="occ-legend">
+								Who is affected?
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</legend>
+							<div
+								class="occ-choice-group occ-choice-group--compact"
+							>
+								<label
+									class="occ-choice-card"
+									for="affectedUsersMe"
+								>
+									<input
+										id="affectedUsersMe"
+										name="affectedUsers"
+										type="radio"
+										value="Just me"
+										required
+									/>
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title"
+											>Just me</span
+										>
+									</span>
+								</label>
+								<label
+									class="occ-choice-card"
+									for="affectedUsersMultiple"
+								>
+									<input
+										id="affectedUsersMultiple"
+										name="affectedUsers"
+										type="radio"
+										value="Multiple people"
+										required
+									/>
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title"
+											>Multiple people</span
+										>
+									</span>
+								</label>
+								<label
+									class="occ-choice-card"
+									for="affectedUsersEveryone"
+								>
+									<input
+										id="affectedUsersEveryone"
+										name="affectedUsers"
+										type="radio"
+										value="Everyone using the form"
+										required
+									/>
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title"
+											>Everyone using the form</span
+										>
+									</span>
+								</label>
+								<label
+									class="occ-choice-card"
+									for="affectedUsersNotSure"
+								>
+									<input
+										id="affectedUsersNotSure"
+										name="affectedUsers"
+										type="radio"
+										value="Not sure"
+										required
+									/>
+									<span class="occ-choice-card__body">
+										<span class="occ-choice-card__title"
+											>Not sure</span
+										>
+									</span>
+								</label>
+							</div>
+							<p id="affectedUsersError" class="occ-error" hidden>
+								Select who is affected.
+							</p>
+						</fieldset>
+					</div>
+				</section>
+
+				<section
+					class="occ-section"
+					aria-labelledby="supporting-information-heading"
+				>
+<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-paperclip"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="supporting-information-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="supporting-information-content"
+								>
+									Supporting Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Provide files or additional details that can
+								help us investigate.
+							</p>
+						</div>
+					</header>
+					<div id="supporting-information-content" class="occ-section__content">
+						<section aria-labelledby="supporting-files-heading">
+							<header class="occ-subsection-heading">
+								<h3 id="supporting-files-heading">
+									Supporting Screenshots or Files
+								</h3>
+								<p class="occ-heading-description">
+									Use attachments to include screenshots,
+									error messages, documents, or examples
+									showing the problem.
+								</p>
+							</header>
+						</section>
+
+						<div class="occ-field">
+							<label class="occ-label" for="additionalInformation"
+								>Is there anything else we should know?</label
+							>
+							<textarea
+								id="additionalInformation"
+								class="occ-textarea"
+								name="additionalInformation"
+							></textarea>
+						</div>
+					</div>
+				</section>
+
+				<section
+					class="occ-section developer"
+					aria-labelledby="developer-information-heading"
+				>
+<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+						>
+							<i class="fa-solid fa-code"></i>
+						</span>
+						<div class="occ-section-heading__content">
+							<h2 id="developer-information-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="developer-information-content"
+								>
+									Developer Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+									>
+										<i class="fa-solid fa-chevron-up"></i>
+									</span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								If you can see this section, please contact support.
+							</p>
+						</div>
+					</header>
+					<div id="developer-information-content" class="occ-section__content">
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="originatorErpId"
+									>Employee ID</label
+								>
+								<input
+									id="originatorErpId"
+									class="occ-input"
+									name="originatorErpId"
+									type="text"
+									readonly
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+			</form>
+		</main>
+	</body>
+</html>

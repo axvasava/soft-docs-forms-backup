@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col3" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele4" name="ele37" class="text-right  "><i>Revised 07/26</i></h5>
+                </div>
+                <div id="HeaderLeft5" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo6" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    alt="this is an alt tag for screen readers" />
+                </div>
+                <div id="HeaderRight7" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_8" name="h2_27" class="text-center  "><b>Counselor Schedule Request</b></h2>
+                </div>
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele10" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row137" class="text-left row ">
+                <div id="col138" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote139" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="row35" name="" class="text-left section-header ">
+                <div id="col36" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele37" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele38" name="ele595" class="text-left  ">Employee Information</h2>
+                </div>
+            </div>
+            <div id="quickInputsRow40" name="quickInputsRow" class="text-left row employeeInfo ">
+                <div id="quickInputsColumn43" name="quickInputsColumn3" class="col-xs-6 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorDisplayName">Counselor Name</label>
+                        <input id="originatorDisplayName" name="originatorDisplayName"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col47" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="originatorErpId">Counselor ID</label>
+                        <input id="originatorErpId" name="originatorErpId"
+                        class="text-left  " required="required" readonly="true" />
+                    </div>
+                </div>
+                <div id="col49" class="col-xs-4 col-sm-4 text-left  ">
+                    <label for="campus">Campus</label>
+                    <select id="campus" name="campus" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Auburn Hills">Auburn Hills</option>
+                        <option value="Highland Lakes">Highland Lakes</option>
+                        <option value="Orchard Ridge">Orchard Ridge</option>
+                        <option value="Royal Oak">Royal Oak</option>
+                    </select>
+                </div>
+            </div>
+            <div id="row55" name="" class="text-left section-header ">
+                <div id="col56" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele57" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele58" name="ele595" class="text-left  ">Schedule Change Information</h2>
+                </div>
+            </div>
+            <div id="addScheduleChangeRow" name="addScheduleChangeRow" class="text-left row scheduleChangeInfo "
+            style="overflow: auto;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px "
+            data-bind="dynamicList: true, dynamicListProperties: {addButtonID: 'addScheduleChange',  removeButtonID: 'removeScheduleChange'}">
+                <div id="col140" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="requestedDate">Requested Date</label>
+                        <input id="requestedDate" name="requestedDate" class="text-left  "
+                        required="required" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col61" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="requestedStart">Requested Start</label>
+                        <input id="requestedStart" name="requestedStart"
+                        class="text-left  " required="required" data-bind="timepicker: { minTime: '7:00 AM',  maxTime: '8:00 PM' } "
+                        />
+                    </div>
+                </div>
+                <div id="col62" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="requestedEnd">Requested End</label>
+                        <input id="requestedEnd" name="requestedEnd" class="text-left  "
+                        required="required" data-bind="timepicker: { minTime: '7:00 AM',  maxTime: '8:00 PM' } "
+                        />
+                    </div>
+                </div>
+                <div id="col95" class="col-xs-1 col-sm-1 text-center  ">
+                    <button id="ele96" name="ele96" class="text-left btn btn-danger btn-delete-item "
+                    style=" margin-top:25px " undefined="" data-bind="dynamicListRemoveRow: true">X</button>
+                </div>
+                <div id="col63" class="col-xs-6 col-sm-6 text-left  ">
+                    <label for="requestedType">Requested Type</label>
+                    <select id="requestedType" name="requestedType"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Quick Day Change">Quick Day Change</option>
+                        <option value="Schedule Correction">Schedule Correction</option>
+                        <option value="Master (semester) Schedule Worksheet">Master (semester) Schedule Worksheet</option>
+                    </select>
+                </div>
+                <div id="col64" class="col-xs-4 col-sm-4 text-left  ">
+                    <label for="scheduleCode">Schedule Code</label>
+                    <select id="scheduleCode" name="scheduleCode" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="BART">BART</option>
+                        <option value="Carryforward">Carryforward</option>
+                        <option value="Caseload">Caseload</option>
+                        <option value="Class">Class</option>
+                        <option value="Class Visit">Class Visit</option>
+                        <option value="Dist CNS">Dist CNS</option>
+                        <option value="DISTTRVL">DISTTRVL</option>
+                        <option value="Early Alert">Early Alert</option>
+                        <option value="Event">Event</option>
+                        <option value="Follow Up">Follow Up</option>
+                        <option value="Hold">Hold</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Mtg">Mtg</option>
+                        <option value="Mtg Comm">Mtg Comm</option>
+                        <option value="Mtg Div">Mtg Div</option>
+                        <option value="Mtg Staff">Mtg Staff</option>
+                        <option value="Mtg. Case">Mtg. Case</option>
+                        <option value="On Campus">On Campus</option>
+                        <option value="PD - Personal Day">PD - Personal Day</option>
+                        <option value="Presenting">Presenting</option>
+                        <option value="Prof Dev">Prof Dev</option>
+                        <option value="Project">Project</option>
+                        <option value="Release Time">Release Time</option>
+                        <option value="Sick">Sick</option>
+                        <option value="Train">Train</option>
+                        <option value="Workshop">Workshop</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div id="col112" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele113" name="ele113" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="row98" class="text-left row ">
+                <div id="col99" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="ele103" name="ele103" class="text-left  "></p>
+                </div>
+                <div id="col100" class="col-xs-4 col-sm-4 text-left  ">
+                    <button id="addScheduleChange" name="addScheduleChange" class="col-xs-12 col-sm-12 text-left btn btn-primary btn-delete-item "
+                    style="" undefined="">Add Row</button>
+                </div>
+                <div id="col101" class="col-xs-4 col-sm-4 text-left  ">
+                    <button id="removeScheduleChange" name="removeScheduleChange" class="col-xs-12 col-sm-12 text-left btn btn-danger btn-delete-item "
+                    style="" undefined="">Remove Last Row</button>
+                </div>
+                <div id="col102" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="ele110" name="ele110" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="row66" class="text-left row notes ">
+                <div id="col82" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="counselorNotes">Notes</label>
+                    <textarea id="counselorNotes" name="counselorNotes" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row117" name="" class="text-left section-header ">
+                <div id="col118" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele119" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele120" name="ele595" class="text-left  ">Signatures</h2>
+                </div>
+            </div>
+            <div id="quickInputsRow122" name="quickInputsRow" class="text-left row counselorSignature ">
+                <div id="quickInputsColumn123" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="counselorSignature">Counselor: Please Enter Your Name</label>
+                        <input id="counselorSignature"
+                        name="counselorSignature" class="text-left  " required="required" type="text"
+                        />
+                    </div>
+                </div>
+                <div id="quickInputsColumn125" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="counselorSignatureDate">Date</label>
+                        <input id="counselorSignatureDate" name="counselorSignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow128" name="quickInputsRow" class="text-left row supervisor ">
+                <div id="quickInputsColumn129" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSignature">Supervisor: Please Enter Your Name</label>
+                        <input id="supervisorSignature"
+                        name="supervisorSignature" class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn131" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="supervisorSignatureDate">Date</label>
+                        <input id="supervisorSignatureDate" name="supervisorSignatureDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="row556" class="text-left row fd-form-masthead ">
+                <div id="col557" class="col-xs-12 col-sm-12 text-left revised-on "><span id="revisedOn558" name="revisedOn" class="col-sm-12 text-right  ">Revised 06/26</span>
+                </div>
+                <div id="col559" class="col-xs-12 col-sm-12 text-left logo ">
+                    <img id="ele560" name="ele19" class="text-left  " width="80%" data-bind="attr:{src:&#10;'https://webapps.oaklandcc.edu/cdn/images/occ-horizontal-white1.png'}"
+                    alt="Oakland Community College Logo" src="" />
+                </div>
+                <div id="col561" class="col-xs-12 col-sm-12 text-left  ">
+                    <h1 id="ele562" name="ele21" class="text-left form-title ">Nursing Program Application</h1>
+                </div>
+                <div id="col563" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele564" name="ele26" class="text-left  " style=" border-color:#046a38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row552" class="text-left row ">
+                <div id="col553" class="col-xs-12 col-sm-6 text-left  ">
+                    <p id="requiredNote554" name="requiredNote" class="text-left required-note ">Fields marked with an asterisk (<span class="required-indicator">*</span>)
+                        are required.</p>
+                </div>
+            </div>
+            <div id="quickHeadingRow22" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn23" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h3 id="studentInfoHeader" name="studentInfoHeader" class="text-center  ">Student Information</h3>
+                </div>
+            </div>
+            <div id="quickInputsRow29" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn32" name="quickInputsColumn2" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentID">ID Number</label>
+                        <input id="studentID" name="studentID" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn30" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentName">Name</label>
+                        <input id="studentName" name="studentName" class="text-left  "
+                        required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col388" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentDOB">Date of Birth</label>
+                        <input id="studentDOB" name="studentDOB" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn34" name="quickInputsColumn3" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentEmail">Email</label>
+                        <input id="studentEmail" name="studentEmail" class="text-left  "
+                        required="required" readonly="true" type="text" data-bind="email" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn36" name="quickInputsColumn4" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentPhone">Personal Phone Number</label>
+                        <input id="studentPhone" name="studentPhone"
+                        class="text-left  " required="required" readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col38" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentAddress">Address</label>
+                        <input id="studentAddress" name="studentAddress" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col40" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentCity">City</label>
+                        <input id="studentCity" name="studentCity" class="text-left  "
+                        required="required" readonly="true" />
+                    </div>
+                </div>
+                <div id="col42" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentState">State</label>
+                        <input id="studentState" name="studentState" class="text-left  "
+                        required="required" readonly="true" />
+                    </div>
+                </div>
+                <div id="col44" class="col-xs-12 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="studentZipCode">Zip Code</label>
+                        <input id="studentZipCode" name="studentZipCode" class="text-left  "
+                        required="required" readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="radioRow49" name="radioRow" class="text-left row studentShouldNotSee "
+            style="overflow: auto;  padding:1em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                <div id="radioCol50" name="radioCol1" class="col-xs-5 col-sm-5 text-left  "
+                style=" padding:0px px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <input id="chkNURCurriculum" name="radioGroup" class="text-left  " style=" padding:0em em 0em 0em;  margin:0em .5em 0em 0em;  transform: scale(1.2); "
+                    type="checkbox" value="NUR Curriculum Designation " />
+                    <label for="chkNURCurriculum">NUR Curriculum Designation</label>
+                </div>
+                <div id="radioCol52" name="radioCol2" class="col-xs-12 col-sm-7 text-left  ">
+                    <input id="chkOCCRecord" name="chkOCCRecord" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform: scale(1.2);&#10; "
+                    type="checkbox" value="Completed OCC Record - “I” Grades (if applicable)"
+                    />
+                    <label for="chkOCCRecord">Completed OCC Record - “I” Grades (if applicable)</label>
+                </div>
+                <div id="radioCol54" name="radioCol3" class="col-xs-5 col-sm-5 text-left  ">
+                    <input id="chkHSEStudent" name="radioGroup" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em .5em 0em 0em;  transform: scale(1.2); "
+                    type="checkbox" value="Dual Enrolled Student" />
+                    <label for="chkHSEStudent">Dual Enrolled Student (if applicable)</label>
+                </div>
+                <div id="col58" class="col-xs-12 col-sm-6 text-left  ">
+                    <input id="chkTransferCredit" name="radioGroup" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform: scale(1.2); "
+                    type="checkbox" value="Transfer Credit Evaluation (if applicable) " />
+                    <label for="chkTransferCredit">Transfer Credit Evaluation (if applicable)</label>
+                </div>
+                <div id="col59" class="col-xs-5 col-sm-5 text-left  ">
+                    <input id="chkCourseSubstitution" name="radioGroup" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform: scale(1.2); "
+                    type="checkbox" value="Course Substitution (if applicable) " />
+                    <label for="chkCourseSubstitution">Course Substitution (if applicable)</label>
+                </div>
+                <div id="col61" class="col-xs-12 col-sm-6 text-left  ">
+                    <input id="chkBioCourses" name="radioGroup" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform: scale(1.2); "
+                    type="checkbox" value="BIO Courses within 5-year limit " />
+                    <label for="chkBioCourses">BIO Courses within 5-year limit</label>
+                </div>
+                <div id="col60" class="col-xs-5 col-sm-5 text-left  ">
+                    <input id="chkMichiganReconnect" name="radioGroup" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform: scale(1.2); "
+                    type="checkbox" value="Michigan Reconnect (if applicable) " />
+                    <label for="chkMichiganReconnect">Michigan Reconnect (if applicable)</label>
+                </div>
+                <div id="col427" class="col-xs-12 col-sm-6 text-left  ">
+                    <input id="chkInternationalVisa" name="chkInternationalVisa" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform:scale(1.2); "
+                    type="checkbox" value="F-1 Visa International Student (if applicable)"
+                    />
+                    <label for="chkInternationalVisa">F-1 Visa International Student (if applicable)</label>
+                </div>
+            </div>
+            <div id="radioRow495656" name="radioRow" class="text-left row studentShouldNotSee "
+            style="overflow: auto;  padding:0em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                <div id="radioCol5656" name="radioCol4" class="col-xs-12 col-sm-6 text-left  ">
+                    <input id="chkEvidenceHighSchoolorGed" name="chkEvidenceHighSchoolorGed"
+                    class="text-left graduation " style=" padding:0em 0em 0em 0em;  margin:0em .5em 0em 0em;  transform: scale(1.2); "
+                    type="checkbox" value="Evidence of High School Graduation or GED" />
+                    <label for="chkEvidenceHighSchoolorGed">Evidence of High School Graduation or GED</label>
+                </div>
+                <div id="radioCol5056" name="radioCol1" class="col-xs-12 col-sm-7 text-left  "
+                style=" padding:0px px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <input id="chkMichiganScholarship" name="chkMichiganScholarship" class="text-left  "
+                    style=" padding:0em em 0em 0em;  margin:0em .5em 0em 0em;  transform: scale(1.2); "
+                    type="checkbox" value="Michigan Achievement Scholarship" />
+                    <label for="chkMichiganScholarship">Michigan Achievement Scholarship (if applicable)</label>
+                </div>
+            </div>
+            <div id="row17824245555" name="" class="text-left row studentShouldNotSee ">
+                <div id="col1792455" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele1802455" name="ele1802455" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="row408" class="text-left row studentShouldNotSee " style="overflow: auto;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                <div id="col741" class="col-xs-4 col-sm-4 text-left  "><span id="ele746" name="ele746" class="text-left  "></span>
+                </div>
+                <div id="col410" class="col-xs-4 col-sm-4 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <div class="text-center  ">
+                        <label for="NursingInfoSession">Nursing Information Session</label>
+                        <input id="NursingInfoSession" name="NursingInfoSession"
+                        class="text-center  " required="required" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col565" name="col565" class="col-xs-4 col-sm-4 text-left  " data-bind="visible: ( ( chkHSEStudent() ) ) ">
+                    <div class="text-center  ">
+                        <label for="potentialGraduationDate">Potential Graduation Date</label>
+                        <input id="potentialGraduationDate" name="potentialGraduationDate"
+                        class="text-center  " data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col742" class="col-xs-6 col-sm-6 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 20em; "><span id="ele743" name="ele743" class="col-xs-12 col-sm-12 text-left  "><strong> (January 2025 or later)</strong></span>
+                </div>
+            </div>
+            <div id="quickHeadingRow226565" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn2365" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h3 id="hesiInfoHeader" name="hesiInfoHeader" class="text-center  ">HESI - 30 Points</h3>
+                </div>
+            </div>
+            <div id="row80" class="text-left row studentShouldNotSee " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col89" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="scoreMathHesi">HESI Math Score</label>
+                        <input id="scoreMathHesi" name="scoreMathHesi"
+                        class="text-left  " required="required" readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col90" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="pointsMathHesi">HESI Math Points</label>
+                        <input id="pointsMathHesi" name="pointsMathHesi"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col573" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="scoreReadingHesi">HESI Reading Score</label>
+                        <input id="scoreReadingHesi" name="scoreReadingHesi"
+                        class="text-left  " required="required" readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col574" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="pointsReadingHesi">HESI Reading Points</label>
+                        <input id="pointsReadingHesi" name="pointsReadingHesi"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="row805959" name="" class="text-left row overrideHesi " style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col8959" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newScoreMathHesi">New HESI Math Score</label>
+                        <input id="newScoreMathHesi" name="newScoreMathHesi"
+                        class="text-left  " type="Number" />
+                    </div>
+                </div>
+                <div id="col9059" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPointsMathHesi">New HESI Math Points</label>
+                        <input id="newPointsMathHesi" name="newPointsMathHesi"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col57359" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newScoreReadingHesi">New HESI Reading Score</label>
+                        <input id="newScoreReadingHesi" name="newScoreReadingHesi"
+                        class="text-left  " type="Number" />
+                    </div>
+                </div>
+                <div id="col57459" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="newPointsReadingHesi">New HESI Reading Points</label>
+                        <input id="newPointsReadingHesi" name="newPointsReadingHesi"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="row178242455556464" name="" class="text-left row studentShouldNotSee ">
+                <div id="col179245564" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele180245564" name="ele1802455" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="row8059596060" name="" class="text-left row studentShouldNotSee "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                <div id="col5895960" class="col-xs-4 col-sm-4 text-left  ">
+                    <p id="ele5925960" name="ele592" class="text-left  "></p>
+                </div>
+                <div id="col5905960" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-center  ">
+                        <label for="totalHesiScore">Total HESI Score</label>
+                        <input id="totalHesiScore" name="totalHesiScore"
+                        class="text-center  " readonly="true" data-bind="calculate: 'pointsMathHesi + pointsReadingHesi' "
+                        />
+                    </div>
+                </div>
+                <div id="col5915960" class="col-xs-2 col-sm-2 text-center override " style=" padding:0em 0em 0em 0em;  margin:1em 0em 0em 0em; ">
+                    <input id="chkHesiScoreOverride" name="chkHesiScoreOverride" class="text-left  "
+                    type="checkbox" />
+                    <label for="chkHesiScoreOverride">  Override</label>
+                </div>
+                <div id="col6675960" name="col667" class="col-xs-3 col-sm-3 text-left  "
+                data-bind="visible: ( ( chkHesiScoreOverride() ) ) ">
+                    <div class="text-center  ">
+                        <label for="newHesiScore">New Total</label>
+                        <input id="newHesiScore" name="newHesiScore" class="text-center  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col1021" name="col1021" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ( ( chkHesiScoreOverride() ) ) ">
+                    <label for="hesiNotes">Notes</label>
+                    <textarea id="hesiNotes" name="hesiNotes" class="text-left  "
+                    required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow2265656565" name="quickHeadingRow" class="text-left row "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn236565" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h3 id="hesiInfoHeader65" name="hesiInfoHeader65" class="text-center  ">Grade Metrics - 35 points</h3>
+                </div>
+            </div>
+            <div id="row146" class="text-left row gradesTable studentShouldNotSee "><i style="color:#777777; padding-left:2%"> EmptyRow</i>
+            </div>
+            <div id="row1782424" name="" class="text-left row studentShouldNotSee ">
+                <div id="col17924" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele18024" name="ele180" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row117" class="text-left row studentShouldNotSee ">
+                <div id="col1031" class="col-xs-4 col-sm-4 text-left  "><span id="ele1032" name="ele1032" class="text-left  "></span>
+                </div>
+                <div id="col118" class="col-xs-3 col-sm-3 text-center  ">
+                    <h4 id="highestGradeText" name="highestGradeText" class="text-center  ">Highest grade within 5-years</h4>
+                </div>
+                <div id="col1027" class="col-xs-2 col-sm-2 text-left  ">
+                    <h4 id="ele1028" name="ele1028" class="text-center  ">Points</h4>
+                </div>
+                <div id="col1034" class="col-xs-2 col-sm-2 text-left  ">
+                    <h4 id="ele1035" name="ele1035" class="text-left  "></h4>
+                </div>
+                <div id="col756" class="col-xs-1 col-sm-1 text-left override ">
+                    <h4 id="ele757" name="ele757" class="col-sm- text-left  ">Update</h4>
+                </div>
+            </div>
+            <div id="row122" class="text-left row studentShouldNotSee ">
+                <div id="col123" class="col-xs-4 col-sm-4 text-right  " style=" padding:0em 2em 0em 2em;  margin:0em 0em 0em 0em; ">
+                    <select id="textOne" name="textOne" class="text-center oldRowOne " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; "
+                    required="required">
+                        <option value=""></option>
+                        <option value="BIO 1570">BIO 1570</option>
+                        <option value="BIO 2710">BIO 2710</option>
+                    </select>
+                    <label id="textOneLabel" name="textOneLabel" class="col-xs-12 col-sm-12 text-left sr-only "
+                    for="textOne">BIO 1570 or 2710</label>
+                    <select id="newTextOne" name="newTextOne" class="text-center newRowOne hidden ">
+                        <option value=""></option>
+                        <option value="BIO 1570">BIO 1570</option>
+                        <option value="BIO 2710">BIO 2710</option>
+                    </select>
+                </div>
+                <div id="col124" class="col-xs-3 col-sm-3 text-left  ">
+                    <select id="gradeTextOne" name="gradeTextOne" class="text-left oldRowOne "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Grade Not Assigned">Grade Not Assigned</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                    </select>
+                    <label id="lbl498" name="lbl498" class="col-xs-12 col-sm-12 text-left hide "
+                    for="gradeTextOne">Letter Grade One</label>
+                    <select id="newGradeTextOne" name="newGradeTextOne"
+                    class="col-xs-12 col-sm-12 text-left newRowOne hidden ">
+                        <option value=""></option>
+                        <option value="Grade Not Assigned">Grade Not Assigned</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                    </select>
+                </div>
+                <div id="col125" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <input id="pointsOne" name="pointsOne" class="text-left  " readonly="true"
+                        />
+                    </div>
+                    <label id="pointsOneLabel" name="pointsOneLabel" class="col-xs-12 col-sm-12 text-left sr-only "
+                    for="pointsOne">Points</label>
+                </div>
+                <div id="col961" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left newRowOne hidden ">
+                        <input id="newPointsOne" name="newPointsOne" class="text-left newRowOne hidden "
+                        readonly="true" />
+                    </div>
+                    <label id="newPointsOneLabel" name="newPointsOneLabel" class="text-left hide "
+                    for="newPointsOne">Points</label>
+                </div>
+                <div id="col760" class="col-xs-1 col-sm-1 text-center override ">
+                    <input id="chkUpdateOne" name="chkUpdateOne" class="text-left  " type="checkbox"
+                    />
+                </div>
+            </div>
+            <div id="row1221515" name="" class="text-left row studentShouldNotSee ">
+                <div id="col12315" class="col-xs-4 col-sm-4 text-right  ">
+                    <h5 id="textOne15" name="textOne15" class="text-center  ">BIO 2630</h5>
+                </div>
+                <div id="col12415" class="col-xs-3 col-sm-3 text-left  ">
+                    <select id="gradeTextTwo" name="gradeTextTwo" class="text-left oldRowTwo "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Grade Not Assigned">Grade Not Assigned</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                    </select>
+                    <label id="lbl500" class="col-xs-12 col-sm-12 text-left sr-only " for="gradeTextTwo">Letter Grade Two</label>
+                    <select id="newGradeTextTwo" name="newGradeTextTwo"
+                    class="text-left newRowTwo hidden ">
+                        <option value=""></option>
+                        <option value="Grade Not Assigned">Grade Not Assigned</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                    </select>
+                </div>
+                <div id="col12515" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <input id="pointsTwo" name="pointsTwo" class="text-left  " readonly="true"
+                        />
+                    </div>
+                    <label id="lbl502" class="col-xs-12 col-sm-12 text-left sr-only " for="pointsTwo">Points Two</label>
+                </div>
+                <div id="col966" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left newRowTwo hidden ">
+                        <input id="newPointsTwo" name="newPointsTwo" class="text-left newRowTwo hidden "
+                        readonly="true" />
+                    </div>
+                    <label id="newPointsTwoLabel" name="newPointsTwoLabel" class="col-xs-12 col-sm-12 text-left hide "
+                    for="newPointsTwo">Points</label>
+                </div>
+                <div id="col763" class="col-xs-1 col-sm-1 text-center override ">
+                    <input id="chkUpdateTwo" name="chkUpdateTwo" class="text-left  " type="checkbox"
+                    />
+                </div>
+            </div>
+            <div id="row12215151616" name="" class="text-left row studentShouldNotSee ">
+                <div id="col1231516" class="col-xs-4 col-sm-4 text-right  ">
+                    <h5 id="textOne1516" name="textOne1516" class="text-center  ">BIO 2640</h5>
+                </div>
+                <div id="col1241516" class="col-xs-3 col-sm-3 text-left  ">
+                    <select id="gradeTextThree" name="gradeTextThree" class="text-left oldRowThree "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Grade Not Assigned">Grade Not Assigned</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                    </select>
+                    <label id="lbl504" class="col-xs-12 col-sm-12 text-left sr-only " for="gradeTextThree">Letter Grade Three</label>
+                    <select id="newGradeTextThree" name="newGradeTextThree"
+                    class="text-left newRowThree hidden ">
+                        <option value=""></option>
+                        <option value="Grade Not Assigned">Grade Not Assigned</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                    </select>
+                </div>
+                <div id="col1251516" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <input id="pointsThree" name="pointsThree" class="text-left  " readonly="true"
+                        />
+                    </div>
+                    <label id="lbl506" class="col-xs-12 col-sm-12 text-left sr-only " for="pointsThree">Points Three</label>
+                </div>
+                <div id="col971" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left newRowThree hidden ">
+                        <input id="newPointsThree" name="newPointsThree" class="text-left newRowThree hidden "
+                        readonly="true" />
+                    </div>
+                    <label id="newPointsThreeLabel" name="newPointsThreeLabel" class="col-xs-12 col-sm-12 text-left hide "
+                    for="newPointsThree"></label>
+                </div>
+                <div id="col766" class="col-xs-1 col-sm-1 text-center override ">
+                    <input id="chkUpdateThree" name="chkUpdateThree" class="text-left  " type="checkbox"
+                    />
+                </div>
+            </div>
+            <div id="row178" class="text-left row studentShouldNotSee ">
+                <div id="col179" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele180" name="ele180" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="row1171818" name="" class="text-left row studentShouldNotSee ">
+                <div id="col11818" class="col-xs-11 col-sm-11 text-center  ">
+                    <h4 id="highestGradeTextTwo" name="highestGradeTextTwo" class="text-center  ">Highest Grade</h4>
+                </div>
+                <div id="col1010" class="col-xs-1 col-sm-1 text-left override ">
+                    <h4 id="spa1012" name="spa1012" class="col-xs- col-sm- text-left  ">Update</h4>
+                </div>
+            </div>
+            <div id="row1221919" name="" class="text-left row studentShouldNotSee ">
+                <div id="col12319" class="col-xs-4 col-sm-4 text-right  ">
+                    <h5 id="textFour" name="textFour" class="text-center  ">ENG 1510</h5>
+                </div>
+                <div id="col12419" class="col-xs-3 col-sm-3 text-left  ">
+                    <select id="gradeTextFour" name="gradeTextFour" class="text-left oldRowFour "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Grade Not Assigned">Grade Not Assigned</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                    </select>
+                    <label id="gradeTextFourLabel" name="gradeTextFourLabel" class="col-xs-12 col-sm-12 text-left sr-only "
+                    for="gradeTextFour">ENG 1510 Letter Grade</label>
+                    <select id="newGradeTextFour" name="newGradeTextFour"
+                    class="text-left newRowFour hidden ">
+                        <option value=""></option>
+                        <option value="Grade Not Assigned">Grade Not Assigned</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                    </select>
+                </div>
+                <div id="col12519" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <input id="pointsFour" name="pointsFour" class="text-left  " readonly="true"
+                        />
+                    </div>
+                    <label id="pointsFourLabel" name="pointsFourLabel" class="col-xs-12 col-sm-12 text-left sr-only "
+                    for="pointsFour">ENG 1510 Points</label>
+                </div>
+                <div id="col976" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left newRowFour hidden ">
+                        <input id="newPointsFour" name="newPointsFour" class="text-left newRowFour hidden "
+                        readonly="true" />
+                    </div>
+                    <label id="newPointsFourLabel" name="newPointsFourLabel" class="col-xs-12 col-sm-12 text-left hide "
+                    for="newPointsFour">Points</label>
+                </div>
+                <div id="col769" class="col-xs-1 col-sm-1 text-center override ">
+                    <input id="chkUpdateFour" name="chkUpdateFour" class="text-left  " type="checkbox"
+                    />
+                </div>
+            </div>
+            <div id="row12219192020" name="" class="text-left row studentShouldNotSee ">
+                <div id="col1231920" class="col-xs-4 col-sm-4 text-right  " style=" padding:0em 2em 0em 2em;  margin:0em 0em 0em 0em; ">
+                    <select id="textFive" name="textFive" class="text-center oldRowFive "
+                    required="required">
+                        <option value=""></option>
+                        <option value="ENG 1520">ENG 1520</option>
+                        <option value="ENG 2200">ENG 2200</option>
+                    </select>
+                    <label id="TextFiveLabel" name="TextFiveLabel" class="text-left sr-only "
+                    for="TextFive">Select ENG 1520 or ENG 2200</label>
+                    <select id="newTextFive" name="newTextFive"
+                    class="text-center newRowFive hidden ">
+                        <option value=""></option>
+                        <option value="ENG 1520">ENG 1520</option>
+                        <option value="ENG 2200">ENG 2200</option>
+                    </select>
+                </div>
+                <div id="col1241920" class="col-xs-3 col-sm-3 text-left  ">
+                    <select id="gradeTextFive" name="gradeTextFive" class="text-left oldRowFive "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Grade Not Assigned">Grade Not Assigned</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                    </select>
+                    <label id="lbl515" class="col-xs-12 col-sm-12 text-left sr-only " for="gradeTextFive">ENG Letter Grade</label>
+                    <select id="newGradeTextFive" name="newGradeTextFive"
+                    class="text-left newRowFive hidden ">
+                        <option value=""></option>
+                        <option value="Grade Not Assigned">Grade Not Assigned</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                    </select>
+                </div>
+                <div id="col1251920" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <input id="pointsFive" name="pointsFive" class="text-left  " readonly="true"
+                        />
+                    </div>
+                    <label id="pointsFiveLabel" name="pointsFiveLabel" class="col-xs-12 col-sm-12 text-left sr-only "
+                    for="pointsFive">ENG Letter Grade</label>
+                </div>
+                <div id="col981" class="col-xs-2 col-sm-2 text-left  ">
+                    <div class="text-left newRowFive hidden ">
+                        <input id="newPointsFive" name="newPointsFive" class="text-left newRowFive hidden "
+                        readonly="true" />
+                    </div>
+                    <label id="newPointsFiveLabel" name="newPointsFiveLabel" class="col-xs-12 col-sm-12 text-left hide "
+                    for="newPointsFive">Points</label>
+                </div>
+                <div id="col773" class="col-xs-1 col-sm-1 text-center override ">
+                    <input id="chkUpdateFive" name="chkUpdateFive" class="text-left  " type="checkbox"
+                    />
+                </div>
+            </div>
+            <div id="row122191920202121" name="" class="text-left row studentShouldNotSee ">
+                <div id="col123192021" class="col-xs-4 col-sm-4 text-right  ">
+                    <h5 id="TextSix" name="TextSix" class="text-center  ">PSY 2510</h5>
+                </div>
+                <div id="col124192021" class="col-xs-3 col-sm-3 text-left  ">
+                    <select id="gradeTextSix" name="gradeTextSix" class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Grade Not Assigned">Grade Not Assigned</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                    </select>
+                    <label id="lbl521" class="col-xs-12 col-sm-12 text-left sr-only " for="gradeTextSix">Select PSY 2510 Letter Grade</label>
+                </div>
+                <div id="col776" class="col-xs-3 col-sm-3 text-left  ">
+                    <select id="newGradeTextSix" name="newGradeTextSix" class="text-left newRowSix ">
+                        <option value=""></option>
+                        <option value="Grade Not Assigned">Grade Not Assigned</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                    </select>
+                </div>
+                <div id="col986" class="col-xs-1 col-sm-1 text-left  ">
+                    <p id="ele987" name="ele987" class="text-left  "></p>
+                </div>
+                <div id="col777" class="col-xs-1 col-sm-1 text-center override ">
+                    <input id="chkUpdateSix" name="chkUpdateSix" class="text-left  " type="checkbox"
+                    />
+                </div>
+            </div>
+            <div id="row1221919202021212222" name="" class="text-left row studentShouldNotSee ">
+                <div id="col12319202122" class="col-xs-4 col-sm-4 text-right  ">
+                    <h5 id="TextSeven" name="TextSeven" class="text-center  ">Fine Arts/HUM (3 credits)</h5>
+                </div>
+                <div id="col12419202122" class="col-xs-3 col-sm-3 text-left  ">
+                    <select id="gradeTextSeven" name="gradeTextSeven" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Grade Not Assigned">Grade Not Assigned</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                    </select>
+                    <label id="lbl523" class="col-xs-12 col-sm-12 text-left sr-only " for="gradeTextSeven">Select Fine Arts/HUM Letter Grade</label>
+                </div>
+                <div id="col782" class="col-xs-3 col-sm-3 text-left  ">
+                    <select id="newGradeTextSeven" name="newGradeTextSeven" class="text-left newRowSeven ">
+                        <option value=""></option>
+                        <option value="Grade Not Assigned">Grade Not Assigned</option>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                    </select>
+                </div>
+                <div id="col989" class="col-xs-1 col-sm-1 text-left  ">
+                    <p id="ele990" name="ele990" class="text-left  "></p>
+                </div>
+                <div id="col785" class="col-xs-1 col-sm-1 text-center override ">
+                    <input id="chkUpdateSeven" name="chkUpdateSeven" class="text-left  " type="checkbox"
+                    />
+                </div>
+            </div>
+            <div id="row1782424555564646565" name="" class="text-left row studentShouldNotSee ">
+                <div id="col17924556465" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele18024556465" name="ele1802455" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="radioRow492933335757" name="radioRow" class="text-left row studentShouldNotSee "
+            style="overflow: auto;  padding:1em .5em 0em .5em;  margin:0em 0em 0em 0em;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                <div id="col60157" class="col-xs-4 col-sm-4 text-left  ">
+                    <p id="ele60357" name="ele603" class="text-left  "></p>
+                </div>
+                <div id="col62293357" class="col-xs-3 col-sm-3 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <div class="text-center  ">
+                        <label for="gradeMetrics">Total Grade Metrics</label>
+                        <input id="gradeMetrics" name="gradeMetrics"
+                        class="text-center  " readonly="true" type="text" value="Nursing Information Session "
+                        data-bind="calculate: 'pointsOne + pointsTwo + pointsThree + pointsFour + pointsFive' "
+                        />
+                    </div>
+                </div>
+                <div id="col954" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="ele956" name="ele956" class="text-left  "></p>
+                </div>
+                <div id="col955" name="col955" class="col-xs-3 col-sm-3 text-left  " data-bind="visible: ( ( chkUpdateOne() )  ||  ( chkUpdateTwo() )  ||  ( chkUpdateThree() )  ||  ( chkUpdateFour() )  ||  ( chkUpdateFive() )  ||  ( chkUpdateSix() )  ||  ( chkUpdateSeven() ) ) ">
+                    <div class="text-center  ">
+                        <label for="newGradeMetricsTotal">New Total</label>
+                        <input id="newGradeMetricsTotal" name="newGradeMetricsTotal"
+                        class="text-center  " readonly="true" type="Number" />
+                    </div>
+                </div>
+                <div id="col1018" name="col1018" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ( ( chkUpdateOne() )  ||  ( chkUpdateTwo() )  ||  ( chkUpdateThree() )  ||  ( chkUpdateFour() )  ||  ( chkUpdateFive() )  ||  ( chkUpdateSix() )  ||  ( chkUpdateSeven() ) ) ">
+                    <label for="gradeMetricsNotes">Notes</label>
+                    <textarea id="gradeMetricsNotes" name="gradeMetricsNotes"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow223662525" name="quickHeadingRow" class="text-left row studentShouldNotSee "
+            style="overflow: auto;  padding:2em 0em 0em 0em;  margin:0em 0em 0em 0em;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn233625" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h3 id="experienceHeader" name="experienceHeader" class="text-center  ">Experience - 20 Points</h3>
+                </div>
+            </div>
+            <div id="row1462828" name="" class="text-left row pointsExperienceTable studentShouldNotSee "></div>
+            <div id="row749" class="text-left row studentShouldNotSee ">
+                <div id="col750" class="col-xs-12 col-sm-12 text-left fd-callout fd-callout--primary ">
+                    <h4 id="ele751" name="ele230" class="col-xs-12 col-sm-12 text-left  ">Student will be assigned the point value which is the <strong>HIGHEST</strong> that pertains to them from the list below:</h4>
+                </div>
+            </div>
+            <div id="radioRow492929" name="radioRow" class="text-left row studentShouldNotSee "
+            style="overflow: auto;  padding:1em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="radioCol5029" name="radioCol1" class="col-xs-6 col-sm-6 text-left  "
+                style=" padding:0px px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <input id="chkExpHealthCare" name="chkHealthCare" class="text-left  "
+                    style=" padding:0em em 0em 0em;  margin:0em .5em 0em 0em;  transform: scale(1.2); "
+                    required="required" type="radio" value="Healthcare Experience" />
+                    <label for="chkExpHealthCare">Healthcare Experience (Paid Direct Patient Care)</label>
+                </div>
+                <div id="radioCol5229" name="radioCol2" class="col-xs-6 col-sm-6 text-left  ">
+                    <input id="chkExpStudyAbroadOrAthlete" name="chkHealthCare" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform: scale(1.2); "
+                    type="radio" value="Study Abroad or OCC Athlete" />
+                    <label for="chkExpStudyAbroadOrAthlete">Study Abroad or OCC Athlete</label>
+                </div>
+                <div id="radioCol5429" name="radioCol3" class="col-xs-6 col-sm-6 text-left  ">
+                    <input id="chkExpLeadership" name="chkHealthCare" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em .5em 0em 0em;  transform: scale(1.2); "
+                    type="radio" value="Leadership Role" />
+                    <label for="chkExpLeadership">Leadership Role</label>
+                </div>
+                <div id="radioCol5629" name="radioCol4" class="col-xs-6 col-sm-6 text-left  ">
+                    <input id="chkExpHealthJobShadowing" name="chkHealthCare" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em .5em 0em 0em;  transform: scale(1.2); "
+                    type="radio" value="Healthcare Job shadowing" />
+                    <label for="chkExpHealthJobShadowing">Healthcare Job shadowing</label>
+                </div>
+                <div id="col5829" class="col-xs-6 col-sm-6 text-left  ">
+                    <input id="chkExpBachelor" name="chkHealthCare" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform: scale(1.2); "
+                    type="radio" value="Bachelor's Degree" />
+                    <label for="chkExpBachelor">Bachelor's Degree</label>
+                </div>
+                <div id="col5929" class="col-xs-6 col-sm-6 text-left  ">
+                    <input id="chkExpNoExperience" name="chkHealthCare" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform: scale(1.2); "
+                    type="radio" value="No experience" />
+                    <label for="chkExpNoExperience">No experience</label>
+                </div>
+                <div id="col6029" class="col-xs-6 col-sm-6 text-left  ">
+                    <input id="chkExpCommunityService" name="chkHealthCare" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform: scale(1.2); "
+                    type="radio" value="Community Service" />
+                    <label for="chkExpCommunityService">Community Service</label>
+                </div>
+            </div>
+            <div id="radioRow4929296161" name="radioRow" class="text-left row prevExperience "
+            style="overflow: auto;  padding:1em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col851" class="col-xs-4 col-sm-3 text-left  ">
+                    <label id="previousSelectionLabel" name="previousSelectionLabel" class="col-xs-12 col-sm-12 text-left  "
+                    for="lblPreviousSelection"><strong>Previous Selection</strong>
+                    </label>
+                </div>
+                <div id="col1040" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <input id="lblPreviousSelection" name="lblPreviousSelection" class="text-left  "
+                        readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="row14628285959" name="" class="text-left row studentShouldNotSee experienceProof ">
+                <div id="col44559" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele44759" name="ele447" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+                <div id="col43959" class="col-xs-12 col-sm-12 text-center  "><span id="chkAdvisorAttachment" name="chkAdvisorAttachment" class="col-xs-12 col-sm-12 text-center  "><strong>Need to provide proof on letterhead (ie: transcripts, letter or referral)</strong></span>
+                </div>
+                <div id="col44659" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="hr_45059" class="text-left  " />
+                </div>
+            </div>
+            <div id="radioRow4929" name="radioRow" class="text-left row studentShouldNotSee "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                <div id="col643" class="col-xs-4 col-sm-4 text-left  "><span id="ele644" name="ele644" class="text-left  "></span>
+                </div>
+                <div id="col6229" class="col-xs-3 col-sm-3 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <div class="text-center  ">
+                        <label for="totalPointsExperience">Total Experience Points</label>
+                        <input id="totalPointsExperience" name="totalPointsExperience"
+                        class="text-center  " readonly="true" type="text" value="Nursing Information Session "
+                        />
+                    </div>
+                </div>
+                <div id="col623" class="col-xs-2 col-sm-2 text-center override ">
+                    <input id="chkPointsExpOverride" name="chkPointsExpOverride" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:1em 0em 0em 0em; " type="checkbox"
+                    />
+                    <label for="chkPointsExpOverride">  Override</label>
+                </div>
+                <div id="col624" name="col624" class="col-xs-3 col-sm-3 text-left  " data-bind="visible: ( ( chkPointsExpOverride() ) ) ">
+                    <div class="text-center  ">
+                        <label for="newTotalPointsExperience">New Total</label>
+                        <input id="newTotalPointsExperience" name="newTotalPointsExperience"
+                        class="text-center  " readonly="true" />
+                    </div>
+                </div>
+                <div id="col724" name="col724" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ( ( chkPointsExpOverride() ) ) ">
+                    <label for="experienceNotes">Notes</label>
+                    <textarea id="experienceNotes" name="experienceNotes" class="text-left  "
+                    required="required"></textarea>
+                </div>
+                <div id="col826" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left hide ">
+                        <input id="prevExpSelection" name="prevExpSelection" class="text-left hide "
+                        readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow2236625253030" name="quickHeadingRow" class="text-left row studentShouldNotSee "
+            style="overflow: auto;  padding:2em 0em 0em 0em;  margin:0em 0em 0em 0em;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn23362530" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h3 id="OtherHeader" name="OtherHeader" class="text-center  ">Other - 5 Points</h3>
+                </div>
+            </div>
+            <div id="row7495858" name="" class="text-left row studentShouldNotSee ">
+                <div id="col75058" class="col-xs-12 col-sm-12 text-left fd-callout fd-callout--primary ">
+                    <h4 id="ele75158" name="ele75158" class="col-xs-12 col-sm-12 text-left  ">Student will receive 5 points if they answer <strong>ONE</strong> of the items below</h4>
+                </div>
+            </div>
+            <div id="radioRow4929293232" name="radioRow" class="text-left row studentShouldNotSee "
+            style="overflow: auto;  padding:0em 0em 0em .0em;  margin:0em 0em 0em 0em; ">
+                <div id="radioCol502932" name="radioCol1" class="col-xs-6 col-sm-6 text-left  "
+                style=" padding:0px px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <input id="chkOtherLivesWithinOCC" name="chkOther" class="text-left  "
+                    style=" padding:0em em 0em 0em;  margin:0em .5em 0em 0em;  transform: scale(1.2); "
+                    required="required" type="radio" value="Lives within OCC District " />
+                    <label for="chkOtherLivesWithinOCC">Lives within OCC District</label>
+                </div>
+                <div id="radioCol522932" name="radioCol2" class="col-xs-6 col-sm-6 text-left  ">
+                    <input id="chkOtherMichiganRecipient" name="chkOther" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform: scale(1.2); "
+                    type="radio" value="Michigan Works Recipient " />
+                    <label for="chkOtherMichiganRecipient">Michigan Works Recipient</label>
+                </div>
+                <div id="radioCol542932" name="radioCol3" class="col-xs-6 col-sm-6 text-left  ">
+                    <input id="chkOther12OrMoreCredits" name="chkOther" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em .5em 0em 0em;  transform: scale(1.2); "
+                    type="radio" value="12 or more credits taken at OCC" />
+                    <label for="chkOther12OrMoreCredits">12 or more credits taken at OCC</label>
+                </div>
+                <div id="col592932" class="col-xs-6 col-sm-6 text-left  ">
+                    <input id="chkOtherActiveService" name="chkOther" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform: scale(1.2); "
+                    type="radio" value="Active service member or Veteran " />
+                    <label for="chkOtherActiveService">Active service member or Veteran</label>
+                </div>
+                <div id="col582932" class="col-xs-6 col-sm-6 text-left  ">
+                    <input id="chkOtherPromiseRecipient" name="chkOther" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform: scale(1.2); "
+                    type="radio" value="Promise Recipient/Michigan Reconnect Recipient " />
+                    <label for="chkOtherPromiseRecipient">Promise Recipient/Michigan Reconnect Recipient</label>
+                </div>
+                <div id="col458" class="col-xs-6 col-sm-6 text-left  ">
+                    <input id="chkOtherNotApplicable" name="chkOther" class="text-left  "
+                    style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform: scale(1.2); "
+                    type="radio" value="Not Applicable" />
+                    <label for="chkOtherNotApplicable">Not Applicable</label>
+                </div>
+                <div id="col602932" class="col-xs-5 col-sm-9 text-left  ">
+                    <input id="chkOtherDualEnrolled" name="chkOther" class="text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0.5em 0em 0em;  transform: scale(1.2); "
+                    type="radio" value="Dual Enrolled or Early Middle College student/OCC Early Assurance "
+                    />
+                    <label for="chkOtherDualEnrolled">Dual Enrolled or Early Middle College student/OCC Early Assurance</label>
+                </div>
+            </div>
+            <div id="radioRow49292961616262" name="radioRow" class="text-left row prevOther "
+            style="overflow: auto;  padding:1em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                <div id="col85162" class="col-xs-4 col-sm-3 text-left  "><span id="ele85262" name="ele852" class="col-xs-12 col-sm-12 text-left  "><strong>Previous Selection</strong></span>
+                </div>
+                <div id="col860" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <input id="lblOtherPreviousSelection" name="lblOtherPreviousSelection"
+                        class="text-left  " readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="row17824245555646465656666" name="" class="text-left row studentShouldNotSee ">
+                <div id="col1792455646566" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele1802455646566" name="ele1802455" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="radioRow49293333" name="radioRow" class="text-left row studentShouldNotSee "
+            style="overflow: auto;  padding:1em .5em 0em .5em;  margin:0em 0em 0em 0em;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                <div id="col601" class="col-xs-4 col-sm-4 text-left  ">
+                    <p id="ele603" name="ele603" class="text-left  "></p>
+                </div>
+                <div id="col622933" class="col-xs-3 col-sm-3 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <div class="text-center  ">
+                        <label for="pointsOther">Total Other Points</label>
+                        <input id="pointsOther" name="pointsOther" class="text-center  "
+                        readonly="true" type="text" value="Nursing Information Session " />
+                    </div>
+                </div>
+                <div id="col602" class="col-xs-2 col-sm-2 text-center override ">
+                    <input id="chkPointsOtherOverride" name="chkPointsOtherOverride" class="text-center  "
+                    style=" padding:0em 0em 0em 0em;  margin:1em 0em 0em 0em; " type="checkbox"
+                    />
+                    <label for="chkPointsOtherOverride">  Override</label>
+                </div>
+                <div id="col652" name="col652" class="col-xs-3 col-sm-3 text-left  " data-bind="visible: ( ( chkPointsOtherOverride() ) ) ">
+                    <div class="text-center  ">
+                        <label for="newPointsOther">New Total</label>
+                        <input id="newPointsOther" name="newPointsOther" class="text-center  "
+                        readonly="true" />
+                    </div>
+                </div>
+                <div id="col733" name="col733" class="col-xs-6 col-sm-12 text-left  "
+                data-bind="visible: ( ( chkPointsOtherOverride() ) ) ">
+                    <label for="notesOther">Notes</label>
+                    <textarea id="notesOther" name="notesOther" class="text-left  "
+                    required="required"></textarea>
+                </div>
+            </div>
+            <div id="quickHeadingRow22366252530303434" name="quickHeadingRow" class="text-left row studentShouldNotSee "
+            style="overflow: auto;  padding:2em 0em 0em 0em;  margin:0em 0em 0em 0em;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn2336253034" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h3 id="counselorHeader" name="counselorHeader" class="text-center  ">Counselor Signature</h3>
+                </div>
+            </div>
+            <div id="quickTextAreaRow478" name="quickTextAreaRow" class="text-left row studentShouldNotSee counselor ">
+                <div id="quickTextAreaColumn479" name="quickTextAreaColumn" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="nursingNotes">Notes</label>
+                    <textarea id="nursingNotes" name="nursingNotes" class="text-left  "
+                    data-bind="fillable: { packageParam: ['Start', 'nursing'] } "></textarea>
+                </div>
+            </div>
+            <div id="quickInputsRow276" name="quickInputsRow" class="text-left row studentShouldNotSee counselor ">
+                <div id="quickInputsColumn277" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="counselorSig">Counselor Signature</label>
+                        <input id="counselorSig" name="counselorSig"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn279" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="date">Date</label>
+                        <input id="date" name="date" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow223662525303034343636" name="quickHeadingRow"
+            class="text-left row testingCenter studentShouldNotSee " style="overflow: auto;  padding:2em 0em 0em 0em;  margin:0em 0em 0em 0em;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn233625303436" name="quickHeadingColumn" class="col-xs-12 col-sm-12 text-left  "
+                style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h3 id="testingCenterHeader" name="testingCenterHeader" class="text-center  ">Testing Center Signature</h3>
+                </div>
+            </div>
+            <div id="radioRow49292932324242" name="radioRow" class="text-left row testingCenter studentShouldNotSee "
+            style="overflow: auto;  padding:1em .5em 0em .5em;  margin:0em 0em 0em 0em; ">
+                <div id="radioCol50293242" name="radioCol1" class="col-xs-12 col-sm-7 text-left  "
+                style=" padding:0px px 0px 0px;  margin:0px 0px 0px 0px; ">
+                    <input id="attachEssayChk" name="attachEssayChk" class="text-left  " style=" padding:0em em 0em 0em;  margin:0em .5em 0em 0em;  transform: scale(1.2); "
+                    type="checkbox" value="Attach an Essay of 500 words maximum " />
+                    <label for="attachEssayChk">Attach an Essay of 500 words maximum</label>
+                </div>
+            </div>
+            <div id="quickInputsRow2763737" name="quickInputsRow" class="text-left row testingCenter studentShouldNotSee ">
+                <div id="quickInputsColumn27737" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="testingCenterSig">Testing Center Signature</label>
+                        <input id="testingCenterSig" name="testingCenterSig"
+                        class="text-left  " type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn27937" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="testingCenterDate">Date</label>
+                        <input id="testingCenterDate" name="testingCenterDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow22366252530303434363638384343" name="quickHeadingRow"
+            class="text-left row nursingSection " style="overflow: auto;  padding:2em 0em 0em 0em;  margin:0em 0em 0em 0em;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn2336253034363843" name="quickHeadingColumn"
+                class="col-xs-12 col-sm-12 text-left  " style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h3 id="essayScoringHeader" name="essayScoringHeader" class="text-center  ">Essay Scoring (10 Points)</h3>
+                </div>
+            </div>
+            <div id="row1465353" name="" class="text-left row essayTable nursingSection ">
+                <div id="col548" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele549" name="ele549" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="row122151516164444" name="" class="text-left row nursingSection "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 10em; ">
+                <div id="col123151644" class="col-xs-4 col-sm-6 text-right  ">
+                    <h5 id="essayOne" name="essayOne" class="text-center  ">Life Experiences &amp; Excellence</h5>
+                </div>
+                <div id="col125151644" class="col-xs-3 col-sm-3 text-left  ">
+                    <label id="essayPointsOneLabel" name="essayPointsOneLabel" class="col-xs-12 col-sm-12 text-left sr-only "
+                    for="essayPointsOne">Life Experience and Excellience Points</label>
+                    <div class="text-left  ">
+                        <input id="essayPointsOne" name="essayPointsOne" class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="row1221515161644444545" name="" class="text-left row nursingSection "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 10em; ">
+                <div id="col12315164445" class="col-xs-4 col-sm-6 text-right  ">
+                    <h5 id="essayTwo" name="essayTwo" class="text-center  ">Values, Beliefs, Caring, Respect</h5>
+                </div>
+                <div id="col12515164445" class="col-xs-3 col-sm-3 text-left  ">
+                    <label id="essayPointsTwoLabel" name="essayPointsTwoLabel" class="text-left sr-only "
+                    for="essayPointsTwo">Value Beliefs Caring and Respect Points</label>
+                    <div class="text-left  ">
+                        <input id="essayPointsTwo" name="essayPointsTwo" class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="row122151516164444454546" name="" class="text-left row nursingSection "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 10em; ">
+                <div id="col1231516444546" class="col-xs-4 col-sm-6 text-right  ">
+                    <h5 id="essayThree" name="essayThree" class="text-center  ">Integrity, Character, Ethics</h5>
+                </div>
+                <div id="col1251516444546" class="col-xs-3 col-sm-3 text-left  ">
+                    <label id="lbl535" class="col-xs-12 col-sm-12 text-left sr-only " for="essayPointsThree">Integrity Character Ethics Points</label>
+                    <div class="text-left  ">
+                        <input id="essayPointsThree" name="essayPointsThree" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row12215151616444445454647" name="" class="text-left row nursingSection "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 10em; ">
+                <div id="col123151644454647" class="col-xs-4 col-sm-6 text-right  ">
+                    <h5 id="EssayFour" name="EssayFour" class="text-center  ">Leadership Perspectives</h5>
+                </div>
+                <div id="col125151644454647" class="col-xs-3 col-sm-3 text-left  ">
+                    <label id="lbl537" class="col-xs-12 col-sm-12 text-left sr-only " for="essayPointsFour">Leadership Perspective Points</label>
+                    <div class="text-left  ">
+                        <input id="essayPointsFour" name="essayPointsFour" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row1221515161644444545464748" name="" class="text-left row nursingSection "
+            style="overflow: auto;  padding:0em 0em 0em 0em;  margin:0em 0em 0em 10em; ">
+                <div id="row122151516164444454546474848" name="" class="col-xs-4 col-sm-6 text-right  ">
+                    <h5 id="EssayFive" name="EssayFive" class="text-center  ">Overall Quality</h5>
+                </div>
+                <div id="col12515164445464748" class="col-xs-3 col-sm-3 text-left  ">
+                    <label id="lbl539" class="text-left sr-only " for="essayPointsFive">Overall Quality Points</label>
+                    <div class="text-left  ">
+                        <input id="essayPointsFive" name="essayPointsFive" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row178242455556464656566666767" name="" class="text-left row studentShouldNotSee ">
+                <div id="col179245564656667" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele180245564656667" name="ele1802455" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="radioRow4929333355555757" name="radioRow" class="text-left row nursingSection "
+            style="overflow: auto;  padding:1em .5em 0em .5em;  margin:0em 0em 0em 0em;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                <div id="col60057" class="col-xs-1 col-sm-4 text-left  ">
+                    <p id="ele60757" name="ele607" class="text-left  "></p>
+                </div>
+                <div id="col6229335557" class="col-xs-4 col-sm-4 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <div class="text-center  ">
+                        <label for="totalEssayPoints">Total Essay Points</label>
+                        <input id="totalEssayPoints" name="totalEssayPoints"
+                        class="text-center  " type="text" value="Nursing Information Session "
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow223662525303034343636383843435454" name="quickHeadingRow"
+            class="text-left row nursingSection " style="overflow: auto;  padding:2em 0em 0em 0em;  margin:0em 0em 0em 0em;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn233625303436384354" name="quickHeadingColumn"
+                class="col-xs-12 col-sm-12 text-left  " style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h3 id="totalPointsHeader" name="totalPointsHeader" class="text-center  ">Grand Total</h3>
+                </div>
+            </div>
+            <div id="radioRow492933335555" name="radioRow" class="text-left row nursingSection "
+            style="overflow: auto;  padding:1em .5em 0em .5em;  margin:0em 0em 0em 0em;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px ">
+                <div id="col600" class="col-xs-4 col-sm-4 text-left  ">
+                    <p id="ele607" name="ele607" class="text-left  "></p>
+                </div>
+                <div id="col62293355" class="col-xs-4 col-sm-4 text-left  " style=" padding:0em 0em 0em 0em;  margin:0em 0em 0em 0em; ">
+                    <div class="text-center  ">
+                        <label for="totalPoints">Grand Total</label>
+                        <input id="totalPoints" name="totalPoints" class="text-center  "
+                        type="text" value="Nursing Information Session " data-bind="calculate: 'totalHesiScore + gradeMetrics + totalPointsExperience + pointsOther + totalEssayPoints' "
+                        />
+                    </div>
+                </div>
+                <div id="col738" name="col738" class="col-xs-4 col-sm-4 text-left adjustedGrandTotal "
+                data-bind="visible: ( ( chkHesiScoreOverride() )  ||  ( chkPointsExpOverride() )  ||  ( chkPointsOtherOverride() )  ||  ( chkUpdateOne() )  ||  ( chkUpdateTwo() )  ||  ( chkUpdateThree() )  ||  ( chkUpdateFour() )  ||  ( chkUpdateFive() )  ||  ( chkUpdateSix() )  ||  ( chkUpdateSeven() ) ) ">
+                    <div class="text-center  ">
+                        <label for="adjustedGrandTotal">Adjusted Grand Total</label>
+                        <input id="adjustedGrandTotal" name="adjustedGrandTotal"
+                        class="text-center  " readonly="true" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow223662525303034343636383843435050" name="quickHeadingRow"
+            class="text-left row nursingSection " style="overflow: auto;  padding:2em 0em 0em 0em;  margin:0em 0em 0em 0em;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn233625303436384350" name="quickHeadingColumn"
+                class="col-xs-12 col-sm-12 text-left  " style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h3 id="nursingHeader" name="nursingHeader" class="text-center  ">Nursing Signature</h3>
+                </div>
+            </div>
+            <div id="quickInputsRow276373739395252" name="quickInputsRow" class="text-left row nursingSection ">
+                <div id="quickInputsColumn277373952" name="quickInputsColumn1" class="col-xs-12 col-sm-8 text-left  ">
+                    <div class="text-left  ">
+                        <label for="nursingSig">Nursing Signature</label>
+                        <input id="nursingSig" name="nursingSig" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn279373952" name="quickInputsColumn2" class="col-xs-12 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="nursingDate">Date</label>
+                        <input id="nursingDate" name="nursingDate" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow2236625253030343436363838434350506060" name="quickHeadingRow"
+            class="text-left row developer " style="overflow: auto;  padding:2em 0em 0em 0em;  margin:0em 0em 0em 0em;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="quickHeadingColumn23362530343638435060" name="quickHeadingColumn"
+                class="col-xs-12 col-sm-12 text-left  " style=" background-color:#046A38;  color:#ffffff;  border:1px solid black; border-radius:5px; ">
+                    <h3 id="developerHeader" name="developerHeader" class="text-center  ">Developer Section</h3>
+                </div>
+                <div id="col484" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="initialNumAttachments">initialNumAttachments</label>
+                        <input id="initialNumAttachments" name="initialNumAttachments"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow462" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="col465" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="personGUID466">personGUID (hidden)</label>
+                        <input id="personGUID466" name="personGUID"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col467" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="formID">formID (hidden)</label>
+                        <input id="formID" name="formID" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col469" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hsDocType470">hsDocType (hidden)</label>
+                        <input id="hsDocType470" name="hsDocType" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col471" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="academicYear">academicYear (hidden)</label>
+                        <input id="academicYear" name="academicYear"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow4626363" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="col46563" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hesiMathScore">hesiMathScore (hidden)</label>
+                        <input id="hesiMathScore" name="hesiMathScore"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col46763" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hesiMathPoints">hesiMathPoints (hidden)</label>
+                        <input id="hesiMathPoints" name="hesiMathPoints"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col46963" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hesiReadingScore">hesiReadingScore</label>
+                        <input id="hesiReadingScore" name="hesiReadingScore"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col47163" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hesiReadingPoints">hesiReadingPoints</label>
+                        <input id="hesiReadingPoints" name="hesiReadingPoints"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col874" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="hesiTotal">hesiTotal (hidden)</label>
+                        <input id="hesiTotal" name="hesiTotal" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col875" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="bio1570Grade">bio1570Grade (hidden)</label>
+                        <input id="bio1570Grade" name="bio1570Grade"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col876" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="bio2710Grade">bio2710Grade (hidden)</label>
+                        <input id="bio2710Grade" name="bio2710Grade"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col877" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="bio2630Grade">bio2630Grade (hidden)</label>
+                        <input id="bio2630Grade" name="bio2630Grade"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col878" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="bio2640Grade">bio2640Grade (hidden)</label>
+                        <input id="bio2640Grade" name="bio2640Grade"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col879" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="eng1510Grade">eng1510Grade (hidden)</label>
+                        <input id="eng1510Grade" name="eng1510Grade"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col880" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="eng1520Grade">eng1520Grade (hidden)</label>
+                        <input id="eng1520Grade" name="eng1520Grade"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col881" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="eng2200Grade">eng2200Grade (hidden)</label>
+                        <input id="eng2200Grade" name="eng2200Grade"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+            <div id="quickHeadingRow46263636464" name="quickHeadingRow" class="text-left row developer "
+            style="overflow: auto;  margin-top: 10px; margin-bottom: 10px; ">
+                <div id="col4656364" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="psy2510Grade">psy2510Grade (hidden)</label>
+                        <input id="psy2510Grade" name="psy2510Grade"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col4676364" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="fineArtHumGrade">fineArtHumGrade (hidden)</label>
+                        <input id="fineArtHumGrade" name="fineArtHumGrade"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col1015" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="gradeMetricsTotalPoints">gradeMetricsTotalPoints</label>
+                        <input id="gradeMetricsTotalPoints" name="gradeMetricsTotalPoints"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col4696364" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="selectedExperience">selectedExperience</label>
+                        <input id="selectedExperience" name="selectedExperience"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col4716364" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="experienceTotalPoints">experienceTotalPoints</label>
+                        <input id="experienceTotalPoints" name="experienceTotalPoints"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col87464" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="otherTotalPoints">otherTotalPoints (hidden)</label>
+                        <input id="otherTotalPoints" name="otherTotalPoints"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col87564" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="essayTotalPoints">essayTotalPoints (hidden)</label>
+                        <input id="essayTotalPoints" name="essayTotalPoints"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col87664" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="grandTotalPoints">grandTotalPoints (hidden)</label>
+                        <input id="grandTotalPoints" name="grandTotalPoints"
+                        class="text-left  " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

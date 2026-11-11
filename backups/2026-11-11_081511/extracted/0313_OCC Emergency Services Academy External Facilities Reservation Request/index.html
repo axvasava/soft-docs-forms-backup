@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>New Etrieve Form</title>
+        <link rel="stylesheet" href="bootstrap.min.css"
+        />
+        <!-- <script src="jquery-2.2.0.min.js"></script>  <script src="JS.js"></script> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+        />
+        <style>
+            .ui-datepicker{ position: relative; z-index: 10000 !important; }
+        </style>
+        <style>
+            .page { margin: 10px auto; border: 1px solid #ddd; box-shadow: 0 0 30px grey; padding: 10px; background-color:white; }
+        </style>
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/styles/main.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+        />
+        <link rel="stylesheet" href="https://webapps.oaklandcc.edu/cdn/icons/css/regular.min.css"
+        />
+    </head>
+    
+    <body>
+        <div class="page container">
+            <div id="HeaderRow2" name="HeaderRow" class="text-left row " style="overflow: auto;  padding:4% 0% 4% 0%;  margin:0% 0% 0% 0%;  background-color:#ffffff;  color:#000000; ">
+                <div id="col3" class="col-xs-12 col-sm-12 text-right  ">
+                    <h5 id="ele4" name="ele37" class="text-right  "><i>Revised 10/26</i></h5>
+                </div>
+                <div id="HeaderLeft5" name="HeaderLeft" class="col-xs-12 col-sm-12 text-center  ">
+                    <img id="HeaderLogo6" name="HeaderLogo" class="col-sm-12 text-center  "
+                    src="https://oaklandcc.edu/images/softdocs/thumbnail_horizontal.png" width="80%"
+                    alt="this is an alt tag for screen readers" />
+                </div>
+                <div id="HeaderRight7" name="HeaderRight" class="col-xs-12 col-sm-12 text-center  ">
+                    <h2 id="h2_8" name="h2_27" class="text-center  "><b>OCC Emergency Services Academy<br />External Facilities Reservation Request</b></h2>
+                </div>
+                <div id="col9" class="col-xs-12 col-sm-12 text-left  " style=" padding:0px 0px 0px 0px;  margin:-20px 0px 0px 0px; ">
+                    <hr id="ele10" name="ele34" class="text-left  " style=" border-color:#046A38;  border-width:3px; "
+                    />
+                </div>
+            </div>
+            <div id="row12" name="" class="text-left section-header ">
+                <div id="col13" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele14" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele15" name="ele595" class="text-left  ">Agency Information</h2>
+                </div>
+            </div>
+            <div id="quickInputsRow432" name="quickInputsRow" class="text-left row  pdServices ">
+                <div id="quickInputsColumn433" name="quickInputsColumn1" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vendorSearch">Vendor Search</label>
+                        <input id="vendorSearch" name="vendorSearch" class="text-left  "
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col435" class="col-xs-2 col-sm-2 text-left  " style=" margin-top:28px; ">
+                    <button id="vendorSearchButton" name="vendorSearchButton" class="text-left btn btn-block btn-primary venSearchBtn "
+                    style="" undefined="">Search</button>
+                </div>
+                <div id="col613" class="col-xs-6 col-sm-6 text-left  " style=" padding:0px 0px 0px 25px;  margin:28px 0px 0px 0px; ">
+                    <input id="noStudentFound" name="noStudentFound" class="text-left  " type="checkbox"
+                    />
+                    <label for="noStudentFound">  No user could be found</label>
+                </div>
+            </div>
+            <div id="quickInputsRow458" name="quickInputsRow" class="text-left row pdServices ">
+                <div id="quickInputsColumn459" name="quickInputsColumn1" class="col-xs-12 col-sm-10 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vendorPayeeName">Vendor Name</label>
+                        <input id="vendorPayeeName" name="vendorPayeeName"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col461" class="col-xs-12 col-sm-2 text-center  ">
+                    <input id="differentPayee" name="differentPayee" class="text-left  " style=" transform: scale(1.5); "
+                    type="checkbox" transform:="" scale(1.5);="" />
+                    <label for="differentPayee">Enter Different Name</label>
+                </div>
+            </div>
+            <div id="quickInputsRow476" name="quickInputsRow" class="text-left row pdServices "
+            data-bind="visible: ( ( differentPayee() ) ) ">
+                <div id="quickInputsColumn477" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentVendorPayeeName">Enter Different Vendor Name</label>
+                        <input id="differentVendorPayeeName"
+                        name="differentVendorPayeeName" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow444" name="quickInputsRow" class="text-left row pdServices ">
+                <div id="quickInputsColumn445" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="address">Address</label>
+                        <input id="address" name="address" class="text-left  "
+                        readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn447" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="city">City</label>
+                        <input id="city" name="city" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn449" name="quickInputsColumn3" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="state">State</label>
+                        <input id="state" name="state" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn451" name="quickInputsColumn4" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="zip">Zip Code</label>
+                        <input id="zip" name="zip" class="text-left  " readonly="true"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="col453" class="col-xs-12 col-sm-2 text-center  " style=" margin-top: 10px; ">
+                    <input id="differentAddress" name="differentAddress" class="text-left  "
+                    style=" transform: scale(1.5) " type="checkbox" />
+                    <label for="differentAddress">Enter Different Address</label>
+                </div>
+                <div id="col455" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele456" name="ele153" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+            </div>
+            <div id="quickInputsRow464" name="quickInputsRow" class="text-left row pdServices "
+            data-bind="visible: ( ( differentAddress() ) ) ">
+                <div id="quickInputsColumn465" name="quickInputsColumn1" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentAddressField">Address</label>
+                        <input id="differentAddressField" name="differentAddressField"
+                        class="text-left  " required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn467" name="quickInputsColumn2" class="col-xs-12 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentCity">City</label>
+                        <input id="differentCity" name="differentCity" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn469" name="quickInputsColumn3" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentState">State</label>
+                        <input id="differentState" name="differentState" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn471" name="quickInputsColumn4" class="col-xs-12 col-sm-2 text-left  ">
+                    <div class="text-left  ">
+                        <label for="differentZip">Zip Code</label>
+                        <input id="differentZip" name="differentZip" class="text-left  "
+                        required="required" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div id="row16" name="row16" class="text-left row agencyInfo " data-bind="visible: ( ( noStudentFound() ) ) ">
+                <div id="col17" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="agency">Agency</label>
+                        <input id="agency" name="agency" class="text-left  " required="required"
+                        />
+                    </div>
+                </div>
+                <div id="col18" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="agencyAddress">Address</label>
+                        <input id="agencyAddress" name="agencyAddress" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col19" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="agencyCity">City</label>
+                        <input id="agencyCity" name="agencyCity" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col20" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="agencyState">State</label>
+                        <input id="agencyState" name="agencyState" class="text-left  "
+                        required="required" data-bind="state" />
+                    </div>
+                </div>
+                <div id="col21" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left maskzip ">
+                        <label for="agencyZip">Zip</label>
+                        <input id="agencyZip" name="agencyZip" class="text-left maskzip "
+                        required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="row1231" name="row1231" class="text-left section-header ">
+                <div id="col1331" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele1431" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele1531" name="ele1531" class="text-left  ">Agency Contact Information</h2>
+                </div>
+            </div>
+            <div id="row516" class="text-left row agencyInfo ">
+                <div id="col517" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="contact">Contact Name</label>
+                        <input id="contact" name="contact" class="text-left  "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col518" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left maskphone ">
+                        <label for="phone">Phone #</label>
+                        <input id="phone" name="phone" class="text-left maskphone "
+                        required="required" />
+                    </div>
+                </div>
+                <div id="col519" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left maskphone ">
+                        <label for="fax">Fax #</label>
+                        <input id="fax" name="fax" class="text-left maskphone " />
+                    </div>
+                </div>
+                <div id="col520" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" class="text-left  " required="required"
+                        data-bind="email" />
+                    </div>
+                </div>
+            </div>
+            <div id="row600" class="text-left row ">
+                <div id="col601" class="col-xs-3 col-sm-3 text-left  ">
+                    <input id="secondaryContact" name="secondaryContact" class="text-left  "
+                    type="checkbox" />
+                    <label for="secondaryContact">  Add another contact</label>
+                </div>
+            </div>
+            <div id="row5163535" name="" class="text-left row agencyInfo2 " data-bind="visible: ( ( secondaryContact() ) ) ">
+                <div id="col51735" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="secondaryContactName">Contact Name</label>
+                        <input id="secondaryContactName" name="secondaryContactName"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="col51835" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left maskphone ">
+                        <label for="secondaryContactPhone">Phone #</label>
+                        <input id="secondaryContactPhone" name="secondaryContactPhone"
+                        class="text-left maskphone " required="required" />
+                    </div>
+                </div>
+                <div id="col51935" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left maskphone ">
+                        <label for="secondaryContactFax">Fax #</label>
+                        <input id="secondaryContactFax" name="secondaryContactFax"
+                        class="text-left maskphone " />
+                    </div>
+                </div>
+                <div id="col52035" class="col-xs-12 col-sm-12 text-left  ">
+                    <div class="text-left  ">
+                        <label for="secondaryContactEmail">Email</label>
+                        <input id="secondaryContactEmail" name="secondaryContactEmail"
+                        class="text-left  " required="required" data-bind="email" />
+                    </div>
+                </div>
+            </div>
+            <div id="row12313939" name="row1231" class="text-left section-header ">
+                <div id="col133139" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele143139" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele153139" name="ele153139" class="text-left  ">Fees for Faculty and Staff</h2>
+                </div>
+            </div>
+            <div id="row621" class="text-left row ">
+                <div id="col622" class="col-xs-5 col-sm-5 text-left  "><span id="ele623" name="ele274" class="col-xs-12 col-sm-12 text-left  "><strong>Range Master - $45 per hour</strong></span>
+                </div>
+                <div id="col624" class="col-xs-7 col-sm-7 text-left  "><span id="ele625" name="ele276" class="col-xs-12 col-sm-12 text-left  "><strong>One person from our staff must be present to operate the controls in the control booth. This fee may be eliminated if your staff member in charge is on the Oakland Police Academy Firearms Staff. </strong></span>
+                </div>
+                <div id="col626" class="col-xs-5 col-sm-5 text-left  "><span id="ele627" name="ele278" class="col-xs-12 col-sm-12 text-left  "><strong>Firearms Instructor - $45 per hour</strong></span>
+                </div>
+                <div id="col628" class="col-xs-7 col-sm-7 text-left  "><span id="ele629" name="ele280" class="col-xs-12 col-sm-12 text-left  "><strong>The instructor to student ratio is 1 instructor for every 5 students. Please indicate if you have a need for additional for instructors. </strong></span>
+                </div>
+                <div id="col630" class="col-xs-5 col-sm-5 text-left  "><span id="ele631" name="ele282" class="col-xs-12 col-sm-12 text-left  "><strong>Firearms Range Rental - $70 per day </strong></span>
+                </div>
+                <div id="col632" class="col-xs-7 col-sm-7 text-left  "><span id="ele633" name="ele284" class="col-xs-12 col-sm-12 text-left  "><strong>Indicate how many hours your rental will be.</strong></span>
+                </div>
+            </div>
+            <div id="row57941414444" name="" class="text-left row ">
+                <div id="col5824144" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele5834144" name="ele583" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="row653" class="text-left row rentalFees ">
+                <div id="col654" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="rentalFee">Facility Rental Fees</label>
+                        <input id="rentalFee" name="rentalFee" class="text-left  "
+                        data-bind="money" />
+                    </div>
+                </div>
+                <div id="col655" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="officerFee">Safety Officer Fees</label>
+                        <input id="officerFee" name="officerFee" class="text-left  "
+                        data-bind="money" />
+                    </div>
+                </div>
+                <div id="col656" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="instructorFee">Instructor Fees</label>
+                        <input id="instructorFee" name="instructorFee"
+                        class="text-left  " data-bind="money" />
+                    </div>
+                </div>
+                <div id="col657" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="miscFee">Miscellaneous Fees</label>
+                        <input id="miscFee" name="miscFee" class="text-left  "
+                        data-bind="money" />
+                    </div>
+                </div>
+                <div id="col666" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="foodFee">Lunch/Refreshment Fees</label>
+                        <input id="foodFee" name="foodFee" class="text-left  "
+                        data-bind="money" />
+                    </div>
+                </div>
+                <div id="col669" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele676" name="ele676" class="text-left  "></p>
+                </div>
+                <div id="col673" class="col-xs-3 col-sm-3 text-left  ">
+                    <p id="ele678" name="ele678" class="text-left  "></p>
+                </div>
+                <div id="col674" class="col-xs-3 col-sm-3 text-left  ">
+                    <p id="ele680" name="ele680" class="text-left  "></p>
+                </div>
+                <div id="col675" class="col-xs-3 col-sm-3 text-left  ">
+                    <p id="ele682" name="ele682" class="text-left  "></p>
+                </div>
+                <div id="col670" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="feeTotal">Total Fee</label>
+                        <input id="feeTotal" name="feeTotal" class="text-left  "
+                        data-bind="calculate: 'rentalFee + officerFee + instructorFee + miscFee + foodFee', money"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="row649" class="text-left row occRentalFeeNotes ">
+                <div id="col694" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele695" name="ele695" class="text-left  " style="border-color:; border-width:;"
+                    />
+                </div>
+                <div id="col650" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="feeNotes">Notes</label>
+                    <textarea id="feeNotes" name="feeNotes" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row123131" name="" class="text-left section-header ">
+                <div id="col1331" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele1431" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele1531" name="ele1531" class="text-left  ">Agency Activities</h2>
+                </div>
+            </div>
+            <div id="row68" class="text-left row activityInfo2 ">
+                <div id="col69" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="activityDescription">Description of Activity</label>
+                    <textarea id="activityDescription" name="activityDescription"
+                    class="text-left  " required="required"></textarea>
+                </div>
+            </div>
+            <div id="datesTimesRow" name="datesTimesRow" class="text-left row activityInfo "
+            style="overflow: auto;  border:2px solid #365563; border-radius:15px 15px 15px 15px; padding: 10px "
+            data-bind="dynamicList: true, dynamicListProperties: {addButtonID: 'addDatesTimes',  removeButtonID: 'removeDatesTimes'}">
+                <div id="col73" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="activityDate">Date</label>
+                        <input id="activityDate" name="activityDate" class="text-left  "
+                        required="required" data-bind="datepicker" />
+                    </div>
+                </div>
+                <div id="col74" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="arrivalTime">Arrival Time</label>
+                        <input id="arrivalTime" name="arrivalTime" class="text-left  "
+                        required="required" data-bind="timepicker: { minTime: '6:00 AM',  maxTime: '11:00 pm' } "
+                        />
+                    </div>
+                </div>
+                <div id="col638" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="departTime">Departure Time</label>
+                        <input id="departTime" name="departTime" class="text-left  "
+                        required="required" data-bind="timepicker: { minTime: '6:00 AM',  maxTime: '11:00 pm' } "
+                        />
+                    </div>
+                </div>
+                <div id="col79" class="col-xs-3 col-sm-3 text-center  " style=" margin-top: 30px; ">
+                    <button id="delete" name="delete" class="text-left btn btn-danger btn-disable "
+                    style="" undefined="" data-bind="dynamicListRemoveRow: true">Delete</button>
+                </div>
+            </div>
+            <div id="row316" class="text-left row activityInfo ">
+                <div id="col320" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="ele321" name="ele321" class="text-left  "></p>
+                </div>
+                <div id="col317" class="col-xs-4 col-sm-4 text-left  ">
+                    <button id="addDatesTimes" name="addDatesTimes" class="col-xs-12 col-sm-12 text-left btn btn-primary btn-disable "
+                    style="" undefined="">Add Date/Time</button>
+                </div>
+                <div id="col379" class="col-xs-4 col-sm-4 text-left  ">
+                    <button id="removeDatesTimes" name="removeDatesTimes" class="col-xs-12 col-sm-12 text-left btn btn-danger btn-disable "
+                    style="" undefined="">Remove Date/TIme</button>
+                </div>
+                <div id="col380" class="col-xs-2 col-sm-2 text-left  ">
+                    <p id="ele382" name="ele382" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="row5803737" name="" class="text-left row ">
+                <div id="col58537" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele58637" name="ele586" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="row722626" name="" class="text-left row activityInfo2 ">
+                <div id="col7926" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="numberParticipants">Number of Participants</label>
+                        <input id="numberParticipants" name="numberParticipants"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+                <div id="col8026" class="col-xs-3 col-sm-3 text-left  ">
+                    <label for="food">Food / Refreshments</label>
+                    <select id="food" name="food" class="text-left  "
+                    required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="col546" name="col546" class="col-xs-4 col-sm-6 text-left  " style=" padding:0px 0px 0px 15px;  margin:25px 0px 0px 0px; "
+                data-bind="visible: ( ( food() == 'Yes' ) ) ">
+                    <p id="ele547" name="ele547" class="text-left  ">
+                        <label style="margin-right:10px;">
+                            <input type="checkbox" name="breakfast" id="breakfast" value="breakfast"
+                            />Breakfast</label>
+                        <label style="margin-right:10px;">
+                            <input type="checkbox" name="lunch" id="lunch" value="lunch" />Lunch</label>
+                        <label style="margin-right:10px;">
+                            <input type="checkbox" name="dinner" id="dinner" value="dinner" />Dinner</label>
+                    </p>
+                </div>
+            </div>
+            <div id="row7226263838" name="" class="text-left row activityInfo2 ">
+                <div id="col52938" class="col-xs-4 col-sm-4 text-left  ">
+                    <label for="ele53038">Is Instructor bringing laptop?</label>
+                    <select id="ele53038" name="ele530"
+                    class="text-left  " required="required">
+                        <option value=""></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div id="col792638" class="col-xs-4 col-sm-5 text-left  ">
+                    <div class="text-left  ">
+                        <label for="instructorName1">Instructor Name</label>
+                        <input id="instructorName1" name="instructorName1"
+                        class="text-left  " required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="row110" name="" class="text-left section-header ">
+                <div id="col111" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele112" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele113" name="ele595" class="text-left  ">Facilities Requested</h2>
+                </div>
+            </div>
+            <div id="row690" class="text-left row ">
+                <div id="col691" class="col-xs-12 col-sm-12 text-left  ">
+                    <p id="ele692" name="ele692" class="text-left  "></p>
+                </div>
+            </div>
+            <div id="row175" class="text-left row facilitiesInfo ">
+                <div id="col559" class="col-xs-12 col-sm-12 text-left  "><span id="ele560" name="ele560" class="text-left  "></span>
+                </div>
+                <div id="col563" class="col-xs-6 col-sm-6 text-left  "><span id="nonRequired1" name="nonRequired1" class="col-xs-12 col-sm-12 text-left  "><strong>Is Certificate of Insurance required? </strong>  <span style="color: red;">*</span></span>
+                </div>
+                <div id="col570" class="col-xs-1 col-sm-1 text-left  ">
+                    <input id="nonRequiredYes" name="nonRequired" class="text-left  " type="radio"
+                    value="yes" />
+                    <label for="nonRequiredYes"> Yes</label>
+                </div>
+                <div id="col571" class="col-xs-1 col-sm-1 text-left  ">
+                    <input id="nonRequiredNo" name="nonRequired" class="text-left  " type="radio"
+                    value="no" />
+                    <label for="nonRequiredNo"> No</label>
+                </div>
+                <div id="col576" name="col576" class="col-xs-6 col-sm-6 text-left  " data-bind="visible: ( ( nonRequired() == 'no' ) ) ">
+                    <label for="nonRequiredReason"><strong>Non-Required/Reason </strong>  <span style="color: red;">*</span>
+                    </label>
+                    <textarea id="nonRequiredReason" name="nonRequiredReason" class="col-xs-12 col-sm-12 text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row5794545" name="" class="text-left row ">
+                <div id="col58245" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele58345" name="ele583" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="row1141111" name="" class="text-left row facilitiesInfo ">
+                <div id="col550" class="col-xs-2 col-sm-2 text-left  ">
+                    <input id="lowerSite" name="lowerSite" class="text-left  " type="checkbox"
+                    />
+                    <label for="lowerSite">  Lower Site</label>
+                </div>
+                <div id="col157" name="col157" class="col-xs-12 col-sm-12 text-center  "
+                data-bind="visible: ( ( lowerSite() ) ) "><span id="ele158" name="ele158" class="text-left  "><div>
+<label style="margin-right:10px;"><input type="checkbox" name="bank" id="bank" value="bank" /> Bank</label>
+<label style="margin-right:10px;"><input type="checkbox" name="gasStation" id="gasStation" value="gasStation" /> Gas Station</label>
+<label style="margin-right:10px;"><input type="checkbox" name="motel" id="motel" value="motel" /> Motel</label>
+<label style="margin-right:10px;"><input type="checkbox" name="twoStory" id="twoStory" value="twoStory" /> Two-Story</label>
+<label style="margin-right:10px;"><input type="checkbox" name="ranch" id="ranch" value="ranch" /> Ranch</label>
+<label style="margin-right:10px;"><input type="checkbox" name="capeCod" id="capeCod" value="capeCod" /> Cape Cod</label>
+<label style="margin-right:10px;"><input type="checkbox" name="streets" id="streets" value="streets" /> Streets</label>
+</div></span>
+                </div>
+            </div>
+            <div id="row580" class="text-left row ">
+                <div id="col585" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele586" name="ele586" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="row11411111111" name="" class="text-left row facilitiesInfo ">
+                <div id="col553" class="col-xs-2 col-sm-2 text-left  ">
+                    <input id="upperSite" name="upperSite" class="text-left  " type="checkbox"
+                    />
+                    <label for="upperSite">  Upper Site</label>
+                </div>
+                <div id="col15711" name="col15711" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ( ( upperSite() ) ) "><span id="ele15811" name="ele15811" class="text-left  "><div>
+<label style="margin-right:10px;"><input type="checkbox" name="burnTower" id="burnTower" value="burnTower" /> Burn Tower</label>
+<label style="margin-right:10px;"><input type="checkbox" name="dirtyClassroom" id="dirtyClassroom" value="dirtyClassroom" /> Dirty Classroom</label>
+<label style="margin-right:10px;"><input type="checkbox" name="burnPit" id="burnPit" value="burnPit" /> Burn Pit</label>
+<label style="margin-right:10px;"><input type="checkbox" name="carFire" id="carFire" value="carFire" /> Car Fire</label>
+<label style="margin-right:10px;"><input type="checkbox" name="phase1" id="phase1" value="phase1" /> Phase l Flashover</label>
+<label style="margin-right:10px;"><input type="checkbox" name="phase2" id="phase2" value="phase2" /> Phase ll Flashover</label>
+<label style="margin-right:10px;"><input type="checkbox" name="mobile" id="mobile" value="mobile" /> Mobile Flashover Vehicles</label>
+</div></span>
+                </div>
+            </div>
+            <div id="row581" class="text-left row ">
+                <div id="col588" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele589" name="ele589" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="row114111111111212" name="" class="text-left row facilitiesInfo ">
+                <div id="col556" class="col-xs-3 col-sm-3 text-left  ">
+                    <input id="trainingCenter" name="trainingCenter" class="text-left  " type="checkbox"
+                    />
+                    <label for="trainingCenter">  Training Center</label>
+                </div>
+                <div id="col1571112" name="col1571112" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ( ( trainingCenter() ) ) "><span id="ele1581112" name="ele1581112" class="text-left  "><div>
+<label style="margin-right:10px;"><input type="checkbox" name="classroom114A" id="classroom114A" value="classroom114A" /> Classroom 114A (Capacity-12)</label>
+<label style="margin-right:10px;"><input type="checkbox" name="classroom114B" id="classroom114B" value="classroom114B" /> Classroom 114B (Capacity-10)</label>
+<label style="margin-right:10px;"><input type="checkbox" name="classroom122A" id="classroom122A" value="classroom122A" /> Classroom 122A (Capacity-32)</label>
+<label style="margin-right:10px;"><input type="checkbox" name="classroom112B" id="classroom112B" value="classroom112B" /> Classroom 112B (Capacity-32)</label>
+<label style="margin-right:10px;"><input type="checkbox" name="videoConferencing" id="videoConferencing" value="videoConferencing" /> Video Conferencing</label>
+</div></span>
+                </div>
+            </div>
+            <div id="row579" class="text-left row ">
+                <div id="col582" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele583" name="ele583" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="row1141111111112124040" name="" class="text-left row facilitiesInfo ">
+                <div id="col55640" class="col-xs-3 col-sm-3 text-left  ">
+                    <input id="vehicles" name="vehicles" class="text-left  " type="checkbox"
+                    />
+                    <label for="vehicles">  Vehicles</label>
+                </div>
+                <div id="col157111240" name="col157111240" class="col-xs-12 col-sm-12 text-left  "
+                data-bind="visible: ( ( vehicles() ) ) "><span id="ele158111240" name="ele158111240" class="text-left  "><div>
+<label style="margin-right:10px;"><input type="checkbox" name="policeCar" id="policeCar" value="policeCar" /> Police Car</label>
+<label style="margin-right:10px;"><input type="checkbox" name="civilianVehicle" id="civilianVehicle" value="civilianVehicle" /> Civilian Vehicle</label>
+<label style="margin-right:10px;"><input type="checkbox" name="ambulance" id="ambulance" value="ambulance" /> Ambulance</label>
+<label style="margin-right:10px;"><input type="checkbox" name="firetruck" id="firetruck" value="firetruck" /> Firetruck</label>
+
+</div></span>
+                </div>
+            </div>
+            <div id="row5794141" name="" class="text-left row ">
+                <div id="col58241" class="col-xs-12 col-sm-12 text-left  ">
+                    <hr id="ele58341" name="ele583" class="text-left  " style=" border-width:2px; "
+                    />
+                </div>
+            </div>
+            <div id="row241" name="" class="text-left row ">
+                <div id="col242" class="col-xs-12 col-sm-12 text-left fd-callout fd-callout--info "><span id="ele243" name="ele23024" class="col-xs-12 col-sm-12 text-left  ">All Training Rooms at the OCC Emergency Services Academy are equipped with the Smart Technology Package which includes an instructor / facilitator computer station, projection system, digital document camera, VCR, DVD, CD player, Internet Access, and white boards. Requests for additional audio / visual technology or supplies must be made 10 days prior to the scheduled event and are subject to additional fees. <strong>Standard equipment will be tested and operational for the event provided that it is listed below.</strong></span>
+                </div>
+            </div>
+            <div id="row244" class="text-left row audioVisuals ">
+                <div id="col245" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="ele246">Please use the space below to indicate what equipment will be used during
+                        the event</label>
+                    <textarea id="ele246" name="ele246" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row2192121" name="" class="text-left row softwareInfo ">
+                <div id="col263" class="col-xs-12 col-sm-12 text-left  ">
+                    <label for="ele264">Please use the space below to indicate any software which will be utilized
+                        for the class</label>
+                    <textarea id="ele264" name="ele264" class="text-left  "></textarea>
+                </div>
+            </div>
+            <div id="row1101414151516" name="" class="text-left section-header ">
+                <div id="col111141516" class="col-xs-12 col-sm-12 text-left fd-section-header title-only "><span id="ele112141516" name="ele58" class="text-left icon "><i class="fa-regular fa-circle-user" aria-hidden="true"></i></span>
+                    <h2
+                    id="row16Heading" name="row16Heading" class="text-left  ">Signatures</h2>
+                </div>
+            </div>
+            <div id="row2412222" name="" class="text-left row ">
+                <div id="col24222" class="col-xs-12 col-sm-12 text-left fd-callout fd-callout--info "><span id="ele24322" name="ele24322" class="col-xs-12 col-sm-12 text-left  ">Proper use of Oakland Community College (OCC) facilities will be the responsibility of the sponsoring organization/renter to comply with state and federal laws, and local laws governing the use of public property and <strong>OCC’s Policy Guidelines for Freedom of Speech and Expression</strong>. To accommodate equal and fair access to college facilities, OCC requires rental organization to comply with the Americans with Disabilities Act (ADA) and all other applicable federal, state, and local regulations. Rental organization shall notify OCC of any specific accommodations that are requested of it by its participants, spectators, or any other individual relating to accessibility. All Firefighter related training will adhere to the appropriate National Fire Protection Agency (NEPA) standards. All other training will adhere to applicable industry safety standards. Instructional personnel are to be certified in the appropriate discipline. It is agreed that the sponsoring organization/renter will pay all rental fees and expenses as well as any repair fees resulting from use of this facility. All payments are due within 30 days of invoice. The Soliciting and Sale of Merchandise is Strictly Prohibited.</span>
+                </div>
+            </div>
+            <div id="quickInputsRow270" name="quickInputsRow" class="text-left row ">
+                <div id="quickInputsColumn271" name="quickInputsColumn1" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="representativeSignature">OCC Emergency Services Academy Representative</label>
+                        <input id="representativeSignature"
+                        name="representativeSignature" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn273" name="quickInputsColumn2" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="representativeSignDate">Date</label>
+                        <input id="representativeSignDate" name="representativeSignDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col280" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left maskphone ">
+                        <label for="representativePhone">Phone #</label>
+                        <input id="representativePhone" name="representativePhone"
+                        class="text-left maskphone " required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="quickInputsRow27024" name="quickInputsRow" class="text-left row agencySignature ">
+                <div id="quickInputsColumn27124" name="quickInputsColumn1" class="col-xs-6 col-sm-6 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationRepSignature">Rental Organization's Representative</label>
+                        <input id="organizationRepSignature"
+                        name="organizationRepSignature" class="text-left  " required="required"
+                        type="text" />
+                    </div>
+                </div>
+                <div id="quickInputsColumn27324" name="quickInputsColumn2" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationRepSignDate">Date</label>
+                        <input id="organizationRepSignDate" name="organizationRepSignDate"
+                        class="text-left  " readonly="true" type="text" />
+                    </div>
+                </div>
+                <div id="col287" class="col-xs-3 col-sm-3 text-left  ">
+                    <div class="text-left maskphone ">
+                        <label for="organizationRepPhone">Phone #</label>
+                        <input id="organizationRepPhone" name="organizationRepPhone"
+                        class="text-left maskphone " required="required" />
+                    </div>
+                </div>
+            </div>
+            <div id="row480" class="text-left section-header developer ">
+                <div id="col481" class="col-xs-12 col-sm-12 text-left fd-section-header with-subtitle developer-variant "><span id="ele482" name="ele58" class="text-left icon "><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+                    <h2
+                    id="ele483" name="ele59" class="text-left  ">Developer Section</h2>
+                        <p id="ele484" name="ele60" class="text-left  ">This section is intended for developer use only. If it is visible, please
+                            notify support staff.</p>
+                </div>
+            </div>
+            <div id="row485" class="text-left row developer ">
+                <div id="col487" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="organizationAddressId">organizationAddressId</label>
+                        <input id="organizationAddressId" name="organizationAddressId"
+                        class="text-left  " />
+                    </div>
+                </div>
+                <div id="col492" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="nisVendorName">nisVendorName</label>
+                        <input id="nisVendorName" name="nisVendorName" class="text-left  "
+                        />
+                    </div>
+                </div>
+                <div id="col493" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="nisID">nisID</label>
+                        <input id="nisID" name="nisID" class="text-left  " />
+                    </div>
+                </div>
+                <div id="col617" class="col-xs-4 col-sm-4 text-left  ">
+                    <div class="text-left  ">
+                        <label for="vendorName">vendorName</label>
+                        <input id="vendorName" name="vendorName" class="text-left  "
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,1201 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Adjunct Observation Report</title>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/fontawesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/icons/css/solid.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://webapps.oaklandcc.edu/cdn/occ-framework/occForms.css"
+		/>
+		<style>
+			#term-section-row label[for="findAnotherSection"] {
+				align-items: center;
+				padding-block: 0;
+			}
+			#findAnotherSection {
+				margin: 0;
+			}
+			@media (min-width: 40.001rem) {
+				#term-section-row label[for="findAnotherSection"] {
+					margin-block-start: calc(var(--occ-font-size-sm) * var(--occ-line-height-normal) + var(--occ-space-2));
+				}
+				#adjunct-content > .occ-field-grid {
+					grid-template-columns: minmax(0, 2fr) minmax(0, 3fr) minmax(
+							0,
+							3fr
+						);
+				}
+				#term-section-row {
+					grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(
+							0,
+							1fr
+						);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<main class="occ-form">
+			<div class="occ-theme-toggle-row">
+				<div class="occ-theme-toggle">
+					<label class="occ-theme-switch" for="occThemeToggle">
+						<input
+							id="occThemeToggle"
+							class="occ-theme-switch__input"
+							type="checkbox"
+							data-occ-theme-toggle
+							aria-label="Use dark mode"
+						/>
+						<span
+							class="occ-theme-switch__track"
+							aria-hidden="true"
+						>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--on"
+								>Dark</span
+							>
+							<span
+								class="occ-theme-switch__text occ-theme-switch__text--off"
+								>Light</span
+							>
+							<span class="occ-theme-switch__thumb"></span>
+						</span>
+					</label>
+				</div>
+			</div>
+			<header class="occ-masthead">
+				<div class="occ-masthead__inner">
+					<div class="occ-masthead__identity">
+						<img
+							class="occ-masthead__logo"
+							src="https://webapps.oaklandcc.edu/cdn/images/occ-stacked-white1.png"
+							alt="Oakland Community College"
+						/>
+					</div>
+					<div class="occ-masthead__content">
+						<h1>Adjunct Observation Report</h1>
+						<p class="occ-heading-description">
+							Use this form to document an adjunct observation,
+							provide feedback, and recommend when the next
+							observation should take place.
+						</p>
+						<dl class="occ-masthead__meta">
+							<div class="occ-masthead__meta-item">
+								<dt>Department</dt>
+								<dd>Academics</dd>
+							</div>
+							<div class="occ-masthead__meta-item">
+								<dt>Date</dt>
+								<dd>November 2026</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+			</header>
+			<p class="occ-help">
+				<em
+					>Fields marked with an asterisk (<span
+						class="occ-required"
+						aria-hidden="true"
+						>*</span
+					>) are required.</em
+				>
+			</p>
+			<form id="adjunctObservationReport">
+				<section class="occ-section" aria-labelledby="observer-heading">
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+							><i class="fa-solid fa-user"></i
+						></span>
+						<div class="occ-section-heading__content">
+							<h2 id="observer-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="observer-content"
+								>
+									Observer Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-chevron-up"></i
+									></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Information about the person completing the
+								observation.
+							</p>
+						</div>
+					</header>
+					<div id="observer-content" class="occ-section__content">
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="originatorErpId"
+									>Observer ID</label
+								>
+								<input
+									id="originatorErpId"
+									name="originatorErpId"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="originatorDisplayName"
+									>Observer Name</label
+								>
+								<input
+									id="originatorDisplayName"
+									name="originatorDisplayName"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+						</div>
+						<aside
+							id="observationAttachmentNotice"
+							class="occ-callout occ-callout--info"
+							hidden
+						>
+							<span class="occ-callout__icon" aria-hidden="true"
+								><i class="fa-solid fa-paperclip"></i
+							></span>
+							<div class="occ-callout__content">
+								<p>
+									Please attach your observation report or
+									counselor peer review document. This
+									attachment is optional.
+								</p>
+							</div>
+						</aside>
+						<fieldset
+							id="pleaseSelectStatus"
+							class="occ-fieldset occ-choice-field"
+						>
+							<legend class="occ-legend">
+								Observation Category
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								>
+							</legend>
+							<!-- Stored category values are unconfirmed; labels are provisional values. -->
+							<div
+								class="occ-choice-group occ-choice-group--grid"
+							>
+								<label
+									class="occ-choice"
+									for="pleaseSelectStatus-input-0"
+								>
+									<input
+										id="pleaseSelectStatus-input-0"
+										name="pleaseSelectStatus"
+										type="radio"
+										value="Teaching adjunct"
+										required
+									/>
+									<span>Teaching Adjunct</span>
+								</label>
+								<label
+									class="occ-choice"
+									for="pleaseSelectStatus-input-1"
+								>
+									<input
+										id="pleaseSelectStatus-input-1"
+										name="pleaseSelectStatus"
+										type="radio"
+										value="Non-teaching adjunct"
+										required
+									/>
+									<span>Non-teaching Adjunct</span>
+								</label>
+							</div>
+						</fieldset>
+						<div class="occ-field" hidden>
+							<label class="occ-label" for="dropdown_2"
+								>Department</label
+							>
+							<select
+								id="dropdown_2"
+								name="dropdown_2"
+								class="occ-select"
+							>
+								<option value="">Choose an option</option>
+								<option value="Academic Support Center">
+									Academic Support Center
+								</option>
+								<option value="Counseling">Counseling</option>
+								<option value="Library">Library</option>
+							</select>
+						</div>
+					</div>
+				</section>
+				<section class="occ-section" aria-labelledby="adjunct-heading">
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+							><i class="fa-solid fa-id-card"></i
+						></span>
+						<div class="occ-section-heading__content">
+							<h2 id="adjunct-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="adjunct-content"
+								>
+									Adjunct Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-chevron-up"></i
+									></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Identify the adjunct being observed.
+							</p>
+						</div>
+					</header>
+					<div id="adjunct-content" class="occ-section__content">
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="adjunctSearch"
+									>Adjunct ID
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									></label
+								>
+								<div
+									id="adjunctAutocomplete"
+									class="occ-autocomplete"
+								>
+									<input
+										id="adjunctSearch"
+										class="occ-input occ-autocomplete__input"
+										type="text"
+										required
+										autocomplete="off"
+										data-notsaved
+										aria-describedby="adjunctEmpId-help"
+										inputmode="numeric"
+										maxlength="7"
+									/>
+									<input
+										id="adjunctEmpId"
+										name="adjunctEmpId"
+										class="occ-autocomplete__value"
+										type="hidden"
+									/>
+									<button
+										id="adjunctSearch-clear"
+										class="occ-autocomplete__clear"
+										type="button"
+										aria-label="Clear adjunct"
+										hidden
+									>
+										&times;
+									</button>
+									<div class="occ-autocomplete__panel" hidden>
+										<div
+											class="occ-autocomplete__state"
+											hidden
+										></div>
+										<ul class="occ-autocomplete__list"></ul>
+									</div>
+									<p class="occ-autocomplete__status"></p>
+								</div>
+								<p id="adjunctEmpId-help" class="occ-help">
+									Enter seven digits, then select the
+									employee.
+								</p>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="adjunctName"
+									>Adjunct Name</label
+								>
+								<input
+									id="adjunctName"
+									name="adjunctName"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="adjunctEmail"
+									>Adjunct Email</label
+								>
+								<input
+									id="adjunctEmail"
+									name="adjunctEmail"
+									class="occ-input"
+									type="email"
+									readonly
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section
+					class="occ-section"
+					aria-labelledby="observation-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+							><i class="fa-solid fa-clipboard"></i
+						></span>
+						<div class="occ-section-heading__content">
+							<h2 id="observation-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="observation-content"
+								>
+									Observation Details
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-chevron-up"></i
+									></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Record when and where the observation took place
+								and provide your feedback.
+							</p>
+						</div>
+					</header>
+					<div id="observation-content" class="occ-section__content">
+						<div id="term-section-row" class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="term"
+									>Term
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									></label
+								>
+								<select
+									id="term"
+									name="term"
+									class="occ-select"
+									required
+									aria-describedby="term-instructor-help term-help"
+								>
+									<option value="">Choose a term</option>
+								</select>
+								<p id="term-instructor-help" class="occ-help">
+									Choose an instructor first.
+								</p>
+								<p
+									id="term-help"
+									class="occ-help"
+									role="status"
+								></p>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="instructorSection"
+									>Instructor's Sections
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									></label
+								>
+								<select
+									id="instructorSection"
+									class="occ-select"
+									required
+									data-notsaved
+									aria-describedby="instructorSectionStatus"
+								>
+									<option value="">Choose a section</option>
+								</select>
+								<p
+									id="instructorSectionStatus"
+									class="occ-help"
+									role="status"
+								>
+									Select an adjunct and term to load
+									instructor sections.
+								</p>
+							</div>
+							<div class="occ-field">
+								<label
+									class="occ-choice"
+									for="findAnotherSection"
+									><input
+										id="findAnotherSection"
+										type="checkbox"
+										data-notsaved
+										aria-controls="manualSectionRow"
+									/><span>Find Another Section</span></label
+								>
+							</div>
+						</div>
+						<div id="manualSectionRow" hidden>
+							<p
+								id="manualSectionStatus"
+								class="occ-help"
+								role="status"
+							>
+								Choose a term before searching.
+							</p>
+							<div class="occ-field-grid occ-field-grid--3">
+								<div class="occ-field">
+									<label
+										class="occ-label"
+										for="sectionSubjectSearch"
+										>Subject</label
+									>
+									<div
+										id="sectionSubjectAutocomplete"
+										class="occ-autocomplete"
+									>
+										<input
+											id="sectionSubjectSearch"
+											class="occ-input occ-autocomplete__input"
+											type="text"
+											autocomplete="off"
+											data-notsaved
+											aria-describedby="manualSectionStatus"
+										/>
+										<input
+											id="sectionSubjectValue"
+											class="occ-autocomplete__value"
+											type="hidden"
+											data-notsaved
+										/>
+										<button
+											id="sectionSubjectClear"
+											class="occ-autocomplete__clear"
+											type="button"
+											aria-label="Clear Subject"
+											hidden
+										>
+											&times;
+										</button>
+										<div
+											class="occ-autocomplete__panel"
+											hidden
+										>
+											<div
+												class="occ-autocomplete__state"
+												hidden
+											></div>
+											<ul
+												class="occ-autocomplete__list"
+											></ul>
+										</div>
+										<p class="occ-autocomplete__status"></p>
+									</div>
+								</div>
+								<div class="occ-field">
+									<label
+										class="occ-label"
+										for="sectionCourseSearch"
+										>Course</label
+									>
+									<div
+										id="sectionCourseAutocomplete"
+										class="occ-autocomplete"
+									>
+										<input
+											id="sectionCourseSearch"
+											class="occ-input occ-autocomplete__input"
+											type="text"
+											autocomplete="off"
+											data-notsaved
+											aria-describedby="manualSectionStatus"
+										/>
+										<input
+											id="sectionCourseValue"
+											class="occ-autocomplete__value"
+											type="hidden"
+											data-notsaved
+										/>
+										<button
+											id="sectionCourseClear"
+											class="occ-autocomplete__clear"
+											type="button"
+											aria-label="Clear Course"
+											hidden
+										>
+											&times;
+										</button>
+										<div
+											class="occ-autocomplete__panel"
+											hidden
+										>
+											<div
+												class="occ-autocomplete__state"
+												hidden
+											></div>
+											<ul
+												class="occ-autocomplete__list"
+											></ul>
+										</div>
+										<p class="occ-autocomplete__status"></p>
+									</div>
+								</div>
+								<div class="occ-field">
+									<label
+										class="occ-label"
+										for="manualSectionSearch"
+										>Section</label
+									>
+									<div
+										id="manualSectionAutocomplete"
+										class="occ-autocomplete"
+									>
+										<input
+											id="manualSectionSearch"
+											class="occ-input occ-autocomplete__input"
+											type="text"
+											autocomplete="off"
+											data-notsaved
+											aria-describedby="manualSectionStatus"
+										/>
+										<input
+											id="manualSectionValue"
+											class="occ-autocomplete__value"
+											type="hidden"
+											data-notsaved
+										/>
+										<button
+											id="manualSectionClear"
+											class="occ-autocomplete__clear"
+											type="button"
+											aria-label="Clear Section"
+											hidden
+										>
+											&times;
+										</button>
+										<div
+											class="occ-autocomplete__panel"
+											hidden
+										>
+											<div
+												class="occ-autocomplete__state"
+												hidden
+											></div>
+											<ul
+												class="occ-autocomplete__list"
+											></ul>
+										</div>
+										<p class="occ-autocomplete__status"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="occ-field">
+							<label class="occ-label" for="courseObserved"
+								>Course Observed</label
+							>
+							<input
+								id="courseObserved"
+								name="courseObserved"
+								class="occ-input"
+								type="text"
+								readonly
+							/>
+							<p
+								id="selectedSectionTitle"
+								class="occ-help"
+								role="status"
+								hidden
+							></p>
+						</div>
+						<div class="occ-field-grid occ-field-grid--4">
+							<div class="occ-field">
+								<label class="occ-label" for="observationDate"
+									>Observation Date
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									></label
+								>
+								<input
+									id="observationDate"
+									name="observationDate"
+									class="occ-input"
+									type="date"
+									required
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="observationTime"
+									>Observation Time
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									></label
+								>
+								<input
+									id="observationTime"
+									name="observationTime"
+									class="occ-input"
+									type="time"
+									required
+								/>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="campus"
+									>Campus</label
+								>
+								<input
+									type="text"
+									id="campus"
+									name="campus"
+									class="occ-input"
+									readonly
+									aria-describedby="campus-help campus-error departmentChair-status departmentChair-error"
+								/>
+								<p
+									id="campus-help"
+									class="occ-help"
+									role="status"
+								></p>
+								<p
+									id="campus-error"
+									class="occ-error"
+									hidden
+								></p>
+								<p
+									id="departmentChair-status"
+									class="occ-help"
+									role="status"
+								></p>
+								<p
+									id="departmentChair-error"
+									class="occ-error"
+									hidden
+								></p>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="observationType"
+									>Observation Type
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									></label
+								>
+								<select
+									id="observationType"
+									name="observationType"
+									class="occ-select"
+									required
+								>
+									<option value="">Choose an option</option>
+									<option value="In-person">In-person</option>
+									<option value="Online">Online</option>
+									<option value="Hybrid">Hybrid</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="occ-field">
+							<label class="occ-label" for="comments"
+								>Observation Comments
+								<span class="occ-required" aria-hidden="true"
+									>*</span
+								></label
+							>
+							<textarea
+								id="comments"
+								name="comments"
+								class="occ-textarea"
+								rows="6"
+								maxlength="500"
+								required
+							></textarea>
+						</div>
+					</div>
+				</section>
+				<section
+					class="occ-section"
+					aria-labelledby="assessment-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+							><i class="fa-solid fa-clipboard-check"></i
+						></span>
+						<div class="occ-section-heading__content">
+							<h2 id="assessment-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="assessment-content"
+								>
+									Assessment and Recommendation
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-chevron-up"></i
+									></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Record your assessment and recommendation for
+								the next observation.
+							</p>
+						</div>
+					</header>
+					<div id="assessment-content" class="occ-section__content">
+						<div class="occ-field-grid occ-field-grid--3">
+							<div class="occ-field">
+								<label class="occ-label" for="dropdown_1"
+									>Overall Assessment
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									></label
+								>
+								<select
+									id="dropdown_1"
+									name="dropdown_1"
+									class="occ-select"
+									required
+								>
+									<option value="">Choose an option</option>
+									<option value="Satisfactory">
+										Satisfactory
+									</option>
+									<option value="Unsatisfactory">
+										Unsatisfactory
+									</option>
+								</select>
+							</div>
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="dropdownRecommendation"
+									>Next Observation
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									></label
+								>
+								<select
+									id="dropdownRecommendation"
+									name="dropdownRecommendation"
+									class="occ-select"
+									required
+								>
+									<option value="">Choose an option</option>
+									<option
+										value="Normal (Every 3 years or 6 semesters)"
+									>
+										Normal (Every 3 Years)
+									</option>
+									<option value="Other">Other</option>
+								</select>
+							</div>
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="nextObservationDate"
+									>Date</label
+								>
+								<select
+									id="nextObservationDate"
+									name="nextObservationDate"
+									class="occ-select"
+									aria-describedby="nextObservationDate-help"
+								>
+									<option value="">
+										Choose a future term
+									</option>
+								</select>
+								<p
+									id="nextObservationDate-help"
+									class="occ-help"
+									role="status"
+								></p>
+							</div>
+						</div>
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="dropdownDean"
+									>Dean
+									<span
+										class="occ-required"
+										aria-hidden="true"
+										>*</span
+									></label
+								>
+								<select
+									id="dropdownDean"
+									name="dropdownDean"
+									class="occ-select"
+									required
+									aria-describedby="dropdownDean-help"
+								>
+									<option value="">Choose a Dean</option>
+								</select>
+								<p
+									id="dropdownDean-help"
+									class="occ-help"
+									role="status"
+								></p>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="deanEmail"
+									>Dean Email</label
+								>
+								<input
+									id="deanEmail"
+									name="deanEmail"
+									class="occ-input"
+									type="email" readonly
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section
+					class="occ-section"
+					aria-labelledby="dean-use-heading"
+					hidden
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+							><i class="fa-solid fa-user-tie"></i
+						></span>
+						<div class="occ-section-heading__content">
+							<h2 id="dean-use-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="dean-use-content"
+								>
+									Dean Use
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-chevron-up"></i
+									></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Record the Dean's comments and review the
+								administrative contact information.
+							</p>
+						</div>
+					</header>
+					<div id="dean-use-content" class="occ-section__content">
+						<div class="occ-field">
+							<label class="occ-label" for="deanComments"
+								>Comments</label
+							>
+							<textarea
+								id="deanComments"
+								name="deanComments"
+								class="occ-textarea"
+								rows="6"
+								maxlength="500"
+							></textarea>
+						</div>
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="admin"
+									>Admin</label
+								>
+								<input
+									id="admin"
+									name="admin"
+									class="occ-input"
+									type="text" readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="administrativeSpecialistEmail"
+									>Admin Email</label
+								>
+								<input
+									id="administrativeSpecialistEmail"
+									name="administrativeSpecialistEmail"
+									class="occ-input"
+									type="email" readonly
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section
+					class="occ-section"
+					aria-labelledby="admin-heading"
+					hidden
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+							><i class="fa-solid fa-file-invoice-dollar"></i
+						></span>
+						<div class="occ-section-heading__content">
+							<h2 id="admin-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="admin-content"
+								>
+									Admin Use
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-chevron-up"></i
+									></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								Account information and payment details for
+								processing this observation.
+							</p>
+						</div>
+					</header>
+					<div id="admin-content" class="occ-section__content">
+						<aside
+							id="adminAttachmentNotice"
+							class="occ-callout occ-callout--info"
+						>
+							<span class="occ-callout__icon" aria-hidden="true"
+								><i class="fa-solid fa-paperclip"></i
+							></span>
+							<div class="occ-callout__content">
+								<p>
+									Please attach the observer's load report.
+									This attachment is required.
+								</p>
+							</div>
+						</aside>
+						<header class="occ-subsection-heading">
+							<h3>GL Account Information</h3>
+						</header>
+						<div class="occ-field-grid">
+							<div class="occ-field" hidden>
+								<label
+									class="occ-label"
+									for="academicDepartment"
+									>Academic Department</label
+								>
+								<select
+									id="academicDepartment"
+									name="academicDepartment"
+									class="occ-select"
+								>
+									<option value="">
+										Choose a department
+									</option>
+									<option value="ASC">ASC</option>
+									<option value="BUS">BUS</option>
+									<option value="CIS">CIS</option>
+									<option value="CNS">CNS</option>
+									<option value="EMIT">EMIT</option>
+									<option value="ENG, LIT &amp; COM">
+										ENG, LIT &amp; COM
+									</option>
+									<option value="Fine &amp; Perf. Arts">
+										Fine &amp; Perf. Arts
+									</option>
+									<option value="Health Prof">
+										Health Prof
+									</option>
+									<option value="HUM, ART &amp; Design">
+										HUM, ART &amp; Design
+									</option>
+									<option value="LIB">LIB</option>
+									<option value="Life &amp; Natural Sci">
+										Life &amp; Natural Sci
+									</option>
+									<option value="MATH">MATH</option>
+									<option value="NUR">NUR</option>
+									<option value="Public Services">
+										Public Services
+									</option>
+									<option value="Social Science">
+										Social Science
+									</option>
+								</select>
+							</div>
+							<div class="occ-field">
+								<label class="occ-label" for="glAccountNumber"
+									>GL Account Number</label
+								>
+								<input
+									id="glAccountNumber"
+									name="glAccountNumber"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+						</div>
+						<header class="occ-subsection-heading">
+							<h3>Payment Details</h3>
+						</header>
+						<dl class="occ-summary__list">
+							<div class="occ-summary__item">
+								<dt>Total Stipend Amount</dt>
+								<dd>$150.00</dd>
+							</div>
+							<div class="occ-summary__item">
+								<dt>Rate of Pay</dt>
+								<dd>$50.00/hr</dd>
+							</div>
+							<div class="occ-summary__item">
+								<dt>Hours</dt>
+								<dd>3</dd>
+							</div>
+							<div class="occ-summary__item">
+								<dt>Number of Payments</dt>
+								<dd>1</dd>
+							</div>
+						</dl>
+					</div>
+				</section>
+				<section
+					class="occ-section developer"
+					aria-labelledby="developer-heading"
+				>
+					<header class="occ-section-heading">
+						<span
+							class="occ-section-heading__icon"
+							aria-hidden="true"
+							><i class="fa-solid fa-code"></i
+						></span>
+						<div class="occ-section-heading__content">
+							<h2 id="developer-heading">
+								<button
+									type="button"
+									class="occ-section-heading__toggle"
+									aria-expanded="true"
+									aria-controls="developer-content"
+								>
+									Developer Information
+									<span
+										class="occ-section-heading__toggle-icon"
+										aria-hidden="true"
+										><i class="fa-solid fa-chevron-up"></i
+									></span>
+								</button>
+							</h2>
+							<p class="occ-heading-description">
+								If you can see this section, please contact
+								support.
+							</p>
+						</div>
+					</header>
+					<div id="developer-content" class="occ-section__content">
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label class="occ-label" for="departmentChair"
+									>Department Chair</label
+								>
+								<input
+									id="departmentChair"
+									name="departmentChair"
+									class="occ-input"
+									type="text" readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="departmentChairEmail"
+									>Department Chair Email</label
+								>
+								<input
+									id="departmentChairEmail"
+									name="departmentChairEmail"
+									class="occ-input"
+									type="email" readonly
+								/>
+							</div>
+						</div>
+						<div class="occ-field">
+							<label
+								class="occ-label"
+								for="preAdminAttachmentCount"
+								>Pre-Admin Attachment Count</label
+							><input
+								id="preAdminAttachmentCount"
+								name="preAdminAttachmentCount"
+								class="occ-input"
+								type="text"
+							/>
+						</div>
+						<div class="occ-field-grid">
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="instructorFirstName"
+									>Instructor First Name</label
+								>
+								<input
+									id="instructorFirstName"
+									name="instructorFirstName"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+							<div class="occ-field">
+								<label
+									class="occ-label"
+									for="instructorLastName"
+									>Instructor Last Name</label
+								>
+								<input
+									id="instructorLastName"
+									name="instructorLastName"
+									class="occ-input"
+									type="text"
+									readonly
+								/>
+							</div>
+						</div>
+					</div>
+				</section>
+			</form>
+		</main>
+	</body>
+</html>
